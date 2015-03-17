@@ -592,7 +592,7 @@ footer {
 #header .sliderBox .carousel-control {
   width:6%;
 }
-#header .sliderBox .carousel-indicators {
+.sliderBox .carousel-indicators {
   bottom:0px;
 }
 #header .sliderBox .carousel-indicators li {
@@ -738,6 +738,8 @@ footer {
   }
   #header .sliderBox .carousel-caption .text {
     font-size:17px;
+    margin-left:15px;
+    margin-right:15px;
   }
   #topTab li, #userLoginTab li {
     font-size:18px;
@@ -758,6 +760,12 @@ footer {
    font-size:16px;
    bottom:43px;
  }
+ #header .sliderBox .carousel-indicators {
+    bottom:40px;
+  }
+  #header .sliderBox .butLink {
+    font-size:18px;
+  }
 }
 @media (max-width: 333px) {
   .butPanel a {
@@ -773,4 +781,5 @@ footer {
   .boxCont .image .outBorder {
     width:80%;
   }
+
 }
