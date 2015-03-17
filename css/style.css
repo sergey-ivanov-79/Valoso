@@ -15,6 +15,9 @@ body {
 a img {
   border:0px;
 }
+a:HOVER {
+  color:#ff965e;
+}
 #header {
   margin-top:30px;
 }
@@ -37,11 +40,16 @@ a img {
 #header .topMenu ul li a {
   font-family: 'Open Sans Condensed';
   text-decoration:none;
-  color:#4b8dcb;
+  
   font-weight:bold;
 
 }
-
+#header .topMenu ul li a:LINK {
+  color:#4b8dcb;
+}
+#header .topMenu ul li a:HOVER {
+  color:#ff965e;
+}
 #header .sliderBox {
   margin-top:20px;
   margin-bottom:20px; 
@@ -450,6 +458,9 @@ footer {
   font-size:14px;
   margin-bottom:10px;
 }
+#footer .botLink .input-group button:HOVER{
+  background:#ff965e;
+}
 #footer .botLink .input-group {
   height:50px;
 }
@@ -480,9 +491,74 @@ footer {
 #footer .socBox {
   margin-top:35px;
 }
-#footer .socBox a{
+
+#footer .socBox .soc-ico{
   display:inline-block;  
-  margin-right:5px;
+  margin-right:0px;
+  width:30px;
+  height:30px;
+  background:url(../images/soc-ico.png);
+  background-repeat:no-repeat;
+}
+
+#footer .socBox .s1{
+  background-position:0px 0px;
+}
+#footer .socBox .s1:HOVER{
+  background-position:30px -30px;
+}
+#footer .socBox .s2{
+  background-position:-30px 0px;
+}
+#footer .socBox .s2:HOVER{
+  background-position:-30px -30px;
+}
+#footer .socBox .s3{
+  background-position:-60px 0px;
+}
+#footer .socBox .s3:HOVER{
+  background-position:-60px -30px;
+}
+#footer .socBox .s4{
+  background-position:-90px 0px;
+}
+#footer .socBox .s4:HOVER{
+  background-position:-90px -30px;
+}
+#footer .socBox .s5{
+  background-position:-120px 0px;
+}
+#footer .socBox .s5:HOVER{
+  background-position:-120px -30px;
+}
+#footer .socBox .s6{
+  background-position:-150px 0px;
+}
+#footer .socBox .s6:HOVER{
+  background-position:-150px -30px;
+}
+#footer .socBox .s7{
+  background-position:-180px 0px;
+}
+#footer .socBox .s7:HOVER{
+  background-position:-180px -30px;
+}
+#footer .socBox .s8{
+  background-position:-210px 0px;
+}
+#footer .socBox .s8:HOVER{
+  background-position:-210px -30px;
+}
+#footer .socBox .s9{
+  background-position:-240px 0px;
+}
+#footer .socBox .s9:HOVER{
+  background-position:-240px -30px;
+}
+#footer .socBox a img:HOVER {
+  filter: hue-rotate(90deg);
+ 
+  -webkit-filter: hue-rotate(240deg);
 }
 #footer .botLink ul{
   list-style:none;
@@ -513,6 +589,28 @@ footer {
 .carousel-inner .item img {
   
 }
+#header .sliderBox .carousel-control {
+  width:6%;
+}
+#header .sliderBox .carousel-indicators {
+  bottom:0px;
+}
+#header .sliderBox .carousel-indicators li {
+  width:8px;
+  height:8px;
+
+  background:#555555;
+}
+
+#header .sliderBox .carousel-indicators .active {
+  background:transparent;
+  border:1px solid #4ccbff;
+   width:10px;
+  height:10px;
+}
+#header .sliderBox  .slider-size {
+  height:290px
+}
 @media (min-width: 1060px) {
   .container {
     width: 1030px;
@@ -521,8 +619,8 @@ footer {
 }
 @media (min-width: 990px) {
     #header .sliderBox .carousel-caption {
-    width:40%;
-    left:10%;
+    width:45%;
+    left:5%;
     right:auto;
     bottom:20px; 
   }
