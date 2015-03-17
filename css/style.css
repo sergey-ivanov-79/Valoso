@@ -671,7 +671,7 @@ footer {
   #header .topMenu {
     position:fixed;
     top:50px;
-    z-index:10;
+    z-index:30;
     background:#474747;
     padding-left:0px;
     padding-right:0px;
