@@ -611,6 +611,9 @@ footer {
 #header .sliderBox  .slider-size {
   height:290px
 }
+#header .sliderBox .active .carousel-caption {
+  position:absolute;
+}
 @media (min-width: 1060px) {
   .container {
     width: 1030px;
