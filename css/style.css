@@ -591,9 +591,11 @@ footer {
 }
 #header .sliderBox .carousel-control {
   width:6%;
+  z-index:25;
 }
 .sliderBox .carousel-indicators {
   bottom:0px;
+  z-index:25;
 }
 #header .sliderBox .carousel-indicators li {
   width:8px;
@@ -611,8 +613,12 @@ footer {
 #header .sliderBox  .slider-size {
   height:290px
 }
-#header .sliderBox .active .carousel-caption {
+#header .sliderBox  .carousel-caption {
+  display:none;
+}
+#header .sliderBox  .carousel-caption-all {
   position:absolute;
+  z-index:20;
 }
 @media (min-width: 1060px) {
   .container {

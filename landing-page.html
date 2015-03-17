@@ -16,6 +16,7 @@
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script>
+  var group = ''; 
 	$(function() {
 	  $('a[href*=#].anchor:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -53,13 +54,24 @@
            $('.upArrow').hide()
         }
     });
-    $('#slider').on('slide.bs.carousel', function () {
 
-      console.log(1);
-    })
+    $('#slider .carousel-inner .active').each(function() {
+        if (group=='') {
+          $('#header .sliderBox .carousel-caption-all').html($('#header .sliderBox .active .carousel-caption').html());
+          $('#header .sliderBox .carousel-caption-all').show(500);
+          group = $(this).attr('data-group');
+        }       
+    });
+
     $('#slider').on('slid.bs.carousel', function () {
-       console.log(2);
-    })
+      var thisGroup = $(this).find('div.active').attr('data-group');         
+      if ((group != thisGroup)&&(group != '')){
+          $('#header .sliderBox .carousel-caption-all').hide();
+          $('#header .sliderBox .carousel-caption-all').html($('#header .sliderBox .active .carousel-caption').html());
+          $('#header .sliderBox .carousel-caption-all').show(500);
+          group = thisGroup;
+      }                 
+    });
     
 	});
   
@@ -101,7 +113,8 @@
               <li data-target="#slider" data-slide-to="4"></li>
             </ol>
             <div class="carousel-inner" role="listbox">
-              <div class="item active">
+              <div class="carousel-caption carousel-caption-all">test</div>
+              <div class="item active" data-group="1">
                   <div style="background:url(images/s2.jpg) center center;  background-size:cover;" class="slider-size">                  
                      <div class="carousel-caption">
                     <h2>Treasure Stored Videos</h2>
@@ -110,7 +123,7 @@
                   </div>
                   </div>
               </div>
-            <div class="item">
+            <div class="item" data-group="1">
                 <div style="background:url(images/s3.jpg) center center;  background-size:cover;" class="slider-size">
                    <div class="carousel-caption">
                     <h2>Treasure Stored Videos</h2>
@@ -119,7 +132,7 @@
                   </div>
                 </div>
             </div>
-            <div class="item">
+            <div class="item" data-group="1">
                 <div style="background:url(images/s4.jpg) center center;  background-size:cover;" class="slider-size">
                    <div class="carousel-caption">
                     <h2>Treasure Stored Videos</h2>
@@ -128,7 +141,7 @@
                   </div>
                </div>
             </div>
-            <div class="item">
+            <div class="item" data-group="1">
                 <div style="background:url(images/s5.jpg) center center;  background-size:cover;" class="slider-size">
                    <div class="carousel-caption">
                     <h2>Treasure Stored Videos</h2>
@@ -137,7 +150,7 @@
                   </div>
                </div>
             </div>
-            <div class="item">
+            <div class="item" data-group="2">
                 <div style="background:url(images/s6.jpg) center center;  background-size:cover;" class="slider-size">
                    <div class="carousel-caption">
                     <h2>Pick Your Own Projects</h2>
