@@ -20,7 +20,7 @@ a:HOVER {
 }
 body:after{
     display:none;
-    content: url(images/s2.jpg) url(images/s3.jpg) url(images/s4.jpg) url(images/s5.jpg) url(images/s6.jpg);
+    content: url(../images/s2.jpg) url(../images/s3.jpg) url(../images/s4.jpg) url(../images/s5.jpg) url(../images/s6.jpg);
 }
 #header {
   margin-top:30px;
