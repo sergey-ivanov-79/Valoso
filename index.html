@@ -1,1 +1,462 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<title></title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script>
+	$(function() {
+	  $('a[href*=#].anchor:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+    $('#loginOpen').click(function() {
+       $('#userLoginTab a[href="#conLogin"]').tab('show');   
+       $('#loginBox').modal('show');    
+    });
+    $('#SignOpen').click(function() {
+      $('#userLoginTab a[href="#conSign"]').tab('show'); 
+      $('#loginBox').modal('show');
+    });
+    $('#conDirector .butPanel a').click(function() {
+        $('#conDirector .butPanel').find('.active').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+   $('#conEditor .butPanel a').click(function() {
+        $('#conEditor .butPanel').find('.active').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >500) {
+          $('.upArrow').show()
+        }else{
+           $('.upArrow').hide()
+        }
+    });
+	});
+  
+	</script>
+</head>
+
+<body>
+<header class="" id="header">
+ <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 logoBox">
+          <a href=""><img src="images/logo.png" /></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse  col-xs-12 col-sm-9 col-md-9 col-lg-9 topMenu " id="navbar-collapse">
+          <ul>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Faq</a></li>
+            <li><a href="#" id="SignOpen">register</a></li>
+            <li><a href="#" id="loginOpen">Login</a></li>
+          </ul>
+        </div>
+    </div>
+    
+    <div class="row sliderBox">
+     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="slider" class="carousel slide" data-ride="carousel">
+          <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <img src="images/s2.jpg" alt="">
+                <div class="carousel-caption">
+                  <h2>Treasure Stored Videos</h2>
+                  <div class="text">Put stored videos to good use. Relive memorable moments by having custom-made videos.</div>
+                   <a href="" class="butLink">Get Started Today</a>
+                </div>
+              </div>
+            <div class="item">
+               <img src="images/s3.jpg" alt="">
+               <div class="carousel-caption">
+                <h2>Treasure Stored Videos</h2>
+                <div class="text">Put stored videos to good use. Relive memorable moments by having custom-made videos.</div>
+                 <a href="" class="butLink">Get Started Today</a>
+              </div>
+            </div>
+            <div class="item">
+               <img src="images/s4.jpg" alt="">
+               <div class="carousel-caption">
+                <h2>Treasure Stored Videos</h2>
+                <div class="text">Put stored videos to good use. Relive memorable moments by having custom-made videos.</div>
+                 <a href="" class="butLink">Get Started Today</a>
+              </div>
+            </div>
+            <div class="item">
+               <img src="images/s5.jpg" alt="">
+               <div class="carousel-caption">
+                <h2>Treasure Stored Videos</h2>
+                <div class="text">Put stored videos to good use. Relive memorable moments by having custom-made videos.</div>
+                 <a href="" class="butLink">Get Started Today</a>
+              </div>
+            </div>
+            <div class="item">
+               <img src="images/s6.jpg" alt="">
+               <div class="carousel-caption">
+                <h2>Treasure Stored Videos</h2>
+                <div class="text">Put stored videos to good use. Relive memorable moments by having custom-made videos.</div>
+                 <a href="" class="butLink">Get Started Today</a>
+              </div>
+            </div>     
+              </div>
+           </div>
+     </div>
+ </div>
+ </div>
+</header>
+<div id="content">
+ <div class="container">
+  <fieldset class="nameBlock" id="up">
+   <legend  align="center">How It Works</legend>
+  </fieldset>
+  <div class="row">
+   <div class="col-lg-12">
+    <ul id="topTab" class="nav nav-tabs">
+     <li class="active"><a href="#conDirector" id="tabDirector" role="tab" data-toggle="tab" aria-controls="conDirector" aria-expanded="true">If You’re The Video Director</a></li>
+     <li><a href="#conEditor" role="tab" id="tabEditor" data-toggle="tab" aria-controls="conEditor">If You’re The Video Editor</a></li>
+    </ul>
+    <div id="topTabContent" class="tab-content">
+     <!-- tab1 -->
+     <div class="tab-pane fade in active" id="conDirector" aria-labelledBy="conDirector">     
+        <div class="row butPanel">
+            <div class="col-xs-12 col-sm-4 col-lg-4 active left-col"><a href="#postBox" class="anchor"><img src="images/ico-post.png"> Post</a></div>
+            <div class="col-xs-12 col-sm-4 col-lg-4"><a href="#hireBox" class="anchor"><img src="images/ico-hire.png"> Hire</a></div>
+            <div class="col-xs-12 col-sm-4 col-lg-4 right-col"><a href="#receiveBox" class="anchor"><img src="images/ico-lap.png"> Receive</a></div>
+        </div>
+        <div class="boxCont" id="postBox">
+              <fieldset>
+                <legend  align="center"><img src="images/ico-post-s.png"> Post</legend>
+              
+                <div class="row">
+                     <div class="col-xs-12 col-sm-5 col-lg-4 image">
+                        <div class="outBorder leftRotate"><img src="images/p-1.jpg" /></div>
+                     </div>
+                     <div class="col-xs-12 col-sm-7 col-lg-8 text">
+                        <h3>Start A Video Project - For FREE!</h3>
+                        <p>Describe what you want done in detail with or without uploading your own content. Set your own price and watch as talented and skilled video editors and visual effect artists start applying to work on your project. Posting is FREE!</p>
+                        <a href="" class="boxButton">Have Your Video Made</a>
+                     </div>
+                </div>
+              </fieldset>
+        </div>
+         <div class="boxCont" id="hireBox">
+              <fieldset>
+                <legend  align="center"><img src="images/ico-hire-s.png"> Hire</legend>                
+                <div class="row">
+                     <div class="col-xs-12 col-sm-5 col-lg-4 image">
+                        <div class="outBorder rightRotate"><img src="images/p-2.jpg" /></div>
+                     </div>
+                     <div class="col-xs-12 col-sm-7 col-lg-8 text">
+                        
+                        <h3>Hire A Video Editor.</h3>
+                        <p>Acquire dozens of proposals when you post your project. View applicants’ profiles, check their portfolio and read what clients had to say about their work. Choose the best candidate that meets your requirements.</p>
+                        <a href="" class="boxButton">Search For Video Editors</a>
+                     </div>
+                </div>
+              </fieldset>
+        </div>
+        <div class="boxCont" id="receiveBox">
+              <fieldset>
+                <legend  align="center"><img src="images/ico-lap-s.png"> Receive</legend>                
+                <div class="row">
+                     <div class="col-xs-12 col-sm-5 col-lg-4 image">
+                        <div class="outBorder"><img src="images/p-3.jpg" /></div>
+                     </div>
+                     <div class="col-xs-12 col-sm-7 col-lg-8 text">
+                        
+                        <h3>Receive Custom-Made Video.</h3>
+                        <p>Review the video as it gets made. Make payment in a safe and secure environment. Receive and download your custom-made video or share it on social networks directly from this site.</p>
+                        <a href="" class="boxButton">Try it now</a>
+                     </div>
+                </div>
+              </fieldset>
+        </div>
+
+     </div>
+     <!-- /tab1 -->
+     <!-- tab2 -->
+     <div class="tab-pane fade" id="conEditor" aria-labelledBy="conEditor">
+        <div class="row butPanel">
+            <div class="col-xs-12 col-sm-4 col-lg-4 active left-col"><a href="#browseBox" class="anchor"><img src="images/ico-bro.png"> Browse</a></div>
+            <div class="col-xs-12 col-sm-4 col-lg-4"><a href="#createBox" class="anchor"><img src="images/ico-cre.png"> Create</a></div>
+            <div class="col-xs-12 col-sm-4 col-lg-4 right-col"><a href="#getBox" class="anchor"><img src="images/ico-get.png"> Get Paid</a></div>
+        </div>
+        <div class="boxCont" id="browseBox">
+              <fieldset>
+                <legend  align="center"><img src="images/ico-bro-s.png"> Browse</legend>
+              
+                <div class="row">
+                     <div class="col-xs-12 col-sm-5 col-lg-4 image">
+                        <div class="outBorder leftRotate"><img src="images/p-4.jpg" /></div>
+                     </div>
+                     <div class="col-xs-12 col-sm-7 col-lg-8 text">
+                        <h3>Browse Video Projects and Apply - For FREE!</h3>
+                        <p>VFX Artists, Post Production Specialists and video fanatics, you're at the right place. Work on projects of your choice from any location you desire. Apply to as many video projects as you can take on, it's FREE to APPLY!</p>
+                        <a href="" class="boxButton">Browse Projects</a>
+                     </div>
+                </div>
+              </fieldset>
+        </div>
+         <div class="boxCont" id="createBox">
+              <fieldset>
+                <legend  align="center"><img src="images/ico-cre-s.png"> Create</legend>                
+                <div class="row">
+                     <div class="col-xs-12 col-sm-5 col-lg-4 image">
+                        <div class="outBorder rightRotate"><img src="images/p-5.jpg" /></div>
+                     </div>
+                     <div class="col-xs-12 col-sm-7 col-lg-8 text">
+                        
+                        <h3>Create A Custom-Made Video.</h3>
+                        <p>Build solid relationships with diverse individuals and various companies worldwide. Take on the challenge of making a custom-made video that satisfies your client and enhances your craft. </p>
+                        <a href="" class="boxButton">Create A Custom-Made Video</a>
+                     </div>
+                </div>
+              </fieldset>
+        </div>
+        <div class="boxCont" id="getBox">
+              <fieldset>
+                <legend  align="center"><img src="images/ico-get-s.png"> Get Paid</legend>                
+                <div class="row">
+                     <div class="col-xs-12 col-sm-5 col-lg-4 image">
+                        <div class="outBorder"><img src="images/p-6.jpg" /></div>
+                     </div>
+                     <div class="col-xs-12 col-sm-7 col-lg-8 text">
+                        
+                        <h3>Get Paid And Receive Feedback.</h3>
+                        <p>Upload completed video and send it for review. Receive payment to your Paypal or credit card account with no unnecessary delays. Get great feedback that leads to valuable referrals for future projects.</p>
+                        <a href="" class="boxButton">Update your Portfolio</a>
+                     </div>
+                </div>
+              </fieldset>
+        </div>     
+     </div>
+      <!-- /tab2 -->
+     <fieldset class="nameBlock">
+       <legend  align="center">Why Valoso</legend>
+     </fieldset>
+     <!-- -->
+     <div id="carouselBot" class="carousel slide" data-ride="carousel">
+      
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="row item active">
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="box">
+                    <div class="boxImg"><img src="images/ico-video.png"></div>
+                    <h3>Professional Custom-Made Video</h3>
+                    <p>Valoso offers a simple and hassle-free way of having custom videos made. A great deal of time and money are saved because everything is done in Valoso. </p><a href="" class="link">Watch this video to learn more >></a>
+                </div>
+             </div>
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">                
+                <div class="box">
+                    <div class="boxImg"><img src="images/ico-clo.png"></div>
+                    <h3>Leading Cloud Storage Service</h3>
+                    <p>Our online storage solution is top of the line, it being powered by Dropbox. Compatible across all platforms, uploading and retrieving files has never run smoother. </p><a href="" class="link">Read more about our Cloud Storage solution >></a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">                
+                <div class="box">
+                    <div class="boxImg"><img src="images/ico-share.png"></div>
+                    <h3>Sharing Made Easy</h3>
+                    <p>Share finished videos in just a couple of clicks. Show it to friends and families via Facebook, Twitter, Youtube, Vimeo, Instagram or Pinterest. </p><a href="" class="link">Start uploading<br> files now >></a>
+                </div>
+              </div>
+          </div>
+           <div class="row item">
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                <div class="box">
+                    <div class="boxImg"><img src="images/ico-com.png"></div>
+                    <h3>Faster Collaboration Guaranteed</h3>
+                    <p>Communicate easily through our video snap tool. Attach comments and annotations on images and videos to better facilitate exchange of inquiries, ideas and opinions.</p> <a href="" class="link">Try Video Snap Tool >></a>
+                </div>
+             </div>
+             <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">                
+                <div class="box">
+                    <div class="boxImg"><img src="images/ico-world.png"></div>
+                    <h3>Online Portal For Video Editors Worldwide</h3>
+                    <p>Through Valoso, video professionals from different parts of the world come together in one site. We provide great opportunities that showcase talents and help establish careers online.</p> <a href="" class="link">Watch this video to apply as video editor >></a>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">                
+                <div class="box">
+                    <div class="boxImg"><img src="images/ico-visa.png"></div>
+                    <h3>Quick And Secure Payment System</h3>
+                    <p>Send and receive milestone payments without any delay. Keep track of all incoming and outgoing transactions through the Dashboard. </p><a href="" class="link">Visit FAQ page for  further information >></a>
+                </div>
+              </div>
+          </div>
+        </div>
+      
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carouselBot" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carouselBot" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+     <!-- -->
+     <div class="row butFoot">
+         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">  </div>
+         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 butGetStart"><a href="">Get Started today</a>  </div>
+         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">  </div>
+     </div>
+     
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+<p></p><p></p><p></p>
+<footer id="footer">
+ <div class="container">
+     <div class="row botInfo">
+         <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 botLink">
+           <h4>About</h4>
+           <ul>
+              <li><a href="">About us</a></li>
+              <li><a href="">How it works</a></li>
+              <li><a href="">Press</a></li>
+              <li><a href="">Careers</a></li>
+           </ul>
+         </div>
+         <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 botLink">
+           <h4>Help</h4>
+           <ul>
+              <li><a href="">Help Center</a></li>
+              <li><a href="">Contact Support</a></li>
+              <li><a href="">FAQ’s</a></li>
+              <li><a href="">Shipping info</a></li>
+              <li><a href="">Fee Schedule</a></li>
+              <li><a href="">Tutorials</a></li>              
+           </ul>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 botLink">
+           <h4>Get Inspired</h4>
+           <p>Weekly top projects, featured designers, tips, and tricks</p>
+           <div class="input-group">
+              <input type="text" class="form-control" placeholder="Enter Email Here">
+              <span class="input-group-btn"><button class="btn btn-default" type="button">Sign Up</button></span>
+           </div>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 botLogo">
+            <a href=""><img src="images/logo-b.png"></a>
+            <div class="socBox">
+                <a href=""><img src="images/soc-v.png"></a>
+                <a href=""><img src="images/soc-y.png"></a>
+                <a href=""><img src="images/soc-tw.png"></a>
+                <a href=""><img src="images/soc-t.png"></a>
+                <a href=""><img src="images/soc-ins.png"></a>
+                <a href=""><img src="images/soc-p.png"></a>
+                <a href=""><img src="images/soc-g.png"></a>
+                <a href=""><img src="images/soc-fb.png"></a>
+                <a href=""><img src="images/soc-fl.png"></a>
+                <div class="clearN"></div>
+            </div>
+         </div>
+     </div>
+     <div class="row botCopy">
+         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">Copyright 2015 © Tech International Pty Ltd</div>
+         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><a href="">Privacy Policy</a></div>
+         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a href="">Terms and Conditions</a></div>
+     </div>         
+ 
+ </div>
+</footer>
+<!-- Modal -->
+<div class="modal fade" id="loginBox" tabindex="-1" role="dialog" aria-labelledby="loginBoxLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">Sign up Or Login To Valoso</h3>
+      </div>
+      <div class="modal-body">
+        <ul id="userLoginTab" class="nav nav-tabs">
+            <li class="active"><a href="#conSign" id="tabSign" role="tab" data-toggle="tab" aria-controls="conSign" aria-expanded="true">Sign Up</a></li>
+            <li><a href="#conLogin" role="tab" id="tabLogin" data-toggle="tab" aria-controls="conLogin">Login</a></li>
+        </ul>
+        <div id="userLoginContent" class="tab-content">
+        <!-- tab1 -->
+          <div class="tab-pane fade in active" id="conSign" aria-labelledBy="conSign">
+              <form>
+              <div class="row">
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">First Name</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="firstName" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Last Name</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="lastName" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Email</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="email" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Password</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="password" name="password" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formCheck"><input type="checkbox" name="sendOffers" value="true" />
+                   Send me exclusive offers, tips, and tricks.</div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formText">By signing up, you agree to the <a href="">Terms and Conditions</a></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formSub"><input type="submit" value="Sign Up"></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 line">
+                      <fieldset >
+                        <legend  align="center">Or</legend>
+                      </fieldset>
+                   </div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 butLink"><a href=""><img src="images/ico-drop.png"> Login With Dropbox</a></div>
+              </div>
+              </form>
+          </div>
+        <!-- /tab1 -->
+        <!-- tab2 -->
+          <div class="tab-pane fade" id="conLogin" aria-labelledBy="conLogin">
+            <form>
+              <div class="row">
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Email</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="email" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Password</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="password" name="password" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formCheck"><input type="checkbox" name="sendOffers" value="true" />
+                   Remember me <a href="" class="forgotPass">Forgot Password</a></div>
+                   
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formSub"><input type="submit" value="Login"></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 line">
+                      <fieldset >
+                        <legend  align="center">Or</legend>
+                      </fieldset>
+                   </div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 butLink"><a href=""><img src="images/ico-drop.png"> Login With Dropbox</a></div>
+              </div>
+              </form>
+          </div>
+        <!-- /tab2 -->
+        </div>
+      </div>     
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
+<a href="#up" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
+</body>
+</html>
