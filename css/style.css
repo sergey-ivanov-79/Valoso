@@ -1,0 +1,678 @@
+html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+body {
+	margin: 0;
+	padding: 0px;
+	height: 100%;
+	color: #6b6b6b;
+	font-weight: 300;
+	font-size: 18px;
+	font-family: 'Open Sans', helvetica, tahoma, arial;
+}
+a img {
+  border:0px;
+}
+#header {
+  margin-top:30px;
+}
+#header .topMenu {
+  text-align:right;
+  
+
+}
+#header .topMenu ul {
+  list-style:none;
+  margin:10px 0 0;
+  padding:0px;
+}
+#header .topMenu ul li{
+  display:inline-block;
+  padding: 0px 10px;
+  border-left:2px solid #4b8dcb;
+  text-transform:uppercase;
+}
+#header .topMenu ul li a {
+  font-family: 'Open Sans Condensed';
+  text-decoration:none;
+  color:#4b8dcb;
+  font-weight:bold;
+
+}
+
+#header .sliderBox {
+  margin-top:20px;
+  margin-bottom:20px; 
+}
+
+#header .sliderBox .carousel-caption h2{
+  font-size:36;
+  font-weight:bold;
+}
+#header .sliderBox .carousel-caption .text {
+  font-size:18px;
+  margin-bottom:20px;
+}
+#header .sliderBox .butLink {  
+  background:#ff6c8d;
+  display:inline-block;
+  text-align:center;
+  text-transform:uppercase;
+  color:#fff;
+  font-size:24px;
+  font-weight:bold;
+  border-radius:10px;
+  padding:10px 0;
+  text-decoration:none;
+  width:80%;
+}
+#header .sliderBox .butLink:hover{
+  background:#ff965e!important;
+}
+#header .sliderBox img {
+  max-width:none;
+}
+.nameBlock {
+  text-align:center;
+  border-bottom:2px solid #888888;
+  margin-bottom:45px;
+  
+}
+.nameBlock legend{
+    width:auto;
+    padding:0 10px;
+    border-bottom:none;
+    margin-bottom: -25px;
+    font-size:36px;
+    color:#888888;
+    font-weight:bold;
+    background:#fff;
+}
+#topTab li,#userLoginTab li{
+  width:50%;
+  text-align:center;
+  text-transform:uppercase;
+  font-size:24px;
+  color:#4b8dcb;  
+  font-weight:500;
+}
+#userLoginTab li{ 
+  font-size:18px;
+}
+#userLoginTab li a {
+  padding-bottom:0px;
+  border-radius: 8px 8px 0 0;
+}
+#topTab li.active,#userLoginTab li.active {
+  color:#474747; 
+  font-weight:bold;
+}
+#userLoginTab li.active a{
+  background:#fafafa;
+}
+.butPanel{
+  text-align:center;
+  margin:25px 10px 40px;
+
+}
+.butPanel div{
+  padding:0px 10px;
+  margin:0px 0px 5px;
+}
+.left-col {
+
+}
+.right-col {
+ 
+}
+.butPanel a {
+  display:inline-block;
+  background:silver;
+  width:100%;
+  text-transform:uppercase;
+  text-decoration:none;
+  color:#fff;
+  font-size:36px;
+  font-weight:bold;
+  border-radius:10px;
+  padding:15px 10px;
+
+}
+#topTabContent .butPanel a:hover {
+  background:#ff965e!important;
+}
+.butPanel a img {
+  margin:-25px 15px 0px;
+}
+#conDirector .butPanel a{
+  background:#4ccbff;
+}
+#conDirector .boxButton {
+  background:#4ccbff;
+}
+#conEditor .boxButton {
+  background:#5dff60;
+}
+#conEditor .butPanel a{
+  background:#5dff60;
+}
+.butPanel .active a{
+  background:#555555!important;
+}
+.boxCont {
+  width:88%;
+  margin:0 auto 20px;
+}
+.boxCont .upLink {
+  position:absolute;
+  right:35px;
+  top:0px;
+  font-size:14px;
+}
+.boxCont .upLink a{
+  text-decoration:none;
+  color:#4b8dcb;
+}
+.boxCont fieldset {
+  border:2px solid #c4c4c4;
+  border-radius:10px;
+  background:#fbfaf8;
+
+}
+.boxCont legend {
+  border:2px solid #c4c4c4;
+  border-radius:10px;
+  width:auto;
+  margin:0 auto 20px;  
+  padding:5px 45px;
+  font-size:30px;
+  font-weight:bold;
+  color:#fff;
+  text-transform:uppercase;
+  background:#fff;
+}
+#conDirector  legend {
+  background:#4b8dcb;
+}
+#conEditor legend {
+  background:#5cd75b;
+}
+.boxCont legend img{
+  margin-top:-13px;
+}
+.boxCont .image {
+  text-align:center
+}
+.boxCont .image .outBorder {
+  display:inline-block;
+  padding:10px;
+  -webkit-box-shadow: 7px 6px 16px -2px rgba(0,0,0,0.74);
+  -moz-box-shadow: 7px 6px 16px -2px rgba(0,0,0,0.74);
+  box-shadow: 7px 6px 16px -2px rgba(0,0,0,0.74);
+  margin-bottom:25px;
+}
+.boxCont .boxButton {
+  display:block;
+  width:60%;
+  float:left;
+  border-radius:5px;
+  text-transform:uppercase;
+  color:#fff;
+  text-align:center;
+  padding:10px;
+  font-size:18px;
+  font-weight:bold;
+  text-decoration:none;
+}
+.boxCont .boxButton:hover{
+  background:#ff965e!important;
+}
+.leftRotate {
+  transform: rotate(351deg) ;
+  -webkit-transform: rotate(351deg) ;
+  -moz-transform: rotate(351deg) ;
+  -o-transform: rotate(351deg) ;
+  -ms-transform: rotate(351deg) ;
+}
+.rightRotate {
+  transform: rotate(9deg) ;
+  -webkit-transform: rotate(9deg) ;
+  -moz-transform: rotate(9deg) ;
+  -o-transform: rotate(9deg) ;
+  -ms-transform: rotate(9deg) ;
+}
+.boxCont .image .outBorder img {
+  border:1px solid #d2d2d2;
+}
+.boxCont .text {
+  padding:25px;
+}
+.boxCont .text h3,#carouselBot .item .box h3{
+  margin-top:0px;
+  font-weight:bold;
+  color:#474747;
+}
+#carouselBot {
+  margin-bottom:30px;
+}
+#carouselBot .item {
+  width:100%;
+  margin:0px;
+}
+#carouselBot .item .box h3{
+  min-height:75px;
+}
+#carouselBot .item .box{
+  background:#fbfaf8;
+  border:1px solid #c4c4c4;
+  border-radius:5px;
+  padding:5px;
+  position:relative;
+  padding:30px 20px 50px;
+  margin-top:40px;
+  min-height:430px;
+}
+#carouselBot .item .box p {
+  line-height:23px;
+}
+#carouselBot .item .box .link {
+  position:absolute;
+  bottom:30px;
+  left:0px;
+  width:100%;
+  height:30px;
+  padding:0 20px;
+}
+#carouselBot .left {
+  
+}
+#carouselBot .item .box .boxImg {
+  margin:-70px auto 30px;
+  border-radius:50px;
+  background:#555555;
+  width:80px;
+  height:80px;
+  text-align:center;
+  padding-top:20px;
+}
+#carouselBot  .carousel-inner {
+  width:90%;
+  margin:0 auto;
+}
+#carouselBot .carousel-control {
+  width:5%;
+ background:none;
+}
+#carouselBot .carousel-control  span {
+  background:#c4c4c4;
+  border-radius:5px;
+  padding-top: 5px;
+  width:43px;
+  height:43px;
+}
+.butFoot {
+  margin:65px 0;
+  }
+.butGetStart a {
+  width:100%;
+  background:#ff6c8d;
+  display:block;
+  text-align:center;
+  text-transform:uppercase;
+  color:#fff;
+  font-size:36px;
+  font-weight:bold;
+  border-radius:10px;
+  padding:20px 0;
+  text-decoration:none;
+}
+.butGetStart a:hover{
+  background:#ff965e!important;
+}
+.modal-content {
+  background-color:#fafafa;
+}
+.modal h3 {
+  color:#727272;
+  text-transform:uppercase;
+  font-weight:bold;
+}
+.modal .close {
+  background:#9b9b9b;
+  border-radius: 50%;
+  padding:0px 7px;
+  color:#fff;
+  font-weight:bold;
+  font-size:32px;
+}
+.modal-header {
+  padding:20px;
+}
+.modal-body {
+  padding:20px 20px 40px;
+}
+#userLoginContent {
+  margin-top:30px;
+  padding: 0 25px;
+}
+#userLoginContent .formField {
+  margin-bottom:10px;
+  padding-top:5px;
+}
+#userLoginContent .formInput {
+  margin-bottom:10px;
+}
+#userLoginContent .formInput input[type=text],#userLoginContent .formInput input[type=password]{
+  width:100%;
+  border-radius:7px;
+  border:1px solid #bcbcbc;
+  height:40px;
+}
+#userLoginContent .formCheck {
+  font-size:16px;
+  margin:10px 0px;
+}
+#userLoginContent .formText {
+  margin:10px 0px;
+  font-style:italic;
+  font-size:16px;
+}
+#userLoginContent .formSub {
+  text-align:center;
+  margin:10px 0px;
+}
+#userLoginContent .formSub input {
+  border:0px;
+  border-radius:7px;
+  background:#4b8dcb;
+  color:#fff;
+  font-size:24px;
+  padding:3px 20px 5px;
+  font-weight:bold;
+}
+#userLoginContent .formCheck input[type=checkbox] {
+  margin-right:20px;
+}
+#userLoginContent .formCheck .forgotPass {
+  display:block;
+  float:right;
+}
+#userLoginContent .line {
+  margin:10px 0px;
+}
+#userLoginContent .line fieldset {
+  border-top:2px solid #c4c4c4;
+  
+}
+#userLoginContent .line legend {
+  border:0px;
+  width:auto;
+  margin:0 auto;  
+  padding:5px 25px;
+  font-size:24px;
+  font-weight:500;
+  text-transform:uppercase;
+  color:#727272;
+  background:#fafafa;
+}
+#userLoginContent .butLink {
+  margin:10px 0px;
+  text-align:center;
+}
+#userLoginContent .butLink  a {
+  background:#63aeec;
+  display:inline-block;
+  border-radius:7px;
+  padding:15px 20px;
+  color:#fff;
+  text-decoration:none;
+  font-size:22px;
+  text-transform:uppercase;
+  font-weight:bold;
+  
+}
+.nav-tabs li a {
+  padding-left:3px;
+  padding-right:3px;
+}
+footer {
+  background:#959595;
+  width:100%;
+  min-height:345px;
+}
+#footer .botInfo {
+  margin-top:70px;
+}
+#footer .botLink {
+  color:#fff;
+  font-size:14px;
+  margin-bottom:10px;
+}
+#footer .botLink .input-group {
+  height:50px;
+}
+#footer .botLink .input-group input[type=text] {
+ border-radius: 25px 0 0 25px; 
+ height:50px;
+}
+#footer .botLink .input-group button {
+ border-radius: 0 25px 25px 0; 
+ height:50px;
+ border:0px;
+ background:#4dcbff;
+ color:#fff;
+ font-size:18px;
+}
+#footer .botLogo {
+  text-align:center;
+  margin-bottom:10px;
+}
+#footer .botCopy {
+  margin-top:70px;
+  color:#fff;
+  font-size:14px;
+}
+#footer .botCopy a{
+  color:#fff;
+}
+#footer .socBox {
+  margin-top:35px;
+}
+#footer .socBox a{
+  display:inline-block;  
+  margin-right:5px;
+}
+#footer .botLink ul{
+  list-style:none;
+  margin:0px;
+  padding:0px;
+  line-height:16px;
+}
+#footer .botLink ul li{
+}
+#footer .botLink ul li a{
+  color:#fff;
+  font-size:14px;
+}
+#footer .botLink h4 {
+  color:#cccccc;
+}
+.clearN {
+  clear:both;
+}
+.upArrow {
+  position:fixed;
+  bottom:20px;
+  right:10px;
+  padding:10px;
+  background:#fe7492;
+  display:none;
+}
+.carousel-inner .item img {
+  
+}
+@media (min-width: 1060px) {
+  .container {
+    width: 1030px;
+  }
+  
+}
+@media (min-width: 990px) {
+    #header .sliderBox .carousel-caption {
+    width:40%;
+    left:10%;
+    right:auto;
+    bottom:20px; 
+  }
+}
+@media (min-width: 768px) and (max-width: 990px) {
+  .butPanel div a img{
+    margin-right: 25px;
+    margin-left:  25px;
+  }
+  #topTab li,#userLoginTab li{
+    font-size:20px;
+  }
+  #header .sliderBox .carousel-caption {
+    width:60%;
+    left:5%;
+    right:auto;
+  }
+}
+.cleaTop {
+  height:50px;
+  width:100%;
+  display:none;
+}
+@media (max-width: 767px) {
+  
+  #header {
+    margin-top:0px;
+  }
+  .cleaTop {
+    display:block;
+  }
+  #header .sliderBox {
+    margin-top:50px;
+  }
+  #header .sliderBox .carousel-caption {
+    width:80%;
+    left:10%;
+  }
+  #header .topMenu {
+    position:fixed;
+    top:50px;
+    z-index:10;
+    background:#474747;
+    padding-left:0px;
+    padding-right:0px;
+   }
+   #header .topMenu ul {
+     margin:0px;
+   }
+   #header .topMenu ul li{
+     display:block;
+     border:0px;
+     border-top:1px solid #fff;
+     padding:10px;
+     text-align:center;
+   }
+    #header .topMenu ul li:hover{
+      background:#ff965e;
+    }
+   #header .topMenu ul li a{
+     color:#fff;
+     width:100%;
+     text-align:center;
+     display:block;
+     
+   }
+
+  .logoBox {
+    text-align:center;
+    height:50px;  
+    position:fixed;    
+    background:#474747;
+    z-index:10;
+    width: 100%;
+  }
+  .logoBox img{
+    margin-top:5px;
+  }
+  .logoBox button {
+    position:absolute;
+    left:10px;
+    float:none;
+    top:0px;
+  }
+  .navbar-toggle .icon-bar {
+    background:#fff;
+  }
+
+}
+@media (min-width: 768px) {
+  .modal-dialog {
+    width:530px;
+  }
+  .topMenu {
+    position:relative;
+    visibility:visible;
+    display: block;
+  }
+  #header .topMenu ul li:first-child {
+    border:0px;
+  }
+
+}
+@media (max-width: 428px) {
+    #header .sliderBox .carousel-caption {
+    width:100%;
+   bottom:2%;;
+   left:0px;
+   right:auto;
+   padding-bottom:0px;
+  }
+  .butPanel a img {
+    margin-left:0px;
+    margin-right:0px;
+  }
+  #header .sliderBox .carousel-caption .text {
+    font-size:17px;
+  }
+  #topTab li, #userLoginTab li {
+    font-size:18px;
+  }
+     .boxCont .boxButton {
+   width:100%;
+ }
+ h3 {
+   font-size:20px;
+ }
+ body {
+   font-size:17px;
+ }
+ #carouselBot .item .box {
+   padding-bottom:65px;
+ }
+ #carouselBot .item .box .link {
+   font-size:16px;
+   bottom:43px;
+ }
+}
+@media (max-width: 333px) {
+  .butPanel a {
+    height:132px;
+  }
+  .butPanel a img {
+    margin-left:35px;
+    margin-right:35px;
+  }
+  .boxCont .image .outBorder img{
+    width:100%;
+  }
+  .boxCont .image .outBorder {
+    width:80%;
+  }
+}
