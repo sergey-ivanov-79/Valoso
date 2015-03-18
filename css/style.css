@@ -48,7 +48,7 @@ body:after{
   font-weight:bold;
 
 }
-#header .topMenu ul li a:LINK {
+#header .topMenu ul li a:LINK, #header .topMenu ul li a:active, #header .topMenu ul li a:visited {
   color:#4b8dcb;
 }
 #header .topMenu ul li a:HOVER {
