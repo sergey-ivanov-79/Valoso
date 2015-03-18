@@ -637,13 +637,19 @@ footer {
   position:absolute;
   z-index:20;
 }
+
 @media (min-width: 1060px) {
   .container {
     width: 1030px;
   }
-  
+  #slideContent .sliderBox .carousel-caption {
+     width:45%;
+    left:8%;
+    right:auto;
+    bottom:20px; 
+  }
 }
-@media (min-width: 990px) {
+@media (min-width: 990px) and (max-width:1060px) {
     #slideContent .sliderBox .carousel-caption {
     width:45%;
     left:5%;
