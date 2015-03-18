@@ -18,6 +18,7 @@
 <script src="js/bootstrap.min.js"></script>
 <script>
   var group = ''; 
+  var lastMove = '';
 	$(function() {
 	  $('a[href*=#].anchor:not([href=#])').click(function() {
 	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -48,14 +49,31 @@
         $('#conEditor .butPanel').find('.active').removeClass('active');
         $(this).parent().addClass('active');
     });
+    var lastScroll = 0;
+
+
     $(window).scroll(function () {
         if ($(this).scrollTop() >500) {
           $('.upArrow').show()
         }else{
            $('.upArrow').hide()
         }
+         var st = $(this).scrollTop();
+          //Determines up-or-down scrolling
+          if (st > lastScroll){
+             //Replace this with your function call for downward-scrolling
+             //console.log("DOWN");
+              HideMenu ('down');
+          }
+          else {
+             //Replace this with your function call for upward-scrolling
+             //console.log("UP");
+              HideMenu ('up');
+          }
+          //Updates scroll position
+          lastScroll = st;
     });
-
+    
     $('#slider .carousel-inner .active').each(function() {
         if (group=='') {
           $('#slideContent .sliderBox  .carousel-caption-all').html($('#slideContent .sliderBox  .active .carousel-caption').html());
@@ -75,7 +93,27 @@
     });
     
 	});
-  
+  function HideMenu (move) {
+    console.log(lastMove,move)
+    if (lastMove == move) {
+      return
+    }
+    if (!lastMove || move=='down') {
+            $( ".logoBox" ).animate({
+              top:"-50px"
+            }, 400 );
+           
+          lastMove =  'down';
+    }
+
+    if (move=='up') {
+        $( ".logoBox" ).animate({
+          top:"0px"
+        }, 400 );
+        lastMove =  'up';
+    }
+
+  }
 	</script>
 </head>
 
