@@ -589,8 +589,8 @@ footer {
 }
 .upArrow {
   position:fixed;
-  bottom:20px;
-  right:10px;
+  bottom:35px;
+  right:25px;
   padding:10px;
   background:#fe7492;
   display:none;
@@ -740,6 +740,7 @@ footer {
   .navbar-toggle .icon-bar {
     background:#fff;
   }
+  
 
 }
 @media (min-width: 768px) {
