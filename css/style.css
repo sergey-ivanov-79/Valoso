@@ -54,20 +54,25 @@ body:after{
 #header .topMenu ul li a:HOVER {
   color:#ff965e;
 }
-#header .sliderBox {
+#slideContent .container{
+  width:100%;
+  max-width:1200px;
+  padding:0px;  
+}
+#slideContent .sliderBox {
   margin-top:20px;
   margin-bottom:20px; 
 }
 
-#header .sliderBox .carousel-caption h2{
+#slideContent .sliderBox .carousel-caption h2{
   font-size:36;
   font-weight:bold;
 }
-#header .sliderBox .carousel-caption .text {
+#slideContent .sliderBox .carousel-caption .text {
   font-size:18px;
   margin-bottom:20px;
 }
-#header .sliderBox .butLink {  
+#slideContent .sliderBox .butLink {  
   background:#ff6c8d;
   display:inline-block;
   text-align:center;
@@ -80,10 +85,10 @@ body:after{
   text-decoration:none;
   width:80%;
 }
-#header .sliderBox .butLink:hover{
+#slideContent .sliderBox .butLink:hover{
   background:#ff965e!important;
 }
-#header .sliderBox img {
+#slideContent .sliderBox img {
   max-width:none;
 }
 .nameBlock {
@@ -593,7 +598,10 @@ footer {
 .carousel-inner .item img {
   
 }
-#header .sliderBox .carousel-control {
+#slideContent {
+  position:relative;
+}
+#slideContent .sliderBox .carousel-control {
   width:6%;
   z-index:25;
 }
@@ -601,14 +609,14 @@ footer {
   bottom:0px;
   z-index:25;
 }
-#header .sliderBox .carousel-indicators li {
+#slideContent .sliderBox .carousel-indicators li {
   width:8px;
   height:8px;
 
   background:#555555;
 }
 
-#header .sliderBox .carousel-indicators .active {
+#slideContent .sliderBox .carousel-indicators .active {
   background:transparent;
   border:1px solid #4ccbff;
    width:10px;
@@ -617,13 +625,15 @@ footer {
 #slider {
   height:290px;
 }
-#header .sliderBox  .slider-size {
-  height:290px
+#slideContent .sliderBox  .slider-size {
+  height:290px;
+  background-repeat:no-repeat;
+  background-position:center center; 
 }
-#header .sliderBox  .carousel-caption {
+#slideContent .sliderBox  .carousel-caption {
   display:none;
 }
-#header .sliderBox  .carousel-caption-all {
+#slideContent .sliderBox  .carousel-caption-all {
   position:absolute;
   z-index:20;
 }
@@ -634,7 +644,7 @@ footer {
   
 }
 @media (min-width: 990px) {
-    #header .sliderBox .carousel-caption {
+    #slideContent .sliderBox .carousel-caption {
     width:45%;
     left:5%;
     right:auto;
@@ -649,7 +659,7 @@ footer {
   #topTab li,#userLoginTab li{
     font-size:20px;
   }
-  #header .sliderBox .carousel-caption {
+  #slideContent .sliderBox .carousel-caption {
     width:60%;
     left:5%;
     right:auto;
@@ -668,10 +678,10 @@ footer {
   .cleaTop {
     display:block;
   }
-  #header .sliderBox {
+  #slideContent .sliderBox {
     margin-top:50px;
   }
-  #header .sliderBox .carousel-caption {
+  #slideContent .sliderBox .carousel-caption {
     width:80%;
     left:10%;
   }
@@ -741,7 +751,7 @@ footer {
 
 }
 @media (max-width: 428px) {
-    #header .sliderBox .carousel-caption {
+    #slideContent .sliderBox .carousel-caption {
     width:100%;
    bottom:2%;;
    left:0px;
@@ -752,7 +762,7 @@ footer {
     margin-left:0px;
     margin-right:0px;
   }
-  #header .sliderBox .carousel-caption .text {
+  #slideContent .sliderBox .carousel-caption .text {
     font-size:17px;
     margin-left:15px;
     margin-right:15px;
@@ -776,10 +786,10 @@ footer {
    font-size:16px;
    bottom:43px;
  }
- #header .sliderBox .carousel-indicators {
+ #slideContent .sliderBox .carousel-indicators {
     bottom:40px;
   }
-  #header .sliderBox .butLink {
+  #slideContent .sliderBox .butLink {
     font-size:18px;
   }
 }
