@@ -147,19 +147,13 @@
  </div>
 </header>
 <div id="slideContent">
-    <div class="container">
+    
         <div class="sliderBox">         
             <div id="slider" class="carousel slide" data-ride="carousel">
               <!-- Wrapper for slides -->
-               <ol class="carousel-indicators">
-                  <li data-target="#slider" data-slide-to="0" class="active"></li>
-                  <li data-target="#slider" data-slide-to="1"></li>
-                  <li data-target="#slider" data-slide-to="2"></li>
-                  <li data-target="#slider" data-slide-to="3"></li>
-                  <li data-target="#slider" data-slide-to="4"></li>
-                </ol>
+
                 <div class="carousel-inner" role="listbox">
-                  <div class="carousel-caption carousel-caption-all">test</div>
+                 
                   <div class="item active" data-group="1">
                       <div style="background-image:url(images/s2.jpg);" class="slider-size">                  
                          <div class="carousel-caption">
@@ -208,16 +202,27 @@
                 </div>     
                   </div>
                    <!-- Controls -->
-                    <a class="left carousel-control" href="#slider" role="button" data-slide="prev">
-                      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                      <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#slider" role="button" data-slide="next">
-                      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                      <span class="sr-only">Next</span>
-                    </a>
-               </div>
-         </div>     
+                   <div class="sliderControl">
+                      <div class="container">
+                        <ol class="carousel-indicators">
+                          <li data-target="#slider" data-slide-to="0" class="active"></li>
+                          <li data-target="#slider" data-slide-to="1"></li>
+                          <li data-target="#slider" data-slide-to="2"></li>
+                          <li data-target="#slider" data-slide-to="3"></li>
+                          <li data-target="#slider" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-caption carousel-caption-all"></div>
+                        <a class="left carousel-control" href="#slider" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#slider" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                   </div> 
+                   </div>
+               </div>              
      </div>
 </div>
 <div id="content">
