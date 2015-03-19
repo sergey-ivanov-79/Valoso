@@ -94,12 +94,15 @@
     
 	});
   function HideMenu (move) {
-    console.log(lastMove,move)
+    console.log()
+    if ($( ".logoBox").css('position') != 'fixed') {
+      return
+    }
     if (lastMove == move) {
       return
     }
     if (!lastMove || move=='down') {
-            $( ".logoBox" ).animate({
+            $( ".logoBox").animate({
               top:"-50px"
             }, 400 );
            
