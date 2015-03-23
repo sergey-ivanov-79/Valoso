@@ -156,7 +156,7 @@ body:after{
   background:#ff965e!important;
 }
 .butPanel a img {
-  margin:-25px 15px 0px;
+  margin:-25px 10px 0px;
 }
 #conDirector .butPanel a{
   background:#4ccbff;
@@ -689,10 +689,7 @@ footer {
   }
 }
 @media (min-width: 768px) and (max-width: 990px) {
-  .butPanel div a img{
-    margin-right: 25px;
-    margin-left:  25px;
-  }
+
   #topTab li,#userLoginTab li{
     font-size:20px;
   }
@@ -717,9 +714,20 @@ footer {
    #footer .botInfo,#footer .botCopy  {
      margin-top:20px;
    }
+  .butPanel div .butImg{
+    display:block;
+    text-align:center;
+  }
 }
 @media (max-width: 767px) {
-  
+  .butPanel a {
+    max-width:320px;
+    font-size:22px;
+   padding:15px 3px 5px;
+  }
+  .butPanel img {
+    
+  }
   #header {
     margin-top:0px;
   }
@@ -835,6 +843,16 @@ footer {
 
 }
 @media (max-width: 428px) {
+    .butPanel a {
+    max-width:320px;
+    font-size:16px;
+    padding-left:2px;
+    padding-right:2px;
+  }
+  
+  .butPanel img {
+    width:30px;
+  }
     #slideContent .sliderBox .carousel-caption {
     width:100%;
    bottom:2%;;
@@ -890,8 +908,15 @@ footer {
  }
 }
 @media (max-width: 333px) {
+  .butPanel {
+    margin:10px;
+  }
   .butPanel a {
-    
+    font-size:12px;
+    padding:15px 5px 5px;
+  }
+  .butPanel img {
+    width:25px;
   }
   .butPanel a img {
     margin-left:0px;

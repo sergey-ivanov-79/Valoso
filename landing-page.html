@@ -94,7 +94,7 @@
     
 	});
   function HideMenu (move) {
-    console.log()
+    //console.log()
     if ($( ".logoBox").css('position') != 'fixed') {
       return
     }
@@ -107,6 +107,8 @@
             }, 600 );
            
           lastMove =  'down';
+          
+           $('.topMenu ').removeClass('in');
     }
 
     if (move=='up') {
@@ -114,6 +116,8 @@
           top:"0px"
         }, 600 );
         lastMove =  'up';
+        
+        $('.topMenu ').removeClass('in');
     }
 
   }
@@ -241,9 +245,9 @@
      <!-- tab1 -->
      <div class="tab-pane fade in active" id="conDirector" aria-labelledBy="conDirector">     
         <div class="row butPanel">
-            <div class="col-xs-12 col-sm-4 col-lg-4 active left-col"><a href="#postBox" class="anchor"><img src="images/ico-post.png"> Post</a></div>
-            <div class="col-xs-12 col-sm-4 col-lg-4"><a href="#hireBox" class="anchor"><img src="images/ico-hire.png"> Hire</a></div>
-            <div class="col-xs-12 col-sm-4 col-lg-4 right-col"><a href="#receiveBox" class="anchor"><img src="images/ico-lap.png"> Receive</a></div>
+            <div class="col-xs-4 col-sm-4 col-lg-4 left-col"><a href="#postBox" class="anchor"><span class="butImg"><img src="images/ico-post.png"></span> Post</a></div>
+            <div class="col-xs-4 col-sm-4 col-lg-4"><a href="#hireBox" class="anchor"><span class="butImg"><img src="images/ico-hire.png"></span> Hire</a></div>
+            <div class="col-xs-4 col-sm-4 col-lg-4 right-col"><a href="#receiveBox" class="anchor"><span class="butImg"><img src="images/ico-lap.png"></span> Receive</a></div>
         </div>
         <div class="boxCont" id="postBox">
               <fieldset>
@@ -299,9 +303,9 @@
      <!-- tab2 -->
      <div class="tab-pane fade" id="conEditor" aria-labelledBy="conEditor">
         <div class="row butPanel">
-            <div class="col-xs-12 col-sm-4 col-lg-4 active left-col"><a href="#browseBox" class="anchor"><img src="images/ico-bro.png"> Browse</a></div>
-            <div class="col-xs-12 col-sm-4 col-lg-4"><a href="#createBox" class="anchor"><img src="images/ico-cre.png"> Create</a></div>
-            <div class="col-xs-12 col-sm-4 col-lg-4 right-col"><a href="#getBox" class="anchor"><img src="images/ico-get.png"> Get Paid</a></div>
+            <div class="col-xs-4 col-sm-4 col-lg-4 left-col"><a href="#browseBox" class="anchor"><span class="butImg"><img src="images/ico-bro.png"></span> Browse</a></div>
+            <div class="col-xs-4 col-sm-4 col-lg-4"><a href="#createBox" class="anchor"><span class="butImg"><img src="images/ico-cre.png"></span> Create</a></div>
+            <div class="col-xs-4 col-sm-4 col-lg-4 right-col"><a href="#getBox" class="anchor"><span class="butImg"><img src="images/ico-get.png"></span> Get Paid</a></div>
         </div>
         <div class="boxCont" id="browseBox">
               <fieldset>
