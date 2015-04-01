@@ -1,0 +1,273 @@
+input,input:active,input:focus,select,select:active,select:focus,input,input:active,input:focus {
+    outline: none!important;
+}
+.video-project-director .container > h3 {
+  font-size: 36px;
+  color: #9c9c9c;
+  padding: 20px 15px 20px 10px;
+  border-top: solid 2px #868686;
+  border-bottom: solid 2px #868686;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: 15px 50%;
+}
+.describe-project ul {
+    background: #098cc4;
+    padding: 13px 10px 18px 10px;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #6bbadc;
+}
+.describe-project ul li {
+    /* float: left; */
+    list-style: none;
+    margin-right: 20px;
+    display: inline-block;
+    color: white;
+    font-size: 24px;
+}
+.describe-project textarea {
+    border: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    min-height: 334px;
+}
+.describe-project {
+    border: 1px solid #dfdfdf;
+    border-radius: 5px;
+}
+.describe-project ul li a {
+    color: white;
+}
+.vp-form-pack .col-sm-6 {
+    padding-left: 0px;
+}
+
+.vp-form {
+    background: #fefcfb;
+    padding: 15px;
+    margin-bottom: 18px;
+    border-radius: 5px;
+}
+.fixed-price {
+    margin-left: 30px;
+}
+
+.fixed-price input {
+    margin-right: 20px;
+}
+.aud {
+    float: left;
+}
+.aud input {
+    max-width: 95px;
+}
+.aud-content {
+    width: 350px;
+    margin: auto;
+}
+
+.narration label {
+    float: left;
+}
+
+.narration select {
+    float: right;
+}
+
+.form-con.container {
+    background: #f6f3f2;
+    border-radius: 5px;
+}
+.file-to-upload {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    margin-top: 180px;
+}
+.border-line {
+    height: 1px wi;
+    height: 3px;
+    width: 100%;
+    background: #dadada;
+    border-radius: 3px;
+    border: 1px solid white;
+}
+.supported-format {
+    margin-top: 60px;
+    margin-bottom: 265px;
+}
+.public-private {
+    text-align: right;
+}
+.public-private button:first-child {
+    background: #4ccbff;
+    border-left: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    border-top: 1px solid #c4c4c4;
+    border-right: 0px;
+    color: white;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.public-private button:last-child {
+    background: white;
+    border-right: 1px solid #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    border-top: 1px solid #c4c4c4;
+    border-left: 0px;
+    color: #c4c4c4;
+    float: right;
+    border-top-right-radius: 5px;   
+    border-bottom-right-radius: 5px;
+}
+.public-private-video {
+    text-align: right;
+}
+.public-private-video button {
+    background: #4b8dcb;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.video-project-form .vp-form-left .vp-form label {
+    color: #bcbcbc;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.video-project-form .vp-form-left .vp-form input {
+    height: 45px!important;
+    border-radius: 5px!important;
+    outline: none!important;
+    border: solid 1px #bcbcbc;
+    padding-left: 15px!important;
+    margin-bottom: 0px;
+    color: #c4c4c4;
+    font-size: 20px;
+    font-weight: 300;
+}
+.video-project-form .vp-form-left .vp-form > div {
+    margin-bottom: 30px;
+}
+.video-project-form .vp-form-left .vp-form > div:nth-of-type(1) {
+    width: 305px;
+}
+.video-project-form .vp-form-left .vp-form > div:nth-of-type(1) .input-group-btn {
+    height: 45px;
+    padding: 0px!important;
+}
+.video-project-form .vp-form-left .vp-form > div:nth-of-type(1) input {
+    color: #888888!important;
+}
+.video-project-form .vp-form-left .vp-form > div:nth-of-type(1) .input-group,.video-project-form .vp-form > div:nth-of-type(1) ul {
+    width: 305px;
+}
+.video-project-form .vp-form-left .vp-form > div:nth-of-type(1) .input-group-btn button {
+    height: 45px;
+    padding: 0 15px;
+    border: 0;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0px;
+    z-index: 999;
+}
+.video-project-form .vp-form-left .vp-form label > img {
+    margin-left: 20px;
+    width: 25px;
+}
+.video-project-form .vp-form-right .vp-form label {
+    font-size: 20px;
+    color: #474747;
+    font-weight: 300;
+}
+.video-project-form .vp-form-right .vp-form label > img {
+    width: 25px;
+    margin-left: 20px;
+}
+.video-project-form .vp-form-right .aud input {
+    margin: 0 5px;
+    padding: 0!important;
+    font-size: 20px!important;
+    color: #c4c4c4!important;
+    text-align: center;
+    height: 45px;
+    border-radius: 5px;
+    border: solid 1px #bcbcbc;
+}
+.aud label {
+    margin-right: 5px;
+}
+.allow-bid {
+    width: 350px;
+    margin: auto;
+}
+.allow-bid label {
+    margin-left: 10px;
+}
+.video-project-form .vp-form-right > div:nth-of-type(2) {
+    padding-top: 75px;
+}
+.video-project-form .vp-form-right > div:nth-of-type(2) label {
+    margin-bottom: 15px;
+}
+.video-project-form .vp-form-right > div:nth-of-type(1) > div:last-child input {
+    height: 45px;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #888888;
+}
+.video-project-form .vp-form-right > div:nth-of-type(1) {
+    padding-bottom: 53px;
+}
+.video-project-form .vp-form-right > div:nth-of-type(1) > div > label {
+    margin-bottom: 20px;
+}
+.video-project-form .vp-form-right > div:nth-of-type(2) select {
+    height: 45px;
+    max-width: 305px;
+    border-radius: 5px;
+    padding-left: 20px;
+    font-size: 20px;
+    color: #888888;
+}
+.video-project-form .vp-form-right > div:nth-of-type(2) > div {
+    margin-bottom: 45px;
+}
+.vp-form-right .narration {
+    margin-bottom: 20px!important;
+}
+.vp-form-right .narration label {
+    width: 50%;
+    padding-top: 8px;
+}
+.vp-form-right .narration select {
+    width: 50%;
+}
+.form-con > h1 {
+    font-size: 30px;
+    color: #474747;
+    margin: 30px 0 20px;
+}
+.file-to-upload > h2 {
+    font-size: 30px;
+    color: #656565;
+    margin: 0 0 60px;
+    font-weight: 700;
+}
+.file-to-upload > p {
+    font-size: 24px;
+    color: #656565;
+}
+.supported-format article {
+    font-size: 20px;
+    color: #656565;
+}
+.vp-form-right .vp-form .allow-bid {
+    margin-bottom: 24px;
+}

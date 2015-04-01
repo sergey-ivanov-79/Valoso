@@ -1,0 +1,528 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/normalize.css">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
+<link rel="stylesheet" href="css/bootstrap.min.css"> 
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/jquery.tosrus.all.css" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/video-project-page.css">
+<link rel="stylesheet" href="css/vp-form.css">
+<!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+<script>
+  var group = ''; 
+  var lastMove = '';
+  $(function() {
+    $('a[href*=#].anchor:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top-50
+          }, 1000);
+          return false;
+        }
+      }
+    });
+    $('#loginOpen').click(function() {
+       $('#userLoginTab a[href="#conLogin"]').tab('show');   
+       $('#loginBox').modal('show');    
+    });
+    $('#SignOpen').click(function() {
+      $('#userLoginTab a[href="#conSign"]').tab('show'); 
+      $('#loginBox').modal('show');
+    });
+    $('#conDirector .butPanel a').click(function() {
+        $('#conDirector .butPanel').find('.active').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+   $('#conEditor .butPanel a').click(function() {
+        $('#conEditor .butPanel').find('.active').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+    var lastScroll = 0;
+
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >500) {
+          $('.upArrow').show()
+        }else{
+           $('.upArrow').hide()
+        }
+         var st = $(this).scrollTop();
+          //Determines up-or-down scrolling
+          if (st > lastScroll){
+             //Replace this with your function call for downward-scrolling
+             //console.log("DOWN");
+              HideMenu ('down');
+          }
+          else {
+             //Replace this with your function call for upward-scrolling
+             //console.log("UP");
+              HideMenu ('up');
+          }
+          //Updates scroll position
+          lastScroll = st;
+    });
+    
+    $('#slider .carousel-inner .active').each(function() {
+        if (group=='') {
+          $('#slideContent .sliderBox  .carousel-caption-all').html($('#slideContent .sliderBox  .active .carousel-caption').html());
+          $('#slideContent .sliderBox  .carousel-caption-all').show(500);
+          group = $(this).attr('data-group');
+        }       
+    });
+
+    $('#slider').on('slid.bs.carousel', function () {
+      var thisGroup = $(this).find('div.active').attr('data-group');         
+      if ((group != thisGroup)&&(group != '')){
+          $('#slideContent .sliderBox  .carousel-caption-all').hide();
+          $('#slideContent .sliderBox  .carousel-caption-all').html($('#slideContent .sliderBox  .active .carousel-caption').html());
+          $('#slideContent .sliderBox  .carousel-caption-all').show(500);
+          group = thisGroup;
+      }                 
+    });
+    
+  });
+  function HideMenu (move) {
+    //console.log()
+    if ($( ".logoBox").css('position') != 'fixed') {
+      return
+    }
+    if (lastMove == move) {
+      return
+    }
+    if (!lastMove || move=='down') {
+            $( ".logoBox").animate({
+              top:"-50px"
+            }, 600 );
+           
+          lastMove =  'down';
+          
+           $('.topMenu ').removeClass('in');
+    }
+
+    if (move=='up') {
+        $( ".logoBox" ).animate({
+          top:"0px"
+        }, 600 );
+        lastMove =  'up';
+        
+        $('.topMenu ').removeClass('in');
+    }
+
+  }
+  </script>
+</head>
+
+<body>
+<header class="" id="header">
+ <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 logoBox">
+          <a href=""><img src="images/logo.png" /></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+          </button>
+        </div> <!-- /.logobox -->
+        <div class="collapse  col-xs-12 col-sm-9 col-md-9 col-lg-9 topMenu " id="navbar-collapse">
+          <ul>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Faq</a></li>
+            <li><a href="#" id="SignOpen">register</a></li>
+            <li><a href="#" id="loginOpen">Login</a></li>
+          </ul>
+        </div>
+    </div> <!-- /.row -->
+ </div>
+</header>
+
+<div class="video-project-director video-project-form">
+  <div class="container">
+    <h3>Start A Video Project</h3>
+    <p> Welcome to the Video Project Page! Instructions about what Video Director can do on this page like adding notes, viewing screenshots... 
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae gravida ex. 
+      <span>For more information, visit the <b>FAQ</b> page.</span>
+    </p>
+    <div class="clearfix vp-form-pack">
+      <div class="col-sm-6 vp-form-left">
+        <div class="vp-form">
+          <div class="form-group form-group-sm">
+            <label for="search-sleeps12">Choose a Category <img src="images/video-project/info-icon.png" alt="Hover for more info." /></label>
+            <select id="search-sleeps12"  name="sleeps" class="form-control" >
+              <option>Personen</option>
+              <option>1 Person </option>
+            </select>
+          </div> <!-- /.form-group-sm -->
+          <div class="form-group form-group-sm">
+            <label for="search-sleeps">Name your Project <img src="images/video-project/info-icon.png" alt="Hover for more info." /></label>
+            <input type="text" placeholder="What do you need done" class="form-control">
+          </div> <!-- /.form-group-sm -->
+          <label for="search-sleeps">Describe your Project in Detail <img src="images/video-project/info-icon.png" alt="Hover for more info." /></label>
+          <div class="describe-project">
+
+            <ul>
+              <li><a href="#"><i class="fa fa-bold"></i></a></li>
+              <li><a href="#"><i class="fa fa-italic"></i></a></li>
+              <li><a href="#"><i class="fa fa-underline"></i></a></li>
+              <li><a href="#"><i class="fa fa-font"></i></a></li>
+              <li><a href="#"><i class="fa fa-link"></i></a></li>
+              <li><a href="#"><i class="fa fa-picture-o"></i></a></li>
+              <li><a href="#"><i class="fa fa-clipboard"></i></a></li>
+            </ul>
+            <textarea class="form-control"></textarea>
+          </div> <!-- /.describe-project -->
+          <div class="form-group form-group-sm">
+            <label for="search-sleeps">Set Project Date <img src="images/video-project/info-icon.png" alt="Hover for more info." /></label>
+            <input type="text" placeholder="What do you need done" class="form-control">
+          </div> <!-- /.form-group-sm -->
+          <div class="form-group form-group-sm">
+            <label for="search-sleeps">Set Project Deadline <img src="images/video-project/info-icon.png" alt="Hover for more info." /></label>
+            <input type="text" placeholder="What do you need done" class="form-control">
+          </div> <!-- /.form-group-sm -->
+        </div> <!-- /.vp-form -->
+      </div> <!-- /.vp-form-left -->
+      <div class="col-sm-6 vp-form-right">
+        <div class="vp-form">
+           <div class="form-group form-group-sm">
+            <label for="search-sleeps">Set your Price <img src="images/video-project/info-icon.png" alt="Hover for more info." /></label>
+            <div class="fixed-price">
+              <input type="radio"><label> Fixed Price</label>
+            </div> <!-- /.fixed-price -->
+            <div class="fixed-price">
+              <input type="radio"><label> Fixed Price </label>
+            </div> <!-- /.fixed-price -->
+          </div> <!-- /.form-group-sm -->
+          <div class="form-group form-group-sm clearfix">
+            <label for="search-sleeps">Set your Price</label>
+            <div class="clearfix aud-content">
+              <div class="aud">
+                $<input type="text" placeholder="Low"><label>AUD to</label>
+              </div> <!-- /.aud -->
+              <div class="aud">
+                $<input type="text" placeholder="High"><label>AUD</label>
+              </div> <!-- /.aud -->
+            </div> <!-- /.aud-content -->
+          </div> <!-- /.form-group-sm -->
+          <div class="allow-bid">
+            <input type="checkbox"><label>Allow Bid</label>
+          </div> <!-- /.allow-bid -->
+          <div class="form-group form-group-sm">
+            <label for="search-sleeps">Enter Project Tags (optional)</label>
+            <input type="text" placeholder="What do you need done" class="form-control">
+          </div> <!-- /.form-group-sm -->
+        </div> <!-- /.vp-form -->
+        <div class="vp-form">
+          <div class="form-group form-group-sm">
+            <label for="search-sleeps">Choose a Category </label>
+            <select id="search-sleeps" name="sleeps" class="form-control" >
+              <option>Personen</option>
+              <option>1 Person </option>
+            </select>
+          </div> <!-- /.form-group-sm -->
+          <div class="form-group form-group-sm">
+            <label for="search-sleeps">Choose a Category</label>
+            <select id="search-sleeps" name="sleeps" class="form-control" >
+              <option>Personen</option>
+              <option>1 Person </option>
+            </select>
+          </div> <!-- /.form-group-sm -->
+          <div class="form-group form-group-sm narration">
+            <div class="clearfix">
+              <label for="search-sleeps">Narration Required</label>
+              <select id="search-sleeps" name="sleeps">
+                <option>Yes</option>
+                <option>No</option>
+              </select>
+            </div> <!-- /.clearfix -->
+          </div> <!-- /.narration -->
+          <div class="form-group form-group-sm narration">
+            <div class="clearfix">
+            <label for="search-sleeps">Subtitles Required</label>
+            <select id="search-sleeps" name="sleeps">
+              <option>Yes</option>
+              <option>No</option>
+            </select>
+            </div>
+          </div><!-- /.narration -->
+        </div> <!-- /.vp-form -->
+      </div> <!-- /.vp-form-right -->
+    </div> <!-- /.vp-form-pack -->
+    <div class="video-upload">
+      <div class="browse-wrap">
+        <div class="title"><img src="images/video-project/upload-icon.png" alt="" />Choose files <br> from media library</div>
+        <input type="file" name="upload" class="upload" title="Choose a file to upload">
+      </div>
+      <span class="upload-path"></span>
+
+      <div class="browse-wrap">
+        <div class="title"><img src="images/video-project/upload-icon.png" alt="" />Upload from <br>My computer</div>
+        <input type="file" name="upload" class="upload" title="Choose a file to upload">
+      </div>
+      <span class="upload-path"></span>
+      <div class="video-upload-info">
+        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."</p>
+      </div> <!-- /.video-upload-info -->
+    </div> <!-- /.video-upload -->
+  </div> <!-- /.container -->
+</div> <!-- /.video-project-director -->
+
+<div class="form-con container">
+  <h1>Project Files <img src="images/video-project/info-icon.png" alt="Hover for more info." /> </h1>
+  <div class="border-line"></div> <!-- /.border-line -->
+  <div class="file-to-upload">
+    <h2>No file uploaded yet.</h2>
+    <p>Click <b>CHOOSE FILES FROM MEDIA LIBRARY </b>
+    to retrieve files from your Dropbox Account. <br>
+    Click <b> UPLOAD FROM MY COMPUTER</b>
+    to retrieve files straight from your local drive.
+    </p>
+    <div class="supported-format">
+      <article>Supported Formats:</article>
+      <article>VIDEO: fiv, mp4, webM, ogg</article>
+      <article>IMAGE: jpg, png, gif</article>
+    </div> <!-- /.supported-format -->
+  </div> <!-- /.file-to-upload -->
+</div> <!-- /.form-con -->
+<div class="container">
+  <div class="project-files-buttons">
+    <div class="col-sm-12 change-buttons">
+      <img src="images/video-project/info-icon.png" alt="Hover for more info." />
+      <button>Public</button>
+      <button>Private</button>
+    </div> <!-- /.change-buttons -->
+    <div class="col-sm-12 save-project-button">
+      <button>Have your video made</button>
+    </div> <!-- /.save-project-button -->
+  </div> <!-- /.project-files-buttons -->
+</div> <!-- /.container -->
+
+<footer id="footer">
+ <div class="container">
+     <div class="row botInfo">
+         <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 botLink">
+           <h4>About</h4>
+           <ul>
+              <li><a href="">About us</a></li>
+              <li><a href="">How it works</a></li>
+              <li><a href="">Press</a></li>
+              <li><a href="">Careers</a></li>
+           </ul>
+         </div>
+         <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 botLink">
+           <h4>Help</h4>
+           <ul>
+              <li><a href="">Help Center</a></li>
+              <li><a href="">Contact Support</a></li>
+              <li><a href="">FAQ’s</a></li>
+              <li><a href="">Shipping info</a></li>
+              <li><a href="">Fee Schedule</a></li>
+              <li><a href="">Tutorials</a></li>              
+           </ul>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 botLink">
+           <h4>Get Inspired</h4>
+           <p>Weekly top projects, featured designers, tips, and tricks</p>
+           <div class="input-group">
+              <input type="text" class="form-control" placeholder="Enter Email Here">
+              <span class="input-group-btn"><button class="btn btn-default" type="button">Sign Up</button></span>
+           </div>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 botLogo">
+            <a href=""><img src="images/logo-b.png"></a>
+            <div class="socBox">
+                <a href="" class="soc-ico s1"></a>
+                <a href="" class="soc-ico s2"></a>
+                <a href="" class="soc-ico s3"></a>
+                <a href="" class="soc-ico s4"></a>
+                <a href="" class="soc-ico s5"></a>
+                <a href="" class="soc-ico s6"></a>
+                <a href="" class="soc-ico s7"></a>
+                <a href="" class="soc-ico s8"></a>
+                <a href="" class="soc-ico s9"></a>
+                <div class="clearN"></div>
+            </div>
+         </div>
+     </div>
+     <div class="row botCopy">
+         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">Copyright 2015 © Tech International Pty Ltd</div>
+         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><a href="">Privacy Policy</a></div>
+         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a href="">Terms and Conditions</a></div>
+     </div>         
+ 
+ </div>
+</footer>
+<!-- Modal -->
+<div class="modal fade" id="loginBox" tabindex="-1" role="dialog" aria-labelledby="loginBoxLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">Sign up Or Login To Valoso</h3>
+      </div>
+      <div class="modal-body">
+        <ul id="userLoginTab" class="nav nav-tabs">
+            <li class="active"><a href="#conSign" id="tabSign" role="tab" data-toggle="tab" aria-controls="conSign" aria-expanded="true">Sign Up</a></li>
+            <li><a href="#conLogin" role="tab" id="tabLogin" data-toggle="tab" aria-controls="conLogin">Login</a></li>
+        </ul>
+        <div id="userLoginContent" class="tab-content">
+        <!-- tab1 -->
+          <div class="tab-pane fade in active" id="conSign" aria-labelledBy="conSign">
+              <form>
+              <div class="row">
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">First Name</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="firstName" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Last Name</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="lastName" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Email</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="email" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Password</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="password" name="password" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formCheck"><input type="checkbox" name="sendOffers" value="true" />
+                   Send me exclusive offers, tips, and tricks.</div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formText">By signing up, you agree to the <a href="">Terms and Conditions</a></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formSub"><input type="submit" value="Sign Up"></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 line">
+                      <fieldset >
+                        <legend  align="center">Or</legend>
+                      </fieldset>
+                   </div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 butLink"><a href=""><img src="images/ico-drop.png"> Login With Dropbox</a></div>
+              </div>
+              </form>
+          </div>
+        <!-- /tab1 -->
+        <!-- tab2 -->
+          <div class="tab-pane fade" id="conLogin" aria-labelledBy="conLogin">
+            <form>
+              <div class="row">
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Email</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="email" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Password</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="password" name="password" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formCheck"><input type="checkbox" name="sendOffers" value="true" />
+                   Remember me <a href="" class="forgotPass">Forgot Password</a></div>
+                   
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formSub"><input type="submit" value="Login"></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 line">
+                      <fieldset >
+                        <legend  align="center">Or</legend>
+                      </fieldset>
+                   </div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 butLink"><a href=""><img src="images/ico-drop.png"> Login With Dropbox</a></div>
+              </div>
+              </form>
+          </div>
+        <!-- /tab2 -->
+        </div>
+      </div>     
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
+<div id="download-project-files-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Download Project Files</h4>
+      </div>
+      <div class="modal-body">
+        <p>Please select files to download. <span>(5 files selected)</span></p>
+        <form action="" class="clearfix">
+        <div class="col-sm-12">
+          <input id="dl-check-all" type="checkbox" name="picture" value="picture1">Check All
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Download</button>
+        <button type="button" class="btn btn-primary">Cancel</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.download-project-files-modal -->
+<a href="#header" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script type="text/javascript" src="js/jquery.tosrus.min.all.js"></script>
+<script src="js/video-project-page.js"></script>
+<script>
+
+ $('#search-sleeps12').bootstrapSelect({
+      'max-visible-items' : 7
+});
+</script>
+</body>
+</html>
