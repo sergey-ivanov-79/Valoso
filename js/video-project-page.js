@@ -62,7 +62,10 @@ $(document).ready(function(){
 		}
 	/* Upload Button End */
 
-
+	$('.project-files-buttons .change-buttons button').click(function(){
+		$('.project-files-buttons .change-buttons button').removeClass('button-active');
+		$(this).addClass('button-active');
+	});
 });
 
 

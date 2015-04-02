@@ -271,3 +271,20 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
 .vp-form-right .vp-form .allow-bid {
     margin-bottom: 24px;
 }
+.bid2 label {
+  font-weight: 700;
+  margin-bottom: 0px;
+  max-width: 100%;
+  float: left;
+  margin-top: -5px;
+}
+.bid2 input {
+  float: left;
+  width: 50%;
+  margin: -5px 5px 0 5px;
+}
+.bid2 span {
+    display: block;
+    margin-top: -10px;
+    float: left;
+}

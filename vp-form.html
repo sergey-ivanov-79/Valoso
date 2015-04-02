@@ -164,8 +164,8 @@
           <div class="form-group form-group-sm">
             <label for="search-sleeps12">Choose a Category <img src="images/video-project/info-icon.png" alt="Hover for more info." /></label>
             <select id="search-sleeps12"  name="sleeps" class="form-control" >
-              <option>Personen</option>
-              <option>1 Person </option>
+              <option>Choose Below</option>
+              <option>Anything</option>
             </select>
           </div> <!-- /.form-group-sm -->
           <div class="form-group form-group-sm">
@@ -200,53 +200,74 @@
         <div class="vp-form">
            <div class="form-group form-group-sm">
             <label for="search-sleeps">Set your Price <img src="images/video-project/info-icon.png" alt="Hover for more info." /></label>
-            <div class="fixed-price">
-              <input type="radio"><label> Fixed Price</label>
-            </div> <!-- /.fixed-price -->
-            <div class="fixed-price">
-              <input type="radio"><label> Fixed Price </label>
-            </div> <!-- /.fixed-price -->
           </div> <!-- /.form-group-sm -->
           <div class="form-group form-group-sm clearfix">
-            <label for="search-sleeps">Set your Price</label>
-            <div class="clearfix aud-content">
-              <div class="aud">
-                $<input type="text" placeholder="Low"><label>AUD to</label>
-              </div> <!-- /.aud -->
-              <div class="aud">
-                $<input type="text" placeholder="High"><label>AUD</label>
-              </div> <!-- /.aud -->
-            </div> <!-- /.aud-content -->
+            <div class="bid">
+              <div class="form-group rang clearfix">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="fixed-price" name="fixed-price" value="1" data-parsley-multiple="fixed-price" data-parsley-id="2593"> <strong>Fixed Price</strong>
+                </label>
+              </div>
+              <div class="bid-enc clearfix">
+                <div class="form-group bid2 fxd clearfix">
+                  <label>$</label>
+                  <input id="budget_fixed" name="budget_fixed" value="" type="text" class="form-control" onkeypress="return isNumber(event)" data-parsley-id="3967"><ul class="parsley-errors-list" id="parsley-id-3967"></ul> <span>AUD</span>
+                </div>
+
+              </div> <!-- bid enc --> 
+              <div class="form-group rang clearfix">
+                  <label class="checkbox-inline">
+                    <input type="checkbox" id="is_range" name="is_range" value="1" data-parsley-multiple="is_range" data-parsley-id="2593"> <strong>Price Range</strong>
+                  </label><ul class="parsley-errors-list" id="parsley-id-multiple-is_range"></ul>
+                </div>
+                <div class="form-group bid2 range-div clearfix" style="display: none;">
+                  <div class="bid-inn"><label>From: <span style="font-weight:normal;">$</span></label> <input id="budget_min" name="budget_min" value="" type="text" class="form-control" placeholder="Low" onkeypress="return isNumber(event)" data-parsley-id="4027"><ul class="parsley-errors-list" id="parsley-id-4027"></ul> AUD</div>
+                  <div class="bid-inn"><label>To: <span style="font-weight:normal;">$</span></label> <input id="budget_max" name="budget_max" value="" type="text" class="form-control" placeholder="High" onkeypress="return isNumber(event)" data-parsley-id="6201"> AUD  </div>
+                </div> 
+                <div class="form-group all-bid clearfix">
+                <label class="checkbox-inline">
+                  <input type="checkbox" id="allow_bid" name="allow_bid" value="1" data-parsley-multiple="allow_bid" data-parsley-id="9839"> <strong>Allow Bid</strong>
+                </label>
+              </div>
+            </div>
           </div> <!-- /.form-group-sm -->
-          <div class="allow-bid">
-            <input type="checkbox"><label>Allow Bid</label>
-          </div> <!-- /.allow-bid -->
           <div class="form-group form-group-sm">
             <label for="search-sleeps">Enter Project Tags (optional)</label>
-            <input type="text" placeholder="What do you need done" class="form-control">
+            <input type="text" placeholder="" class="form-control">
           </div> <!-- /.form-group-sm -->
         </div> <!-- /.vp-form -->
         <div class="vp-form">
           <div class="form-group form-group-sm">
-            <label for="search-sleeps">Choose a Category </label>
+            <label for="search-sleeps">Video Duration</label>
             <select id="search-sleeps" name="sleeps" class="form-control" >
-              <option>Personen</option>
-              <option>1 Person </option>
+              <option>No preference</option>
+              <option>Under 30 seconds</option>
+              <option>Under 2 minutes</option>
+              <option>Under 5 minutes</option>
+              <option id="other-time">Other</option>
             </select>
           </div> <!-- /.form-group-sm -->
           <div class="form-group form-group-sm">
-            <label for="search-sleeps">Choose a Category</label>
+            <label for="search-sleeps">Audio track</label>
             <select id="search-sleeps" name="sleeps" class="form-control" >
-              <option>Personen</option>
-              <option>1 Person </option>
+              <optgroup label="Alternative">
+                <option value="art-punk">Art Punk</option>
+                <option value="alternative-rock">Alternative Rock</option>
+              </optgroup>
+              <optgroup label="Anime">
+              </optgroup>
+              <optgroup label="Blues">
+                <option value="art-punk">Acoustic Blues</option>
+                <option value="alternative-rock">Chicago Blues</option>
+              </optgroup>
             </select>
           </div> <!-- /.form-group-sm -->
           <div class="form-group form-group-sm narration">
             <div class="clearfix">
               <label for="search-sleeps">Narration Required</label>
               <select id="search-sleeps" name="sleeps">
-                <option>Yes</option>
                 <option>No</option>
+                <option>Yes</option>
               </select>
             </div> <!-- /.clearfix -->
           </div> <!-- /.narration -->
@@ -254,8 +275,8 @@
             <div class="clearfix">
             <label for="search-sleeps">Subtitles Required</label>
             <select id="search-sleeps" name="sleeps">
-              <option>Yes</option>
               <option>No</option>
+              <option>Yes</option>
             </select>
             </div>
           </div><!-- /.narration -->
@@ -303,7 +324,7 @@
     <div class="col-sm-12 change-buttons">
       <img src="images/video-project/info-icon.png" alt="Hover for more info." />
       <button>Public</button>
-      <button>Private</button>
+      <button class="button-active">Private</button>
     </div> <!-- /.change-buttons -->
     <div class="col-sm-12 save-project-button">
       <button>Have your video made</button>

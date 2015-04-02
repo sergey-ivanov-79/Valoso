@@ -205,11 +205,18 @@ div.browse-wrap {
   margin:20px;
   cursor:pointer;
   overflow:hidden;
-  padding:15px 0px;
+  padding:13px 0px;
   text-align:center;
   position:relative;
   background-color:#ff818c;
   border-radius: 10px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+div.browse-wrap:hover {
+  background-color: gold;
 }
 div.title {
   color: #fefefe;
@@ -218,11 +225,12 @@ div.title {
   float: none;
   width: 300px;
   margin: auto;
+  line-height: 29px;
 }
 div.title > img {
   float: left;
   margin-right: 45px;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 input.upload {
   right:0;
@@ -364,6 +372,8 @@ span.upload-path {
   float: left;
   width: 100%;
   padding: 0 20px;
+  height: 690px;
+  overflow-y: scroll;
 }
 .video-list .single-video {
   position: relative;
@@ -684,8 +694,8 @@ span.single-video-hover-buttons > button:nth-of-type(2) {
 }
 .project-files-buttons .change-buttons button:nth-of-type(2) {
   font-size: 20px;
-  color: white;
-  background-color: #4ccbff;
+  color: #a1a1a0; 
+  background-color: white; 
   border: solid 1px #c4c4c4;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -694,6 +704,10 @@ span.single-video-hover-buttons > button:nth-of-type(2) {
   height: 50px;
   margin: 0;
   float: right;
+}
+.project-files-buttons .change-buttons button.button-active {
+  background-color: #4ccbff!important;
+  color: white!important;
 }
 .project-files-buttons .change-buttons button:nth-of-type(1) {
   font-size: 20px;    
@@ -860,6 +874,9 @@ div#links a,div#slider3 a,div#links a,div#slider2 a {
 div#links a img,div#slider3 a img,div#links a img,div#slider2 a img {
   height: 90px;
   border: solid 1px #979797;
+}
+img.video-edit {
+  margin-left: 5px;
 }
 /*
 .tos-slide {
