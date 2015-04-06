@@ -18,6 +18,10 @@
 <link rel="stylesheet" href="css/vp-form.css">
 <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+<script src="js/jquery-1.11.2.min.js"></script>
+
+
+
 <script>
   var group = ''; 
   var lastMove = '';
@@ -174,17 +178,7 @@
           </div> <!-- /.form-group-sm -->
           <label for="search-sleeps">Describe your Project in Detail <img src="images/video-project/info-icon.png" alt="Hover for more info." /></label>
           <div class="describe-project">
-
-            <ul>
-              <li><a href="#"><i class="fa fa-bold"></i></a></li>
-              <li><a href="#"><i class="fa fa-italic"></i></a></li>
-              <li><a href="#"><i class="fa fa-underline"></i></a></li>
-              <li><a href="#"><i class="fa fa-font"></i></a></li>
-              <li><a href="#"><i class="fa fa-link"></i></a></li>
-              <li><a href="#"><i class="fa fa-picture-o"></i></a></li>
-              <li><a href="#"><i class="fa fa-clipboard"></i></a></li>
-            </ul>
-            <textarea class="form-control"></textarea>
+            <textarea class="form-control" id="project_description_field"></textarea>
           </div> <!-- /.describe-project -->
           <div class="form-group form-group-sm">
             <label for="search-sleeps">Set Project Date <img src="images/video-project/info-icon.png" alt="Hover for more info." /></label>
@@ -534,16 +528,38 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.download-project-files-modal -->
 <a href="#header" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
-<script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-select.js"></script>
 <script type="text/javascript" src="js/jquery.tosrus.min.all.js"></script>
 <script src="js/video-project-page.js"></script>
-<script>
 
- $('#search-sleeps12').bootstrapSelect({
-      'max-visible-items' : 7
-});
+<script type="text/javascript" language="javascript" src="js/tinymce/tinymce.min.js"></script>
+
+<script>
+$('document').ready(function(){
+  $('#search-sleeps12').bootstrapSelect({
+    'max-visible-items' : 7
+  });
+
+      tinymce.init({                                                
+        selector: "#project_description_field",
+        theme: "videoblue",
+        menubar:false,
+        statusbar: true,
+        image_description: false,
+        image_dimensions: false,
+        link_title: false,
+        target_list: false,
+        valid_elements : "a[href|target=_blank|style],strong|b,div[class|align|style],br,p[class|align|style],span[class|align|style],font[face|size|color|style],style[type]",
+        toolbar1: " bold italic underline | link image | html | paste",
+      paste_auto_cleanup_on_paste : true,
+      paste_remove_styles: true,
+        paste_remove_styles_if_webkit: true,
+        paste_strip_class_attributes: true,
+        theme_advanced_path : false,
+    });
+})
+
 </script>
 </body>
 </html>
