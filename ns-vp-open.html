@@ -14,6 +14,7 @@
 <link rel="stylesheet" type="text/css" href="css/jquery.tosrus.all.css" />
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/video-project-page.css">
+<link rel="stylesheet" href="css/ns-vp-open.css">
 <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
 <script>
@@ -192,7 +193,7 @@
     <div class="col-sm-5 video-description-right">
       <div class="description-right-up">
         <h4 class="video-dur"><label>Video Duration:</label>
-          <span>20:44</span>
+          <span>Under 30 seconds</span>
           <img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Video Duration</h4><div><select><option>Under 30 seconds</option><option>Under 2 minutes</option><option>Under 5 minutes</option><option>Other</option></select><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" />
         </h4>
         <h4><label>Audio Track:</label> 
@@ -210,23 +211,12 @@
         <div class="title-director">
           <span>Director</span>
         </div> <!-- /.title-director -->
-        <div class="uploader-info">
-          <div class="uploader-avatar">
-            <img src="images/video-project/profile-img.png" alt="Uploader Avatar" />
-          </div> <!-- /.uploader-avatar -->
-          <div class="uploader-short-details">
-            <h5>Shazey2014Editor</h5>
-            <p>It's Wednesday, 7:16 PM <br> in Russian Federation</p>
-            <div class="uploader-rating">
-              <img src="images/video-project/four-half-stars.png" alt="Uploader Rating" /> 4.5
-            </div> <!-- /.uploader-rating -->
-            <a href="#">Report Abuse</a>
-          </div> <!-- /.uploader-short-details -->
-        </div> <!-- /.uploader-info -->
-        <div class="uploader-info-button">
-          <button>Send Message</button>
-          <button>View Milestones</button>
-        </div> <!-- /.uploader-info-button -->
+        <div class="applicants-info">
+          <h5>50000 applicants <span>(1000 new)</span></h5>
+        </div> <!-- /.applicants-info -->
+        <div class="applicants-info-button">
+          <button>View Applicants</button>
+        </div> <!-- /.applicants-info-button -->
       </div> <!-- /.description-right-down -->
     </div> <!-- /.video-description-right -->
     <div class="video-upload">
@@ -275,30 +265,6 @@
             </span><!-- /.single-video-hover-buttons -->
           </div> <!-- /.single-video-hover -->
         </li> <!-- /.single-video -->
-        <li class="single-video">
-          <h5><span class="icon-reorder"><img src="images/video-project/icon-reorder.png" alt="Icon-Reorder" /></span><span class="single-video-title">PictureVE000001.PG</span><span class="video-list-number">#2</span></h5>
-          <div class="col-sm-4 single-video-featuredimg">
-            <div class="video-img-wrap2">
-              
-            </div><!-- /.video-img-wrap -->
-            <a href="#">View 7 Screenshots</a>
-          </div> <!-- /.single-video-featuredimg -->
-          <div class="col-sm-8 single-video-description">
-            <span class="single-video-title">PictureVE000001.PG</span>
-            <p>No description.</p>
-            <div class="video-des-button-wrap">
-              <button>Add Notes</button>
-              <button id="project-delete-file">Delete File</button>
-            </div> <!-- /.video-des-button-wrap -->
-          </div> <!-- /.single-video-description -->
-          <div class="single-video-hover">
-            <h4>Shazey2014Editor has removed this file from your project!</h4>
-            <span class="single-video-hover-buttons">
-              <button>Remove</button>
-              <button>Keep</button>
-            </span><!-- /.single-video-hover-buttons -->
-          </div> <!-- /.single-video-hover -->
-        </li> <!-- /.single-video -->
       </ol><!-- /.video-list -->
     </div> <!-- /.project-files -->
     <div class="screenshot-gallery">
@@ -332,57 +298,13 @@
         </div> <!-- /.gallery-left -->
         <div class="gallery-history-right">
           <div id="links">
-           <a href="images/video-project/screenshot.jpg"><img src="images/video-project/screenshot.jpg" /></a>
-           <a href="images/video-project/screenshot11.jpg"><img src="images/video-project/screenshot11.jpg" /></a>
-           <a href="images/video-project/screenshot12.jpg"><img src="images/video-project/screenshot12.jpg" /></a>
-           <a href="images/video-project/screenshot13.jpg"><img src="images/video-project/screenshot13.jpg" /></a>
-           <a href="images/video-project/screenshot14.jpg"><img src="images/video-project/screenshot14.jpg" /></a>
-           <a href="images/video-project/screenshot.jpg"><img src="images/video-project/screenshot.jpg" /></a>
+           <a href="images/video-project/ns1.jpg"><img src="images/video-project/ns1.jpg" /></a>
+           <a href="images/video-project/ns2.jpg"><img src="images/video-project/ns2.jpg" /></a>
+           <a href="images/video-project/ns3.jpg"><img src="images/video-project/ns3.jpg" /></a>
+           <a href="images/video-project/ns4.jpg"><img src="images/video-project/ns4.jpg" /></a>
+           <a href="images/video-project/ns5.jpg"><img src="images/video-project/ns5.jpg" /></a>
+           <a href="images/video-project/ns1.jpg"><img src="images/video-project/ns1.jpg" /></a>
         </div> <!-- /#links -->
-        </div> <!-- /.gallery-history-right -->
-      </div> <!-- /.gallery-history-director -->
-
-      <div class="gallery-history-editor">
-        <div class="gallery-history-left">
-          <h5>Director</h5>
-          <p>Updated by director <span>DD/MM/YY HH:MM</span></p>
-          <div class="gallery-history-img">
-            <a href="mailto:owner@email.com?Subject=Message%20title" target="_top"><img src="images/video-project/icon-send.png" alt="" /></a>
-            <a href=""><img src="images/video-project/icon-view.png" alt="" /></a>
-            <a href=""><img src="images/video-project/icon-dl.png" alt="" /></a>
-          </div> <!-- /.gallery-history-img -->
-        </div> <!-- /.gallery-left -->
-        <div class="gallery-history-right">
-          <div id="slider2">
-           <a href="images/video-project/screenshot3.jpg"><img src="images/video-project/screenshot3.jpg" /></a>
-           <a href="images/video-project/screenshot21.jpg"><img src="images/video-project/screenshot21.jpg" /></a>
-           <a href="images/video-project/screenshot22.jpg"><img src="images/video-project/screenshot22.jpg" /></a>
-           <a href="images/video-project/screenshot23.jpg"><img src="images/video-project/screenshot23.jpg" /></a>
-           <a href="images/video-project/screenshot24.jpg"><img src="images/video-project/screenshot24.jpg" /></a>
-           <a href="images/video-project/screenshot3.jpg"><img src="images/video-project/screenshot3.jpg" /></a>
-        </div> <!-- /#slider2 -->
-        </div> <!-- /.gallery-history-right -->
-      </div> <!-- /.gallery-history-editor -->
-
-      <div class="gallery-history-director">
-        <div class="gallery-history-left">
-          <h5>Director</h5>
-          <p>Updated by director <span>DD/MM/YY HH:MM</span></p>
-          <div class="gallery-history-img">
-            <a href="mailto:owner@email.com?Subject=Message%20title" target="_top"><img src="images/video-project/icon-send.png" alt="" /></a>
-            <a href=""><img src="images/video-project/icon-view.png" alt="" /></a>
-            <a href=""><img src="images/video-project/icon-dl.png" alt="" /></a>
-          </div> <!-- /.gallery-history-img -->
-        </div> <!-- /.gallery-left -->
-        <div class="gallery-history-right">
-           <div id="slider3">
-           <a href="images/video-project/screenshot1.jpg"><img src="images/video-project/screenshot1.jpg" /></a>
-           <a href="images/video-project/screenshot1.jpg"><img src="images/video-project/screenshot1.jpg" /></a>
-           <a href="images/video-project/screenshot1.jpg"><img src="images/video-project/screenshot1.jpg" /></a>
-           <a href="images/video-project/screenshot1.jpg"><img src="images/video-project/screenshot1.jpg" /></a>
-           <a href="images/video-project/screenshot1.jpg"><img src="images/video-project/screenshot1.jpg" /></a>
-           <a href="images/video-project/screenshot1.jpg"><img src="images/video-project/screenshot1.jpg" /></a>
-        </div> <!-- /#slider3 -->
         </div> <!-- /.gallery-history-right -->
       </div> <!-- /.gallery-history-director -->
     </div> <!-- /.gallery-history -->

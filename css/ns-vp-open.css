@@ -1,0 +1,46 @@
+.applicants-info {
+    background-color: #def5ff;
+    border-radius: 5px;
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+}
+.applicants-info h5 {
+    font-size: 24px;
+    color: #474747;
+    font-weight: 700;
+    text-align: center;
+    padding: 50px 0px;
+    margin: 0;
+}
+.applicants-info h5 span {
+    display: block;
+    font-weight: 400;
+    font-style: italic;
+}
+.applicants-info-button {
+    float: left;
+    width: 100%;
+    text-align: center;
+}
+.applicants-info-button button {
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #4ccbff;
+    border: solid 2px #4ccbff;
+    font-size: 18px;
+    color: #fefefe;
+    font-weight: 700;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.applicants-info-button button:hover {
+    background-color: transparent;
+    color: #4ccbff;
+}
+.featured-screen {
+    background-image: url('../images/video-project/ns-vp-screenshot.jpg');
+}

@@ -66,6 +66,44 @@ $(document).ready(function(){
 		$('.project-files-buttons .change-buttons button').removeClass('button-active');
 		$(this).addClass('button-active');
 	});
+
+
+	
+	$('select').click(function(){
+		$('#music-genre-main').change(function(){
+			if($(this).val() == "jedan") {
+				$(".selekt1").show();
+			} else if ($(this).val() == "dva") {
+				$(".selekt2").show();
+			}
+		})
+	});
+	/* Drag & Drop */
+	$(function(){
+	  $("ol.video-list").sortable()
+	});
+	/* Drag & Drop End*/
+
+	/* Bootstrap Tooltip */
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		});
+	/* Bootstrao Tooltip End */
+	/* Bootstrap Popover */
+		$(function () {
+		  $('[data-toggle="popover"]').popover()
+		})
+	/* Bootstrao Popover End */
+
+	$( ".checkbox-inline1" ).click(function() {
+    $('.fixed-price1').addClass('fxd');
+    $('.fixed-price2').removeClass('fxd');
+	});
+
+	$( ".checkbox-inline2" ).click(function() {
+    $('.fixed-price2').addClass('fxd');
+    $('.fixed-price1').removeClass('fxd');
+	});
 });
 
 

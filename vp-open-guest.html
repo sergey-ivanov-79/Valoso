@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/normalize.css">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
+<link rel="stylesheet" href="css/bootstrap.min.css"> 
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/jquery.tosrus.all.css" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/video-project-page.css">
+<link rel="stylesheet" href="css/video-open-guest.css">
+<!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+<script>
+  var group = ''; 
+  var lastMove = '';
+  $(function() {
+    $('a[href*=#].anchor:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top-50
+          }, 1000);
+          return false;
+        }
+      }
+    });
+    $('#loginOpen').click(function() {
+       $('#userLoginTab a[href="#conLogin"]').tab('show');   
+       $('#loginBox').modal('show');    
+    });
+    $('#SignOpen').click(function() {
+      $('#userLoginTab a[href="#conSign"]').tab('show'); 
+      $('#loginBox').modal('show');
+    });
+    $('#conDirector .butPanel a').click(function() {
+        $('#conDirector .butPanel').find('.active').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+   $('#conEditor .butPanel a').click(function() {
+        $('#conEditor .butPanel').find('.active').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+    var lastScroll = 0;
+
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >500) {
+          $('.upArrow').show()
+        }else{
+           $('.upArrow').hide()
+        }
+         var st = $(this).scrollTop();
+          //Determines up-or-down scrolling
+          if (st > lastScroll){
+             //Replace this with your function call for downward-scrolling
+             //console.log("DOWN");
+              HideMenu ('down');
+          }
+          else {
+             //Replace this with your function call for upward-scrolling
+             //console.log("UP");
+              HideMenu ('up');
+          }
+          //Updates scroll position
+          lastScroll = st;
+    });
+    
+    $('#slider .carousel-inner .active').each(function() {
+        if (group=='') {
+          $('#slideContent .sliderBox  .carousel-caption-all').html($('#slideContent .sliderBox  .active .carousel-caption').html());
+          $('#slideContent .sliderBox  .carousel-caption-all').show(500);
+          group = $(this).attr('data-group');
+        }       
+    });
+
+    $('#slider').on('slid.bs.carousel', function () {
+      var thisGroup = $(this).find('div.active').attr('data-group');         
+      if ((group != thisGroup)&&(group != '')){
+          $('#slideContent .sliderBox  .carousel-caption-all').hide();
+          $('#slideContent .sliderBox  .carousel-caption-all').html($('#slideContent .sliderBox  .active .carousel-caption').html());
+          $('#slideContent .sliderBox  .carousel-caption-all').show(500);
+          group = thisGroup;
+      }                 
+    });
+    
+  });
+  function HideMenu (move) {
+    //console.log()
+    if ($( ".logoBox").css('position') != 'fixed') {
+      return
+    }
+    if (lastMove == move) {
+      return
+    }
+    if (!lastMove || move=='down') {
+            $( ".logoBox").animate({
+              top:"-50px"
+            }, 600 );
+           
+          lastMove =  'down';
+          
+           $('.topMenu ').removeClass('in');
+    }
+
+    if (move=='up') {
+        $( ".logoBox" ).animate({
+          top:"0px"
+        }, 600 );
+        lastMove =  'up';
+        
+        $('.topMenu ').removeClass('in');
+    }
+
+  }
+  </script>
+</head>
+
+<body>
+<header class="" id="header">
+ <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 logoBox">
+          <a href=""><img src="images/logo.png" /></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+          </button>
+        </div> <!-- /.logobox -->
+        <div class="collapse  col-xs-12 col-sm-9 col-md-9 col-lg-9 topMenu " id="navbar-collapse">
+          <ul>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Faq</a></li>
+            <li><a href="#" id="SignOpen">register</a></li>
+            <li><a href="#" id="loginOpen">Login</a></li>
+          </ul>
+        </div>
+    </div> <!-- /.row -->
+ </div>
+</header>
+
+<div class="video-project-director video-open-guest">
+  <div class="container">
+  <h3>This is the Video Project Name </h3>
+    <div class="screenshot-gallery">
+      <h3>Screenshot Gallery Sent By John P. Smith <img src="images/video-project/info-icon.png" alt="Hover for more info." /></h3>
+      <div class="featured-screenshot">
+        <div class="featured-screenshot-wrap clearfix">
+          <div class="featured-screen col-sm-9 clearfix">
+          </div> <!-- /.featured-screen -->
+          <div class="featured-screenshot-text col-sm-3">
+            <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis.</p>
+          </div> <!-- /.featured-screenshot-text -->
+          <h4>SSGVD1P000001SS3.JPG</h4>
+          <h5>DD/MM/YY HH:MM</h5>
+        </div> <!-- /.featured-screenshot-wrap -->
+      </div> <!-- /.featured-screenshot -->
+    </div> <!-- /.screenshot-gallery -->
+    <div class="gallery-history col-sm-12">
+      <div class="gallery-history-director">
+        <div class="gallery-history-left col-sm">
+          <p>Updated by director <span>DD/MM/YY HH:MM</span></p>
+        </div> <!-- /.gallery-left -->
+        <div class="gallery-history-right">
+          <div id="links">
+           <a href="images/video-project/open-screen1.jpg"><img src="images/video-project/open-screen1.jpg" /></a>
+           <a href="images/video-project/open-screen2.jpg"><img src="images/video-project/open-screen2.jpg" /></a>
+           <a href="images/video-project/open-screen3.jpg"><img src="images/video-project/open-screen3.jpg" /></a>
+           <a href="images/video-project/open-screen4.jpg"><img src="images/video-project/open-screen4.jpg" /></a>
+           <a href="images/video-project/open-screen5.jpg"><img src="images/video-project/open-screen5.jpg" /></a>
+           <a href="images/video-project/open-screen1.jpg"><img src="images/video-project/open-screen1.jpg" /></a>
+        </div> <!-- /#links -->
+        </div> <!-- /.gallery-history-right -->
+      </div> <!-- /.gallery-history-director -->
+    </div> <!-- /.gallery-history -->
+    <div class="open-register">
+      <button>Register Today</button>
+      <h5>Or</h5>
+      <button>Login Now</button>
+    </div> <!-- /.open-register -->
+  </div> <!-- /.container -->
+</div> <!-- /.video-project-director -->
+
+<footer id="footer">
+ <div class="container">
+     <div class="row botInfo">
+         <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 botLink">
+           <h4>About</h4>
+           <ul>
+              <li><a href="">About us</a></li>
+              <li><a href="">How it works</a></li>
+              <li><a href="">Press</a></li>
+              <li><a href="">Careers</a></li>
+           </ul>
+         </div>
+         <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 botLink">
+           <h4>Help</h4>
+           <ul>
+              <li><a href="">Help Center</a></li>
+              <li><a href="">Contact Support</a></li>
+              <li><a href="">FAQ’s</a></li>
+              <li><a href="">Shipping info</a></li>
+              <li><a href="">Fee Schedule</a></li>
+              <li><a href="">Tutorials</a></li>              
+           </ul>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 botLink">
+           <h4>Get Inspired</h4>
+           <p>Weekly top projects, featured designers, tips, and tricks</p>
+           <div class="input-group">
+              <input type="text" class="form-control" placeholder="Enter Email Here">
+              <span class="input-group-btn"><button class="btn btn-default" type="button">Sign Up</button></span>
+           </div>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 botLogo">
+            <a href=""><img src="images/logo-b.png"></a>
+            <div class="socBox">
+                <a href="" class="soc-ico s1"></a>
+                <a href="" class="soc-ico s2"></a>
+                <a href="" class="soc-ico s3"></a>
+                <a href="" class="soc-ico s4"></a>
+                <a href="" class="soc-ico s5"></a>
+                <a href="" class="soc-ico s6"></a>
+                <a href="" class="soc-ico s7"></a>
+                <a href="" class="soc-ico s8"></a>
+                <a href="" class="soc-ico s9"></a>
+                <div class="clearN"></div>
+            </div>
+         </div>
+     </div>
+     <div class="row botCopy">
+         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">Copyright 2015 © Tech International Pty Ltd</div>
+         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><a href="">Privacy Policy</a></div>
+         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a href="">Terms and Conditions</a></div>
+     </div>         
+ 
+ </div>
+</footer>
+<!-- Modal -->
+<div class="modal fade" id="loginBox" tabindex="-1" role="dialog" aria-labelledby="loginBoxLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">Sign up Or Login To Valoso</h3>
+      </div>
+      <div class="modal-body">
+        <ul id="userLoginTab" class="nav nav-tabs">
+            <li class="active"><a href="#conSign" id="tabSign" role="tab" data-toggle="tab" aria-controls="conSign" aria-expanded="true">Sign Up</a></li>
+            <li><a href="#conLogin" role="tab" id="tabLogin" data-toggle="tab" aria-controls="conLogin">Login</a></li>
+        </ul>
+        <div id="userLoginContent" class="tab-content">
+        <!-- tab1 -->
+          <div class="tab-pane fade in active" id="conSign" aria-labelledBy="conSign">
+              <form>
+              <div class="row">
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">First Name</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="firstName" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Last Name</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="lastName" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Email</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="email" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Password</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="password" name="password" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formCheck"><input type="checkbox" name="sendOffers" value="true" />
+                   Send me exclusive offers, tips, and tricks.</div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formText">By signing up, you agree to the <a href="">Terms and Conditions</a></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formSub"><input type="submit" value="Sign Up"></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 line">
+                      <fieldset >
+                        <legend  align="center">Or</legend>
+                      </fieldset>
+                   </div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 butLink"><a href=""><img src="images/ico-drop.png"> Login With Dropbox</a></div>
+              </div>
+              </form>
+          </div>
+        <!-- /tab1 -->
+        <!-- tab2 -->
+          <div class="tab-pane fade" id="conLogin" aria-labelledBy="conLogin">
+            <form>
+              <div class="row">
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Email</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="email" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Password</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="password" name="password" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formCheck"><input type="checkbox" name="sendOffers" value="true" />
+                   Remember me <a href="" class="forgotPass">Forgot Password</a></div>
+                   
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formSub"><input type="submit" value="Login"></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 line">
+                      <fieldset >
+                        <legend  align="center">Or</legend>
+                      </fieldset>
+                   </div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 butLink"><a href=""><img src="images/ico-drop.png"> Login With Dropbox</a></div>
+              </div>
+              </form>
+          </div>
+        <!-- /tab2 -->
+        </div>
+      </div>     
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
+<div id="download-project-files-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Download Project Files</h4>
+      </div>
+      <div class="modal-body">
+        <p>Please select files to download. <span>(5 files selected)</span></p>
+        <form action="" class="clearfix">
+        <div class="col-sm-12">
+          <input id="dl-check-all" type="checkbox" name="picture" value="picture1">Check All
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Download</button>
+        <button type="button" class="btn btn-primary">Cancel</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.download-project-files-modal -->
+<a href="#header" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script type="text/javascript" src="js/jquery.tosrus.min.all.js"></script>
+<script src="js/video-project-page.js"></script>
+<script>
+
+ $('#search-sleeps12').bootstrapSelect({
+      'max-visible-items' : 7
+});
+</script>
+</body>
+</html>

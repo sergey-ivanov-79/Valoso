@@ -374,14 +374,16 @@ span.upload-path {
   padding: 0 20px;
   height: 690px;
   overflow-y: scroll;
+  list-style: none;
 }
 .video-list .single-video {
   position: relative;
-  float: left;
+  clear: both;
   width: 100%;
   margin-bottom: 15px;
   border: solid 1px #ebe9e9;
   border-radius: 5px;
+  height: 330px;
 }
 .video-list .single-video > h5 {
   font-size: 20px;
@@ -634,6 +636,8 @@ span.single-video-hover-buttons > button:nth-of-type(2) {
   width: 100%;
   background-color: #efe9e8;
   padding-bottom: 90px;
+  height: 747px;
+  overflow-y: scroll;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
@@ -877,18 +881,86 @@ div#links a img,div#slider3 a img,div#links a img,div#slider2 a img {
 }
 img.video-edit {
   margin-left: 5px;
+  cursor: pointer;
 }
-/*
-.tos-slide {
-  -webkit-transition: all 250ms ease-in-out;
-  -moz-transition: all 250ms ease-in-out;
-  -o-transition: all 250ms ease-in-out;
-  transition: all 250ms ease-in-out;
+.video-des-wrap > p .popover {
+  width: 450px;
+  max-width: 100%;
+  border-color: #bbbbbb;
 }
-.tos-slide:hover {
-  -webkit-transform: rotate(20deg);
-  -moz-transform:    rotate(20deg);
-  -ms-transform:     rotate(20deg);
-  -o-transform:      rotate(20deg);
-  transform:         rotate(20deg);
-}*/
+.video-description-right .description-right-up > h4 .popover {
+  width: 420px; 
+  max-width: 100%;
+  border-color: #bbbbbb;
+}
+.video-des-wrap > p .popover-content > h4,.video-description-right .description-right-up > h4 .popover-content > h4 {
+  margin: 0;
+  padding: 10px 25px 15px;
+  background-color: #f7f7f7;
+  border-bottom: solid 1px #ebebeb;
+  font-size: 20px;
+  color: #333333;
+}
+.video-des-wrap > p .popover-content,.video-description-right .description-right-up > h4 .popover-content {
+  padding: 0;
+}
+.video-des-wrap > p .popover-content textarea {
+  height: 140px;
+  border-radius: 5px;
+  width: 100%;
+  padding: 5px 10px;
+}
+.video-des-wrap > p .popover-content > div,.video-description-right .description-right-up > h4 .popover-content > div {
+  padding: 20px 20px 15px;
+}
+.video-des-wrap > p .popover-content > div button,.video-description-right .description-right-up > h4 .popover-content > div button {
+  border: 0;
+  background: none;
+}
+.video-description-right .description-right-up > h4 .popover-content label {
+  font-size: 18px;
+  color: #474747;
+}
+.video-description-right .description-right-up > h4 .popover-content select {
+  height: 35px;
+  width: 100px;
+  margin: 0 13px;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 18px;
+  color: #474747;
+}
+.video-project-director .container > h3 .popover,.video-pop-input .popover  {
+  width: 420px; 
+  max-width: 100%;
+  border-color: #bbbbbb;
+}
+.video-project-director .container > h3 .popover-content > h4,.video-pop-input .popover-content > h4  {
+  margin: 0;
+  padding: 10px 25px 15px;
+  background-color: #f7f7f7;
+  border-bottom: solid 1px #ebebeb;
+  font-size: 20px;
+  color: #333333;
+}
+.video-project-director .container > h3 .popover-content,.video-pop-input .popover-content  {
+  padding: 0;
+}
+.video-project-director .container > h3 .popover-content > div,.video-pop-input .popover-content > div {
+  padding: 20px 20px 15px;
+}
+.video-project-director .container > h3 .popover-content > div button,.video-pop-input .popover-content > div button  {
+  border: 0;
+  background: none;
+}
+.video-project-director .container > h3 .popover-content input,.video-pop-input .popover-content input {
+  height: 35px;
+  width: 300px;
+  border-radius: 5px;
+  padding-left: 10px;
+  border: solid 1px #bbbbbb;
+}
+.video-description-right .description-right-up > h4.video-dur .popover-content select {
+  width: 70%;
+  margin-left: 0;
+}

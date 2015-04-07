@@ -165,6 +165,7 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
 }
 .video-project-form .vp-form-left .vp-form > div:nth-of-type(1) .input-group,.video-project-form .vp-form > div:nth-of-type(1) ul {
     width: 305px;
+    overflow-y: scroll;
 }
 .video-project-form .vp-form-left .vp-form > div:nth-of-type(1) .input-group-btn button {
     height: 45px;
@@ -287,4 +288,31 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
     display: block;
     margin-top: -10px;
     float: left;
+}
+.genre-sub-dropdown > div > select {
+    display: none;
+}
+.fxd{
+    display: block!important;
+}
+.multiple-select select:nth-of-type(n+2) {
+    display: none;
+}
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+div.video-list div.single-video {
+  position: relative;
+  /** More li styles **/
+}
+div.video-list div.single-video:before {
+  position: absolute;
+  /** Define arrowhead **/
 }
