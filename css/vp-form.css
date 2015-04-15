@@ -286,11 +286,21 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
 }
 .bid2 span {
     display: block;
-    margin-top: -10px;
+    float: right;
+    margin: 0 5px;
+}
+.bid-inn {
+    height: 50px;
+}
+.bid-enc .bid2 span {
     float: left;
+    margin-top: -12px;
 }
 .genre-sub-dropdown > div > select {
     display: none;
+}
+.mce-btn i {
+    cursor: pointer;
 }
 .fxd{
     display: block!important;
@@ -298,10 +308,13 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
 .multiple-select select:nth-of-type(n+2) {
     display: none;
 }
+.hide-select {
+    display: none;
+}
+
 body.dragging, body.dragging * {
   cursor: move !important;
 }
-
 .dragged {
   position: absolute;
   opacity: 0.5;

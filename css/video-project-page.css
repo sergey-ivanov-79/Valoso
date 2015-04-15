@@ -92,10 +92,9 @@ a {
 .video-description-right .title-director span {
   color: white;
   font-size: 20px;
-  padding: 10px 20px;
+  padding: 5px 20px;
   background-color: #555555;
   display: block;
-  width: 116px;
   float: right;
 }
 .video-description-right .title-director {
@@ -397,7 +396,7 @@ span.upload-path {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
-.video-list .single-video:nth-child(2n+2) > h5 {
+.video-list .single-video > h5.green-title {
   background-color: #5dff60;
 }
 span.video-list-number {
@@ -964,3 +963,43 @@ img.video-edit {
   width: 70%;
   margin-left: 0;
 }
+.gallery-history-img a {
+  margin: 0 5px;
+}
+
+
+
+/* Video Project Editor */
+  .video-project-editor .container > p {
+    background-color: #e8fde9;
+    border-color: #5cd75b;
+    color: #5cd75b;
+  }
+  .video-project-editor .container > h3 {
+    background-image: url('../images/video-project/p-editor.png');
+  }
+  .video-project-editor .uploader-info-button > button {
+    background-color: #5dff60;
+    border-color: #5dff60;
+  }
+  .video-project-editor .uploader-info-button > button:hover {
+    background-color: white;
+    color: #5dff60;
+  }
+/* Video Project Editor End */
+
+/* Video Project Editor - View */
+  div.browse-wrap.disabled,div.browse-wrap.disabled:hover  {
+    background-color: #e2e1e1;
+    color: #fefefe;
+  }
+  .video-download > button.disabled,.video-download > button.disabled:hover {
+    background-color: #e2e1e1;
+    border-color: #e2e1e1;
+    color: #fefefe;
+  }
+  .video-des-button-wrap.disabled {
+    text-align: left;
+    padding-left: 15px;
+  }
+/* Video Project Editor - View End */
