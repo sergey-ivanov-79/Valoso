@@ -316,7 +316,7 @@ a:hover {
     margin: 0;
     line-height: 1.1;
 }
-
+.headroom-dop { z-index: 11;}
 .header-stick {
     background-color: #bbbbbb;
     padding-top: 15px;
