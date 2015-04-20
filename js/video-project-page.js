@@ -14,12 +14,12 @@ $(document).ready(function(){
 
 	$('#video-expandall').click(function() {
 		$('.single-video-featuredimg,.single-video-description').fadeIn();
-		$('.video-list .single-video').css({'border-bottom':'solid 1px #ebe9e9'});
+		$('.video-list .single-video').css({'border-bottom':'solid 1px #ebe9e9','height':'330px'});
 		$('.video-list .single-video > h5').css({'margin-bottom':'10px','border-bottom-left-radius':'0px','border-bottom-right-radius':'0px'});
 	});
 	$('#video-collapseall').click(function() {
 		$('.single-video-featuredimg,.single-video-description').fadeOut();
-		$('.video-list .single-video').css({'border-bottom':'0'});
+		$('.video-list .single-video').css({'border-bottom':'0','height':'auto'});
 		$('.video-list .single-video > h5').css({'margin-bottom':'0','border-bottom-left-radius':'5px','border-bottom-right-radius':'5px'});
 	});
 
@@ -68,16 +68,6 @@ $(document).ready(function(){
 	});
 
 
-	
-	$('select').click(function(){
-		$('#music-genre-main').change(function(){
-			if($(this).val() == "jedan") {
-				$(".selekt1").show();
-			} else if ($(this).val() == "dva") {
-				$(".selekt2").show();
-			}
-		})
-	});
 	/* Drag & Drop */
 	$(function(){
 	  $("ol.video-list").sortable()
@@ -104,9 +94,57 @@ $(document).ready(function(){
     $('.fixed-price2').addClass('fxd');
     $('.fixed-price1').removeClass('fxd');
 	});
+
+
+	$('#fixed-price').click(function() {
+	    var checkedBox = $(this).attr("checked");
+        if (checkedBox === true) {
+            $("#is_range").attr('checked', false);
+            $("#allow_bid").attr('checked', false);
+        } else {
+            $("#is_range").removeAttr('checked');
+            $("#allow_bid").removeAttr('checked');                    
+        }
+    });
+    $('#is_range').click(function() {
+	    var checkedBox = $(this).attr("checked");
+        if (checkedBox === true) {
+            $("#fixed-price").attr('checked', false);
+            $("#allow_bid").attr('checked', false);
+        } else {
+            $("#fixed-price").removeAttr('checked');
+            $("#allow_bid").removeAttr('checked');                    
+        }
+    });
+    $('#allow_bid').click(function() {
+	    var checkedBox = $(this).attr("checked");
+	    $('.fixed-price1').removeClass('fxd');
+	    $('.fixed-price2').removeClass('fxd');
+        if (checkedBox === true) {
+            $("#fixed-price").attr('checked', false);
+            $("#is_range").attr('checked', false);
+        } else {
+            $("#fixed-price").removeAttr('checked');
+            $("#is_range").removeAttr('checked');                    
+        }
+    });
 });
 
 
 $(window).resize(function(){
 	
 });
+
+
+	/* Double Select */
+	$(function() {
+        $('#music-genre-main').change(function(){
+            $('.double-select').hide();
+            $('#' + $(this).val()).show();
+        });
+    });
+	/* Double Select End */
+
+	$(document).ready(function(){
+        
+    });
