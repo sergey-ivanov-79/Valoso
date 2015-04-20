@@ -876,7 +876,6 @@ div#links a,div#slider3 a,div#links a,div#slider2 a {
 }
 div#links a img,div#slider3 a img,div#links a img,div#slider2 a img {
   height: 90px;
-  border: solid 1px #979797;
 }
 img.video-edit {
   margin-left: 5px;
@@ -965,8 +964,15 @@ img.video-edit {
 }
 .gallery-history-img a {
   margin: 0 5px;
+  opacity: 0.8;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
-
+.gallery-history-img a:hover {
+  opacity: 1;
+}
 
 
 /* Video Project Editor */

@@ -149,6 +149,7 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
     color: #c4c4c4;
     font-size: 20px;
     font-weight: 300;
+    box-shadow: none!important;
 }
 .video-project-form .vp-form-left .vp-form > div {
     margin-bottom: 30px;
@@ -222,6 +223,8 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
     padding-left: 20px;
     font-size: 20px;
     color: #888888;
+    box-shadow: none!important;
+    border: solid 1px #bcbcbc;
 }
 .video-project-form .vp-form-right > div:nth-of-type(1) {
     padding-bottom: 53px;
@@ -236,6 +239,7 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
     padding-left: 20px;
     font-size: 20px;
     color: #888888;
+    margin-bottom: 20px;
 }
 .video-project-form .vp-form-right > div:nth-of-type(2) > div {
     margin-bottom: 45px;
@@ -296,11 +300,11 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
     float: left;
     margin-top: -12px;
 }
-.genre-sub-dropdown > div > select {
-    display: none;
-}
 .mce-btn i {
     cursor: pointer;
+}
+.mce-panel {
+    border-bottom: 0!important;
 }
 .fxd{
     display: block!important;
