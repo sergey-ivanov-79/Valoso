@@ -199,7 +199,7 @@ a {
   line-height: 30px;
 }
 /* Upload Button */
-div.browse-wrap {
+.browse-wrap {
   top:0;
   left:0;
   margin:20px;
