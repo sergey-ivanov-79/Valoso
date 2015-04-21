@@ -13,13 +13,13 @@
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 <link href="css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/jquery.tosrus.all.css" />
+<link rel="stylesheet" type="text/css" href="css/datepicker.css" />
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/video-project-page.css">
 <link rel="stylesheet" href="css/vp-form.css">
 <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
 <script src="js/jquery-1.11.2.min.js"></script>
-
 
 
 <script>
@@ -166,7 +166,7 @@
       <div class="col-sm-6 vp-form-left">
         <div class="vp-form">
           <div class="form-group form-group-sm">
-            <label for="search-sleeps12">Choose a Category <img data-toggle="popover" data-placement="top" data-html="true" data-trigger="hover" data-content="text" src="images/video-project/info-icon.png" alt="Hover for more info." /></label>
+            <label for="search-sleeps12">Choose a Category <img data-toggle="tooltip" data-placement="top" title="Choosing a category for your project will help you attract specialized designers in your field" src="images/video-project/info-icon.png" alt="Hover for more info." /></label>
             <select id="search-sleeps12"  name="sleeps" class="form-control" >
               <option>Choose Below</option>
               <option>Autos and Vehicles</option>
@@ -184,27 +184,32 @@
             </select>
           </div> <!-- /.form-group-sm -->
           <div class="form-group form-group-sm">
-            <label for="search-sleeps">Name your Project <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="popover" data-placement="top" data-html="true" data-trigger="hover" data-content="text" /></label>
+            <label for="search-sleeps">Name your Project <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="Give name to your project" /></label>
             <input type="text" placeholder="What do you need done" class="form-control">
           </div> <!-- /.form-group-sm -->
-          <label for="search-sleeps">Describe your Project in Detail <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="popover" data-placement="top" data-html="true" data-trigger="hover" data-content="text" /></label>
+          <label for="search-sleeps">Describe your Project in Detail <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="The more detail you give the better the result you will receive in return" /></label>
           <div class="describe-project">
             <textarea class="form-control" id="project_description_field"></textarea>
           </div> <!-- /.describe-project -->
           <div class="form-group form-group-sm">
-            <label for="search-sleeps">Set Project Date <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="popover" data-placement="top" data-html="true" data-trigger="hover" data-content="text" /></label>
-            <input type="text" placeholder="What do you need done" class="form-control">
-          </div> <!-- /.form-group-sm -->
-          <div class="form-group form-group-sm">
-            <label for="search-sleeps">Set Project Deadline <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="popover" data-placement="top" data-html="true" data-trigger="hover" data-content="text" /></label>
-            <input type="text" placeholder="What do you need done" class="form-control">
+            <div class="well">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Set Project Date:<img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="The date you wish to have your project started by" /> <input type="text"  class="span2" value="" id="dpd1"></th>
+                    <th>Set Project Deadline:<img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="The date you wish to have your project finished by" /> <input type="text" class="span2" value="" id="dpd2"></th>
+                  </tr>
+                </thead>
+              </table>
+              </div>
+            <!-- <input type="text" placeholder="What do you need done" class="form-control"> -->
           </div> <!-- /.form-group-sm -->
         </div> <!-- /.vp-form -->
       </div> <!-- /.vp-form-left -->
       <div class="col-sm-6 vp-form-right">
         <div class="vp-form">
            <div class="form-group form-group-sm">
-            <label for="search-sleeps">Set your Price <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="popover" data-placement="top" data-html="true" data-trigger="hover" data-content="text" /></label>
+            <label for="search-sleeps">Set your Price <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="Your choice of pricing for your project. Either set your price or price range, or allow designers to bid for the project"  /></label>
           </div> <!-- /.form-group-sm -->
           <div class="form-group form-group-sm clearfix">
             <div class="bid">
@@ -983,6 +988,7 @@
 <script src="js/video-project-page.js"></script>
 
 <script type="text/javascript" language="javascript" src="js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/bootstrap-datepicker.js"></script>
 
 <script>
 $('document').ready(function(){
@@ -1009,6 +1015,34 @@ $('document').ready(function(){
     });
 })
 
+</script>
+<script type="text/javascript">
+  $('.datepicker').datepicker();
+</script>
+<script type="text/javascript">
+  var nowTemp = new Date();
+  var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+   
+  var checkin = $('#dpd1').datepicker({
+    onRender: function(date) {
+      return date.valueOf() < now.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    if (ev.date.valueOf() > checkout.date.valueOf()) {
+      var newDate = new Date(ev.date)
+      newDate.setDate(newDate.getDate() + 1);
+      checkout.setValue(newDate);
+    }
+    checkin.hide();
+    $('#dpd2')[0].focus();
+  }).data('datepicker');
+  var checkout = $('#dpd2').datepicker({
+    onRender: function(date) {
+      return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+    }
+  }).on('changeDate', function(ev) {
+    checkout.hide();
+  }).data('datepicker');
 </script>
 </body>
 </html>
