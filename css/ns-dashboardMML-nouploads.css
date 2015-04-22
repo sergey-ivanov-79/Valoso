@@ -321,7 +321,16 @@ body {
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
+    border: 3px solid #098cc4;
 }
+.wrapper-favorites:hover {
+    background-color: #fff;    
+}
+.wrapper-favorites:hover .wrapp-img {
+    border-color: #098cc4;
+}
+.wrapper-favorites:hover .white { color: #098cc4 !important;}
+
 .wrapp-img { 
     border: 6px solid #fff;
     border-radius: 100px;
@@ -351,6 +360,7 @@ body {
     width: 315px;
 }
 .group-bottom-big .media .img-download { padding-right: 0; }
+.group-bottom-big .browse-wrap div.title > img {   width: 44px;}
 .group-bottom-big .browse-wrap div.title > img, .img-download {
     margin-right: 35px;
 }
@@ -471,7 +481,7 @@ button.browse-wrap {
     .right-bl .text-center .color-green { font-size: 24px; padding-top: 5px;}
     .left-bl .text-center span.text-bold { font-size: 18px;}
     .left-bl .text-center .gold { font-size: 16px;}
-    
+    .white.p-22 { font-size: 20px;}
     /* END My Project */
     /* Begin my-favorites*/
     
@@ -551,7 +561,7 @@ button.browse-wrap {
         margin-right: 15px;
         width: 25px;
     }
-    .group-bottom-big div.browse-wrap, .wrapp-myContent .video-download { margin: 0;}
+    .group-bottom-big .browse-wrap, .wrapp-myContent .video-download { margin: 0;}
     /* END My Media Library */
 }
 
@@ -628,11 +638,12 @@ button.browse-wrap {
         padding: 5px 3px;
     }
     .group-bottom-big .browse-wrap div.title, .wrapp-myContent .video-download > button {
-        font-size: 11px;
+        font-size: 9px;
     }
+    .group-bottom-big .browse-wrap div.title { line-height: 14px;}
     .group-bottom-big .browse-wrap div.title > img, .img-download {
-      margin-right: 5px;
-      width: 20px;
+      margin-right: 1px;
+      width: 15px;
     }
     .col-xs-6.padd-0 {
         padding-left: 2px;

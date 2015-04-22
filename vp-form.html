@@ -990,6 +990,10 @@
 <script type="text/javascript" language="javascript" src="js/tinymce/tinymce.min.js"></script>
 <script type="text/javascript" language="javascript" src="js/bootstrap-datepicker.js"></script>
 
+<!-- Added -->
+<script type="text/javascript" language="javascript" src="js/tinymce/plugins/placeholder/plugin.js"></script>
+
+<!--
 <script>
 $('document').ready(function(){
   $('#search-sleeps12').bootstrapSelect({
@@ -1015,6 +1019,35 @@ $('document').ready(function(){
     });
 })
 
+</script>
+-->
+<script type="text/javascript">
+$('document').ready(function(){
+  $('#search-sleeps12').bootstrapSelect({
+    'max-visible-items' : 7
+  });
+});
+</script>
+<script type="text/javascript">
+tinymce.init({
+    selector: "#project_description_field",
+    theme: "modern",
+	plugins: [
+        "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+        "searchreplace visualblocks visualchars code fullscreen",
+        "emoticons template paste textcolor colorpicker textpattern",
+        "placeholder"
+    ],
+	menubar:false,
+	statusbar: false,
+	image_description: false,
+	image_dimensions: false,
+	link_title: false,
+	target_list: false,
+   
+    toolbar1: " bold italic underline | forecolor | link image | html | paste",
+	
+});
 </script>
 <script type="text/javascript">
   $('.datepicker').datepicker();
