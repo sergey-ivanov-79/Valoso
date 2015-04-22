@@ -138,6 +138,7 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 20px;
+    width: 100%;
 }
 .video-project-form .vp-form-left .vp-form input {
     height: 45px!important;
@@ -149,7 +150,7 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
     color: #c4c4c4;
     font-size: 20px;
     font-weight: 300;
-    box-shadow: none!important;
+    box-shadow: 1px 1px 0px #e7e5e4!important;
 }
 .video-project-form .vp-form-left .vp-form > div {
     margin-bottom: 30px;
@@ -177,10 +178,14 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
     top: 0;
     right: 0px;
     z-index: 999;
+    outline: none!important;
+    box-shadow: none!important;
+    border: 0!important;
 }
 .video-project-form .vp-form-left .vp-form label > img {
     margin-left: 20px;
     width: 25px;
+    cursor: pointer;
 }
 .video-project-form .vp-form-right .vp-form label {
     font-size: 20px;
@@ -223,7 +228,7 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
     padding-left: 20px;
     font-size: 20px;
     color: #888888;
-    box-shadow: none!important;
+    box-shadow: 1px 1px 0px #e7e5e4!important;
     border: solid 1px #bcbcbc;
 }
 .video-project-form .vp-form-right > div:nth-of-type(1) {
@@ -240,6 +245,9 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
     font-size: 20px;
     color: #888888;
     margin-bottom: 20px;
+    box-shadow: 1px 1px 0px #e7e5e4!important;
+    border-color: #ccc!important;
+    cursor: pointer;
 }
 .video-project-form .vp-form-right > div:nth-of-type(2) > div {
     margin-bottom: 45px;
@@ -277,16 +285,18 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
     margin-bottom: 24px;
 }
 .bid2 label {
-  font-weight: 700;
-  margin-bottom: 0px;
-  max-width: 100%;
-  float: left;
-  margin-top: -5px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    max-width: 100%;
+    float: left;
+    margin-top: -5px;
 }
 .bid2 input {
-  float: left;
-  width: 50%;
-  margin: -5px 5px 0 5px;
+    float: left;
+    width: 50%;
+    margin: -5px 5px 0 5px;
+    box-shadow: 1px 1px 0px #e7e5e4!important;
+    border-color: #ccc!important;
 }
 .bid2 span {
     display: block;
@@ -332,4 +342,52 @@ div.video-list div.single-video {
 div.video-list div.single-video:before {
   position: absolute;
   /** Define arrowhead **/
+}
+.well {
+    background: none!important;
+    border: 0!important;
+    box-shadow: none!important;
+    padding: 0!Important;
+}
+.well table thead tr th {
+    border: 0!important;
+    width: 100%;
+    display: block;
+    padding: 0!important;
+    margin-bottom: 30px;
+    color: #bcbcbc;    font-size: 20px;    font-weight: 300;
+}
+.well table thead tr {
+    width: 100%;
+    float: left;
+}
+.well table thead tr th input {
+    width: 100%;
+    margin-top: 20px;
+}
+.well th > img {
+    margin-left: 20px;
+    width: 25px;
+    cursor: pointer;
+}
+.datepicker.dropdown-menu {
+  width: 260px;
+}
+.tooltip.top .tooltip-arrow  {
+    display: none;
+}
+.tooltip.top {
+    opacity: 1;
+}
+.tooltip-inner {
+    background-color: #fff;
+    color: black;
+    font-weight: 400;
+    box-shadow: 0px 0px 8px #bcbcbc;
+    opacity: 1!important;
+    padding: 10px;
+    border: solid 2px #bcbcbc;
+    max-width: 350px;
+    width: 100%;
+    font-size: 14px;
 }

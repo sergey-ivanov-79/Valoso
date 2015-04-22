@@ -12,16 +12,20 @@ $(document).ready(function(){
 		$('.single-video-hover').fadeOut();
 	});
 
+
 	$('#video-expandall').click(function() {
+		$(this).css('color','#474747');
+		$('#video-collapseall').css('color','#4b8dcb');
+		$('.video-list').removeClass('video-toggle-collapsed');
 		$('.single-video-featuredimg,.single-video-description').fadeIn();
-		$('.video-list .single-video').css({'border-bottom':'solid 1px #ebe9e9','height':'330px'});
-		$('.video-list .single-video > h5').css({'margin-bottom':'10px','border-bottom-left-radius':'0px','border-bottom-right-radius':'0px'});
 	});
 	$('#video-collapseall').click(function() {
+		$(this).css('color','#474747');
+		$('#video-expandall').css('color','#4b8dcb');
+		$('.video-list').addClass('video-toggle-collapsed');
 		$('.single-video-featuredimg,.single-video-description').fadeOut();
-		$('.video-list .single-video').css({'border-bottom':'0','height':'auto'});
-		$('.video-list .single-video > h5').css({'margin-bottom':'0','border-bottom-left-radius':'5px','border-bottom-right-radius':'5px'});
 	});
+
 
 	/* Trigger Lightbox */
 		$("#links a").tosrus();
@@ -66,14 +70,6 @@ $(document).ready(function(){
 		$('.project-files-buttons .change-buttons button').removeClass('button-active');
 		$(this).addClass('button-active');
 	});
-
-
-	/* Drag & Drop */
-	$(function(){
-	  $("ol.video-list").sortable()
-	});
-	/* Drag & Drop End*/
-
 	/* Bootstrap Tooltip */
 		$(function () {
 		  $('[data-toggle="tooltip"]').tooltip()
@@ -128,6 +124,7 @@ $(document).ready(function(){
             $("#is_range").removeAttr('checked');                    
         }
     });
+
 });
 
 
@@ -144,7 +141,61 @@ $(window).resize(function(){
         });
     });
 	/* Double Select End */
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
+	});
 
-	$(document).ready(function(){
-        
-    });
+	/* Drag & Drop */
+	var adjustment
+	$("ol.video-list").sortable({
+	  group: 'no-drop',
+	  handle: '.icon-reorder',
+	  onDragStart: function (item, container, _super) {
+	    // Duplicate items of the no drop area
+	    if(!container.options.drop)
+	      item.clone().insertAfter(item)
+	    _super(item)
+	  }
+	});
+	$("ol.video-list").sortable({
+	  group: 'no-drop',
+	  drop: false
+	});
+	$("ol.video-list").sortable({
+	  group: 'no-drop',
+	  drag: false
+	});
+	/* Drag & Drop End*/
+
+	/* Popup Datepicker */
+	var tmp = $.fn.popover.Constructor.prototype.show;
+	$.fn.popover.Constructor.prototype.show = function () {
+	  tmp.call(this);
+	  if (this.options.callback) {
+	    this.options.callback();
+	  }
+	}
+
+	$(".start-date").popover({ 
+	        placement: 'bottom',
+	        content: '<h4>Edit Project Start Date</h4><div><input class="datepicker" type="text" /><button><img src="images/video-project/okay.png" alt="Okay" /></button><button><img src="images/video-project/cancel.png" alt="Cancel" /></button></div>',
+	        html: true, 
+	  callback: function() { 
+	    $('.datepicker').datepicker(); 
+	  } 
+	}).click(function (e) {
+	        e.preventDefault();
+	 });
+
+
+	$(".end-date").popover({ 
+	        placement: 'bottom',
+	        content: '<h4>Edit Project Deadline Date</h4><div><input class="datepicker" type="text" /><button><img src="images/video-project/okay.png" alt="Okay" /></button><button><img src="images/video-project/cancel.png" alt="Cancel" /></button></div>',
+	        html: true, 
+	  callback: function() { 
+	    $('.datepicker').datepicker(); 
+	  } 
+	}).click(function (e) {
+	        e.preventDefault();
+	 });
+	/* Popup Datepicker End */
