@@ -93,45 +93,38 @@ $(document).ready(function(){
 
 
 	$('#fixed-price').click(function() {
+		$(".for-hide2").toggleClass('d-none1');
 	    var checkedBox = $(this).attr("checked");
         if (checkedBox === true) {
             $("#is_range").attr('checked', false);
-            $("#allow_bid").attr('checked', false);
         } else {
-            $("#is_range").removeAttr('checked');
-            $("#allow_bid").removeAttr('checked');                    
+            $("#is_range").removeAttr('checked');                   
         }
     });
     $('#is_range').click(function() {
+    	$(".for-hide1").toggleClass('d-none1');
+        $(".fixed-price2").toggleClass('d-none1');
 	    var checkedBox = $(this).attr("checked");
         if (checkedBox === true) {
             $("#fixed-price").attr('checked', false);
-            $("#allow_bid").attr('checked', false);
         } else {
-            $("#fixed-price").removeAttr('checked');
-            $("#allow_bid").removeAttr('checked');                    
+            $("#fixed-price").removeAttr('checked');              
         }
     });
     $('#allow_bid').click(function() {
-	    var checkedBox = $(this).attr("checked");
-	    $('.fixed-price1').removeClass('fxd');
-	    $('.fixed-price2').removeClass('fxd');
-        if (checkedBox === true) {
-            $("#fixed-price").attr('checked', false);
-            $("#is_range").attr('checked', false);
-        } else {
-            $("#fixed-price").removeAttr('checked');
-            $("#is_range").removeAttr('checked');                    
-        }
+    	$(".for-hide1").toggleClass('d-none');
+    	$(".for-hide2").toggleClass('d-none');
     });
 
+    $('.carousel').carousel({
+    	interval: false
+	}); 
+    
 });
-
 
 $(window).resize(function(){
 	
 });
-
 
 	/* Double Select */
 	$(function() {
@@ -186,7 +179,6 @@ $(window).resize(function(){
 	}).click(function (e) {
 	        e.preventDefault();
 	 });
-
 
 	$(".end-date").popover({ 
 	        placement: 'bottom',
