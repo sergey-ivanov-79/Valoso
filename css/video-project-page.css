@@ -87,7 +87,7 @@ a {
   border: solid 8px #e2e1e1;
   float: left;
   width: 100%;
-  padding: 0 20px 20px 20px;
+  padding: 0 20px 12px 20px;
 }
 .video-description-right .title-director span {
   color: white;
@@ -99,7 +99,7 @@ a {
 }
 .video-description-right .title-director {
   float: left;
-  margin: 15px 0px;
+  margin: 10px 0px;
   width: 100%;
 }
 .video-description-right .uploader-info {
@@ -656,7 +656,7 @@ span.single-video-hover-buttons > button:nth-of-type(2) {
 .gallery-history-director .gallery-history-left,.gallery-history-editor .gallery-history-left {
   border: solid 1px #c4c4c4;
   width: 230px;
-  border-radius: 5px;
+  border-radius: 10px;
   overflow: hidden;
   padding-bottom: 15px;
 }
@@ -664,10 +664,14 @@ span.single-video-hover-buttons > button:nth-of-type(2) {
   color: white;
   font-size: 24px;
   text-transform: uppercase;
-  background-color: #4ccbff;
   text-align: center;
   margin: 0;
   padding: 10px 0px;
+  font-weight: 700;
+  background: -webkit-linear-gradient(#4dc8fc, #0a8dc5); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#4dc8fc, #0a8dc5); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#4dc8fc, #0a8dc5); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#4dc8fc, #0a8dc5); /* Standard syntax */
 }
 .gallery-history-director .gallery-history-left p,.gallery-history-editor .gallery-history-left p {
   font-size: 20px;
@@ -690,7 +694,10 @@ span.single-video-hover-buttons > button:nth-of-type(2) {
   margin: 0 5px;
 }
 .gallery-history-editor .gallery-history-left > h5 {
-  background-color: #5dff60;
+  background: -webkit-linear-gradient(#5dfd60, #5cd75b); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#5dfd60, #5cd75b); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#5dfd60, #5cd75b); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#5dfd60, #5cd75b); /* Standard syntax */
 }
 .project-files-buttons {
   position: relative;
@@ -870,7 +877,7 @@ div#download-project-files-modal .modal-body form {
 .gallery-history-right #links > div,.gallery-history-right #slider3 > div,.gallery-history-right #slider2 > div {
   background-color: white;
   border: solid 1px #c4c4c4;
-  border-radius: 5px;
+  border-radius: 10px;
   padding-right: 10px;
   padding-top: 10px;
 }
@@ -1065,4 +1072,13 @@ body.dragging, body.dragging * {
   margin-bottom: 0;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+}
+.header-color-track {
+  margin: 0 -20px;
+}
+.header-color-track img {
+  width: 100%;
+}
+.video-description-right .description-right-up > h4 {
+  margin-bottom: 20px;
 }
