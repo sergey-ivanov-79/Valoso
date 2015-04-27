@@ -896,12 +896,12 @@ img.video-edit {
   max-width: 100%;
   border-color: #bbbbbb;
 }
-.video-description-right .description-right-up > h4 .popover {
+.video-description-right .description-right-up > h4 .popover,.single-video-description .popover {
   width: 420px; 
   max-width: 100%;
   border-color: #bbbbbb;
 }
-.video-des-wrap > p .popover-content > h4,.video-description-right .description-right-up > h4 .popover-content > h4 {
+.video-des-wrap > p .popover-content > h4,.video-description-right .description-right-up > h4 .popover-content > h4,.single-video-description .popover-content > h4 {
   margin: 0;
   padding: 10px 25px 15px;
   background-color: #f7f7f7;
@@ -909,7 +909,7 @@ img.video-edit {
   font-size: 20px;
   color: #333333;
 }
-.video-des-wrap > p .popover-content,.video-description-right .description-right-up > h4 .popover-content {
+.video-des-wrap > p .popover-content,.video-description-right .description-right-up > h4 .popover-content,.single-video-description .popover-content {
   padding: 0;
 }
 .video-des-wrap > p .popover-content textarea {
@@ -918,10 +918,10 @@ img.video-edit {
   width: 100%;
   padding: 5px 10px;
 }
-.video-des-wrap > p .popover-content > div,.video-description-right .description-right-up > h4 .popover-content > div {
+.video-des-wrap > p .popover-content > div,.video-description-right .description-right-up > h4 .popover-content > div,.single-video-description .popover-content > div  {
   padding: 20px 20px 15px;
 }
-.video-des-wrap > p .popover-content > div button,.video-description-right .description-right-up > h4 .popover-content > div button {
+.video-des-wrap > p .popover-content > div button,.video-description-right .description-right-up > h4 .popover-content > div button,.single-video-description .popover-content > div button  {
   border: 0;
   background: none;
 }
@@ -961,7 +961,7 @@ img.video-edit {
   border: 0;
   background: none;
 }
-.video-project-director .container > h3 .popover-content input,.video-pop-input .popover-content input,.project-deadline .popover-content input {
+.video-project-director .container > h3 .popover-content input,.video-pop-input .popover-content input,.project-deadline .popover-content input,.single-video-description .popover-content input {
   height: 35px;
   width: 300px;
   border-radius: 5px;

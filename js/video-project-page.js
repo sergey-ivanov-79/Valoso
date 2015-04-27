@@ -142,7 +142,7 @@ $(window).resize(function(){
 	var adjustment
 	$("ol.video-list").sortable({
 	  group: 'no-drop',
-	  handle: '.icon-reorder',
+	  handle: '.drag-drop',
 	  onDragStart: function (item, container, _super) {
 	    // Duplicate items of the no drop area
 	    if(!container.options.drop)
