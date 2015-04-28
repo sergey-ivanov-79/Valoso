@@ -198,7 +198,7 @@ a {
   line-height: 30px;
 }
 /* Upload Button */
-div.browse-wrap {
+.browse-wrap {
   top:0;
   left:0;
   margin:20px;
@@ -214,7 +214,7 @@ div.browse-wrap {
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-div.browse-wrap:hover {
+.browse-wrap:hover {
   background-color: gold;
 }
 div.title {

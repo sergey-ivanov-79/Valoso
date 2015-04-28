@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/normalize.css">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
+<link rel="stylesheet" href="css/bootstrap.css" />
+<!--
+<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+-->
+<link href="css/font-awesome.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.tosrus.all.css" />
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/video-project-page.css"/>
+<link rel="stylesheet" href="css/vp-form.css"/>
+<link rel="stylesheet" href="css/lightbox.css"/>
+
+<link rel="stylesheet" href="css/colorbox.css" />
+
+<link rel="stylesheet" href="css/style-prev.css"/>
+<link rel="stylesheet" href="css/ns-dashboardMML-nouploads.css"/>		
+<!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+</head>
+
+<body>
+<header id="header-top">
+    <div class="header header-dop header-mobile proj-forum headroom-dop">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm-12">
+    				<nav class="navbar navbar-default navbar-mobile" role="navigation">
+                        <div class="col-navbar">
+            				<div class="col-navbar-wrap no-margin-bottom">
+            					<ul class="shop-msg-noti-icos clearfix">
+            						<li><a href="#" title="shopping cart"><i class="ico ico-cart2"></i></a></li>
+            						<li><a href="#" title="Inbox" class="hasItem"><span class="badge">5</span><i class="ico ico-inbox"></i></a></li>
+            						<li><a href="#" title="Notifications"><i class="ico ico-notify"></i></a></li>
+            					</ul>
+            					<div class="dropdown profile-dropdown profile-dropdown-mobile">
+            						<img data-toggle="dropdown" src="./images/p-a/img-1-public.png" alt="Name of User" width="56" height="56" class="userProp img-mobile">
+            					    <a data-toggle="dropdown" href="#" class="toogleDrpDwn"><i class="ico b-caret b-caret-mobile"></i></a>
+            						
+            						<div class="dropdown dropdown-tip dropdown-menu dropdown-menu-mobile dropdown-menu-new" role="menu" aria-labelledby="dLabel"> 
+            						  <strong>webadmin@gmail.com</strong>
+        							  <ul class="dropdown-menu-inner">
+                                        <li><a href="#"><i class="fa fa-user"></i>Edit Profile</a></li>
+        							    <li><a href="#"><i class="fa fa-usd"></i>Orders</a></li>
+        							    <li><a href="#"><i class="fa fa-cog"></i>Settings</a></li>
+                                        <li><a href="#"><i class="fa fa-question"></i>Help</a></li>
+                                        <li><a href="#"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+        							  </ul>
+          						    </div>
+            					</div>
+            				</div>
+            			</div>
+    				    <!-- Brand and toggle get grouped for better mobile display -->
+    				    <div class="cols">
+                            <div class="navbar-header navbar-header-mobile" style="background: none #fff;">
+        				      <button type="button" class="navbar-toggle collapsed button-mobile" data-toggle="collapse" data-target="#navbar-collapse-1">
+        				        <span class="sr-only">Toggle navigation</span>
+        				        <span class="icon-bar"></span>
+        				        <span class="icon-bar"></span>
+        				        <span class="icon-bar"></span>
+        				      </button>
+        				      <a style="display:block;" class="navbar-brand navbar-brand-mobile" href="#"><h1 class="logo"><span class="word-1">va</span><span class="word-2">lo</span><span class="word-3">so</span></h1></a>
+                              
+        				    </div>
+                        </div> <!-- column 8 for navbar -->
+    				    <!-- Collect the nav links, forms, and other content for toggling -->
+    				    <div class="collapse navbar-collapse clearfix" id="navbar-collapse-1">
+    				      <ul class="nav navbar-nav navbar-nav-dop nav-list">
+    				        <li class="active current">
+                                <a href="#"><i class="fa fa-home pull-left"></i>HOME
+                                    <i class="fa fa-sort-desc"></i>
+                                    <!--i class="fa fa-sort-desc"></i-->
+                                </a>
+                                <ul class="secondaryNavList-dop">
+                                    <li class="">
+                                        <a href="./dashboard-mobile.html" class="navLink active">Dashboard</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./contract-page-1.html" class="navLink">Contracts</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./weekly-summary-page.html" class="navLink">Weekly Summary</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="./transaction-history.html" class="navLink">Transaction History</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./active-events-page-new.html" class="navLink">Active Events</a>
+                                    </li>
+                                </ul>
+                            </li>
+    				        <li><a href="#"><i class="fa fa-cloud-upload pull-left"></i>Upload</a></li>
+    				        <li><a href="#"><i class="fa fa-file-text-o pull-left"></i>Projects</a></li>
+    				        <li><a href="#"><i class="fa fa-search pull-left"></i>Search For Video Editors</a></li>
+    				      </ul>
+    				    </div><!-- /.navbar-collapse -->
+    				</nav>
+    			
+    			</div>
+                <div class="col-sm-12 clearfix wrapper-submainmenu">
+                    <div class="navTabpanel navInline submainmenu">
+                        <nav class="navbar navbar-default" class="pageCentered" role="navigation">
+                            <ul class="secondaryNavList">
+                                <li class="active">
+                                    <a href="./dashboard-mobile.html" class="navLink gray active">Dashboard</a>
+                                </li>
+                                <li class="">
+                                    <a href="./contract-page-1.html" class="navLink gray">Contracts</a>
+                                </li>
+                                <li class="">
+                                    <a href="./weekly-summary-page.html" class="navLink gray">Weekly Summary</a>
+                                </li>
+                                <li class="">
+                                    <a href="./transaction-history.html" class="navLink gray">Transaction History</a>
+                                </li>
+                                <li class="">
+                                    <a href="./active-events-page-new.html" class="navLink gray">Active Events</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div id="" class="col-sm-12-max col-sm-12-max-dop">
+                    <div class="wrapp-shop-msg-noti-icos clearfix line-bott">
+                        <div class="pull-left">
+                            <h3 class="h3 gray margin-top-5">Dashboard<br /><span class="gray p-11"></span></h3>
+                            
+                        </div>
+                        <ul class="shop-msg-noti-icos">
+            				<li><a href="#" title="shopping cart"><i class="ico ico-cart2"></i></a></li>
+            				<li><a href="#" title="Inbox" class="hasItem"><span class="badge">5</span><i class="ico ico-inbox"></i></a></li>
+            				<li><a href="#" title="Notifications"><i class="ico ico-notify"></i></a></li>
+            			</ul>
+                    </div>
+                </div>
+    		</div>
+    	</div> <!-- .container -->
+    </div>
+    <!--div class="container">
+         <div class="wrapper-aevents">
+            <div class="aevents">
+                <div class=" alert-danger alert-dismissable alert" style="margin-top: 15px;">
+                   <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                        Milestone payment for <strong>#27 TEST PROJECT for Annie</strong> setup under the project <strong>TEST PROJECT for Annie</strong> has been requested by <strong>bobby</strong>.
+                        <a style="color: inherit; text-decoration: underline; cursor:pointer;" onclick="milestoneSelect(1)">Click here</a> to RELEASE the funds for that milestone or visit the <a style="color: inherit; text-decoration: underline;" href="https://staging.mylocal3dprinting.com/contract/details/1">designer's contract page</a>
+                </div>
+            </div>
+         </div>
+    </div-->
+</header> <!-- header -->
+
+<section class="content">
+    <div class="wrapper-form-con">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="home-dash-menu">
+                    <div role="tabpanel">
+                        <div class="wrapper-tabs">
+                            <div class="wrapper-nav-icon-based headroom-icons">
+                                <!-- Begin Nav tabs -->
+                                <ul class="nav nav-tabs nav-icon-based" role="tablist">
+                                    <li role="present" class="active">
+                                        <a href="#myProjects" aria-controls="myProjects" role="tab" data-toggle="tab">
+                                            <i class="fa fa-file-text-o"></i>
+                                            <p class="tab-p padd-p">My Projects</p>
+                                        </a>
+                                    </li>
+                                    <li role="present">
+                                        <a href="#myMediaLibrary" aria-controls="myMediaLibrary" role="tab" data-toggle="tab">
+                                            <i class="fa  fa-video-camera"></i>
+                                            <p class="tab-p padd-p">My Media Library</p>
+                                        </a>
+                                    </li>
+                                    <li role="present">
+                                        <a href="#myCalendar" aria-controls="myCalendar" role="tab" data-toggle="tab">
+                                            <i class="fa  fa-calendar"></i>
+                                            <p class="tab-p padd-p">My Calendar</p>
+                                        </a>
+                                    </li>
+                                    <li role="present">
+                                        <a href="#myFavorites" aria-controls="myFavorites" role="tab" data-toggle="tab">
+                                            <i class="fa fa-heart"></i>
+                                            <p class="tab-p padd-p">My Favorites</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <!-- END Nav tabs --> 
+                            </div> 
+                        </div>                        
+                        <!-- Begin Tab panes -->
+                        <div class="tab-content">
+                        
+                            <div role="tabpanel" class="tab-pane active" id="myProjects">
+                                <div class="wrapp-myContent">
+                                    <div class="my-projects clearfix bord-bott"><!-- Begin my-projects -->
+                                        <h1 class="h1">My Projects</h1>
+                                        <ol class="breadcrumb">
+                                          <li class=""><a href="#">Dashboard</a></li>
+                                          <li class="active">My Projects</li>
+                                        </ol>
+                                    </div><!-- END my-projects -->
+                                </div>
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane" id="myMediaLibrary">
+                                <div class="row">
+                                    <div class="wrapp-myContent">
+                                        <div class="my-mediaLibrary clearfix bord-bott"><!-- Begin my-mediaLibrary -->
+                                            <h1 class="h1">My Media Library</h1>
+                                            <ol class="breadcrumb">
+                                              <li class=""><a href="#">Dashboard</a></li>
+                                              <li class="active">My Media Library</li>
+                                            </ol>
+                                        </div><!-- Begin my-mediaLibrary -->
+                                        <div class="group-bottom-big">
+                                            <div class="row">
+                                                <div class="col-xs-6 padd-0">
+                                                    <div class="wrapper-browse-wrap">
+                                                        <div class="browse-wrap">
+                                                            <div class="title"><img src="images/video-project/upload-icon.png" alt="" /><p>Upload from <br/>My computer</p></div>
+                                                            <input type="file" name="upload" class="upload" title="Choose a file to upload">
+                                                        </div>
+                                                    </div>
+                                                    <span class="upload-path"></span>
+                                                </div>
+                                                <div class="col-xs-6 padd-0">
+                                                    <div class="wrapper-browse-wrap">
+                                                        <button class="btn browse-wrap" id="video-download" data-toggle="modal" data-target="#download-project-files-modal">
+                                                            <div class="title"><img src="images/p-a/download-img.png" alt=""/><p>Download <br/>Files</p></div>
+                                                        </button>
+                                                    </div>
+                                                    <span class="upload-path"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wrapper-form clearfix">
+                                            <div class="form-no-file">
+                                                <h2 class="h2"><span class="color-blue">Media Library</span><img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="popover" data-placement="right auto" data-html="true" data-trigger="hover" data-content="<strong>Supported Formats:</strong><br/><i><strong>VIDEO:</strong> .fiv, .mp4, .webM, .ogg</i><br/><i><strong>IMAGE:</strong> .jpg, .png, .gif</i>" /> </h2>
+                                                <div class="border-line"></div> 
+                                                <div class="clearfix">
+                                                    <div class="image-cont-group">
+                                                        <div class="row row-5">
+                                                            <div class="col-xs-4 col-xs-4-dop">
+                                                                <div class="thumbnail">
+                                                                    <a href="images/p-a/img-med-big-1.png" style="max-width: 100%; max-height: 100%;" class="group1 img-responsive" title="Picture00001.jpg">
+                                                                        <img src="images/p-a/img-med-min-1.png" alt="image"/>
+                                                                    </a>
+                                                                    <div class="mini-icons-img">
+                                                                        <div class="clearfix">
+                                                                            <div class="pull-left"><img src="images/p-a/progects-icon-1.png" class="pos-rel"/><span class="color-blue">9999999</span></div>
+                                                                            <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>00:00:00</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-4 col-xs-4-dop">
+                                                                <div class="thumbnail">
+                                                                    <a href="images/p-a/img-med-big-2.png" class="group1 img-responsive" title="Picture00002.jpg">
+                                                                        <img src="images/p-a/img-med-min-2.png" alt="image"/>
+                                                                    </a>
+                                                                    <div class="mini-icons-img">
+                                                                        <div class="clearfix">
+                                                                            <div class="pull-left"><img src="images/p-a/progects-icon-1.png" class="pos-rel"/><span class="color-blue">9999999</span></div>
+                                                                            <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>00:00:00</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-4 col-xs-4-dop">
+                                                                <div class="thumbnail">
+                                                                    <a href="images/p-a/img-med-big-3.png" class="group1 img-responsive" title="Picture00003.jpg">
+                                                                        <img src="images/p-a/img-med-min-3.png" alt="image"/>
+                                                                    </a>
+                                                                    <div class="mini-icons-img">
+                                                                        <div class="clearfix">
+                                                                            <div class="pull-left"><img src="images/p-a/progects-icon-1.png" class="pos-rel"/><span class="color-blue">9999999</span></div>
+                                                                            <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>00:00:00</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row row-5">
+                                                            <div class="col-xs-4 col-xs-4-dop">
+                                                                <div class="thumbnail">
+                                                                    <a href="images/p-a/img-med-big-4.png" class="group1 img-responsive" title="Picture00004.jpg">
+                                                                        <img src="images/p-a/img-med-min-4.png" alt="image"/>
+                                                                    </a>
+                                                                    <div class="mini-icons-img">
+                                                                        <div class="clearfix">
+                                                                            <div class="pull-left"><img src="images/p-a/progects-icon-1.png" class="pos-rel"/><span class="color-blue">9999999</span></div>
+                                                                            <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>00:00:00</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-4 col-xs-4-dop">
+                                                                <div class="thumbnail">
+                                                                    <a href="images/p-a/img-med-big-5.png" class="group1 img-responsive" title="Picture00005.jpg">
+                                                                        <img src="images/p-a/img-med-min-5.png" alt="image"/>
+                                                                    </a>
+                                                                    <div class="mini-icons-img">
+                                                                        <div class="clearfix">
+                                                                            <div class="pull-left"><img src="images/p-a/progects-icon-1.png" class="pos-rel"/><span class="color-blue">9999999</span></div>
+                                                                            <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>00:00:00</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xs-4 col-xs-4-dop">
+                                                                <div class="thumbnail">
+                                                                    <a href="images/p-a/img-med-big-6.png" class="group1 img-responsive" title="Picture00006.jpg">
+                                                                        <img src="images/p-a/img-med-min-6.png" alt="image"/>
+                                                                    </a>
+                                                                    <div class="mini-icons-img">
+                                                                        <div class="clearfix">
+                                                                            <div class="pull-left"><img src="images/p-a/progects-icon-1.png" class="pos-rel"/><span class="color-blue">9999999</span></div>
+                                                                            <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>00:00:00</span></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <a href="#"><div class="loadmore"><p>Load More</p></div></a>
+                                                        <div class="row row-5 dis-block-none">
+                                                            <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-1.png" class="group1 img-responsive" title="Picture00001.jpg"><img src="images/p-a/img-med-min-1.png" alt="image"/></a></div>
+                                                            <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-2.png" class="group1 img-responsive" title="Picture00002.jpg"><img src="images/p-a/img-med-min-2.png" alt="image"/></a></div>
+                                                            <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-3.png" class="group1 img-responsive" title="Picture00003.jpg"><img src="images/p-a/img-med-min-3.png" alt="image"/></a></div>
+                                                        </div>
+                                                        <div class="row row-5 dis-block-none">
+                                                            <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-4.png" class="group1 img-responsive" title="Picture00004.jpg"><img src="images/p-a/img-med-min-4.png" alt="image"/></a></div>
+                                                            <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-5.png" class="group1 img-responsive" title="Picture00005.jpg"><img src="images/p-a/img-med-min-5.png" alt="image"/></a></div>
+                                                            <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-6.png" class="group1 img-responsive" title="Picture00006.jpg"><img src="images/p-a/img-med-min-6.png" alt="image"/></a></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <!-- /.form-con -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane" id="myCalendar">
+                                <div class="wrapp-myContent">
+                                    <div class="my-calendar clearfix bord-bott"><!-- my-calendar -->
+                                        <h1 class="h1">My Calendar</h1>
+                                        <ol class="breadcrumb">
+                                          <li class=""><a href="#">Dashboard</a></li>
+                                          <li class="active">My Calendar</li>
+                                        </ol>
+                                    </div><!-- Begin my-calendar -->
+                                </div>
+                            </div>
+                            
+                            <div role="tabpanel" class="tab-pane" id="myFavorites">
+                                <div class="wrapp-myContent">
+                                    <div class="my-favorites clearfix bord-bott"><!-- Begin my-favorites -->
+                                        <h1 class="h1">My Favorites</h1>
+                                        <ol class="breadcrumb">
+                                          <li class=""><a href="#">Dashboard</a></li>
+                                          <li class="active">My Favorites</li>
+                                        </ol>
+                                    </div><!-- Begin my-favorites -->
+                                    <div class="row">
+                                        <div class="user-2 col-xs-6 col-sm-4">
+                                            <div class="wrapper-favorites">
+                                                <img class="wrapp-img" src="images/p-a/favorites-img1.png" />
+                                                <p class="white p-22">Shazey2014Editor</p>
+                                                <p class="white p-14 padd-top-bott">Australia</p>
+                                                <div class="gold">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <span class="white">5</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-2 col-xs-6 col-sm-4">
+                                            <div class="wrapper-favorites">
+                                                <img class="wrapp-img" src="images/p-a/favorites-img1.png" />
+                                                <p class="white p-22">Shazey2014Editor</p>
+                                                <p class="white p-14 padd-top-bott">Australia</p>
+                                                <div class="gold">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <span class="white">5</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-2 col-xs-6 col-sm-4">
+                                            <div class="wrapper-favorites">
+                                                <img class="wrapp-img" src="images/p-a/favorites-img1.png" />
+                                                <p class="white p-22">Shazey2014Editor</p>
+                                                <p class="white p-14 padd-top-bott">Australia</p>
+                                                <div class="gold">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <span class="white">5</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-2 col-xs-6 col-sm-4">
+                                            <div class="wrapper-favorites">
+                                                <img class="wrapp-img" src="images/p-a/favorites-img1.png" />
+                                                <p class="white p-22">Shazey2014Editor</p>
+                                                <p class="white p-14 padd-top-bott">Australia</p>
+                                                <div class="gold">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <span class="white">5</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-2 col-xs-6 col-sm-4">
+                                            <div class="wrapper-favorites">
+                                                <img class="wrapp-img" src="images/p-a/favorites-img1.png" />
+                                                <p class="white p-22">Shazey2014Editor</p>
+                                                <p class="white p-14 padd-top-bott">Australia</p>
+                                                <div class="gold">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <span class="white">5</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="user-2 col-xs-6 col-sm-4">
+                                            <div class="wrapper-favorites">
+                                                <img class="wrapp-img" src="images/p-a/favorites-img1.png" />
+                                                <p class="white p-22">Shazey2014Editor</p>
+                                                <p class="white p-14 padd-top-bott">Australia</p>
+                                                <div class="gold">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <span class="white">5</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        <!-- END Tab panes -->
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer id="footer">
+ <div class="container">
+     <div class="row botInfo">
+         <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 botLink">
+           <h4>About</h4>
+           <ul>
+              <li><a href="">About us</a></li>
+              <li><a href="">How it works</a></li>
+              <li><a href="">Press</a></li>
+              <li><a href="">Careers</a></li>
+           </ul>
+         </div>
+         <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 botLink">
+           <h4>Help</h4>
+           <ul>
+              <li><a href="">Help Center</a></li>
+              <li><a href="">Contact Support</a></li>
+              <li><a href="">FAQ’s</a></li>
+              <li><a href="">Shipping info</a></li>
+              <li><a href="">Fee Schedule</a></li>
+              <li><a href="">Tutorials</a></li>              
+           </ul>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 botLink">
+           <h4>Get Inspired</h4>
+           <p>Weekly top projects, featured designers, tips, and tricks</p>
+           <div class="input-group">
+              <input type="text" class="form-control" placeholder="Enter Email Here">
+              <span class="input-group-btn"><button class="btn btn-default" type="button">Sign Up</button></span>
+           </div>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 botLogo">
+            <a href=""><img src="images/logo-b.png"></a>
+            <div class="socBox">
+                <a href="" class="soc-ico s1"></a>
+                <a href="" class="soc-ico s2"></a>
+                <a href="" class="soc-ico s3"></a>
+                <a href="" class="soc-ico s4"></a>
+                <a href="" class="soc-ico s5"></a>
+                <a href="" class="soc-ico s6"></a>
+                <a href="" class="soc-ico s7"></a>
+                <a href="" class="soc-ico s8"></a>
+                <a href="" class="soc-ico s9"></a>
+                <div class="clearN"></div>
+            </div>
+         </div>
+     </div>
+     <div class="row botCopy">
+         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">Copyright 2015 © Tech International Pty Ltd</div>
+         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><a href="">Privacy Policy</a></div>
+         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a href="">Terms and Conditions</a></div>
+     </div>         
+ 
+ </div>
+</footer>
+<!-- /Modal -->
+<div id="download-project-files-modal" class="modal fade">
+    <div class="modal-dialog"><!-- Begin  modal-dialog -->
+        <div class="modal-content"><!-- Begin  modal-content -->
+            <div class="modal-header"><!-- Begin  modal-header -->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">DOWLOAD FILES</h4>
+            </div><!-- END  modal-header -->
+            <div class="modal-body"><!-- Begin  modal-body -->
+                <p class="select-fil">Please select multiple files to download. <span>(5 files selected)</span></p>
+                <form action="" class="clearfix form-imges">
+                    <div class="col-sm-12">
+                        <input type="checkbox" name="picture" value="picture1" id="selecctall"><span class="sel-all">Select All</span>
+                    </div>
+                    <div class="col-xs-4 width-100">
+                        <div class="video-img">
+                            <img src="images/p-a/pop-up-img-1.png" />
+                        </div> <!-- /.video-img -->
+                        <input type="checkbox" name="picture" class="checkbox1" value="Picture000001"><span class="span-p">Picture000001.JPG</span>
+                    </div>
+                    <div class="col-xs-4 width-100">
+                        <div class="video-img">
+                            <img src="images/p-a/pop-up-img-2.png" />
+                        </div> <!-- /.video-img -->
+                        <input type="checkbox" name="video" class="checkbox1" value="Video000001"><span class="span-p">Video000001.JPG</span>
+                    </div>
+                    <div class="col-xs-4 width-100">
+                        <div class="video-img">
+                            <img src="images/p-a/pop-up-img-3.png" />
+                        </div> <!-- /.video-img -->
+                        <input type="checkbox" name="picture" class="checkbox1" value="Picture000002"><span class="span-p">Picture000002.JPG</span>
+                    </div>
+                    <div class="col-xs-4 width-100">
+                        <div class="video-img">
+                            <img src="images/p-a/pop-up-img-4.png" />
+                        </div> <!-- /.video-img -->
+                        <input type="checkbox" name="video" class="checkbox1" value="Video000002"><span class="span-p">Video000002.JPG</span>
+                    </div>
+                    <div class="col-xs-4 width-100">
+                        <div class="video-img">
+                            <img src="images/p-a/pop-up-img-5.png" />
+                        </div> <!-- /.video-img -->
+                        <input type="checkbox" name="picture" class="checkbox1" value="Picture000003"><span class="span-p">Picture000003.JPG</span>
+                    </div>
+                    <div class="col-xs-4 width-100">
+                        <div class="video-img">
+                            <img src="images/p-a/pop-up-img-6.png" />
+                        </div> <!-- /.video-img -->
+                        <input type="checkbox" name="picture" class="checkbox1" value="Picture000004"><span class="span-p">Picture000004.JPG</span>
+                    </div>
+                    <div class="col-xs-4 width-100">
+                        <div class="video-img">
+                            <img src="images/p-a/pop-up-img-1.png" />
+                        </div> <!-- /.video-img -->
+                        <input type="checkbox" name="picture" class="checkbox1" value="Picture000001"><span class="span-p">Picture000001.JPG</span>
+                    </div>
+                </form>
+            </div><!-- END  modal-body -->
+            <div class="modal-footer"><!-- Begin  modal-footer -->
+                <button type="button" class="btn btn-default" data-dismiss="modal">Download</button>
+                <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Cancel</button>
+            </div><!-- END  modal-footer -->
+        </div><!-- END  modal-content -->
+    </div><!-- EndND  modal-dialog -->
+</div><!-- /.download-project-files-modal -->
+
+<script src="js/jquery-1.11.2.min.js"></script>
+
+<script>
+  var group = ''; 
+  var lastMove = '';
+  $(function() {
+    $('a[href*=#].anchor:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top-50
+          }, 1000);
+          return false;
+        }
+      }
+    });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >500) {
+          $('.upArrow').show()
+        }else{
+           $('.upArrow').hide()
+        }
+    });
+  });
+</script>
+
+<a href="#header-top" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
+
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script type="text/javascript" src="js/jquery.tosrus.min.all.js"></script>
+<!--
+<script src="js/video-project-page.js"></script>
+-->
+
+<script type="text/javascript" language="javascript" src="js/tinymce/tinymce.min.js"></script>
+<script src="js/lightbox.js"></script>
+
+<script>
+    $(function(){
+     var myClick = $('[data-toggle="collapse"]');
+     myClick.click(function(){
+        $('body').toggleClass('opened-navigation');
+    });
+    // Navigation submenu
+		
+	$(document).on('click', '.nav-list li > a', function() {
+    var parent = $(this).parents('li').eq(0);
+    if( parent.hasClass('opened-submeny') ){
+        parent.removeClass('opened-submeny');
+    }
+    else {
+       $(this).parents('ul').eq(0).find('> li.opened-submeny').removeClass('opened-submeny');
+    	 parent.addClass('opened-submeny');    
+         
+    }
+    });
+        
+    
+});
+</script>
+<script type="text/javascript">
+	$(document).ready(function() {
+    $('#selecctall').click(function(event) {  //on click
+        if(this.checked) { // check select status
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"              
+            });
+        }else{
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                      
+            });        
+        }
+    });
+	$(".checkbox1").click(function () {
+        if (!$(this).is(":checked")){
+            $("#selecctall").prop("checked", false);
+        }else{
+            var flag = 0;
+            $(".checkbox1").each(function(){
+                if(!this.checked)
+                flag=1;
+            })             
+                        if(flag == 0){ $("#selecctall").prop("checked", true);}
+        }
+    });
+ });
+</script>
+<script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+</script>
+<script type="text/javascript" src="js/headroom.min.js"></script>
+<script type="text/javascript" src="js/jquery.headroom.js"></script>
+<script type="text/javascript">
+    // Init Headroom for .header
+    $(".header").headroom(); 
+
+    // Init Headroom for .headroom-icons
+    $(".headroom-icons").headroom({
+        offset: 209    
+    }); 
+</script> 
+<script src="js/jquery.colorbox.js"></script>
+<script>
+	$(document).ready(function(){
+		//Examples of how to assign the Colorbox event to elements
+		$(".group1").colorbox({rel:'group1'});
+		$ .colorbox.resize('.group1')
+	});
+</script>
+</body>
+</html>
