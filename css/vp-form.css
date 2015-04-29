@@ -1,6 +1,9 @@
 input,input:active,input:focus,select,select:active,select:focus,input,input:active,input:focus {
     outline: none!important;
 }
+input {
+    color: black!important;
+}
 .video-project-director .container > h3 {
   font-size: 36px;
   color: #9c9c9c;
@@ -202,7 +205,7 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
     margin: 0 5px;
     padding: 0!important;
     font-size: 20px!important;
-    color: #c4c4c4!important;
+    color: black!important;
     text-align: center;
     height: 45px;
     border-radius: 5px;
@@ -229,7 +232,7 @@ input,input:active,input:focus,select,select:active,select:focus,input,input:act
     border-radius: 5px;
     padding-left: 20px;
     font-size: 15px;
-    color: #888888;
+    color: black;
     box-shadow: 1px 1px 0px #e7e5e4!important;
     border: solid 1px #bcbcbc;
 }
