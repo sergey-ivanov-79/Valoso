@@ -91,8 +91,14 @@ button.video-snap {
     margin-top: 30px;
     padding-top: 10px;
     padding-bottom: 5px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
-
+button.video-snap:hover {
+  background-color: gold;
+}
 .container.dow-del-btn {
     text-align: center;
 }
@@ -111,6 +117,13 @@ button.video-snap {
     text-align: left;
     line-height: 29px;
     text-transform: uppercase;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.container.dow-del-btn button:hover {
+  background:  #04C307;
 }
 
 .save-project-btn {
@@ -119,7 +132,7 @@ button.video-snap {
 
 .container.save-project-btn button {
     background: #4b8dcb;
-    border: 0px;
+    border: solid 2px #4b8dcb;
     color: white;
     font-size: 24px;
     font-weight: bold;
@@ -128,8 +141,15 @@ button.video-snap {
     padding: 15px 0px;
     border-radius: 5px;
     width: 340px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
-
+.container.save-project-btn button:hover {
+  background: transparent;
+  color: #4b8dcb;
+}
 .col-sm-12.video-space {
     background: #fefcfb;
     border: 1px solid #e2e1e1;
@@ -180,6 +200,13 @@ button.video-snap {
     border: 1px solid #e2e1e1!important;
     float: left;
     margin: 0 2px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.all-info-button button:hover {
+  background:  #04C307;
 }
 
 .all-info-button {
@@ -264,8 +291,14 @@ button.video-snap {
   line-height: 29px;
   border-radius: 5px;  
   text-transform: uppercase;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
-
+.video-notes1 .container.dow-del-btn button:hover {
+  background: #098cc4;
+}
 .video-notes1 .all-info-button button {
   width: 52px;
   height: 49px;
@@ -275,18 +308,31 @@ button.video-snap {
   border: 1px solid #e2e1e1;
   float: left;
   margin: 0 2px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
-
+.video-notes1 .all-info-button button:hover {
+  background: #098cc4;
+}
 .gallery-history-right .pull-right button {
     background: #ff818c;
-    border: 0px;
+    border: solid 2px #ff818c;
     border-radius: 25px;
     color: white;
     font-size: 20px;
     font-weight: bold;
     padding: 4px 20px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
-
+.gallery-history-right .pull-right button:hover {
+  background: transparent;
+  color: #ff818c;
+}
 .gallery-history-right {
     padding-top: 20px;
     padding-left: 20px;
@@ -335,7 +381,7 @@ h1.editor-gallery {
 }
 
 .three-button button {
-  border: 0px;
+  border: solid 2px #555555;
   background: #555555;
   color: white;
   font-size: 20px;
@@ -344,8 +390,15 @@ h1.editor-gallery {
   font-weight: bold;
   width: 275px;
   margin: 30px 5px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
-
+.three-button button:hover {
+  background: transparent;
+  color: #555555;
+}
 .carousel-control {
   position: absolute;
   top: 0;
@@ -395,6 +448,7 @@ a.right.carousel-control > span > span {
 a.right.carousel-control > span > span > span,a.left.carousel-control > span > span > span {
   display: block;
   text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
 }
 .video-space > p {
   margin: 20px 0px 28px;
@@ -673,9 +727,12 @@ span.timeline-time-red:after {
   height: 411px;
   overflow-y: scroll;
   width: 100%;
+  overflow-x: hidden;
 }
 .disabled {
     background-color: #e2e1e1!important;
+    border-color: #e2e1e1!important;
+    color: white!important;
 }
 .selected {
   border-color: #51ccff!important;
@@ -700,8 +757,10 @@ span.timeline-time-red:after {
   background: linear-gradient(to bottom, #1e5799 0%,#7db9e8 0%,#2989d8 100%,#207cca 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#207cca',GradientType=0 );
 }
-.gallery-history-right.clearfix #slider2 {
+.gallery-history-right.clearfix #sliderTimeline {
   margin-top: 20px;
+  float: left;
+  width: 100%;
 }
 .timeline-title.blue-timeline h2 span {
   background: -webkit-linear-gradient(to left, #50ccff, #098cc4);
@@ -729,4 +788,34 @@ span.timeline-time-red:after {
 }
 .blue-12 {
   background: #4ccbff!important;
+}
+#sliderTimeline .tos-slider {
+  text-align: center;
+  padding: 0 30px!important;
+}
+#sliderTimeline .tos-slider > div {
+  padding: 0 5px;
+}
+#sliderTimeline .tos-slider > div > a {
+  overflow: hidden;
+}
+.tos-prev span,.tos-next span {
+  display: none;
+}
+.tos-prev {
+  background-image: url("../images/video-project/arrow-left.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin-top: -10px;
+  left: 10px;
+}
+.tos-next {
+  background-image: url("../images/video-project/arrow-right.png");
+  background-repeat: no-repeat;
+  background-color: transparent;
+  margin-top: -10px;
+  right: -10px;
+}
+#sliderTimeline .tos-slider > div > a > img {
+  width: 100%;
 }

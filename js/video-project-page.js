@@ -49,6 +49,13 @@ $(document).ready(function(){
 		      visible  : 5
 		   }
 		});
+		$("#sliderTimeline a").tosrus();
+		$("#sliderTimeline").tosrus({
+		   infinite : true,
+		   slides   : {
+		      visible  : 7
+		   }
+		});
 	/* Trigger Lightbox End */
 
 	/* Upload Button */
