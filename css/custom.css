@@ -412,7 +412,7 @@ h1.editor-gallery {
   filter: alpha(opacity=50);
   opacity: .5;
 }
-
+ 
 a.left.carousel-control {
     left: -110px;
     top: 40px;
@@ -422,6 +422,7 @@ a.right.carousel-control {
     top: 40px;
     right: -110px;
 }
+
 .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next,.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
   background-color: #c4c4c4;
   height: 36px;
