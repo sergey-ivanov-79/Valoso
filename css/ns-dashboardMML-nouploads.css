@@ -1066,6 +1066,8 @@ button.browse-wrap {
         opacity: 0.65; 
         z-index: 40; 
     }
+    .min-text-menu { font-size: 12px !important;}
+    .nav-list li a.min-text-menu .fa { font-size: 16px;}
 }
 @media (max-width: 479px) {
     .row-offcanvas-left .sidebar-offcanvas {   left: -75% !important;}
