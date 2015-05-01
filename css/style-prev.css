@@ -1075,10 +1075,10 @@ a:hover {
     .headroom-dop.headroom--pinned {
         position: fixed;
         top: 0;
-        -webkit-transition: all .55s ease-in-out;
-        -moz-transition: all .55s ease-in-out;
-        -o-transition: all .55s ease-in-out;
-        transition: all .55s ease-in-out;
+        -webkit-transition: all .55s ease-out;
+        -moz-transition: all .55s ease-out;
+        -o-transition: all .55s ease-out;
+        transition: all .55s ease-out;
     }
     .headroom-dop.headroom--unpinned {
        position: fixed;
