@@ -128,6 +128,15 @@
 
   }
   </script>
+  <script type="text/javascript">
+  function countChar(val) {
+        var len = val.value.length;
+        if (len >= 60) {
+          val.value = val.value.substring(0, 60);
+        } else {
+          $('#charNum').text(60 - len);
+        }
+    };</script>
 </head>
 
 <body>
@@ -184,8 +193,8 @@
             </select>
           </div> <!-- /.form-group-sm -->
           <div class="form-group form-group-sm">
-            <label for="search-sleeps">Name your Project <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="Give name to your project" /></label>
-            <input type="text" placeholder="What do you need done" class="form-control">
+            <label for="search-sleeps">Name your Project <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="What do you need done?" /><div id="charNum">60</div></label>
+            <input type="text" placeholder="" class="form-control" id="field" onkeyup="countChar(this)">
           </div> <!-- /.form-group-sm -->
           <label for="search-sleeps">Describe your Project in Detail <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="The more detail you give the better the result you will receive in return" /></label>
           <div class="describe-project">
@@ -213,36 +222,36 @@
           </div> <!-- /.form-group-sm -->
           <div class="form-group form-group-sm clearfix">
             <div class="bid">
-              <div class="form-group rang clearfix">
-                <label class="checkbox-inline checkbox-inline1">
-                  <input type="checkbox" id="fixed-price" name="fixed-price" value="1" data-parsley-multiple="fixed-price" data-parsley-id="2593"> <strong>Fixed Price</strong>
+              <div class="form-group rang clearfix for-hide1">
+                <label class="checkbox-inline checkbox-inline1" style="padding-left: 0px;">
+                  Fixed Price
                 </label>
               </div>
-              <div class="bid-enc clearfix">
-                <div class="form-group bid2 fixed-price1 clearfix" style="display:none">
+              <div class="bid-enc for-hide1 clearfix">
+                <div class="form-group bid2 fixed-price1 clearfix">
                   <label>$</label>
                   <input id="budget_fixed" name="budget_fixed" value="" type="text" class="form-control" onkeypress="return isNumber(event)" data-parsley-id="3967"><ul class="parsley-errors-list" id="parsley-id-3967"></ul> <span>AUD</span>
                 </div>
               </div> <!-- bid enc --> 
-              <div class="form-group rang clearfix">
+              <div class="form-group rang clearfix for-hide2">
                   <label class="checkbox-inline checkbox-inline2">
-                    <input type="checkbox" id="is_range" name="is_range" value="1" data-parsley-multiple="is_range" data-parsley-id="2593"> <strong>Price Range</strong>
+                    <input type="checkbox" id="is_range" name="is_range" value="1" data-parsley-multiple="is_range" data-parsley-id="2593"> Price Range
                   </label><ul class="parsley-errors-list" id="parsley-id-multiple-is_range"></ul>
                 </div>
-                <div class="form-group fixed-price2 bid2 range-div  clearfix" style="display: none;">
+                <div class="form-group fixed-price2 for-hide2 bid2 range-div d-none1  clearfix">
                   <div class="bid-inn"><label>From: <span style="font-weight:normal;">$</span></label> <input id="budget_min" name="budget_min" value="" type="text" class="form-control" placeholder="Low" onkeypress="return isNumber(event)" data-parsley-id="4027"><ul class="parsley-errors-list" id="parsley-id-4027"></ul> AUD</div>
                   <div class="bid-inn"><label>To: <span style="font-weight:normal;">$</span></label> <input id="budget_max" name="budget_max" value="" type="text" class="form-control" placeholder="High" onkeypress="return isNumber(event)" data-parsley-id="6201"> AUD  </div>
                 </div> 
                 <div class="form-group all-bid clearfix">
-                <label class="checkbox-inline">
-                  <input type="checkbox" id="allow_bid" name="allow_bid" value="1" data-parsley-multiple="allow_bid" data-parsley-id="9839"> <strong>Allow Bid</strong>
+                <label class="checkbox-inline for-hide">
+                  <input type="checkbox" id="allow_bid" name="allow_bid" value="1" data-parsley-multiple="allow_bid" data-parsley-id="9839"> Allow Bid
                 </label>
               </div>
             </div>
           </div> <!-- /.form-group-sm -->
           <div class="form-group form-group-sm">
             <label for="search-sleeps">Enter Project Tags (optional)</label>
-            <input type="text" placeholder="Tag1, Tag2" class="form-control">
+            <input type="text" placeholder="Tags (e.g., Wedding Video, Ski Trip, Company Introduction)" class="form-control">
           </div> <!-- /.form-group-sm -->
         </div> <!-- /.vp-form -->
         <div class="vp-form">
@@ -258,48 +267,33 @@
           </div> <!-- /.form-group-sm -->
           <div class="form-group form-group-sm multiple-select">
             <select id="music-genre-main" class="form-control" >
-              <option>Music genre</option>
-              <option value="alternative-genre">Alternative</option>
-              <option value="anime-genre">Anime</option>
+              <option>No preference</option>
+              <option value="alternative-genre">Alternative Music</option>
               <option value="blues-genre">Blues</option>
-              <option value="children-genre">Children’s Music</option>
-              <option value="classical-genre">Classical</option>
-              <option value="comedy-genre">Comedy</option>
-              <option value="commercial-genre">Commercial (thank you Sheldon Reynolds)</option>
-              <option value="country-genre">Country</option>
-              <option value="dance-genre">Dance (EMD – Electronic Dance Music – see Electronic below – with thx to Eric Shaffer-Whiting)</option>
-              <option value="disney-genre">Disney</option>
+              <option value="classical-genre">Classical Music</option>
+              <option value="country-genre">Country Music</option>
+              <option value="dance-genre">Dance Music</option>
               <option value="easy-genre">Easy Listening</option>
-              <option value="electronic-genre">Electronic</option>
-              <option value="enka-genre">Enka</option>
-              <option value="french-genre">French Pop</option>
-              <option value="german-folk-genre">German Folk</option>
-              <option value="german-pop-genre">German Pop</option>
-              <option value="fitness-genre">Fitness & Workout</option>
+              <option value="electronic-genre">Electronic Music</option>
+              <option value="french-genre"> European (French Pop)</option>
+              <option value="german-folk-genre"> European (German Folk)</option>
+              <option value="german-pop-genre"> European (German Pop)</option>
               <option value="hip-hop-genre">Hip-hop/Rap</option>
-              <option value="holiday-genre">Holiday</option>
               <option value="indie-pop-genre">Indie Pop</option>
-              <option value="industrial-genre">Industrial</option>
-              <option value="inspirational-genre">Inspirational – Christian & Gospel</option>
-              <option value="instrumental-genre">Instrumental</option>
-              <option value="j-pop-genre">J Pop</option>
+              <option value="inspirational-genre">Inspirational (incl. Gospel)</option>
+              <option value="j-pop-genre">Asian (J Pop)</option>
+              <option value="k-pop-genre">Asian (K-Pop)</option>
               <option value="jazz-genre">Jazz</option>
-              <option value="k-pop-genre">K-Pop</option>
-              <option value="karaoke-genre">Karaoke</option>
-              <option value="kayokyoku-genre">Kayokyoku</option>
-              <option value="latin-genre">Latin</option>
+              <option value="latin-genre">Latin Music</option>
               <option value="new-age-genre">New Age</option>
               <option value="opera-genre">Opera</option>
-              <option value="pop-genre">Pop</option>
+              <option value="pop-genre">Pop (Popular Music)</option>
               <option value="rb-soul-genre">R&B/Soul</option>
               <option value="reggae-genre">Reggae</option>
               <option value="rock-genre">Rock</option>
-              <option value="singer-genre">Singer/Songwriter</option>
-              <option value="soundtrack-genre">Soundtrack</option>
-              <option value="spoken-genre">Spoken Word</option>
-              <option value="tex-mex-genre">Tex-Mex / Tejano (with thx to Israel Lopez)</option>
-              <option value="vocal-genre">Vocal</option>
-              <option value="world-genre">World</option>
+              <option value="singer-genre">Singer/Songwriter (inc. Folk)</option>
+              <option value="world-genre">World Music / beats</option>
+              <option value="">No Audio Track</option>
             </select>
             <div id="alternative-genre" class="double-select" style="display:none">
               <select class="form-control" >
@@ -751,7 +745,7 @@
 </div> <!-- /.video-project-director -->
 
 <div class="form-con container">
-  <h1>Project Files <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="popover" data-placement="top" data-html="true" data-trigger="hover" data-content="text" /> </h1>
+  <h1>Project Files <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="Video and picture files that make up the video project. These are the assets the Video Editor will work with." /> </h1>
   <div class="border-line"></div> <!-- /.border-line -->
   <div class="file-to-upload">
     <h2>No file uploaded yet.</h2>
@@ -762,7 +756,7 @@
     </p>
     <div class="supported-format">
       <article>Supported Formats:</article>
-      <article>VIDEO: fiv, mp4, webM, ogg</article>
+      <article>VIDEO: mp4, webM, ogg</article>
       <article>IMAGE: jpg, png, gif</article>
     </div> <!-- /.supported-format -->
   </div> <!-- /.file-to-upload -->
@@ -770,7 +764,7 @@
 <div class="container">
   <div class="project-files-buttons">
     <div class="col-sm-12 change-buttons">
-      <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="popover" data-placement="top" data-html="true" data-trigger="hover" data-content="text" />
+      <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="Discuss your project publicly with interested editors or set it to private so your discussions with individual editors are not seen by others." />
       <button>Public</button>
       <button class="button-active">Private</button>
     </div> <!-- /.change-buttons -->

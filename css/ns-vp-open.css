@@ -11,7 +11,7 @@
     color: #474747;
     font-weight: 700;
     text-align: center;
-    padding: 50px 0px;
+    padding: 37px 0px;
     margin: 0;
 }
 .applicants-info h5 span {
@@ -43,4 +43,8 @@
 }
 .featured-screen {
     background-image: url('../images/video-project/ns-vp-screenshot.jpg');
+}
+.gallery-history-director {
+    border: solid 7px #ff818c;
+    border-radius: 20px;
 }

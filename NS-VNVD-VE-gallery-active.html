@@ -12,6 +12,7 @@
 <link rel="stylesheet" href="css/bootstrap.min.css"> 
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 <link rel="stylesheet" type="text/css" href="css/jquery.tosrus.all.css" />
+<link rel="stylesheet" href="css/font-awesome.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/video-project-page.css">
 <link rel="stylesheet" href="css/custom.css">
@@ -125,7 +126,7 @@
 	</script>
 </head>
 
-<body class="video-notes1">
+<body class="">
 <header>
   <div class="container">
     <img src="images/boris/header-img.jpg" class="img-responsive">
@@ -139,110 +140,113 @@
     <div class="item active video-item">
       <div class="gray-line"></div>
       <div class="video-slider">
-        <div class="number-12">12</div>
+        <div class="number-12 blue-12">13</div>
         <h1>VideoVE000001.MP4 <img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Video Project Name</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></h1>
-        <p>This Is The Video Project Name</p>
+        <p>This Is The Video Project Name<img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Video Project Name</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></p>
       </div>
       <div class="gray-line"></div>
       <div class="slider-m container"></div>
-      <div class="col-sm-8 video-space">
-        <video width="400" controls>
-          <source src="mov_bbb.mp4" type="video/mp4">
-          <source src="mov_bbb.ogg" type="video/ogg">
-        </video>
-        <button class="video-snap"><img src="images/boris/kvacica.png" class="btn"> Video Snap</button>
-        <p>Click VIDEO SNAP to take a screenshot, add your video and audio notes.</p>
-      </div>
+      <div class="col-sm-8" style="padding-left:0;"> 
+        <div class="col-sm-12 video-space">
+          <video width="400" controls>
+            <source src="mov_bbb.mp4" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+          </video>
+          <button class="video-snap"><img src="images/boris/kvacica.png" class="btn"> Video Snap</button>
+          <p>Click VIDEO SNAP to take a screenshot, add your video and audio notes.</p>
+        </div>
+      <!-- end of col-sm-12 -->
+      </div> 
       <!-- end of col-sm-8 -->
-      <div class="col-sm-4 lib-screenshot">
+      <div class="col-sm-4 lib-screenshot green-gradient">
       <div class="screenshot-library-h col-sm-12"><h1>Screenshot Library</h1></div>
       </div>
       <div class="col-sm-4 screenshot-library">
-        <div class="vide-audio">
-          <div class="col-sm-6">Video Notes</div>
-          <div class="col-sm-6">Audio Noter</div>
+        <div class="vide-audio col-sm-12">
+          <div class="col-sm-6"><div class="simple-tag-red"></div>Video Notes</div>
+          <div class="col-sm-6"><div class="simple-tag-blue"></div>Audio Notes</div>
         </div>
-        <div class="video-notes">
-          <div class="col-sm-6">
-            <div class="video-time">
-              <div class="simple-tag">
-                <div class="simple-tag-red"></div>
-                <div class="simple-tag-blue"></div>
+        <div class="video-notes-wrapper">
+          <div class="video-notes col-sm-6">
+            <div class="col-sm-12 selected">
+              <div class="video-time">
+                <div class="simple-tag">
+                  <div class="simple-tag-red"></div>
+                  <div class="simple-tag-blue"></div>
+                </div>
+                <h2>0:25</h2>
+                <img src="images/boris/motor.jpg" class="img-responsive">
+                <p>SSGVE12V000001SS1.JPG</p>
               </div>
-              <h2>0:25</h2>
-              <img src="images/boris/motor.jpg" class="img-responsive">
-              <p>SSGVE12V000001SS1.JPG</p>
             </div>
           </div>
-        </div>
-        <div class="video-notes">
-          <div class="col-sm-6">
-            <div class="video-time">
-              <div class="simple-tag">
-                <div class="simple-tag-red"></div>
-                <div class="simple-tag-blue"></div>
+          <div class="video-notes col-sm-6">
+            <div class="col-sm-12">
+              <div class="video-time">
+                <div class="simple-tag">
+                  <div class="simple-tag-red"></div>
+                  <div class="simple-tag-blue"></div>
+                </div>
+                <h2>0:25</h2>
+                <img src="images/boris/motor.jpg" class="img-responsive">
+                <p>SSGVE12V000001SS1.JPG</p>
               </div>
-              <h2>0:25</h2>
-              <img src="images/boris/motor.jpg" class="img-responsive">
-              <p>SSGVE12V000001SS1.JPG</p>
             </div>
           </div>
-        </div>
-        <div class="video-notes">
-          <div class="col-sm-6">
-            <div class="video-time">
-              <div class="simple-tag">
-                <div class="simple-tag-red"></div>
-                <div class="simple-tag-blue"></div>
+          <div class="video-notes col-sm-6">
+            <div class="col-sm-12">
+              <div class="video-time">
+                <div class="simple-tag">
+                  <div class="simple-tag-red"></div>
+                  <div class="simple-tag-blue"></div>
+                </div>
+                <h2>0:25</h2>
+                <img src="images/boris/motor.jpg" class="img-responsive">
+                <p>SSGVE12V000001SS1.JPG</p>
               </div>
-              <h2>0:25</h2>
-              <img src="images/boris/motor.jpg" class="img-responsive">
-              <p>SSGVE12V000001SS1.JPG</p>
             </div>
           </div>
-        </div>
-        <div class="video-notes">
-          <div class="col-sm-6">
-            <div class="video-time">
-              <div class="simple-tag">
-                <div class="simple-tag-red"></div>
-                <div class="simple-tag-blue"></div>
+          <div class="video-notes col-sm-6">
+            <div class="col-sm-12">
+              <div class="video-time">
+                <div class="simple-tag">
+                  <div class="simple-tag-red"></div>
+                </div>
+                <h2>0:25</h2>
+                <img src="images/boris/motor.jpg" class="img-responsive">
+                <p>SSGVE12V000001SS1.JPG</p>
               </div>
-              <h2>0:25</h2>
-              <img src="images/boris/motor.jpg" class="img-responsive">
-              <p>SSGVE12V000001SS1.JPG</p>
             </div>
           </div>
-        </div>
-        <div class="video-notes">
-          <div class="col-sm-6">
-            <div class="video-time">
-              <div class="simple-tag">
-                <div class="simple-tag-red"></div>
-                <div class="simple-tag-blue"></div>
+          <div class="video-notes col-sm-6">
+            <div class="col-sm-12">
+              <div class="video-time">
+                <div class="simple-tag">
+                  <div class="simple-tag-red"></div>
+                </div>
+                <h2>0:25</h2>
+                <img src="images/boris/motor.jpg" class="img-responsive">
+                <p>SSGVE12V000001SS1.JPG</p>
               </div>
-              <h2>0:25</h2>
-              <img src="images/boris/motor.jpg" class="img-responsive">
-              <p>SSGVE12V000001SS1.JPG</p>
             </div>
           </div>
-        </div>
-        <div class="video-notes clearfix">
-          <div class="col-sm-6">
-            <div class="video-time">
-              <div class="simple-tag">
-                <div class="simple-tag-red"></div>
-                <div class="simple-tag-blue"></div>
+          <div class="video-notes col-sm-6 clearfix">
+            <div class="col-sm-12">
+              <div class="video-time">
+                <div class="simple-tag">
+                  <div class="simple-tag-red"></div>
+                </div>
+                <h2>0:25</h2>
+                <img src="images/boris/motor.jpg" class="img-responsive">
+                <p>SSGVE12V000001SS1.JPG</p>
               </div>
-              <h2>0:25</h2>
-              <img src="images/boris/motor.jpg" class="img-responsive">
-              <p>SSGVE12V000001SS1.JPG</p>
             </div>
           </div>
-        </div>
-        <div class="all-info-button clearfix">
+        </div> <!-- /.video-notes-wrapper -->
+        <div class="all-info-button all-info-button-5 clearfix">
           <button><img src="images/boris/icon-edit.png"></button>
           <button><img src="images/boris/icon-view.png"></button>
+          <button><img class="img-responsive" src="images/boris/send.png"></button>
           <button><img src="images/boris/icon-dl1.png"></button>
           <button><img src="images/boris/icon-del1.png"></button>
         </div>
@@ -252,110 +256,113 @@
     <div class="item video-item">
       <div class="gray-line"></div>
       <div class="video-slider">
-        <div class="number-12">12</div>
+        <div class="number-12 blue-12">13</div>
         <h1>VideoVE000001.MP4 <img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Video Project Name</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></h1>
-        <p>This Is The Video Project Name</p>
+        <p>This Is The Video Project Name<img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Video Project Name</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></p>
       </div>
       <div class="gray-line"></div>
       <div class="slider-m container"></div>
-      <div class="col-sm-8 video-space">
-        <video width="400" controls>
-          <source src="mov_bbb.mp4" type="video/mp4">
-          <source src="mov_bbb.ogg" type="video/ogg">
-        </video>
-        <button class="video-snap"><img src="images/boris/kvacica.png" class="btn"> Video Snap</button>
-        <p>Click VIDEO SNAP to take a screenshot, add your video and audio notes.</p>
-      </div>
+      <div class="col-sm-8" style="padding-left:0;"> 
+        <div class="col-sm-12 video-space">
+          <video width="400" controls>
+            <source src="mov_bbb.mp4" type="video/mp4">
+            <source src="mov_bbb.ogg" type="video/ogg">
+          </video>
+          <button class="video-snap"><img src="images/boris/kvacica.png" class="btn"> Video Snap</button>
+          <p>Click VIDEO SNAP to take a screenshot, add your video and audio notes.</p>
+        </div>
+      <!-- end of col-sm-12 -->
+      </div> 
       <!-- end of col-sm-8 -->
-      <div class="col-sm-4 lib-screenshot">
+      <div class="col-sm-4 lib-screenshot green-gradient">
       <div class="screenshot-library-h col-sm-12"><h1>Screenshot Library</h1></div>
       </div>
       <div class="col-sm-4 screenshot-library">
-        <div class="vide-audio">
-          <div class="col-sm-6">Video Notes</div>
-          <div class="col-sm-6">Audio Noter</div>
+        <div class="vide-audio col-sm-12">
+          <div class="col-sm-6"><div class="simple-tag-red"></div>Video Notes</div>
+          <div class="col-sm-6"><div class="simple-tag-blue"></div>Audio Notes</div>
         </div>
-        <div class="video-notes">
-          <div class="col-sm-6">
-            <div class="video-time">
-              <div class="simple-tag">
-                <div class="simple-tag-red"></div>
-                <div class="simple-tag-blue"></div>
+        <div class="video-notes-wrapper">
+          <div class="video-notes col-sm-6">
+            <div class="col-sm-12 selected">
+              <div class="video-time">
+                <div class="simple-tag">
+                  <div class="simple-tag-red"></div>
+                  <div class="simple-tag-blue"></div>
+                </div>
+                <h2>0:25</h2>
+                <img src="images/boris/motor.jpg" class="img-responsive">
+                <p>SSGVE12V000001SS1.JPG</p>
               </div>
-              <h2>0:25</h2>
-              <img src="images/boris/motor.jpg" class="img-responsive">
-              <p>SSGVE12V000001SS1.JPG</p>
             </div>
           </div>
-        </div>
-        <div class="video-notes">
-          <div class="col-sm-6">
-            <div class="video-time">
-              <div class="simple-tag">
-                <div class="simple-tag-red"></div>
-                <div class="simple-tag-blue"></div>
+          <div class="video-notes col-sm-6">
+            <div class="col-sm-12">
+              <div class="video-time">
+                <div class="simple-tag">
+                  <div class="simple-tag-red"></div>
+                  <div class="simple-tag-blue"></div>
+                </div>
+                <h2>0:25</h2>
+                <img src="images/boris/motor.jpg" class="img-responsive">
+                <p>SSGVE12V000001SS1.JPG</p>
               </div>
-              <h2>0:25</h2>
-              <img src="images/boris/motor.jpg" class="img-responsive">
-              <p>SSGVE12V000001SS1.JPG</p>
             </div>
           </div>
-        </div>
-        <div class="video-notes">
-          <div class="col-sm-6">
-            <div class="video-time">
-              <div class="simple-tag">
-                <div class="simple-tag-red"></div>
-                <div class="simple-tag-blue"></div>
+          <div class="video-notes col-sm-6">
+            <div class="col-sm-12">
+              <div class="video-time">
+                <div class="simple-tag">
+                  <div class="simple-tag-red"></div>
+                  <div class="simple-tag-blue"></div>
+                </div>
+                <h2>0:25</h2>
+                <img src="images/boris/motor.jpg" class="img-responsive">
+                <p>SSGVE12V000001SS1.JPG</p>
               </div>
-              <h2>0:25</h2>
-              <img src="images/boris/motor.jpg" class="img-responsive">
-              <p>SSGVE12V000001SS1.JPG</p>
             </div>
           </div>
-        </div>
-        <div class="video-notes">
-          <div class="col-sm-6">
-            <div class="video-time">
-              <div class="simple-tag">
-                <div class="simple-tag-red"></div>
-                <div class="simple-tag-blue"></div>
+          <div class="video-notes col-sm-6">
+            <div class="col-sm-12">
+              <div class="video-time">
+                <div class="simple-tag">
+                  <div class="simple-tag-red"></div>
+                </div>
+                <h2>0:25</h2>
+                <img src="images/boris/motor.jpg" class="img-responsive">
+                <p>SSGVE12V000001SS1.JPG</p>
               </div>
-              <h2>0:25</h2>
-              <img src="images/boris/motor.jpg" class="img-responsive">
-              <p>SSGVE12V000001SS1.JPG</p>
             </div>
           </div>
-        </div>
-        <div class="video-notes">
-          <div class="col-sm-6">
-            <div class="video-time">
-              <div class="simple-tag">
-                <div class="simple-tag-red"></div>
-                <div class="simple-tag-blue"></div>
+          <div class="video-notes col-sm-6">
+            <div class="col-sm-12">
+              <div class="video-time">
+                <div class="simple-tag">
+                  <div class="simple-tag-red"></div>
+                </div>
+                <h2>0:25</h2>
+                <img src="images/boris/motor.jpg" class="img-responsive">
+                <p>SSGVE12V000001SS1.JPG</p>
               </div>
-              <h2>0:25</h2>
-              <img src="images/boris/motor.jpg" class="img-responsive">
-              <p>SSGVE12V000001SS1.JPG</p>
             </div>
           </div>
-        </div>
-        <div class="video-notes clearfix">
-          <div class="col-sm-6">
-            <div class="video-time">
-              <div class="simple-tag">
-                <div class="simple-tag-red"></div>
-                <div class="simple-tag-blue"></div>
+          <div class="video-notes col-sm-6 clearfix">
+            <div class="col-sm-12">
+              <div class="video-time">
+                <div class="simple-tag">
+                  <div class="simple-tag-red"></div>
+                </div>
+                <h2>0:25</h2>
+                <img src="images/boris/motor.jpg" class="img-responsive">
+                <p>SSGVE12V000001SS1.JPG</p>
               </div>
-              <h2>0:25</h2>
-              <img src="images/boris/motor.jpg" class="img-responsive">
-              <p>SSGVE12V000001SS1.JPG</p>
             </div>
           </div>
-        </div>
-        <div class="all-info-button clearfix">
+        </div> <!-- /.video-notes-wrapper -->
+        <div class="all-info-button all-info-button-5 clearfix">
           <button><img src="images/boris/icon-edit.png"></button>
           <button><img src="images/boris/icon-view.png"></button>
+          <button><img class="img-responsive" src="images/boris/send.png"></button>
           <button><img src="images/boris/icon-dl1.png"></button>
           <button><img src="images/boris/icon-del1.png"></button>
         </div>
@@ -368,38 +375,103 @@
 
   <!-- Controls -->
   <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><span><span>Previous</span><span>File</span></span></span>
     <span class="sr-only">Previous</span>
   </a>
   <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><span><span>Next</span><span>File</span></span></span>
     <span class="sr-only">Next</span>
   </a>
 </div>
+<div class="timeline">
+    <div class="timeline-title green-timeline">
+      <h2><span>Timeline</span></h2>
+    </div><!-- /.timeline-title -->
+    <div class="timeline-container">
+      <div class="timeline-scroll">
+        <div class="screenshot-count">
+          <div>
+            <div class="timeline-red">21</div>
+            <div class="timeline-red-behind"></div>
+          </div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div>
+            <div class="timeline-silver">52</div>
+            <div class="timeline-silver-behind"></div>
+          </div>
+        </div><!-- /.screenshot-count -->
+        <div class="captured-screenshots">
+          <div>
+            <img src="images/boris/vnvd1.jpg" alt="">
+          </div>
+          <div>
+            
+          </div>
+          <div>
+            
+          </div>
+          <div>
+            
+          </div>
+          <div>
+            <img src="images/video-project/vn230.jpg" alt="">
+          </div>
+          <div>
+            <img src="images/video-project/vn300.jpg" alt="">
+          </div>
+        </div><!-- /.captured-screenshots -->
+        <div class="timeline-line">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div> <!-- /.timeline-line -->
+        <div class="timeline-time">
+          <span><span class="timeline-time-red">0:30</span></span>
+          <span>1:00</span>
+          <span>1:30</span>
+          <span>2:00</span>
+          <span>2:30</span>
+          <span>3:00</span>
+          <span>3:30</span>
+        </div><!-- /.timeline-time -->
+      </div><!-- /.timeline-scroll -->
+    </div> <!-- /.timeline-container -->
+      <div class="timeline-zoom">
+        <label><i class="fa fa-search-minus"></i></label>
+        <input type="range" min="0" max="20" value="1" id="fader">
+        <label><i class="fa fa-search-plus"></i></label>
+      </div> <!-- /.timeline-zoom -->
+    </div> <!-- /.timeline -->
 </div>
-
-
 <div class="container">
-  <h1 class="editor-gallery">Editor's Gallery</h1>
+  <h1 class="editor-gallery director-gallery">Editor's Gallery</h1>
   <div class="gallery-history-editor clearfix">
 
         <div class="gallery-history-right clearfix">
           <div class="pull-left">
             <h1>Shazey2014Editor</h1>
             <p>It’s Wednesday, 7:16 PM in Russian Federation</p>
-            <label>It’s Wednesday, 7:16 PM in Russian Federation</label>
+            <label>Updated by EDITOR, dd/mm/yy hh:mm</label>
           </div>
           <div class="pull-right">
             <button>SWAP LIBRARY</button>
           </div>
-          <div id="slider2">
-           <a href="images/video-project/screenshot3.jpg"><img src="images/video-project/screenshot3.jpg" /></a>
-           <a href="images/video-project/screenshot21.jpg"><img src="images/video-project/screenshot21.jpg" /></a>
-           <a href="images/video-project/screenshot22.jpg"><img src="images/video-project/screenshot22.jpg" /></a>
-           <a href="images/video-project/screenshot23.jpg"><img src="images/video-project/screenshot23.jpg" /></a>
-           <a href="images/video-project/screenshot24.jpg"><img src="images/video-project/screenshot24.jpg" /></a>
-           <a href="images/video-project/screenshot3.jpg"><img src="images/video-project/screenshot3.jpg" /></a>
-        </div> <!-- /#slider2 -->
+          <div id="sliderTimeline">
+           <a href="images/video-project/vn1.jpg"><img src="images/video-project/vn1.jpg" /></a>
+           <a href="images/video-project/vn1.jpg"><img src="images/video-project/vn1.jpg" /></a>
+           <a href="images/video-project/vn1.jpg"><img src="images/video-project/vn1.jpg" /></a>
+           <a href="images/video-project/vn1.jpg"><img src="images/video-project/vn1.jpg" /></a>
+           <a href="images/video-project/vn1.jpg"><img src="images/video-project/vn1.jpg" /></a>
+           <a href="images/video-project/vn2.png"><img src="images/video-project/vn2.png" /></a>
+           <a href="images/video-project/vn2.png"><img src="images/video-project/vn2.png" /></a>
+        </div> <!-- /#sliderTimeline -->
         </div> <!-- /.gallery-history-right -->
         <div class="three-button">
           <button>Send Screenshots</button>
@@ -410,8 +482,9 @@
 
 </div>
 
+
 <div class="container dow-del-btn">
-  <button class="download-btn"><img src="images/boris/download.png" class="btn"> Send Screenshots</button>
+  <button class="download-btn"><img class="send-margin" src="images/boris/send.png" class="btn"> Send Screenshots</button>
   <button class="download-btn"><img src="images/boris/download.png" class="btn"> Download Screenshots</button>
   <button class="delete-btn"><img src="images/boris/delete.png" class="btn"> Delete Screenshots</button>
 </div>
