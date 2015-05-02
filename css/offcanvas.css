@@ -8,9 +8,7 @@ html,
 }
 .row-offcanvas.active .page-wrap .headroom--unpinned.wrapper-nav-icon-based,
 .row-offcanvas.active .page-wrap .headroom--pinned.wrapper-nav-icon-based { display: none;}
-
-.row-offcanvas.active .page-wrap .header-mobile-fix { top: 0;}
-.row-offcanvas-left .header-mobile {   right: 0; left: 0;}
+.row-offcanvas.active .page-wrap .header-mobile-fix { top: 0; bottom: 0;}
 body {
   padding-top: 70px;
 }
@@ -25,9 +23,9 @@ footer {
 @media screen and (max-width: 767px) {
   .row-offcanvas {
     position: relative;
-    -webkit-transition: all .55s ease-out;
-         -o-transition: all .55s ease-out;
-            transition: all .55s ease-out;
+    -webkit-transition: all .55s;
+         -o-transition: all .55s;
+            transition: all .55s;
   }
 
   .row-offcanvas-right {

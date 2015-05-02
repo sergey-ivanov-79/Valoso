@@ -1075,23 +1075,25 @@ a:hover {
     .headroom-dop.headroom--pinned {
         position: fixed;
         top: 0;
-        -webkit-transition: all .55s ease-out;
-        -moz-transition: all .55s ease-out;
-        -o-transition: all .55s ease-out;
-        transition: all .55s ease-out;
+        left: 0;
+        -webkit-transition: all .55s ease;
+        -moz-transition: all .55s ease;
+        -o-transition: all .55s ease;
+        transition: all .55s ease;
     }
     .headroom-dop.headroom--unpinned {
        position: fixed;
         top: -55px;
-        -webkit-transition: all .55s ease-in-out;
-        -moz-transition: all .55s ease-in-out;
-        -o-transition: all .55s ease-in-out;
-        transition: all .55s ease-in-out; 
+        left: 0;
+        -webkit-transition: all .55s ease;
+        -moz-transition: all .55s ease;
+        -o-transition: all .55s ease;
+        transition: all .55s ease;
     }
     .col-sm-12-max { background: none #fff;}
     .wrapp-shop-msg-noti-icos > h3 { margin-top: 0;}
     .project-forum { padding-top: 180px;}
-    .wrapp-shop-msg-noti-icos { padding-top: 10px; padding-bottom: 10px;}
+    .wrapp-shop-msg-noti-icos { padding-top: 10px; padding-bottom: 7px;}
 }
 
 .cd-top {
