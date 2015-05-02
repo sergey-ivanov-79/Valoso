@@ -1323,5 +1323,10 @@ $('.gallery').each(function() { // the containers for all your galleries
 });
 </script>
 <script src="js/offcanvas.js"></script>
+<script>
+    $(document).on('click', '.button-mobile', function(){
+        $('body').toggleClass('opened-offcanvas');
+    });
+</script>
 </body>
 </html>
