@@ -487,8 +487,9 @@ div#download-project-files-modal .modal-body > p.select-fil {
 .col-xs-6.col-xs-4-dop { padding-left: 5px; padding-right: 5px;}
 .dis-block-none { display: none;}
 .pos-rel {
-    position: relative;
-    top: 5px;
+    /*position: relative;
+    top: 5px;*/
+    margin-top: 5px;
     margin-right: 5px;        
 }
 button.browse-wrap {
@@ -543,12 +544,16 @@ button.browse-wrap {
     z-index: 30;
     cursor: pointer;
     opacity: 1; /*for hover - opacity: 0;*/
-    transition: all ease 0.3s;
+    /*transition: all ease 0.3s;*/
     z-index: 1;
 }
 .image-cont-group .video-wrap:hover:after {
     opacity: 1;
 }
+.mini-icons-img { 
+    margin-bottom: 5px;
+}
+.mini-icons-img .fa { font-size: 35px;}
 /* END My Media Library */
 
 
@@ -961,6 +966,7 @@ button.browse-wrap {
     .group-bottom-big .browse-wrap div.title { width: 90px;}
     .mini-icons-img.mini-icons-img-media .pull-left, .mini-icons-img.mini-icons-img-media .pull-right { float: none !important;}
     .mini-icons-img img { width: 21px;}
+    .mini-icons-img .fa { font-size: 24px;}
     .mini-icons-img div > p { font-size: 12px;}
     .image-cont-group .image-wrap { height: 120px;}
     .wrapper-form { margin-right: -15px; margin-left: -15px;}
