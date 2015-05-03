@@ -552,8 +552,11 @@ button.browse-wrap {
 }
 .mini-icons-img { 
     margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 .mini-icons-img .fa { font-size: 35px;}
+
 /* END My Media Library */
 
 
@@ -617,6 +620,8 @@ button.browse-wrap {
         line-height: 28px;
         width: 275px;
     }
+    .mini-icons-img img { height: 25px;} 
+    .mini-icons-img span { font-size: 14px;}
     /* END My Media Library */
 }
 @media (max-width: 767px) {
@@ -803,7 +808,12 @@ button.browse-wrap {
     .project-name .color-blue { font-size: 15px;}
     .text-minim { width: 120px;}
 }
-
+@media (max-width: 520px) and (min-width: 481px) {
+    .mini-icons-img {
+    margin-left: 0px; 
+    margin-right: 0px;
+}
+}
 @media (max-width: 610px) {
     .nav-tabs.nav-icon-based > li > a {
        width: 105px; 
@@ -965,8 +975,8 @@ button.browse-wrap {
     div#download-project-files-modal .modal-body > p.select-fil {  font-size: 15px;}
     .group-bottom-big .browse-wrap div.title { width: 90px;}
     .mini-icons-img.mini-icons-img-media .pull-left, .mini-icons-img.mini-icons-img-media .pull-right { float: none !important;}
-    .mini-icons-img img { width: 21px;}
-    .mini-icons-img .fa { font-size: 24px;}
+    /*.mini-icons-img img { width: 21px;}*/
+    .mini-icons-img .fa { font-size: 28px;}
     .mini-icons-img div > p { font-size: 12px;}
     .image-cont-group .image-wrap { height: 120px;}
     .wrapper-form { margin-right: -15px; margin-left: -15px;}
@@ -981,6 +991,7 @@ button.browse-wrap {
         text-overflow: ellipsis;
     }   
     .wrapper-form .form-no-file h2.h2 { text-align: center;}
+    
     /* END My Media Library */
 }
 
@@ -1003,6 +1014,7 @@ button.browse-wrap {
 .test-justify { text-align: justify;}
 .text-right { text-align: right;}
 .text-lowercase { text-transform: lowercase !important;}
+.opacity-0 { opacity: 0;}
 /* END Special Classes */
 /* Begin changes for footer */
 #footer .row.botInfo {
