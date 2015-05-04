@@ -556,7 +556,11 @@ button.browse-wrap {
     margin-right: 5px;
 }
 .mini-icons-img .fa { font-size: 35px;}
-
+.mini-icons-img .clearfix > p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
 /* END My Media Library */
 
 
@@ -776,11 +780,7 @@ button.browse-wrap {
     .group-bottom-big .browse-wrap, .wrapp-myContent .video-download { margin: 0;}
     .group-bottom-big .browse-wrap { padding: 5px;}
     .wrapper-browse-wrap { margin-left: 0; margin-right: 0;}
-    .mini-icons-img .clearfix > p {
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden;
-    }
+    
     /* END My Media Library */
 }
 @media (max-width: 767px) {
