@@ -790,9 +790,18 @@ span.timeline-time-red:after {
 }
 #sliderTimeline .tos-slider > div > a {
   overflow: hidden;
+  position: relative;
 }
 .tos-prev span,.tos-next span {
   display: none;
+}
+.pic-edited {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(253,199,39,0.5);
 }
 .tos-prev {
   background-image: url("../images/video-project/arrow-left.png");
@@ -1310,7 +1319,7 @@ button.video-snap > img {
     margin: 10px 0 0;
     height: 70px;
     font-size: 22px;
-    padding: 0 35px;
+    padding: 0 25px;
   }
   .save-project-btn {
     width: 100%;
