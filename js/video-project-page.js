@@ -57,7 +57,8 @@ $(document).ready(function(){
 		   }
 		});
 	/* Trigger Lightbox End */
-
+	/* Responsive lightbox */
+	/* Responsive lightbox End */
 	/* Upload Button */
 		// Span
 		var span = document.getElementsByClassName('upload-path');
@@ -98,7 +99,12 @@ $(document).ready(function(){
     $('.fixed-price1').removeClass('fxd');
 	});
 
-
+	/* Video Notes Video Click */
+	$(".video-notes-wrapper > div > .col-sm-12").click(function(){
+		$(".video-notes-wrapper > div > .col-sm-12").removeClass("selected");
+		$(this).addClass("selected");
+	});
+	/* Video Notes Video Click End */
 	$('#fixed-price').click(function() {
 		$(".for-hide2").toggleClass('d-none1');
 	    var checkedBox = $(this).attr("checked");
