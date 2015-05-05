@@ -143,7 +143,7 @@ body {font: 13px Helmet, Freesans, sans-serif;}
 /* Using local fonts? Check out Font Squirrel's webfont generator: http://www.fontsquirrel.com/tools/webfont-generator */
 
 /* We like off-black for text. */
-body, select, input, textarea {color: #333;}
+body, select, input, textarea {color: #333; padding-top: 0px;}
 
 a {color: #03f;}
 a:hover {color: #69f;}
@@ -246,6 +246,7 @@ a:hover {
 .hasItem .ico-inbox { background-position: -137px -31px;}
 .ico-inbox:hover {background-position: -67px -140px; }
 .ico-notify {background-position: -238px -36px;height: 27px;top: -8px;width: 30px;}
+.hasItem .ico-notify {background-position: -208px -36px;}
 /*.hasItem .ico-notify*/
 .ico-notify:hover {background-position: -103px -133px;}
 .ico-flicker {background-position: -3px -74px;}
@@ -450,10 +451,10 @@ a:hover {
     -webkit-border-radius: 127px;
     -moz-border-radius: 127px;
     font-weight: 600;
-    padding: 6px;
+    padding: 5px;
     position: absolute;
-    right: -13px;
-    top: -6px;
+    right: -4px;
+    top: -5px;
     z-index: 1;
 }
 
@@ -774,8 +775,8 @@ a:hover {
 .nav-list li ul li a:hover{
     color: #24d1c4;
 }
-
-.header-dop.header-mobile .navbar-brand.navbar-brand-mobile { padding-left: 0;}
+/*added changes*/
+.header-dop.header-mobile .navbar-brand.navbar-brand-mobile { padding-left: 0; padding: 0;}
 
 /*.home-dash-menu, .home-dash-content { margin-top: 20px;}*/
 
@@ -790,17 +791,17 @@ a:hover {
 
 
 @media (max-width: 767px) {
-    .header-dop.header-mobile .cols { margin-top: 0;}
-    .header-dop.header-mobile .col-navbar { top: 0px; }
-    .header-dop.header-mobile .wrapper-submainmenu { display: none;}
-    .header-dop.header-mobile .shop-msg-noti-icos { display: none;}
-    .header-dop.header-mobile .button-mobile { 
+     .cols { margin-top: 0;}
+     .col-navbar { top: 0px; }
+     .wrapper-submainmenu { display: none;}
+     .shop-msg-noti-icos { display: none;}
+     .button-mobile { 
         float: left; 
         border: none;
         color: #fff;
     }
     .header-dop.header-mobile .navbar-default .navbar-toggle .icon-bar {
-        background-color: #fff;
+        background-color: #474747;
         height: 3px;
     }
     .header-dop.header-mobile .navbar-default .navbar-toggle:hover, 
@@ -830,38 +831,39 @@ a:hover {
         margin-right: 15px;
     }
     .header-dop.header-mobile .navbar-toggle { margin-top: 9px;}
-    .header-dop.header-mobile #navbar-collapse-1 li a { background: #474747;}
-    .header-dop.header-mobile #navbar-collapse-1 li ul.secondaryNavList-dop li a {
+     #navbar-collapse-1 li a { background: #474747;}
+     #navbar-collapse-1 li ul.secondaryNavList-dop li a {
         border: none;  
         padding-left: 36px;
+        font-weight: normal;
     }
-    .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile .dropdown-menu-mobile {
+     .col-navbar-wrap .profile-dropdown-mobile .dropdown-menu-mobile {
         left: auto;
         right: 0;
         width: 160px;
     }
-    .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile .dropdown-menu-mobile:after {
+     .col-navbar-wrap .profile-dropdown-mobile .dropdown-menu-mobile:after {
         left: 104px;
     }
-    .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile .dropdown-menu-mobile:before {
+     .col-navbar-wrap .profile-dropdown-mobile .dropdown-menu-mobile:before {
         left: 105px;
     }
-    .header-dop.header-mobile #navbar-collapse-1 li a { 
+     #navbar-collapse-1 li a { 
         font-size: 14px; 
         text-decoration: none; 
         padding-left: 10px;
     }
-    .header-dop.header-mobile #navbar-collapse-1 li a:hover, .header-dop.header-mobile #navbar-collapse-1 li a:focus { 
+     #navbar-collapse-1 li a:hover,  #navbar-collapse-1 li a:focus { 
         text-decoration: underline; 
         background-color: #ff965e;
         color: #fff;
     }
     .header-dop.header-mobile .navbar-nav { margin: 0;}
     #navbar-collapse-1 ul li > ul li > a:hover { color: #FF77AB;}
-    .header-dop.header-mobile #navbar-collapse-1 { padding: 0;}
+     #navbar-collapse-1 { padding: 0;}
 
 
-    .nav-list{ background-color: transparent; display: none; margin-left: -10px; margin-right: -10px; width: auto; color: white; }
+    .nav-list{ background-color: transparent; /*display: none; */margin-left: -10px; margin-right: -10px; width: auto; color: white; }
     .nav-list li { float: none;}
     .nav-list li a { color: white;}
     .opened-navigation .nav-list { display: block;}
@@ -968,7 +970,7 @@ a:hover {
     .wrapp-shop-msg-noti-icos .shop-msg-noti-icos a {
         margin-right: 9px;
     }
-    .wrapp-shop-msg-noti-icos h3.h3, .wrapp-shop-msg-noti-icos h4.h4 { line-height: 0.8;}
+    .wrapp-shop-msg-noti-icos h3.h3, .wrapp-shop-msg-noti-icos h4.h4 { line-height: 0.8; margin: 0;}
     .line-bott { border-bottom: 1px solid #cccccc;}
     .margin-top-5 { margin-top: 5px;}
     .home-dash-menu, .home-dash-content { margin-top: 0;}
@@ -1073,23 +1075,25 @@ a:hover {
     .headroom-dop.headroom--pinned {
         position: fixed;
         top: 0;
-        -webkit-transition: all .55s ease-in-out;
-        -moz-transition: all .55s ease-in-out;
-        -o-transition: all .55s ease-in-out;
-        transition: all .55s ease-in-out;
+        left: 0;
+        -webkit-transition: all .55s ease;
+        -moz-transition: all .55s ease;
+        -o-transition: all .55s ease;
+        transition: all .55s ease;
     }
     .headroom-dop.headroom--unpinned {
        position: fixed;
         top: -55px;
-        -webkit-transition: all .55s ease-in-out;
-        -moz-transition: all .55s ease-in-out;
-        -o-transition: all .55s ease-in-out;
-        transition: all .55s ease-in-out; 
+        left: 0;
+        -webkit-transition: all .55s ease;
+        -moz-transition: all .55s ease;
+        -o-transition: all .55s ease;
+        transition: all .55s ease;
     }
     .col-sm-12-max { background: none #fff;}
     .wrapp-shop-msg-noti-icos > h3 { margin-top: 0;}
     .project-forum { padding-top: 180px;}
-    .wrapp-shop-msg-noti-icos { padding-top: 10px; padding-bottom: 10px;}
+    .wrapp-shop-msg-noti-icos { padding-top: 10px; padding-bottom: 7px;}
 }
 
 .cd-top {
@@ -1241,3 +1245,13 @@ a:hover {
 .shop-msg-noti-icos, .wrapp-shop-msg-noti-icos  { padding-right: 10px;}
 
 /* END Added changes for header */
+/* Begin For Valoso */
+@media (max-width: 767px) {
+    .line-bottom-mobile { border-bottom: 2px solid #848484; }
+    .navbar-header-mobile { text-align: center;}
+    .navbar-mobile { border: none;}
+    .navbar-brand-mobile { padding: 0;}
+    .navbar-brand-mobile img { width: 135px; max-width: 100%; display: inline-block; margin-top: 3px;}
+    .header-dop.header-mobile .navbar-header-mobile, .header-dop .navbar-mobile { background: none #fff !important;}
+}
+/* END For Valoso */

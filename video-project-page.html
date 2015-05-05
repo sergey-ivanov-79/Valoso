@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/normalize.css">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
+<link rel="stylesheet" href="css/bootstrap.min.css"> 
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.tosrus.all.css" />
+<link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/video-project-page.css">
+<!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+<script>
+  var group = ''; 
+  var lastMove = '';
+	$(function() {
+	  $('a[href*=#].anchor:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top-50
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+    $('#loginOpen').click(function() {
+       $('#userLoginTab a[href="#conLogin"]').tab('show');   
+       $('#loginBox').modal('show');    
+    });
+    $('#SignOpen').click(function() {
+      $('#userLoginTab a[href="#conSign"]').tab('show'); 
+      $('#loginBox').modal('show');
+    });
+    $('#conDirector .butPanel a').click(function() {
+        $('#conDirector .butPanel').find('.active').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+   $('#conEditor .butPanel a').click(function() {
+        $('#conEditor .butPanel').find('.active').removeClass('active');
+        $(this).parent().addClass('active');
+    });
+    var lastScroll = 0;
+
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >500) {
+          $('.upArrow').show()
+        }else{
+           $('.upArrow').hide()
+        }
+         var st = $(this).scrollTop();
+          //Determines up-or-down scrolling
+          if (st > lastScroll){
+             //Replace this with your function call for downward-scrolling
+             //console.log("DOWN");
+              HideMenu ('down');
+          }
+          else {
+             //Replace this with your function call for upward-scrolling
+             //console.log("UP");
+              HideMenu ('up');
+          }
+          //Updates scroll position
+          lastScroll = st;
+    });
+    
+    $('#slider .carousel-inner .active').each(function() {
+        if (group=='') {
+          $('#slideContent .sliderBox  .carousel-caption-all').html($('#slideContent .sliderBox  .active .carousel-caption').html());
+          $('#slideContent .sliderBox  .carousel-caption-all').show(500);
+          group = $(this).attr('data-group');
+        }       
+    });
+
+    $('#slider').on('slid.bs.carousel', function () {
+      var thisGroup = $(this).find('div.active').attr('data-group');         
+      if ((group != thisGroup)&&(group != '')){
+          $('#slideContent .sliderBox  .carousel-caption-all').hide();
+          $('#slideContent .sliderBox  .carousel-caption-all').html($('#slideContent .sliderBox  .active .carousel-caption').html());
+          $('#slideContent .sliderBox  .carousel-caption-all').show(500);
+          group = thisGroup;
+      }                 
+    });
+    
+	});
+  function HideMenu (move) {
+    //console.log()
+    if ($( ".logoBox").css('position') != 'fixed') {
+      return
+    }
+    if (lastMove == move) {
+      return
+    }
+    if (!lastMove || move=='down') {
+            $( ".logoBox").animate({
+              top:"-50px"
+            }, 600 );
+           
+          lastMove =  'down';
+          
+           $('.topMenu ').removeClass('in');
+    }
+
+    if (move=='up') {
+        $( ".logoBox" ).animate({
+          top:"0px"
+        }, 600 );
+        lastMove =  'up';
+        
+        $('.topMenu ').removeClass('in');
+    }
+
+  }
+	</script>
+</head>
+
+<body>
+<header class="" id="header">
+ <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 logoBox">
+          <a href=""><img src="images/logo.png" /></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+         <span class="sr-only">Toggle navigation</span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse  col-xs-12 col-sm-9 col-md-9 col-lg-9 topMenu " id="navbar-collapse">
+          <ul>
+            <li><a href="">How it works</a></li>
+            <li><a href="">Faq</a></li>
+            <li><a href="#" id="SignOpen">register</a></li>
+            <li><a href="#" id="loginOpen">Login</a></li>
+          </ul>
+        </div>
+    </div>
+ </div>
+</header>
+
+<div class="video-project-director">
+  <div class="container">
+    <h3>This is the Video Project Name <img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Video Project Name</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></h3>
+    <p> Welcome to the Video Project Page! Instructions about what Video Director can do on this page like adding notes, viewing screenshots... 
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae gravida ex. 
+      <span>For more information, visit the <b>FAQ</b> page.</span>
+    </p>
+    <div class="col-sm-7 video-description-left">
+      <div class="video-des-wrap">
+        <h4><label>Category:</label> <span>Miniature</span></h4>
+        <p><label>Description:</label>
+          <span>   
+          This is the description of the video project. This field is 
+          also editable by the user. Mauris sodales odio at odio 
+          pretium sagittis. Aliquam at maximus nibh, ac rhoncus 
+          tortor. Fusce in tincidunt metus, et egestas dui. Fusce 
+          finibus tristique nibh porttitor suscipit. Maecenas et 
+          porta quam, sed lacinia ligula. Integer sagittis elemen-
+          tum neque, nec consectetur dui auctor et. Suspen-
+          disse non condimentum neque, nec consectetur dui 
+          auctor et.</span><img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Description</h4><div><textarea>This is the description of the video project. This field is also editable by the user. Mauris sodales odio at odio pretium sagittis. Aliquam at maximus nibh, ac rhoncus tortor. Fusce in tincidunt metus, et egestas dui. Fusce finibus tristique nibh porttitor suscipit. Maecenas et porta quam, sed lacinia ligula. Integer sagittis elemen-tum neque, nec consectetur dui auctor et. Suspen-disse non condimentum neque, nec consectetur dui auctor et.</textarea><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" />
+        </p>
+        <h4 class="project-deadline"><label>Project Start Date:</label> <span>Jan 10, 2015</span><img class="video-edit start-date" src="images/video-project/icon-edit.png" alt="edit" /></h4>
+        <h4 class="project-deadline"><label>Project Deadline:</label> <span>June 20, 2015</span><img class="video-edit end-date" src="images/video-project/icon-edit.png" alt="edit" /></h4>
+        <h4 class="video-pop-input"><label>Budget:</label> <span>$999999.00</span><img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Video Project Name</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></h4>
+        <h4 class="video-pop-input"><label class="span-height">Tags:</label>
+          <div class="video-span-wrap">
+            <span>tag1,</span>
+            <span>tag2,</span>
+            <span>tag3,</span>
+            <span>tag4,</span>
+            <span>tag5,</span>
+            <span>tag6,</span>
+            <span>tag7,</span>
+            <span>tag8,</span>
+            <img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Video Project Name</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" />
+          </div>
+        </h4>
+      </div> <!-- /.video-des-wrap -->
+    </div> <!-- /.video-description-left -->
+    <div class="col-sm-5 video-description-right">
+      <div class="description-right-up">
+        <h4 class="video-dur"><label>Video Duration:</label>
+          <span>20:44</span>
+          <img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Video Duration</h4><div><select><option>Under 30 seconds</option><option>Under 2 minutes</option><option>Under 5 minutes</option><option>Other</option></select><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" />
+        </h4>
+        <h4 class="audio-track"><label>Audio Track:</label> 
+          <span>Alternative Music</span>
+          <span>Alternative Rock</span>
+          <img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content='<h4>Edit Narration</h4><div><div class="form-group form-group-sm multiple-select">
+            <select id="music-genre-main" class="form-control" >
+              <option>Music genre</option>
+              <option value="alternative-genre">Alternative</option>
+              <option value="anime-genre">Anime</option>
+              <option value="blues-genre">Blues</option>
+              <option value="children-genre">Children’s Music</option>
+              <option value="classical-genre">Classical</option>
+              <option value="comedy-genre">Comedy</option>
+              <option value="commercial-genre">Commercial (thank you Sheldon Reynolds)</option>
+              <option value="country-genre">Country</option>
+              <option value="dance-genre">Dance (EMD – Electronic Dance Music – see Electronic below – with thx to Eric Shaffer-Whiting)</option>
+              <option value="disney-genre">Disney</option>
+              <option value="easy-genre">Easy Listening</option>
+              <option value="electronic-genre">Electronic</option>
+              <option value="enka-genre">Enka</option>
+              <option value="french-genre">French Pop</option>
+              <option value="german-folk-genre">German Folk</option>
+              <option value="german-pop-genre">German Pop</option>
+              <option value="fitness-genre">Fitness & Workout</option>
+              <option value="hip-hop-genre">Hip-hop/Rap</option>
+              <option value="holiday-genre">Holiday</option>
+              <option value="indie-pop-genre">Indie Pop</option>
+              <option value="industrial-genre">Industrial</option>
+              <option value="inspirational-genre">Inspirational – Christian & Gospel</option>
+              <option value="instrumental-genre">Instrumental</option>
+              <option value="j-pop-genre">J Pop</option>
+              <option value="jazz-genre">Jazz</option>
+              <option value="k-pop-genre">K-Pop</option>
+              <option value="karaoke-genre">Karaoke</option>
+              <option value="kayokyoku-genre">Kayokyoku</option>
+              <option value="latin-genre">Latin</option>
+              <option value="new-age-genre">New Age</option>
+              <option value="opera-genre">Opera</option>
+              <option value="pop-genre">Pop</option>
+              <option value="rb-soul-genre">R&B/Soul</option>
+              <option value="reggae-genre">Reggae</option>
+              <option value="rock-genre">Rock</option>
+              <option value="singer-genre">Singer/Songwriter</option>
+              <option value="soundtrack-genre">Soundtrack</option>
+              <option value="spoken-genre">Spoken Word</option>
+              <option value="tex-mex-genre">Tex-Mex / Tejano (with thx to Israel Lopez)</option>
+              <option value="vocal-genre">Vocal</option>
+              <option value="world-genre">World</option>
+            </select>
+            <div id="alternative-genre" class="double-select" style="display:none">
+              <select class="form-control" >
+                <option>Art Punk</option>
+                <option>Alternative Rock</option>
+                <option>College Rock</option>
+                <option>Experimental Rock</option>
+                <option>Goth / Gothic Rock</option>
+                <option>Grunge</option>
+                <option>Hardcore Punk</option>
+                <option>Hard Rock</option>
+                <option>Indie Rock</option>
+                <option>Lo-fi (hat tip to Ben Vee Bedlamite)</option>
+                <option>New Wave</option>
+                <option>Progressive Rock</option>
+                <option>Punk</option>
+                <option>Shoegaze (with thx to Jackie Herrera)</option>
+                <option>Steampunk (with thx to Christopher Schaeffer)</option>
+              </select>
+            </div><!-- /.double-select -->
+              <div id="blues-genre" class="double-select" style="display:none">
+                <select name="blues-genre" class="form-control" >
+                  <option>Acoustic Blues</option>
+                  <option>Chicago Blues</option>
+                  <option>Classic Blues</option>
+                  <option>Contemporary Blues</option>
+                  <option>Country Blues</option>
+                  <option>Delta Blues</option>
+                  <option>Electric Blues</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="children-genre" class="double-select" style="display:none">
+                <select name="children-genre" class="form-control" >
+                  <option>Lullabies</option>
+                  <option>Sing-Along</option>
+                  <option>Stories</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="classical-genre" class="double-select" style="display:none">
+                <select name="classical-genre" class="form-control" >
+                  <option>Avant-Garde</option>
+                  <option>Baroque</option>
+                  <option>Chamber Music</option>
+                  <option>Chant</option>
+                  <option>Choral</option>
+                  <option>Classical Crossover</option>
+                  <option>Early Music</option>
+                  <option>High Classical</option>
+                  <option>Impressionist</option>
+                  <option>Medieval</option>
+                  <option>Minimalism</option>
+                  <option>Modern Composition</option>
+                  <option>Opera</option>
+                  <option>Orchestral</option>
+                  <option>Renaissance</option>
+                  <option>Romantic</option>
+                  <option>Wedding Music</option>
+                </select>
+             </div><!-- /.double-select -->
+             <div id="comedy-genre" class="double-select" style="display:none">
+                <select name="comedy-genre" class="form-control" >
+                  <option>Novelty</option>
+                  <option>Standup Comedy</option>
+                  <option>Vaudeville (cheers Ben Vee Bedlamite)</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="commercial-genre" class="double-select" style="display:none">
+                <select name="commercial-genre" class="form-control" >
+                  <option>Jingles</option>
+                  <option>TV Themes</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="country-genre" class="double-select" style="display:none">
+                <select name="country-genre" class="form-control" >
+                  <option>Alternative Country</option>
+                  <option>Americana</option>
+                  <option>Bluegrass</option>
+                  <option>Contemporary Bluegrass</option>
+                  <option>Contemporary Country</option>
+                  <option>Country Gospel</option>
+                  <option>Country Pop (thanks Sarah Johnson)</option>
+                  <option>Honky Tonk</option>
+                  <option>Outlaw Country</option>
+                  <option>Traditional Bluegrass</option>
+                  <option>Traditional Country</option>
+                  <option>Urban Cowboy</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="dance-genre" class="double-select" style="display:none">
+                <select name="dance-genre" class="form-control" >
+                  <option>Club / Club Dance (thx Luke Allfree)</option>
+                  <option>Breakbeat</option>
+                  <option>Brostep (cheers Tom Berckley)</option>
+                  <option>Deep House (cheers Venus Pang)</option>
+                  <option>Dubstep</option>
+                  <option>Electro House (thx Luke Allfree)</option>
+                  <option>Exercise</option>
+                  <option>Garage</option>
+                  <option>Glitch Hop (cheers Tom Berckley)</option>
+                  <option>Hardcore</option>
+                  <option>Hard Dance</option>
+                  <option>Hi-NRG / Eurodance</option>
+                  <option>House</option>
+                  <option>Jackin House (with thx to Jermaine Benjamin Dale Bruce)</option>
+                  <option>Jungle / Drum’n’bass</option>
+                  <option>Regstep (thanks to ‘Melia G)</option>
+                  <option>Techno</option>
+                  <option>Trance</option>
+                  <option>Trap (thx Luke Allfree)</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="easy-genre" class="double-select" style="display:none">
+                <select name="easy-genre" class="form-control" >
+                  <option>Bop</option>
+                  <option>Lounge</option>
+                  <option>Swing</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="electronic-genre" class="double-select" style="display:none">
+                <select name="electronic-genre" class="form-control" >
+                  <option>8bit – aka 8-bit, Bitpop and Chiptune - (thx Marcel Borchert)</option>
+                  <option>Ambient</option>
+                  <option>Bassline (thx Leon Oliver)</option>
+                  <option>Chiptune (kudos to Dominik Landahl)</option>
+                  <option>Crunk (with thx to Jillian Edwards)</option>
+                  <option>Downtempo</option>
+                  <option>Drum & Bass (thx Luke Allfree)</option>
+                  <option>Electro</option>
+                  <option>Electro-swing (thank you Daniel Forthofer)</option>
+                  <option>Electronica</option>
+                  <option>Electronic Rock</option>
+                  <option>Hardstyle (kudos to Dominik Landahl)</option>
+                  <option>IDM/Experimental</option>
+                  <option>Industrial</option>
+                  <option>Trip Hop (thank you Michael Tait Tafoya)</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="hip-hop-genre" class="double-select" style="display:none">
+                <select name="hip-hop-genre" class="form-control" >
+                  <option>Alternative Rap</option>
+                  <option>Bounce</option>
+                  <option>Dirty South</option>
+                  <option>East Coast Rap</option>
+                  <option>Gangsta Rap</option>
+                  <option>Hardcore Rap</option>
+                  <option>Hip-Hop</option>
+                  <option>Latin Rap</option>
+                  <option>Old School Rap</option>
+                  <option>Rap</option>
+                  <option>Turntablism (thank you Luke Allfree)</option>
+                  <option>Underground Rap</option>
+                  <option>West Coast Rap</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="holiday-genre" class="double-select" style="display:none">
+                <select name="holiday-genre" class="form-control" >
+                  <option>Chanukah</option>
+                  <option>Christmas</option>
+                  <option>Christmas: Children’s</option>
+                  <option>Christmas: Classic</option>
+                  <option>Christmas: Classical</option>
+                  <option>Christmas: Jazz</option>
+                  <option>Christmas: Modern</option>
+                  <option>Christmas: Pop</option>
+                  <option>Christmas: R&B</option>
+                  <option>Christmas: Religious</option>
+                  <option>Christmas: Rock</option>
+                  <option>Easter</option>
+                  <option>Halloween</option>
+                  <option>Holiday: Other</option>
+                  <option>Thanksgiving</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="inspirational-genre" class="double-select" style="display:none">
+                <select name="inspirational-genre" class="form-control" >
+                  <option>CCM</option>
+                  <option>Christian Metal</option>
+                  <option>Christian Pop</option>
+                  <option>Christian Rap</option>
+                  <option>Christian Rock</option>
+                  <option>Classic Christian</option>
+                  <option>Contemporary Gospel</option>
+                  <option>Gospel</option>
+                  <option>Christian & Gospel</option>
+                  <option>Praise & Worship</option>
+                  <option>Qawwali (with thx to Jillian Edwards)</option>
+                  <option>Southern Gospel</option>
+                  <option>Traditional Gospel</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="instrumental-genre" class="double-select" style="display:none">
+                <select name="instrumental-genre" class="form-control" >
+                  <option>March (Marching Band)</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="j-pop-genre" class="double-select" style="display:none">
+                <select name="j-pop-genre" class="form-control" >
+                  <option>J-Rock</option>
+                  <option>J-Synth</option>
+                  <option>J-Ska</option>
+                  <option>J-Punk</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="jazz-genre" class="double-select" style="display:none">
+                <select name="jazz-genre" class="form-control" >
+                  <option>Acid Jazz (with thx to Hunter Nelson)</option>
+                  <option>Avant-Garde Jazz</option>
+                  <option>Bebop (thx Mwinogo1)</option>
+                  <option>Big Band</option>
+                  <option>Blue Note (with thx to Jillian Edwards)</option>
+                  <option>Contemporary Jazz</option>
+                  <option>Cool</option>
+                  <option>Crossover Jazz</option>
+                  <option>Dixieland</option>
+                  <option>Ethio-jazz (with thx to Jillian Edwards)</option>
+                  <option>Fusion</option>
+                  <option>Gypsy Jazz (kudos to Mike Tait Tafoya)</option>
+                  <option>Hard Bop</option>
+                  <option>Latin Jazz</option>
+                  <option>Mainstream Jazz</option>
+                  <option>Ragtime</option>
+                  <option>Smooth Jazz</option>
+                  <option>Trad Jazz</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="latin-genre" class="double-select" style="display:none">
+                <select name="latin-genre" class="form-control" >
+                  <option>Alternativo & Rock Latino</option>
+                  <option>Argentine tango (gracias P. Moth & Sandra Sanders)</option>
+                  <option>Baladas y Boleros</option>
+                  <option>Bossa Nova (with thx to Marcos José Sant’Anna Magalhães & Alex Ede for the reclassification)</option>
+                  <option>Brazilian</option>
+                  <option>Contemporary Latin</option>
+                  <option>Flamenco / Spanish Flamenco (thank you Michael Tait Tafoya & Sandra Sanders)</option>
+                  <option>Latin Jazz</option>
+                  <option>Nuevo Flamenco (and again Michael Tafoya)</option>
+                  <option>Pop Latino</option>
+                  <option>Portuguese fado (and again Sandra Sanders)</option>
+                  <option>Raíces</option>
+                  <option>Reggaeton y Hip-Hop</option>
+                  <option>Regional Mexicano</option>
+                  <option>Salsa y Tropical</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="new-age-genre" class="double-select" style="display:none">
+                <select name="new-age-genre" class="form-control" >
+                  <option>Environmental</option>
+                  <option>Healing</option>
+                  <option>Meditation</option>
+                  <option>Nature</option>
+                  <option>Relaxation</option>
+                  <option>Travel</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="pop-genre" class="double-select" style="display:none">
+                <select name="pop-genre" class="form-control" >
+                  <option>Adult Contemporary</option>
+                  <option>Britpop</option>
+                  <option>Bubblegum Pop (thx Haug & John Maher)</option>
+                  <option>Chamber Pop (thx Haug)</option>
+                  <option>Dance Pop</option>
+                  <option>Dream Pop (thx Haug)</option>
+                  <option>Electro Pop (thx Haug)</option>
+                  <option>Orchestral Pop (thx Haug)</option>
+                  <option>Pop/Rock</option>
+                  <option>Power Pop (thx Haug)</option>
+                  <option>Soft Rock</option>
+                  <option>Synthpop (thx Haug)</option>
+                  <option>Teen Pop</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="rb-soul-genre" class="double-select" style="display:none">
+                <select name="rb-soul-genre" class="form-control" >
+                  <option>Contemporary R&B</option>
+                  <option>Disco (not a top level genre Sheldon Reynolds!)</option>
+                  <option>Doo Wop</option>
+                  <option>Funk</option>
+                  <option>Modern Soul (Cheers Nik)</option>
+                  <option>Motown</option>
+                  <option>Neo-Soul</option>
+                  <option>Northern Soul (Cheers Nik & John Maher)</option>
+                  <option>Psychedelic Soul (thank you John Maher)</option>
+                  <option>Quiet Storm</option>
+                  <option>Soul</option>
+                  <option>Soul Blues (Cheers Nik)</option>
+                  <option>Southern Soul (Cheers Nik)</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="reggae-genre" class="double-select" style="display:none">
+                <select name="reggae-genre" class="form-control" >
+                  <option>Dancehall</option>
+                  <option>Dub</option>
+                  <option>Roots Reggae</option>
+                  <option>Ska</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="rock-genre" class="double-select" style="display:none">
+                <select name="rock-genre" class="form-control" >
+                  <option>Acid Rock (with thanks to Alex Antonio)</option>
+                  <option>Adult-Oriented Rock (thanks to John Maher)</option>
+                  <option>Afro Punk</option>
+                  <option>Adult Alternative</option>
+                  <option>Alternative Rock (thx Caleb Browning)</option>
+                  <option>American Trad Rock</option>
+                  <option>Anatolian Rock</option>
+                  <option>Arena Rock</option>
+                  <option>Art Rock</option>
+                  <option>Blues-Rock</option>
+                  <option>British Invasion</option>
+                  <option>Death Metal / Black Metal</option>
+                  <option>Glam Rock</option>
+                  <option>Gothic Metal (fits here Sam DeRenzis – thx)</option>
+                  <option>Hair Metal</option>
+                  <option>Hard Rock</option>
+                  <option>Metal</option>
+                  <option>Noise Rock (genre – Japanoise – thx Dominik Landahl)</option>
+                  <option>Jam Bands</option>
+                  <option>Post Punk (thx Ben Vee Bedlamite)</option>
+                  <option>Prog-Rock/Art Rock</option>
+                  <option>Psychedelic</option>
+                  <option>Rock & Roll</option>
+                  <option>Rockabilly (it’s here Mark Murdock!)</option>
+                  <option>Roots Rock</option>
+                  <option>Singer/Songwriter</option>
+                  <option>Southern Rock</option>
+                  <option>Surf</option>
+                  <option>Tex-Mex</option>
+                  <option>Time Lord Rock (Trock) ~ (thanks to ‘Melia G)</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="singer-genre" class="double-select" style="display:none">
+                <select name="singer-genre" class="form-control" >
+                  <option>Alternative Folk</option>
+                  <option>Contemporary Folk</option>
+                  <option>Contemporary Singer/Songwriter</option>
+                  <option>Indie Folk (with thanks to Andrew Barrett)</option>
+                  <option>Folk-Rock</option>
+                  <option>Love Song (Chanson – merci Marcel Borchert)</option>
+                  <option>New Acoustic</option>
+                  <option>Traditional Folk</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="soundtrack-genre" class="double-select" style="display:none">
+                <select name="soundtrack-genre" class="form-control" >
+                  <option>Foreign Cinema</option>
+                  <option>Musicals</option>
+                  <option>Original Score</option>
+                  <option>Soundtrack</option>
+                  <option>TV Soundtrack</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="tex-mex-genre" class="double-select" style="display:none">
+                <select id="tex-mex-genre" name="tex-mex-genre" class="form-control" >
+                  <option>Chicano</option>
+                  <option>Classic</option>
+                  <option>Conjunto</option>
+                  <option>Conjunto Progressive</option>
+                  <option>New Mex</option>
+                  <option>Tex-Mex</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="vocal-genre" class="double-select" style="display:none">
+                <select name="vocal-genre" class="form-control" >
+                  <option>A cappella (with kudos to Sheldon Reynolds)</option>
+                  <option>Barbershop (with thx to Kelly Chism)</option>
+                  <option>Doo-wop (with thx to Bradley Thompson)</option>
+                  <option>Gregorian Chant (hat tip to Deborah Knight-Nikifortchuk)</option>
+                  <option>Standards</option>
+                  <option>Traditional Pop</option>
+                  <option>Vocal Jazz</option>
+                  <option>Vocal Pop</option>
+                </select>
+              </div><!-- /.double-select -->
+              <div id="world-genre" class="double-select" style="display:none">
+                <select name="world-genre" class="form-control" >
+                  <option>Africa</option>
+                  <option>Afro-Beat</option>
+                  <option>Afro-Pop</option>
+                  <option>Asia</option>
+                  <option>Australia</option>
+                  <option>Cajun</option>
+                  <option>Calypso (thx Gerald John)</option>
+                  <option>Caribbean</option>
+                  <option>Celtic</option>
+                  <option>Celtic Folk</option>
+                  <option>Contemporary Celtic</option>
+                  <option>Dangdut (thank you Achmad Ivanny)</option>
+                  <option>Drinking Songs</option>
+                  <option>Drone (with thx to Robert Conrod)</option>
+                  <option>Europe</option>
+                  <option>France</option>
+                  <option>Hawaii</option>
+                  <option>Indian Ghazal (thank you Gitika Thakur)</option>
+                  <option>Indian Pop</option>
+                  <option>Japan</option>
+                  <option>Japanese Pop</option>
+                  <option>Klezmer</option>
+                  <option>Middle East</option>
+                  <option>North America</option>
+                  <option> Ode (thank you Sheldon Reynolds)</option>
+                  <option> Polka</option>
+                  <option> Soca (thx Gerald John)</option>
+                  <option> South Africa</option>
+                  <option> South America</option>
+                  <option> Traditional Celtic  </option>
+                  <option> Worldbeat</option>
+                  <option> Zydeco</option>
+                </select>
+              </div><!-- /.double-select -->
+          </div> <!-- /.form-group-sm --><button><img src="images/video-project/okay.png" alt="Okay" /></button><button><img src="images/video-project/cancel.png" alt="Cancel" /></button></div>' />
+        </h4>
+        <h4><label>Naration Required:</label> <span>Yes</span><img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Narration</h4><div><label>Narration Required</label><select><option>Yes</option><option>No</option></select><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></h4>
+        <h4><label>Subtitles Requried:</label> <span>Yes</span><img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Subtitles</h4><div><label>Subtitles Required</label><select><option>Yes</option><option>No</option></select><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></h4>
+      </div> <!-- /.description-right-up -->
+      <div class="description-right-down">
+        <div class="header-color-track">
+          
+        </div> <!-- /.header-color-track -->
+        <div class="title-director">
+          <span>Director</span>
+        </div> <!-- /.title-director -->
+        <div class="uploader-info">
+          <div class="uploader-avatar">
+            <img src="images/video-project/profile-img.png" alt="Uploader Avatar" />
+          </div> <!-- /.uploader-avatar -->
+          <div class="uploader-short-details">
+            <h5>Shazey2014Editor</h5>
+            <p>It's Wednesday, 7:16 PM <br> in Russian Federation</p>
+            <div class="uploader-rating">
+              <img src="images/video-project/four-half-stars.png" alt="Uploader Rating" /> 4.5
+            </div> <!-- /.uploader-rating -->
+            <a href="#">Report Abuse</a>
+          </div> <!-- /.uploader-short-details -->
+        </div> <!-- /.uploader-info -->
+        <div class="uploader-info-button">
+          <button>Send Message</button>
+          <button>View Milestones</button>
+        </div> <!-- /.uploader-info-button -->
+      </div> <!-- /.description-right-down -->
+    </div> <!-- /.video-description-right -->
+    <div class="video-upload">
+      <div class="browse-wrap">
+        <div class="title"><img src="images/video-project/upload-icon.png" alt="" />Choose files <br> from media library</div>
+        <input type="file" name="upload" class="upload" title="Choose a file to upload">
+      </div>
+      <span class="upload-path"></span>
+
+      <div class="browse-wrap">
+        <div class="title"><img src="images/video-project/upload-icon.png" alt="" />Upload from <br>My computer</div>
+        <input type="file" name="upload" class="upload" title="Choose a file to upload">
+      </div>
+      <span class="upload-path"></span>
+      <div class="video-upload-info">
+        <p>Upload your own files or add your finished work to Project Files for review.</p>
+      </div> <!-- /.video-upload-info -->
+    </div> <!-- /.video-upload -->
+    <div class="project-files">
+      <h3>Project Files <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="Project Files" /> <span><button id="video-expandall">Expand All</button><button id="video-collapseall">Collapse All</button></span></h3>
+      <div class="video-download">
+        <button id="video-download" data-toggle="modal" data-target="#download-project-files-modal">Download</button>
+      </div> <!-- /.video-download -->
+      <ol class="video-list">
+        <li class="single-video">
+          <h5><span class="icon-reorder"><img src="images/video-project/icon-reorder.png" alt="Icon-Reorder" /></span><span class="single-video-title">Picture000001.PG</span><span class="video-list-number">#1</span></h5>
+          <div class="col-sm-4 single-video-featuredimg">
+            <div class="video-img-wrap">
+              
+            </div><!-- /.video-img-wrap -->
+            <a href="#">View 7 Screenshots</a>
+          </div> <!-- /.single-video-featuredimg -->
+          <div class="col-sm-8 single-video-description">
+            <span class="single-video-title">Picture000001.PG</span>
+            <p>No description.</p>
+            <div class="video-des-button-wrap">
+              <button>Add Notes</button>
+              <button id="project-delete-file">Delete File</button>
+            </div> <!-- /.video-des-button-wrap -->
+          </div> <!-- /.single-video-description -->
+          <div class="single-video-hover">
+            <h4>Shazey2014Editor has removed this file from your project!</h4>
+            <span class="single-video-hover-buttons">
+              <button>Remove</button>
+              <button>Keep</button>
+            </span><!-- /.single-video-hover-buttons -->
+          </div> <!-- /.single-video-hover -->
+        </li> <!-- /.single-video -->
+        <li class="single-video">
+          <h5 class="green-title"><span class="icon-reorder"><img src="images/video-project/icon-reorder.png" alt="Icon-Reorder" /></span><span class="single-video-title">PictureVE000001.PG</span><span class="video-list-number">#2</span></h5>
+          <div class="col-sm-4 single-video-featuredimg">
+            <div class="video-img-wrap2">
+              
+            </div><!-- /.video-img-wrap -->
+            <a href="#">View 7 Screenshots</a>
+          </div> <!-- /.single-video-featuredimg -->
+          <div class="col-sm-8 single-video-description">
+            <span class="single-video-title">PictureVE000001.PG</span>
+            <p>No description.</p>
+            <div class="video-des-button-wrap">
+              <button>Add Notes</button>
+              <button id="project-delete-file">Delete File</button>
+            </div> <!-- /.video-des-button-wrap -->
+          </div> <!-- /.single-video-description -->
+          <div class="single-video-hover">
+            <h4>Shazey2014Editor has removed this file from your project!</h4>
+            <span class="single-video-hover-buttons">
+              <button>Remove</button>
+              <button>Keep</button>
+            </span><!-- /.single-video-hover-buttons -->
+          </div> <!-- /.single-video-hover -->
+        </li> <!-- /.single-video -->
+      </ol><!-- /.video-list -->
+    </div> <!-- /.project-files -->
+    <div class="screenshot-gallery">
+      <h3>Screenshot Gallery <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="Screenshot Gallery" /></h3>
+      <div class="featured-screenshot">
+        <div class="featured-screenshot-wrap clearfix">
+          <div class="featured-screen col-sm-9 clearfix">
+          </div> <!-- /.featured-screen -->
+          <div class="featured-screenshot-text col-sm-3">
+            <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis.</p>
+            <button>Add Notes</button>
+            <button>Download</button>
+          </div> <!-- /.featured-screenshot-text -->
+          <h4>SSGVD13V000002SS14.JPG</h4>
+          <h5>DD/MM/YY HH:MM</h5>
+        </div> <!-- /.featured-screenshot-wrap -->
+      </div> <!-- /.featured-screenshot -->
+    </div> <!-- /.screenshot-gallery -->
+
+    <div class="gallery-history col-sm-12">
+      <h3>Gallery History</h3>
+      <div class="gallery-history-director">
+        <div class="gallery-history-left col-sm">
+          <h5>Director</h5>
+          <p>Updated by director <span>DD/MM/YY HH:MM</span></p>
+          <div class="gallery-history-img">
+            <a href="mailto:owner@email.com?Subject=Message%20title" target="_top"><img src="images/video-project/icon-send.png" alt="" /></a>
+            <a href=""><img src="images/video-project/icon-view.png" alt="" /></a>
+            <a href=""><img src="images/video-project/icon-dl.png" alt="" /></a>
+          </div> <!-- /.gallery-history-img -->
+        </div> <!-- /.gallery-left -->
+        <div class="gallery-history-right">
+          <div id="links">
+           <a href="images/video-project/screenshot.jpg"><img src="images/video-project/screenshot.jpg" /></a>
+           <a href="images/video-project/screenshot11.jpg"><img src="images/video-project/screenshot11.jpg" /></a>
+           <a href="images/video-project/screenshot12.jpg"><img src="images/video-project/screenshot12.jpg" /></a>
+           <a href="images/video-project/screenshot13.jpg"><img src="images/video-project/screenshot13.jpg" /></a>
+           <a href="images/video-project/screenshot14.jpg"><img src="images/video-project/screenshot14.jpg" /></a>
+           <a href="images/video-project/screenshot.jpg"><img src="images/video-project/screenshot.jpg" /></a>
+        </div> <!-- /#links -->
+        </div> <!-- /.gallery-history-right -->
+      </div> <!-- /.gallery-history-director -->
+
+      <div class="gallery-history-editor">
+        <div class="gallery-history-left">
+          <h5>Director</h5>
+          <p>Updated by director <span>DD/MM/YY HH:MM</span></p>
+          <div class="gallery-history-img">
+            <a href="mailto:owner@email.com?Subject=Message%20title" target="_top"><img src="images/video-project/icon-send.png" alt="" /></a>
+            <a href=""><img src="images/video-project/icon-view.png" alt="" /></a>
+            <a href=""><img src="images/video-project/icon-dl.png" alt="" /></a>
+          </div> <!-- /.gallery-history-img -->
+        </div> <!-- /.gallery-left -->
+        <div class="gallery-history-right">
+          <div id="slider2">
+           <a href="images/video-project/screenshot3.jpg"><img src="images/video-project/screenshot3.jpg" /></a>
+           <a href="images/video-project/screenshot21.jpg"><img src="images/video-project/screenshot21.jpg" /></a>
+           <a href="images/video-project/screenshot22.jpg"><img src="images/video-project/screenshot22.jpg" /></a>
+           <a href="images/video-project/screenshot23.jpg"><img src="images/video-project/screenshot23.jpg" /></a>
+           <a href="images/video-project/screenshot24.jpg"><img src="images/video-project/screenshot24.jpg" /></a>
+           <a href="images/video-project/screenshot3.jpg"><img src="images/video-project/screenshot3.jpg" /></a>
+        </div> <!-- /#slider2 -->
+        </div> <!-- /.gallery-history-right -->
+      </div> <!-- /.gallery-history-editor -->
+
+      <div class="gallery-history-director">
+        <div class="gallery-history-left">
+          <h5>Director</h5>
+          <p>Updated by director <span>DD/MM/YY HH:MM</span></p>
+          <div class="gallery-history-img">
+            <a href="mailto:owner@email.com?Subject=Message%20title" target="_top"><img src="images/video-project/icon-send.png" alt="" /></a>
+            <a href=""><img src="images/video-project/icon-view.png" alt="" /></a>
+            <a href=""><img src="images/video-project/icon-dl.png" alt="" /></a>
+          </div> <!-- /.gallery-history-img -->
+        </div> <!-- /.gallery-left -->
+        <div class="gallery-history-right">
+           <div id="slider3">
+           <a href="images/video-project/screenshot1.jpg"><img src="images/video-project/screenshot1.jpg" /></a>
+           <a href="images/video-project/screenshot1.jpg"><img src="images/video-project/screenshot1.jpg" /></a>
+           <a href="images/video-project/screenshot1.jpg"><img src="images/video-project/screenshot1.jpg" /></a>
+           <a href="images/video-project/screenshot1.jpg"><img src="images/video-project/screenshot1.jpg" /></a>
+           <a href="images/video-project/screenshot1.jpg"><img src="images/video-project/screenshot1.jpg" /></a>
+           <a href="images/video-project/screenshot1.jpg"><img src="images/video-project/screenshot1.jpg" /></a>
+        </div> <!-- /#slider3 -->
+        </div> <!-- /.gallery-history-right -->
+      </div> <!-- /.gallery-history-director -->
+    </div> <!-- /.gallery-history -->
+    <div class="project-files-buttons">
+      <div class="col-sm-12 change-buttons">
+        <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="View Only / Allow Changes" />
+        <button>Allow Changes</button>
+        <button class="button-active">View Only</button>
+      </div> <!-- /.change-buttons -->
+      <div class="col-sm-12 save-project-button">
+        <button>Save Project</button>
+      </div> <!-- /.save-project-button -->
+    </div> <!-- /.project-files-buttons -->
+  </div> <!-- /.container -->
+</div> <!-- /.video-project-director -->
+
+<footer id="footer">
+ <div class="container">
+     <div class="row botInfo">
+         <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 botLink">
+           <h4>About</h4>
+           <ul>
+              <li><a href="">About us</a></li>
+              <li><a href="">How it works</a></li>
+              <li><a href="">Press</a></li>
+              <li><a href="">Careers</a></li>
+           </ul>
+         </div>
+         <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 botLink">
+           <h4>Help</h4>
+           <ul>
+              <li><a href="">Help Center</a></li>
+              <li><a href="">Contact Support</a></li>
+              <li><a href="">FAQ’s</a></li>
+              <li><a href="">Shipping info</a></li>
+              <li><a href="">Fee Schedule</a></li>
+              <li><a href="">Tutorials</a></li>              
+           </ul>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 botLink">
+           <h4>Get Inspired</h4>
+           <p>Weekly top projects, featured designers, tips, and tricks</p>
+           <div class="input-group">
+              <input type="text" class="form-control" placeholder="Enter Email Here">
+              <span class="input-group-btn"><button class="btn btn-default" type="button">Sign Up</button></span>
+           </div>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 botLogo">
+            <a href=""><img src="images/logo-b.png"></a>
+            <div class="socBox">
+                <a href="" class="soc-ico s1"></a>
+                <a href="" class="soc-ico s2"></a>
+                <a href="" class="soc-ico s3"></a>
+                <a href="" class="soc-ico s4"></a>
+                <a href="" class="soc-ico s5"></a>
+                <a href="" class="soc-ico s6"></a>
+                <a href="" class="soc-ico s7"></a>
+                <a href="" class="soc-ico s8"></a>
+                <a href="" class="soc-ico s9"></a>
+                <div class="clearN"></div>
+            </div>
+         </div>
+     </div>
+     <div class="row botCopy">
+         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">Copyright 2015 © Tech International Pty Ltd</div>
+         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><a href="">Privacy Policy</a></div>
+         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a href="">Terms and Conditions</a></div>
+     </div>         
+ 
+ </div>
+</footer>
+<!-- Modal -->
+<div class="modal fade" id="loginBox" tabindex="-1" role="dialog" aria-labelledby="loginBoxLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">Sign up Or Login To Valoso</h3>
+      </div>
+      <div class="modal-body">
+        <ul id="userLoginTab" class="nav nav-tabs">
+            <li class="active"><a href="#conSign" id="tabSign" role="tab" data-toggle="tab" aria-controls="conSign" aria-expanded="true">Sign Up</a></li>
+            <li><a href="#conLogin" role="tab" id="tabLogin" data-toggle="tab" aria-controls="conLogin">Login</a></li>
+        </ul>
+        <div id="userLoginContent" class="tab-content">
+        <!-- tab1 -->
+          <div class="tab-pane fade in active" id="conSign" aria-labelledBy="conSign">
+              <form>
+              <div class="row">
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">First Name</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="firstName" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Last Name</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="lastName" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Email</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="email" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Password</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="password" name="password" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formCheck"><input type="checkbox" name="sendOffers" value="true" />
+                   Send me exclusive offers, tips, and tricks.</div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formText">By signing up, you agree to the <a href="">Terms and Conditions</a></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formSub"><input type="submit" value="Sign Up"></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 line">
+                      <fieldset >
+                        <legend  align="center">Or</legend>
+                      </fieldset>
+                   </div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 butLink"><a href=""><img src="images/ico-drop.png"> Login With Dropbox</a></div>
+              </div>
+              </form>
+          </div>
+        <!-- /tab1 -->
+        <!-- tab2 -->
+          <div class="tab-pane fade" id="conLogin" aria-labelledBy="conLogin">
+            <form>
+              <div class="row">
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Email</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="email" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Password</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="password" name="password" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formCheck"><input type="checkbox" name="sendOffers" value="true" />
+                   Remember me <a href="" class="forgotPass">Forgot Password</a></div>
+                   
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formSub"><input type="submit" value="Login"></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 line">
+                      <fieldset >
+                        <legend  align="center">Or</legend>
+                      </fieldset>
+                   </div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 butLink"><a href=""><img src="images/ico-drop.png"> Login With Dropbox</a></div>
+              </div>
+              </form>
+          </div>
+        <!-- /tab2 -->
+        </div>
+      </div>     
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
+<div id="download-project-files-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Download Project Files</h4>
+      </div>
+      <div class="modal-body">
+        <p>Please select files to download. <span>(5 files selected)</span></p>
+        <form action="" class="clearfix">
+        <div class="col-sm-12">
+          <input id="dl-check-all" type="checkbox" name="picture" value="picture1">Check All
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Download</button>
+        <button type="button" class="btn btn-primary">Cancel</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.download-project-files-modal -->
+<a href="#header" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.tosrus.min.all.js"></script>
+<script src='js/jquery-sortable.js'></script>
+<script type="text/javascript" language="javascript" src="js/bootstrap-datepicker.js"></script>
+<script src="js/video-project-page.js"></script>
+<script type="text/javascript">
+  $('.datepicker').datepicker();
+</script>
+<script type="text/javascript">
+  $(function(){
+    $("ol.video-list").sortable()
+  });
+</script>
+</body>
+</html>
