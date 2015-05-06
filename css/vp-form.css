@@ -407,3 +407,18 @@ div#charNum {
     top: 57px;
     right: 15px;
 }
+.video-duration-select > select {
+    float: left;
+    margin-right: 10px;
+}
+.video-duration-select > input {
+    float: left;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 1px 1px 0px #e7e5e4!important;
+    border: solid 1px #ccc!important;
+    margin-bottom: 20px;
+    width: 130px;
+    padding-left: 32px;
+}
