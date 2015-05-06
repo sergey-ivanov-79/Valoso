@@ -57,8 +57,33 @@ $(document).ready(function(){
 		   }
 		});
 	/* Trigger Lightbox End */
-	/* Responsive lightbox */
-	/* Responsive lightbox End */
+	/* Select all checkbox */
+	$(document).ready(function() {
+    $('#dl-check-all').click(function(event) {  //on click
+        if(this.checked) { // check select status
+            $('.check1').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"              
+            });
+        }else{
+            $('.check1').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                      
+            });        
+        }
+    });
+	 $(".check1").click(function () {
+	        if (!$(this).is(":checked")){
+	            $("#dl-check-all").prop("checked", false);
+	        }else{
+	            var flag = 0;
+	            $(".check1").each(function(){
+	                if(!this.checked)
+	                flag=1;
+	            })             
+	                        if(flag == 0){ $("#dl-check-all").prop("checked", true);}
+	        }
+	    });
+	 });
+	/* Select all checkbox End */
 	/* Upload Button */
 		// Span
 		var span = document.getElementsByClassName('upload-path');

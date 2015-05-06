@@ -244,11 +244,11 @@
           </div>
         </div> <!-- /.video-notes-wrapper -->
         <div class="all-info-button all-info-button-5 clearfix">
-          <button><img src="images/boris/icon-edit.png"></button>
-          <button><img src="images/boris/icon-view.png"></button>
-          <button><img class="img-responsive" src="images/boris/send.png"></button>
-          <button><img src="images/boris/icon-dl1.png"></button>
-          <button><img src="images/boris/icon-del1.png"></button>
+          <button data-toggle="modal" data-target="#screen-edit"><img src="images/boris/icon-edit.png"></button>
+          <button data-toggle="modal" data-target="#screen-view"><img src="images/boris/icon-view.png"></button>
+          <button data-toggle="modal" data-target="#screen-send"><img class="img-responsive" src="images/boris/send.png"></button>
+          <button data-toggle="modal" data-target="#screen-download"><img src="images/boris/icon-dl1.png"></button>
+          <button data-toggle="modal" data-target="#screen-del"><img src="images/boris/icon-del1.png"></button>
         </div>
       </div>
     </div>
@@ -360,11 +360,11 @@
           </div>
         </div> <!-- /.video-notes-wrapper -->
         <div class="all-info-button all-info-button-5 clearfix">
-          <button><img src="images/boris/icon-edit.png"></button>
-          <button><img src="images/boris/icon-view.png"></button>
-          <button><img class="img-responsive" src="images/boris/send.png"></button>
-          <button><img src="images/boris/icon-dl1.png"></button>
-          <button><img src="images/boris/icon-del1.png"></button>
+          <button data-toggle="modal" data-target="#screen-edit"><img src="images/boris/icon-edit.png"></button>
+          <button data-toggle="modal" data-target="#screen-view"><img src="images/boris/icon-view.png"></button>
+          <button data-toggle="modal" data-target="#screen-send"><img class="img-responsive" src="images/boris/send.png"></button>
+          <button data-toggle="modal" data-target="#screen-download"><img src="images/boris/icon-dl1.png"></button>
+          <button data-toggle="modal" data-target="#screen-del"><img src="images/boris/icon-del1.png"></button>
         </div>
       </div>
     </div>
@@ -456,7 +456,7 @@
 
         <div class="gallery-history-right clearfix">
           <div class="pull-left">
-            <h1>Shazey2014Editor</h1>
+            <a href="#">Shazey2014Editor</a>
             <p>It’s Wednesday, 7:16 PM in Russian Federation</p>
             <label>Updated by EDITOR, dd/mm/yy hh:mm</label>
           </div>
@@ -474,9 +474,9 @@
         </div> <!-- /#sliderTimeline -->
         </div> <!-- /.gallery-history-right -->
         <div class="three-button">
-          <button>Send Screenshots</button>
-          <button>Download Screenshots</button>
-          <button>Delete Screenshots</button>
+          <button data-toggle="modal" data-target="#send-project-files-modal">Send Screenshots</button>
+          <button data-toggle="modal" data-target="#download-project-files-modal">Download Screenshots</button>
+          <button data-toggle="modal" data-target="#delete-project-files-modal">Delete Screenshots</button>
         </div>
       </div> <!-- /.gallery-history-editor -->
 
@@ -484,9 +484,9 @@
 
 
 <div class="container dow-del-btn">
-  <button class="download-btn"><img class="send-margin" src="images/boris/send.png" class="btn"> Send Screenshots</button>
-  <button class="download-btn"><img src="images/boris/download.png" class="btn"> Download Screenshots</button>
-  <button class="delete-btn"><img src="images/boris/delete.png" class="btn"> Delete Screenshots</button>
+  <button class="download-btn" data-toggle="modal" data-target="#send-project-files-modal"><img class="send-margin" src="images/boris/send.png" class="btn"> Send Screenshots</button>
+  <button class="download-btn" data-toggle="modal" data-target="#download-project-files-modal"><img src="images/boris/download.png" class="btn"> Download Screenshots</button>
+  <button class="delete-btn" data-toggle="modal" data-target="#delete-project-files-modal"><img src="images/boris/delete.png" class="btn"> Delete Screenshots</button>
   <div class="save-project-btn">
     <button>Save Project</button>
   </div>
@@ -548,8 +548,325 @@
  
  </div>
 </footer>
-
-
+<div id="delete-project-files-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Download Multiple Screenshots</h4>
+      </div>
+      <div class="modal-body">
+        <p>Please select screenshots to download. <br><span>(5 files selected)</span></p>
+        <form action="" class="clearfix">
+        <div class="col-sm-12">
+          <input id="dl-check-all" type="checkbox" name="picture" value="picture1">Check All
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default">Download</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.download-project-files-modal -->
+<div id="download-project-files-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Delete Multiple Screenshots</h4>
+      </div>
+      <div class="modal-body">
+        <p>Please select files to delete. <br><span>(5 files selected)</span></p>
+        <form action="" class="clearfix">
+        <div class="col-sm-12">
+          <input id="dl-check-all" type="checkbox" name="picture" value="picture1">Check All
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default">Delete</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.delete-project-files-modal -->
+<div id="send-project-files-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Send Multiple Screenshots</h4>
+      </div>
+      <div class="modal-body">
+        <p>Please select files to send to your Editor. <br><span>(5 files selected)</span></p>
+        <form action="" class="clearfix">
+        <div class="col-sm-12">
+          <input id="dl-check-all" type="checkbox" name="picture" value="picture1">Check All
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        <div class="col-sm-4">
+          <div class="video-dl-wrap">
+            <div class="single-dl">
+              
+            </div>
+          </div> <!-- /.video-dl-wrap -->
+        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+        </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default">Send</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Cancel</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.send-project-files-modal -->
+<div id="screen-del" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Delete Screenshot</h4>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete this screenshot?</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default">Yes</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">No</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.#screen-del -->
+<div id="screen-edit" class="modal fade screen-multi">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="images/video-project/screen-edit.jpg" alt="" />
+        <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#"><img src="images/video-project/prev.png" alt="" /></a>
+        <a href="#"><img src="images/video-project/next.png" alt="" /></a>
+        <p>4/567 | SSGVD13V000002SS4.JPG</p>
+        <button type="button" class="btn btn-default save-edit">Save</button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.#screen-edit -->
+<div id="screen-view" class="modal fade screen-multi">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="images/video-project/screen-edit.jpg" alt="" />
+        <p>No audio Note attached</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#"><img src="images/video-project/prev.png" alt="" /></a>
+        <a href="#"><img src="images/video-project/next.png" alt="" /></a>
+        <p>4/567 | SSGVD13V000002SS4.JPG</p>
+        <button type="button" class="btn btn-default add-edit">Add Notes</button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.#screen-view -->
+<div id="screen-send" class="modal fade screen-multi">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="images/video-project/screen-edit.jpg" alt="" />
+        <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#"><img src="images/video-project/prev.png" alt="" /></a>
+        <a href="#"><img src="images/video-project/next.png" alt="" /></a>
+        <p>4/567 | SSGVD13V000002SS4.JPG</p>
+        <button type="button" class="btn btn-default send-edit">Send To Editor</button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.#screen-send -->
+<div id="screen-download" class="modal fade screen-multi">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="images/video-project/screen-edit.jpg" alt="" />
+        <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis.</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#"><img src="images/video-project/prev.png" alt="" /></a>
+        <a href="#"><img src="images/video-project/next.png" alt="" /></a>
+        <p>4/567 | SSGVD13V000002SS4.JPG</p>
+        <button type="button" class="btn btn-default download-edit">Download</button>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.#screen-download -->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.tosrus.min.all.js"></script>

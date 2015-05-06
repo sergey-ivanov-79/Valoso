@@ -782,10 +782,10 @@ span.single-video-hover-buttons > button:nth-of-type(2) {
   border-radius: 5px;
   padding: 10px 15px;
 }
-div#download-project-files-modal .col-sm-4 {
+div#download-project-files-modal .col-sm-4,div#delete-project-files-modal .col-sm-4,div#send-project-files-modal .col-sm-4 {
   overflow: hidden;
 }
-div#download-project-files-modal .col-sm-4 .video-dl-wrap > img {
+div#download-project-files-modal .col-sm-4 .video-dl-wrap > img,div#delete-project-files-modal .col-sm-4 .video-dl-wrap > img,div#send-project-files-modal .col-sm-4 .video-dl-wrap > img {
   height: 100%;
 }
 .video-dl-wrap  {
@@ -806,33 +806,33 @@ div#download-project-files-modal .col-sm-4 .video-dl-wrap > img {
   background-size: cover;
   background-position: center;
 }
-div#download-project-files-modal .modal-title {
+div#download-project-files-modal .modal-title,div#delete-project-files-modal .modal-title,div#send-project-files-modal .modal-title {
   font-size: 24px;
   color: #727272;
   font-weight: 700;
 }
-div#download-project-files-modal .modal-body {
+div#download-project-files-modal .modal-body,div#delete-project-files-modal .modal-body,div#send-project-files-modal .modal-body {
   padding: 20px 5px;
 }
-div#download-project-files-modal .modal-body > p {
+div#download-project-files-modal .modal-body > p,div#delete-project-files-modal .modal-body > p,div#send-project-files-modal .modal-body > p {
   font-size: 20px;
   color: #727272;
   padding-left: 15px;
 }
-div#download-project-files-modal .modal-body > p span {
+div#download-project-files-modal .modal-body > p span,div#delete-project-files-modal .modal-body > p span,div#send-project-files-modal .modal-body > p span {
   font-style: italic;
   font-size: 18px;
   color: #c4c4c4;
 }
-div#download-project-files-modal .col-sm-4 {
+div#download-project-files-modal .col-sm-4,div#delete-project-files-modal .col-sm-4,div#send-project-files-modal .col-sm-4 {
   font-size: 14px;
   color: #474747;
   margin-bottom: 10px;
 }
-div#download-project-files-modal .modal-footer {
+div#download-project-files-modal .modal-footer,div#delete-project-files-modal .modal-footer,div#send-project-files-modal .modal-footer {
   text-align: center;
 }
-div#download-project-files-modal .modal-footer button {
+div#download-project-files-modal .modal-footer button,div#delete-project-files-modal .modal-footer button,div#send-project-files-modal .modal-footer button {
   width: 160px;
   padding: 10px 0px;
   font-size: 18px;
@@ -843,19 +843,19 @@ div#download-project-files-modal .modal-footer button {
   outline: none;
   background: none;
 }
-div#download-project-files-modal .modal-footer {
+div#download-project-files-modal .modal-footer,div#delete-project-files-modal .modal-footer,div#send-project-files-modal .modal-footer {
   padding: 30px 0px
 }
-div#download-project-files-modal .modal-footer button:nth-of-type(1) {
+div#download-project-files-modal .modal-footer button:nth-of-type(1),div#delete-project-files-modal .modal-footer button:nth-of-type(1),div#send-project-files-modal .modal-footer button:nth-of-type(1) {
   background-color: #4b8dcb;
 }
-div#download-project-files-modal .modal-footer button:nth-of-type(2) {
+div#download-project-files-modal .modal-footer button:nth-of-type(2),div#delete-project-files-modal .modal-footer button:nth-of-type(2),div#send-project-files-modal .modal-footer button:nth-of-type(2) {
   background-color: #4ccbff;
 }
-div#download-project-files-modal .col-sm-12 {
+div#download-project-files-modal .col-sm-12,div#delete-project-files-modal .col-sm-12,div#send-project-files-modal .col-sm-12 {
   margin-bottom: 25px;
 }
-div#download-project-files-modal .modal-body form {
+div#download-project-files-modal .modal-body form,div#delete-project-files-modal .modal-body form,div#send-project-files-modal .modal-body form {
   height: 345px;
   overflow: hidden;
   overflow-y: scroll;
