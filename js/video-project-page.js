@@ -49,6 +49,18 @@ $(document).ready(function(){
 		      visible  : 5
 		   }
 		});
+		
+	/* Trigger Lightbox End */
+	if ($(window).width() < 640) {
+		$("#sliderTimeline a").tosrus();
+		$("#sliderTimeline").tosrus({
+		   infinite : true,
+		   slides   : {
+		      visible  : 3
+		   }
+		});
+		}
+		else {
 		$("#sliderTimeline a").tosrus();
 		$("#sliderTimeline").tosrus({
 		   infinite : true,
@@ -56,9 +68,8 @@ $(document).ready(function(){
 		      visible  : 7
 		   }
 		});
-	/* Trigger Lightbox End */
+		}
 	/* Select all checkbox */
-	$(document).ready(function() {
     $('#dl-check-all').click(function(event) {  //on click
         if(this.checked) { // check select status
             $('.check1').each(function() { //loop through each checkbox
@@ -82,7 +93,53 @@ $(document).ready(function(){
 	                        if(flag == 0){ $("#dl-check-all").prop("checked", true);}
 	        }
 	    });
-	 });
+	 /* 2nd */
+	 $('#dl-check-all1').click(function(event) {  //on click
+        if(this.checked) { // check select status
+            $('.check2').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"              
+            });
+        }else{
+            $('.check2').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                      
+            });        
+        }
+    });
+	 $(".check2").click(function () {
+	        if (!$(this).is(":checked")){
+	            $("#dl-check-all1").prop("checked", false);
+	        }else{
+	            var flag = 0;
+	            $(".check2").each(function(){
+	                if(!this.checked)
+	                flag=1;
+	            })             
+	                        if(flag == 0){ $("#dl-check-all1").prop("checked", true);}
+	        }
+	    });
+	 $('#dl-check-all3').click(function(event) {  //on click
+        if(this.checked) { // check select status
+            $('.check3').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"              
+            });
+        }else{
+            $('.check3').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                      
+            });        
+        }
+    });
+	 $(".check3").click(function () {
+	        if (!$(this).is(":checked")){
+	            $("#dl-check-all3").prop("checked", false);
+	        }else{
+	            var flag = 0;
+	            $(".check3").each(function(){
+	                if(!this.checked)
+	                flag=1;
+	            })             
+	                        if(flag == 0){ $("#dl-check-all3").prop("checked", true);}
+	        }
+	    });
 	/* Select all checkbox End */
 	/* Upload Button */
 		// Span
@@ -157,7 +214,17 @@ $(document).ready(function(){
     $('.carousel').carousel({
     	interval: false
 	}); 
-    
+    /* Scroller */
+    $(function(){
+	  $('.scroll-pane').jScrollPane();
+	  $('.scroll-pane-arrows').jScrollPane(
+	    {
+	      showArrows: true,
+	      horizontalGutter: 10
+	    }
+	  );
+	});
+    /* Scroller End */
 });
 
 $(window).resize(function(){

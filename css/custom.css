@@ -538,6 +538,14 @@ a.right.carousel-control > span > span > span,a.left.carousel-control > span > s
   position: absolute;
   content: "";
   height: 16px;
+  right: 0;
+  width: 2px;
+  background-color: #474747;
+}
+.timeline-line > span:nth-of-type(1):before {
+  position: absolute;
+  content: "";
+  height: 16px;
   left: 0;
   width: 2px;
   background-color: #474747;
@@ -551,7 +559,7 @@ a.right.carousel-control > span > span > span,a.left.carousel-control > span > s
   margin: 0;
   height: 100%;
   width: 210px;
-  margin-top: 47px;
+  margin-top: 15px;
   -webkit-transform: rotate(-90deg);
   -moz-transform:    rotate(-90deg);
   -ms-transform:     rotate(-90deg);
@@ -562,7 +570,9 @@ a.right.carousel-control > span > span > span,a.left.carousel-control > span > s
   position: relative;
   float: left;
   width: 88%;
-  overflow-x: scroll;
+  overflow-x: scroll; 
+  height: 250px;
+  outline: none!important;
 }
 .timeline-scroll {
   float: left;
@@ -676,7 +686,7 @@ a.right.carousel-control > span > span > span,a.left.carousel-control > span > s
 span.timeline-time-red {
   background-color: #e54a3a;
   color: white;
-  padding: 0px 5px;
+  padding: 1px 5px;
   margin-left: -5px;
   position: relative;
 }
@@ -746,14 +756,10 @@ span.timeline-time-red:after {
   margin-top: 10px;
 }
 .col-sm-4.lib-screenshot.blue-gradient {
-  background: #1e5799;
-  background: -moz-linear-gradient(top, #1e5799 0%, #7db9e8 0%, #2989d8 100%, #207cca 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(0%,#7db9e8), color-stop(100%,#2989d8), color-stop(100%,#207cca));
-  background: -webkit-linear-gradient(top, #1e5799 0%,#7db9e8 0%,#2989d8 100%,#207cca 100%);
-  background: -o-linear-gradient(top, #1e5799 0%,#7db9e8 0%,#2989d8 100%,#207cca 100%);
-  background: -ms-linear-gradient(top, #1e5799 0%,#7db9e8 0%,#2989d8 100%,#207cca 100%);
-  background: linear-gradient(to bottom, #1e5799 0%,#7db9e8 0%,#2989d8 100%,#207cca 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#207cca',GradientType=0 );
+  background: -webkit-linear-gradient(#51ccff, #098cc4);
+  background: -o-linear-gradient(#51ccff, #098cc4);
+  background: -moz-linear-gradient(#51ccff, #098cc4);
+  background: linear-gradient(#51ccff, #098cc4);
 }
 .gallery-history-right.clearfix #sliderTimeline {
   margin-top: 20px;
@@ -813,14 +819,14 @@ span.timeline-time-red:after {
   background-image: url("../images/video-project/arrow-left.png");
   background-repeat: no-repeat;
   background-color: transparent;
-  margin-top: -10px;
+  margin-top: -15px!important;
   left: 10px;
 }
 .tos-next {
   background-image: url("../images/video-project/arrow-right.png");
   background-repeat: no-repeat;
   background-color: transparent;
-  margin-top: -10px;
+  margin-top: -15px!important;
   right: -10px;
 }
 #sliderTimeline .tos-slider > div > a > img {
@@ -863,68 +869,8 @@ button.video-snap > img {
   background: transparent;
   color: #4b8dcb;
 }
-.video-notes-wrapper > div > .col-sm-12:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    right: 50%;
-    bottom: 50%;
-    background: rgb(253,199,39);
-    opacity: 0.5;
-    -webkit-transition: all 300ms ease-in-out;      
-    -moz-transition: all 300ms ease-in-out;      
-    -o-transition: all 300ms ease-in-out;      
-    transition: all 300ms ease-in-out;
-}
-.video-notes-wrapper > div > .col-sm-12:hover:after {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
 .captured-screenshots > div > img {
     cursor: pointer;
-}
-.captured-screenshots > div:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    right: 50%;
-    bottom: 50%;
-    background: rgb(253,199,39);
-    opacity: 0.5;
-    -webkit-transition: all 300ms ease-in-out;      
-    -moz-transition: all 300ms ease-in-out;      
-    -o-transition: all 300ms ease-in-out;      
-    transition: all 300ms ease-in-out;
-}
-.captured-screenshots > div:hover:after {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-}
-#sliderTimeline .tos-slider > div > a:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    right: 50%;
-    bottom: 50%;
-    background: rgb(253,199,39);
-    opacity: 0.5;
-    -webkit-transition: all 300ms ease-in-out;      
-    -moz-transition: all 300ms ease-in-out;      
-    -o-transition: all 300ms ease-in-out;      
-    transition: all 300ms ease-in-out;
-}
-#sliderTimeline .tos-slider > div > a:hover:after {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
 }
 #screen-del h4 {
     font-size: 24px;
@@ -999,6 +945,12 @@ div.screen-multi .modal-dialog .modal-body {
     float: left;
     margin-right: 5px;
     margin-top: 5px;
+    position: relative;
+    top: -5px;
+    opacity: 1!important;
+}
+.screen-multi .modal-footer a > span {
+  background-color: #8d8d8d;
 }
 .screen-multi .modal-footer p {
     float: left;
@@ -1094,6 +1046,25 @@ div.screen-multi .modal-dialog .modal-body {
 .screen-multi .modal-footer .close {
     margin-top: 8px;
 }
+.tos-prev, .tos-next, .tos-close {
+  opacity: 1!important;
+}
+.horizontal-only {
+  height: auto;
+  max-height: 200px;
+}
+.jspDrag {
+  border-radius: 10px;
+  background-color: #a7afb2;
+}
+.jspTrack {
+  border-radius: 10px;
+  background-color: #e1e2e3;
+}
+.jspHorizontalBar {
+  background: none;
+  height: 10px;
+}
 @media (max-width: 1060px) {
   .vide-audio.col-sm-12 .col-sm-6 {
     font-size: 15px;
@@ -1159,12 +1130,15 @@ div.screen-multi .modal-dialog .modal-body {
     font-size: 14px;
     margin-bottom: 0;
   }
-  .video-notes1 .all-info-button button {
+  .video-notes1 .all-info-button button, .all-info-button button {
     width: 41px;
     height: 39px;
     margin: 0 1px;
   }
   .video-notes1 .all-info-button button > img {
+    width: 100%;
+  }
+  .all-info-button button > img {
     width: 100%;
   }
   button.video-snap {
@@ -1224,6 +1198,23 @@ div.screen-multi .modal-dialog .modal-body {
     width: 215px;
   }
 } /* 991px End */
+@media (max-width: 900px) {
+  .screen-multi .modal-footer p {
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: 8px;
+  }
+  .screen-multi .modal-footer .send-edit {
+    width: 220px;
+    font-size: 22px;
+  }
+} /* 900px End */
+@media (max-width: 800px) {
+  .screen-multi .modal-footer p {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+}
 @media (max-width: 767px) {
   a.right.carousel-control > span > span, a.left.carousel-control > span > span {
     display: none;
@@ -1305,6 +1296,13 @@ div.screen-multi .modal-dialog .modal-body {
   }
   .all-info-button-5 {
     width: 310px;
+  }
+  .screen-multi .modal-footer a > span {
+    top: 5px;
+  }
+  div#download-project-files-modal .col-sm-4, div#delete-project-files-modal .col-sm-4, div#send-project-files-modal .col-sm-4 {
+    width: 33.33%;
+    float: left;
   }
 } /* 767px End */
 @media (max-width: 640px) {
@@ -1431,6 +1429,10 @@ div.screen-multi .modal-dialog .modal-body {
   .three-button button {
     font-size: 18px;
   }
+  div#download-project-files-modal .col-sm-4, div#delete-project-files-modal .col-sm-4, div#send-project-files-modal .col-sm-4 {
+    width: 50%;
+    float: left;
+}
 }/* 550px End */
 @media (max-width: 480px) {
   .video-slider h1 {
@@ -1485,6 +1487,19 @@ div.screen-multi .modal-dialog .modal-body {
   }
   .screenshot-library {
     padding: 0 15px;
+  }
+  .screen-multi .modal-footer p  {
+    text-align: left;
+  }
+  .screen-multi .modal-footer p > span {
+    width: 100%;
+    display: block;
+  }
+  .hide-480 {
+    display: none!important;
+  }
+  div#download-project-files-modal .modal-body form, div#delete-project-files-modal .modal-body form, div#send-project-files-modal .modal-body form {
+    height: 295px;
   }
 }/* 480px End */
 @media (max-width: 400px) {
@@ -1568,6 +1583,37 @@ div.screen-multi .modal-dialog .modal-body {
   .send-margin {
     width: 80px;
   }
+  .screen-multi .modal-footer .download-edit,.screen-multi .modal-footer .add-edit,.screen-multi .modal-footer .save-edit {
+    font-size: 22px;
+  }
+  div.screen-multi .modal-dialog .modal-body > p {
+    font-size: 17px;
+    line-height: normal;
+  }
+  .screen-multi .modal-footer .send-edit {
+    width: 190px;
+  }
+  .screen-multi .modal-footer p {
+    float: none;
+  }
+  .video-dl-wrap {
+    height: 115px;
+  }
+  div#download-project-files-modal .modal-title, div#delete-project-files-modal .modal-title, div#send-project-files-modal .modal-title {
+    font-size: 20px;
+  }
+  div#download-project-files-modal .modal-body > p, div#delete-project-files-modal .modal-body > p, div#send-project-files-modal .modal-body > p {
+    font-size: 18px;
+    line-height: normal;
+  }
+  div#download-project-files-modal .col-sm-4, div#delete-project-files-modal .col-sm-4, div#send-project-files-modal .col-sm-4 {
+    font-size: 12px;
+  }
+  div#download-project-files-modal .modal-footer button, div#delete-project-files-modal .modal-footer button, div#send-project-files-modal .modal-footer button {
+    width: 140px;
+    font-size: 16px;
+    font-weight: 400;
+  }
 }/* 400px End */
 @media (max-width: 320px) {
   .col-sm-12.video-space {
@@ -1625,5 +1671,16 @@ div.screen-multi .modal-dialog .modal-body {
   }
   .video-notes1 .container.dow-del-btn button, .container.dow-del-btn button {
     padding: 0 15px;
+  }
+  .video-dl-wrap {
+    height: 95px;
+  }
+  div#download-project-files-modal .col-sm-4, div#delete-project-files-modal .col-sm-4, div#send-project-files-modal .col-sm-4 {
+    font-size: 10px;
+  }
+  div#download-project-files-modal .modal-footer button, div#delete-project-files-modal .modal-footer button, div#send-project-files-modal .modal-footer button {
+    width: 110px;
+    font-size: 14px;
+    font-weight: 400;
   }
 }/* 320px End */
