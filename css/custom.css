@@ -931,6 +931,7 @@ div.screen-multi .modal-dialog .modal-body > p {
     border: solid 1px #e1e2e2;
     padding: 10px 15px;
     margin-top: 10px;
+    float: left;
 }
 div.screen-multi .modal-dialog .modal-body {
     padding-bottom: 0;
@@ -1065,6 +1066,102 @@ div.screen-multi .modal-dialog .modal-body {
   background: none;
   height: 10px;
 }
+.screen-edit-container {
+    position: relative;
+    background-color: #474747;
+    padding: 10px 30px;
+    width: 100%;
+    float: left;
+}
+.screen-edit-buttons > div > input {
+    width: 40px;
+    border: 0!important;
+    padding: 0;
+    float: left;
+    background: none;
+    box-shadow: none!important;
+    outline: none!important;
+    border-radius: 10px!important;
+    height: 30px;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+button.edit-zoom-out,button.edit-zoom-in {
+    border: 0;
+    background: none;
+    float: left;
+}
+button.edit-zoom-out {
+  margin-top: 1px;
+}
+.screen-edit-zoom {
+    float: left;
+    margin-top: 5px;
+}
+.screen-edit-zoom > input {
+    float: left;
+    width: 135px;
+    margin-top: 6px;
+}
+.screen-edit-buttons > div > button {
+    border: 0;
+    background: none;
+    box-shadow: none;
+    outline: none;
+    float: left;
+    margin: 0 5px;
+}
+.screen-edit-buttons > div > button > i {
+    font-size: 36px;
+}
+.edit-rotate > i {
+  color: #8d8d8d;
+}
+div.screen-multi .modal-dialog .modal-body > p .popover {
+    max-width: 100%;
+    width: 100%;
+    left: 0!important;
+}
+div.screen-multi .modal-dialog .modal-body > p .popover button {
+    margin-left: 5px;
+}
+button.edit-rentagle {
+    width: 40px;
+    height: 35px;
+    border: solid 5px #51ccff!important;
+}
+div.screen-multi .modal-dialog .modal-body > p .popover input {
+  width: 80%;
+  outline: none;
+}
+div.screen-multi .modal-dialog .modal-body > p .popover .popover-content > div { 
+  text-align: center;
+}
+.edit-white {
+  color: white;
+}
+.edit-drop span {
+    font-size: 28px;
+    padding-top: 5px;
+}
+.edit-white .fa-paint-brush {
+    font-size: 34px;
+}
+.edit-footer-container {
+    float: left;
+}
+#video-snap textarea {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-top: 5px;
+    outline: none;
+}
+#video-snap .save-edit {
+    width: 300px;
+}
 @media (max-width: 1060px) {
   .vide-audio.col-sm-12 .col-sm-6 {
     font-size: 15px;
@@ -1091,6 +1188,12 @@ div.screen-multi .modal-dialog .modal-body {
   }
   .video-item video {
     height: 363px;
+  }
+  .screen-edit-container {
+    padding: 10px 0px;
+  }
+  .screen-edit-buttons > div > input {
+    margin-left: 30px;
   }
 } /* 1060px End */
 @media (max-width: 991px) {
@@ -1197,6 +1300,26 @@ div.screen-multi .modal-dialog .modal-body {
     padding: 10px 0;
     width: 215px;
   }
+  .screen-edit-buttons > div > button > i {
+    font-size: 30px;
+  }
+  .edit-white .fa-paint-brush {
+    font-size: 28px;
+  }
+  .edit-drop span {
+    font-size: 25px;
+  }
+  .screen-edit-zoom > input {
+    width: 115px;
+  }
+  .screen-edit-buttons > div > button {
+    margin: 0 3px;
+  }
+  .screen-edit-buttons.clearfix {
+    width: 840px;
+    float: none;
+    margin: auto;
+  }
 } /* 991px End */
 @media (max-width: 900px) {
   .screen-multi .modal-footer p {
@@ -1207,6 +1330,24 @@ div.screen-multi .modal-dialog .modal-body {
   .screen-multi .modal-footer .send-edit {
     width: 220px;
     font-size: 22px;
+  }
+  .screen-edit-buttons > div > input {
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .screen-edit-zoom > input {
+    width: 100px;
+  }
+  .screen-edit-buttons > div > button {
+    margin: 0 2px;
+    padding: 0 4px;
+  }
+  .screen-edit-buttons > div > button > i {
+    font-size: 30px;
+    padding-top: 3px;
+  }
+  .screen-edit-buttons.clearfix {
+    width: 725px;
   }
 } /* 900px End */
 @media (max-width: 800px) {
@@ -1304,6 +1445,41 @@ div.screen-multi .modal-dialog .modal-body {
     width: 33.33%;
     float: left;
   }
+  .screen-edit-buttons > div > input {
+    width: 30px;
+    height: 25px;
+    margin-top: 3px;
+  }
+  .screen-edit-zoom > input {
+    width: 80px;
+  }
+  .screen-edit-buttons > div > button {
+    padding: 0 2px;
+  }
+  .screen-edit-buttons > div > button > i {
+    font-size: 22px;
+  }
+  .screen-edit-buttons > div > button {
+    height: 25px;
+  }
+  .screen-edit-buttons > div > button img {
+    height: 90%;
+  }
+  button.edit-rentagle {
+    width: 30px;
+  }
+  .screen-edit-zoom {
+    margin-top: 0px;
+  }
+  .screen-edit-buttons.clearfix {
+    width: 545px;
+  }
+  .edit-white .fa-paint-brush {
+    font-size: 20px;
+  }
+  .edit-drop span {
+    font-size: 19px;
+  }
 } /* 767px End */
 @media (max-width: 640px) {
   .video-slider h1 {
@@ -1398,6 +1574,16 @@ div.screen-multi .modal-dialog .modal-body {
   }
   .video-notes-wrapper {
     height: 230px;
+  }
+  .edit-first,.edit-second {
+    position: relative;
+    width: 280px;
+    margin: auto;
+    float: none;
+    height: 35px;
+  }
+  .screen-edit-buttons.clearfix {
+    width: 100%;
   }
 }/* 600px End */
 @media (max-width: 550px) {
@@ -1613,6 +1799,22 @@ div.screen-multi .modal-dialog .modal-body {
     width: 140px;
     font-size: 16px;
     font-weight: 400;
+  }
+  .screen-edit-buttons > div > button {
+    padding: 0 0px;
+  }
+  .screen-edit-buttons > div > input {
+    margin-left: 5px;
+    margin-right: 0px;
+  }
+  .edit-first, .edit-second {
+    width: 250px;
+  }
+  .screen-edit-container {
+    padding: 5px 0px 0;
+  }
+  #video-snap .save-edit {
+    width: 100%;
   }
 }/* 400px End */
 @media (max-width: 320px) {
