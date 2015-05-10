@@ -25,8 +25,6 @@ $(document).ready(function(){
 		$('.video-list').addClass('video-toggle-collapsed');
 		$('.single-video-featuredimg,.single-video-description').fadeOut();
 	});
-
-
 	/* Trigger Lightbox */
 		$("#links a").tosrus();
 		$("#links").tosrus({
@@ -225,8 +223,32 @@ $(document).ready(function(){
 	  );
 	});
     /* Scroller End */
+	$('.slickSlide').slick({
+	  infinite: false,
+	  speed: 300,
+	  slidesToShow: 7,
+	  slidesToScroll: 4,
+	  responsive: [
+	    {
+	      breakpoint: 640,
+	      settings: {
+	        slidesToShow: 4,
+	        slidesToScroll: 2
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 1
+	      }
+	    }
+	    // You can unslick at a given breakpoint now by adding:
+	    // settings: "unslick"
+	    // instead of a settings object
+	  ]
+	});
 });
-
 $(window).resize(function(){
 	
 });
