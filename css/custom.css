@@ -2117,6 +2117,10 @@ div#vn-editor-gallery .modal-content {
   #video-snap .save-edit {
     font-size: 20px;
   }
+  .video-notes1 .all-info-button button > img {
+    width: 100%;
+    padding: 5px;
+  }
 }/* 320px End */
 @media only screen and (max-device-width:  1024px) and (orientation : landscape) {
   #screen-edit div.slider-wrap-landscape {
