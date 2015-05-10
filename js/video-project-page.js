@@ -250,7 +250,18 @@ $(document).ready(function(){
 	});
 });
 $(window).resize(function(){
-	
+	/* Scroller */
+    $(function(){
+	  $('.scroll-pane').jScrollPane();
+	  $('.scroll-pane-arrows').jScrollPane(
+	    {
+	      showArrows: true,
+	      horizontalGutter: 10
+	    }
+	  );
+	});
+    /* Scroller End */
+
 });
 
 	/* Double Select */
