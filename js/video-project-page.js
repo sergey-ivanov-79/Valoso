@@ -248,6 +248,13 @@ $(document).ready(function(){
 	    // instead of a settings object
 	  ]
 	});
+	/* Video snap show/hide landscape */
+	$(".edit-tools").click(function(){
+		$(".video-snap-checked").toggleClass("edit-block1");
+		$(".screen-edit-buttons").toggleClass("edit-block");
+		$("#video-snap div.item div.modal-footer").toggleClass("edit-block");
+	})
+	/* Video snap show/hide landscape End */
 });
 $(window).resize(function(){
 	/* Scroller */
