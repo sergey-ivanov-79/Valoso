@@ -2118,10 +2118,17 @@ div#vn-editor-gallery .modal-content {
     font-size: 20px;
   }
   .video-notes1 .all-info-button button > img {
-    width: 40px;
+    width: 100%;
     height: auto;
   }
 }/* 320px End */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+.video-notes1 .all-info-button button > img {
+    width: 100%;
+    height: auto;
+    padding: 3px 0 2px;
+  }
+}
 @media only screen and (max-device-width:  1024px) and (orientation : landscape) {
   #screen-edit div.slider-wrap-landscape {
     display: -moz-box;
