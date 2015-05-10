@@ -2122,7 +2122,7 @@ div#vn-editor-gallery .modal-content {
     height: auto;
   }
 }/* 320px End */
-@media only screen and (max-width : 640px) {
+@media (max-width : 640px) {
 .video-notes1 .all-info-button button > img {
     width: 100%;
     height: auto;
