@@ -2118,8 +2118,8 @@ div#vn-editor-gallery .modal-content {
     font-size: 20px;
   }
   .video-notes1 .all-info-button button > img {
-    width: 100%;
-    padding: 5px;
+    width: 40px;
+    height: auto;
   }
 }/* 320px End */
 @media only screen and (max-device-width:  1024px) and (orientation : landscape) {
@@ -2515,8 +2515,8 @@ div#vn-editor-gallery .modal-content {
     top: 35%;
   }
   .video-notes1 .all-info-button button > img {
-    width: 100%;
-    padding: 5px;
+    width: 40px;
+    height: auto;
   }
 }
 @media only screen and (max-device-width:  480px) and (orientation : landscape) {
