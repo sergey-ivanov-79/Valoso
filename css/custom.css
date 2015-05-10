@@ -2481,7 +2481,7 @@ div#vn-editor-gallery .modal-content {
     width: 320px;
   }
   .edit-second {
-    width: 420px;
+    width: 340px;
   }
   .video-notes-wrapper {
     height: 250px;
@@ -2509,6 +2509,10 @@ div#vn-editor-gallery .modal-content {
   }
   .edit-tools {
     top: 35%;
+  }
+  .video-notes1 .all-info-button button > img {
+    width: 100%;
+    padding: 5px;
   }
 }
 @media only screen and (max-device-width:  480px) and (orientation : landscape) {
