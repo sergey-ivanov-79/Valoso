@@ -253,9 +253,17 @@ $(document).ready(function(){
 		$(".video-snap-checked").toggleClass("edit-block1");
 		$(".screen-edit-buttons").toggleClass("edit-block");
 		$("#video-snap div.item div.modal-footer").toggleClass("edit-block");
+		$("#screen-edit div.item div.modal-footer").toggleClass("edit-block");
 	})
 	/* Video snap show/hide landscape End */
 });
+$(document).on('pagebeforeshow', '#index', function(){ 
+    $( "#edit-landscape-focus" ).popup({
+        afteropen: function( event, ui ) {
+            $('#edit-landscape-input').focus();
+        }
+    });
+});    
 $(window).resize(function(){
 	/* Scroller */
     $(function(){

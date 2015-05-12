@@ -495,7 +495,7 @@ a.right.carousel-control > span > span > span,a.left.carousel-control > span > s
   padding-left: 5px;
 }
 .dow-del-btn button:nth-of-type(2) > img {
-  padding-top: 9px;
+  padding-top: 8px;
 }
 .captured-screenshots {
   float: left;
@@ -1284,7 +1284,7 @@ div#vn-editor-gallery .modal-content {
 }
 .video-snap-checked {
   opacity: 0;
-  display: 0;
+  display: none;
 }
 .edit-block {
   opacity: 1!important;
@@ -1894,6 +1894,9 @@ div#vn-editor-gallery .modal-content {
   #vn-editor-gallery .modal-footer a {
     top: 50%;
   }
+  .screen-multi .modal-footer a:nth-of-type(1) {
+    margin-right: 20px;
+  }
 }/* 480px End */
 @media (max-width: 415px) {
   .video-notes1 .container.dow-del-btn button, .container.dow-del-btn button {
@@ -2070,11 +2073,13 @@ div#vn-editor-gallery .modal-content {
     margin: 0 2px;
     width: 45px;
     height: 43px;
+    padding: 0;
   }
   .all-info-button button {
     margin: 0 2px;
     width: 45px;
     height: 43px;
+    padding: 0;
   }
   span.timeline-time-red {
     margin-left: -4px;
@@ -2121,6 +2126,72 @@ div#vn-editor-gallery .modal-content {
     width: 100%;
     height: auto;
   }
+  .screen-multi .modal-footer .close span {
+    height: 32px;
+    display: block;line-height: 32px;
+  }
+  .screen-multi {
+    padding: 0 15px;
+  }
+  .screen-multi .modal-footer .download-edit, .screen-multi .modal-footer .add-edit, .screen-multi .modal-footer .save-edit {
+    font-size: 16px;
+    padding: 3px 0;
+  }
+  .screen-multi .modal-footer .close {
+    margin-top: 1px;
+  }
+  .screen-edit-buttons > div > button {
+    margin: 0 1px;
+  }
+  .screen-edit-buttons > div > button {
+    margin: 0 1px;
+  }
+  .screen-edit-buttons > div > button {
+    height: 22px;
+  }
+  .edit-drop span {
+    font-size: 18px;
+    padding-top: 1px;
+  }
+  .screen-edit-buttons > div > button > i {
+    font-size: 22px;
+    padding-top: 0;
+  }
+  button.edit-zoom-out {
+    margin-top: 6px;
+  }
+  .screen-edit-zoom > input {
+    width: 70px;
+  }
+  .edit-first {
+    width: 240px;
+  }
+  .edit-second {
+    width: 220px;
+  }
+  .screen-edit-buttons > div.edit-first > button > i {
+    padding-top: 4px;
+  }
+  button.edit-arrow-pointer {
+    margin-top: 5px!important;
+    padding-top: 2px!important;
+  }
+  .screen-multi .modal-footer .add-edit,.screen-multi .modal-footer .save-edit,.screen-multi .modal-footer .download-edit,.screen-multi .modal-footer .download-edit {
+    width: 120px;
+  }
+  .screen-multi .modal-footer .send-edit {
+    width: 150px;
+    font-size: 16px;
+  }
+  .screen-multi .modal-footer a span {
+    width: 30px;
+    height: 30px;
+    font-size: 17px;
+  }
+  .screen-multi .modal-footer a {
+    width: 30px;
+    height: 30px;
+  }
 }/* 320px End */
 @media (max-width : 640px) {
 .video-notes1 .all-info-button button > img {
@@ -2148,6 +2219,7 @@ div#vn-editor-gallery .modal-content {
     -ms-flex-order: 1;
     -webkit-order: 1;
     order: 1;
+    opacity: 0;
   } 
   #screen-edit div.item div.modal-body {
     -webkit-box-ordinal-group: 2;
@@ -2285,7 +2357,7 @@ div#vn-editor-gallery .modal-content {
     -webkit-order: 2;
     order: 2;
   }
-  #video-snap .modal-content {
+  #video-snap .modal-content,#screen-edit .modal-content {
     background-color: #474747;
   }
   #video-snap textarea {
@@ -2484,15 +2556,25 @@ div#vn-editor-gallery .modal-content {
   }
   #screen-edit .modal-footer .close span,#video-snap .modal-footer .close span {
     font-size: 32px;
+    height: 30px;
+    padding: 0;
+    display: block;
   }
   .screen-edit-buttons.clearfix {
-    width: 475px!important;
+    width: 565px!important;
   }
   .edit-first {
-    width: 320px;
+    width: auto;
+    float: left;
+  }
+  .screen-edit-buttons > div > button {
+    margin: 0 0px;
   }
   .edit-second {
-    width: 340px;
+    width: auto;
+  }
+  #video-snap .modal-dialog .modal-body > img {
+    max-width: 398px;
   }
   .video-notes-wrapper {
     height: 250px;
@@ -2516,7 +2598,7 @@ div#vn-editor-gallery .modal-content {
     width: 230px;
   }
   #video-snap .modal-dialog .modal-body > img {
-    max-width: 335px;
+    max-width: 397px;
   }
   .edit-tools {
     top: 35%;
@@ -2525,17 +2607,117 @@ div#vn-editor-gallery .modal-content {
     width: 40px;
     height: auto;
   }
+  .screen-edit-container {
+    padding: 9px 0px 1px;
+  }
 }
 @media only screen and (max-device-width:  480px) and (orientation : landscape) {
   .video-time img {
     width: 100%;
   }
   .video-snap-checked {
-    width: 41px;
-    height: 40px;
+    width: 36px;
+    height: 35px;
     padding-top: 8px;
   }
   .edit-tools {
-    padding: 8px 8px 3px;
+    padding: 5px 5px 0px;
+  }
+  #video-snap .save-edit {
+    width: 180px;
+    font-size: 14px;
+  }
+  .screen-edit-buttons > div > input {
+    margin-left: 5px;
+    margin-right: 0px;
+  }
+  .screen-edit-buttons > div > button {
+    height: 20px;
+  }
+  .screen-edit-buttons > div > button > i {
+    font-size: 18px;
+  }
+  .edit-drop span {
+    font-size: 14px;
+    padding-top: 0;
+  }
+  .edit-white .fa-paint-brush {
+    font-size: 16px;
+    padding-top: 0;
+  }
+  button.edit-zoom-out {
+    margin-top: 6px;
+  }
+  button.edit-zoom-in {
+    height: 25px;
+  }
+  .screen-edit-zoom > button img {
+    height: 100%;
+    width: auto;
+  }
+  button.edit-zoom-out {
+    height: 18px;
+  }
+  .screen-edit-zoom > input {
+    margin-top: 2px;
+  }
+  button.edit-zoom-out {
+    margin-top: 4px;
+  }
+  .screen-edit-zoom {
+    margin-top: -2px;
+  }
+  .screen-edit-buttons > div > input {
+    margin-top: -1px;
+  }
+  .edit-first,.edit-second {
+    height: 25px;
+  }
+  #video-snap .modal-dialog .modal-body > img {
+    max-width: 413px;
+  }
+  #video-snap div.modal-footer {
+    padding: 0px 10px 6px;
+  }
+  .screen-edit-zoom > input {
+    width: 70px;
+  }
+  #video-snap .modal-dialog .modal-body > img {
+    max-width: 446px;
+  }
+  .screen-edit-container {
+    padding: 5px 0px 1px;
+  }
+  #screen-edit .modal-footer .close span, #video-snap .modal-footer .close span {
+    font-size: 28px;
+    line-height: 28px;
+    padding: 0;
+    display: block;
+    height: 28px;
+  }
+  #screen-edit .modal-footer .close, #video-snap .modal-footer .close {
+    height: 28px;
+  }
+  #screen-edit .carousel-control .glyphicon-chevron-right, #screen-edit .carousel-control .icon-next, #screen-edit .carousel-control .glyphicon-chevron-left, #screen-edit .carousel-control .icon-prev {
+    font-size: 16px;
+    width: 30px;
+    height: 30px;
+  }
+  .screen-multi .modal-footer a {
+    width: 30px;
+    height: 30px;
+  }
+  #screen-edit div.item div.modal-footer {
+    padding: 0px 10px 7px;
+  }
+  .screen-multi .modal-footer .save-edit {
+    width: 70px;
+    font-size: 14px;
+  }
+  div.screen-multi .modal-dialog .modal-body > img {
+    max-width: 444px;
+  }
+  #screen-edit .popover,#video-snap .popover {
+    width: 85%;
   }
 }
