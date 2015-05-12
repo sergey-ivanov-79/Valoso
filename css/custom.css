@@ -2175,7 +2175,7 @@ div#vn-editor-gallery .modal-content {
     width: 60px;
   }
   .edit-first {
-    width: 220px;
+    width: 200px;
   }
   .edit-second {
     width: 220px;
@@ -2689,10 +2689,10 @@ div#vn-editor-gallery .modal-content {
     height: 18px;
   }
   .screen-edit-zoom > input {
-    margin-top: 2px;
+    margin-top: 3px;
   }
   button.edit-zoom-out {
-    margin-top: 2px;
+    margin-top: 3px;
   }
   .screen-edit-zoom {
     margin-top: -2px;
