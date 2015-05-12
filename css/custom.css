@@ -2213,7 +2213,7 @@ div#vn-editor-gallery .modal-content {
     right: -25px;
   }
   button.edit-zoom-out, button.edit-zoom-in {
-    padding: 0;
+    padding: 1px;
   }
 }/* 320px End */
 @media (max-width : 640px) {
@@ -2744,6 +2744,6 @@ div#vn-editor-gallery .modal-content {
     width: 85%;
   }
   button.edit-zoom-out, button.edit-zoom-in {
-    padding: 0;
+    padding: 1px;
   }
 }
