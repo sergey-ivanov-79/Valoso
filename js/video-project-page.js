@@ -25,8 +25,6 @@ $(document).ready(function(){
 		$('.video-list').addClass('video-toggle-collapsed');
 		$('.single-video-featuredimg,.single-video-description').fadeOut();
 	});
-
-
 	/* Trigger Lightbox */
 		$("#links a").tosrus();
 		$("#links").tosrus({
@@ -49,6 +47,18 @@ $(document).ready(function(){
 		      visible  : 5
 		   }
 		});
+		
+	/* Trigger Lightbox End */
+	if ($(window).width() < 640) {
+		$("#sliderTimeline a").tosrus();
+		$("#sliderTimeline").tosrus({
+		   infinite : true,
+		   slides   : {
+		      visible  : 3
+		   }
+		});
+		}
+		else {
 		$("#sliderTimeline a").tosrus();
 		$("#sliderTimeline").tosrus({
 		   infinite : true,
@@ -56,9 +66,8 @@ $(document).ready(function(){
 		      visible  : 7
 		   }
 		});
-	/* Trigger Lightbox End */
+		}
 	/* Select all checkbox */
-	$(document).ready(function() {
     $('#dl-check-all').click(function(event) {  //on click
         if(this.checked) { // check select status
             $('.check1').each(function() { //loop through each checkbox
@@ -82,7 +91,53 @@ $(document).ready(function(){
 	                        if(flag == 0){ $("#dl-check-all").prop("checked", true);}
 	        }
 	    });
-	 });
+	 /* 2nd */
+	 $('#dl-check-all1').click(function(event) {  //on click
+        if(this.checked) { // check select status
+            $('.check2').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"              
+            });
+        }else{
+            $('.check2').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                      
+            });        
+        }
+    });
+	 $(".check2").click(function () {
+	        if (!$(this).is(":checked")){
+	            $("#dl-check-all1").prop("checked", false);
+	        }else{
+	            var flag = 0;
+	            $(".check2").each(function(){
+	                if(!this.checked)
+	                flag=1;
+	            })             
+	                        if(flag == 0){ $("#dl-check-all1").prop("checked", true);}
+	        }
+	    });
+	 $('#dl-check-all3').click(function(event) {  //on click
+        if(this.checked) { // check select status
+            $('.check3').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"              
+            });
+        }else{
+            $('.check3').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                      
+            });        
+        }
+    });
+	 $(".check3").click(function () {
+	        if (!$(this).is(":checked")){
+	            $("#dl-check-all3").prop("checked", false);
+	        }else{
+	            var flag = 0;
+	            $(".check3").each(function(){
+	                if(!this.checked)
+	                flag=1;
+	            })             
+	                        if(flag == 0){ $("#dl-check-all3").prop("checked", true);}
+	        }
+	    });
 	/* Select all checkbox End */
 	/* Upload Button */
 		// Span
@@ -157,11 +212,74 @@ $(document).ready(function(){
     $('.carousel').carousel({
     	interval: false
 	}); 
-    
+    /* Scroller */
+    $(function(){
+	  $('.scroll-pane').jScrollPane();
+	  $('.scroll-pane-arrows').jScrollPane(
+	    {
+	      showArrows: true,
+	      horizontalGutter: 10
+	    }
+	  );
+	});
+    /* Scroller End */
+	$('.slickSlide').slick({
+	  infinite: false,
+	  speed: 300,
+	  slidesToShow: 7,
+	  slidesToScroll: 4,
+	  responsive: [
+	    {
+	      breakpoint: 640,
+	      settings: {
+	        slidesToShow: 4,
+	        slidesToScroll: 2
+	      }
+	    },
+	    {
+	      breakpoint: 480,
+	      settings: {
+	        slidesToShow: 2,
+	        slidesToScroll: 1
+	      }
+	    }
+	    // You can unslick at a given breakpoint now by adding:
+	    // settings: "unslick"
+	    // instead of a settings object
+	  ]
+	});
+	/* Video snap show/hide landscape */
+	$(".edit-tools").click(function(){
+		$(".video-snap-checked").toggleClass("edit-block1");
+		$(".screen-edit-buttons").toggleClass("edit-block");
+		$("#video-snap div.item div.modal-footer").toggleClass("edit-block");
+		$("#screen-edit div.item div.modal-footer").toggleClass("edit-block");
+	})
+	/* Video snap show/hide landscape End */
+	$(".navbar-toggle").click(function(){
+		$(".header").toggleClass("position-relative");
+	});
 });
-
+$(document).on('pagebeforeshow', '#index', function(){ 
+    $( "#edit-landscape-focus" ).popup({
+        afteropen: function( event, ui ) {
+            $('#edit-landscape-input').focus();
+        }
+    });
+});    
 $(window).resize(function(){
-	
+	/* Scroller */
+    $(function(){
+	  $('.scroll-pane').jScrollPane();
+	  $('.scroll-pane-arrows').jScrollPane(
+	    {
+	      showArrows: true,
+	      horizontalGutter: 10
+	    }
+	  );
+	});
+    /* Scroller End */
+
 });
 
 	/* Double Select */
