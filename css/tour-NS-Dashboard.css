@@ -1,0 +1,248 @@
+.image-wrap-slide {
+    overflow: hidden;
+    height: 0;
+    max-height: 100%;
+    position: relative;
+    padding: 22%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin-bottom: 25px;
+}
+.image-wrap-slide .image-backgr {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    background-position: center;
+}
+
+.margin-bottom-500 {
+    margin-bottom: 500px;
+}
+.wrapp-img-slide {
+    margin: 20px;
+}
+.wrapp-img-slide img {
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    
+}
+.tourStart a {
+    width: 100%;
+    background: #ff6c8d;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 36px;
+    font-weight: bold;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding: 20px 0;
+    text-decoration: none;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+}
+.tourStart a:hover {
+    background: #ff965e !important;
+    color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    -o-transition: all .35s;
+    transition: all .35s;
+}
+.wrapp-tab-tour { 
+    margin-left: 10px;
+    margin-right: 2px;
+}
+.tab-tour {
+    padding: 10px;
+    margin: -10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+.tab-tour .btn_blue:hover { color: #4b8dcb;}
+.nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a i.fa { 
+    font-size: 48px;
+    padding-top: 18px; 
+}
+.wrapper-form-con .nav-tabs > li .wrapp-tab-tour .tab-tour > a { 
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    background: none #fefcfb;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.nav > li .wrapp-tab-tour .tab-tour > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+}
+.nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a {
+    text-align: center;
+    color: #8d8d8d;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 189px;
+    height: 140px;
+    max-width: 100%;
+}
+.nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a:hover,
+.nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a:focus,
+.nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a .tab-p,
+.nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a:hover .tab-p,
+.nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a:focus .tab-p,
+.nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a .tab-p span,
+.nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a:hover .tab-p span,
+.nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a:focus .tab-p span {
+    color: #fff;
+    /*font-weight: normal;*/
+}
+.nav-tabs.nav-icon-based > li.active  .wrapp-tab-tour .tab-tour > a > p {
+    color: #fff;
+}
+.nav-icon-based > li .wrapp-tab-tour .tab-tour > a:hover, .nav-icon-based > li .wrapp-tab-tour .tab-tour > a:focus {
+    background: none #555555;
+    color: #fff;
+}
+.nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a, 
+.nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a:hover, 
+.nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a:focus {
+    border: 1px solid #ddd;
+    background: none #555555;
+    color: #fff;
+}
+.wrapper-tabs.wrapper-tabs-tour { min-height: 0;}
+.wrapper-tabs.wrapper-tabs-tour .headroom--not-top .nav-icon-based .fa { display: block;}
+.wrapper-tabs.wrapper-tabs-tour .headroom--not-top .nav-icon-based .padd-p { padding-top: 10px;} 
+.wrapper-tabs.wrapper-tabs-tour .headroom-icons.headroom--not-top { position: static;}
+
+.tab-tour .tour-step-backdrop .right-bl .text-center .text-uppercase,
+.tab-tour .tour-step-backdrop .left-bl .text-center .text-uppercase.text-gray { 
+    margin: 10px 40px;
+    padding: 10px;
+    background: none #fbfcd4;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.tour-tour.right > .arrow, .tour-tour.left > .arrow {
+    top: 50% !important;
+}  
+
+@media (max-width: 992px) {
+    .text-center .tourStart a { font-size: 24px;}
+    .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a {
+      text-align: center;
+      color: #8d8d8d;
+      margin-left: 0px;
+      width: 135px;
+      height: 105px;
+      max-width: 100%;
+    }
+    .image-wrap { height: 190px;}
+    .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a i.fa { 
+        font-size: 32px;
+    }
+    .wrapper-form-con .nav-tabs > li .wrapp-tab-tour .tab-tour > a {
+        padding: 5px;
+    }
+    
+}
+
+@media (max-width: 767px) {
+    .home-dash-menu .wrapper-nav-icon-based.headroom--pinned.headroom--not-top {
+      margin-top: 55px;
+    }
+    .left-cont .tab-tour.d-none { display: none;}
+    .text-center .tourStart a { font-size: 20px;}
+    .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a i.fa { 
+        font-size: 28px;
+    }
+    .wrapper-form-con .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a {
+      text-align: center;
+      color: #8d8d8d;
+      margin-bottom: 10px;
+      margin-left: 0px;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      border: none;
+      background: none;
+    }
+    .headroom--not-top .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a .tab-p{
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;    
+    }
+    .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a:hover, 
+    .nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a:focus, 
+    .nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a, 
+    .nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a:hover, 
+    .nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a:focus {
+       background: none; 
+       border: none;
+    }
+    .nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a .tab-p, 
+    .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a:hover .tab-p, 
+    .nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a:focus .tab-p,
+    .nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a .tab-p span, 
+    .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a:hover .tab-p span, 
+    .nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a:focus .tab-p span {
+        color: #b6b6b6;
+    }
+    .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a i.fa { 
+        background: none #b6b6b6;
+        padding: 15px;
+        border-radius: 100px;
+        -webkit-border-radius: 100px;
+        -moz-border-radius: 100px;
+        width: 63px;
+        color: #fff;
+    }
+    .headroom--not-top .nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a .tab-p,
+    .headroom--not-top .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a:hover .tab-p,
+    .headroom--not-top .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a:focus .tab-p,
+    .headroom--not-top .nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a .tab-p span, 
+    .headroom--not-top .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a:hover .tab-p span, 
+    .headroom--not-top .nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a:focus .tab-p span {
+        color: #fff;
+        background: #555555;
+    }
+    .nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a i.fa,
+    .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a:hover i.fa,
+    .nav-tabs.nav-icon-based > li.active .wrapp-tab-tour .tab-tour > a:focus i.fa {
+        background: none #ff965e;
+    }
+    .wrapper-form-con .nav-tabs > li .wrapp-tab-tour .tab-tour > a {
+      padding: 0px;
+    }
+}
+@media (max-width: 479px) {
+    .wrapper-form-con .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour  > a {
+        margin-left: 0;
+    }
+    .wrapp-tour .wrapp-content-block .content-block {
+      padding-bottom: 5px;
+    }
+    .text-center .tourStart a { font-size: 18px;}
+    .tab-p, .tab-p span {
+        font-size: 11px;
+    }
+    .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a i.fa { 
+        width: 56px;
+        padding: 12px;
+    }
+}
