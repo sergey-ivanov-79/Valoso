@@ -2175,7 +2175,7 @@ div#vn-editor-gallery .modal-content {
     width: 60px;
   }
   .edit-first {
-    width: 250px;
+    width: 220px;
   }
   .edit-second {
     width: 220px;
@@ -2214,6 +2214,10 @@ div#vn-editor-gallery .modal-content {
   }
   button.edit-zoom-out, button.edit-zoom-in {
     padding: 1px;
+  }
+  button.edit-rotate i {
+    padding: 0!important;
+    margin-top: 4px;
   }
 }/* 320px End */
 @media (max-width : 640px) {
@@ -2685,7 +2689,7 @@ div#vn-editor-gallery .modal-content {
     margin-top: 2px;
   }
   button.edit-zoom-out {
-    margin-top: 4px;
+    margin-top: 2px;
   }
   .screen-edit-zoom {
     margin-top: -2px;
