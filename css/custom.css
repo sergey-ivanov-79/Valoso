@@ -2169,7 +2169,7 @@ div#vn-editor-gallery .modal-content {
     padding-top: 0;
   }
   button.edit-zoom-out {
-    margin-top: 6px;
+    margin-top: 4px;
   }
   .screen-edit-zoom > input {
     width: 60px;
@@ -2214,6 +2214,9 @@ div#vn-editor-gallery .modal-content {
   }
   button.edit-zoom-out, button.edit-zoom-in {
     padding: 1px;
+  }
+  button.edit-rotate {
+    height: 26px!important;
   }
   button.edit-rotate i {
     padding: 0!important;
@@ -2673,7 +2676,7 @@ div#vn-editor-gallery .modal-content {
     padding-top: 0;
   }
   button.edit-zoom-out {
-    margin-top: 6px;
+    margin-top: 4px;
   }
   button.edit-zoom-in {
     height: 25px;
