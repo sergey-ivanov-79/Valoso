@@ -1886,7 +1886,10 @@ div#vn-editor-gallery .modal-content {
   .screen-multi .modal-footer p:nth-of-type(2) {
     width: 100%;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
+  }
+  .screen-multi .modal-footer p span:nth-of-type(2) {
+    margin-bottom: 15px;
   }
   .screen-multi .modal-footer p:nth-of-type(1) {
     margin-left: 10px;
@@ -2035,13 +2038,18 @@ div#vn-editor-gallery .modal-content {
     width: 100%;
   }
   .all-info-button button img {
-    width: 100%;
+    width: 30px;
+    margin: auto;
+    padding-top: 2px;
   }
   #screen-del .modal-footer button {
     width: 110px;
   }
   #screen-del h4 {
     font-size: 22px;
+  }
+  .screen-multi .modal-footer a:nth-of-type(1) {
+    margin-right: 10px;
   }
 }/* 400px End */
 @media (max-width: 320px) {
@@ -2164,10 +2172,10 @@ div#vn-editor-gallery .modal-content {
     margin-top: 6px;
   }
   .screen-edit-zoom > input {
-    width: 70px;
+    width: 60px;
   }
   .edit-first {
-    width: 240px;
+    width: 250px;
   }
   .edit-second {
     width: 220px;
@@ -2194,6 +2202,9 @@ div#vn-editor-gallery .modal-content {
   .screen-multi .modal-footer a {
     width: 30px;
     height: 30px;
+  }
+  button.slick-prev,button.slick-next {
+    background-size: 50%;
   }
 }/* 320px End */
 @media (max-width : 640px) {
