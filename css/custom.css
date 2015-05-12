@@ -2206,6 +2206,15 @@ div#vn-editor-gallery .modal-content {
   button.slick-prev,button.slick-next {
     background-size: 50%;
   }
+  button.slick-prev {
+    left: -25px;
+  }
+  button.slick-next {
+    right: -25px;
+  }
+  button.edit-zoom-out, button.edit-zoom-in {
+    padding: 0;
+  }
 }/* 320px End */
 @media (max-width : 640px) {
 .video-notes1 .all-info-button button > img {
@@ -2733,5 +2742,8 @@ div#vn-editor-gallery .modal-content {
   }
   #screen-edit .popover,#video-snap .popover {
     width: 85%;
+  }
+  button.edit-zoom-out, button.edit-zoom-in {
+    padding: 0;
   }
 }
