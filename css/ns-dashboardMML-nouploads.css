@@ -219,7 +219,7 @@ body.dash-page { padding-top: 0;}
 
 /*end styling selects project*/
 .wrapp-myContent .wrapp-frm-post-project { padding-bottom: 20px;}
-.btn_blue {
+.btn.btn_blue {
     background-color: #4b8dcb;
     color: #ffffff;
     margin-left: 5px;
