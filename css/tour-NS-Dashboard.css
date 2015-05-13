@@ -63,7 +63,7 @@
     margin-left: 10px;
     margin-right: 2px;
 }
-.tab-tour {
+.tab-tour.tour-step-backdrop{
     padding: 10px;
     margin: -10px;
     border-radius: 10px;
