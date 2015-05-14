@@ -1877,7 +1877,7 @@ $('#start-tour').on('click', function() {
         }
       ]
     });
-    /*tour_mobile = new Tour({
+    tour_mobile = new Tour({
       debug: true,
       backdrop: true,
       steps: [
@@ -1975,7 +1975,7 @@ $('#start-tour').on('click', function() {
           content: "Your <strong>IN PROGRESS</strong> project as a <em>Video Editor.</em></br></br> Includes <em>information about Video Director.</em></br></br> 365 <em>days left</em> til due date.</br></br> Currently at Milestone #1000 <em>out of 100000 set,</em> with 299 days left to complete the said milestone."
         }
       ]
-    });*/
+    });
     $(window).on('resize', function() {
     if($(window).width >= 768) {
       $(document).on("click", "[data-demo]", function(e) { 
@@ -1988,17 +1988,27 @@ $('#start-tour').on('click', function() {
       });
     }
     }).trigger('resize');
-    /*$(document).on("click", "[data-demo]", function(e) {
+    
+    $(window).on('resize', function() {
+      if($(window).width() >= 768) {
+        tour.start(true).restart();
+      }
+      else {
+        tour_mobile.start(true).restart();
+      }
+    }).trigger('resize');
+    
+    $(document).on('click', '[data-demo]', function(e) {
       e.preventDefault();
-      tour.start(true);
-      tour.restart();
-    });*/
-    tour.addStep ({ 
-      element:  "#step10", 
-      placement: "top",
-      title: "10/15",
-      content: "Review project's <em>post date,</em> its <em>deadline, budget</em> and its <em>currency conversion.</em>"
+    
+      if($(window).width() >= 768) {
+        tour.start(true).restart();
+      }
+      else {
+        tour_mobile.start(true).restart();
+      }
     });
+    
   });
 
 }).call(this);  

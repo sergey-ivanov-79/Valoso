@@ -129,7 +129,7 @@
 
 .tab-tour .tour-step-backdrop .right-bl .text-center .text-uppercase,
 .tab-tour .tour-step-backdrop .left-bl .text-center .text-uppercase.text-gray { 
-    margin: 10px 40px;
+    /*margin: 10px 40px;*/
     padding: 10px;
     background: none #fbfcd4;
     border-radius: 5px;
