@@ -241,7 +241,7 @@
                                                                 <button class="btn btn-tranparent-b btn-mobile btn-rounded btn_blue" id="actionTocall">Have Your Video Made</button>
                                                             </div>
                                                         </div>
-                                                        <div class="pull-right prof-sorted prof-sorted-mobile tab-tour stepn6" id="step6">
+                                                        <div class="pull-right prof-sorted prof-sorted-mobile tab-tour stepn6 clearfix" id="step6">
                                                             <div class="styled-select">
                                                                 <select data-placeholder="All" class="select2" style="">
                                                                     <option value="1" selected="selected">All</option>
@@ -1976,18 +1976,6 @@ $('#start-tour').on('click', function() {
         }
       ]
     });
-    $(window).on('resize', function() {
-    if($(window).width >= 768) {
-      $(document).on("click", "[data-demo]", function(e) { 
-        tour_mobile.init().start(true);
-      });
-    }
-    else {
-      $(document).on("click", "[data-demo]", function(e) { 
-        tour.init().start(true);
-      });
-    }
-    }).trigger('resize');
     
     $(window).on('resize', function() {
       if($(window).width() >= 768) {
