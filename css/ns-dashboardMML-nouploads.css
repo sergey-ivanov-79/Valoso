@@ -922,6 +922,9 @@ button.browse-wrap {
     .text-info p { font-size: 11px;}
     .text-minim { width: 120px;}
     .mini-icons-img .text-center { text-align: center;}
+    .btn.btn_blue { margin-left: 0;}
+    .prof-sorted-mobile .styled-select { margin-right: 0;}
+    .prof-sorted-mobile .styled-select.default_select.wide_select { float: right;}
     /* END My Project */
     /* Begin my-favorites*/
     .row.row-mobile {
