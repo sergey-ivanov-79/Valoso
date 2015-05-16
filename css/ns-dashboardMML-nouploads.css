@@ -871,6 +871,7 @@ button.browse-wrap {
 }
 @media (max-width: 567px) and (min-width: 479px){
     .wide_select .select2-container { width: 130px !important;}
+    .btn.btn_blue { padding: 6px 12px;}
 }
 @media (max-width: 479px) {
     /*.nav-tabs.nav-icon-based > li > a {
@@ -922,7 +923,7 @@ button.browse-wrap {
     .text-info p { font-size: 11px;}
     .text-minim { width: 120px;}
     .mini-icons-img .text-center { text-align: center;}
-    .btn.btn_blue { margin-left: 0;}
+    .btn.btn_blue { margin-left: 0; padding: 6px 12px;}
     .prof-sorted-mobile .styled-select { margin-right: 0;}
     .prof-sorted-mobile .styled-select.default_select.wide_select { float: right;}
     .pull-right.prof-sorted.prof-sorted-mobile { float: none !important;}

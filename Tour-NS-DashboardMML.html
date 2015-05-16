@@ -241,21 +241,23 @@
                                                                 <button class="btn btn-tranparent-b btn-mobile btn-rounded btn_blue" id="actionTocall">Have Your Video Made</button>
                                                             </div>
                                                         </div>
-                                                        <div class="pull-right prof-sorted prof-sorted-mobile tab-tour stepn6 clearfix" id="step6">
-                                                            <div class="styled-select">
-                                                                <select data-placeholder="All" class="select2" style="">
-                                                                    <option value="1" selected="selected">All</option>
-                                                                    <option value="2">Open</option>
-                                                                    <option value="3">In progress</option>
-                                                                    <option value="4">Complete</option>
-                                                                </select>                  
-                                                            </div>
-                                                            <div class="styled-select default_select wide_select">
-                                                                <select data-placeholder="All" class="select2" style="">
-                                                                    <option value="1" selected="selected">All</option>
-                                                                    <option value="2">Projects I Created</option>
-                                                                    <option value="3">Projects I am Working On</option>
-                                                                </select>
+                                                        <div class="pull-right prof-sorted prof-sorted-mobile">
+                                                            <div class="tab-tour stepn6 clearfix" id="step6">
+                                                                <div class="styled-select">
+                                                                    <select data-placeholder="All" class="select2" style="">
+                                                                        <option value="1" selected="selected">All</option>
+                                                                        <option value="2">Open</option>
+                                                                        <option value="3">In progress</option>
+                                                                        <option value="4">Complete</option>
+                                                                    </select>                  
+                                                                </div>
+                                                                <div class="styled-select default_select wide_select">
+                                                                    <select data-placeholder="All" class="select2" style="">
+                                                                        <option value="1" selected="selected">All</option>
+                                                                        <option value="2">Projects I Created</option>
+                                                                        <option value="3">Projects I am Working On</option>
+                                                                    </select>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </form>
@@ -285,7 +287,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="text-center">
-                                                        <div class="col-sm-offset-3 col-xs-12 col-sm-6 col-md-6 col-lg-6 tourStart"><a href="#" data-demo>Start The Toure</a> </div>
+                                                        <div class="col-sm-offset-3 col-xs-12 col-sm-6 col-md-6 col-lg-6 tourStart"><a href="#" data-demo="false">Start The Toure</a> </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1752,30 +1754,6 @@ $('.gallery').each(function() { // the containers for all your galleries
 </script>
 <script src="js/bootstrap-tour.min.js"></script>
 <script src="js/bootstrap-tour-standalone.min.js"></script>
-<!--
-<script>
-var tour = new Tour({
-  steps: [
-      {
-        element: "#step1",
-        title: "Title of my step",
-        content: "Content of my step"
-      },
-      {
-        element: "#step2",
-        title: "Title of my step",
-        content: "Content of my step"
-      }
-  ]
-});
-
-tour.init();
-
-$('#start-tour').on('click', function() {
-  tour.start();
-});
-</script>
--->
 <script>
 (function() {
   $(function() {
@@ -1979,10 +1957,10 @@ $('#start-tour').on('click', function() {
     
     $(window).on('resize', function() {
       if($(window).width() >= 768) {
-        tour.start(true).restart();
+        tour.restart().start(true);
       }
       else {
-        tour_mobile.start(true).restart();
+        tour_mobile.restart().start(true);
       }
     }).trigger('resize');
     
@@ -1990,10 +1968,10 @@ $('#start-tour').on('click', function() {
       e.preventDefault();
     
       if($(window).width() >= 768) {
-        tour.start(true).restart();
+        tour.restart().start(true);
       }
       else {
-        tour_mobile.start(true).restart();
+        tour_mobile.restart().start(true);
       }
     });
     
