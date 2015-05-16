@@ -1962,7 +1962,7 @@ $('.gallery').each(function() { // the containers for all your galleries
       else {
         tour_mobile.restart().start(true);
       }
-    }).trigger('resize');
+    });
     
     $(document).on('click', '[data-demo]', function(e) {
       e.preventDefault();
