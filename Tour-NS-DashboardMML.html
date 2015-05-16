@@ -1955,14 +1955,14 @@ $('.gallery').each(function() { // the containers for all your galleries
       ]
     });
     
-    $(window).on('resize', function() {
+    /*$(window).on('resize', function() {
       if($(window).width() >= 768) {
-        tour.restart().start(true);
+        tour.restart();
       }
       else {
-        tour_mobile.restart().start(true);
+        tour_mobile.restart();
       }
-    });
+    });*/
     
     $(document).on('click', '[data-demo]', function(e) {
       e.preventDefault();
