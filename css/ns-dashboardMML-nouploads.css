@@ -902,7 +902,7 @@ button.browse-wrap {
     }
     .btn_blue { width: 100%;}
     .styled-select { margin-top: 10px;}
-    .wide_select .select2-container { width: 166px !important;}
+    .wide_select .select2-container { width: 155px !important;}
     .bott-block .col-sm-6 { float: left; width: 50%; padding-left: 5px; padding-right: 5px;}
     .dop-col-sm-5 { float: none; width: 100%;}
     .dop-col-sm-7 { float: none;   width: 100%;}
@@ -925,6 +925,7 @@ button.browse-wrap {
     .btn.btn_blue { margin-left: 0;}
     .prof-sorted-mobile .styled-select { margin-right: 0;}
     .prof-sorted-mobile .styled-select.default_select.wide_select { float: right;}
+    .pull-right.prof-sorted.prof-sorted-mobile { float: none !important;}
     /* END My Project */
     /* Begin my-favorites*/
     .row.row-mobile {
