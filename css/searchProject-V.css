@@ -34,7 +34,7 @@
 
 .dis-none-big { display: inline-block;}
 .dis-none-mob { display: none;}
-.search-project .select-filter .btn-default{ width: 200px; color: #8d8d8d;}
+.search-project .select-filter .btn-default{ width: 200px;}
 .search-project .wrapp-top { margin-bottom: 20px;}
 #bd-dashboard .btn.btn-mobile {
     background: #fd9f6d;
