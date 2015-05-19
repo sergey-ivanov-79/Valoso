@@ -13,17 +13,23 @@ $(document).ready(function(){
 	});
 
 
+	if ($("#about").hasClass("opened")) {
+	  $("#about").animate({right: -700 +"px"}, 2000);
+	}
+
 	$('#video-expandall').click(function() {
 		$(this).css('color','#474747');
 		$('#video-collapseall').css('color','#4b8dcb');
 		$('.video-list').removeClass('video-toggle-collapsed');
 		$('.single-video-featuredimg,.single-video-description').fadeIn();
+		$('.project-more-opt.dropdown > button').css("display","none")
 	});
 	$('#video-collapseall').click(function() {
 		$(this).css('color','#474747');
 		$('#video-expandall').css('color','#4b8dcb');
 		$('.video-list').addClass('video-toggle-collapsed');
 		$('.single-video-featuredimg,.single-video-description').fadeOut();
+		$('.project-more-opt.dropdown > button').css("display","block")
 	});
 	/* Trigger Lightbox */
 		$("#links a").tosrus();
@@ -298,7 +304,7 @@ $(window).resize(function(){
 	var adjustment
 	$("ol.video-list").sortable({
 	  group: 'no-drop',
-	  handle: '.drag-drop',
+	  handle: '.icon-reorder',
 	  onDragStart: function (item, container, _super) {
 	    // Duplicate items of the no drop area
 	    if(!container.options.drop)
@@ -347,3 +353,33 @@ $(window).resize(function(){
 	        e.preventDefault();
 	 });
 	/* Popup Datepicker End */
+		$(".single-video-featuredimg > a").click(function(){
+		setTimeout(function(){
+
+			$('.slickSlide1').slick({
+			  infinite: false,
+			  speed: 300,
+			  slidesToShow: 6,
+			  slidesToScroll: 4,
+			  responsive: [
+			    {
+			      breakpoint: 767,
+			      settings: {
+			        slidesToShow: 4,
+			        slidesToScroll: 2
+			      }
+			    },
+			    {
+			      breakpoint: 480,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 1
+			      }
+			    }
+			    // You can unslick at a given breakpoint now by adding:
+			    // settings: "unslick"
+			    // instead of a settings object
+			  ]
+			});
+		}, 500);
+	});

@@ -272,7 +272,6 @@ span.upload-path {
   float: left;
   width: 100%;
   background-color: #f6f3f2;
-  margin-bottom: 50px;
   border-radius: 5px;
 }
 .project-files > h3 {
@@ -373,7 +372,7 @@ span.upload-path {
   float: left;
   width: 100%;
   padding: 0 20px;
-  height: 690px;
+  height: 1500px;
   overflow-y: scroll;
   list-style: none;
 }
@@ -384,7 +383,6 @@ span.upload-path {
   margin-bottom: 15px;
   border: solid 1px #ebe9e9;
   border-radius: 5px;
-  height: 330px;
 }
 .video-list .single-video > h5 {
   font-size: 20px;
@@ -428,9 +426,10 @@ span.icon-reorder {
   font-size: 20px;
   color: #4b8dcb;
   text-align: center;
-  top: 15px;
+  top: 7px;
   position: relative;
   text-decoration: none;
+  cursor: pointer;
 }
 .single-video-featuredimg > a:after {
   content: "";
@@ -457,27 +456,28 @@ span.icon-reorder {
   font-size: 20px;
   color: #474747;
   font-style: italic;
+  margin-bottom: 0;
 }
 .single-video-featuredimg,.single-video-description {
-  height: 265px;
+  height: 295px;
 }
 .video-des-button-wrap {
-  display: block;
-  position: absolute;
-  bottom: 15px;
-  right: 0;
-  left: 0;
+  position: relative;
   text-align: center;
 }
 .video-des-button-wrap > button {
-  font-size: 24px;
+  font-size: 16px;
   color: white;
-  padding: 10px 20px;
+  padding: 5px 0px;
   border: 0;
   border-radius: 5px;
   outline: none;
   font-weight: 700;
+  text-align: center;
+  width: 48%;
+  margin-top: 15px;
   border: solid 2px transparent;
+  float: left;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
@@ -485,7 +485,7 @@ span.icon-reorder {
 }
 .video-des-button-wrap > button:nth-of-type(1) {
   background-color: #4b8dcb;
-  margin-right: 20px;
+  margin-right: 2%;
 }
 .video-des-button-wrap > button:nth-of-type(1):hover {
   background-color: transparent;
@@ -652,6 +652,8 @@ span.single-video-hover-buttons > button:nth-of-type(2) {
 .gallery-history-director,.gallery-history-editor {
   margin-bottom: 20px;
   position: relative;
+  border: 0;
+  border-radius: 0;
 }
 .gallery-history-director .gallery-history-left,.gallery-history-editor .gallery-history-left {
   border: solid 1px #c4c4c4;
@@ -856,7 +858,7 @@ div#download-project-files-modal .col-sm-12,div#delete-project-files-modal .col-
   margin-bottom: 25px;
 }
 div#download-project-files-modal .modal-body form,div#delete-project-files-modal .modal-body form,div#send-project-files-modal .modal-body form {
-  height: 345px;
+  height: 355px;
   overflow: hidden;
   overflow-y: scroll;
 }
@@ -866,6 +868,7 @@ div#download-project-files-modal .modal-body form,div#delete-project-files-modal
   left: 230px;
   bottom: 0;
   right: 0;
+  padding: 0;
 }
 .gallery-history-right #links,.gallery-history-right #slider3,.gallery-history-right #slider2 {
   position: relative;
@@ -1082,6 +1085,299 @@ body.dragging, body.dragging * {
 .video-description-right .description-right-up > h4 {
   margin-bottom: 20px;
 }
+span.video-list-draft {
+  float: right;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-style: italic;
+  color: #ff818c;
+}
+.video-director-editor {
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    right: 0;
+}
+.video-dir h5 {
+  font-size: 16px;
+  color: white;
+  margin: 0;
+  background-color: #4ccbff;
+  width: 155px;
+  text-align: center;
+  float: left;
+  height: 35px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-top: 10px;
+  font-weight: 700;
+}
+.video-dir > span {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-top: 7px;
+  background-color: #656565;
+  width: 40px;
+  display: block;
+  text-align: center;
+  float: left;
+  height: 35px;
+  
+}
+.video-dir span {
+  font-size: 16px;
+  color: white;
+  font-weight: 700;
+}
+.video-edi h5 {
+  font-size: 16px;
+  color: white;
+  margin: 0;
+  background-color: #5dff60;
+  width: 155px;
+  text-align: center;
+  float: left;
+  height: 35px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding-top: 10px;
+  font-weight: 700;
+}
+.video-edi > span {
+  background-color: #656565;
+  width: 40px;
+  display: block;
+  text-align: center;
+  float: left;
+  height: 35px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-top: 7px;
+}
+.video-edi span {
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+}
+.video-dir-edi-new {
+  width: auto!important;
+  padding: 7px 10px 0!important;
+}
+.video-dir-edi-new span:nth-of-type(1){
+  position: relative;
+  float: left;
+  width: auto;
+  display: block;
+  padding-right: 5px
+}
+.video-dir-edi-new span:nth-of-type(2) {
+  font-style: italic;
+  position: relative;
+  float: left;
+  width: auto;
+  display: block;
+}
+.video-director-editor div:nth-of-type(1) {
+  margin-right: 10px;
+}
+.video-dir,.video-edi {
+  position: relative;
+  float: left;
+}
+#vp-screen-edit .screen-edit-container {
+  position: absolute;
+  background-color: rgba(71,71,71,0.9);
+  padding: 10px 5px;
+  width: 80px;
+  top:0;
+  left: 0;
+  bottom: 0;
+  margin-top: 0;
+}
+#vp-screen-edit .modal-dialog .modal-body {
+  position: relative;
+}
+#vp-screen-edit .modal-footer .save-edit {
+  margin-right: 15px;
+}
+.modal-footer .btn+.btn {
+  margin-left: 0;
+}
+.screen-img-wrap {
+  position: relative;
+  float: left;
+}
+.screen-img-wrap img {
+  width: 100%;
+}
+#vp-screen-edit .screen-edit-buttons > div > button {
+  float: none;
+  margin: 15px auto;
+  display: block;
+}
+#vp-screen-edit .screen-edit-buttons > div > input {
+  margin: 15px auto;
+  float: none;
+}
+span.project-more-opt {
+  margin-right: 10px;
+  height: 30px;
+  width: 30px;
+  display: block;
+  float: left;
+  background-color: white;
+  color: #5dff60;
+  text-align: center;
+  padding-top: 7px;
+  border-radius: 5px;
+  font-size: 17px;
+  margin-top: -4px;
+  cursor: pointer;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+span.project-more-opt:hover {
+  background-color: #656565;
+  color: white;
+}
+.project-more-opt.dropdown {
+  float: left;
+}
+.project-more-opt .dropdown-menu {
+  left: -116px;
+  width: 200px;
+  padding: 0;
+}
+.project-more-opt .dropdown-menu h4 {
+  font-size: 18px;
+  color: #474747;
+  font-weight: 700;
+  margin: 0;
+  padding: 10px 0 10px;
+  padding-left: 20px;
+  border-bottom: solid 2px #5dff60;
+}
+.project-more-opt .dropdown-menu li a {
+  font-size: 18px;
+  color: #474747;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+}
+.project-more-opt .dropdown-menu li img {
+  float: right;
+  opacity: 0.5;
+  margin-top: 4px;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.project-more-opt .dropdown-menu li a:hover img {
+  opacity: 1;
+}
+.project-more-opt.dropdown > button {
+  outline: none!important;
+  box-shadow: none!important;
+  border: 0;
+  background: none;
+  background-color: white;
+  color: #5dff60;
+  padding: 4px 7px;
+  font-size: 16px;
+  margin-right: 10px;
+  margin-top: -3px;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.btn-default.active,.btn-default:active,.open>.dropdown-toggle.btn-default,.project-more-opt.dropdown > button:hover {
+  outline: none!important;
+  box-shadow: none!important;
+  border: 0;
+  background: none;
+  background-color: #656565;
+  color: white;
+}
+.project-more-opt .dropdown-menu li:nth-of-type(1) {
+  border-bottom: solid 1px #cac7c6;
+}
+.video-project-editor .video-description-right .uploader-info {
+  background-color: #e8fde9;
+}
+.video-open-guest .gallery-history-left {
+  background-color: white;
+}
+.pop-input {
+  position: absolute;
+  left: 80px;
+  right: 0;
+  bottom: 0;
+}
+.pop-input textarea {
+  width: 100%;
+  border: 0;
+  height: 80px;
+  background-color: rgba(255,255,255,0.2);
+  padding-left: 10px;
+  outline: none;
+  padding-top: 10px;
+  text-align: left;
+  margin-bottom: -5px;
+  color: black!important;
+}
+div#view-screensh .modal-dialog {
+  max-width: 1024px;
+  width: 100%;
+}
+div#view-screensh .featured-screenshot-text .col-sm-9 {
+  margin-top: 10px;
+  padding-left: 0px;
+}
+div#view-screensh .featured-screenshot-wrap {
+  border: 0;
+}
+div#view-screensh .featured-screenshot-text p {
+  border: solid 1px #d9d9d9;
+  height: 100px;
+  margin: 0;
+  padding: 10px;
+}
+div#view-screensh .featured-screenshot {
+  margin: 0;
+  padding: 0;
+}
+.featured-screen-popup img {
+  width: 100%;
+}
+div#view-screensh .modal-body {
+  padding: 0;
+}
+div#view-screensh .close {
+  margin-top: 5px;
+  margin-right: 5px;
+}
+div#view-screensh .gallery-history-editor {
+  float: left;
+  position: relative;
+  width: 100%;
+  padding: 0 35px;
+}
+div#view-screensh .gallery-history-right {
+  right: 35px;
+  left: 285px;
+  padding-top: 50px;
+}
+div#view-screensh .featured-screenshot-text button {
+  padding: 5px 0px;
+  font-size: 22px;
+}
+.ns-vp-open div#view-screensh .modal-body {
+  padding: 20px;
+}
 @media (max-width: 1024px) {
   .audio-track > label {
     height: 50px;
@@ -1119,9 +1415,6 @@ body.dragging, body.dragging * {
   .video-description-right .uploader-info {
     padding: 10px 15px;
   }
-  .video-des-button-wrap > button {
-    font-size: 20px;
-  }
   .video-span-wrap > span {
     font-size: 16px;
   }
@@ -1133,6 +1426,9 @@ body.dragging, body.dragging * {
   }
   .single-video-featuredimg > a {
     font-size: 18px;
+  }
+  .video-director-editor {
+    bottom: 13px;
   }
   .featured-screenshot-text button {
     font-size: 20px;  
@@ -1162,7 +1458,10 @@ body.dragging, body.dragging * {
     font-size: 22px;
     width: 320px;
   }
-}
+  .applicants-info-button button {
+    padding: 5px 20px;
+  }
+}/* 1024px End */
 @media (max-width: 991px) {
   .video-description-right .description-right-up h4 > label {
     font-size: 16px;
@@ -1222,7 +1521,7 @@ body.dragging, body.dragging * {
     width: 270px;
   }
   .video-upload-info > p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .project-files > h3 {
     font-size: 26px;
@@ -1238,13 +1537,10 @@ body.dragging, body.dragging * {
     padding: 10px 75px;
   }
   .video-des-button-wrap > button {
-    font-size: 16px;
+    font-size: 14px;
   }
   .single-video-featuredimg, .single-video-description {
-    height: 235px;
-  }
-  .video-list .single-video {
-    height: 300px;
+    height: 275px;
   }
   .single-video-featuredimg .video-img-wrap, .single-video-featuredimg .video-img-wrap2 {
     height: 185px;
@@ -1255,8 +1551,11 @@ body.dragging, body.dragging * {
   .video-list .single-video > h5 {
     font-size: 18px;
   }
+  .video-director-editor {
+    bottom: 15px;
+  }
   .video-list {
-    height: 630px;
+    height: 680px;
   }
   .screenshot-gallery > h3 {
     font-size: 26px;
@@ -1288,13 +1587,649 @@ body.dragging, body.dragging * {
   .single-video-description > p {
     font-size: 14px;
   }
-  .video-des-button-wrap > button {
-    padding: 5px 15px; 
-  }
   .featured-screenshot-wrap > h4 {
     font-size: 18px;
   }
   .featured-screenshot-wrap > h5 {
     font-size: 14px;
   }
-}
+  .applicants-info h5 {
+    font-size: 18px!important;
+    padding: 34px 0px!important;
+  }
+  #vp-screen-edit .screen-edit-buttons {
+    width: 100%;
+  }
+}/* 991px End */
+@media (max-width: 900px) {
+  #vp-screen-edit .screen-edit-buttons > div > button {
+    margin: 9px auto;
+  }
+}/* 900px End */
+@media (max-width: 800px) {
+  #vp-screen-edit .screen-edit-buttons > div > button {
+    margin: 3px auto;
+  }
+}/* 900px End */
+@media (max-width: 767px) {
+  .video-description-right, .video-description-left {
+    padding-right: 0;
+  }
+  .video-description-right .description-right-up h4 > label {
+    width: 180px;
+  }
+  .video-description-right .description-right-up > h4 {
+    font-size: 16px;
+    float: left;
+    width: 100%;
+  }
+  .video-description-right .description-right-up {
+    border-top-right-radius: 0;
+  }
+  .video-des-wrap {
+    border-bottom-right-radius: 0;
+  }
+  .header-color-track img {
+    height: 40px;
+  }
+  .uploader-info .uploader-avatar {
+    width: 50%;
+    text-align: center;
+  }
+  .uploader-info .uploader-avatar > img {
+    width: auto;
+    height: 100%;
+  }
+  .uploader-info .uploader-short-details {
+    width: 50%;
+    padding-left: 5px;
+  }
+  .uploader-info-button {
+    text-align: center;
+  }
+  .uploader-info-button > button {
+    width: 30%;
+    float: none!important;
+    margin-right: 20px;
+  }
+  .uploader-info-button > button:last-child {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+  .video-download > button {
+    font-size: 20px;
+    padding: 5px 45px;
+  }
+  .project-files > h3 > span > button:nth-of-type(1), .project-files > h3 > span > button:nth-of-type(2) {
+    font-size: 20px;
+  }
+  .project-files > h3 {
+    font-size: 24px;
+  }
+  span.video-list-draft {
+    font-size: 16px;
+  }
+  .video-list .single-video > h5 {
+    font-size: 16px;
+  }
+  .single-video-featuredimg {
+    width: 40%;
+    float: left;
+  }
+  .single-video-description {
+    width: 60%;
+    float: left;
+  }
+  .single-video-featuredimg > a {
+    top: 7px;
+    font-size: 16px;
+  }
+  .video-description-right .title-director span {
+    padding: 5px 20px 5px;
+  }
+  .uploader-info-button > button {
+    font-size: 16px;
+  }
+  .video-dir h5 {
+    font-size: 14px;
+    width: 135px;
+  }
+  .project-files-buttons .change-buttons button:nth-of-type(1), .project-files-buttons .change-buttons button:nth-of-type(2) {
+    width: 140px;
+    font-size: 16px;
+    height: 45px;
+  }
+  .project-files-buttons .save-project-button button {
+    font-size: 20px;
+    width: 280px;
+    height: 45px;
+  }
+  .project-files-buttons .save-project-button {
+    float: left;
+    width: 100%;
+    padding-top: 20px;
+  }
+  .video-edi h5 {
+    font-size: 14px;
+    width: 120px;
+  }
+  .video-dir span {
+    font-size: 14px;
+  }
+  .video-edi span {
+    font-size: 14px;
+    width: 35px;
+  }
+  .video-dir > span {
+    width: 35px;
+  }
+  .video-director-editor div:nth-of-type(1) {
+    margin-right: 5px;
+  }
+  .applicants-info-button button {
+    padding: 10px 20px!important;
+  }
+  #vp-screen-edit .screen-edit-container {
+    width: 60px;
+  }
+  #vp-screen-edit .screen-edit-buttons > div > button {
+    margin: 10px auto;
+  }
+  .pop-input {
+    left: 60px;
+  }
+  .pop-input textarea {
+    height: 60px;
+  }
+  div#view-screensh .featured-screenshot-text .col-sm-9 {
+    padding-right: 0;
+  }
+  div#view-screensh .featured-screenshot-text .col-sm-3 {
+    padding: 0;
+  }
+}/* 767px End */
+@media (max-width: 640px) {
+  .video-project-director .container > p {
+    font-size: 14px;
+  }
+  .video-project-director .container > p > span {
+    margin-top: 15px;
+  }
+  .video-des-wrap > h4 > label, .video-des-wrap > p > label, .video-description-right .description-right-up h4 > label {
+    font-size: 16px;
+  }
+  .video-des-wrap > h4 > span, .video-des-wrap > p > span, .video-description-right .description-right-uph4 > span {
+    font-size: 14px;
+  }
+  .video-des-wrap > h4 > label, .video-des-wrap > p > label {
+    width: 160px;
+  }
+  .video-span-wrap > span {
+    font-size: 14px;
+  }
+  .video-description-right .description-right-up h4 > label {
+    width: 160px;
+  }
+  .video-description-right .description-right-up > h4 span {
+    font-size: 14px;
+  }
+  div.title > img {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+  .video-des-button-wrap > button {
+    font-size: 12px;
+  }
+  .single-video-description > p {
+    font-size: 13px;
+  }
+  .project-files > h3 > span > button:nth-of-type(1), .project-files > h3 > span > button:nth-of-type(2) {
+    font-size: 18px;
+  }
+  .project-files > h3 {
+    font-size: 22px;
+    padding: 20px 15px 15px 15px;
+  }
+  .video-download {
+    padding: 15px 25px;
+  }
+  span.video-list-draft {
+    font-size: 14px;
+  }
+  .video-list .single-video > h5 {
+    font-size: 14px;
+  }
+  .video-dir h5,.video-edi h5 {
+    height: 30px;
+    padding-top: 7px;
+  }
+  .video-dir > span,.video-edi > span {
+    height: 30px;
+    padding-top: 5px!important;
+  }
+  .video-director-editor {
+    bottom: 19px;
+  }
+  .project-files-buttons .change-buttons button:nth-of-type(1), .project-files-buttons .change-buttons button:nth-of-type(2) {
+    width: 120px;
+    font-size: 14px;
+    height: 40px;
+  }
+  .project-files-buttons .change-buttons > img {
+    width: 25px;
+  }
+  .project-files-buttons .change-buttons > img {
+    margin: 6px 15px 0px 0px;
+  }
+  .project-files-buttons .save-project-button button {
+    font-size: 18px;
+    width: 240px;
+    height: 40px;
+  }
+  .video-des-wrap > p > label {
+    width: 100%;
+  }
+  .video-des-wrap > h4, .video-des-wrap > p, .video-description-right .description-right-up > h4 {
+    margin-bottom: 10px;
+  }
+  .applicants-info-button button {
+    padding: 10px 20px;
+  }
+  .video-download > button {
+    font-size: 18px;
+    padding: 5px 35px;
+  }
+  #vp-screen-edit .screen-edit-buttons > div > button {
+    margin: 4px auto;
+  }
+  #vp-screen-edit .modal-footer p:nth-of-type(1) {
+    margin-left: 10px;
+  }
+  #vp-screen-edit .modal-footer p {
+    margin-left: 5px;
+  }
+  #vp-screen-edit .modal-footer .save-edit {
+    margin-right: 15px;
+    width: 100px;
+    font-size: 20px;
+    padding: 5px 0;
+  }
+  #vp-screen-edit .close {
+    margin-top: 5px;
+  }
+  #view-screensh .gallery-history-director .gallery-history-left > h5,#view-screensh .gallery-history-editor .gallery-history-left > h5 {
+    font-size: 16px;
+  }
+  #view-screensh .gallery-history-director .gallery-history-left p,#view-screensh .gallery-history-editor .gallery-history-left p {
+    font-size: 14px;
+  }
+  #view-screensh .gallery-history-director .gallery-history-left,#view-screensh .gallery-history-editor .gallery-history-left {
+    width: 190px;
+  }
+  div#view-screensh .gallery-history-right {
+    left: 245px;
+  }
+  div#view-screensh button.slick-prev,div#view-screensh button.slick-next {
+    top: 15px;
+  }
+}/* 640px End */
+@media (max-width: 480px) {
+  .video-project-director .container > h3 {
+    font-size: 20px;
+  }
+  .uploader-info .uploader-avatar {
+    width: 40%;
+  }
+  .uploader-info .uploader-short-details {
+    width: 60%;
+  }
+  .uploader-info-button > button {
+    width: 40%;
+    float: none!important;
+    margin-right: 10px;
+  }
+  .uploader-info-button > button:last-child {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  div.title {
+    font-size: 14px;
+    line-height: 23px;
+    width: 200px;
+  }
+  div.title > img {
+    width: 32px;
+    margin-right: 10px;
+  }
+  .video-upload-info > p {
+    font-size: 14px;
+  }
+  .project-files > h3 > span > button:nth-of-type(1), .project-files > h3 > span > button:nth-of-type(2) {
+    font-size: 16px;
+  }
+  .project-files > h3 {
+    font-size: 18px;
+  }
+  .project-files > h3 > img {
+    width: 20px;
+  }
+  .video-download > button {
+    font-size: 16px;
+    padding: 5px 25px;
+  }
+  .single-video-featuredimg {
+    width: 100%;
+  }
+  .single-video-description {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .single-video-description > p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  .video-list {
+    height: 1240px;
+  }
+  .video-director-editor {
+    position: relative;
+    float: left;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: 10px 0;
+    width: 100%;
+  }
+  .col-sm-8.single-video-description {
+    height: auto;
+  }
+  .video-director-editor div:nth-of-type(1) {
+    margin-right: 0;
+  }
+  .video-edi h5 {
+    width: 65%;
+  }
+  .video-edi,.video-dir {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  span.video-dir-edi-new {
+    width: 35%!important;
+    padding-left: 20px!important;
+  }
+  .video-dir h5, .video-edi h5 {
+    width: 65%;
+  }
+  .video-dir > span, .video-edi > span {
+    width: 35%;
+  }
+  .video-description-right .description-right-up {
+    padding: 10px 20px;
+  }
+  .project-files-buttons .change-buttons button:nth-of-type(1), .project-files-buttons .change-buttons button:nth-of-type(2) {
+    width: 50%;
+    font-size: 16px;
+    height: 45px;
+  }
+  .project-files-buttons .change-buttons > img {
+    margin: 0;
+    position: absolute;
+    right: 0px;
+    top: -30px;
+  }
+  .project-files-buttons .save-project-button button {
+    width: 100%;
+    font-size:20px;
+    height: 45px;
+  }
+  .video-des-wrap > p {
+    line-height: 20px;
+  }
+  #vp-screen-edit .edit-footer-container {
+    width: 240px;
+  }
+  #vp-screen-edit .modal-footer p span:nth-of-type(2) {
+    margin-bottom: 0px;
+  }
+  #vp-screen-edit .edit-first,#vp-screen-edit .edit-second {
+    width: 100%;
+  }
+  #view-screensh .gallery-history-right {
+    position: relative;
+    float: left;
+    width: 100%;
+    left: 0!important;
+    right: 0!important;
+    bottom: 0;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    padding-top: 20px;
+  }
+  #view-screensh .gallery-history-director .gallery-history-left, #view-screensh .gallery-history-editor .gallery-history-left {
+    width: 100%;
+    margin: auto;
+  }
+  div#view-screensh button.slick-prev, div#view-screensh button.slick-next {
+    top: 40%;
+  }
+}/* 480px End */
+@media (max-width: 400px) {
+  .video-project-director .container > p {
+    padding: 15px;
+  }
+  .uploader-info .uploader-avatar > img {
+    width: 100%;
+    padding: 10px;
+    height: auto;
+  }
+  .uploader-info-button > button {
+    width: 48%;
+    margin-right: 2%;
+  }
+  .uploader-info-button > button:last-child {
+    margin: 0;
+  }
+  div.title {
+    width: 100%;
+  }
+  .video-upload > div:nth-of-type(1) div.title {
+    line-height: 16px;
+  }
+  div.title > img {
+    width: 36px;
+  }
+  .video-upload > div:nth-of-type(2) div.title {
+    line-height: 24px;
+  }
+  .uploader-info-button > button {
+    font-size: 14px;
+  }
+  .video-upload-info > p {
+    width: 90%;
+  }
+  .project-files > h3 > span > button:nth-of-type(1), .project-files > h3 > span > button:nth-of-type(2) {
+    font-size: 14px;
+    padding: 0 3px;
+  }
+  .project-files > h3 {
+    font-size: 16px;
+  }
+  .project-files > h3 > img {
+    width: 18px;
+  }
+  .video-download > button {
+    font-size: 14px;
+    padding: 5px 15px;
+  }
+  .single-video-description > p {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .video-project-director .container > h3 {
+    background-size: 45px;
+    padding: 20px 15px 20px 65px;
+    font-size: 17px;
+  }
+  #view-screensh .featured-screenshot-text p {
+    font-size: 13px;
+  }
+}/* 400px End */
+@media (max-width: 360px) {
+  .video-project-director .container > h3 {
+    background-position: 5px 50%;
+  }
+  .video-project-director .container > h3 {
+    background-size: 35px;
+    padding: 20px 10px 20px 45px;
+    font-size: 16px;
+  }
+  div.title {
+    font-size: 12px;
+  }
+  div.title > img {
+    width: 32px;
+  }
+  .project-files > h3 > span > button:nth-of-type(1), .project-files > h3 > span > button:nth-of-type(2) {
+    font-size: 12px;
+    padding: 0 3px;
+  }
+  .project-files > h3 > img {
+    width: 20px;
+    position: absolute;
+    top: 5px;
+    margin-left: -5px;
+  }
+  span.icon-reorder img {
+    width: 15px;
+  }
+  span.single-video-title {
+    font-size: 12px;
+  }
+  span.video-list-draft {
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 3px;
+    background: white;
+    padding: 2px;
+  }
+  .single-video-description > .single-video-title {
+    font-size: 16px;
+  }
+  .single-video-description > p {
+    font-size: 12px;
+    margin-top: 0px;
+    line-height: 15px;
+  }
+  .video-dir h5, .video-edi h5 {
+    font-size: 12px;
+    padding-top: 8px;
+  }
+  .single-video-description {
+    margin-top: 0px;
+  }
+  .video-list {
+    padding: 0 15px;
+  }
+  .video-upload > div:nth-of-type(1) {
+    margin-left: 0;
+  }
+  .video-upload > div:nth-of-type(2) {
+    margin-right: 0;
+  }
+  div.title > img {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  div.title {
+    font-size: 13px;
+  }
+  .video-upload > div:nth-of-type(2) div.title,.video-upload > div:nth-of-type(1) div.title {
+    line-height: 14px;
+  }
+  .project-more-opt.dropdown > button {
+    margin-top: -7px;
+  }
+  .uploader-info .uploader-avatar {
+    width: 30%;
+  } 
+  .uploader-info .uploader-short-details {
+    width: 70%;
+  }
+  .video-description-right .title-director span {
+    padding: 2px 7px 2px;
+  }
+}/* 360px End */
+@media (max-width: 320px) {
+  .uploader-info-button button:nth-of-type(2) {
+    display: none;
+  }
+  .video-project-director .container > h3 {
+    background-size: 30px;
+    padding: 15px 10px 15px 40px;
+    font-size: 14px;
+  }
+  .video-des-wrap > h4 > label, .video-des-wrap > p > label, .video-description-right .description-right-up h4 > label {
+    font-size: 14px;
+  }
+  .video-description-right .description-right-up h4 > label {
+    width: 140px;
+  }
+  .video-des-wrap > h4 > label, .video-des-wrap > p > label {
+    width: 140px;
+  }
+  .video-span-wrap > span {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .video-des-wrap > h4 > span, .video-des-wrap > p > span, .video-description-right .description-right-uph4 > span {
+    font-size: 12px;
+  }
+  .video-description-right .description-right-up > h4 span {
+    font-size: 12px;
+  }
+  .uploader-short-details > h5 {
+    font-size: 14px;
+  }
+  .uploader-short-details > p {
+    font-size: 13px;
+  }
+  .uploader-info .uploader-avatar > img {
+    padding: 0;
+  }
+  .uploader-info .uploader-avatar {
+    width: 25%;
+  }
+  .uploader-info .uploader-short-details {
+    width: 75%;
+  }
+  .uploader-short-details > a {
+    font-size: 13px;
+  }
+  .uploader-info-button > button {
+    width: 80%;
+    margin-right: 0%;
+  }
+  .header-color-track img {
+    height: auto;
+  }
+  .video-description-right .title-director span {
+    font-size: 16px;
+  }
+  .video-des-wrap > p {
+    line-height: 16px;
+  }
+  .video-des-wrap > p > label {
+    width: 100%;
+  }
+  .project-more-opt.dropdown > button {
+    display: none;
+    position: absolute;
+    font-size: 10px;
+    padding: 2px 4px;
+    right: -37px;
+    top: 25px;
+  }
+}/* 320px End */
