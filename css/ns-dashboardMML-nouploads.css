@@ -219,7 +219,7 @@ body.dash-page { padding-top: 0;}
 
 /*end styling selects project*/
 .wrapp-myContent .wrapp-frm-post-project { padding-bottom: 20px;}
-.btn_blue {
+.btn.btn_blue {
     background-color: #4b8dcb;
     color: #ffffff;
     margin-left: 5px;
@@ -309,9 +309,9 @@ body.dash-page { padding-top: 0;}
     border: none;
     background-color: #555555;
     color: #fff;
-    border-radius: 0px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
+    border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
@@ -340,11 +340,12 @@ body.dash-page { padding-top: 0;}
     border: 0 none;
     display: block;
 }
-.visible-xs-dop {display: none;}
-.dis-mob-vis { display: none;}
+.visible-xs-dop {display: none !important;}
+.dis-mob-vis, #step-bl { display: none !important;}
 .wrapp-bacgr-img { position: relative;} 
 .bacgr-img-editor { background-image: url("../images/p-a/top-edit.png"); height: 44px;}
 .bacgr-img-designer { background-image: url("../images/p-a/top-designer.png"); height: 44px;}
+.bacgr-img-tour { background-image: url("../images/p-a/top-tour.png"); height: 44px;}
 .group-stars { display: inline-block; margin-left: 25px;}
 
 .collapse { display: block; height: 100% !important;}
@@ -736,18 +737,18 @@ button.browse-wrap {
     .dop-col-sm-5 { float: left; width: 40%;}
     .dop-col-sm-7 { float: right;   width: 60%;}
     .dis-mob-hidd { display: none;}
-    .dis-mob-vis { display: block;} 
+    .dis-mob-vis, #step-bl { display: block !important;} 
     .top-image { background-image: url("../images/p-a/top-edit-bot.png");}
     .wrapp-content-block .content-block { padding: 15px 0px 15px 0px;}    
     .mini-icons-img .text-center { text-align: left;}
     .wrapp-myContent { margin-left: -15px; margin-right: -15px; padding-left: 15px;}
     .marg-15-dop { margin-right: 0;}
-    .hidden-xs-dop { display: none;}
-    .visible-xs-dop {display: block;} 
-    .project-name .glyphicon-chevron-down { display: none;}
-    .project-name .collapsed .glyphicon-chevron-down { display: block;}
-    .project-name .collapsed .glyphicon-chevron-up { display: none;}
-    .project-name .glyphicon-chevron-up { display: block;}
+    .hidden-xs-dop { display: none !important;}
+    .visible-xs-dop {display: block !important;} 
+    .project-name .glyphicon-chevron-down { display: none !important;}
+    .project-name .collapsed .glyphicon-chevron-down { display: block !important;}
+    .project-name .collapsed .glyphicon-chevron-up { display: none !important;}
+    .project-name .glyphicon-chevron-up { display: block !important;}
     .mob-collapse { cursor: pointer;}
     .wrapp-bacgr-img .btn.ed-dir { position: absolute; top: 10px; right: 10px; padding: 3px 10px;}
     .posit-rel { position: relative;}
@@ -870,6 +871,7 @@ button.browse-wrap {
 }
 @media (max-width: 567px) and (min-width: 479px){
     .wide_select .select2-container { width: 130px !important;}
+    .btn.btn_blue { padding: 6px 12px;}
 }
 @media (max-width: 479px) {
     /*.nav-tabs.nav-icon-based > li > a {
@@ -901,7 +903,7 @@ button.browse-wrap {
     }
     .btn_blue { width: 100%;}
     .styled-select { margin-top: 10px;}
-    .wide_select .select2-container { width: 166px !important;}
+    .wide_select .select2-container { width: 158px !important;}
     .bott-block .col-sm-6 { float: left; width: 50%; padding-left: 5px; padding-right: 5px;}
     .dop-col-sm-5 { float: none; width: 100%;}
     .dop-col-sm-7 { float: none;   width: 100%;}
@@ -921,6 +923,10 @@ button.browse-wrap {
     .text-info p { font-size: 11px;}
     .text-minim { width: 120px;}
     .mini-icons-img .text-center { text-align: center;}
+    .btn.btn_blue { margin-left: 0; padding: 6px 12px;}
+    .prof-sorted-mobile .styled-select { margin-right: 0;}
+    .prof-sorted-mobile .styled-select.default_select.wide_select { float: right;}
+    .pull-right.prof-sorted.prof-sorted-mobile { float: none !important;}
     /* END My Project */
     /* Begin my-favorites*/
     .row.row-mobile {

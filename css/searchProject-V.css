@@ -1,0 +1,19 @@
+.search-project .breadcrumb {
+    background: none;
+    padding-left: 0;
+} 
+.filter-s-p {
+    background-color: #fefcfb;
+    margin-bottom: 400px;
+}
+.search-project .breadcrumb li a, .search-project .breadcrumb li {
+    color: #8d8d8d;
+    font-weight: lighter;
+}
+.search-project .breadcrumb li {
+    font-size: 24px;
+}
+.search-project .breadcrumb li a:hover {
+    text-decoration: underline;
+}
+.wrapp-project-type { padding-top: 8px;}
