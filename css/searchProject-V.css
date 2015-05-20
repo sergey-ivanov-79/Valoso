@@ -318,7 +318,7 @@
     .search-project .thumbnail { border: none;}
     
     body.opened-filter-dropdown { overflow: hidden; }
-    .search-dropdown .dropdown-menu, .search-dropdown .dropdown-menu > ul { max-height: none !important; }
+    .search-dropdown .dropdown-menu/*, .search-dropdown .dropdown-menu > ul*/ { max-height: none !important; }
 }
 
 @media (max-width: 567px) {
