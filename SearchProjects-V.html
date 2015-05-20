@@ -182,10 +182,6 @@
                         <div class="wrapp-top"><!-- Begin   -->        
                             <div class="col-sm-12 hidden-xs">
                                 <h1 class="h1">Browse Projects</h1>
-                                <ol class="breadcrumb">
-                                  <li class=""><a href="#">Dashboard</a></li>
-                                  <li class="active">Browse Projects</li>
-                                </ol>
                             </div>
                             <div class="filter-s-p clearfix"><!-- Begin filter-s-p -->
                                 <div class="wrapp-slider-pr clearfix">
@@ -260,27 +256,18 @@
                                                                 <div class="categories form-group"><!-- Begin .categories -->
                                     								<div class="select-filter"><!-- Begin select-filter col-sm-6 -->
                                     									<select class="search-dropdown selectpicker form-control btn btn-default dropdown-toggle btn-default-mobile" id="abc" style="display: none;">
-                                                                                <option class="orders-none" selected="selected">All</option>
-                                                                                <option class="orders-none">Arabic</option>
-                                                                                <option class="orders-none">Bengali</option>
-                                                                                <option class="orders-none">Chinese</option>
-                                                                                <option class="orders-none">English</option>
-                                                                                <option class="orders-none">French</option>
-                                                                                <option class="orders-none">German</option>
-                                                                                <option class="orders-none">Hindi</option>
-                                                                                <option class="orders-none">Italian</option>
-                                                                                <option class="orders-none">Japanese</option>
-                                                                                <option class="orders-none">Javanese</option>
-                                                                                <option class="orders-none">Korean</option>
-                                                                                <option class="orders-none">Lahnda</option>
-                                                                                <option class="orders-none">Marathi</option>
-                                                                                <option class="orders-none">Portuguese</option>
-                                                                                <option class="orders-none">Russian</option>
-                                                                                <option class="orders-none">Spanish</option>
-                                                                                <option class="orders-none">Tamil</option>
-                                                                                <option class="orders-none">Telugu</option>
-                                                                                <option class="orders-none">Vietnamese</option>
-                                                                                <option class="orders-none">Urdu</option>
+                                                                                <option class="orders-none" selected="selected">Choose Below</option>
+                                                                                <option class="orders-none">Autos and Vehicles</option>
+                                                                                <option class="orders-none">Comedy</option>
+                                                                                <option class="orders-none">Education</option>
+                                                                                <option class="orders-none">Film & Animation</option>
+                                                                                <option class="orders-none">Gaming</option>
+                                                                                <option class="orders-none">Music</option>
+                                                                                <option class="orders-none">News & Activixm</option>
+                                                                                <option class="orders-none">People & Blogs</option>
+                                                                                <option class="orders-none">Science & Technology</option>
+                                                                                <option class="orders-none">Sports</option>
+                                                                                <option class="orders-none">Travel & Events</option>
                                                                         </select>
                                     								</div><!-- END select-filter col-sm-6 -->
                                     							</div><!-- END .categories -->
@@ -302,7 +289,7 @@
                                                                                 <option class="orders-none">Under 30 seconds</option>
                                                                                 <option class="orders-none">Under 2 minutes</option>
                                                                                 <option class="orders-none">Under 5 minutes</option>
-                                                                                <option class="orders-none">Other</option>
+                                                                                <option class="orders-none">5 minutes and over</option>
                                                                         </select>
                                     								</div><!-- END select-filter col-sm-6 -->
                                     							</div><!-- END .categories -->
@@ -430,7 +417,7 @@
                                                             </div>
                                                         </div><!-- END project-name  -->
                                                         <div class="wrapp-table-port-details">
-                                                            <div class="bold color-gray p-20"> Price Range: <span class="td-data">$500,000.00 - 800,000.00 AUD</span></div>
+                                                            <div class="color-gray p-20 media"> <div class="pull-left bold">Price Range: </div><div class="media-body"><span class="td-data">$500,000.00 - 800,000.00 AUD</span></div></div>
                                                             <div class="wrapp-wide-tp clearfix media max-nsd">
                                                                 <div class="pull-left text-bold text-center">NZD</div>
                                                                 <div class="media-body text-bold text-center">$600,0000.00 - $900,0000.00</div>
@@ -1069,9 +1056,13 @@ $('.gallery').each(function() { // the containers for all your galleries
     });
 </script>
 <script>
-    /*$(document).on('click', '.search-dropdown', function(){
-        $('body').toggleClass('opened-dropdown');
-    });*/
+    $(document).on('click', '.search-dropdown .dropdown-toggle', function(){
+        $('body').addClass('opened-filter-dropdown');
+    });
+    
+    $(document).on('click', '.opened-filter-dropdown', function() {
+        $('body').removeClass('opened-filter-dropdown');
+    });
 </script>
 <script src="js/ion.rangeSlider.min.js"></script>
 <script src="js/chosen.jquery.js" type="text/javascript"></script>
@@ -1083,16 +1074,20 @@ $('.gallery').each(function() { // the containers for all your galleries
       $(selector).chosen(config[selector]);
     }
     $(document).ready(function(){
-    	$("#slider1").ionRangeSlider({
+        $("#slider1").ionRangeSlider({
 	    	min: 0,
 		    max: 1000,
 		    from: 40,
 		    to: 1000,
 		    type: 'double',
 		    step: 10,
-		    postfix: " USD",
+		    postfix: " AUD",
 		    hideMinMax: true
 	    });
+        
+        $(window).on('resize', function() {
+            $("#slider1").ionRangeSlider('update');
+        });
     });
 </script>
 <script type="text/javascript" src="js/jquery.ezmark.min.js"></script>
