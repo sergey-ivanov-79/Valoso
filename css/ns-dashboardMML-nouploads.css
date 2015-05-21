@@ -1061,6 +1061,7 @@ button.browse-wrap {
 /* Begin left menu */
 @media (max-width: 767px) {
     .sidebar-offcanvas .nav-list li > ul { display: block;}
+    .opened-offcanvas .header-dop.header-mobile-fix { z-index: 51;}
     .row-offcanvas-left .sidebar-offcanvas {   left: -50% !important;}
     .row-offcanvas-left.active { left: 50% !important;}
     .sidebar-offcanvas { width: 50% !important;}
@@ -1119,6 +1120,7 @@ button.browse-wrap {
     .row-offcanvas.active .page-wrap .headroom--unpinned, 
     .row-offcanvas.active .page-wrap,
     .row-offcanvas.active .page-wrap .headroom--pinned { right: auto;left: 75%;}
+    .wrapp-shop-msg-noti-icos h3.h3 { font-size: 20px;}
 }
 
 html, body, .off-canvas-wrap, .inner-wrap, .main-section
