@@ -186,11 +186,14 @@
     box-shadow: 2px 2px 0px #fd9f6d;
 }
 .search-project .line-top-col { border-top: 1px solid #e6e5e5; margin-bottom: 10px;}
+
 @media (max-width: 992px) {
     .search-project .image-wrap {
       height: 190px;
     }
-    
+    .search-project .mini-icons-img .text-center {
+      text-align: left;
+    }
 }
 @media (max-width: 840px) {
     .search-project .posit-abs {
