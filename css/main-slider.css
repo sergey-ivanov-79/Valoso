@@ -63,7 +63,14 @@
     padding: 18px 0 0 0;
     font-size: 18px;
 }
+
 @media (max-width: 992px) {
     .checkbox label { font-size: 16px;}
     
+}
+@media (max-width: 992px) and (min-width: 768px) {
+    .checkbox label {
+      font-size: 15px;
+      padding-left: 0px;
+    }
 }
