@@ -169,10 +169,14 @@ body.dash-page { padding-top: 0;}
     text-align: left;
 }
 .styled-select .select2 .blue_backgr{
-    background-color:#4DCBFF ;
+    background-color:#4DCBFF;
     padding: 10px 0;
     height: 30px;
 
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+    background-color: #5897fb;
+    color: white;
 }
 .select2-results__option {
     border-bottom: 1px solid #ccc;
@@ -345,10 +349,11 @@ body.dash-page { padding-top: 0;}
 .wrapp-bacgr-img { position: relative;} 
 .bacgr-img-editor { background-image: url("../images/p-a/top-edit.png"); height: 44px;}
 .bacgr-img-designer { background-image: url("../images/p-a/top-designer.png"); height: 44px;}
+.bacgr-img-project { background-image: url("../images/p-a/top-project.png"); height: 44px;}
 .bacgr-img-tour { background-image: url("../images/p-a/top-tour.png"); height: 44px;}
 .group-stars { display: inline-block; margin-left: 25px;}
 
-.collapse { display: block; height: 100% !important;}
+ /*.wrapper-form-con-dop .home-dash-menu */.collapse { display: block; height: 100% !important;}
 /* END right cont*/
 /* END My Project */
 
@@ -454,7 +459,7 @@ body.dash-page { padding-top: 0;}
 .image-cont-group li {
     float: left;
 }
-.headroom-dop { z-index: 11;}
+.headroom-dop { z-index: 51;}
 .video-img {
     border: 3px solid #474747;
     border-radius: 5px;
@@ -761,7 +766,7 @@ button.browse-wrap {
     .right-bl .text-center .text-uppercase, .left-bl .text-center .text-uppercase.text-gray { padding-top: 0;}
     .ratings-small.d-block .p-22 { font-size: 16px;}
     .text-info p { font-size: 14px;}
-    .collapse { display: none;}
+     /*.wrapper-form-con-dop .home-dash-menu */.collapse { display: none;}
     .mini-icons-img > p { padding-top: 15px;}
     .mini-icons-img .float-n { font-size: 16px;}
     
@@ -1056,6 +1061,7 @@ button.browse-wrap {
 /* Begin left menu */
 @media (max-width: 767px) {
     .sidebar-offcanvas .nav-list li > ul { display: block;}
+    .opened-offcanvas .header-dop.header-mobile-fix { z-index: 51;}
     .row-offcanvas-left .sidebar-offcanvas {   left: -50% !important;}
     .row-offcanvas-left.active { left: 50% !important;}
     .sidebar-offcanvas { width: 50% !important;}
@@ -1114,6 +1120,7 @@ button.browse-wrap {
     .row-offcanvas.active .page-wrap .headroom--unpinned, 
     .row-offcanvas.active .page-wrap,
     .row-offcanvas.active .page-wrap .headroom--pinned { right: auto;left: 75%;}
+    .wrapp-shop-msg-noti-icos h3.h3 { font-size: 20px;}
 }
 
 html, body, .off-canvas-wrap, .inner-wrap, .main-section
