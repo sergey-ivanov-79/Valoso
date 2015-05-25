@@ -459,7 +459,7 @@ span.icon-reorder {
   margin-bottom: 0;
 }
 .single-video-featuredimg,.single-video-description {
-  height: 295px;
+  height: 268px;
 }
 .video-des-button-wrap {
   position: relative;
@@ -1378,6 +1378,72 @@ div#view-screensh .featured-screenshot-text button {
 .ns-vp-open div#view-screensh .modal-body {
   padding: 20px;
 }
+.video-dir,.video-edi {
+  cursor: pointer;
+}
+.vp-edit-screen .screen-edit-zoom {
+  display: none;
+}
+.vp-edit-screen .edit-drop {
+  display: none;
+}
+.vp-edit-screen .edit-second button:nth-of-type(8) {
+  display: none;
+}
+.vp-edit-screen .edit-first {
+  width: 590px;
+  margin: auto;
+}
+.screen-multi {
+  padding: 0 15px!important;
+}
+.mobile-tabs-menu h2 {
+  font-size: 20px;
+  color: white;
+  line-height: 38px;
+  margin: 0 0 20px;
+}
+.mobile-tabs-menu h2 img {
+  float: left;
+  margin-right: 5px;
+}
+.mobile-tabs-menu {
+  background-color: #2eace1;
+  margin-top: 50px;
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+.mobile-tabs-menu button {
+  width: 30%;
+  margin: 0 1%;
+  border: 0;
+  background: 0;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+}
+.mobile-tabs-menu button:after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: white;
+  left: 5px;
+  right: 100%;
+  bottom: -2px;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.mobile-tabs-menu button.active:after{
+  right: 5px;
+}
+.mobile-tabs-menu {
+  display: none;
+}
 @media (max-width: 1024px) {
   .audio-track > label {
     height: 50px;
@@ -1540,7 +1606,7 @@ div#view-screensh .featured-screenshot-text button {
     font-size: 14px;
   }
   .single-video-featuredimg, .single-video-description {
-    height: 275px;
+    height: 250px;
   }
   .single-video-featuredimg .video-img-wrap, .single-video-featuredimg .video-img-wrap2 {
     height: 185px;
@@ -1604,6 +1670,9 @@ div#view-screensh .featured-screenshot-text button {
 @media (max-width: 900px) {
   #vp-screen-edit .screen-edit-buttons > div > button {
     margin: 9px auto;
+  }
+  .vp-edit-screen .edit-first {
+    width: 480px;
   }
 }/* 900px End */
 @media (max-width: 800px) {
@@ -1747,6 +1816,9 @@ div#view-screensh .featured-screenshot-text button {
   div#view-screensh .featured-screenshot-text .col-sm-3 {
     padding: 0;
   }
+   .vp-edit-screen .edit-first {
+    width: 380px;
+  }
 }/* 767px End */
 @media (max-width: 640px) {
   .video-project-director .container > p {
@@ -1808,7 +1880,7 @@ div#view-screensh .featured-screenshot-text button {
     padding-top: 5px!important;
   }
   .video-director-editor {
-    bottom: 19px;
+    bottom: 14px;
   }
   .project-files-buttons .change-buttons button:nth-of-type(1), .project-files-buttons .change-buttons button:nth-of-type(2) {
     width: 120px;
@@ -1872,7 +1944,18 @@ div#view-screensh .featured-screenshot-text button {
   div#view-screensh button.slick-prev,div#view-screensh button.slick-next {
     top: 15px;
   }
+  .video-dir,.video-edi {
+    margin-bottom: 5px;
+  }
 }/* 640px End */
+@media (max-width: 600px) {
+  .vp-edit-screen .edit-first {
+    height: 28px;
+  }
+  .vp-edit-screen .edit-first {
+    width: 340px;
+  }
+}/* 600px End */
 @media (max-width: 480px) {
   .video-project-director .container > h3 {
     font-size: 20px;
@@ -1929,7 +2012,7 @@ div#view-screensh .featured-screenshot-text button {
     margin-top: 10px;
   }
   .video-list {
-    height: 1240px;
+    height: 100%;
   }
   .video-director-editor {
     position: relative;
@@ -2014,6 +2097,9 @@ div#view-screensh .featured-screenshot-text button {
   div#view-screensh button.slick-prev, div#view-screensh button.slick-next {
     top: 40%;
   }
+  .vp-edit-screen .edit-first {
+    width: 340px;
+  }
 }/* 480px End */
 @media (max-width: 400px) {
   .video-project-director .container > p {
@@ -2075,6 +2161,10 @@ div#view-screensh .featured-screenshot-text button {
   #view-screensh .featured-screenshot-text p {
     font-size: 13px;
   }
+  .vp-edit-screen .edit-first {
+    width: 300px;
+    height: 31px;
+  }
 }/* 400px End */
 @media (max-width: 360px) {
   .video-project-director .container > h3 {
@@ -2133,9 +2223,6 @@ div#view-screensh .featured-screenshot-text button {
   .video-list {
     padding: 0 15px;
   }
-  .video-upload > div:nth-of-type(1) {
-    margin-left: 0;
-  }
   .video-upload > div:nth-of-type(2) {
     margin-right: 0;
   }
@@ -2170,6 +2257,7 @@ div#view-screensh .featured-screenshot-text button {
     background-size: 30px;
     padding: 15px 10px 15px 40px;
     font-size: 14px;
+    display: none;
   }
   .video-des-wrap > h4 > label, .video-des-wrap > p > label, .video-description-right .description-right-up h4 > label {
     font-size: 14px;
@@ -2231,5 +2319,36 @@ div#view-screensh .featured-screenshot-text button {
     padding: 2px 4px;
     right: -37px;
     top: 25px;
+  }
+  .vp-edit-screen .screen-edit-buttons > div > button img {
+    padding: 1px;
+  }
+  .vp-edit-screen .screen-edit-buttons > div > button {
+    margin: 0 4px!important;
+    float: none;
+  }
+  .vp-edit-screen .edit-first {
+    width: 190px;
+    height: 70px;
+  }
+  .screen-edit-buttons > div > input {
+    margin: 3px 5px 0;
+  }
+  .video-upload > div:nth-of-type(2) .title {
+    padding-top: 9px;
+  }
+  .video-upload > div:nth-of-type(2) .title img {
+    margin-top: -8px;
+  }
+  .description-right-down,.video-upload,.project-files {
+    display: none;
+  }
+  .mobile-tabs-menu {
+    display: block;
+  }
+  span.video-dir-edi-new {
+    width: 35%!important;
+    padding-left: 8px!important;
+    padding-right: 0!important;
   }
 }/* 320px End */

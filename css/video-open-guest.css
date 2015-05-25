@@ -75,3 +75,33 @@
 .gallery-history-director .gallery-history-left {
   padding-bottom: 0;
 }
+@media (max-width: 991px) {
+  .open-register button:nth-of-type(1),.open-register button:nth-of-type(2) {
+    font-size: 30px;
+  }
+} /* 991px End */
+@media (max-width: 640px) {
+  .open-register button:nth-of-type(1), .open-register button:nth-of-type(2) {
+    margin: 0;
+    width: 100%;
+  }
+  .open-register {
+    padding: 0 15px;
+  }
+  .open-register h5 {
+    width: 100%;
+    margin: 25px 0;
+  }
+} /*640px End */
+@media (max-width: 480px) {
+  .open-register button:nth-of-type(1), .open-register button:nth-of-type(2) {
+    font-size: 26px;
+    padding: 20px 0;
+  }
+} /* 480px End */
+@media (max-width: 400px) {
+  .open-register button:nth-of-type(1), .open-register button:nth-of-type(2) {
+    font-size: 20px;
+    padding: 15px 0;
+  }
+} /* 400px End */
