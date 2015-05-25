@@ -63,7 +63,7 @@
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
 }
-.search-project .wrapper-h3 .line-top > .col-xs-12 { margin: 10px 0;}
+.search-project .wrapper-h3 .line-top .col-xs-12 { margin: 10px 0;}
 .search-project .wrapper-h3 .form-group { margin-bottom: 0;}
 .search-project .btn.ed-dir { 
     background: none #fd9f6d; 

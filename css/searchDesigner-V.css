@@ -1,6 +1,7 @@
 .search-designer.search-project .project-type .checkbox {
     float: left;
 }
+
 .search-designer.search-project .filter-label { 
     float: left; 
     margin-right: 5px;
@@ -8,9 +9,6 @@
 .search-designer .wrapp-project-type {
     padding-top: 10px;
 }
-/* ----- BEGIN new-search-designe ----- */
-
-/* Begin Search-designer page*/
 
 .search label { font-size: 14px; font-weight: lighter;}
 
@@ -95,8 +93,6 @@ h1.user-title { font-size: 18px; font-weight: 600; float: left; color: #6f6f6f;}
   background-color: #64ff65;
   border-color: #64ff65;
 }
-/*-- ----- POSSIBLE TO MAKE SO ----- --*/
-/*.btn-gradient:hover {  background: linear-gradient(to bottom, #4fcbff, #45a1c7);}*/
 
 .icons-blue .icon { 
     background-color: #4dcbff; 
@@ -206,10 +202,6 @@ h1.user-title { font-size: 18px; font-weight: 600; float: left; color: #6f6f6f;}
     .user-1 .img-responsive.margin-bottom, .user-1 .btn-gradient.margin-bottom { margin: 10px auto; float: none !important;}
 }
 
-/* End Search-designer page*/
-
-/* Begin search-designer-users */
-
 .user-2 .thumbnail { border: 2px solid #ddd;}
 
 .thumbnail.bg-blue { background-color: #fefcfb; padding-top: 15px !important;}
@@ -292,8 +284,6 @@ h1.user-title { font-size: 18px; font-weight: 600; float: left; color: #6f6f6f;}
 
 .view-q .nav-tabs-viev.nav-tabs > li > a { border: none; background: none; padding: 0 5px; }
 
-/* End search-designer-users */
-
 /* Modal */
 
 .modal-content-min { min-height: 200px;}
@@ -326,7 +316,6 @@ h1.user-title { font-size: 18px; font-weight: 600; float: left; color: #6f6f6f;}
 
 .left-section .duration .dropdown-menu li > a { padding-right: 10px !important;}
 
-/* ----- END new-search-designe ----- */
 .appcountry {
   font-size: 10px;
   color: gray;
@@ -465,9 +454,9 @@ h1.user-title { font-size: 18px; font-weight: 600; float: left; color: #6f6f6f;}
 }
 @media screen and (min-width: 768px) {
     .search-project.search-designer .slider-label {
-        text-align: right;
         padding-right: 10px;
     }
+    .tab-content > .wrapp-pagination .pagination { margin-top: 0;}
 }
 @media (max-width: 992px) and (min-width: 768px) {
     .search-designer .wrapp-customR { padding: 0;}
@@ -497,4 +486,10 @@ h1.user-title { font-size: 18px; font-weight: 600; float: left; color: #6f6f6f;}
 .search-designer .margin-bottom { margin-bottom: 10px; }
 .search-designer .thumbnail.bg-blue .caption h3 {
     margin: 0;
+}
+@media (max-width: 768px) and (min-width: 480px) {
+    .margin-10-px .search { padding-right: 0px;}
+}
+@media (max-width: 479px) {
+    .margin-10-px .search { padding-right: 10px;}
 }
