@@ -459,7 +459,7 @@ h1.user-title { font-size: 18px; font-weight: 600; float: left; color: #6f6f6f;}
     .search-project.search-designer .slider-label {
         padding-right: 10px;
     }
-    .search-project.search-designer .wrapp-pagination .pagination { margin-top: 0;}
+    .search-project.search-designer .wrapp-pagination-top .pagination { margin-top: 0;}
     .search-designer .wrapp-pagination-top {
         margin: 0 auto;
         width: 340px;
