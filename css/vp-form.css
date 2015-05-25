@@ -79,7 +79,7 @@ input {
     float: right;
 }
 
-.form-con.container {
+.form-con {
     background: #f6f3f2;
     border-radius: 5px;
 }
@@ -254,6 +254,17 @@ input {
     border-color: #ccc!important;
     cursor: pointer;
 }
+.video-duration-select select {
+    max-width: 100%!important;
+    width: 66%;
+    margin-right: 1%!important;
+}
+.video-duration-select input {
+    width: 33%!important;
+}
+.video-duration-select label {
+    width: 100%;
+}
 .video-project-form .vp-form-right > div:nth-of-type(2) > div {
     margin-bottom: 45px;
 }
@@ -422,3 +433,160 @@ div#charNum {
     width: 130px;
     padding-left: 32px;
 }
+@media (max-width: 1024px) {
+    .video-duration-select > input {
+        padding-left: 19px;
+    }
+}/* 1024px End */
+@media (max-width: 991px) {
+    .video-project-form .vp-form-right .vp-form label {
+        font-size: 16px;
+    }
+    .vp-form-right .narration label {
+        padding-top: 12px;
+    }
+}/* 991px End */
+@media (max-width: 767px) {
+    .video-project-form .vp-form-right .vp-form label {
+        font-size: 20px;
+    }
+    .vp-form-right .narration label {
+        padding-top: 12px;
+    }
+    .container {
+        padding: 0 15px!important;
+    }
+    .file-to-upload > p {
+        font-size: 20px;
+    }
+    .supported-format article {
+        font-size: 16px;
+    }
+    .video-project-director .container > h3 {
+        font-size: 30px;
+    }
+}/* 767px End */
+@media (max-width: 480px) {
+    .file-to-upload {
+        width: 100%;
+    }
+    .file-to-upload > h2 {
+        font-size: 26px;
+    }
+    .file-to-upload > p {
+        font-size: 16px;
+    }
+    .supported-format article {
+        font-size: 14px;
+    }
+    .file-to-upload {
+        margin-top: 60px;
+    }
+    .supported-format {
+        margin-bottom: 105px;
+    }
+}/* 480px End */
+@media (max-width: 400px) {
+    .video-project-form .vp-form-left .vp-form label {
+        font-size: 16px;
+    }
+    .video-project-director .container > h3 {
+        font-size: 26px;
+    }
+    .well table thead tr th {
+       font-size: 16px; 
+    }
+    .well table thead tr th input {
+        margin-top: 10px;
+    }
+    .video-project-form .vp-form-right .vp-form label {
+        font-size: 16px;
+    }
+    .vp-form-right .narration label {
+        padding-top: 8px;
+    }
+    .form-con > h1 {
+        font-size: 26px;
+    }
+    .file-to-upload > h2 {
+        font-size: 22px;
+    }
+    .file-to-upload > p {
+        font-size: 14px;
+    }
+    .video-project-form .vp-form-left .vp-form label {
+        margin-bottom: 10px;
+    }
+    .vp-form-pack .col-sm-6 {
+        padding-right: 0;
+    }
+    .vp-form {
+        padding: 15px 0;
+    }
+    .video-project-form .vp-form-left .vp-form > div:nth-of-type(1) {
+        width: 100%;
+    }
+}/* 400px End */
+@media (max-width: 360px) {
+    div#charNum {
+        top: 48px;
+    }
+}/* 360px End */
+@media (max-width: 320px) {
+    .mce-btn button {
+        padding: 2px 6px!important;
+    }
+    .video-project-form .vp-form-left .vp-form label {
+        font-size: 14px;
+    }
+    .video-project-form .vp-form-left .vp-form label > img,.well th > img,.video-project-form .vp-form-right .vp-form label > img {
+        margin-left: 5px;
+        width: 20px;
+    }
+    .well table thead tr th {
+        font-size: 14px;
+    }
+    .video-project-form .vp-form-right .vp-form label {
+        font-size: 18px;
+    }
+    .vp-form > div:nth-of-type(1) select {
+        height: 40px;
+    }
+    .video-project-form .vp-form-left .vp-form input,.video-project-form .vp-form-right > div:nth-of-type(1) > div:last-child input {
+        height: 40px!important;
+    }
+    div#charNum {
+        top: 42px;
+    }
+    .video-project-form .vp-form-right > div:nth-of-type(2) select,.video-duration-select > input {
+        font-size: 16px;
+        height: 40px;
+    }
+    .form-con > h1 {
+        font-size: 20px;
+    }
+    .form-con h1 img {
+        width: 25px;
+    }
+    .narration {
+        width: 50%;
+        float: left;
+        text-align: center;
+    }
+    .narration label {
+        width: 100%!important;
+    }
+    .narration select {
+        width: 90%!important;
+    }
+    .file-to-upload > h2 {
+        margin-bottom: 30px;
+    }
+    .file-to-upload {
+      margin-top: 50px;
+    }
+    .supported-format {
+        margin-top: 20px;
+        margin-bottom: 25px;
+    }
+}/* 320px End */

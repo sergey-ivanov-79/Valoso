@@ -2,9 +2,14 @@ $(document).ready(function(){
 
 	var visina_slike = $('.video-description-left .video-span-wrap').height();
 	$('.video-description-left .span-height').css('height', visina_slike);
-	var visina_slike1 = $('.uploader-info .uploader-short-details').height();
-	$('.uploader-info .uploader-avatar').css('height', visina_slike1);
-
+	var visina_slike1 = $('.uploader-short-details').height();
+	$('.uploader-avatar').css('height', visina_slike1);
+	$('.mobile-tabs-menu button:nth-of-type(2)').click(function(){
+		setTimeout(function(){
+			var visina_slike1 = $('.uploader-short-details').height();
+			$('.uploader-avatar').css('height', visina_slike1);
+		},1);
+	});
 	$('#project-delete-file').click(function() {
 		$('.single-video-hover').fadeIn();
 	});
@@ -31,6 +36,36 @@ $(document).ready(function(){
 		$('.single-video-featuredimg,.single-video-description').fadeOut();
 		$('.project-more-opt.dropdown > button').css("display","block")
 	});
+	/* Responsive menu */
+	$(".mobile-tabs-menu button").click(function(){
+		$(".mobile-tabs-menu button").removeClass("active");
+		$(this).addClass("active");
+	});
+	$(".mobile-tabs-menu button:nth-of-type(1)").click(function(){
+		$(".video-project-director .container > p").fadeIn();
+		$(".video-description-left").fadeIn();
+		$(".description-right-up").fadeIn();
+		$(".description-right-down").hide();
+		$(".video-upload").hide();
+		$(".project-files").hide();
+	});
+	$(".mobile-tabs-menu button:nth-of-type(2)").click(function(){
+		$(".video-project-director .container > p").hide();
+		$(".video-description-left").hide();
+		$(".description-right-up").hide();
+		$(".description-right-down").fadeIn();
+		$(".video-upload").hide();
+		$(".project-files").hide();
+	});
+	$(".mobile-tabs-menu button:nth-of-type(3)").click(function(){
+		$(".video-project-director .container > p").hide();
+		$(".video-description-left").hide();
+		$(".description-right-up").hide();
+		$(".description-right-down").hide();
+		$(".video-upload").fadeIn();
+		$(".project-files").fadeIn();
+	});
+	/* Responsive menu End */
 	/* Trigger Lightbox */
 		$("#links a").tosrus();
 		$("#links").tosrus({
@@ -353,7 +388,7 @@ $(window).resize(function(){
 	        e.preventDefault();
 	 });
 	/* Popup Datepicker End */
-		$(".single-video-featuredimg > a").click(function(){
+		$(".video-dir,.video-edi").click(function(){
 		setTimeout(function(){
 
 			$('.slickSlide1').slick({
