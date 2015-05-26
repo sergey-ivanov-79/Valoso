@@ -1,5 +1,14 @@
 $(document).ready(function(){
-
+	/* Double select */
+        $('#dur-vid').change(function(){
+            $('.other-time-hide').hide();
+            $('#' + $(this).val()).show();
+        });
+        $('#music-genre-main').change(function(){
+            $('.double-select').hide();
+            $('#' + $(this).val()).show();
+        });
+    /* Double select End */
 	var visina_slike = $('.video-description-left .video-span-wrap').height();
 	$('.video-description-left .span-height').css('height', visina_slike);
 	var visina_slike1 = $('.uploader-short-details').height();
@@ -289,6 +298,45 @@ $(document).ready(function(){
 	    // instead of a settings object
 	  ]
 	});
+	$('.slickSlide5').slick({
+	  infinite: false,
+	  speed: 300,
+	  slidesToShow: 5,
+	  slidesToScroll: 4,
+	  responsive: [
+	  	{
+	    	breakpoint: 991,
+	    	settings: {
+	    		slidesToShow: 3,
+	    		slidesToScroll: 2
+	    	}
+	    },
+	    {
+	      breakpoint: 767,
+	      settings: {
+	        slidesToShow: 5,
+	        slidesToScroll: 2
+	      }
+	    },
+	    {
+	      breakpoint: 640,
+	      settings: {
+	        slidesToShow: 4,
+	        slidesToScroll: 2
+	      }
+	    },
+	    {
+	      breakpoint: 600,
+	      settings: {
+	        slidesToShow: 3,
+	        slidesToScroll: 1
+	      }
+	    }
+	    // You can unslick at a given breakpoint now by adding:
+	    // settings: "unslick"
+	    // instead of a settings object
+	  ]
+	});
 	/* Video snap show/hide landscape */
 	$(".edit-tools").click(function(){
 		$(".video-snap-checked").toggleClass("edit-block1");
@@ -418,3 +466,4 @@ $(window).resize(function(){
 			});
 		}, 500);
 	});
+		

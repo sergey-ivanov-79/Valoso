@@ -713,7 +713,7 @@
     <div class="project-files">
       <h3>Project Files <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="Video and picture files that make up the video project. These are the assets the Video Editor will work with." /> <span><button id="video-expandall">Expand All</button><button id="video-collapseall">Collapse All</button></span></h3>
       <div class="video-download">
-        <button id="video-download" data-toggle="modal" data-target="">Download</button>
+        <button id="video-download" data-toggle="modal" data-target="#download-project-files-modal">Download</button>
       </div> <!-- /.video-download -->
       <ol class="video-list">
       <li class="single-video clearfix">
@@ -915,6 +915,56 @@
  
  </div>
 </footer>
+<div id="view-screensh" class="modal fade">
+  <div class="modal-dialog clearfix">
+    <div class="modal-content clearfix">
+        <div class="modal-body clearfix">
+          <div class="screenshot-gallery">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="featured-screenshot">
+              <div class="featured-screenshot-wrap clearfix">
+                <div class="featured-screen-popup col-sm-12 clearfix">
+                  <img src="images/video-project/screenshot.jpg" alt="" />
+                </div> <!-- /.featured-screen -->
+                <div class="featured-screenshot-text col-sm-12">
+                  <div class="col-sm-9">
+                    <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis.</p>
+                  </div>
+                  <div class="col-sm-3">
+                    <button data-toggle="modal" data-target="">Add Notes</button>
+                    <button>Download</button>
+                  </div>
+                </div> <!-- /.featured-screenshot-text -->
+              </div> <!-- /.featured-screenshot-wrap -->
+            </div> <!-- /.featured-screenshot -->
+          </div> <!-- /.screenshot-gallery -->
+          <div class="gallery-history-editor">
+            <div class="gallery-history-left">
+              <h5>Editor</h5>
+              <p>Updated by editor <span>DD/MM/YY HH:MM</span></p>
+              <div class="gallery-history-img">
+                <a href="mailto:owner@email.com?Subject=Message%20title" target="_top"><img src="images/video-project/icon-send.png" alt="" /></a>
+                <a href=""><img src="images/video-project/icon-view.png" alt="" /></a>
+                <a href=""><img src="images/video-project/icon-dl.png" alt="" /></a>
+              </div> <!-- /.gallery-history-img -->
+            </div> <!-- /.gallery-left -->
+            <div class="gallery-history-right">
+              <div class="slickSlide1">
+                <div><img src="images/video-project/vn1.jpg" /></div>
+                <div><img src="images/video-project/vn1.jpg" /></div>
+                <div><img src="images/video-project/vn1.jpg" /></div>
+                <div><img src="images/video-project/vn1.jpg" /></div>
+                <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+            </div>
+            </div> <!-- /.gallery-history-right -->
+          </div> <!-- /.gallery-history-editor -->
+        </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.#screen-edit -->
 <!-- Modal -->
 <div class="modal fade" id="loginBox" tabindex="-1" role="dialog" aria-labelledby="loginBoxLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -1147,56 +1197,7 @@
         </div>
         </div>
       </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.#screen-edit -->
-<div id="view-screensh" class="modal fade">
-  <div class="modal-dialog clearfix">
-    <div class="modal-content clearfix">
-        <div class="modal-body clearfix">
-          <div class="screenshot-gallery">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <div class="featured-screenshot">
-              <div class="featured-screenshot-wrap clearfix">
-                <div class="featured-screen-popup col-sm-12 clearfix">
-                  <img src="images/video-project/screenshot.jpg" alt="" />
-                </div> <!-- /.featured-screen -->
-                <div class="featured-screenshot-text col-sm-12">
-                  <div class="col-sm-9">
-                    <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis.</p>
-                  </div>
-                  <div class="col-sm-3">
-                    <button data-toggle="modal" data-target="#vp-screen-edit">Add Notes</button>
-                    <button>Download</button>
-                  </div>
-                </div> <!-- /.featured-screenshot-text -->
-              </div> <!-- /.featured-screenshot-wrap -->
-            </div> <!-- /.featured-screenshot -->
-          </div> <!-- /.screenshot-gallery -->
-          <div class="gallery-history-editor">
-            <div class="gallery-history-left">
-              <h5>Editor</h5>
-              <p>Updated by editor <span>DD/MM/YY HH:MM</span></p>
-              <div class="gallery-history-img">
-                <a href="mailto:owner@email.com?Subject=Message%20title" target="_top"><img src="images/video-project/icon-send.png" alt="" /></a>
-                <a href=""><img src="images/video-project/icon-view.png" alt="" /></a>
-                <a href=""><img src="images/video-project/icon-dl.png" alt="" /></a>
-              </div> <!-- /.gallery-history-img -->
-            </div> <!-- /.gallery-left -->
-            <div class="gallery-history-right">
-              <div class="slickSlide1">
-                <div><img src="images/video-project/vn1.jpg" /></div>
-                <div><img src="images/video-project/vn1.jpg" /></div>
-                <div><img src="images/video-project/vn1.jpg" /></div>
-                <div><img src="images/video-project/vn1.jpg" /></div>
-                <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
-                <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
-                <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
-                <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
-            </div>
-            </div> <!-- /.gallery-history-right -->
-          </div> <!-- /.gallery-history-editor -->
-        </div>
+      </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.#screen-edit -->
@@ -1207,7 +1208,6 @@
 <script src='js/jquery-sortable.js'></script>
 <script type="text/javascript" language="javascript" src="js/bootstrap-datepicker.js"></script>
 <script src="js/slick.min.js"></script>
-<script src="js/video-project-page.js"></script>
 <script type="text/javascript">
   $('.datepicker').datepicker();
 </script>
@@ -1216,5 +1216,6 @@
     $("ol.video-list").sortable()
   });
 </script>
+<script src="js/video-project-page.js"></script>
 </body>
 </html>
