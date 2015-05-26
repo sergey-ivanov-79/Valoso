@@ -384,6 +384,20 @@ span.upload-path {
   border: solid 1px #ebe9e9;
   border-radius: 5px;
 }
+.single-video {
+  *zoom: 1;
+}
+.single-video:after {
+  display: table;
+  content: "";
+  clear: both;
+  line-height: 0;
+}
+.single-video:before {
+  display: table;
+  content: "";
+  line-height: 0;
+}
 .video-list .single-video > h5 {
   font-size: 20px;
   color: white;
@@ -1093,10 +1107,13 @@ span.video-list-draft {
   color: #ff818c;
 }
 .video-director-editor {
-    position: absolute;
-    left: 15px;
-    bottom: 10px;
-    right: 0;
+  position: absolute;
+  left: 15px;
+  bottom: 0px;
+  right: 0;
+}
+.video-director-editor > div {
+  margin-bottom: 10px;
 }
 .video-dir h5 {
   font-size: 16px;
@@ -1444,6 +1461,9 @@ div#view-screensh .featured-screenshot-text button {
 .mobile-tabs-menu {
   display: none;
 }
+.multiple-select label {
+  width: 100%;
+}
 @media (max-width: 1024px) {
   .audio-track > label {
     height: 50px;
@@ -1494,7 +1514,7 @@ div#view-screensh .featured-screenshot-text button {
     font-size: 18px;
   }
   .video-director-editor {
-    bottom: 13px;
+    bottom: 0px;
   }
   .featured-screenshot-text button {
     font-size: 20px;  
@@ -1618,7 +1638,7 @@ div#view-screensh .featured-screenshot-text button {
     font-size: 18px;
   }
   .video-director-editor {
-    bottom: 15px;
+    bottom: 5px;
   }
   .video-list {
     height: 680px;
@@ -1697,6 +1717,8 @@ div#view-screensh .featured-screenshot-text button {
   }
   .video-des-wrap {
     border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-bottom: 0;
   }
   .header-color-track img {
     height: 40px;
@@ -1880,7 +1902,7 @@ div#view-screensh .featured-screenshot-text button {
     padding-top: 5px!important;
   }
   .video-director-editor {
-    bottom: 14px;
+    bottom: 9px;
   }
   .project-files-buttons .change-buttons button:nth-of-type(1), .project-files-buttons .change-buttons button:nth-of-type(2) {
     width: 120px;
@@ -1946,6 +1968,18 @@ div#view-screensh .featured-screenshot-text button {
   }
   .video-dir,.video-edi {
     margin-bottom: 5px;
+  }
+  .video-list {
+    height: 100%;
+    overflow: auto;
+  }
+  .single-video-description > p {
+    margin-bottom: 10px;
+  }
+  .single-video-hover > h4 {
+    font-size: 24px;
+    margin-top: 80px;
+    margin-bottom: 50px;
   }
 }/* 640px End */
 @media (max-width: 600px) {
@@ -2100,6 +2134,15 @@ div#view-screensh .featured-screenshot-text button {
   .vp-edit-screen .edit-first {
     width: 340px;
   }
+  .single-video-hover > h4 {
+    font-size: 20px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+  span.single-video-hover-buttons > button {
+    font-size: 18px;
+  }
 }/* 480px End */
 @media (max-width: 400px) {
   .video-project-director .container > p {
@@ -2248,6 +2291,16 @@ div#view-screensh .featured-screenshot-text button {
   .video-description-right .title-director span {
     padding: 2px 7px 2px;
   }
+  .single-video-hover > h4 {
+    font-size: 16px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+  span.single-video-hover-buttons > button {
+    font-size: 16px;
+    padding: 5px 25px;
+  }
 }/* 360px End */
 @media (max-width: 320px) {
   .uploader-info-button button:nth-of-type(2) {
@@ -2351,4 +2404,95 @@ div#view-screensh .featured-screenshot-text button {
     padding-left: 8px!important;
     padding-right: 0!important;
   }
+  .video-project-form .vp-form-left .vp-form > div:nth-of-type(1) .input-group, .video-project-form .vp-form > div:nth-of-type(1) ul {
+    width: 275px!important;
+  }
+  .single-video-hover > h4 {
+    font-size: 14px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+  }
+  span.single-video-hover-buttons > button {
+    font-size: 14px;
+    padding: 5px 25px;
+  }
 }/* 320px End */
+@media only screen and (max-device-width:  1024px) and (orientation : landscape) {
+  .screen-multi {
+    padding: 0!important;
+  }
+}
+@media only screen and (max-device-width:  640px) and (orientation : landscape) {
+  .vp-edit-screen .modal-footer p {
+    margin-left: 5px!important;
+  }
+  .vp-edit-screen .modal-footer p {
+    padding-top: 0px!important;
+  }
+  .vp-edit-screen .edit-tools {
+    padding: 7px 10px 7px;
+  }
+  .vp-edit-screen .modal-dialog .modal-body > img {
+    max-width: 428px!important;
+  }
+  .vp-edit-screen .carousel-control .glyphicon-chevron-right,.vp-edit-screen .carousel-control .icon-next,.vp-edit-screen .carousel-control .glyphicon-chevron-left,.vp-edit-screen .carousel-control .icon-prev {
+    font-size: 22px!important;
+  }
+  .single-video-hover > h4 {
+    font-size: 24px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+  span.single-video-hover-buttons > button {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-device-width:  480px) and (orientation : landscape) {
+  .vp-edit-screen .video-snap-checked {
+    padding-top: 5px;
+  }
+  .vp-edit-screen .edit-tools {
+    padding: 4px 5px 4px;
+  }
+  .vp-edit-screen .edit-first {
+    width: 300px;
+    float: none;
+    margin: auto!important;
+  }
+  .vp-edit-screen .screen-edit-buttons.clearfix {
+    width: 100%!important;
+  }
+  .vp-edit-screen .screen-edit-buttons > div > button {
+    height: 24px;
+  }
+  .vp-edit-screen .carousel-control .glyphicon-chevron-right, .vp-edit-screen .carousel-control .icon-next, .vp-edit-screen .carousel-control .glyphicon-chevron-left, .vp-edit-screen .carousel-control .icon-prev {
+    font-size: 18px!important;
+  }
+  .vp-edit-screen .modal-footer p span:nth-of-type(2) {
+    margin-bottom: 0px; 
+  }
+  .vp-edit-screen .modal-footer p {
+    margin-bottom: 0!important;
+  }
+  .vp-edit-screen .modal-dialog .modal-body > img {
+    max-width: 446px!important;
+  }
+  .vp-edit-screen .screen-edit-buttons > div > button > i {
+    font-size: 22px;
+  }
+  .vp-edit-screen .screen-edit-buttons > div > input {
+    width: 32px;
+    height: 27px;
+    margin-top: 0px;
+  }
+  .single-video-hover > h4 {
+    font-size: 20px;  
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  span.single-video-hover-buttons > button {
+    padding: 5px 20px;
+    font-size: 16px;
+  }
+}

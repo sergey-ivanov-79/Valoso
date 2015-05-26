@@ -257,14 +257,14 @@
         <div class="vp-form">
           <div class="form-group form-group-sm video-duration-select">
             <label for="">Video Duration</label>
-            <select id="" name="sleeps" class="form-control" >
+            <select id="dur-vid" name="sleeps" class="form-control" >
               <option>No preference</option>
-              <option>Under 30 seconds</option>
-              <option>Under 2 minutes</option>
-              <option>Under 5 minutes</option>
+              <option value="other-video-duration">Under 30 seconds</option>
+              <option value="other-video-duration">Under 2 minutes</option>
+              <option value="other-video-duration">Under 5 minutes</option>
               <option id="other-time">Other</option>
             </select>
-            <input id="other-video-duration" placeholder="mm:ss">
+            <input id="other-video-duration" class="other-time-hide" placeholder="mm:ss" style="display:none">
           </div> <!-- /.form-group-sm -->
           <div class="form-group form-group-sm multiple-select">
             <label for="">Audio Track</label>
@@ -981,7 +981,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-select.js"></script>
 <script type="text/javascript" src="js/jquery.tosrus.min.all.js"></script>
-<script src="js/video-project-page.js"></script>
 
 <script type="text/javascript" language="javascript" src="js/tinymce/tinymce.min.js"></script>
 <script type="text/javascript" language="javascript" src="js/bootstrap-datepicker.js"></script>
@@ -1073,5 +1072,6 @@ tinymce.init({
     checkout.hide();
   }).data('datepicker');
 </script>
+<script src="js/video-project-page.js"></script>
 </body>
 </html>
