@@ -1,11 +1,25 @@
 $(document).ready(function(){
-
+	/* Double select */
+        $('#dur-vid').change(function(){
+            $('.other-time-hide').hide();
+            $('#' + $(this).val()).show();
+        });
+        $('#music-genre-main').change(function(){
+            $('.double-select').hide();
+            $('#' + $(this).val()).show();
+        });
+    /* Double select End */
 	var visina_slike = $('.video-description-left .video-span-wrap').height();
 	$('.video-description-left .span-height').css('height', visina_slike);
-	var visina_slike1 = $('.uploader-info .uploader-short-details').height();
-	$('.uploader-info .uploader-avatar').css('height', visina_slike1);
-
-	$('#project-delete-file').click(function() {
+	var visina_slike1 = $('.uploader-short-details').height();
+	$('.uploader-avatar').css('height', visina_slike1);
+	$('.mobile-tabs-menu button:nth-of-type(2)').click(function(){
+		setTimeout(function(){
+			var visina_slike1 = $('.uploader-short-details').height();
+			$('.uploader-avatar').css('height', visina_slike1);
+		},1);
+	});
+	$('button#project-delete-file').click(function() {
 		$('.single-video-hover').fadeIn();
 	});
 	$('.single-video-hover-buttons button').click(function() {
@@ -31,6 +45,36 @@ $(document).ready(function(){
 		$('.single-video-featuredimg,.single-video-description').fadeOut();
 		$('.project-more-opt.dropdown > button').css("display","block")
 	});
+	/* Responsive menu */
+	$(".mobile-tabs-menu button").click(function(){
+		$(".mobile-tabs-menu button").removeClass("active");
+		$(this).addClass("active");
+	});
+	$(".mobile-tabs-menu button:nth-of-type(1)").click(function(){
+		$(".video-project-director .container > p").fadeIn();
+		$(".video-description-left").fadeIn();
+		$(".description-right-up").fadeIn();
+		$(".description-right-down").hide();
+		$(".video-upload").hide();
+		$(".project-files").hide();
+	});
+	$(".mobile-tabs-menu button:nth-of-type(2)").click(function(){
+		$(".video-project-director .container > p").hide();
+		$(".video-description-left").hide();
+		$(".description-right-up").hide();
+		$(".description-right-down").fadeIn();
+		$(".video-upload").hide();
+		$(".project-files").hide();
+	});
+	$(".mobile-tabs-menu button:nth-of-type(3)").click(function(){
+		$(".video-project-director .container > p").hide();
+		$(".video-description-left").hide();
+		$(".description-right-up").hide();
+		$(".description-right-down").hide();
+		$(".video-upload").fadeIn();
+		$(".project-files").fadeIn();
+	});
+	/* Responsive menu End */
 	/* Trigger Lightbox */
 		$("#links a").tosrus();
 		$("#links").tosrus({
@@ -254,6 +298,45 @@ $(document).ready(function(){
 	    // instead of a settings object
 	  ]
 	});
+	$('.slickSlide5').slick({
+	  infinite: false,
+	  speed: 300,
+	  slidesToShow: 5,
+	  slidesToScroll: 4,
+	  responsive: [
+	  	{
+	    	breakpoint: 991,
+	    	settings: {
+	    		slidesToShow: 3,
+	    		slidesToScroll: 2
+	    	}
+	    },
+	    {
+	      breakpoint: 767,
+	      settings: {
+	        slidesToShow: 5,
+	        slidesToScroll: 2
+	      }
+	    },
+	    {
+	      breakpoint: 640,
+	      settings: {
+	        slidesToShow: 4,
+	        slidesToScroll: 2
+	      }
+	    },
+	    {
+	      breakpoint: 600,
+	      settings: {
+	        slidesToShow: 3,
+	        slidesToScroll: 1
+	      }
+	    }
+	    // You can unslick at a given breakpoint now by adding:
+	    // settings: "unslick"
+	    // instead of a settings object
+	  ]
+	});
 	/* Video snap show/hide landscape */
 	$(".edit-tools").click(function(){
 		$(".video-snap-checked").toggleClass("edit-block1");
@@ -304,7 +387,7 @@ $(window).resize(function(){
 	var adjustment
 	$("ol.video-list").sortable({
 	  group: 'no-drop',
-	  handle: '.icon-reorder',
+	  handle: '.click-absolute',
 	  onDragStart: function (item, container, _super) {
 	    // Duplicate items of the no drop area
 	    if(!container.options.drop)
@@ -353,7 +436,7 @@ $(window).resize(function(){
 	        e.preventDefault();
 	 });
 	/* Popup Datepicker End */
-		$(".single-video-featuredimg > a").click(function(){
+		$(".video-edi").click(function(){
 		setTimeout(function(){
 
 			$('.slickSlide1').slick({
@@ -365,7 +448,7 @@ $(window).resize(function(){
 			    {
 			      breakpoint: 767,
 			      settings: {
-			        slidesToShow: 4,
+			        slidesToShow: 3,
 			        slidesToScroll: 2
 			      }
 			    },
@@ -383,3 +466,82 @@ $(window).resize(function(){
 			});
 		}, 500);
 	});
+	$(".video-dir").click(function(){
+		setTimeout(function(){
+
+			$('.slickSlide7').slick({
+			  infinite: false,
+			  speed: 300,
+			  slidesToShow: 6,
+			  slidesToScroll: 4,
+			  responsive: [
+			    {
+			      breakpoint: 767,
+			      settings: {
+			        slidesToShow: 3,
+			        slidesToScroll: 2
+			      }
+			    },
+			    {
+			      breakpoint: 480,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 1
+			      }
+			    }
+			    // You can unslick at a given breakpoint now by adding:
+			    // settings: "unslick"
+			    // instead of a settings object
+			  ]
+			});
+		}, 500);
+	});
+	/* Popup on vp */
+	$(".popup-send-email-ss").click(function(){
+		$(".popup-download-project").hide();
+		$(".featured-screen-popup").hide();
+		$(".send-screen-popup").fadeIn();
+	});
+	$(".popup-download-pf").click(function(){
+		$(".send-screen-popup").hide();
+		$(".featured-screen-popup").hide();
+		$(".popup-download-project").fadeIn();
+	});
+	$(".popup-view-scr").click(function(){
+		$(".popup-download-project").hide();
+		$(".send-screen-popup").hide();
+		$(".featured-screen-popup").fadeIn();
+	});
+	$("#view-screensh .popup-edit-tools").click(function(){
+		$("#view-screensh .popup-download-project").addClass("hide-popup-opacity");
+		$("#view-screensh .send-screen-popup").addClass("hide-popup-opacity");
+		$("#view-screensh .featured-screen-popup").addClass("hide-popup-opacity");
+		$("#view-screensh .featured-screenshot-text").hide();
+		$("div#view-screensh .featured-screenshot-wrap").addClass("remove-padding");
+		$("#view-screensh #screen-edit").fadeIn();
+	});
+	$("#view-screensh-dir .popup-edit-tools").click(function(){
+		$("#view-screensh-dir .popup-download-project").addClass("hide-popup-opacity");
+		$("#view-screensh-dir .send-screen-popup").addClass("hide-popup-opacity");
+		$("#view-screensh-dir .featured-screen-popup").addClass("hide-popup-opacity");
+		$("#view-screensh-dir .featured-screenshot-text").hide();
+		$("div#view-screensh-dir .featured-screenshot-wrap").addClass("remove-padding");
+		$("#view-screensh-dir #screen-edit").fadeIn();
+	});
+	$("#view-screensh #screen-edit .save-edit,#view-screensh #screen-edit .close,#view-screensh #screen-edit .video-snap-checked").click(function(){
+		$("#view-screensh .popup-download-project").removeClass("hide-popup-opacity");
+		$("#view-screensh .send-screen-popup").removeClass("hide-popup-opacity");
+		$("#view-screensh .featured-screen-popup").removeClass("hide-popup-opacity");
+		$("#view-screensh .featured-screenshot-text").fadeIn();
+		$("div#view-screensh .featured-screenshot-wrap").removeClass("remove-padding");
+		$("#view-screensh #screen-edit").hide();
+	});
+	$("#view-screensh-dir #screen-edit .save-edit,#view-screensh-dir #screen-edit .close,#view-screensh-dir #screen-edit .video-snap-checked").click(function(){
+		$("#view-screensh-dir .popup-download-project").removeClass("hide-popup-opacity");
+		$("#view-screensh-dir .send-screen-popup").removeClass("hide-popup-opacity");
+		$("#view-screensh-dir .featured-screen-popup").removeClass("hide-popup-opacity");
+		$("#view-screensh-dir .featured-screenshot-text").fadeIn();
+		$("div#view-screensh-dir .featured-screenshot-wrap").removeClass("remove-padding");
+		$("#view-screensh-dir #screen-edit").hide();
+	});
+	/* Popup on vp End */

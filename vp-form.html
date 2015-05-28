@@ -257,14 +257,14 @@
         <div class="vp-form">
           <div class="form-group form-group-sm video-duration-select">
             <label for="">Video Duration</label>
-            <select id="" name="sleeps" class="form-control" >
+            <select id="dur-vid" name="sleeps" class="form-control" >
               <option>No preference</option>
               <option>Under 30 seconds</option>
               <option>Under 2 minutes</option>
               <option>Under 5 minutes</option>
-              <option id="other-time">Other</option>
+              <option id="other-time" value="other-video-duration">Other</option>
             </select>
-            <input id="other-video-duration" placeholder="mm:ss">
+            <input id="other-video-duration" class="other-time-hide" placeholder="mm:ss" style="display:none">
           </div> <!-- /.form-group-sm -->
           <div class="form-group form-group-sm multiple-select">
             <label for="">Audio Track</label>
@@ -308,12 +308,12 @@
                 <option>Hardcore Punk</option>
                 <option>Hard Rock</option>
                 <option>Indie Rock</option>
-                <option>Lo-fi (hat tip to Ben Vee Bedlamite)</option>
+                <option>Lo-fi</option>
                 <option>New Wave</option>
                 <option>Progressive Rock</option>
                 <option>Punk</option>
-                <option>Shoegaze (with thx to Jackie Herrera)</option>
-                <option>Steampunk (with thx to Christopher Schaeffer)</option>
+                <option>Shoegaze</option>
+                <option>Steampunk</option>
               </select>
             </div><!-- /.double-select -->
               <div id="blues-genre" class="double-select" style="display:none">
@@ -376,7 +376,7 @@
                   <option>Contemporary Bluegrass</option>
                   <option>Contemporary Country</option>
                   <option>Country Gospel</option>
-                  <option>Country Pop (thanks Sarah Johnson)</option>
+                  <option>Country Pop</option>
                   <option>Honky Tonk</option>
                   <option>Outlaw Country</option>
                   <option>Traditional Bluegrass</option>
@@ -386,25 +386,25 @@
               </div><!-- /.double-select -->
               <div id="dance-genre" class="double-select" style="display:none">
                 <select name="dance-genre" class="form-control" >
-                  <option>Club / Club Dance (thx Luke Allfree)</option>
+                  <option>Club / Club Dance</option>
                   <option>Breakbeat</option>
-                  <option>Brostep (cheers Tom Berckley)</option>
-                  <option>Deep House (cheers Venus Pang)</option>
+                  <option>Brostep</option>
+                  <option>Deep House</option>
                   <option>Dubstep</option>
-                  <option>Electro House (thx Luke Allfree)</option>
+                  <option>Electro House</option>
                   <option>Exercise</option>
                   <option>Garage</option>
-                  <option>Glitch Hop (cheers Tom Berckley)</option>
+                  <option>Glitch Hop</option>
                   <option>Hardcore</option>
                   <option>Hard Dance</option>
                   <option>Hi-NRG / Eurodance</option>
                   <option>House</option>
-                  <option>Jackin House (with thx to Jermaine Benjamin Dale Bruce)</option>
+                  <option>Jackin House</option>
                   <option>Jungle / Drum’n’bass</option>
-                  <option>Regstep (thanks to ‘Melia G)</option>
+                  <option>Regstep</option>
                   <option>Techno</option>
                   <option>Trance</option>
-                  <option>Trap (thx Luke Allfree)</option>
+                  <option>Trap</option>
                 </select>
               </div><!-- /.double-select -->
               <div id="easy-genre" class="double-select" style="display:none">
@@ -416,21 +416,21 @@
               </div><!-- /.double-select -->
               <div id="electronic-genre" class="double-select" style="display:none">
                 <select name="electronic-genre" class="form-control" >
-                  <option>8bit – aka 8-bit, Bitpop and Chiptune - (thx Marcel Borchert)</option>
+                  <option>8bit</option>
                   <option>Ambient</option>
-                  <option>Bassline (thx Leon Oliver)</option>
-                  <option>Chiptune (kudos to Dominik Landahl)</option>
-                  <option>Crunk (with thx to Jillian Edwards)</option>
+                  <option>Bassline</option>
+                  <option>Chiptune</option>
+                  <option>Crunk</option>
                   <option>Downtempo</option>
-                  <option>Drum & Bass (thx Luke Allfree)</option>
+                  <option>Drum & Bass</option>
                   <option>Electro</option>
-                  <option>Electro-swing (thank you Daniel Forthofer)</option>
+                  <option>Electro-swing</option>
                   <option>Electronica</option>
                   <option>Electronic Rock</option>
-                  <option>Hardstyle (kudos to Dominik Landahl)</option>
+                  <option>Hardstyle</option>
                   <option>IDM/Experimental</option>
                   <option>Industrial</option>
-                  <option>Trip Hop (thank you Michael Tait Tafoya)</option>
+                  <option>Trip Hop</option>
                 </select>
               </div><!-- /.double-select -->
               <div id="hip-hop-genre" class="double-select" style="display:none">
@@ -445,7 +445,7 @@
                   <option>Latin Rap</option>
                   <option>Old School Rap</option>
                   <option>Rap</option>
-                  <option>Turntablism (thank you Luke Allfree)</option>
+                  <option>Turntablism</option>
                   <option>Underground Rap</option>
                   <option>West Coast Rap</option>
                 </select>
@@ -481,7 +481,7 @@
                   <option>Gospel</option>
                   <option>Christian & Gospel</option>
                   <option>Praise & Worship</option>
-                  <option>Qawwali (with thx to Jillian Edwards)</option>
+                  <option>Qawwali</option>
                   <option>Southern Gospel</option>
                   <option>Traditional Gospel</option>
                 </select>
@@ -501,18 +501,18 @@
               </div><!-- /.double-select -->
               <div id="jazz-genre" class="double-select" style="display:none">
                 <select name="jazz-genre" class="form-control" >
-                  <option>Acid Jazz (with thx to Hunter Nelson)</option>
+                  <option>Acid Jazz</option>
                   <option>Avant-Garde Jazz</option>
-                  <option>Bebop (thx Mwinogo1)</option>
+                  <option>Bebop</option>
                   <option>Big Band</option>
-                  <option>Blue Note (with thx to Jillian Edwards)</option>
+                  <option>Blue Note</option>
                   <option>Contemporary Jazz</option>
                   <option>Cool</option>
                   <option>Crossover Jazz</option>
                   <option>Dixieland</option>
-                  <option>Ethio-jazz (with thx to Jillian Edwards)</option>
+                  <option>Ethio-jazz</option>
                   <option>Fusion</option>
-                  <option>Gypsy Jazz (kudos to Mike Tait Tafoya)</option>
+                  <option>Gypsy Jazz</option>
                   <option>Hard Bop</option>
                   <option>Latin Jazz</option>
                   <option>Mainstream Jazz</option>
@@ -524,16 +524,16 @@
               <div id="latin-genre" class="double-select" style="display:none">
                 <select name="latin-genre" class="form-control" >
                   <option>Alternativo & Rock Latino</option>
-                  <option>Argentine tango (gracias P. Moth & Sandra Sanders)</option>
+                  <option>Argentine tango</option>
                   <option>Baladas y Boleros</option>
-                  <option>Bossa Nova (with thx to Marcos José Sant’Anna Magalhães & Alex Ede for the reclassification)</option>
+                  <option>Bossa Nova</option>
                   <option>Brazilian</option>
                   <option>Contemporary Latin</option>
-                  <option>Flamenco / Spanish Flamenco (thank you Michael Tait Tafoya & Sandra Sanders)</option>
+                  <option>Flamenco / Spanish Flamenco</option>
                   <option>Latin Jazz</option>
-                  <option>Nuevo Flamenco (and again Michael Tafoya)</option>
+                  <option>Nuevo Flamenco</option>
                   <option>Pop Latino</option>
-                  <option>Portuguese fado (and again Sandra Sanders)</option>
+                  <option>Portuguese fado</option>
                   <option>Raíces</option>
                   <option>Reggaeton y Hip-Hop</option>
                   <option>Regional Mexicano</option>
@@ -554,34 +554,34 @@
                 <select name="pop-genre" class="form-control" >
                   <option>Adult Contemporary</option>
                   <option>Britpop</option>
-                  <option>Bubblegum Pop (thx Haug & John Maher)</option>
-                  <option>Chamber Pop (thx Haug)</option>
+                  <option>Bubblegum Pop</option>
+                  <option>Chamber Pop</option>
                   <option>Dance Pop</option>
-                  <option>Dream Pop (thx Haug)</option>
-                  <option>Electro Pop (thx Haug)</option>
-                  <option>Orchestral Pop (thx Haug)</option>
+                  <option>Dream Pop</option>
+                  <option>Electro Pop</option>
+                  <option>Orchestral Pop</option>
                   <option>Pop/Rock</option>
-                  <option>Power Pop (thx Haug)</option>
+                  <option>Power Pop</option>
                   <option>Soft Rock</option>
-                  <option>Synthpop (thx Haug)</option>
+                  <option>Synthpop</option>
                   <option>Teen Pop</option>
                 </select>
               </div><!-- /.double-select -->
               <div id="rb-soul-genre" class="double-select" style="display:none">
                 <select name="rb-soul-genre" class="form-control" >
                   <option>Contemporary R&B</option>
-                  <option>Disco (not a top level genre Sheldon Reynolds!)</option>
+                  <option>Disco</option>
                   <option>Doo Wop</option>
                   <option>Funk</option>
-                  <option>Modern Soul (Cheers Nik)</option>
+                  <option>Modern Soul</option>
                   <option>Motown</option>
                   <option>Neo-Soul</option>
-                  <option>Northern Soul (Cheers Nik & John Maher)</option>
-                  <option>Psychedelic Soul (thank you John Maher)</option>
+                  <option>Northern Soul</option>
+                  <option>Psychedelic Soul</option>
                   <option>Quiet Storm</option>
                   <option>Soul</option>
-                  <option>Soul Blues (Cheers Nik)</option>
-                  <option>Southern Soul (Cheers Nik)</option>
+                  <option>Soul Blues</option>
+                  <option>Southern Soul</option>
                 </select>
               </div><!-- /.double-select -->
               <div id="reggae-genre" class="double-select" style="display:none">
@@ -594,11 +594,11 @@
               </div><!-- /.double-select -->
               <div id="rock-genre" class="double-select" style="display:none">
                 <select name="rock-genre" class="form-control" >
-                  <option>Acid Rock (with thanks to Alex Antonio)</option>
-                  <option>Adult-Oriented Rock (thanks to John Maher)</option>
+                  <option>Acid Rock</option>
+                  <option>Adult-Oriented Rock</option>
                   <option>Afro Punk</option>
                   <option>Adult Alternative</option>
-                  <option>Alternative Rock (thx Caleb Browning)</option>
+                  <option>Alternative Rock</option>
                   <option>American Trad Rock</option>
                   <option>Anatolian Rock</option>
                   <option>Arena Rock</option>
@@ -607,23 +607,23 @@
                   <option>British Invasion</option>
                   <option>Death Metal / Black Metal</option>
                   <option>Glam Rock</option>
-                  <option>Gothic Metal (fits here Sam DeRenzis – thx)</option>
+                  <option>Gothic Metal</option>
                   <option>Hair Metal</option>
                   <option>Hard Rock</option>
                   <option>Metal</option>
-                  <option>Noise Rock (genre – Japanoise – thx Dominik Landahl)</option>
+                  <option>Noise Rock</option>
                   <option>Jam Bands</option>
-                  <option>Post Punk (thx Ben Vee Bedlamite)</option>
+                  <option>Post Punk</option>
                   <option>Prog-Rock/Art Rock</option>
                   <option>Psychedelic</option>
                   <option>Rock & Roll</option>
-                  <option>Rockabilly (it’s here Mark Murdock!)</option>
+                  <option>Rockabilly</option>
                   <option>Roots Rock</option>
                   <option>Singer/Songwriter</option>
                   <option>Southern Rock</option>
                   <option>Surf</option>
                   <option>Tex-Mex</option>
-                  <option>Time Lord Rock (Trock) ~ (thanks to ‘Melia G)</option>
+                  <option>Time Lord Rock</option>
                 </select>
               </div><!-- /.double-select -->
               <div id="singer-genre" class="double-select" style="display:none">
@@ -631,9 +631,9 @@
                   <option>Alternative Folk</option>
                   <option>Contemporary Folk</option>
                   <option>Contemporary Singer/Songwriter</option>
-                  <option>Indie Folk (with thanks to Andrew Barrett)</option>
+                  <option>Indie Folk</option>
                   <option>Folk-Rock</option>
-                  <option>Love Song (Chanson – merci Marcel Borchert)</option>
+                  <option>Love Song</option>
                   <option>New Acoustic</option>
                   <option>Traditional Folk</option>
                 </select>
@@ -677,27 +677,27 @@
                   <option>Asia</option>
                   <option>Australia</option>
                   <option>Cajun</option>
-                  <option>Calypso (thx Gerald John)</option>
+                  <option>Calypso</option>
                   <option>Caribbean</option>
                   <option>Celtic</option>
                   <option>Celtic Folk</option>
                   <option>Contemporary Celtic</option>
-                  <option>Dangdut (thank you Achmad Ivanny)</option>
+                  <option>Dangdut</option>
                   <option>Drinking Songs</option>
-                  <option>Drone (with thx to Robert Conrod)</option>
+                  <option>Drone</option>
                   <option>Europe</option>
                   <option>France</option>
                   <option>Hawaii</option>
-                  <option>Indian Ghazal (thank you Gitika Thakur)</option>
+                  <option>Indian Ghazal</option>
                   <option>Indian Pop</option>
                   <option>Japan</option>
                   <option>Japanese Pop</option>
                   <option>Klezmer</option>
                   <option>Middle East</option>
                   <option>North America</option>
-                  <option> Ode (thank you Sheldon Reynolds)</option>
+                  <option> Ode</option>
                   <option> Polka</option>
-                  <option> Soca (thx Gerald John)</option>
+                  <option> Soca</option>
                   <option> South Africa</option>
                   <option> South America</option>
                   <option> Traditional Celtic  </option>
@@ -981,7 +981,6 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-select.js"></script>
 <script type="text/javascript" src="js/jquery.tosrus.min.all.js"></script>
-<script src="js/video-project-page.js"></script>
 
 <script type="text/javascript" language="javascript" src="js/tinymce/tinymce.min.js"></script>
 <script type="text/javascript" language="javascript" src="js/bootstrap-datepicker.js"></script>
@@ -1073,5 +1072,6 @@ tinymce.init({
     checkout.hide();
   }).data('datepicker');
 </script>
+<script src="js/video-project-page.js"></script>
 </body>
 </html>

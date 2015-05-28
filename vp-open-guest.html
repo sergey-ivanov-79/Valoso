@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 <link href="css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/jquery.tosrus.all.css" />
+<link type="text/css" rel="stylesheet" href="css/slick.css" /> 
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/video-project-page.css">
 <link rel="stylesheet" href="css/video-open-guest.css">
@@ -152,6 +153,7 @@
 </header>
 
 <div class="video-project-director video-open-guest">
+  
   <div class="container">
   <h3>This is the Video Project Name </h3>
     <div class="screenshot-gallery">
@@ -159,6 +161,7 @@
       <div class="featured-screenshot">
         <div class="featured-screenshot-wrap clearfix">
           <div class="featured-screen col-sm-9 clearfix">
+            <img src="images/video-project/vp-open.jpg" alt="" />
           </div> <!-- /.featured-screen -->
           <div class="featured-screenshot-text col-sm-3">
             <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis.</p>
@@ -174,14 +177,16 @@
           <p>Updated by director <span>DD/MM/YY HH:MM</span></p>
         </div> <!-- /.gallery-left -->
         <div class="gallery-history-right">
-          <div id="links">
-           <a href="images/video-project/open-screen1.jpg"><img src="images/video-project/open-screen1.jpg" /></a>
-           <a href="images/video-project/open-screen2.jpg"><img src="images/video-project/open-screen2.jpg" /></a>
-           <a href="images/video-project/open-screen3.jpg"><img src="images/video-project/open-screen3.jpg" /></a>
-           <a href="images/video-project/open-screen4.jpg"><img src="images/video-project/open-screen4.jpg" /></a>
-           <a href="images/video-project/open-screen5.jpg"><img src="images/video-project/open-screen5.jpg" /></a>
-           <a href="images/video-project/open-screen1.jpg"><img src="images/video-project/open-screen1.jpg" /></a>
-        </div> <!-- /#links -->
+          <div class="slickSlide5">
+            <div><img src="images/video-project/vn1.jpg" /></div>
+            <div><img src="images/video-project/vn1.jpg" /></div>
+            <div><img src="images/video-project/vn1.jpg" /></div>
+            <div><img src="images/video-project/vn1.jpg" /></div>
+            <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+            <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+            <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+            <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+          </div>
         </div> <!-- /.gallery-history-right -->
       </div> <!-- /.gallery-history-director -->
     </div> <!-- /.gallery-history -->
@@ -316,7 +321,7 @@
   </div>
 </div>
 <!-- /Modal -->
-<div id="download-project-files-modal" class="modal fade">
+<div id="download-project-files-modal" class="modal fade download-project-trigger">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -394,11 +399,314 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.download-project-files-modal -->
+<div id="view-screensh" class="modal fade">
+  <div class="modal-dialog clearfix">
+    <div class="modal-content clearfix">
+        <div class="modal-body clearfix">
+          <div class="screenshot-gallery">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="featured-screenshot">
+              <div class="featured-screenshot-wrap clearfix">
+                <div class="featured-screen-popup col-sm-12 clearfix">
+                  <img src="images/video-project/screenshot.jpg" alt="" />
+                </div> <!-- /.featured-screen -->
+                 <div class="col-sm-12">
+                  <div class="send-screen-popup col-sm-12 clearfix">
+                    <h3>Send Screenshot Gallery</h3>
+                    <h4>Send Via Email</h4>
+                    <form>
+                      <label>Enter Email Address:</label> <input type="text" placeholder="example@domain.com"><br/>
+                      <label>Enter Email Address:</label> <input type="text" placeholder="example@domain.com">
+                      <div class="clearfix">
+                        <button type="">Add New Email</button>
+                        <button type="">Send</button>
+                      </div>
+                    </form>
+                    <div class="send-via">
+                      <h4>Send Via Social Networks</h4>
+                      <a href=""><img src="images/video-project/facebook.png" alt="Facebook"></a>
+                      <a href=""><img src="images/video-project/twitter.png" alt="Twitter"></a>
+                      <a href=""><img src="images/video-project/google.png" alt="Google+"></a>
+                      <a href=""><img src="images/video-project/linkedin.png" alt="LinkedIn"></a>
+                    </div> <!-- /.send-via -->
+                    <div class="generate-send-link">
+                      <h4>Generate Link</h4>
+                      <input type="text" value="http://www.valoso.com.ssgvd1ddmmyyhhmm"><br/>
+                      <button>Copy To Clipboard</button>
+                    </div>
+                  </div>
+                </div> <!-- /.send-screen-popup -->
+                <div id="download-project-files-modal" class="popup-download-project" style="display:none;">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Download Project Files</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Please select files to download. <span>(5 files selected)</span></p>
+                        <form action="" class="clearfix">
+                        <div class="col-sm-12">
+                          <input id="dl-check-all" type="checkbox" name="picture" value="picture1">Check All
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default">Download</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.download-project-files-modal -->
+                <div class="featured-screenshot-text col-sm-12">
+                  <div class="col-sm-9">
+                    <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis.</p>
+                  </div>
+                  <div class="col-sm-3">
+                    <button data-toggle="modal" data-target="">Add Notes</button>
+                    <button>Download</button>
+                  </div>
+                  <div class="gallery-history-editor">
+                  <div class="gallery-history-left">
+                    <h5>Editor</h5>
+                    <p>Updated by editor <span>DD/MM/YY HH:MM</span></p>
+                    <div class="gallery-history-img">
+                      <a class="popup-send-email-ss"><img src="images/video-project/icon-send.png" alt="" /></a>
+                      <a class="popup-view-scr"><img src="images/video-project/icon-view.png" alt="" /></a>
+                      <a class="popup-download-pf"><img src="images/video-project/icon-dl.png" alt="" /></a>
+                    </div> <!-- /.gallery-history-img -->
+                  </div> <!-- /.gallery-left -->
+                  <div class="gallery-history-right">
+                    <div class="slickSlide1">
+                      <div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                  </div>
+                  </div> <!-- /.gallery-history-right -->
+                </div> <!-- /.gallery-history-editor -->
+                </div> <!-- /.featured-screenshot-text -->
+              </div> <!-- /.featured-screenshot-wrap -->
+            </div> <!-- /.featured-screenshot -->
+          </div> <!-- /.screenshot-gallery -->
+        </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.#screen-edit -->
+<div id="view-screensh-dir" class="modal fade">
+  <div class="modal-dialog clearfix">
+    <div class="modal-content clearfix">
+        <div class="modal-body clearfix">
+          <div class="screenshot-gallery">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="featured-screenshot">
+              <div class="featured-screenshot-wrap clearfix">
+                <div class="featured-screen-popup col-sm-12 clearfix">
+                  <img src="images/video-project/screenshot.jpg" alt="" />
+                </div> <!-- /.featured-screen -->
+                <div class="send-screen-popup col-sm-12 clearfix">
+                    <h3>Send Screenshot Gallery</h3>
+                    <h4>Send Via Email</h4>
+                    <form>
+                      <label>Enter Email Address:</label> <input type="text" placeholder="example@domain.com"><br/>
+                      <label>Enter Email Address:</label> <input type="text" placeholder="example@domain.com">
+                      <div class="clearfix">
+                        <button type="">Add New Email</button>
+                        <button type="">Send</button>
+                      </div>
+                    </form>
+                    <div class="send-via">
+                      <h4>Send Via Social Networks</h4>
+                      <a href=""><img src="images/video-project/facebook.png" alt="Facebook"></a>
+                      <a href=""><img src="images/video-project/twitter.png" alt="Twitter"></a>
+                      <a href=""><img src="images/video-project/google.png" alt="Google+"></a>
+                      <a href=""><img src="images/video-project/linkedin.png" alt="LinkedIn"></a>
+                    </div> <!-- /.send-via -->
+                    <div class="generate-send-link">
+                      <h4>Generate Link</h4>
+                      <input type="text" value="http://www.valoso.com.ssgvd1ddmmyyhhmm"><br/>
+                      <button>Copy To Clipboard</button>
+                    </div>
+                </div> <!-- /.send-screen-popup -->
+                <div id="download-project-files-modal" class="popup-download-project" style="display:none;">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Download Project Files</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Please select files to download. <span>(5 files selected)</span></p>
+                        <form action="" class="clearfix">
+                        <div class="col-sm-12">
+                          <input id="dl-check-all" type="checkbox" name="picture" value="picture1">Check All
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default">Download</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.download-project-files-modal -->
+                <div class="featured-screenshot-text col-sm-12">
+                  <div class="col-sm-9">
+                    <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis.</p>
+                  </div>
+                  <div class="col-sm-3">
+                    <button data-toggle="modal" data-target="">Add Notes</button>
+                    <button>Download</button>
+                  </div>
+                  <div class="gallery-history-director">
+                    <div class="gallery-history-left">
+                      <h5>Director</h5>
+                      <p>Updated by editor <span>DD/MM/YY HH:MM</span></p>
+                      <div class="gallery-history-img">
+                        <a class="popup-send-email-ss"><img src="images/video-project/icon-send.png" alt="" /></a>
+                        <a class="popup-view-scr"><img src="images/video-project/icon-view.png" alt="" /></a>
+                        <a class="popup-download-pf"><img src="images/video-project/icon-dl.png" alt="" /></a>
+                      </div> <!-- /.gallery-history-img -->
+                    </div> <!-- /.gallery-left -->
+                    <div class="gallery-history-right">
+                      <div class="slickSlide7">
+                        <div><img src="images/video-project/vn1.jpg" /></div>
+                        <div><img src="images/video-project/vn1.jpg" /></div>
+                        <div><img src="images/video-project/vn1.jpg" /></div>
+                        <div><img src="images/video-project/vn1.jpg" /></div>
+                        <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                        <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                        <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                        <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                      </div>
+                    </div> <!-- /.gallery-history-right -->
+                  </div> <!-- /.gallery-history-editor -->
+                </div> <!-- /.featured-screenshot-text -->
+              </div> <!-- /.featured-screenshot-wrap -->
+            </div> <!-- /.featured-screenshot -->
+          </div> <!-- /.screenshot-gallery -->
+        </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.#screen-edit -->
 <a href="#header" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap-select.js"></script>
 <script type="text/javascript" src="js/jquery.tosrus.min.all.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/video-project-page.js"></script>
 <script>
 

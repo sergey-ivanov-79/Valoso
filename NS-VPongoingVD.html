@@ -154,6 +154,14 @@
 </header>
 
 <div class="video-project-director">
+  <div class="mobile-tabs-menu">
+    <div class="container">
+      <h2><img src="images/video-project/p-mobile.png" alt="" />This is Video Project name</h2>
+      <button class="active">Brief</button>
+      <button>Status</button>
+      <button>Assets</button>
+    </div><!-- /.container -->
+  </div><!-- /.mobile-tabs-menu -->
   <div class="container">
     <h3>This is the Video Project Name <img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Video Project Name</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></h3>
     <p> Welcome to the Video Project Page! Instructions about what Video Director can do on this page like adding notes, viewing screenshots... 
@@ -705,18 +713,17 @@
     <div class="project-files">
       <h3>Project Files <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="Video and picture files that make up the video project. These are the assets the Video Editor will work with." /> <span><button id="video-expandall">Expand All</button><button id="video-collapseall">Collapse All</button></span></h3>
       <div class="video-download">
-        <button id="video-download" data-toggle="modal" data-target="">Download</button>
+        <button id="video-download" data-toggle="modal" data-target=".download-project-trigger">Download</button>
       </div> <!-- /.video-download -->
       <ol class="video-list">
       <li class="single-video clearfix">
-          <h5 class="green-title drag-drop"><span class="icon-reorder"><img src="images/video-project/icon-reorder.png" alt="Icon-Reorder" /></span><span class="single-video-title">PictureVE000001.PG</span><span class="video-list-draft">Final</span></h5>
+          <h5 class="green-title drag-drop"><div class="click-absolute"></div><span class="icon-reorder"><img src="images/video-project/icon-reorder.png" alt="Icon-Reorder" /></span><span class="single-video-title">PictureVE000001.PG</span><span class="video-list-draft">Final</span></h5>
           <div class="col-sm-4 single-video-featuredimg">
             <div class="video-img-wrap2">
               
             </div><!-- /.video-img-wrap -->
-            <a data-toggle="modal" data-target="#view-screensh">View 7 Screenshots</a>
             <div class="video-des-button-wrap">
-              <button data-toggle="modal" data-target="#vp-screen-edit">Add Notes</button>
+              <button>Add Notes</button>
               <button id="project-delete-file">Delete File</button>
             </div> <!-- /.video-des-button-wrap -->
           </div> <!-- /.single-video-featuredimg -->
@@ -729,7 +736,7 @@
               ante ipsum primis in faucibus. n eu lorem ac nisi mattis commodo.
               Suspendisse dui justo.<img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Video Project Description</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></p>
               <div class="video-director-editor">
-                <div class="video-dir">
+                <div class="video-dir" data-toggle="modal" data-target="#view-screensh-dir">
                   <h5>Director's Gallery</h5>
                   <span><span>18</span></span>
                 </div>
@@ -744,14 +751,13 @@
           </div> <!-- /.single-video-hover -->
         </li> <!-- /.single-video -->
         <li class="single-video clearfix">
-          <h5 class="green-title drag-drop"><span class="icon-reorder"><img src="images/video-project/icon-reorder.png" alt="Icon-Reorder" /></span><span class="single-video-title">PictureVE000001.PG</span><span class="video-list-draft">Draft</span></h5>
+          <h5 class="green-title drag-drop"><div class="click-absolute"></div><span class="icon-reorder"><img src="images/video-project/icon-reorder.png" alt="Icon-Reorder" /></span><span class="single-video-title">PictureVE000001.PG</span><span class="video-list-draft">Draft</span></h5>
           <div class="col-sm-4 single-video-featuredimg">
             <div class="video-img-wrap2">
               
             </div><!-- /.video-img-wrap -->
-            <a data-toggle="modal" data-target="#view-screensh">View 7 Screenshots</a>
             <div class="video-des-button-wrap">
-              <button data-toggle="modal" data-target="#vp-screen-edit">Add Notes</button>
+              <button>Add Notes</button>
               <button id="project-delete-file">Delete File</button>
             </div> <!-- /.video-des-button-wrap -->
           </div> <!-- /.single-video-featuredimg -->
@@ -759,7 +765,7 @@
             <span class="single-video-title">PictureVE000001.PG<img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Video Project Name</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></span>
             <p>No description.<img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Video Project Description</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></p>
             <div class="video-director-editor">
-              <div class="video-edi">
+              <div class="video-edi" data-toggle="modal" data-target="#view-screensh">
                 <h5>Editor's Gallery</h5>
                 <span class="video-dir-edi-new"><span>9</span> <span>(4 new)</span></span>
               </div>
@@ -774,14 +780,13 @@
           </div> <!-- /.single-video-hover -->
         </li> <!-- /.single-video -->
         <li class="single-video clearfix">
-          <h5 class="drag-drop"><span class="icon-reorder"><img src="images/video-project/icon-reorder.png" alt="Icon-Reorder" /></span><span class="single-video-title">Picture000001.PG</span><span class="video-list-number">#1</span></h5>
+          <h5 class="drag-drop"><div class="click-absolute"></div><span class="icon-reorder"><img src="images/video-project/icon-reorder.png" alt="Icon-Reorder" /></span><span class="single-video-title">Picture000001.PG</span><span class="video-list-number">#1</span></h5>
           <div class="col-sm-4 single-video-featuredimg">
             <div class="video-img-wrap">
               
             </div><!-- /.video-img-wrap -->
-            <a data-toggle="modal" data-target="#view-screensh">View 7 Screenshots</a>
             <div class="video-des-button-wrap">
-              <button data-toggle="modal" data-target="#vp-screen-edit">Add Notes</button>
+              <button>Add Notes</button>
               <button id="project-delete-file">Delete File</button>
             </div> <!-- /.video-des-button-wrap -->
           </div> <!-- /.single-video-featuredimg -->
@@ -793,11 +798,11 @@
               convallis odio at, feugiat nisl. Interdum et malesuada fames ac 
               ante ipsum primis in faucibus. n eu lorem ac nisi mattis commodo.<img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Video Project Description</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></p>
             <div class="video-director-editor">
-            <div class="video-dir">
-                <h5>Editor's Gallery</h5>
+            <div class="video-dir" data-toggle="modal" data-target="#view-screensh-dir">
+                <h5>Director's Gallery</h5>
                 <span class="video-dir-edi-new"><span>9</span> <span>(4 new)</span></span>
               </div>
-              <div class="video-edi">
+              <div class="video-edi" data-toggle="modal" data-target="#view-screensh">
                 <h5>Editor's Gallery</h5>
                 <span>10</span>
               </div>
@@ -812,14 +817,13 @@
           </div> <!-- /.single-video-hover -->
         </li> <!-- /.single-video -->
         <li class="single-video clearfix">
-          <h5 class="drag-drop"><span class="icon-reorder"><img src="images/video-project/icon-reorder.png" alt="Icon-Reorder" /></span><span class="single-video-title">Picture000001.PG</span><span class="video-list-number">#2</span></h5>
+          <h5 class="drag-drop"><div class="click-absolute"></div><span class="icon-reorder"><img src="images/video-project/icon-reorder.png" alt="Icon-Reorder" /></span><span class="single-video-title">Picture000001.PG</span><span class="video-list-number">#2</span></h5>
           <div class="col-sm-4 single-video-featuredimg">
             <div class="video-img-wrap">
               
             </div><!-- /.video-img-wrap -->
-            <a data-toggle="modal" data-target="#view-screensh">View 7 Screenshots</a>
             <div class="video-des-button-wrap">
-              <button data-toggle="modal" data-target="#vp-screen-edit">Add Notes</button>
+              <button data-toggle="modal" data-target="screen-edit">Add Notes</button>
               <button id="project-delete-file">Delete File</button>
             </div> <!-- /.video-des-button-wrap -->
           </div> <!-- /.single-video-featuredimg -->
@@ -911,6 +915,490 @@
  
  </div>
 </footer>
+<div id="view-screensh" class="modal fade">
+  <div class="modal-dialog clearfix">
+    <div class="modal-content clearfix">
+        <div class="modal-body clearfix">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class="screenshot-gallery">
+            <div class="featured-screenshot">
+              <div class="featured-screenshot-wrap clearfix">
+                <div class="featured-screen-popup col-sm-12 clearfix">
+                  <img src="images/video-project/screenshot.jpg" alt="" />
+                </div> <!-- /.featured-screen -->
+                 <div class="col-sm-12">
+                  <div class="send-screen-popup col-sm-12 clearfix">
+                    <h3>Send Screenshot Gallery</h3>
+                    <h4>Send Via Email</h4>
+                    <form>
+                      <label>Enter Email Address:</label> <input type="text" placeholder="example@domain.com"><br/>
+                      <label>Enter Email Address:</label> <input type="text" placeholder="example@domain.com">
+                      <div class="clearfix">
+                        <button type="">Add New Email</button>
+                        <button type="">Send</button>
+                      </div>
+                    </form>
+                    <div class="send-via">
+                      <h4>Send Via Social Networks</h4>
+                      <a href=""><img src="images/video-project/facebook.png" alt="Facebook"></a>
+                      <a href=""><img src="images/video-project/twitter.png" alt="Twitter"></a>
+                      <a href=""><img src="images/video-project/google.png" alt="Google+"></a>
+                      <a href=""><img src="images/video-project/linkedin.png" alt="LinkedIn"></a>
+                    </div> <!-- /.send-via -->
+                    <div class="generate-send-link">
+                      <h4>Generate Link</h4>
+                      <input type="text" value="http://www.valoso.com.ssgvd1ddmmyyhhmm"><br/>
+                      <button>Copy To Clipboard</button>
+                    </div>
+                  </div>
+                </div> <!-- /.send-screen-popup -->
+                <div id="screen-edit" class="screen-multi vp-edit-screen" style="display: none;">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div id="carousel-example-generic4" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                            <div class="slider-wrap-landscape">
+                              <div class="modal-body">
+                              <button class="edit-tools"><img src="images/video-project/tool.png" alt="" /></button>
+                              <button class="video-snap-checked" aria-label="Close"><img src="images/boris/kvacica.png" alt=""></button>
+                                <img src="images/video-project/library-view.jpg" alt="" />
+                                <div class="screen-edit-container">
+                                <div class="screen-edit-buttons clearfix">
+                                  <div class="edit-first">
+                                    <input type="color" id="html5colorpicker" class="form-control" value="#ff0000">
+                                      <button class="edit-rotate"><i class="fa fa-undo"></i></button>
+                                      <button class="edit-rotate"><i class="fa fa-repeat"></i></button>
+                                      <button class="edit-arrow-pointer"><img src="images/video-project/kosa.png" alt="" /></button>
+                                      <button class="edit-rentagle"></button>
+                                      <button class="edit-line"><img src="images/video-project/line.png" alt="" /></button>
+                                      <button class="edit-white"><i class="fa fa-circle-thin"></i></button>
+                                      <button class="edit-white"><i class="fa fa-paint-brush"></i></button>
+                                      <button><img src="images/video-project/aa.png" alt="" /></button>
+                                      <button><img src="images/video-project/aaarow.png" alt="" /></button>                    </div><!-- /.edit-second -->
+                                  </div><!-- /.screen-edit-buttons -->
+                                  </div>
+                                  <p>Audio notes goes here.<img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Audio Notes</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></p>
+                                </div>
+                              <div class="modal-footer">
+                                <div class="edit-footer-container">
+                                  <a class="left carousel-control" href="#carousel-example-generic4" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="right carousel-control" href="#carousel-example-generic4" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                  <p>4/567</p><p><span class="hide-480">|</span> <span>SSGVD13V000002SS4.JPG</span></p>
+                                </div>
+                                <button type="button" class="btn btn-default save-edit">Save</button>
+                                <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                            <div class="slider-wrap-landscape">
+                              <div class="modal-body">
+                              <button class="edit-tools"><img src="images/video-project/tool.png" alt="" /></button>
+                              <button class="video-snap-checked" aria-label="Close"><img src="images/boris/kvacica.png" alt=""></button>
+                                <img src="images/video-project/library-view.jpg" alt="" />
+                                <div class="screen-edit-container">
+                                <div class="screen-edit-buttons clearfix">
+                                  <div class="edit-first">
+                                    <input type="color" id="html5colorpicker" class="form-control" value="#ff0000">
+                                      <button class="edit-rotate"><i class="fa fa-undo"></i></button>
+                                      <button class="edit-rotate"><i class="fa fa-repeat"></i></button>
+                                      <button class="edit-arrow-pointer"><img src="images/video-project/kosa.png" alt="" /></button>
+                                      <button class="edit-rentagle"></button>
+                                      <button class="edit-line"><img src="images/video-project/line.png" alt="" /></button>
+                                      <button class="edit-white"><i class="fa fa-circle-thin"></i></button>
+                                      <button class="edit-white"><i class="fa fa-paint-brush"></i></button>
+                                      <button><img src="images/video-project/aa.png" alt="" /></button>
+                                      <button><img src="images/video-project/aaarow.png" alt="" /></button>                    </div><!-- /.edit-second -->
+                                  </div><!-- /.screen-edit-buttons -->
+                                  </div>
+                                  <p>Audio notes goes here.<img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Audio Notes</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></p>
+                                </div>
+                              <div class="modal-footer">
+                                <div class="edit-footer-container">
+                                  <a class="left carousel-control" href="#carousel-example-generic4" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="right carousel-control" href="#carousel-example-generic4" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                  <p>4/567</p><p><span class="hide-480">|</span> <span>SSGVD13V000002SS4.JPG</span></p>
+                                </div>
+                                <button type="button" class="btn btn-default save-edit">Save</button>
+                                <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              </div>
+                              </div>
+                            </div>
+                      </div>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.#screen-edit -->
+                <div id="download-project-files-modal" class="popup-download-project" style="display:none;">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Download Project Files</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Please select files to download. <span>(5 files selected)</span></p>
+                        <form action="" class="clearfix">
+                        <div class="col-sm-12">
+                          <input id="dl-check-all" type="checkbox" name="picture" value="picture1">Check All
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default">Download</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.download-project-files-modal -->
+                <div class="featured-screenshot-text col-sm-12">
+                  <div class="col-sm-9">
+                    <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis.</p>
+                  </div>
+                  <div class="col-sm-3">
+                    <button class="popup-edit-tools" data-toggle="modal" data-target="">Add Notes</button>
+                    <button>Download</button>
+                  </div>
+                  <div class="gallery-history-editor">
+                  <div class="gallery-history-left">
+                    <h5>Editor</h5>
+                    <p>Updated by editor <span>DD/MM/YY HH:MM</span></p>
+                    <div class="gallery-history-img">
+                      <a class="popup-send-email-ss"><img src="images/video-project/icon-send.png" alt="" /></a>
+                      <a class="popup-view-scr"><img src="images/video-project/icon-view.png" alt="" /></a>
+                      <a class="popup-download-pf"><img src="images/video-project/icon-dl.png" alt="" /></a>
+                    </div> <!-- /.gallery-history-img -->
+                  </div> <!-- /.gallery-left -->
+                  <div class="gallery-history-right">
+                    <div class="slickSlide1">
+                      <div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                  </div>
+                  </div> <!-- /.gallery-history-right -->
+                </div> <!-- /.gallery-history-editor -->
+                </div> <!-- /.featured-screenshot-text -->
+              </div> <!-- /.featured-screenshot-wrap -->
+            </div> <!-- /.featured-screenshot -->
+          </div> <!-- /.screenshot-gallery -->
+        </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.#screen-edit -->
+<div id="view-screensh-dir" class="modal fade">
+  <div class="modal-dialog clearfix">
+    <div class="modal-content clearfix">
+        <div class="modal-body clearfix">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <div class="screenshot-gallery">
+            <div class="featured-screenshot">
+              <div class="featured-screenshot-wrap clearfix">
+                <div class="featured-screen-popup col-sm-12 clearfix">
+                  <img src="images/video-project/screenshot.jpg" alt="" />
+                </div> <!-- /.featured-screen -->
+                 <div class="col-sm-12">
+                  <div class="send-screen-popup col-sm-12 clearfix">
+                    <h3>Send Screenshot Gallery</h3>
+                    <h4>Send Via Email</h4>
+                    <form>
+                      <label>Enter Email Address:</label> <input type="text" placeholder="example@domain.com"><br/>
+                      <label>Enter Email Address:</label> <input type="text" placeholder="example@domain.com">
+                      <div class="clearfix">
+                        <button type="">Add New Email</button>
+                        <button type="">Send</button>
+                      </div>
+                    </form>
+                    <div class="send-via">
+                      <h4>Send Via Social Networks</h4>
+                      <a href=""><img src="images/video-project/facebook.png" alt="Facebook"></a>
+                      <a href=""><img src="images/video-project/twitter.png" alt="Twitter"></a>
+                      <a href=""><img src="images/video-project/google.png" alt="Google+"></a>
+                      <a href=""><img src="images/video-project/linkedin.png" alt="LinkedIn"></a>
+                    </div> <!-- /.send-via -->
+                    <div class="generate-send-link">
+                      <h4>Generate Link</h4>
+                      <input type="text" value="http://www.valoso.com.ssgvd1ddmmyyhhmm"><br/>
+                      <button>Copy To Clipboard</button>
+                    </div>
+                  </div>
+                </div> <!-- /.send-screen-popup -->
+                <div id="screen-edit" class="screen-multi vp-edit-screen" style="display: none;">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div id="carousel-example-generic10" class="carousel slide" data-ride="carousel">
+                          <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                            <div class="slider-wrap-landscape">
+                              <div class="modal-body">
+                              <button class="edit-tools"><img src="images/video-project/tool.png" alt="" /></button>
+                              <button class="video-snap-checked" aria-label="Close"><img src="images/boris/kvacica.png" alt=""></button>
+                                <img src="images/video-project/library-view.jpg" alt="" />
+                                <div class="screen-edit-container">
+                                <div class="screen-edit-buttons clearfix">
+                                  <div class="edit-first">
+                                    <input type="color" id="html5colorpicker" class="form-control" value="#ff0000">
+                                      <button class="edit-rotate"><i class="fa fa-undo"></i></button>
+                                      <button class="edit-rotate"><i class="fa fa-repeat"></i></button>
+                                      <button class="edit-arrow-pointer"><img src="images/video-project/kosa.png" alt="" /></button>
+                                      <button class="edit-rentagle"></button>
+                                      <button class="edit-line"><img src="images/video-project/line.png" alt="" /></button>
+                                      <button class="edit-white"><i class="fa fa-circle-thin"></i></button>
+                                      <button class="edit-white"><i class="fa fa-paint-brush"></i></button>
+                                      <button><img src="images/video-project/aa.png" alt="" /></button>
+                                      <button><img src="images/video-project/aaarow.png" alt="" /></button>                    </div><!-- /.edit-second -->
+                                  </div><!-- /.screen-edit-buttons -->
+                                  </div>
+                                  <p>Audio notes goes here.<img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Audio Notes</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></p>
+                                </div>
+                              <div class="modal-footer">
+                                <div class="edit-footer-container">
+                                  <a class="left carousel-control" href="#carousel-example-generic10" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="right carousel-control" href="#carousel-example-generic10" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                  <p>4/567</p><p><span class="hide-480">|</span> <span>SSGVD13V000002SS4.JPG</span></p>
+                                </div>
+                                <button type="button" class="btn btn-default save-edit">Save</button>
+                                <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              </div>
+                              </div>
+                            </div>
+                            <div class="item">
+                            <div class="slider-wrap-landscape">
+                              <div class="modal-body">
+                              <button class="edit-tools"><img src="images/video-project/tool.png" alt="" /></button>
+                              <button class="video-snap-checked" aria-label="Close"><img src="images/boris/kvacica.png" alt=""></button>
+                                <img src="images/video-project/library-view.jpg" alt="" />
+                                <div class="screen-edit-container">
+                                <div class="screen-edit-buttons clearfix">
+                                  <div class="edit-first">
+                                    <input type="color" id="html5colorpicker" class="form-control" value="#ff0000">
+                                      <button class="edit-rotate"><i class="fa fa-undo"></i></button>
+                                      <button class="edit-rotate"><i class="fa fa-repeat"></i></button>
+                                      <button class="edit-arrow-pointer"><img src="images/video-project/kosa.png" alt="" /></button>
+                                      <button class="edit-rentagle"></button>
+                                      <button class="edit-line"><img src="images/video-project/line.png" alt="" /></button>
+                                      <button class="edit-white"><i class="fa fa-circle-thin"></i></button>
+                                      <button class="edit-white"><i class="fa fa-paint-brush"></i></button>
+                                      <button><img src="images/video-project/aa.png" alt="" /></button>
+                                      <button><img src="images/video-project/aaarow.png" alt="" /></button>                    </div><!-- /.edit-second -->
+                                  </div><!-- /.screen-edit-buttons -->
+                                  </div>
+                                  <p>Audio notes goes here.<img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Audio Notes</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></p>
+                                </div>
+                              <div class="modal-footer">
+                                <div class="edit-footer-container">
+                                  <a class="left carousel-control" href="#carousel-example-generic10" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="right carousel-control" href="#carousel-example-generic10" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                  <p>4/567</p><p><span class="hide-480">|</span> <span>SSGVD13V000002SS4.JPG</span></p>
+                                </div>
+                                <button type="button" class="btn btn-default save-edit">Save</button>
+                                <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              </div>
+                              </div>
+                            </div>
+                      </div>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.#screen-edit -->
+                <div id="download-project-files-modal" class="popup-download-project" style="display:none;">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Download Project Files</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Please select files to download. <span>(5 files selected)</span></p>
+                        <form action="" class="clearfix">
+                        <div class="col-sm-12">
+                          <input id="dl-check-all" type="checkbox" name="picture" value="picture1">Check All
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="video-dl-wrap">
+                            <div class="single-dl">
+                              
+                            </div>
+                          </div> <!-- /.video-dl-wrap -->
+                        <input class="check1" type="checkbox" name="picture" value="picture1">Picture00001.JPG
+                        </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default">Download</button>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.download-project-files-modal -->
+                <div class="featured-screenshot-text col-sm-12">
+                  <div class="col-sm-9">
+                    <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis.</p>
+                  </div>
+                  <div class="col-sm-3">
+                    <button class="popup-edit-tools" data-toggle="modal" data-target="">Add Notes</button>
+                    <button>Download</button>
+                  </div>
+                  <div class="gallery-history-director">
+                  <div class="gallery-history-left">
+                    <h5>Editor</h5>
+                    <p>Updated by Director <span>DD/MM/YY HH:MM</span></p>
+                    <div class="gallery-history-img">
+                      <a class="popup-send-email-ss"><img src="images/video-project/icon-send.png" alt="" /></a>
+                      <a class="popup-view-scr"><img src="images/video-project/icon-view.png" alt="" /></a>
+                      <a class="popup-download-pf"><img src="images/video-project/icon-dl.png" alt="" /></a>
+                    </div> <!-- /.gallery-history-img -->
+                  </div> <!-- /.gallery-left -->
+                  <div class="gallery-history-right">
+                    <div class="slickSlide7">
+                      <div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                      <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
+                  </div>
+                  </div> <!-- /.gallery-history-right -->
+                </div> <!-- /.gallery-history-editor -->
+                </div> <!-- /.featured-screenshot-text -->
+              </div> <!-- /.featured-screenshot-wrap -->
+            </div> <!-- /.featured-screenshot -->
+          </div> <!-- /.screenshot-gallery -->
+        </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.#screen-edit -->
 <!-- Modal -->
 <div class="modal fade" id="loginBox" tabindex="-1" role="dialog" aria-labelledby="loginBoxLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -979,7 +1467,7 @@
   </div>
 </div>
 <!-- /Modal -->
-<div id="download-project-files-modal" class="modal fade">
+<div id="download-project-files-modal" class="modal fade download-project-trigger">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -1057,160 +1545,54 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.download-project-files-modal -->
-<div id="vp-screen-edit" class="modal fade screen-multi">
+<div id="screen-view" class="modal fade screen-multi">
   <div class="modal-dialog">
     <div class="modal-content">
-      <div id="carousel-example-generic4" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner" role="listbox">
-            <div class="item active">
-            <div class="slider-wrap-landscape">
-              <div class="modal-body">
-              <button class="edit-tools"><img src="images/video-project/tool.png" alt="" /></button>
-              <button class="video-snap-checked" data-dismiss="modal" aria-label="Close"><img src="images/boris/kvacica.png" alt=""></button>
-                  <div class="screen-img-wrap">
-                  <div class="screen-edit-container">
-                <div class="screen-edit-buttons clearfix">
-                  <div class="edit-first">
-                      <button class="edit-rotate"><i class="fa fa-undo"></i></button>
-                      <button class="edit-rotate"><i class="fa fa-repeat"></i></button>
-                      <button class="edit-arrow-pointer"><img src="images/video-project/kosa.png" alt="" /></button>
-                      <button class="edit-rentagle"></button>
-                    </div><!-- /.edit-first -->
-                    <div class="edit-second">
-                      <button class="edit-line"><img src="images/video-project/line.png" alt="" /></button>
-                      <button class="edit-white"><i class="fa fa-circle-thin"></i></button>
-                      <button class="edit-white"><i class="fa fa-paint-brush"></i></button>
-                      <button><img src="images/video-project/aa.png" alt="" /></button>
-                      <button><img src="images/video-project/aaarow.png" alt="" /></button>
-                      <input type="color" id="html5colorpicker" class="form-control" value="#ff0000">
-                    </div><!-- /.edit-second -->
-                  </div><!-- /.screen-edit-buttons -->
-                  </div>
-                    <div class="pop-input">
-                      <textarea placeholder="Enter Audio Note"></textarea>
-                    </div>
-                    <img src="images/video-project/library-view.jpg" alt="" />
-                  </div>
-                </div>
-              <div class="modal-footer">
-                <div class="edit-footer-container">
-                  <a class="left carousel-control" href="#carousel-example-generic4" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#carousel-example-generic4" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                  <p>4/567</p><p><span class="hide-480">|</span> <span>SSGVD13V000002SS4.JPG</span></p>
-                </div>
-                <button type="button" class="btn btn-default save-edit">Save</button>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <div id="carousel-example-generic3" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="modal-body">
+              <img src="images/video-project/library-view.jpg" alt="" />
+              <p>No audio Note attached</p>
+            </div>
+            <div class="modal-footer">
+              <a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+               <p>4/567</p><p><span class="hide-480">|</span> <span>SSGVD13V000002SS4.JPG</span></p>
+              <button type="button" class="btn btn-default add-edit">Add Notes</button>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+          </div>
+          <div class="item">
+            <div class="modal-body">
+                <img src="images/video-project/library-view.jpg" alt="" />
+                <p>No audio Note attached</p>
               </div>
+              <div class="modal-footer">
+                <a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+                 <p>4/567</p><p><span class="hide-480">|</span> <span>SSGVD13V000002SS4.JPG</span></p>
+                <button type="button" class="btn btn-default add-edit">Add Notes</button>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               </div>
             </div>
-            <div class="item">
-            <div class="slider-wrap-landscape">
-              <div class="modal-body">
-              <button class="edit-tools"><img src="images/video-project/tool.png" alt="" /></button>
-              <button class="video-snap-checked" data-dismiss="modal" aria-label="Close"><img src="images/boris/kvacica.png" alt=""></button>
-                  <div class="screen-img-wrap">
-                  <div class="screen-edit-container">
-                <div class="screen-edit-buttons clearfix">
-                  <div class="edit-first">
-                      <button class="edit-rotate"><i class="fa fa-undo"></i></button>
-                      <button class="edit-rotate"><i class="fa fa-repeat"></i></button>
-                      <button class="edit-arrow-pointer"><img src="images/video-project/kosa.png" alt="" /></button>
-                      <button class="edit-rentagle"></button>
-                    </div><!-- /.edit-first -->
-                    <div class="edit-second">
-                      <button class="edit-line"><img src="images/video-project/line.png" alt="" /></button>
-                      <button class="edit-white"><i class="fa fa-circle-thin"></i></button>
-                      <button class="edit-white"><i class="fa fa-paint-brush"></i></button>
-                      <button><img src="images/video-project/aa.png" alt="" /></button>
-                      <button><img src="images/video-project/aaarow.png" alt="" /></button>
-                      <input type="color" id="html5colorpicker" class="form-control" value="#ff0000">
-                    </div><!-- /.edit-second -->
-                  </div><!-- /.screen-edit-buttons -->
-                  </div>
-                    <div class="pop-input">
-                      <textarea placeholder="Enter Audio Note"></textarea>
-                    </div>
-                    <img src="images/video-project/library-view.jpg" alt="" />
-                  </div>
-                </div>
-              <div class="modal-footer">
-                <div class="edit-footer-container">
-                  <a class="left carousel-control" href="#carousel-example-generic4" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="right carousel-control" href="#carousel-example-generic4" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                  <p>4/567</p><p><span class="hide-480">|</span> <span>SSGVD13V000002SS4.JPG</span></p>
-                </div>
-                <button type="button" class="btn btn-default save-edit">Save</button>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-              </div>
-              </div>
-        </div>
         </div>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
-</div><!-- /.#screen-edit -->
-<div id="view-screensh" class="modal fade">
-  <div class="modal-dialog clearfix">
-    <div class="modal-content clearfix">
-        <div class="modal-body clearfix">
-          <div class="screenshot-gallery">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <div class="featured-screenshot">
-              <div class="featured-screenshot-wrap clearfix">
-                <div class="featured-screen-popup col-sm-12 clearfix">
-                  <img src="images/video-project/screenshot.jpg" alt="" />
-                </div> <!-- /.featured-screen -->
-                <div class="featured-screenshot-text col-sm-12">
-                  <div class="col-sm-9">
-                    <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis.</p>
-                  </div>
-                  <div class="col-sm-3">
-                    <button data-toggle="modal" data-target="#vp-screen-edit">Add Notes</button>
-                    <button>Download</button>
-                  </div>
-                </div> <!-- /.featured-screenshot-text -->
-              </div> <!-- /.featured-screenshot-wrap -->
-            </div> <!-- /.featured-screenshot -->
-          </div> <!-- /.screenshot-gallery -->
-          <div class="gallery-history-editor">
-            <div class="gallery-history-left">
-              <h5>Editor</h5>
-              <p>Updated by editor <span>DD/MM/YY HH:MM</span></p>
-              <div class="gallery-history-img">
-                <a href="mailto:owner@email.com?Subject=Message%20title" target="_top"><img src="images/video-project/icon-send.png" alt="" /></a>
-                <a href=""><img src="images/video-project/icon-view.png" alt="" /></a>
-                <a href=""><img src="images/video-project/icon-dl.png" alt="" /></a>
-              </div> <!-- /.gallery-history-img -->
-            </div> <!-- /.gallery-left -->
-            <div class="gallery-history-right">
-              <div class="slickSlide1">
-                <div><img src="images/video-project/vn1.jpg" /></div>
-                <div><img src="images/video-project/vn1.jpg" /></div>
-                <div><img src="images/video-project/vn1.jpg" /></div>
-                <div><img src="images/video-project/vn1.jpg" /></div>
-                <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
-                <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
-                <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
-                <div><div class="pic-edited"></div><img src="images/video-project/vn1.jpg" /></div>
-            </div>
-            </div> <!-- /.gallery-history-right -->
-          </div> <!-- /.gallery-history-editor -->
-        </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.#screen-edit -->
+</div><!-- /.#screen-view -->
 <a href="#header" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
 <script src="js/jquery-1.11.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -1218,7 +1600,6 @@
 <script src='js/jquery-sortable.js'></script>
 <script type="text/javascript" language="javascript" src="js/bootstrap-datepicker.js"></script>
 <script src="js/slick.min.js"></script>
-<script src="js/video-project-page.js"></script>
 <script type="text/javascript">
   $('.datepicker').datepicker();
 </script>
@@ -1227,5 +1608,6 @@
     $("ol.video-list").sortable()
   });
 </script>
+<script src="js/video-project-page.js"></script>
 </body>
 </html>
