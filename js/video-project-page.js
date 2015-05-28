@@ -19,7 +19,7 @@ $(document).ready(function(){
 			$('.uploader-avatar').css('height', visina_slike1);
 		},1);
 	});
-	$('#project-delete-file').click(function() {
+	$('button#project-delete-file').click(function() {
 		$('.single-video-hover').fadeIn();
 	});
 	$('.single-video-hover-buttons button').click(function() {
@@ -387,7 +387,7 @@ $(window).resize(function(){
 	var adjustment
 	$("ol.video-list").sortable({
 	  group: 'no-drop',
-	  handle: '.icon-reorder',
+	  handle: '.click-absolute',
 	  onDragStart: function (item, container, _super) {
 	    // Duplicate items of the no drop area
 	    if(!container.options.drop)
@@ -436,7 +436,7 @@ $(window).resize(function(){
 	        e.preventDefault();
 	 });
 	/* Popup Datepicker End */
-		$(".video-dir,.video-edi").click(function(){
+		$(".video-edi").click(function(){
 		setTimeout(function(){
 
 			$('.slickSlide1').slick({
@@ -448,7 +448,7 @@ $(window).resize(function(){
 			    {
 			      breakpoint: 767,
 			      settings: {
-			        slidesToShow: 4,
+			        slidesToShow: 3,
 			        slidesToScroll: 2
 			      }
 			    },
@@ -466,4 +466,50 @@ $(window).resize(function(){
 			});
 		}, 500);
 	});
-		
+	$(".video-dir").click(function(){
+		setTimeout(function(){
+
+			$('.slickSlide7').slick({
+			  infinite: false,
+			  speed: 300,
+			  slidesToShow: 6,
+			  slidesToScroll: 4,
+			  responsive: [
+			    {
+			      breakpoint: 767,
+			      settings: {
+			        slidesToShow: 3,
+			        slidesToScroll: 2
+			      }
+			    },
+			    {
+			      breakpoint: 480,
+			      settings: {
+			        slidesToShow: 2,
+			        slidesToScroll: 1
+			      }
+			    }
+			    // You can unslick at a given breakpoint now by adding:
+			    // settings: "unslick"
+			    // instead of a settings object
+			  ]
+			});
+		}, 500);
+	});
+
+	$(".popup-send-email-ss").click(function(){
+		$(".popup-download-project").hide();
+		$(".featured-screen-popup").hide();
+		$(".send-screen-popup").fadeIn();
+	});
+	$(".popup-download-pf").click(function(){
+		$(".send-screen-popup").hide();
+		$(".featured-screen-popup").hide();
+		$(".popup-download-project").fadeIn();
+	});
+	$(".popup-view-scr").click(function(){
+		$(".popup-download-project").hide();
+		$(".send-screen-popup").hide();
+		$(".featured-screen-popup").fadeIn();
+	});
+	

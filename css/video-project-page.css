@@ -407,8 +407,17 @@ span.upload-path {
   padding: 15px 20px;
   text-align: center;
   margin-bottom: 10px;
+  position: relative;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+.click-absolute {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 150;
 }
 .video-list .single-video > h5.green-title {
   background-color: #5dff60;
@@ -601,7 +610,7 @@ span.single-video-hover-buttons > button:nth-of-type(2) {
   font-size: 18px;
   color: #9c9c9c;
 }
-.featured-screenshot-text button {
+.featured-screenshot-text .col-sm-3 button {
   font-size: 24px;
   color: white;
   border: 0;
@@ -614,19 +623,19 @@ span.single-video-hover-buttons > button:nth-of-type(2) {
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-.featured-screenshot-text button:nth-of-type(1) {
+.featured-screenshot-text .col-sm-3 button:nth-of-type(1) {
   background-color: #4b8dcb;
   margin: 10px 0px;
 }
-.featured-screenshot-text button:nth-of-type(1):hover {
+.featured-screenshot-text .col-sm-3 button:nth-of-type(1):hover {
   border-color: #4b8dcb;
   color: #4b8dcb;
   background-color: white;
 }
-.featured-screenshot-text button:nth-of-type(2) {
+.featured-screenshot-text .col-sm-3 button:nth-of-type(2) {
   background-color: #656565;
 }
-.featured-screenshot-text button:nth-of-type(2):hover {
+.featured-screenshot-text .col-sm-3 button:nth-of-type(2):hover {
   border-color: #656565;
   color: #656565;
   background-color: white;
@@ -811,6 +820,9 @@ div#download-project-files-modal .col-sm-4 .video-dl-wrap > img,div#delete-proje
   height: 125px;
   position: relative;
 }
+#view-screensh-dir .video-dl-wrap,#view-screensh .video-dl-wrap {
+  height: 205px;
+}
 .video-dl-wrap .single-dl {
   position: absolute;
   left: 5px;
@@ -834,6 +846,7 @@ div#download-project-files-modal .modal-body > p,div#delete-project-files-modal 
   font-size: 20px;
   color: #727272;
   padding-left: 15px;
+  padding-right: 15px;
 }
 div#download-project-files-modal .modal-body > p span,div#delete-project-files-modal .modal-body > p span,div#send-project-files-modal .modal-body > p span {
   font-style: italic;
@@ -1003,6 +1016,7 @@ img.video-edit {
 .gallery-history-img a {
   margin: 0 5px;
   opacity: 0.8;
+  cursor: pointer;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
@@ -1078,8 +1092,9 @@ body.dragging, body.dragging * {
   opacity: 0.5;
   z-index: 2000;
   top: 0;
+  left: auto!important;
 }
-/* Drag & Drop */
+/* Drag & Drop End */
 
 .video-toggle-collapsed.video-list .single-video {
   border-bottom: 0;
@@ -1261,6 +1276,7 @@ span.project-more-opt:hover {
 }
 .project-more-opt.dropdown {
   float: left;
+  z-index: 200;
 }
 .project-more-opt .dropdown-menu {
   left: -116px;
@@ -1346,53 +1362,53 @@ span.project-more-opt:hover {
   margin-bottom: -5px;
   color: black!important;
 }
-div#view-screensh .modal-dialog {
+div#view-screensh .modal-dialog,div#view-screensh-dir .modal-dialog {
   max-width: 1024px;
   width: 100%;
 }
-div#view-screensh .featured-screenshot-text .col-sm-9 {
+div#view-screensh .featured-screenshot-text .col-sm-9,div#view-screensh-dir .featured-screenshot-text .col-sm-9 {
   margin-top: 10px;
   padding-left: 0px;
 }
-div#view-screensh .featured-screenshot-wrap {
+div#view-screensh .featured-screenshot-wrap,div#view-screensh-dir .featured-screenshot-wrap {
   border: 0;
 }
-div#view-screensh .featured-screenshot-text p {
+div#view-screensh .featured-screenshot-text .col-sm-9 p,div#view-screensh-dir .featured-screenshot-text .col-sm-9 p {
   border: solid 1px #d9d9d9;
   height: 100px;
   margin: 0;
   padding: 10px;
 }
-div#view-screensh .featured-screenshot {
+div#view-screensh .featured-screenshot,div#view-screensh-dir .featured-screenshot {
   margin: 0;
   padding: 0;
 }
 .featured-screen-popup img {
   width: 100%;
 }
-div#view-screensh .modal-body {
+div#view-screensh .modal-body,div#view-screensh-dir .modal-body {
   padding: 0;
 }
-div#view-screensh .close {
+div#view-screensh .close,div#view-screensh-dir .close {
   margin-top: 5px;
   margin-right: 5px;
 }
-div#view-screensh .gallery-history-editor {
+div#view-screensh .gallery-history-editor,div#view-screensh-dir .gallery-history-director {
   float: left;
   position: relative;
   width: 100%;
-  padding: 0 35px;
+  padding: 20px 0px 0;
 }
-div#view-screensh .gallery-history-right {
+div#view-screensh .gallery-history-right,div#view-screensh-dir .gallery-history-right {
   right: 35px;
   left: 285px;
-  padding-top: 50px;
+  padding-top: 70px;
 }
-div#view-screensh .featured-screenshot-text button {
+div#view-screensh .featured-screenshot-text .col-sm-3 button,div#view-screensh-dir .featured-screenshot-text .col-sm-3 button {
   padding: 5px 0px;
   font-size: 22px;
 }
-.ns-vp-open div#view-screensh .modal-body {
+.ns-vp-open div#view-screensh .modal-body,.ns-vp-open div#view-screensh-dir .modal-body {
   padding: 20px;
 }
 .video-dir,.video-edi {
@@ -1450,10 +1466,6 @@ div#view-screensh .featured-screenshot-text button {
   left: 5px;
   right: 100%;
   bottom: -2px;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
 }
 .mobile-tabs-menu button.active:after{
   right: 5px;
@@ -1463,6 +1475,150 @@ div#view-screensh .featured-screenshot-text button {
 }
 .multiple-select label {
   width: 100%;
+}
+.send-screen-popup h3 {
+  font-size: 24px;
+  color: #727272;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0px 0 25px;
+}
+.send-screen-popup h4 {
+  font-size: 20px;
+  color: #727272;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 30px 0 20px;
+  text-align: left;
+}
+.send-screen-popup label {
+  font-size: 20px;
+  color: #727272;
+  font-weight: 400;
+  margin-right: 35px;
+  margin-bottom: 15px;
+}
+.send-screen-popup form input {
+  outline: none;
+  font-size: 20px;
+  color: #474747;
+  height: 45px;
+  border-radius: 10px;
+  border: solid 1px #bcbcbc;
+  padding-left: 10px;
+  font-weight: 400;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.36);
+  margin-bottom: 15px;
+  width: 300px;
+}
+.send-screen-popup {
+  padding: 35px 30px;
+  border: solid 1px #bcbcbc;
+  border-radius: 30px;
+  display: none;
+}
+.send-screen-popup form div button:nth-of-type(1) {
+  float: left;
+  background: none;
+  border: 0;
+  box-shadow: none;
+  outline: none;
+  color: #4b8dcb;
+  font-size: 20px;
+}
+.send-screen-popup form div button:nth-of-type(2) {
+  background-color: #4b8dcb;
+  color: #fefefe;
+  font-size: 18px;
+  font-weight: 700;
+  border: solid 2px #4b8dcb;
+  height: 45px;
+  padding: 0px 50px;
+  border-radius: 5px;
+  float: left;
+  margin-left: 230px;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.send-screen-popup form div button:nth-of-type(2):hover {
+  color: #4b8dcb;
+  background-color: transparent;
+}
+.send-via {
+  text-align: center;
+}
+.send-via a {
+  margin: 0 10px;
+  height: 70px;
+  width: 70px;
+  display: inline-block;
+}
+.send-via a img {
+  width: 100%;
+  opacity: 0.8;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.send-via a img:hover {
+  opacity: 1;
+}
+.generate-send-link input {
+  width: 500px;
+  outline: none;
+  font-size: 20px;
+  color: #474747;
+  height: 45px;
+  border-radius: 10px;
+  border: solid 1px #bcbcbc;
+  padding-left: 10px;
+  font-weight: 400;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.36);
+  margin-bottom: 15px;
+  padding-right: 10px;
+}
+.generate-send-link button {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fefefe;
+  background-color: #4b8dcb;
+  border: solid 2px #4b8dcb;
+  height: 45px;
+  border-radius: 5px;
+  padding: 0 30px;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+.generate-send-link button:hover {
+  background-color: transparent;
+  color: #4b8dcb;
+}
+.generate-send-link {
+  text-align: center;
+}
+.generate-send-link h4 {
+  text-align: left;
+}
+.send-screen-popup form {
+  width: 550px;
+  margin: auto;
+}
+#view-screensh #download-project-files-modal .modal-content,#view-screensh-dir #download-project-files-modal .modal-content {
+  box-shadow: none;
+}
+#view-screensh #download-project-files-modal,#view-screensh-dir #download-project-files-modal {
+  padding: 0 15px!important;
+}
+.featured-screen-popup {
+  background-color: #fafafa;
+}
+button.slick-prev,button.slick-next {
+  top: 25px;
 }
 @media (max-width: 1024px) {
   .audio-track > label {
@@ -1832,14 +1988,53 @@ div#view-screensh .featured-screenshot-text button {
   .pop-input textarea {
     height: 60px;
   }
-  div#view-screensh .featured-screenshot-text .col-sm-9 {
+  div#view-screensh .featured-screenshot-text .col-sm-9,div#view-screensh-dir .featured-screenshot-text .col-sm-9 {
     padding-right: 0;
   }
-  div#view-screensh .featured-screenshot-text .col-sm-3 {
+  div#view-screensh .featured-screenshot-text .col-sm-3,div#view-screensh-dir .featured-screenshot-text .col-sm-3 {
     padding: 0;
   }
    .vp-edit-screen .edit-first {
     width: 380px;
+  }
+  div#view-screensh .featured-screenshot-text,div#view-screensh-dir .featured-screenshot-text {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+  div#view-screensh .featured-screenshot-text .col-sm-9,div#view-screensh-dir .featured-screenshot-text .col-sm-9 {
+    -webkit-box-ordinal-group: 1;
+    -moz-box-ordinal-group: 1;
+    -ms-flex-order: 1;
+    -webkit-order: 1;
+    order: 1;
+  }
+  div#view-screensh .gallery-history-editor,div#view-screensh-dir .gallery-history-director {
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-flex-order:2;
+    -webkit-order: 2;
+    order: 2;
+  }
+  div#view-screensh .featured-screenshot-text .col-sm-3,div#view-screensh-dir .featured-screenshot-text .col-sm-3 {
+    -webkit-box-ordinal-group: 3;
+    -moz-box-ordinal-group: 3;
+    -ms-flex-order(cat);
+    -webkit-order: 3;
+    order: 3;
+  }
+  div#view-screensh button.slick-prev, div#view-screensh button.slick-next {
+    top: 35%;
+  }
+  div#view-screensh-dir button.slick-prev, div#view-screensh-dir button.slick-next {
+    top: 35%;
   }
 }/* 767px End */
 @media (max-width: 640px) {
@@ -1960,10 +2155,22 @@ div#view-screensh .featured-screenshot-text button {
   #view-screensh .gallery-history-director .gallery-history-left,#view-screensh .gallery-history-editor .gallery-history-left {
     width: 190px;
   }
-  div#view-screensh .gallery-history-right {
+  #view-screensh-dir .gallery-history-director .gallery-history-left > h5,#view-screensh-dir .gallery-history-editor .gallery-history-left > h5 {
+    font-size: 16px;
+  }
+  #view-screensh-dir .gallery-history-director .gallery-history-left p,#view-screensh-dir .gallery-history-editor .gallery-history-left p {
+    font-size: 14px;
+  }
+  #view-screensh-dir .gallery-history-director .gallery-history-left,#view-screensh-dir .gallery-history-editor .gallery-history-left {
+    width: 190px;
+  }
+  div#view-screensh .gallery-history-right,div#view-screensh-dir .gallery-history-right {
     left: 245px;
   }
   div#view-screensh button.slick-prev,div#view-screensh button.slick-next {
+    top: 15px;
+  }
+  div#view-screensh-dir button.slick-prev,div#view-screensh-dir button.slick-next {
     top: 15px;
   }
   .video-dir,.video-edi {
@@ -1980,6 +2187,51 @@ div#view-screensh .featured-screenshot-text button {
     font-size: 24px;
     margin-top: 80px;
     margin-bottom: 50px;
+  }
+  .send-screen-popup h3 {
+    font-size: 20px;
+  }
+  .send-screen-popup h4 {
+    font-size: 16px;
+    margin: 20px 0 10px;
+  }
+  .send-screen-popup label {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  .send-screen-popup form input {
+    font-size: 16px;
+    height: 40px;
+    width: 210px;
+  }
+  .send-screen-popup form div button:nth-of-type(2) {
+    margin: 0;
+    float: right;
+    font-size: 16px;
+    height: 40px;
+    padding: 0 40px;
+  }
+  .send-screen-popup form {
+    width: 100%;
+  }
+  .send-screen-popup form div button:nth-of-type(1) {
+    font-size: 16px;
+  }
+  .send-via a {
+    width: 50px;
+    height: 50px;
+  }
+  .generate-send-link input {
+    height: 40px;
+    font-size: 16px;
+    width: 100%;
+  }
+  .generate-send-link button {
+    font-size: 16px;
+    height: 40px;
+  }
+  #view-screensh-dir .video-dl-wrap, #view-screensh .video-dl-wrap {
+    height: 125px;
   }
 }/* 640px End */
 @media (max-width: 600px) {
@@ -2112,7 +2364,7 @@ div#view-screensh .featured-screenshot-text button {
   #vp-screen-edit .edit-first,#vp-screen-edit .edit-second {
     width: 100%;
   }
-  #view-screensh .gallery-history-right {
+  #view-screensh .gallery-history-right,#view-screensh-dir .gallery-history-right {
     position: relative;
     float: left;
     width: 100%;
@@ -2131,6 +2383,13 @@ div#view-screensh .featured-screenshot-text button {
   div#view-screensh button.slick-prev, div#view-screensh button.slick-next {
     top: 40%;
   }
+  #view-screensh-dir .gallery-history-director .gallery-history-left, #view-screensh-dir .gallery-history-editor .gallery-history-left {
+    width: 100%;
+    margin: auto;
+  }
+  div#view-screensh-dir button.slick-prev, div#view-screensh-dir button.slick-next {
+    top: 40%;
+  }
   .vp-edit-screen .edit-first {
     width: 340px;
   }
@@ -2142,6 +2401,12 @@ div#view-screensh .featured-screenshot-text button {
   }
   span.single-video-hover-buttons > button {
     font-size: 18px;
+  }
+  .send-screen-popup form div button:nth-of-type(1) {
+    margin-top: 5px;
+  }
+  .send-screen-popup form input {
+    width: 100%;
   }
 }/* 480px End */
 @media (max-width: 400px) {
@@ -2201,7 +2466,7 @@ div#view-screensh .featured-screenshot-text button {
     padding: 20px 15px 20px 65px;
     font-size: 17px;
   }
-  #view-screensh .featured-screenshot-text p {
+  #view-screensh .featured-screenshot-text p,#view-screensh-dir .featured-screenshot-text p {
     font-size: 13px;
   }
   .vp-edit-screen .edit-first {
@@ -2300,6 +2565,37 @@ div#view-screensh .featured-screenshot-text button {
   span.single-video-hover-buttons > button {
     font-size: 16px;
     padding: 5px 25px;
+  }
+  .send-screen-popup h3 {
+    font-size: 16px;
+  }
+  .send-screen-popup h4 {
+    font-size: 14px;
+    margin: 10px 0 10px;
+  }
+  .send-screen-popup form input {
+    font-size: 14px;
+  }
+  .send-screen-popup label {
+    font-size: 14px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  .send-screen-popup form div button:nth-of-type(2) {
+    padding: 0 30px;
+    font-size: 14px;
+    height: 35px;
+  }
+  .send-via a {
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+  }
+  .generate-send-link input {
+    font-size: 14px;
+  }
+  .send-screen-popup form div button:nth-of-type(1) {
+    font-size: 14px;
   }
 }/* 360px End */
 @media (max-width: 320px) {
@@ -2416,6 +2712,21 @@ div#view-screensh .featured-screenshot-text button {
   span.single-video-hover-buttons > button {
     font-size: 14px;
     padding: 5px 25px;
+  }
+  .send-screen-popup {
+    padding: 25px 20px;
+  }
+  div#download-project-files-modal .modal-title, div#delete-project-files-modal .modal-title, div#send-project-files-modal .modal-title {
+    font-size: 20px;
+  }
+  div#download-project-files-modal .modal-title, div#delete-project-files-modal .modal-title, div#send-project-files-modal .modal-title {
+    font-size: 20px;
+  }
+  div#download-project-files-modal .modal-body > p span, div#delete-project-files-modal .modal-body > p span, div#send-project-files-modal .modal-body > p span {
+    font-size: 14px;
+  }
+  div#download-project-files-modal .col-sm-4, div#delete-project-files-modal .col-sm-4, div#send-project-files-modal .col-sm-4 {
+    font-size: 12px;
   }
 }/* 320px End */
 @media only screen and (max-device-width:  1024px) and (orientation : landscape) {
