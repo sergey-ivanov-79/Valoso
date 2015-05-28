@@ -292,6 +292,15 @@ body.dash-page { padding-top: 0;}
     overflow: hidden;
     text-overflow: ellipsis;
 }
+.wrapp-btn .btn-min-dop { 
+    width: 49%; 
+    margin-left: 0;
+    padding: 6px 0;
+    margin-bottom: 10px;
+    /*display: inline-block !important;*/
+}
+.wrapp-btn .btn-min-dop.btn-forum { margin-right: 2%;}
+.wrapp-btn { margin-top: 10px !important;}
 /* END left cont*/
 /* Begin right cont*/
 .content-block .right-cont { 
@@ -319,6 +328,8 @@ body.dash-page { padding-top: 0;}
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
+    cursor: auto;
+    padding: 6px 12px;
 }
 .ed-dir:hover { color: #fff;}
 .bottom-line { 
@@ -538,7 +549,7 @@ button.browse-wrap {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px; 
 }
-.image-cont-group .video-wrap:after {
+.image-cont-group:hover .video-wrap:after {
     content: "";
     position: absolute;
     display: block;
@@ -550,7 +561,7 @@ button.browse-wrap {
     z-index: 30;
     cursor: pointer;
     opacity: 1; /*for hover - opacity: 0;*/
-    /*transition: all ease 0.3s;*/
+    transition: all ease 0.3s;
     z-index: 1;
 }
 .image-cont-group .video-wrap:hover:after {
@@ -755,7 +766,7 @@ button.browse-wrap {
     .project-name .collapsed .glyphicon-chevron-up { display: none !important;}
     .project-name .glyphicon-chevron-up { display: block !important;}
     .mob-collapse { cursor: pointer;}
-    .wrapp-bacgr-img .btn.ed-dir { position: absolute; top: 10px; right: 10px; padding: 3px 10px;}
+    .wrapp-bacgr-img .ed-dir { position: absolute; top: 10px; right: 10px; padding: 3px 10px;}
     .posit-rel { position: relative;}
     .posit-abs { position: absolute; right: -15px; top: 5px;}
     .group-stars { margin-left: 10px;}
@@ -769,7 +780,13 @@ button.browse-wrap {
      /*.wrapper-form-con-dop .home-dash-menu */.collapse { display: none;}
     .mini-icons-img > p { padding-top: 15px;}
     .mini-icons-img .float-n { font-size: 16px;}
-    
+    .wrapp-btn .btn-min-dop.visible-xs { display: inline-block !important;}
+    .wrapp-btn .btn-min-dop.btn-forum {
+        margin-right: 0;
+    }
+    .image-cont-group .image-wrap {
+      height: 150px;
+    }
     /* END My Project */
     /* Begin My Media Library */
     .wrapp-myContent .video-download > button { font-size: 14px;}
@@ -989,7 +1006,7 @@ button.browse-wrap {
     /*.mini-icons-img img { width: 21px;}*/
     .mini-icons-img .fa { font-size: 28px;}
     .mini-icons-img div > p { font-size: 12px;}
-    .image-cont-group .image-wrap { height: 120px;}
+    .image-cont-group .image-wrap { height: 150px;} /*height: 120px;*/
     .wrapper-form { margin-right: -15px; margin-left: -15px;}
     #myMediaLibrary .wrapp-myContent {  background: none #fff;}
     .wrapper-form .form-no-file .h2 { margin-bottom: 10px;}
