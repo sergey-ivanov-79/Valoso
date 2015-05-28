@@ -496,7 +496,7 @@ $(window).resize(function(){
 			});
 		}, 500);
 	});
-
+	/* Popup on vp */
 	$(".popup-send-email-ss").click(function(){
 		$(".popup-download-project").hide();
 		$(".featured-screen-popup").hide();
@@ -512,4 +512,36 @@ $(window).resize(function(){
 		$(".send-screen-popup").hide();
 		$(".featured-screen-popup").fadeIn();
 	});
-	
+	$("#view-screensh .popup-edit-tools").click(function(){
+		$("#view-screensh .popup-download-project").addClass("hide-popup-opacity");
+		$("#view-screensh .send-screen-popup").addClass("hide-popup-opacity");
+		$("#view-screensh .featured-screen-popup").addClass("hide-popup-opacity");
+		$("#view-screensh .featured-screenshot-text").hide();
+		$("div#view-screensh .featured-screenshot-wrap").addClass("remove-padding");
+		$("#view-screensh #screen-edit").fadeIn();
+	});
+	$("#view-screensh-dir .popup-edit-tools").click(function(){
+		$("#view-screensh-dir .popup-download-project").addClass("hide-popup-opacity");
+		$("#view-screensh-dir .send-screen-popup").addClass("hide-popup-opacity");
+		$("#view-screensh-dir .featured-screen-popup").addClass("hide-popup-opacity");
+		$("#view-screensh-dir .featured-screenshot-text").hide();
+		$("div#view-screensh-dir .featured-screenshot-wrap").addClass("remove-padding");
+		$("#view-screensh-dir #screen-edit").fadeIn();
+	});
+	$("#view-screensh #screen-edit .save-edit,#view-screensh #screen-edit .close,#view-screensh #screen-edit .video-snap-checked").click(function(){
+		$("#view-screensh .popup-download-project").removeClass("hide-popup-opacity");
+		$("#view-screensh .send-screen-popup").removeClass("hide-popup-opacity");
+		$("#view-screensh .featured-screen-popup").removeClass("hide-popup-opacity");
+		$("#view-screensh .featured-screenshot-text").fadeIn();
+		$("div#view-screensh .featured-screenshot-wrap").removeClass("remove-padding");
+		$("#view-screensh #screen-edit").hide();
+	});
+	$("#view-screensh-dir #screen-edit .save-edit,#view-screensh-dir #screen-edit .close,#view-screensh-dir #screen-edit .video-snap-checked").click(function(){
+		$("#view-screensh-dir .popup-download-project").removeClass("hide-popup-opacity");
+		$("#view-screensh-dir .send-screen-popup").removeClass("hide-popup-opacity");
+		$("#view-screensh-dir .featured-screen-popup").removeClass("hide-popup-opacity");
+		$("#view-screensh-dir .featured-screenshot-text").fadeIn();
+		$("div#view-screensh-dir .featured-screenshot-wrap").removeClass("remove-padding");
+		$("#view-screensh-dir #screen-edit").hide();
+	});
+	/* Popup on vp End */
