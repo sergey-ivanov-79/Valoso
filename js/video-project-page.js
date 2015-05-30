@@ -520,7 +520,7 @@ $(window).resize(function(){
 		$("#view-screensh-dir .popup-download-project").addClass("hide-popup-opacity");
 		$("#view-screensh-dir .send-screen-popup").addClass("hide-popup-opacity");
 		$("#view-screensh-dir #screen-edit").fadeIn();
-		$(".vp-edit-screen .screen-edit-container").toggleClass("opa-ch1");
+		$(".vp-edit-screen .screen-edit-container").addClass("opa-ch1");
 		$("#view-screensh-dir .modal-footer").addClass("edit-block");
 		$(".vp-edit-screen .screen-edit-container,#view-screensh-dir .modal-footer").fadeIn();
 		$(".video-snap-checked").addClass("edit-block1");
@@ -529,7 +529,7 @@ $(window).resize(function(){
 		$("#view-screensh .popup-download-project").removeClass("hide-popup-opacity");
 		$("#view-screensh .send-screen-popup").removeClass("hide-popup-opacity");
 		$(".vp-edit-screen .screen-edit-container,#view-screensh .modal-footer").fadeOut();
-		$(".video-snap-checked").toggleClass("edit-block1");
+		$(".video-snap-checked").removeClass("edit-block1");
 		setTimeout(function(){
 		$("#view-screensh .modal-footer").toggleClass("edit-block");
 		$(".vp-edit-screen .screen-edit-container").toggleClass("opa-ch1");
@@ -539,7 +539,7 @@ $(window).resize(function(){
 		$("#view-screensh-dir .popup-download-project").removeClass("hide-popup-opacity");
 		$("#view-screensh-dir .send-screen-popup").removeClass("hide-popup-opacity");
 		$(".vp-edit-screen .screen-edit-container,#view-screensh-dir .modal-footer").fadeOut();
-		$(".video-snap-checked").toggleClass("edit-block1");
+		$(".video-snap-checked").removeClass("edit-block1");
 		setTimeout(function(){
 		$("#view-screensh-dir .modal-footer").toggleClass("edit-block");
 		$(".vp-edit-screen .screen-edit-container").toggleClass("opa-ch1");

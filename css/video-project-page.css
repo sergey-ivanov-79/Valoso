@@ -1661,6 +1661,9 @@ div#view-screensh .featured-screenshot-text .col-sm-9 p .popover input, div#view
   outline: none;
   width: 200px;
 }
+#view-screensh .modal-footer, #view-screensh-dir .modal-footer, .vp-edit-screen .screen-edit-container {
+  display: none;
+}
 @media (min-width: 1000px) {
   #view-screensh .screen-multi,#view-screensh-dir .screen-multi {
     padding: 15px 15px!important;
@@ -1903,9 +1906,6 @@ div#view-screensh .featured-screenshot-text .col-sm-9 p .popover input, div#view
   }
 }/* 900px End */
 @media (max-width: 768px) {
-  #view-screensh .modal-footer, #view-screensh-dir .modal-footer, .vp-edit-screen .screen-edit-container {
-    display: none;
-  }
   div#view-screensh-dir button.slick-prev, div#view-screensh-dir button.slick-next {
     top: 20%;
   }
@@ -2803,7 +2803,7 @@ div#view-screensh .featured-screenshot-text .col-sm-9 p .popover input, div#view
     padding: 0!important;
   }
   #view-screensh .modal-footer, #view-screensh-dir .modal-footer, .screen-edit-container {
-    display: block;
+    display: block!important;
   }
   #screen-edit .vp-edit-screen div.item div.modal-footer,.vp-edit-screen .screen-edit-buttons {
     opacity: 1;

@@ -456,7 +456,7 @@
                 <h5>Director's Gallery</h5>
                 <span class="video-dir-edi-new"><span>9</span> <span>(4 new)</span></span>
               </div>
-              <div class="video-edi">
+              <div class="video-edi" data-toggle="modal" data-target="#view-screensh">
                 <h5>Editor's Gallery</h5>
                 <span>10</span>
               </div>
@@ -1281,8 +1281,34 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.#screen-edit -->
-<a href="#header" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
 <script src="js/jquery-1.11.2.min.js"></script>
+<script>
+  var group = ''; 
+  var lastMove = '';
+  $(function() {
+    $('a[href*=#].anchor:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top-50
+          }, 1000);
+          return false;
+        }
+      }
+    });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >500) {
+          $('.upArrow').show()
+        }else{
+           $('.upArrow').hide()
+        }
+    });
+  });
+</script>
+<a href="#header-top" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.tosrus.min.all.js"></script>
 <script src='js/jquery-sortable.js'></script>
@@ -1313,32 +1339,6 @@
         minimumResultsForSearch: -1
     });
 });
-</script>
-<script>
-  var group = ''; 
-  var lastMove = '';
-  $(function() {
-    $('a[href*=#].anchor:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top-50
-          }, 1000);
-          return false;
-        }
-      }
-    });
-    $(window).scroll(function () {
-        if ($(this).scrollTop() >500) {
-          $('.upArrow').show()
-        }else{
-           $('.upArrow').hide()
-        }
-    });
-  });
 </script>
 
 <script>

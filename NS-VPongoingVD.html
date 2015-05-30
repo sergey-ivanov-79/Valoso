@@ -26,112 +26,6 @@
 <link rel="stylesheet" href="css/video-project-page.css">
 <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
-<script>
-  var group = ''; 
-  var lastMove = '';
-	$(function() {
-	  $('a[href*=#].anchor:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top-50
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-    $('#loginOpen').click(function() {
-       $('#userLoginTab a[href="#conLogin"]').tab('show');   
-       $('#loginBox').modal('show');    
-    });
-    $('#SignOpen').click(function() {
-      $('#userLoginTab a[href="#conSign"]').tab('show'); 
-      $('#loginBox').modal('show');
-    });
-    $('#conDirector .butPanel a').click(function() {
-        $('#conDirector .butPanel').find('.active').removeClass('active');
-        $(this).parent().addClass('active');
-    });
-   $('#conEditor .butPanel a').click(function() {
-        $('#conEditor .butPanel').find('.active').removeClass('active');
-        $(this).parent().addClass('active');
-    });
-    var lastScroll = 0;
-
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop() >500) {
-          $('.upArrow').show()
-        }else{
-           $('.upArrow').hide()
-        }
-         var st = $(this).scrollTop();
-          //Determines up-or-down scrolling
-          if (st > lastScroll){
-             //Replace this with your function call for downward-scrolling
-             //console.log("DOWN");
-              HideMenu ('down');
-          }
-          else {
-             //Replace this with your function call for upward-scrolling
-             //console.log("UP");
-              HideMenu ('up');
-          }
-          //Updates scroll position
-          lastScroll = st;
-    });
-    
-    $('#slider .carousel-inner .active').each(function() {
-        if (group=='') {
-          $('#slideContent .sliderBox  .carousel-caption-all').html($('#slideContent .sliderBox  .active .carousel-caption').html());
-          $('#slideContent .sliderBox  .carousel-caption-all').show(500);
-          group = $(this).attr('data-group');
-        }       
-    });
-
-    $('#slider').on('slid.bs.carousel', function () {
-      var thisGroup = $(this).find('div.active').attr('data-group');         
-      if ((group != thisGroup)&&(group != '')){
-          $('#slideContent .sliderBox  .carousel-caption-all').hide();
-          $('#slideContent .sliderBox  .carousel-caption-all').html($('#slideContent .sliderBox  .active .carousel-caption').html());
-          $('#slideContent .sliderBox  .carousel-caption-all').show(500);
-          group = thisGroup;
-      }                 
-    });
-    
-	});
-  function HideMenu (move) {
-    //console.log()
-    if ($( ".logoBox").css('position') != 'fixed') {
-      return
-    }
-    if (lastMove == move) {
-      return
-    }
-    if (!lastMove || move=='down') {
-            $( ".logoBox").animate({
-              top:"-50px"
-            }, 600 );
-           
-          lastMove =  'down';
-          
-           $('.topMenu ').removeClass('in');
-    }
-
-    if (move=='up') {
-        $( ".logoBox" ).animate({
-          top:"0px"
-        }, 600 );
-        lastMove =  'up';
-        
-        $('.topMenu ').removeClass('in');
-    }
-
-  }
-	</script>
 </head>
 
 <body>
@@ -856,7 +750,7 @@
                 </div>
               </div><!-- /.video-director-editor -->
           </div> <!-- /.single-video-description -->
-          <div class="single-video-hover">
+          <div class="single-video-hover" style="display: block!important;">
             <h4>Shazey2014Editor has removed this file from your project!</h4>
             <span class="single-video-hover-buttons">
               <button>Remove</button>
@@ -1813,8 +1707,34 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.#screen-del -->
-<a href="#header" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
 <script src="js/jquery-1.11.2.min.js"></script>
+<script>
+  var group = ''; 
+  var lastMove = '';
+  $(function() {
+    $('a[href*=#].anchor:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top-50
+          }, 1000);
+          return false;
+        }
+      }
+    });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >500) {
+          $('.upArrow').show()
+        }else{
+           $('.upArrow').hide()
+        }
+    });
+  });
+</script>
+<a href="#header-top" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.tosrus.min.all.js"></script>
 <script src='js/jquery-sortable.js'></script>
@@ -1854,33 +1774,6 @@
     });
 });
 </script>
-<script>
-  var group = ''; 
-  var lastMove = '';
-  $(function() {
-    $('a[href*=#].anchor:not([href=#])').click(function() {
-      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-          $('html,body').animate({
-            scrollTop: target.offset().top-50
-          }, 1000);
-          return false;
-        }
-      }
-    });
-    $(window).scroll(function () {
-        if ($(this).scrollTop() >500) {
-          $('.upArrow').show()
-        }else{
-           $('.upArrow').hide()
-        }
-    });
-  });
-</script>
-
 <script>
     $(function(){
      var myClick = $('[data-toggle="collapse"]');
