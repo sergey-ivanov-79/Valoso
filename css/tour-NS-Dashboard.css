@@ -52,12 +52,12 @@
     transition: all .35s;
 }
 .tourStart a:hover {
-    background: #ff965e !important;
+    background-color: gold !important;
     color: #fff;
-    -webkit-transition: all .35s;
-    -moz-transition: all .35s;
-    -o-transition: all .35s;
-    transition: all .35s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    transition: all .3s;
 }
 .wrapp-tab-tour { 
     margin-left: 10px;
@@ -139,7 +139,8 @@
 .tour-tour.right > .arrow, .tour-tour.left > .arrow {
     top: 50% !important;
 }  
-
+.wrapp-tour .image-cont-group:hover .video-wrap:after { display: none; }
+.wrapp-tour .image-cont-group {cursor: text; } 
 @media (max-width: 992px) {
     .text-center .tourStart a { font-size: 24px;}
     .nav-tabs.nav-icon-based > li .wrapp-tab-tour .tab-tour > a {
