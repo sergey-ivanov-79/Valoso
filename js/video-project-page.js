@@ -50,7 +50,25 @@ $(document).ready(function(){
 		$(".mobile-tabs-menu button").removeClass("active");
 		$(this).addClass("active");
 	});
-	$(".mobile-tabs-menu button:nth-of-type(1)").click(function(){
+	$('.mobile-tabs-menu button:nth-of-type(1)').click(function(){
+		   $('.vidljiv').animate({'left':'-100%'}, 400);
+		   $('.vidljiv').removeClass('vidljiv');
+		   $('.video-project-director .container > p,.video-description-left,.description-right-up').addClass('vidljiv');
+		   $('.vidljiv').animate({'left':'0%'}, 400);
+	});
+	$('.mobile-tabs-menu button:nth-of-type(2)').click(function(){
+		   $('.vidljiv').animate({'left':'-100%'}, 400);
+		   $('.vidljiv').removeClass('vidljiv');
+		   $('.description-right-down').addClass('vidljiv');
+		   $('.vidljiv').animate({'left':'0%'}, 400);
+	});
+	$('.mobile-tabs-menu button:nth-of-type(3)').click(function(){
+		   $('.vidljiv').animate({'left':'-100%'}, 400);
+		   $('.vidljiv').removeClass('vidljiv');
+		   $('.video-upload,.project-files').addClass('vidljiv');
+		   $('.vidljiv').animate({'left':'0%'}, 400);
+	});
+	/*$(".mobile-tabs-menu button:nth-of-type(1)").click(function(){
 		$(".video-project-director .container > p").fadeIn();
 		$(".video-description-left").fadeIn();
 		$(".description-right-up").fadeIn();
@@ -73,7 +91,7 @@ $(document).ready(function(){
 		$(".description-right-down").hide();
 		$(".video-upload").fadeIn();
 		$(".project-files").fadeIn();
-	});
+	});*/
 	/* Responsive menu End */
 	/* Trigger Lightbox */
 		$("#links a").tosrus();
@@ -553,3 +571,6 @@ $(window).resize(function(){
 		$(".vp-edit-screen .screen-edit-container,#view-screensh-dir .modal-footer").toggleClass("opacity","0");
 	});
 	/* Popup on vp End */
+
+
+	

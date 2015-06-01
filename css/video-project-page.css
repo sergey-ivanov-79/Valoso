@@ -1664,6 +1664,12 @@ div#view-screensh .featured-screenshot-text .col-sm-9 p .popover input, div#view
 #view-screensh .modal-footer, #view-screensh-dir .modal-footer, .vp-edit-screen .screen-edit-container {
   display: none;
 }
+.header-mobile {
+  z-index: 99999;
+}
+.vidljiv {
+  display:block!important;
+}
 @media (min-width: 1000px) {
   #view-screensh .screen-multi,#view-screensh-dir .screen-multi {
     padding: 15px 15px!important;
@@ -2298,6 +2304,26 @@ div#view-screensh .featured-screenshot-text .col-sm-9 p .popover input, div#view
   }
   #view-screensh-dir .featured-screenshot-wrap, #view-screensh .featured-screenshot-wrap {
     padding: 15px 0px;
+  }
+  .video-project-director .container > p,.video-description-left,.description-right-up {
+    display: none;
+  }
+  .video-project-director .container > p.vidljiv,.video-description-left.vidljiv,.description-right-up.vidljiv {
+    display: block!important;
+  }
+  .description-right-up {
+    position: relative;
+  }
+  .video-upload,.project-files {
+    left: -100%;
+    position: relative;
+  }
+  .description-right-down {
+    left: -100%;
+    position: relative;
+  }
+  .video-project-director .container > p {
+    position: relative;
   }
 }/* 640px End */
 @media (max-width: 480px) {
