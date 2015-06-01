@@ -18,13 +18,13 @@ $(document).ready(function(){
 			var visina_slike1 = $('.uploader-short-details').height();
 			$('.uploader-avatar').css('height', visina_slike1);
 		},1);
-	});
+	});/*
 	$('button#project-delete-file').click(function() {
 		$('.single-video-hover').fadeIn();
 	});
 	$('.single-video-hover-buttons button').click(function() {
 		$('.single-video-hover').fadeOut();
-	});
+	});*/
 
 
 	if ($("#about").hasClass("opened")) {
@@ -50,7 +50,25 @@ $(document).ready(function(){
 		$(".mobile-tabs-menu button").removeClass("active");
 		$(this).addClass("active");
 	});
-	$(".mobile-tabs-menu button:nth-of-type(1)").click(function(){
+	$('.mobile-tabs-menu button:nth-of-type(1)').click(function(){
+		   $('.vidljiv').animate({'left':'-100%'}, 400);
+		   $('.vidljiv').removeClass('vidljiv');
+		   $('.video-project-director .container > p,.video-description-left,.description-right-up').addClass('vidljiv');
+		   $('.vidljiv').animate({'left':'0%'}, 400);
+	});
+	$('.mobile-tabs-menu button:nth-of-type(2)').click(function(){
+		   $('.vidljiv').animate({'left':'-100%'}, 400);
+		   $('.vidljiv').removeClass('vidljiv');
+		   $('.description-right-down').addClass('vidljiv');
+		   $('.vidljiv').animate({'left':'0%'}, 400);
+	});
+	$('.mobile-tabs-menu button:nth-of-type(3)').click(function(){
+		   $('.vidljiv').animate({'left':'-100%'}, 400);
+		   $('.vidljiv').removeClass('vidljiv');
+		   $('.video-upload,.project-files').addClass('vidljiv');
+		   $('.vidljiv').animate({'left':'0%'}, 400);
+	});
+	/*$(".mobile-tabs-menu button:nth-of-type(1)").click(function(){
 		$(".video-project-director .container > p").fadeIn();
 		$(".video-description-left").fadeIn();
 		$(".description-right-up").fadeIn();
@@ -73,7 +91,7 @@ $(document).ready(function(){
 		$(".description-right-down").hide();
 		$(".video-upload").fadeIn();
 		$(".project-files").fadeIn();
-	});
+	});*/
 	/* Responsive menu End */
 	/* Trigger Lightbox */
 		$("#links a").tosrus();
@@ -499,49 +517,60 @@ $(window).resize(function(){
 	/* Popup on vp */
 	$(".popup-send-email-ss").click(function(){
 		$(".popup-download-project").hide();
-		$(".featured-screen-popup").hide();
+		$(".vp-edit-screen").hide();
 		$(".send-screen-popup").fadeIn();
 	});
 	$(".popup-download-pf").click(function(){
 		$(".send-screen-popup").hide();
-		$(".featured-screen-popup").hide();
+		$(".vp-edit-screen").hide();
 		$(".popup-download-project").fadeIn();
-	});
-	$(".popup-view-scr").click(function(){
-		$(".popup-download-project").hide();
-		$(".send-screen-popup").hide();
-		$(".featured-screen-popup").fadeIn();
 	});
 	$("#view-screensh .popup-edit-tools").click(function(){
 		$("#view-screensh .popup-download-project").addClass("hide-popup-opacity");
 		$("#view-screensh .send-screen-popup").addClass("hide-popup-opacity");
-		$("#view-screensh .featured-screen-popup").addClass("hide-popup-opacity");
-		$("#view-screensh .featured-screenshot-text").hide();
-		$("div#view-screensh .featured-screenshot-wrap").addClass("remove-padding");
 		$("#view-screensh #screen-edit").fadeIn();
+		$(".vp-edit-screen .screen-edit-container").addClass("opa-ch1");
+		$("#view-screensh .modal-footer").addClass("edit-block");
+		$(".vp-edit-screen .screen-edit-container,#view-screensh .modal-footer").fadeIn();
+		$(".video-snap-checked").addClass("edit-block1");
 	});
 	$("#view-screensh-dir .popup-edit-tools").click(function(){
 		$("#view-screensh-dir .popup-download-project").addClass("hide-popup-opacity");
 		$("#view-screensh-dir .send-screen-popup").addClass("hide-popup-opacity");
-		$("#view-screensh-dir .featured-screen-popup").addClass("hide-popup-opacity");
-		$("#view-screensh-dir .featured-screenshot-text").hide();
-		$("div#view-screensh-dir .featured-screenshot-wrap").addClass("remove-padding");
 		$("#view-screensh-dir #screen-edit").fadeIn();
+		$(".vp-edit-screen .screen-edit-container").addClass("opa-ch1");
+		$("#view-screensh-dir .modal-footer").addClass("edit-block");
+		$(".vp-edit-screen .screen-edit-container,#view-screensh-dir .modal-footer").fadeIn();
+		$(".video-snap-checked").addClass("edit-block1");
 	});
-	$("#view-screensh #screen-edit .save-edit,#view-screensh #screen-edit .close,#view-screensh #screen-edit .video-snap-checked").click(function(){
+	$("#view-screensh #screen-edit .save-edit,#view-screensh #screen-edit .close").click(function(){
 		$("#view-screensh .popup-download-project").removeClass("hide-popup-opacity");
 		$("#view-screensh .send-screen-popup").removeClass("hide-popup-opacity");
-		$("#view-screensh .featured-screen-popup").removeClass("hide-popup-opacity");
-		$("#view-screensh .featured-screenshot-text").fadeIn();
-		$("div#view-screensh .featured-screenshot-wrap").removeClass("remove-padding");
-		$("#view-screensh #screen-edit").hide();
+		$(".vp-edit-screen .screen-edit-container,#view-screensh .modal-footer").fadeOut();
+		$(".video-snap-checked").removeClass("edit-block1");
+		setTimeout(function(){
+		$("#view-screensh .modal-footer").toggleClass("edit-block");
+		$(".vp-edit-screen .screen-edit-container").toggleClass("opa-ch1");
+	},200);
 	});
-	$("#view-screensh-dir #screen-edit .save-edit,#view-screensh-dir #screen-edit .close,#view-screensh-dir #screen-edit .video-snap-checked").click(function(){
+	$("#view-screensh-dir #screen-edit .save-edit,#view-screensh-dir #screen-edit .close").click(function(){
 		$("#view-screensh-dir .popup-download-project").removeClass("hide-popup-opacity");
 		$("#view-screensh-dir .send-screen-popup").removeClass("hide-popup-opacity");
-		$("#view-screensh-dir .featured-screen-popup").removeClass("hide-popup-opacity");
-		$("#view-screensh-dir .featured-screenshot-text").fadeIn();
-		$("div#view-screensh-dir .featured-screenshot-wrap").removeClass("remove-padding");
-		$("#view-screensh-dir #screen-edit").hide();
+		$(".vp-edit-screen .screen-edit-container,#view-screensh-dir .modal-footer").fadeOut();
+		$(".video-snap-checked").removeClass("edit-block1");
+		setTimeout(function(){
+		$("#view-screensh-dir .modal-footer").toggleClass("edit-block");
+		$(".vp-edit-screen .screen-edit-container").toggleClass("opa-ch1");
+	},200);
+	});
+	$(".vp-edit-screen .edit-tools").click(function(){
+		$(".vp-edit-screen .screen-edit-container").toggleClass("opa-ch1");
+		$(".vp-edit-screen .screen-edit-container,#view-screensh-dir .modal-footer,#view-screensh .modal-footer").addClass('dis-ch');
+	});
+	$(".vp-edit-screen .video-snap-checked").click(function(){
+		$(".vp-edit-screen .screen-edit-container,#view-screensh-dir .modal-footer").toggleClass("opacity","0");
 	});
 	/* Popup on vp End */
+
+
+	

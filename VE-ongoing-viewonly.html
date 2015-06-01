@@ -13,144 +13,152 @@
 <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 <link rel="stylesheet" href="css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="css/jquery.tosrus.all.css" />
-<link type="text/css" rel="stylesheet" href="css/slick.css" /> 
+<link type="text/css" rel="stylesheet" href="css/slick.css" />
+<link rel="stylesheet" href="css/jquery.jscrollpane.css" media="all">
+<link rel="stylesheet" href="css/offcanvas.css"/>
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="css/magnific-popup.css"/> 
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style-prev.css"/>
+<link rel="stylesheet" href="css/ns-dashboardMML-nouploads.css"/>
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/video-project-page.css">
 <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
-<script>
-  var group = ''; 
-  var lastMove = '';
-	$(function() {
-	  $('a[href*=#].anchor:not([href=#])').click(function() {
-	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-
-	      var target = $(this.hash);
-	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	      if (target.length) {
-	        $('html,body').animate({
-	          scrollTop: target.offset().top-50
-	        }, 1000);
-	        return false;
-	      }
-	    }
-	  });
-    $('#loginOpen').click(function() {
-       $('#userLoginTab a[href="#conLogin"]').tab('show');   
-       $('#loginBox').modal('show');    
-    });
-    $('#SignOpen').click(function() {
-      $('#userLoginTab a[href="#conSign"]').tab('show'); 
-      $('#loginBox').modal('show');
-    });
-    $('#conDirector .butPanel a').click(function() {
-        $('#conDirector .butPanel').find('.active').removeClass('active');
-        $(this).parent().addClass('active');
-    });
-   $('#conEditor .butPanel a').click(function() {
-        $('#conEditor .butPanel').find('.active').removeClass('active');
-        $(this).parent().addClass('active');
-    });
-    var lastScroll = 0;
-
-
-    $(window).scroll(function () {
-        if ($(this).scrollTop() >500) {
-          $('.upArrow').show()
-        }else{
-           $('.upArrow').hide()
-        }
-         var st = $(this).scrollTop();
-          //Determines up-or-down scrolling
-          if (st > lastScroll){
-             //Replace this with your function call for downward-scrolling
-             //console.log("DOWN");
-              HideMenu ('down');
-          }
-          else {
-             //Replace this with your function call for upward-scrolling
-             //console.log("UP");
-              HideMenu ('up');
-          }
-          //Updates scroll position
-          lastScroll = st;
-    });
-    
-    $('#slider .carousel-inner .active').each(function() {
-        if (group=='') {
-          $('#slideContent .sliderBox  .carousel-caption-all').html($('#slideContent .sliderBox  .active .carousel-caption').html());
-          $('#slideContent .sliderBox  .carousel-caption-all').show(500);
-          group = $(this).attr('data-group');
-        }       
-    });
-
-    $('#slider').on('slid.bs.carousel', function () {
-      var thisGroup = $(this).find('div.active').attr('data-group');         
-      if ((group != thisGroup)&&(group != '')){
-          $('#slideContent .sliderBox  .carousel-caption-all').hide();
-          $('#slideContent .sliderBox  .carousel-caption-all').html($('#slideContent .sliderBox  .active .carousel-caption').html());
-          $('#slideContent .sliderBox  .carousel-caption-all').show(500);
-          group = thisGroup;
-      }                 
-    });
-    
-	});
-  function HideMenu (move) {
-    //console.log()
-    if ($( ".logoBox").css('position') != 'fixed') {
-      return
-    }
-    if (lastMove == move) {
-      return
-    }
-    if (!lastMove || move=='down') {
-            $( ".logoBox").animate({
-              top:"-50px"
-            }, 600 );
-           
-          lastMove =  'down';
-          
-           $('.topMenu ').removeClass('in');
-    }
-
-    if (move=='up') {
-        $( ".logoBox" ).animate({
-          top:"0px"
-        }, 600 );
-        lastMove =  'up';
-        
-        $('.topMenu ').removeClass('in');
-    }
-
-  }
-	</script>
 </head>
 
 <body>
-<header class="" id="header">
- <div class="container">
-    <div class="row">
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 logoBox">
-          <a href=""><img src="images/logo.png" /></a>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-         <span class="sr-only">Toggle navigation</span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-         <span class="icon-bar"></span>
-          </button>
+<div class="wrapp-row-offcanvas">
+<div class="row-offcanvas row-offcanvas-left">
+<header id="header-top">
+        <div class="header header-dop header-mobile header-mobile-fix proj-forum headroom-dop ">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 line-bottom-mobile">
+                <nav class="navbar navbar-default navbar-mobile" role="navigation">
+                            <div class="col-navbar">
+                        <div class="col-navbar-wrap no-margin-bottom">
+                          <ul class="shop-msg-noti-icos clearfix">
+                            <!--<li><a href="#" title="shopping cart"><i class="ico ico-cart2"></i></a></li>-->
+                            <li><a href="#" title="Inbox" class="hasItem"><span class="badge">5</span><i class="ico ico-inbox"></i></a></li>
+                            <li><a href="#" title="Notifications" class="hasItem"><span class="badge">2</span><i class="ico ico-notify"></i></a></li>
+                          </ul>
+                          <div class="dropdown profile-dropdown profile-dropdown-mobile">
+                            <img data-toggle="dropdown" src="./images/p-a/img-1-public.png" alt="Name of User" width="56" height="56" class="userProp img-mobile">
+                              <a data-toggle="dropdown" href="#" class="toogleDrpDwn"><i class="ico b-caret b-caret-mobile"></i></a>
+                            
+                            <div class="dropdown dropdown-tip dropdown-menu dropdown-menu-mobile dropdown-menu-new" role="menu" aria-labelledby="dLabel"> 
+                              <strong>webadmin@gmail.com</strong>
+                            <ul class="dropdown-menu-inner">
+                                            <li><a href="#"><i class="fa fa-user"></i>Edit Profile</a></li>
+                              <li><a href="#"><i class="fa fa-usd"></i>Orders</a></li>
+                              <li><a href="#"><i class="fa fa-cog"></i>Settings</a></li>
+                                            <li><a href="#"><i class="fa fa-question"></i>Help</a></li>
+                                            <li><a href="#"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+                            </ul>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="cols">
+                                <div class="navbar-header navbar-header-mobile">
+                          <div class="">
+                                      <button type="button" class="navbar-toggle collapsed button-mobile" data-toggle="offcanvas" data-target="#navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                                  </div>
+                          <!--<a style="display:block;" class="navbar-brand navbar-brand-mobile" href="#"><h1 class="logo"><span class="word-1">va</span><span class="word-2">lo</span><span class="word-3">so</span></h1></a>-->
+                                  <a href="#" class="navbar-brand navbar-brand-mobile"><img src="images/p-a/logo-valoso.png" /></a>
+                        </div>
+                            </div> <!-- column 8 for navbar -->
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    
+                </nav>
+                   <div class="collapse navbar-collapse clearfix" id="navbar-collapse-1">
+                      <ul class="nav navbar-nav navbar-nav-dop nav-list">
+                        <li class="active current">
+                                    <a href="#"><i class="fa fa-home pull-left"></i>HOME
+                                        <i class="fa fa-sort-desc"></i>
+                                        <!--i class="fa fa-sort-desc"></i-->
+                                    </a>
+                                    <ul class="secondaryNavList-dop">
+                                        <li class="">
+                                            <a href="./dashboard-mobile.html" class="navLink active">Dashboard</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="./contract-page-1.html" class="navLink">Contracts</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="./weekly-summary-page.html" class="navLink">Weekly Summary</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="./transaction-history.html" class="navLink">Transaction History</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="./active-events-page-new.html" class="navLink">Active Events</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                        <li><a href="#"><i class="fa fa-cloud-upload pull-left"></i>Upload</a></li>
+                        <li><a href="#"><i class="fa fa-file-text-o pull-left"></i>Projects</a></li>
+                        <li><a href="#"><i class="fa fa-search pull-left"></i>Search For Video Editors</a></li>
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+              </div>
+                    <div class="col-sm-12 clearfix wrapper-submainmenu">
+                        <div class="navTabpanel navInline submainmenu">
+                            <nav class="navbar navbar-default" class="pageCentered" role="navigation">
+                                <ul class="secondaryNavList">
+                                    <li class="active">
+                                        <a href="./dashboard-mobile.html" class="navLink gray active">Dashboard</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./contract-page-1.html" class="navLink gray">Contracts</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./weekly-summary-page.html" class="navLink gray">Weekly Summary</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./transaction-history.html" class="navLink gray">Transaction History</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./active-events-page-new.html" class="navLink gray">Active Events</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div id="" class="col-sm-12-max col-sm-12-max-dop">
+                        <div class="wrapp-shop-msg-noti-icos clearfix line-bott">
+                            <div class="pull-left">
+                                <h3 class="h3 gray">Dashboard<br /><span class="gray p-11">Welcome back, John P. Smith</span></h3>
+                            </div>
+                            <ul class="shop-msg-noti-icos">
+                        <!--<li><a href="#" title="shopping cart"><i class="ico ico-cart2"></i></a></li>-->
+                        <li><a href="#" title="Inbox" class="hasItem"><span class="badge">5</span><i class="ico ico-inbox"></i></a></li>
+                        <li><a href="#" title="Notifications" class="hasItem"><span class="badge">2</span><i class="ico ico-notify"></i></a></li>
+                      </ul>
+                        </div>
+                    </div>
+            </div>
+          </div> <!-- .container -->
         </div>
-        <div class="collapse  col-xs-12 col-sm-9 col-md-9 col-lg-9 topMenu " id="navbar-collapse">
-          <ul>
-            <li><a href="">How it works</a></li>
-            <li><a href="">Faq</a></li>
-            <li><a href="#" id="SignOpen">register</a></li>
-            <li><a href="#" id="loginOpen">Login</a></li>
-          </ul>
-        </div>
-    </div>
- </div>
-</header>
+        <!--div class="container">
+             <div class="wrapper-aevents">
+                <div class="aevents">
+                    <div class=" alert-danger alert-dismissable alert" style="margin-top: 15px;">
+                       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+                            Milestone payment for <strong>#27 TEST PROJECT for Annie</strong> setup under the project <strong>TEST PROJECT for Annie</strong> has been requested by <strong>bobby</strong>.
+                            <a style="color: inherit; text-decoration: underline; cursor:pointer;" onclick="milestoneSelect(1)">Click here</a> to RELEASE the funds for that milestone or visit the <a style="color: inherit; text-decoration: underline;" href="https://staging.mylocal3dprinting.com/contract/details/1">designer's contract page</a>
+                    </div>
+                </div>
+             </div>
+        </div-->
+    </header> <!-- header -->
 
 <div class="video-project-director video-project-editor video-project-view">
 <div class="mobile-tabs-menu">
@@ -163,11 +171,11 @@
   </div><!-- /.mobile-tabs-menu -->
   <div class="container">
     <h3>This is the Video Project Name</h3>
-    <p> Welcome to the Video Project Page! Instructions about what Video Director can do on this page like adding notes, viewing screenshots... 
+    <p class="vidljiv"> Welcome to the Video Project Page! Instructions about what Video Director can do on this page like adding notes, viewing screenshots... 
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae gravida ex. 
       <span>For more information, visit the <b>FAQ</b> page.</span>
     </p>
-    <div class="col-sm-7 video-description-left">
+    <div class="col-sm-7 video-description-left vidljiv">
       <div class="video-des-wrap">
         <h4><label>Category:</label> <span>Miniature</span></h4>
         <p><label>Description:</label>
@@ -200,7 +208,7 @@
       </div> <!-- /.video-des-wrap -->
     </div> <!-- /.video-description-left -->
     <div class="col-sm-5 video-description-right">
-      <div class="description-right-up">
+      <div class="description-right-up vidljiv">
         <h4 class="video-dur"><label>Video Duration:</label>
           <span>20:44</span>
         </h4>
@@ -342,7 +350,7 @@
                 <h5>Director's Gallery</h5>
                 <span class="video-dir-edi-new"><span>9</span> <span>(4 new)</span></span>
               </div>
-              <div class="video-edi">
+              <div class="video-edi" data-toggle="modal" data-target="#view-screensh">
                 <h5>Editor's Gallery</h5>
                 <span>10</span>
               </div>
@@ -392,7 +400,66 @@
     </div> <!-- /.project-files-buttons -->
   </div> <!-- /.container -->
 </div> <!-- /.video-project-director -->
-
+<div class="wrapper-sidebar-offcanvas">
+        <div class="sidebar-offcanvas" id="sidebar">
+            <div class="clearfix" id="navbar-collapse-1">
+                <div class="left-menu clearfix">
+                    <!--i class="fa fa-user-plus pull-right"></i-->  
+                    <div class="media">
+                        <div class="pull-left">
+                            <img class="user-img-min" data-toggle="dropdown" src="./images/p-a/img-1-public.png" alt="Name of User" width="42" height="42" class="userProp img-mobile">
+                        </div>
+                    <div class="media-body">
+                        <h3 class="gray bold">John P. Smith</h3>
+                        <span class="gray p-12">john_smith@gmail.com</span>
+                    </div>
+                    </div>
+                </div>
+                <ul class="nav navbar-nav navbar-nav-dop nav-list">
+                    <li class="active current">
+                        <a href="#" class="active"><i class="fa fa-home pull-left"></i>Home
+                            <i class="fa fa-sort-desc"></i>
+                            <!--i class="fa fa-sort-desc"></i-->
+                        </a>
+                        <ul class="secondaryNavList-dop">
+                            <li class="active">
+                                <a href="#" class="navLink active">Dashboard
+                                    <i class="none-fa fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./contract-page-1.html" class="navLink">Contracts
+                                    <i class="none-fa fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./weekly-summary-page.html" class="navLink">Weekly Summary
+                                    <i class="none-fa fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./transaction-history.html" class="navLink">Transaction History
+                                    <i class="none-fa fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-cloud-upload pull-left"></i>Upload</a></li>
+                    <li><a href="#"><i class="fa fa-file-text-o pull-left"></i>Projects</a></li>
+                    <li><a href="#"><i class="fa fa-search pull-left"></i>Search For Video Editors</a></li>
+                    <li><a href="#"><i class="fa fa-print pull-left"></i>Print Alliance</a></li>
+                    <li><a href="#" class="min-text-menu">Inbox <span class="badge pull-right">5</span></a></li>
+                    <li><a href="#" class="min-text-menu">Notficiations<span class="badge pull-right">2</span></a></li>
+                    <li><a href="#" class="min-text-menu"><i class="fa fa-user pull-left"></i>Edit Profile</a></li>
+                    <li><a href="#" class="min-text-menu"><i class="fa fa-usd pull-left"></i>Orders</a></li>
+                    <li><a href="#" class="min-text-menu"><i class="fa fa-cog pull-left"></i>Settings</a></li>
+                    <li><a href="#" class="min-text-menu"><i class="fa fa-question pull-left"></i>Help</a></li>
+                    <li><a href="#" class="min-text-menu"><i class="fa fa-sign-out pull-left"></i>Sign Out</a></li>
+                    <li><a href="#" class="text-lowercase text-center lighter">www.valoso.com</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!--/.sidebar-offcanvas-->
+    </div>
 <footer id="footer">
  <div class="container">
      <div class="row botInfo">
@@ -594,17 +661,14 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.download-project-files-modal -->
-<div id="view-screensh" class="modal fade">
-  <div class="modal-dialog clearfix">
+<div id="view-screensh" class="modal fade ">
+<div class="modal-dialog clearfix">
     <div class="modal-content clearfix">
         <div class="modal-body clearfix">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
           <div class="screenshot-gallery">
             <div class="featured-screenshot">
               <div class="featured-screenshot-wrap clearfix">
-                <div class="featured-screen-popup col-sm-12 clearfix">
-                  <img src="images/video-project/screenshot.jpg" alt="" />
-                </div> <!-- /.featured-screen -->
                  <div class="col-sm-12">
                   <div class="send-screen-popup col-sm-12 clearfix">
                     <h3>Send Screenshot Gallery</h3>
@@ -631,10 +695,10 @@
                     </div>
                   </div>
                 </div> <!-- /.send-screen-popup -->
-                <div id="screen-edit" class="screen-multi vp-edit-screen" style="display: none;">
+                <div id="screen-edit" class="screen-multi vp-edit-screen">
                   <div class="modal-dialog">
                     <div class="modal-content">
-                      <div id="carousel-example-generic4" class="carousel slide" data-ride="carousel">
+                      <div id="carousel-example-generic13" class="carousel slide" data-ride="carousel">
                           <div class="carousel-inner" role="listbox">
                             <div class="item active">
                             <div class="slider-wrap-landscape">
@@ -646,26 +710,37 @@
                                 <div class="screen-edit-buttons clearfix">
                                   <div class="edit-first">
                                     <input type="color" id="html5colorpicker" class="form-control" value="#ff0000">
+                                      <div class="screen-edit-zoom">
+                                        <button class="edit-zoom-out"><img src="images/video-project/zoomout.png" alt="Zoom Out"></button>
+                                        <input type="range" min="0" max="20" value="1" id="fader">
+                                        <button class="edit-zoom-in"><img src="images/video-project/zoomin.png" alt="Zoom In"></button>
+                                      </div>
                                       <button class="edit-rotate"><i class="fa fa-undo"></i></button>
                                       <button class="edit-rotate"><i class="fa fa-repeat"></i></button>
                                       <button class="edit-arrow-pointer"><img src="images/video-project/kosa.png" alt="" /></button>
+                                    </div><!-- /.edit-first -->
+                                    <div class="edit-second">
                                       <button class="edit-rentagle"></button>
                                       <button class="edit-line"><img src="images/video-project/line.png" alt="" /></button>
                                       <button class="edit-white"><i class="fa fa-circle-thin"></i></button>
                                       <button class="edit-white"><i class="fa fa-paint-brush"></i></button>
                                       <button><img src="images/video-project/aa.png" alt="" /></button>
-                                      <button><img src="images/video-project/aaarow.png" alt="" /></button>                    </div><!-- /.edit-second -->
+                                      <button><img src="images/video-project/aaarow.png" alt="" /></button>
+                                      <button class="edit-white edit-drop"><span class="glyphicon glyphicon glyphicon-tint" aria-hidden="true"></span></button>
+                                      <button class="edit-white"><i class="fa fa-crop"></i></button>
+                                      <button id="edit-landscape-focus" class="edit-landscape" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<div><input id='edit-landscape-input' type='text'><div class='edit-buttons-landscape'><button>Save</button><button>Cancel</button></div></div>"><img src="images/video-project/edit-audio-note.png" alt="" /></button>
+                                      <button class="edit-landscape"><img src="images/video-project/delete-note.png" alt="" /></button>
+                                    </div><!-- /.edit-second -->
                                   </div><!-- /.screen-edit-buttons -->
                                   </div>
-                                  <p>Audio notes goes here.<img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Audio Notes</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></p>
                                 </div>
                               <div class="modal-footer">
                                 <div class="edit-footer-container">
-                                  <a class="left carousel-control" href="#carousel-example-generic4" role="button" data-slide="prev">
+                                  <a class="left carousel-control" href="#carousel-example-generic13" role="button" data-slide="prev">
                                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                     <span class="sr-only">Previous</span>
                                   </a>
-                                  <a class="right carousel-control" href="#carousel-example-generic4" role="button" data-slide="next">
+                                  <a class="right carousel-control" href="#carousel-example-generic13" role="button" data-slide="next">
                                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                     <span class="sr-only">Next</span>
                                   </a>
@@ -679,44 +754,52 @@
                             <div class="item">
                             <div class="slider-wrap-landscape">
                               <div class="modal-body">
-                              <button class="edit-tools"><img src="images/video-project/tool.png" alt="" /></button>
-                              <button class="video-snap-checked" aria-label="Close"><img src="images/boris/kvacica.png" alt=""></button>
                                 <img src="images/video-project/library-view.jpg" alt="" />
                                 <div class="screen-edit-container">
                                 <div class="screen-edit-buttons clearfix">
                                   <div class="edit-first">
                                     <input type="color" id="html5colorpicker" class="form-control" value="#ff0000">
+                                      <div class="screen-edit-zoom">
+                                        <button class="edit-zoom-out"><img src="images/video-project/zoomout.png" alt="Zoom Out"></button>
+                                        <input type="range" min="0" max="20" value="1" id="fader">
+                                        <button class="edit-zoom-in"><img src="images/video-project/zoomin.png" alt="Zoom In"></button>
+                                      </div>
                                       <button class="edit-rotate"><i class="fa fa-undo"></i></button>
                                       <button class="edit-rotate"><i class="fa fa-repeat"></i></button>
                                       <button class="edit-arrow-pointer"><img src="images/video-project/kosa.png" alt="" /></button>
+                                    </div><!-- /.edit-first -->
+                                    <div class="edit-second">
                                       <button class="edit-rentagle"></button>
                                       <button class="edit-line"><img src="images/video-project/line.png" alt="" /></button>
                                       <button class="edit-white"><i class="fa fa-circle-thin"></i></button>
                                       <button class="edit-white"><i class="fa fa-paint-brush"></i></button>
                                       <button><img src="images/video-project/aa.png" alt="" /></button>
-                                      <button><img src="images/video-project/aaarow.png" alt="" /></button>                    </div><!-- /.edit-second -->
+                                      <button><img src="images/video-project/aaarow.png" alt="" /></button>
+                                      <button class="edit-white edit-drop"><span class="glyphicon glyphicon glyphicon-tint" aria-hidden="true"></span></button>
+                                      <button class="edit-white"><i class="fa fa-crop"></i></button>
+                                    </div><!-- /.edit-second -->
                                   </div><!-- /.screen-edit-buttons -->
                                   </div>
                                   <p>Audio notes goes here.<img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Audio Notes</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></p>
                                 </div>
                               <div class="modal-footer">
                                 <div class="edit-footer-container">
-                                  <a class="left carousel-control" href="#carousel-example-generic4" role="button" data-slide="prev">
+                                  <a class="left carousel-control" href="#carousel-example-generic13" role="button" data-slide="prev">
                                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                     <span class="sr-only">Previous</span>
                                   </a>
-                                  <a class="right carousel-control" href="#carousel-example-generic4" role="button" data-slide="next">
+                                  <a class="right carousel-control" href="#carousel-example-generic13" role="button" data-slide="next">
                                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                     <span class="sr-only">Next</span>
                                   </a>
-                                  <p>4/567</p><p><span class="hide-480">|</span> <span>SSGVD13V000002SS4.JPG</span></p>
+                                   <p>4/567</p><p><span class="hide-480">|</span> <span>SSGVD13V000002SS4.JPG</span></p>
                                 </div>
                                 <button type="button" class="btn btn-default save-edit">Save</button>
-                                <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                              </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                               </div>
                             </div>
-                      </div>
+                        </div>
+                        </div>
                       </div>
                     </div><!-- /.modal-content -->
                   </div><!-- /.modal-dialog -->
@@ -799,7 +882,7 @@
                 </div><!-- /.download-project-files-modal -->
                 <div class="featured-screenshot-text col-sm-12">
                   <div class="col-sm-9">
-                    <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis.</p>
+                    <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis. <img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Audio Notes</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></p>
                   </div>
                   <div class="col-sm-3">
                     <button class="popup-edit-tools" data-toggle="modal" data-target="">Add Notes</button>
@@ -808,10 +891,9 @@
                   <div class="gallery-history-editor">
                   <div class="gallery-history-left">
                     <h5>Editor</h5>
-                    <p>Updated by editor <span>DD/MM/YY HH:MM</span></p>
+                    <p>Updated by Editor <span>DD/MM/YY HH:MM</span></p>
                     <div class="gallery-history-img">
                       <a class="popup-send-email-ss"><img src="images/video-project/icon-send.png" alt="" /></a>
-                      <a class="popup-view-scr"><img src="images/video-project/icon-view.png" alt="" /></a>
                       <a class="popup-download-pf"><img src="images/video-project/icon-dl.png" alt="" /></a>
                     </div> <!-- /.gallery-history-img -->
                   </div> <!-- /.gallery-left -->
@@ -844,9 +926,6 @@
           <div class="screenshot-gallery">
             <div class="featured-screenshot">
               <div class="featured-screenshot-wrap clearfix">
-                <div class="featured-screen-popup col-sm-12 clearfix">
-                  <img src="images/video-project/screenshot.jpg" alt="" />
-                </div> <!-- /.featured-screen -->
                  <div class="col-sm-12">
                   <div class="send-screen-popup col-sm-12 clearfix">
                     <h3>Send Screenshot Gallery</h3>
@@ -873,10 +952,10 @@
                     </div>
                   </div>
                 </div> <!-- /.send-screen-popup -->
-                <div id="screen-edit" class="screen-multi vp-edit-screen" style="display: none;">
+                <div id="screen-edit" class="screen-multi vp-edit-screen">
                   <div class="modal-dialog">
                     <div class="modal-content">
-                      <div id="carousel-example-generic10" class="carousel slide" data-ride="carousel">
+                      <div id="carousel-example-generic4" class="carousel slide" data-ride="carousel">
                           <div class="carousel-inner" role="listbox">
                             <div class="item active">
                             <div class="slider-wrap-landscape">
@@ -888,26 +967,37 @@
                                 <div class="screen-edit-buttons clearfix">
                                   <div class="edit-first">
                                     <input type="color" id="html5colorpicker" class="form-control" value="#ff0000">
+                                      <div class="screen-edit-zoom">
+                                        <button class="edit-zoom-out"><img src="images/video-project/zoomout.png" alt="Zoom Out"></button>
+                                        <input type="range" min="0" max="20" value="1" id="fader">
+                                        <button class="edit-zoom-in"><img src="images/video-project/zoomin.png" alt="Zoom In"></button>
+                                      </div>
                                       <button class="edit-rotate"><i class="fa fa-undo"></i></button>
                                       <button class="edit-rotate"><i class="fa fa-repeat"></i></button>
                                       <button class="edit-arrow-pointer"><img src="images/video-project/kosa.png" alt="" /></button>
+                                    </div><!-- /.edit-first -->
+                                    <div class="edit-second">
                                       <button class="edit-rentagle"></button>
                                       <button class="edit-line"><img src="images/video-project/line.png" alt="" /></button>
                                       <button class="edit-white"><i class="fa fa-circle-thin"></i></button>
                                       <button class="edit-white"><i class="fa fa-paint-brush"></i></button>
                                       <button><img src="images/video-project/aa.png" alt="" /></button>
-                                      <button><img src="images/video-project/aaarow.png" alt="" /></button>                    </div><!-- /.edit-second -->
+                                      <button><img src="images/video-project/aaarow.png" alt="" /></button>
+                                      <button class="edit-white edit-drop"><span class="glyphicon glyphicon glyphicon-tint" aria-hidden="true"></span></button>
+                                      <button class="edit-white"><i class="fa fa-crop"></i></button>
+                                      <button id="edit-landscape-focus" class="edit-landscape" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<div><input id='edit-landscape-input' type='text'><div class='edit-buttons-landscape'><button>Save</button><button>Cancel</button></div></div>"><img src="images/video-project/edit-audio-note.png" alt="" /></button>
+                                      <button class="edit-landscape"><img src="images/video-project/delete-note.png" alt="" /></button>
+                                    </div><!-- /.edit-second -->
                                   </div><!-- /.screen-edit-buttons -->
                                   </div>
-                                  <p>Audio notes goes here.<img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Audio Notes</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></p>
                                 </div>
                               <div class="modal-footer">
                                 <div class="edit-footer-container">
-                                  <a class="left carousel-control" href="#carousel-example-generic10" role="button" data-slide="prev">
+                                  <a class="left carousel-control" href="#carousel-example-generic4" role="button" data-slide="prev">
                                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                     <span class="sr-only">Previous</span>
                                   </a>
-                                  <a class="right carousel-control" href="#carousel-example-generic10" role="button" data-slide="next">
+                                  <a class="right carousel-control" href="#carousel-example-generic4" role="button" data-slide="next">
                                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                     <span class="sr-only">Next</span>
                                   </a>
@@ -921,44 +1011,52 @@
                             <div class="item">
                             <div class="slider-wrap-landscape">
                               <div class="modal-body">
-                              <button class="edit-tools"><img src="images/video-project/tool.png" alt="" /></button>
-                              <button class="video-snap-checked" aria-label="Close"><img src="images/boris/kvacica.png" alt=""></button>
                                 <img src="images/video-project/library-view.jpg" alt="" />
                                 <div class="screen-edit-container">
                                 <div class="screen-edit-buttons clearfix">
                                   <div class="edit-first">
                                     <input type="color" id="html5colorpicker" class="form-control" value="#ff0000">
+                                      <div class="screen-edit-zoom">
+                                        <button class="edit-zoom-out"><img src="images/video-project/zoomout.png" alt="Zoom Out"></button>
+                                        <input type="range" min="0" max="20" value="1" id="fader">
+                                        <button class="edit-zoom-in"><img src="images/video-project/zoomin.png" alt="Zoom In"></button>
+                                      </div>
                                       <button class="edit-rotate"><i class="fa fa-undo"></i></button>
                                       <button class="edit-rotate"><i class="fa fa-repeat"></i></button>
                                       <button class="edit-arrow-pointer"><img src="images/video-project/kosa.png" alt="" /></button>
+                                    </div><!-- /.edit-first -->
+                                    <div class="edit-second">
                                       <button class="edit-rentagle"></button>
                                       <button class="edit-line"><img src="images/video-project/line.png" alt="" /></button>
                                       <button class="edit-white"><i class="fa fa-circle-thin"></i></button>
                                       <button class="edit-white"><i class="fa fa-paint-brush"></i></button>
                                       <button><img src="images/video-project/aa.png" alt="" /></button>
-                                      <button><img src="images/video-project/aaarow.png" alt="" /></button>                    </div><!-- /.edit-second -->
+                                      <button><img src="images/video-project/aaarow.png" alt="" /></button>
+                                      <button class="edit-white edit-drop"><span class="glyphicon glyphicon glyphicon-tint" aria-hidden="true"></span></button>
+                                      <button class="edit-white"><i class="fa fa-crop"></i></button>
+                                    </div><!-- /.edit-second -->
                                   </div><!-- /.screen-edit-buttons -->
                                   </div>
                                   <p>Audio notes goes here.<img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Audio Notes</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></p>
                                 </div>
                               <div class="modal-footer">
                                 <div class="edit-footer-container">
-                                  <a class="left carousel-control" href="#carousel-example-generic10" role="button" data-slide="prev">
+                                  <a class="left carousel-control" href="#carousel-example-generic4" role="button" data-slide="prev">
                                     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                                     <span class="sr-only">Previous</span>
                                   </a>
-                                  <a class="right carousel-control" href="#carousel-example-generic10" role="button" data-slide="next">
+                                  <a class="right carousel-control" href="#carousel-example-generic4" role="button" data-slide="next">
                                     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                                     <span class="sr-only">Next</span>
                                   </a>
-                                  <p>4/567</p><p><span class="hide-480">|</span> <span>SSGVD13V000002SS4.JPG</span></p>
+                                   <p>4/567</p><p><span class="hide-480">|</span> <span>SSGVD13V000002SS4.JPG</span></p>
                                 </div>
                                 <button type="button" class="btn btn-default save-edit">Save</button>
-                                <button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                              </div>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                               </div>
                             </div>
-                      </div>
+                        </div>
+                        </div>
                       </div>
                     </div><!-- /.modal-content -->
                   </div><!-- /.modal-dialog -->
@@ -1041,7 +1139,7 @@
                 </div><!-- /.download-project-files-modal -->
                 <div class="featured-screenshot-text col-sm-12">
                   <div class="col-sm-9">
-                    <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis.</p>
+                    <p>Audio notes goes here. Lorem ipsum dolor sitamet, consectetur adipiscing elit. Integer volutpat velit id efficitur facilisis. <img class="video-edit" src="images/video-project/icon-edit.png" alt="edit" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<h4>Edit Audio Notes</h4><div><input type='text'><button><img src='images/video-project/okay.png' alt='Okay' /></button><button><img src='images/video-project/cancel.png' alt='Cancel' /></button></div>" /></p>
                   </div>
                   <div class="col-sm-3">
                     <button class="popup-edit-tools" data-toggle="modal" data-target="">Add Notes</button>
@@ -1049,11 +1147,10 @@
                   </div>
                   <div class="gallery-history-director">
                   <div class="gallery-history-left">
-                    <h5>Editor</h5>
+                    <h5>Director</h5>
                     <p>Updated by Director <span>DD/MM/YY HH:MM</span></p>
                     <div class="gallery-history-img">
                       <a class="popup-send-email-ss"><img src="images/video-project/icon-send.png" alt="" /></a>
-                      <a class="popup-view-scr"><img src="images/video-project/icon-view.png" alt="" /></a>
                       <a class="popup-download-pf"><img src="images/video-project/icon-dl.png" alt="" /></a>
                     </div> <!-- /.gallery-history-img -->
                   </div> <!-- /.gallery-left -->
@@ -1078,12 +1175,115 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.#screen-edit -->
-<a href="#header" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
 <script src="js/jquery-1.11.2.min.js"></script>
+<script>
+  var group = ''; 
+  var lastMove = '';
+  $(function() {
+    $('a[href*=#].anchor:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top-50
+          }, 1000);
+          return false;
+        }
+      }
+    });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >500) {
+          $('.upArrow').show()
+        }else{
+           $('.upArrow').hide()
+        }
+    });
+  });
+</script>
+<a href="#header-top" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
 <script src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.tosrus.min.all.js"></script>
 <script src='js/jquery-sortable.js'></script>
+<script type="text/javascript" src="js/headroom.min.js"></script>
+<script type="text/javascript" src="js/jquery.headroom.js"></script>
+<script src="js/bootstrap-select.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.1/js/select2.min.js" type="text/javascript"></script>
+<script src="js/offcanvas.js"></script>
+<script src='js/jquery-sortable.js'></script>
+<script src='js/jquery.jscrollpane.min.js'></script>
 <script src="js/video-project-page.js"></script>
+<script type="text/javascript">
+    $(function(){
+    $('.scroll-pane').jScrollPane();
+  });
+</script>
+<script>
+ $(document).ready(function () {
+    $('.styled-select').on('click', function () {
+        if ($(this).attr('class') == 'styled-select default_select') {
+            $('.select2-container').addClass("colored_select");
+            $('.select2-container').find('.select2-results__option:hover:nth(2)').css('color', '#64FF65');
+        }
+       
+    });
+    $('.select2').select2({
+        minimumResultsForSearch: -1
+    });
+});
+</script>
+
+<script>
+    $(function(){
+     var myClick = $('[data-toggle="collapse"]');
+     myClick.click(function(){
+        $('body').toggleClass('opened-navigation');
+    });
+    // Navigation submenu
+    
+  $(document).on('click', '.nav-list li > a', function() {
+    var parent = $(this).parents('li').eq(0);
+    if( parent.hasClass('opened-submeny') ){
+        parent.removeClass('opened-submeny');
+    }
+    else {
+       $(this).parents('ul').eq(0).find('> li.opened-submeny').removeClass('opened-submeny');
+       parent.addClass('opened-submeny');    
+         
+    }
+    });
+        
+    
+});
+</script>
+
+<script type="text/javascript">
+    // Init Headroom for .header
+    $(".header").headroom(); 
+
+    // Init Headroom for .headroom-icons
+    $(".headroom-icons").headroom({
+        offset: 209    
+    }); 
+</script> 
+<script src="js/jquery.magnific-popup.js"></script>
+<script>
+$('.gallery').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
+});
+</script>
+<script>
+    $(document).on('click', '.button-mobile', function(){
+        $('body').toggleClass('opened-offcanvas');
+    });
+</script>
 </body>
 </html>
