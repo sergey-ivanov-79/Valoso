@@ -4,7 +4,12 @@
     box-shadow: none !important;
     border: none !important;
 }
-.wrapper-freelanser { padding-top: 20px; display: none;}
+.wrapper-freelanser { 
+    padding-top: 20px; 
+    visibility: hidden;
+    position: relative;
+    height: 0;
+}
 .wrapper-freelanser.wrapper-table .table-responsive .table > thead > tr > th {
     font-size: 13px;
 }
@@ -313,7 +318,16 @@ td.child .dtr-data > .wrapp-button { margin-left: 85px !important; margin-top: 5
 /* END Added changes for table - dataTable*/
 
 @media (max-width: 767px) {
-    .wrapper-freelanser { display: block;}
+    /*.wrapper-freelanser { 
+        height: 100%;
+        visibility: visible;
+        left: -100%;
+    }*/
+    .wrapper-freelanser.vidljiv {
+        height: 100% ;
+        visibility: visible;
+        left: -100%;
+    }
     .right-content-table-head .dropdown-menu > li > a, .right-content-table-head .dropdown-menu.dropdown-menu-bulk > li > a { font-size: 11px;}
     .right-content-table-head > a { padding: 5px; font-size: 12px;}
     .right-content-table-head button { padding: 5px; font-size: 12px; }
@@ -549,7 +563,7 @@ td.child .dtr-data > .wrapp-button { margin-left: 85px !important; margin-top: 5
 #myModal-3 .modal-content,
 #myModal-4 .modal-content,
 #myModal-5 .modal-content{
-    margin-top: 120px;
+    margin-top: 20px;
 }
 #myModal-1.modal h3, 
 #myModal-2.modal h3,
@@ -606,7 +620,7 @@ td.child .dtr-data > .wrapp-button { margin-left: 85px !important; margin-top: 5
 
 .modal-sm {
   width: 300px;
-  margin-top: 120px;
+  margin-top: 20px;
 }
 .cartNZD.wid-xs div.title {
   border-radius: 5px 0 0 5px;
