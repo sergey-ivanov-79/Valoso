@@ -2400,6 +2400,47 @@
     });
 });
 </script>
+<script type="text/javascript">
+	$(document).ready(function() {
+    $('#selecctall').click(function(event) {  //on click
+        if(this.checked) { // check select status
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = true;  //select all checkboxes with class "checkbox1"              
+            });
+        }else{
+            $('.checkbox1').each(function() { //loop through each checkbox
+                this.checked = false; //deselect all checkboxes with class "checkbox1"                      
+            });        
+        }
+    });
+	$(".checkbox1").click(function () {
+        if (!$(this).is(":checked")){
+            $("#selecctall").prop("checked", false);
+        }else{
+            var flag = 0;
+            $(".checkbox1").each(function(){
+                if(!this.checked)
+                flag=1;
+            })             
+                        if(flag == 0){ $("#selecctall").prop("checked", true);}
+        }
+    });
+    });
+    $('#other-1').click(function(event) {  //on click
+        if(this.checked) { // check select status
+            $('.oth-software').show();
+        }else{
+			$('.oth-software').hide();       
+        }
+    });
+	$('#other').click(function(event) {  //on click
+        if(this.checked) { // check select status
+            $('.oth-software').show();
+        }else{
+			$('.oth-software').hide();       
+        }
+    });
+</script>
 <script>
     $(document).ready(function() {
     $('#selecctall-p').click(function(event) {  //on click
