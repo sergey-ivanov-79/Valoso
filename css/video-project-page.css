@@ -531,7 +531,7 @@ span.icon-reorder {
   bottom: 0;
   background-color: rgba(71, 71, 71, 0.9);
   display: none;
-  z-index: 999;
+  z-index: 900;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
@@ -562,9 +562,25 @@ span.single-video-hover-buttons > button {
 span.single-video-hover-buttons > button:nth-of-type(1) {
   background-color: #e54a3a;
   margin-right: 20px;
+  border: solid 2px #e54a3a;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+span.single-video-hover-buttons > button:nth-of-type(1):hover {
+  color: rgb(71,71,71);
 }
 span.single-video-hover-buttons > button:nth-of-type(2) {
   background-color: #4b8dcb;
+  border: solid 2px #4b8dcb;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+span.single-video-hover-buttons > button:nth-of-type(2):hover {
+  color: rgb(71,71,71);
 }
 .screenshot-gallery {
   position: relative;
@@ -1665,7 +1681,7 @@ div#view-screensh .featured-screenshot-text .col-sm-9 p .popover input, div#view
   display: none;
 }
 .header-mobile {
-  z-index: 99999;
+  z-index: 999;
 }
 .vidljiv {
   display:block!important;
