@@ -318,13 +318,8 @@ td.child .dtr-data > .wrapp-button { margin-left: 85px !important; margin-top: 5
 /* END Added changes for table - dataTable*/
 
 @media (max-width: 767px) {
-    /*.wrapper-freelanser { 
-        height: 100%;
-        visibility: visible;
-        left: -100%;
-    }*/
     .wrapper-freelanser.vidljiv {
-        height: 100% ;
+        height: auto;
         visibility: visible;
         left: -100%;
     }
