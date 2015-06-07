@@ -59,7 +59,7 @@ $(document).ready(function(){
 	$('.mobile-tabs-menu button:nth-of-type(2)').click(function(){
 		   $('.vidljiv').animate({'left':'-100%'}, 400);
 		   $('.vidljiv').removeClass('vidljiv');
-		   $('.description-right-down').addClass('vidljiv');
+		   $('.description-right-down, .wrapper-freelanser').addClass('vidljiv');
 		   $('.vidljiv').animate({'left':'0%'}, 400);
 	});
 	$('.mobile-tabs-menu button:nth-of-type(3)').click(function(){
