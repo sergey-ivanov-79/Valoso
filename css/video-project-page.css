@@ -1686,6 +1686,198 @@ div#view-screensh .featured-screenshot-text .col-sm-9 p .popover input, div#view
 .vidljiv {
   display:block!important;
 }
+.share-button {
+  height: 35px;
+  background-color: #4b8dcb;
+  position: relative;
+  float: left;
+  margin-left: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 35px;
+  padding: 0 15px;
+  cursor: pointer;
+  border: solid 2px #4b8dcb;
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+.share-button i {
+  margin-left: 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+.share-clicked {
+    position: absolute;
+    top: -35px;
+    width: 240px;        
+    left: -100px;
+    display: none;
+}
+.share-clicked button {
+    margin: 0;
+    height: 30px;
+    width: 30px;
+    float: left;
+    padding: 0;
+    line-height: 32px;
+    text-align: center;
+    border: 0;
+}
+.share-clicked button i {
+    margin: 0;
+    color: white!important;
+}
+button.share-fb {
+    background-color: #3b5998;
+}
+button.share-google {
+    background-color: #be2f1d;
+}
+button.share-twitter {
+    background: -webkit-linear-gradient(#54aaec, #3e8cc7); /* For Safari 5.1 to 6.0 */    
+    background: -o-linear-gradient(#54aaec, #3e8cc7); /* For Opera 11.1 to 12.0 */    
+    background: -moz-linear-gradient(#54aaec, #3e8cc7); /* For Firefox 3.6 to 15 */    
+    background: linear-gradient(#54aaec, #3e8cc7); /* Standard syntax */;
+}
+button.share-youtube {
+    background-color: #f80000;
+}
+button.share-vimeo {
+    background-color: #cdcdcd;
+    color: #20b9eb;
+}
+button.share-vimeo img {
+    vertical-align: middle;
+    width: 18px;
+    margin-top: -2px;
+}
+button.share-flickr {
+    background-color: #ffb5b5;
+}
+button.share-tumblr {
+    background-color: #34465d;
+}
+button.share-pinterest {
+    background-color: #cd2129;
+}
+div#share-modal .modal-dialog {
+    margin-top: 100px;
+}
+
+div#share-modal .modal-header {
+    border: 0;
+}
+div#share-modal .modal-footer {
+    border: 0;
+    text-align: center;
+}
+div#share-modal .modal-body p:nth-of-type(1) {
+    text-align: center;
+    padding: 0 10px;
+    color: #474747;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+div#share-modal .modal-body p:nth-of-type(2) {
+    text-align: center;    
+    padding: 0 40px;    color: #474747;    font-size: 20px;    font-weight: 700;
+}
+div#share-modal .modal-footer > div {
+    float: none;
+    width: 130px;
+    margin: auto;
+}
+div#share-modal .modal-body {
+    padding-bottom: 20px!important;
+}
+div#share-modal .share-clicked {
+    left: -55px;
+}
+div#link-profile-modal .modal-dialog {
+    margin-top: 100px;
+}
+div#link-profile-modal h4 {
+    float: left;
+    margin-top: 0;
+    font-size: 22px;
+    color: #474747;
+    font-weight: 700;
+}
+div#link-profile-modal .modal-header {
+    padding: 20px 20px 50px;
+    background: -webkit-linear-gradient(#fff, #f3f3f3); /* For Safari 5.1 to 6.0 */    
+    background: -o-linear-gradient(#fff, #f3f3f3); /* For Opera 11.1 to 12.0 */    
+    background: -moz-linear-gradient(#fff, #f3f3f3); /* For Firefox 3.6 to 15 */    
+    background: linear-gradient(#fff, #f3f3f3); /* Standard syntax */;
+    border-color: #dbdbdb;
+}
+div#link-profile-modal .modal-footer {
+    background: -webkit-linear-gradient(#f3f3f3, #fff);    
+    background: -o-linear-gradient(#f3f3f3, #fff);    
+    background: -moz-linear-gradient(#f3f3f3, #fff);    
+    background: linear-gradient(#f3f3f3, #fff);
+    border-color: #dbdbdb;
+}
+div#link-profile-modal h4 img {
+    width: 25px;
+}
+div#link-profile-modal .modal-body h5 {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+div#link-profile-modal .modal-body p {
+    font-size: 15px;
+    color: #5c5c5c;
+    text-align: center;
+    font-style: italic;
+    padding: 0 30px;
+}
+div#link-profile-modal .modal-body select {
+    width: 250px;
+    margin-top: 10px;
+    border-color: #cecccc;
+    height: 40px;
+    padding: 5px;
+    font-size: 18px;
+    color: #000000;
+    outline: none;
+}
+div#link-profile-modal .modal-body {
+    text-align: center;
+}
+div#link-profile-modal .modal-footer button {
+    outline: none;
+    box-shadow: none;
+    background: none;
+    border: solid 1px #b9b9b9;
+    background-color: #5dff60;
+    font-size: 20px;
+    color: white;
+    padding: 5px 20px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+div#link-profile-modal .modal-footer button:hover {
+    color: #5dff60;
+    background-color: transparent;
+}
+.share-button:hover {
+    background-color: transparent;
+    color: #4b8dcb;
+}
+.share-button:hover button {
+  color: white!important;
+}
 @media (min-width: 1000px) {
   #view-screensh .screen-multi,#view-screensh-dir .screen-multi {
     padding: 15px 15px!important;
@@ -2533,6 +2725,40 @@ div#view-screensh .featured-screenshot-text .col-sm-9 p .popover input, div#view
     padding-top: 0px;
     padding-bottom: 20px;
   }
+  .share-button {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .share-clicked {
+    left: auto;
+    right: auto;
+    margin: auto;
+  }
+  div#share-modal .modal-body p:nth-of-type(1) {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  div#share-modal .modal-body p:nth-of-type(2) {
+    font-size: 16px;
+  }
+  div#link-profile-modal .modal-body {
+    text-align: center;
+    padding: 0 20px 20px!important;
+  }
+  div#link-profile-modal .modal-dialog {
+    margin-top: 80px;
+  }
+  div#link-profile-modal h4 {
+    font-size: 15px;
+  }
+  div#link-profile-modal .modal-body h5 {
+    font-size: 15px;
+  }
+  div#link-profile-modal .modal-body p {
+    font-size: 14px;
+    padding: 0 10px;
+  }
 }/* 480px End */
 @media (max-width: 400px) {
   .video-project-director .container > p {
@@ -2838,6 +3064,9 @@ div#view-screensh .featured-screenshot-text .col-sm-9 p .popover input, div#view
   }
   .edit-second {
     width: 240px;
+  }
+  .share-clicked {
+    left: -6px;
   }
 }/* 320px End */
 @media only screen and (max-device-width:  1024px) and (orientation : landscape) {
