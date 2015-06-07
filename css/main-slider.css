@@ -31,6 +31,7 @@
   height: 21px;
   top: 19px;
   background-position: 0 -50px !important;
+  z-index: 1 !important;
 }
 /* for checkbox*/
 .ez-checkbox-green {

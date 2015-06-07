@@ -82,6 +82,7 @@ a.blue-a:focus { color: #69f; text-decoration: underline;}
     -moz-border-radius: 10px;
     padding: 5px 0;
     min-width: 100%;
+    z-index: 2;
 }
 .right-content-table-head .dropdown-menu > li > a { color: #787878; padding: 0px 7px; text-align: center; }
 .right-content-table-head .dropdown-menu > li:hover > a { color: #fff;}
@@ -292,7 +293,7 @@ table.dataTable tr.child span.dtr-title {
 .wrapper-big-table .table-responsive.table-responsive-dop { border: none;}
 .actions button, .actions .wrapp-button { display: inline-block;}
 td.child .dtr-data > .wrapp-button { margin-left: 85px !important; margin-top: 5px !important;}
-.table-responsive-dop .dataTables_paginate.paging_simple_numbers, .tab-resp-1 .dataTables_paginate.paging_simple_numbers { padding-top: 7px;}
+.table-responsive-dop .dataTables_paginate.paging_simple_numbers, .tab-resp-1 .dataTables_paginate.paging_simple_numbers { padding-top: 7px; padding-bottom: 7px;}
 .btn-gradient-dop:hover { 
     background-color: #64FF65;
     border-color: #64FF65;
@@ -413,19 +414,11 @@ td.child .dtr-data > .wrapp-button { margin-left: 85px !important; margin-top: 5
         text-align: right;
     }
     .wrapper-big-table .popover { opacity: 0; }
+    .dropdown-menu.dropdown-menu-big { z-index: 2;}
+    .wrapp-wrapper-table-contracts .creator, .wrapp-wrapper-table-contracts .designer { background: none #fff;}
 }
 @media (max-width: 640px) {
-    /*.video-project-director .container {
-      display: none;
-    }*/
-    .wrapper-freelanser { 
-        /*left: -100%;
-        position: relative;*/
-        /*display: none;*/
-    }
-    /*.wrapper-freelanser .vidljiv {
-        display: block;
-    }*/
+    
 }
 /* rr 490 */
 @media (max-width: 490px) { 
@@ -433,6 +426,7 @@ td.child .dtr-data > .wrapp-button { margin-left: 85px !important; margin-top: 5
     .left-content-table-head .media-body p { font-size: 11px;}
     .right-content-table-head > a, .right-content-table-head button { font-size: 10px; }
     .right-content-table-head .btn { min-width: 78px;}
+    .creator .right-content-table-head .btn { min-width: 60px; font-size: 9px;}
     /*.right-content-table-head { width: 290px;}*/
     .right-content-table-head {
         border-bottom: 1px solid #ccc;

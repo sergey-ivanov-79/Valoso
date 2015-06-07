@@ -141,7 +141,7 @@
 .search-project .text.dop-p-12 { margin-bottom: 20px;}
 .search-project .image-wrap { height: 198px;}
 .search-project  .thumbnail { padding: 0;}
-.wrapp-table-port-details .btn-proj { 
+.btn-proj { 
     padding: 3px;
     width: 154px;
     color: #fff;
@@ -153,32 +153,32 @@
     transition: all .2s linear;
     margin-bottom: 12px;
 }
-.wrapp-table-port-details .btn-proj:hover { 
+.btn-proj:hover { 
     background: none #fff; 
 }
-.wrapp-table-port-details .btn-apply {
+.btn-apply {
     background-color: #5dff60; 
     border: 1px solid #e6e5e5; 
 }
-.wrapp-table-port-details .btn-apply:hover {
+.btn-apply:hover {
     border-color: #5dff60;
     color: #5dff60;
     background: none #fff;
 }
-.wrapp-table-port-details .btn-view {
+.btn-view {
     background-color: #fd9f6d;
     border: 1px solid #e6e5e5;
 }
-.closed .wrapp-table-port-details .btn-view {
+.closed .btn-view {
     background-color: #555555;
     border: 1px solid #555555;
 }
-.closed .wrapp-table-port-details .btn-view:hover {
+.closed .btn-view:hover {
     color: #555555;
     background: none #fff;
     border: 1px solid #555555;
 }
-.wrapp-table-port-details .btn-view:hover {
+.btn-view:hover {
     border-color: #fd9f6d;
     color: #fd9f6d;
     background: none #fff;
@@ -357,6 +357,9 @@
     body.opened-filter-dropdown { overflow: hidden; }
     /*.search-dropdown .dropdown-menu, .search-dropdown .dropdown-menu > ul { max-height: none !important; }*/
     .header-mobile-fix.headroom-dop { z-index: 11;}
+    .container {
+      padding: 0px 0px!important;
+    }    
 }
 
 @media (max-width: 567px) {
