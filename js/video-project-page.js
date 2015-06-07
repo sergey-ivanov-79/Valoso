@@ -514,6 +514,16 @@ $(window).resize(function(){
 			});
 		}, 500);
 	});
+	$('.single-video-description .share-button,div#share-modal .share-button').click(function(){
+		if ($('.single-video-description .share-clicked,div#share-modal .share-clicked').hasClass('kliknuto')){
+			$('.single-video-description .share-clicked,div#share-modal .share-clicked').removeClass('kliknuto');
+			$('.single-video-description .share-clicked,div#share-modal .share-clicked').fadeOut();
+		}
+		else{
+			$('.single-video-description .share-clicked,div#share-modal .share-clicked').addClass('kliknuto');
+			$('.single-video-description .share-clicked,div#share-modal .share-clicked').fadeIn();
+		}
+	});
 	/* Popup on vp */
 	$(".popup-send-email-ss").click(function(){
 		$(".popup-download-project").hide();
