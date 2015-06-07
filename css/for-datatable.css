@@ -416,6 +416,12 @@ td.child .dtr-data > .wrapp-button { margin-left: 85px !important; margin-top: 5
     .wrapper-big-table .popover { opacity: 0; }
     .dropdown-menu.dropdown-menu-big { z-index: 2;}
     .wrapp-wrapper-table-contracts .creator, .wrapp-wrapper-table-contracts .designer { background: none #fff;}
+    tbody tr.no-active-tr td {
+      background-color: #fafafa;
+    }
+    .wrapper-big-table tbody tr:hover td {
+      background-color: #e8e8e8;
+    }
 }
 @media (max-width: 640px) {
     
