@@ -703,13 +703,13 @@
       </div> <!-- /.description-right-down -->
     </div> <!-- /.video-description-right -->
     <div class="video-upload">
-      <div class="browse-wrap">
+      <div class="browse-wrap" data-toggle="modal" data-target="#share-modal">
         <div class="title"><img src="images/video-project/upload-icon.png" alt="" />Choose files <br> from media library</div>
         <input type="file" name="upload" class="upload" title="Choose a file to upload">
       </div>
       <span class="upload-path"></span>
 
-      <div class="browse-wrap">
+      <div class="browse-wrap" data-toggle="modal" data-target="#share-modal">
         <div class="title"><img src="images/video-project/upload-icon.png" alt="" />Upload from <br>My computer</div>
         <input type="file" name="upload" class="upload" title="Choose a file to upload">
       </div>
@@ -1707,6 +1707,34 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.#screen-del -->
+<div id="share-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>The FINAL video for [Video Project name here] has been automatically added to your COMPLETED VIDEOS folder located in MEDIA LIBRARY.</p>
+        <p>You can view and share your video there or in your video project page or click on a social icon below to share it now.</p>
+      </div>
+      <div class="modal-footer">
+      <div class="share-button">
+        Share<i class="fa fa-share-alt"></i>
+        <div class="share-clicked">
+          <button class="share-fb"><i class="fa fa-facebook"></i></button>
+          <button class="share-google"><i class="fa fa-google-plus"></i></button>
+          <button class="share-twitter"><i class="fa fa-twitter"></i></button>
+          <button class="share-youtube"><i class="fa fa-youtube-play"></i></button>
+          <button class="share-vimeo"><img src="images/video-project/vimeo.png" alt="" /></button>
+          <button class="share-flickr"><i class="fa fa-flickr"></i></button>
+          <button class="share-tumblr"><i class="fa fa-tumblr"></i></button>
+          <button class="share-pinterest"><i class="fa fa-pinterest"></i></button>
+        </div><!-- /.share-clicked -->
+      </div><!-- /.share-button -->
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /#share-modal -->
 <script src="js/jquery-1.11.2.min.js"></script>
 <script>
   var group = ''; 
