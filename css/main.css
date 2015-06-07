@@ -42,10 +42,6 @@ body
 	width:100%;
 }
 
-div, span, td
-{
-	font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
-}
 a:link, a:visited
 {
 	text-decoration: none;
