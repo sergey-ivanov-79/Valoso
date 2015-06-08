@@ -2694,6 +2694,7 @@ div#link-profile-modal .modal-footer button:hover {
     margin-top: 60px;
     margin-bottom: 30px;
     padding: 0 15px;
+    margin-top: 50%;
   }
   span.single-video-hover-buttons > button {
     font-size: 18px;
@@ -2913,7 +2914,7 @@ div#link-profile-modal .modal-footer button:hover {
   }
   .single-video-hover > h4 {
     font-size: 16px;
-    margin-top: 50px;
+    margin-top: 60%;
     margin-bottom: 20px;
     padding: 0 15px;
   }
@@ -3046,7 +3047,6 @@ div#link-profile-modal .modal-footer button:hover {
   }
   .single-video-hover > h4 {
     font-size: 14px;
-    margin-top: 30px;
     margin-bottom: 20px;
     padding: 0 15px;
   }
