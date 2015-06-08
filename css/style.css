@@ -930,3 +930,5 @@ footer {
   }
 
 }
+/* for footer */
+#footer .botLink ul li a:hover, #footer .botCopy div a:hover {  color: #4DCBFF;}
