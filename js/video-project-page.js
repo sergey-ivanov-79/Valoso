@@ -46,27 +46,45 @@ $(document).ready(function(){
 		$('.project-more-opt.dropdown > button').css("display","block")
 	});
 	/* Responsive menu */
-	$(".mobile-tabs-menu button").click(function(){
-		$(".mobile-tabs-menu button").removeClass("active");
-		$(this).addClass("active");
-	});
 	$('.mobile-tabs-menu button:nth-of-type(1)').click(function(){
+		if($('.mobile-tabs-menu button:nth-of-type(2),.mobile-tabs-menu button:nth-of-type(3)').hasClass('active')){
+	   	   $('.vidljiv').animate({'left':'-100%'}, 400);
+		   $('.vidljiv').removeClass('vidljiv');
+		   $('.video-project-director .container > p,.video-description-left,.description-right-up').addClass('vidljiv');
+		   $('.vidljiv').css('left','100%');
+		   $('.vidljiv').animate({'left':'0%'}, 400);
+		}
+		else {
 		   $('.vidljiv').animate({'left':'-100%'}, 400);
 		   $('.vidljiv').removeClass('vidljiv');
 		   $('.video-project-director .container > p,.video-description-left,.description-right-up').addClass('vidljiv');
 		   $('.vidljiv').animate({'left':'0%'}, 400);
+		}
 	});
 	$('.mobile-tabs-menu button:nth-of-type(2)').click(function(){
+		if($('.mobile-tabs-menu button:nth-of-type(3)').hasClass('active')){
+	   	   $('.vidljiv').animate({'left':'-100%'}, 400);
+		   $('.vidljiv').removeClass('vidljiv');
+		   $('.description-right-down, .wrapper-freelanser').addClass('vidljiv');
+		   $('.vidljiv').css('left','100%');
+		   $('.vidljiv').animate({'left':'0%'}, 400);
+		}
+		else {
 		   $('.vidljiv').animate({'left':'-100%'}, 400);
 		   $('.vidljiv').removeClass('vidljiv');
 		   $('.description-right-down, .wrapper-freelanser').addClass('vidljiv');
 		   $('.vidljiv').animate({'left':'0%'}, 400);
+		}
 	});
 	$('.mobile-tabs-menu button:nth-of-type(3)').click(function(){
 		   $('.vidljiv').animate({'left':'-100%'}, 400);
 		   $('.vidljiv').removeClass('vidljiv');
 		   $('.video-upload,.project-files').addClass('vidljiv');
 		   $('.vidljiv').animate({'left':'0%'}, 400);
+	});
+	$(".mobile-tabs-menu button").click(function(){
+		$(".mobile-tabs-menu button").removeClass("active");
+		$(this).addClass("active");
 	});
 	/*$(".mobile-tabs-menu button:nth-of-type(1)").click(function(){
 		$(".video-project-director .container > p").fadeIn();
