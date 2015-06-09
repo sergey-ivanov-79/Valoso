@@ -11,6 +11,7 @@
 <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
 <link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/bootstrap-select.css" />
 <!--
 <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
 -->
@@ -27,7 +28,7 @@
 <link rel="stylesheet" href="css/magnific-popup.css"/>
 </head>
 
-<body class="dash-page">
+<body class="dash-page dash-page-cont">
 <div class="wrapp-row-offcanvas">
 <div class="row row-offcanvas row-offcanvas-left">
 <div class="page-wrap">
@@ -219,7 +220,7 @@
                                                         </div>
                                                         <div class="pull-right prof-sorted prof-sorted-mobile">
                                                             <div class="styled-select">
-                                                                <select data-placeholder="All" class="select2" style="">
+                                                                <select data-placeholder="All" class="js-select2" style="">
                                                                     <option value="1" selected="selected">All</option>
                                                                     <option value="2">Open</option>
                                                                     <option value="3">In progress</option>
@@ -227,7 +228,7 @@
                                                                 </select>                  
                                                             </div>
                                                             <div class="styled-select default_select wide_select">
-                                                                <select data-placeholder="All" class="select2" style="">
+                                                                <select data-placeholder="All" class="js-select2" style="">
                                                                     <option value="1" selected="selected">All</option>
                                                                     <option value="2">Projects I Created</option>
                                                                     <option value="3">Projects I am Working On</option>
@@ -1293,7 +1294,7 @@
         }
        
     });
-    $('.select2').select2({
+    $('.js-select2').select2({
         minimumResultsForSearch: -1
     });
 });
