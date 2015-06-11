@@ -17,12 +17,16 @@
 <link rel="stylesheet" href="css/jquery.jscrollpane.css" media="all">
 <link rel="stylesheet" href="css/offcanvas.css"/>
 <!-- Magnific Popup core CSS file -->
-<link rel="stylesheet" href="css/magnific-popup.css"/> 
+<link rel="stylesheet" href="css/magnific-popup.css"/>
+<!-- dataTables -->
+<link rel="stylesheet" type="text/css" href="css/jquery.dataTables.css"/>
+<link rel="stylesheet" type="text/css" href="css/dataTables.responsive.css"/>  
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/style-prev.css"/>
 <link rel="stylesheet" href="css/ns-dashboardMML-nouploads.css"/>
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/video-project-page.css">
+<link rel="stylesheet" href="css/for-datatable.css"/>
 <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
 </head>
@@ -244,6 +248,592 @@
           <button>View Milestones</button>
         </div> <!-- /.uploader-info-button -->
       </div> <!-- /.description-right-down -->
+      <div class="wrapper-freelanser contract designer clearfix"><!-- Begin wrapper-freelanser contract designer --> 
+            <div class="wrapp-wrapper-table-contracts w-designer"><!-- Begin wrapp-wrapper-table-contracts -->
+                <div class="designer"><!-- Begin wrapper-table-contracts designer -->
+                    <div class="table-contracts backg-table"><!-- Designer -->
+                    </div>
+                    <div class="inner-creator-table"><!-- Begin inner-creator-table -->
+                        <div class="table-head-top clearfix"><!-- Begin table-head-top --> 
+                            <div class="right-content-table-head"><!-- Begin right-content-table-head -->
+                                <div class="btn-group no-margin-left pull-right display-min">
+                                    <button type="button" class="btn btn-gradient margin-bottom margin-top-10 p-18 bold dropdown-toggle btn-vop" data-toggle="dropdown">?</button>
+                                    <ul class="dropdown-menu dropdown-menu-big " role="menu">
+                                        <li>
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <p class="p-10 p-updated min-w-btn text-center">UPDATED!</p>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="gray p-11">There are milestone changes that are up for review.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <p class="p-10 min-w-btn p-updated p-updated-green text-center">UPDATED!</p>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="gray p-11">The milestone changes have been completely reviewed.  </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <p class="p-10 min-w-btn bg-gray-btn text-uppercase bold text-center">released</p>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="gray p-11">Payment has been released to the designer.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <p class="p-10 min-w-btn bg-green-btn text-uppercase bold text-center">In Progress</p>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="gray p-11">The milestone has been paid for and funds were deposited to MyLocal3DPrinting awaiting for release.Click REQUEST RELEASE button to get your work re viewed and have your payment released.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <p class="p-10 min-w-btn bg-red-btn text-uppercase bold text-center">Pending<br /><span class="p-9">deposit / payment</span></p>
+                                                    
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="gray p-11">No fund has been deposited yet. Click REQUEST MILESTONE button to request for payment before you work.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <p class="p-10 min-w-btn bg-red-btn text-uppercase bold text-center">Pending<br /><span class="p-9">deposit / payment</span></p>
+                                                    <p class="text-center text-uppercase color-red-btn">Changes up for review!</p>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="gray p-11">There are milestone changes that are up for review. At this stage, no fund has been deposited yet. Click VIEW/EDIT/DELETE button to review the changes.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                         <li>
+                                            <div>
+                                                <div class="media">
+                                                    <div class="pull-left">
+                                                        <p class="p-10 min-w-btn bg-red-btn text-uppercase bold text-center">Pending<br /><span class="p-9">deposit / payment</span></p>
+                                                        <p class="p-10 text-center color-green-btn text-uppercase">review completed!</p>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="gray p-11">The milestone changes have been completely reviewed. However no fund has been deposited yet. Click REUQUEST MILESTONE button to request for payment before you work.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <p class="p-11 min-w-btn btn-gradient bg-col-red bold text-center">View/Edit/Delete<br /><span class="p-9"></span></p>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="gray p-11">Click to view, edit, delete milestone.</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <div class="media">
+                                                    <div class="pull-left">
+                                                        <p class="p-10 min-w-btn btn-gradient bg-blue-btn bold text-center">Request Milestone<span class="p-9"></span></p>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <p class="gray p-11">Click to request for payment before starting your work.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li> 
+                                        <li class="no-bord">
+                                            <div class="media">
+                                                <div class="pull-left">
+                                                    <p class="p-11 min-w-btn btn-gradient btn-green bold text-center">Request Release<span class="p-9"></span></p>
+                                                </div>
+                                                <div class="media-body">
+                                                    <p class="gray p-11">Click to get your work reviewed and/or have your payment released.</p>
+                                                </div>
+                                            </div>
+                                        </li> 
+                                    </ul>
+                                </div>
+                                
+                                <div class="btn-group pull-right">
+                                    <button type="button" class="btn btn-gradient margin-bottom margin-top-10 p-18 bold dropdown-toggle" data-toggle="dropdown">Options<span class="fa fa-caret-down"></span></button>
+                                    <ul class="dropdown-menu" role="menu">
+                                        <li><a class="sendMsg bold" data-user=""  href="#">Send a Message</a></li>
+                                        <li><a href="https://staging.mylocal3dprinting.com/messages" class="bold">View all Messages</a></li>
+                                        <hr/>
+                                        <li><a href="https://staging.mylocal3dprinting.com/contract/details/2" class="bold">View Contract</a></li>
+                                        <li><a href="https://staging.mylocal3dprinting.com/users/designers/profile/6" class="bold">View Profile</a></li>
+                                        <hr/>
+                                        <li><a href="https://staging.mylocal3dprinting.com/contract/end-contract/2" class="bold">End Contract</a></li>   
+                                    </ul>
+                                </div>
+                                <a class="btn btn-gradient margin-bottom margin-top-10 p-18 bold pull-right" data-toggle="modal" data-target="#myModal-6"><span class="glyphicon glyphicon-plus-sign"></span> Add Milestone</a>
+                            </div><!-- END right-content-table-head -->  
+                        </div><!-- END table-head-top --> 
+                        
+                        <div class="arrow-scroll-table gray p-12 pull-right no-margin-bottom margin-top-10"><span class="fa fa-long-arrow-left "></span>Scroll Table<span class="fa fa-long-arrow-right"></span></div>
+                        <div class="wrapper-big-table designer"><!-- Begin wrapper-big-table designer -->
+                            <div class="wrapp-table-responsive"><!-- Begin wrapp-table-responsive -->
+                                <div class="table-responsive  table-responsive-dop"><!-- Begin table-responsive -->
+                                    <table id="example1" class="table tastripe row-border order-column" cellspacing="0" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-center p-16 semibold headcol firs">#</th>
+                                                <th class="text-center p-16 semibold">Milestone Description</th>
+                                                <th class="text-center p-16 semibold">Due Date</th>
+                                                <th class="text-center p-16 semibold">Amount</th>
+                                                <th class="text-center p-16 semibold"> Status</th>
+                                                <th class="text-center p-16 semibold">Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="table-hover">
+                                            <tr>
+                    	                        <td class="text-center headcol">
+                    	                            <p>9946</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+      	                                            <p>Phase III Task 4 - This is the task <br/> description for the second to the <br/> last job in Phase III
+                                                    <button type="button" class="min-pagging red" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="There are milestone changes that are up for reveview." data-original-title="Milestone Updated [red]">UPDATED!</button></p>
+                                                </td>
+                    	                        <td class="text-center">
+                    	                            <p>Feb 14, 2015</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$1,324,400.20</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                           <button type="button" class="no-bord padd pending bold p-14 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="There are milestone changes that are awaiting for review. Click VIEW/EDIT/DELETE button to view these changes. At this stage, no fund has been deposited yet." data-original-title="MILESTONE PENDING DEPOSIT/PAYMENT STATUS [CHANGES UP FOR REVIEW]">PENDING <br /> <span class="p-11">DEPOSIT/PAYMENT</span></button>
+                                                    <p class="lett-spac"><strong class="p-10 text-red bold">CHANGES UP FOR REVIEW!</strong></p>
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" disabled="disabled" class="btn btn-gradient btn-red bold p-13 btn-120 no-active" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-3">
+                    	                               <button type="button" class="btn btn-gradient btn-blue bold p-13 btn-175" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to request payment before starting your work." data-original-title="Request milestone button">Request Milestone</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                                            <tr class="no-active-tr">
+                    	                        <td class="text-center headcol">
+                    	                            <p>9931</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Phase I Task 21 - This is the task <br/> description for Phase I Task 21</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Jan 28, 2015	</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$120,400.20</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                                                   <button type="button" class="no-bord padd p-14 released bold btn-120 no-active" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Payment has been released to the designer." data-original-title="Milestone Released Status">RELEASED</button>
+                                                                                                          
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" disabled="disabled" class="btn btn-gradient btn-red bold p-13 btn-120 no-active" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-4">
+                    	                               <button type="button" disabled="disabled" class="btn btn-gradient btn-blue bold p-13 btn-175 no-active" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to get your work reviewed and/or have your payment released." data-original-title="Request release button">Request Release</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                                             <tr>
+                    	                        <td class="text-center headcol">
+                    	                            <p>9932</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+      	                                            <p>Phase III Task 4 - This is the task <br/> description for the second to the <br/> last job in Phase III
+                                                    <button type="button" class="min-pagging red" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="There are milestone changes that are up for reveview." data-original-title="Milestone Updated [red]">UPDATED!</button></p>
+                                                </td>
+                    	                        <td class="text-center">
+                    	                            <p>Feb 14, 2015</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$1,324,400.20</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                           <button type="button" class="no-bord padd pending bold p-14 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="There are milestone changes that are awaiting for review. Click VIEW/EDIT/DELETE button to view these changes. At this stage, no fund has been deposited yet." data-original-title="MILESTONE PENDING DEPOSIT/PAYMENT STATUS [CHANGES UP FOR REVIEW]">PENDING <br /> <span class="p-11">DEPOSIT/PAYMENT</span></button>
+                                                    <p class="lett-spac"><strong class="p-10 text-red bold">CHANGES UP FOR REVIEW!</strong></p>
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" class="btn btn-gradient btn-red bold p-13 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-3">
+                    	                               <button type="button" class="btn btn-gradient btn-blue bold p-13 btn-175" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to request payment before starting your work." data-original-title="Request milestone button">Request Milestone</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                                            <tr>
+                    	                        <td class="text-center headcol">
+                    	                            <p>9933</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Phase III Task 4 - This is the task <br/> description for the second to the <br/> last job in Phase III
+                                                    <button type="button" class="min-pagging green" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="The milestone changes have been completely reviewed." data-original-title="Milestone Updated [Green]">UPDATED!</button> </p>
+                                                 </td>
+                    	                        <td class="text-center">
+                    	                            <p>Feb 18, 2015</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$10,000.00</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                           <button type="button" class="no-bord padd pending bold p-14 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="The milestone changes have been completely reviewed. However no fund has been deposited yet. If you're a creator, click DEPOSIT or PAY button to add funds for this milestone or send payment to the designer. If you're a designer, click REQUEST MILESTONE button to request for payment before starting your work." data-original-title="MILESTONE PENDING DEPOSIT/PAYMENT STATUS [REVIEW COMPLETED]">PENDING <br /> <span class="p-11">DEPOSIT/PAYMENT</span></button>
+                                                   <p class="lett-spac"><strong class="p-10 text-green bold">REVIEW COMPLETED!</strong></p>
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" class="btn btn-gradient btn-red bold p-13 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-3">
+                    	                               <button type="button" disabled="disabled" class="btn btn-gradient btn-blue bold p-13 btn-175" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to request payment before starting your work." data-original-title="Request milestone button">Request Milestone</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                    	                    <tr>
+                    	                        <td class="text-center headcol">
+                    	                            <p>9934</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Phase I Task 22 - This is the task <br /> description for Phase I Task 22</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Feb 6, 2015</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$1,324.20</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                                                   <button type="button" class="no-bord padd in-progress bold p-14 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="The milestone has been paid for and funds were deposited to MyLocal3DPrinting awaiting for release. If you're a designer and have finished the assigned work, click REQUEST RELEASE button to get your work reviewed and have your payment released. If you're a creator and have reviewed the work completed, click Pay button to send payment to the designer." data-original-title="Milestone IN PROGRESS Status">IN PROGRESS</button>
+                                                                                                           
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" class="btn btn-gradient btn-red bold p-13 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-4">
+                    	                               <button type="button" class="btn btn-gradient btn-green bold p-13 btn-175" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to get your work reviewed and/or have your payment released." data-original-title="Request release button">Request Release</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                                            <tr>
+                    	                        <td class="text-center headcol">
+                    	                            <p>9935</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+      	                                            <p>Phase III Task 4 - This is the task <br/> description for the second to the <br/> last job in Phase III
+                                                    <button type="button" class="min-pagging red" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="There are milestone changes that are up for reveview." data-original-title="Milestone Updated [red]">UPDATED!</button></p>
+                                                </td>
+                    	                        <td class="text-center">
+                    	                            <p>Feb 14, 2015</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$1,324,400.20</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                           <button type="button" class="no-bord padd pending bold p-14 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="There are milestone changes that are awaiting for review. Click VIEW/EDIT/DELETE button to view these changes. At this stage, no fund has been deposited yet." data-original-title="MILESTONE PENDING DEPOSIT/PAYMENT STATUS [CHANGES UP FOR REVIEW]">PENDING <br /> <span class="p-11">DEPOSIT/PAYMENT</span></button>
+                                                    <p class="lett-spac"><strong class="p-10 text-red bold">CHANGES UP FOR REVIEW!</strong></p>
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" class="btn btn-gradient btn-red bold p-13 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-3">
+                    	                               <button type="button" class="btn btn-gradient btn-blue bold p-13 btn-175" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to request payment before starting your work." data-original-title="Request milestone button">Request Milestone</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                                            <tr>
+                    	                        <td class="text-center headcol">
+                    	                            <p>9936</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Phase III Task 4 - This is the task <br/> description for the second to the <br/> last job in Phase III
+                                                    <button type="button" class="min-pagging green" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="The milestone changes have been completely reviewed." data-original-title="Milestone Updated [Green]">UPDATED!</button> </p>
+                                                 </td>
+                    	                        <td class="text-center">
+                    	                            <p>Feb 18, 2015</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$10,000.00</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                           <button type="button" class="no-bord padd pending bold p-14 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="The milestone changes have been completely reviewed. However no fund has been deposited yet. If you're a creator, click DEPOSIT or PAY button to add funds for this milestone or send payment to the designer. If you're a designer, click REQUEST MILESTONE button to request for payment before starting your work." data-original-title="MILESTONE PENDING DEPOSIT/PAYMENT STATUS [REVIEW COMPLETED]">PENDING <br /> <span class="p-11">DEPOSIT/PAYMENT</span></button>
+                                                   <p class="lett-spac"><strong class="p-10 text-green bold">REVIEW COMPLETED!</strong></p>
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" class="btn btn-gradient btn-red bold p-13 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-3">
+                    	                               <button type="button" disabled="disabled" class="btn btn-gradient btn-blue bold p-13 btn-175" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to request payment before starting your work." data-original-title="Request milestone button">Request Milestone</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                    	                    <tr>
+                    	                        <td class="text-center headcol">
+                    	                            <p>9937</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Phase I Task 22 - This is the task <br /> description for Phase I Task 22</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Feb 6, 2015</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$1,324,400.20</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                                                   <button type="button" class="no-bord padd in-progress bold p-14 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="The milestone has been paid for and funds were deposited to MyLocal3DPrinting awaiting for release. If you're a designer and have finished the assigned work, click REQUEST RELEASE button to get your work reviewed and have your payment released. If you're a creator and have reviewed the work completed, click Pay button to send payment to the designer." data-original-title="Milestone IN PROGRESS Status">IN PROGRESS</button>
+                                                                                                           
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" class="btn btn-gradient btn-red bold p-13 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-4">
+                    	                               <button type="button" class="btn btn-gradient btn-green bold p-13 btn-175" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to request payment before starting your work." data-original-title="Request milestone button">Request Release</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                                            <tr>
+                    	                        <td class="text-center headcol">
+                    	                            <p>9938</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Phase III Task 23 - This is the task <br/> description for Phase III Task 23</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Feb 14, 2015</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$999,999.00</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                                                   <button type="button" class="no-bord padd pending bold p-14 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="No fund has been deposited yet." data-original-title="MILESTONE PENDING DEPOSIT/PAYMENT">PENDING <br /> <span class="p-11">DEPOSIT/PAYMENT</span></button>
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" class="btn btn-gradient btn-red bold p-13 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-3">
+                    	                               <button type="button" class="btn btn-gradient btn-blue bold p-13 btn-175" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to request payment before starting your work." data-original-title="Request milestone button">Request Milestone</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                                            <tr>
+                    	                        <td class="text-center headcol">
+                    	                            <p>9939</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+      	                                            <p>Phase III Task 4 - This is the task <br/> description for the second to the <br/> last job in Phase III
+                                                    <button type="button" class="min-pagging red" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="There are milestone changes that are up for reveview." data-original-title="Milestone Updated [red]">UPDATED!</button></p>
+                                                </td>
+                    	                        <td class="text-center">
+                    	                            <p>Feb 14, 2015</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$1,324.20</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                           <button type="button" class="no-bord padd pending bold p-14 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="There are milestone changes that are awaiting for review. Click VIEW/EDIT/DELETE button to view these changes. At this stage, no fund has been deposited yet." data-original-title="MILESTONE PENDING DEPOSIT/PAYMENT STATUS [CHANGES UP FOR REVIEW]">PENDING <br /> <span class="p-11">DEPOSIT/PAYMENT</span></button>
+                                                    <p class="lett-spac"><strong class="p-10 text-red bold">CHANGES UP FOR REVIEW!</strong></p>
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" class="btn btn-gradient btn-red bold p-13 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-3">
+                    	                               <button type="button" class="btn btn-gradient btn-blue bold p-13 btn-175" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to request payment before starting your work." data-original-title="Request milestone button">Request Milestone</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                                            <tr>
+                    	                        <td class="text-center headcol">
+                    	                            <p>9940</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Phase III Task 4 - This is the task <br/> description for the second to the <br/> last job in Phase III
+                                                    <button type="button" class="min-pagging green" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="The milestone changes have been completely reviewed." data-original-title="Milestone Updated [Green]">UPDATED!</button> </p>
+                                                 </td>
+                    	                        <td class="text-center">
+                    	                            <p>Feb 18, 2015</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$10,000.00</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                           <button type="button" class="no-bord padd pending bold p-14 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="The milestone changes have been completely reviewed. However no fund has been deposited yet. If you're a creator, click DEPOSIT or PAY button to add funds for this milestone or send payment to the designer. If you're a designer, click REQUEST MILESTONE button to request for payment before starting your work." data-original-title="MILESTONE PENDING DEPOSIT/PAYMENT STATUS [REVIEW COMPLETED]">PENDING <br /> <span class="p-11">DEPOSIT/PAYMENT</span></button>
+                                                   <p class="lett-spac"><strong class="p-10 text-green bold">REVIEW COMPLETED!</strong></p>
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" class="btn btn-gradient btn-red bold p-13 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-3">
+                    	                               <button type="button" disabled="disabled" class="btn btn-gradient btn-blue bold p-13 btn-175" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to request payment before starting your work." data-original-title="Request milestone button">Request Milestone</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                                            <tr class="no-active-tr">
+                    	                        <td class="text-center headcol">
+                    	                            <p>9941</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Phase I Task 21 - This is the task <br/> description for Phase I Task 21</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Jan 28, 2015	</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$120,400.20</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                                                   <button type="button" class="no-bord padd p-14 released bold btn-120 no-active" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Payment has been released to the designer." data-original-title="Milestone Released Status">RELEASED</button>
+                                                                                                          
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" class="btn btn-gradient btn-red bold p-13 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-4">
+                    	                               <button type="button" disabled="disabled" class="btn btn-gradient btn-blue bold p-13 btn-175 no-active" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to get your work reviewed and/or have your payment released." data-original-title="Request release button">Request Release</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                                            <tr>
+                    	                        <td class="text-center headcol">
+                    	                            <p>9942</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+      	                                            <p>Phase III Task 4 - This is the task <br/> description for the second to the <br/> last job in Phase III
+                                                    <button type="button" class="min-pagging red" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="There are milestone changes that are up for reveview." data-original-title="Milestone Updated [red]">UPDATED!</button></p>
+                                                </td>
+                    	                        <td class="text-center">
+                    	                            <p>Feb 14, 2015</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$1,324.20</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                           <button type="button" class="no-bord padd pending bold p-14 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="There are milestone changes that are awaiting for review. Click VIEW/EDIT/DELETE button to view these changes. At this stage, no fund has been deposited yet." data-original-title="MILESTONE PENDING DEPOSIT/PAYMENT STATUS [CHANGES UP FOR REVIEW]">PENDING <br /> <span class="p-11">DEPOSIT/PAYMENT</span></button>
+                                                    <p class="lett-spac"><strong class="p-10 text-red bold">CHANGES UP FOR REVIEW!</strong></p>
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" class="btn btn-gradient btn-red bold p-13 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-3">
+                    	                               <button type="button" class="btn btn-gradient btn-blue bold p-13 btn-175" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to request payment before starting your work." data-original-title="Request milestone button">Request Milestone</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                                            <tr>
+                    	                        <td class="text-center headcol">
+                    	                            <p>9943</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Phase III Task 4 - This is the task <br/> description for the second to the <br/> last job in Phase III
+                                                    <button type="button" class="min-pagging green" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="The milestone changes have been completely reviewed." data-original-title="Milestone Updated [Green]">UPDATED!</button> </p>
+                                                 </td>
+                    	                        <td class="text-center">
+                    	                            <p>Feb 18, 2015</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$10,000.00</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                           <button type="button" class="no-bord padd pending bold p-14 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="The milestone changes have been completely reviewed. However no fund has been deposited yet. If you're a creator, click DEPOSIT or PAY button to add funds for this milestone or send payment to the designer. If you're a designer, click REQUEST MILESTONE button to request for payment before starting your work." data-original-title="MILESTONE PENDING DEPOSIT/PAYMENT STATUS [REVIEW COMPLETED]">PENDING <br /> <span class="p-11">DEPOSIT/PAYMENT</span></button>
+                                                   <p class="lett-spac"><strong class="p-10 text-green bold">REVIEW COMPLETED!</strong></p>
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" class="btn btn-gradient btn-red bold p-13 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-3">
+                    	                               <button type="button" disabled="disabled" class="btn btn-gradient btn-blue bold p-13 btn-175" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to request payment before starting your work." data-original-title="Request milestone button">Request Milestone</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                                            <tr class="no-active-tr">
+                    	                        <td class="text-center headcol">
+                    	                            <p>9944</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Phase I Task 21 - This is the task <br/> description for Phase I Task 21</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Jan 28, 2015	</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$120,400.20</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                                                   <button type="button" class="no-bord padd p-14 released bold btn-120 no-active" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Payment has been released to the designer." data-original-title="Milestone Released Status">RELEASED</button>
+                                                                                                          
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" disabled="disabled" class="btn btn-gradient btn-red bold p-13 btn-120 no-active" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-4">
+                    	                               <button type="button" disabled="disabled" class="btn btn-gradient btn-blue bold p-13 btn-175 no-active" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to get your work reviewed and/or have your payment released." data-original-title="Request release button">Request Release</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                    	                    <tr>
+                    	                        <td class="text-center headcol">
+                    	                            <p>9945</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Phase I Task 22 - This is the task <br /> description for Phase I Task 22</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>Feb 6, 2015</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                    	                            <p>$1,324.20</p>
+                    	                        </td>
+                    	                        <td class="text-center">
+                                                   <button type="button" class="no-bord padd in-progress bold p-14 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="The milestone has been paid for and funds were deposited to MyLocal3DPrinting awaiting for release. If you're a designer and have finished the assigned work, click REQUEST RELEASE button to get your work reviewed and have your payment released. If you're a creator and have reviewed the work completed, click Pay button to send payment to the designer." data-original-title="Milestone IN PROGRESS Status">IN PROGRESS</button>
+                                                                                                           
+                    	                        </td>
+                    	                        <td class="text-center actions">
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-5">
+                                                        <button type="button" class="btn btn-gradient btn-red bold p-13 btn-120" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to view, edit or delete this milestone." data-original-title="VIEW/EDIT/DELETE BUTTON">View/Edit/Delete</button>
+                                                    </div>
+                                                    <div class="wrapp-button" data-toggle="modal" data-target="#myModal-4">
+                    	                               <button type="button" class="btn btn-gradient btn-green bold p-13 btn-175" data-trigger="hover" data-toggle="popover" data-placement="top" title="" data-content="Click this button to request payment before starting your work." data-original-title="Request milestone button">Request Release</button>
+                    	                            </div>
+                                                </td>
+                    	                    </tr>
+                                        </tbody>
+                                    </table>
+                                </div><!-- END table-responsive -->
+                            </div><!-- END wrapp-table-responsive -->
+                        </div><!-- END wrapper-big-table designer -->
+                    </div><!-- END inner-creator-table -->
+                </div><!-- END wrapper-table-contracts designer -->
+            </div><!-- END wrapp-wrapper-table-contracts -->
+      </div><!-- END wrapper-freelanser contract designer --> 
     </div> <!-- /.video-description-right -->
     <div class="video-upload">
       <div class="browse-wrap disabled">
@@ -495,22 +1085,19 @@
             <a href=""><img src="images/logo-b.png"></a>
             <div class="socBox">
                 <a href="" class="soc-ico s1"></a>
-                <a href="" class="soc-ico s2"></a>
-                <a href="" class="soc-ico s3"></a>
-                <a href="" class="soc-ico s4"></a>
                 <a href="" class="soc-ico s5"></a>
                 <a href="" class="soc-ico s6"></a>
+                <a href="" class="soc-ico s4"></a>
+                <a href="" class="soc-ico s2"></a>
                 <a href="" class="soc-ico s7"></a>
-                <a href="" class="soc-ico s8"></a>
-                <a href="" class="soc-ico s9"></a>
                 <div class="clearN"></div>
             </div>
          </div>
      </div>
      <div class="row botCopy">
-         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">Copyright 2015 © Tech International Pty Ltd</div>
-         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><a href="">Privacy Policy</a></div>
-         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a href="">Terms and Conditions</a></div>
+         <div class="col-sm-6 col-md-6 col-lg-6">Copyright 2015 © Tech International Pty Ltd</div>
+         <div class="col-sm-2 col-md-2 col-lg-2"><a href="">Privacy Policy</a></div>
+         <div class="col-sm-4 col-md-4 col-lg-4"><a href="">Terms and Conditions</a></div>
      </div>         
  
  </div>
@@ -1175,6 +1762,329 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.#screen-edit -->
+<!-- Begin myModal-1 -->
+	<div class="modal fade" id="myModal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><!-- Begin  modal -->
+      <div class="modal-dialog"><!-- Begin modal-dialog  -->
+        <div class="modal-content modal-content-min modal-content-big-text"><!-- Begin modal-content  -->
+          <div class="modal-header line-bottom">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h3 class=" h3 modal-title gray" id="myModalLabel">Deposit</h3>
+          </div>
+          <div class="modal-body modal-body-dop modal-body-form-check clearfix">
+            <h4 class="h4 gray">Please select the milestones from the list.  </h4>
+            <div class="wrapp-form-box">
+                <div class="form-box gray">
+                    <div class="form-inn">
+                    	<div class="form-group">
+                            <div class="row check-inn">
+                                <label class="checkbox-inline checkbox-all">
+        							<input type="checkbox" id="selecctall" value="option1"> Select All
+        						</label> 
+                                <label class="checkbox-inline">
+        							<input type="checkbox" id="inlineCheckbox1" class="checkbox1" value="option1">#9933 Phase III Task 2 - This is the task description for Phase III Task 2 ($1,324,400.20)
+        						</label> 
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox2" class="checkbox1" value="option2">#9934 Phase III Task 3 - This is the task for Phase III Task 3 ($999,999,999.99)
+                                </label> 
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox3" class="checkbox1" value="option3">#9935 Phase III Task 4 - This is the task description for  the second to the last job inPhase III ($1,234,500.20)
+                                </label>
+                                <label class="checkbox-inline">
+        							<input type="checkbox" id="inlineCheckbox8" class="checkbox1" value="option8">#9936 Phase III Task 5 - This is the task for Phase III Task 7 ($999,999,999.99)
+        						</label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox9" class="checkbox1" value="option9">#9937 Phase III Task 6 - This is the task for Phase III Task 8 ($10,999,999.99)
+                                </label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox10" class="checkbox1" value="option10">#9938 Phase II Task 7 - This is the task for Phase III Task 9 ($9,999,999.50)
+                                </label>
+                                <label class="checkbox-inline">
+        							<input type="checkbox" id="inlineCheckbox14" class="checkbox1" value="option14">#9939 Phase I Task 8 - This is the task for Phase III Task 10 ($2,900,999.00)
+        						</label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox15" class="checkbox1" value="option15">#9940 Phase I Task 9 - This is the task for Phase III Task 10 ($19,909,900.80)
+                                </label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox16" class="checkbox1" value="option16">#9941 Phase II Task 10 - This is the task for Phase III Task 12 ($999,999,999.99)
+                                </label>
+                                <label class="checkbox-inline">
+        							<input type="checkbox" id="inlineCheckbox1" class="checkbox1" value="option1">#9942 Phase I Task 11 - This is the task description for Phase III Task 13 ($1,324,400.20)
+        						</label> 
+                                <label class="checkbox-inline">
+        							<input type="checkbox" id="inlineCheckbox1" class="checkbox1" value="option1">#9943 Phase III Task 12 - This is the task description for Phase III Task 13 ($1,324,400.20)
+        						</label> 
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox2" class="checkbox1" value="option2">#9944 Phase I Task 13 - This is the task for Phase III Task 14 ($999,999,999.99)
+                                </label> 
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox3" class="checkbox1" value="option3">#9945 Phase II Task 14 - This is the task description for  the second to the last job inPhase I ($999,999,999.99)
+                                </label>
+                                <label class="checkbox-inline">
+        							<input type="checkbox" id="inlineCheckbox8" class="checkbox1" value="option8">#9946 Phase I Task 15 - This is the task for Phase II Task 15 ($1,123,999.00)
+        						</label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox9" class="checkbox1" value="option9">#9947 Phase III Task 16 - This is the task for Phase III Task 16 ($1,000,999.00)
+                                </label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox10" class="checkbox1" value="option10">#9948 Phase I Task 17 - This is the task for Phase I Task 17 ($1,111,999.00)
+                                </label>
+                                <label class="checkbox-inline">
+        							<input type="checkbox" id="inlineCheckbox14" class="checkbox1" value="option14">#9949 Phase II Task 18 - This is the task for Phase I Task 18 ($20,222,222.22)
+        						</label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox15" class="checkbox1" value="option15">#9950 Phase I Task 19 - This is the task for Phase II Task 19 ($333,333,333.33)
+                                </label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox16" class="checkbox1" value="option16">#9951 Phase III Task 20 - This is the task for Phase III Task 20 ($555,555,555.55)
+                                </label>
+                           </div> <!-- row -->
+                        </div>  
+                    </div> 
+                </div>  
+            </div>
+            <div class="bottom-info pull-right">
+                <p class="gray bold"> $9.999,999,999.00 (USD)</p>
+                <p class="text-uppercase p-12 gray margin-top-5">Total Amount To Derosit</p>
+            </div>
+          </div>
+          <div class="modal-footer bott">
+            <button type="button" class="btn btn-gradient btn-blue btn-dep">Deposit</button>
+            <button type="button" class="btn btn-gradient btn-blue"  data-dismiss="modal">Cancel </button>
+          </div>
+        </div><!-- END modal-content  -->
+      </div><!-- END modal-dialog  -->
+    </div><!-- END myModal-1 -->
+    
+    <!-- Begin myModal-2 -->
+	<div class="modal fade" id="myModal-2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><!-- Begin  modal -->
+      <div class="modal-dialog"><!-- Begin modal-dialog  -->
+        <div class="modal-content modal-content-min modal-content-big-text"><!-- Begin modal-content  -->
+          <div class="modal-header line-bottom">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h3 class=" h3 modal-title gray" id="myModalLabel">Pay</h3>
+          </div>
+          <div class="modal-body modal-body-dop modal-body-form-check clearfix">
+            <h4 class="h4 gray">Please select the milestones from the list.  </h4>
+            <div class="wrapp-form-box">
+                <div class="form-box gray">
+                    <div class="form-inn">
+                    	<div class="form-group">
+                            <div class="row check-inn">
+                                <label class="checkbox-inline checkbox-all">
+        							<input type="checkbox" id="selecctall-p" value="option1"> Select All
+        						</label> 
+                                <label class="checkbox-inline">
+        							<input type="checkbox" id="inlineCheckbox1" class="checkbox1" value="option1">#9933 Phase III Task 2 - This is the task description for Phase III Task 2 ($1,324,400.20)
+        						</label> 
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox2" class="checkbox1" value="option2">#9934 Phase III Task 3 - This is the task for Phase III Task 3 ($999,999,999.99)
+                                </label> 
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox3" class="checkbox1" value="option3">#9935 Phase III Task 4 - This is the task description for  the second to the last job inPhase III ($1,234,500.20)
+                                </label>
+                                <label class="checkbox-inline">
+        							<input type="checkbox" id="inlineCheckbox8" class="checkbox1" value="option8">#9936 Phase III Task 5 - This is the task for Phase III Task 7 ($999,999,999.99)
+        						</label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox9" class="checkbox1" value="option9">#9937 Phase III Task 6 - This is the task for Phase III Task 8 ($10,999,999.99)
+                                </label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox10" class="checkbox1" value="option10">#9938 Phase II Task 7 - This is the task for Phase III Task 9 ($9,999,999.50)
+                                </label>
+                                <label class="checkbox-inline">
+        							<input type="checkbox" id="inlineCheckbox14" class="checkbox1" value="option14">#9939 Phase I Task 8 - This is the task for Phase III Task 10 ($2,900,999.00)
+        						</label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox15" class="checkbox1" value="option15">#9940 Phase I Task 9 - This is the task for Phase III Task 10 ($19,909,900.80)
+                                </label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox16" class="checkbox1" value="option16">#9941 Phase II Task 10 - This is the task for Phase III Task 12 ($999,999,999.99)
+                                </label>
+                                <label class="checkbox-inline">
+        							<input type="checkbox" id="inlineCheckbox1" class="checkbox1" value="option1">#9942 Phase I Task 11 - This is the task description for Phase III Task 13 ($1,324,400.20)
+        						</label> 
+                                <label class="checkbox-inline">
+        							<input type="checkbox" id="inlineCheckbox1" class="checkbox1" value="option1">#9943 Phase III Task 12 - This is the task description for Phase III Task 13 ($1,324,400.20)
+        						</label> 
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox2" class="checkbox1" value="option2">#9944 Phase I Task 13 - This is the task for Phase III Task 14 ($999,999,999.99)
+                                </label> 
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox3" class="checkbox1" value="option3">#9945 Phase II Task 14 - This is the task description for  the second to the last job inPhase I ($999,999,999.99)
+                                </label>
+                                <label class="checkbox-inline">
+        							<input type="checkbox" id="inlineCheckbox8" class="checkbox1" value="option8">#9946 Phase I Task 15 - This is the task for Phase II Task 15 ($1,123,999.00)
+        						</label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox9" class="checkbox1" value="option9">#9947 Phase III Task 16 - This is the task for Phase III Task 16 ($1,000,999.00)
+                                </label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox10" class="checkbox1" value="option10">#9948 Phase I Task 17 - This is the task for Phase I Task 17 ($1,111,999.00)
+                                </label>
+                                <label class="checkbox-inline">
+        							<input type="checkbox" id="inlineCheckbox14" class="checkbox1" value="option14">#9949 Phase II Task 18 - This is the task for Phase I Task 18 ($20,222,222.22)
+        						</label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox15" class="checkbox1" value="option15">#9950 Phase I Task 19 - This is the task for Phase II Task 19 ($333,333,333.33)
+                                </label>
+                                <label class="checkbox-inline">
+                                  <input type="checkbox" id="inlineCheckbox16" class="checkbox1" value="option16">#9951 Phase III Task 20 - This is the task for Phase III Task 20 ($555,555,555.55)
+                                </label>
+                           </div> <!-- row -->
+                        </div>  
+                    </div> 
+                </div> 
+            </div> 
+            <div class="bottom-info pull-right">
+                <p class="gray bold"> $9.999,999,999.00 (USD)</p>
+                <p class="text-uppercase p-12 gray margin-top-5">Total Amount To Pay</p>
+            </div>
+          </div>
+          <div class="modal-footer bott">
+            <button type="button" class="btn btn-gradient btn-green btn-dep">Pay</button>
+            <button type="button" class="btn btn-gradient btn-green"  data-dismiss="modal">Cancel </button>
+          </div>
+        </div><!-- END modal-content  -->
+      </div><!-- END modal-dialog  -->
+    </div><!-- END myModal-2 -->
+    
+    <!-- Begin myModal-3 -->
+	<div class="modal fade" id="myModal-3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><!-- Begin  modal -->
+      <div class="modal-dialog"><!-- Begin modal-dialog  -->
+        <div class="modal-content modal-content-min modal-content-request  modal-content-big-text"><!-- Begin modal-content  -->
+          <div class="modal-header line-bottom">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h3 class=" h3 modal-title gray" id="myModalLabel">Request Milestone</h3>
+          </div>
+          <div class="modal-body modal-body-dop">
+            <h4 class="h4 gray">Milestone payment has been requested</h4>
+          </div>
+          <div class="modal-footer bott">
+            <button type="button" class="btn btn-gradient text-center"  data-dismiss="modal">Okay </button>
+          </div>
+        </div><!-- END modal-content  -->
+      </div><!-- END modal-dialog  -->
+    </div><!-- END myModal-3 -->
+    
+    <!-- Begin myModal-4 -->
+	<div class="modal fade" id="myModal-4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"><!-- Begin  modal -->
+      <div class="modal-dialog"><!-- Begin modal-dialog  -->
+        <div class="modal-content modal-content-min modal-content-request  modal-content-big-text"><!-- Begin modal-content  -->
+          <div class="modal-header line-bottom">
+            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            <h3 class=" h3 modal-title gray" id="myModalLabel">Request Release</h3>
+          </div>
+          <div class="modal-body modal-body-dop">
+            <h4 class="h4 gray">The release for milestone payment <br /> has been requested.</h4>
+          </div>
+          <div class="modal-footer bott">
+            <button type="button" class="btn btn-gradient text-center"  data-dismiss="modal">Okay </button>
+          </div>
+        </div><!-- END modal-content  -->
+      </div><!-- END modal-dialog  -->
+    </div><!-- END myModal-4 -->
+    <div class="clk">
+        <div class="modal fade milestonePopup" id="myModal-5" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content modal-content-min modal-content-request modal-content-request-dop  modal-content-big-text">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">Edit Milestone</h4>
+                    </div>                                        
+                    <div class="modal-body modal-body-dop">
+                        <form method="" accept-charset="" id=""><input name="_token" type="hidden" value="">
+                            
+                            <input id="milestoneID" name="" type="hidden" value="">
+                            <input name="contract_id" type="hidden" value="">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Milestone</label><br>
+                                <input placeholder="Enter Name" class="form-control" id="milestone_name" style="float:left; width: 85%;" maxlength="46" name="name" type="text" value="">
+                                <span class="counter" style="line-height:34px; margin-left:5px;">0/46</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Delivery Date</label>
+                                <input class="form-control dtPicker hasDatepicker" name="deliveryDate" type="text" value="" id="">
+                            </div>
+                            <div class="form-group amnt clearfix">
+                                <label for="exampleInputEmail1">Amount </label><br>
+                                <span class="curr">$</span>
+                                <input placeholder="0.00" class="form-control mil-amount" style="float:left; width: 55%" name="amount" type="text" value="">
+                                <span class="curr">AUD</span>
+                                
+                                <div class="row cartNZD wid-xs">
+                                    <div class="media">
+                                        <div class="pull-20-left title">MDL</div>
+                                        <div class="media-body price">75,510.78</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 text">Source: Google Finance | 02.06.2015</div>
+                                </div>
+                            </div>
+                            <div class="form-group form-group-dop">
+                                <label for="exampleInputEmail1">Notes <span style="font-weight:normal;">(Optional)</span> </label>
+                                <textarea class="form-control" rows="2" name="notes" cols="50">555</textarea>
+                                <br>
+                                <div id="milestoneRemoveError"></div>
+                                <input class="btn btn-sm" type="submit" value="OK">&nbsp;
+                                <button data-href="" class="btn btn-sm deleteMilestone">Delete</button>
+                            </div>
+                            <div id="validationDiv"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clk">
+        <div class="modal fade milestonePopup" id="myModal-6" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content modal-content-min modal-content-request modal-content-request-dop  modal-content-big-text">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">Add Milestone</h4>
+                    </div>                                        
+                    <div class="modal-body modal-body-dop">
+                        <form method="" accept-charset="" id=""><input name="_token" type="hidden" value="">
+                            
+                            <input id="milestoneID" name="" type="hidden" value="">
+                            <input name="contract_id" type="hidden" value="">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Milestone</label><br>
+                                <input placeholder="Enter Name" class="form-control" id="milestone_name" style="float:left; width: 85%;" maxlength="46" name="name" type="text" value="">
+                                <span class="counter" style="line-height:34px; margin-left:5px;">0/46</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Delivery Date</label>
+                                <input class="form-control dtPicker hasDatepicker" name="deliveryDate" type="text" value="" id="">
+                            </div>
+                            <div class="form-group amnt clearfix">
+                                <label for="exampleInputEmail1">Amount </label><br>
+                                <span class="curr">$</span>
+                                <input placeholder="0.00" class="form-control mil-amount" style="float:left; width: 55%" name="amount" type="text" value="">
+                                <span class="curr">AUD</span>
+                                
+                                <div class="row cartNZD wid-xs">
+                                    <div class="media">
+                                        <div class="pull-20-left title">MDL</div>
+                                        <div class="media-body price">75,510.78</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 text">Source: Google Finance | 02.06.2015</div>
+                                </div>
+                            </div>
+                            <div class="form-group form-group-dop">
+                                <label for="exampleInputEmail1">Notes <span style="font-weight:normal;">(Optional)</span> </label>
+                                <textarea class="form-control" rows="2" name="notes" cols="50">555</textarea>
+                                <br>
+                                <div id="milestoneRemoveError"></div>
+                                <input class="btn btn-sm" type="submit" value="OK">&nbsp;
+                                <button data-href="" class="btn btn-sm deleteMilestone">Delete</button>
+                            </div>
+                            <div id="validationDiv"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 <script src="js/jquery-1.11.2.min.js"></script>
 <script>
   var group = ''; 
@@ -1229,12 +2139,40 @@
         }
        
     });
-    $('.select2').select2({
+    $('.js-select2').select2({
         minimumResultsForSearch: -1
     });
 });
 </script>
-
+<script type="text/javascript" language="javascript" src="js/jquery.dataTables.js"></script>
+<script type="text/javascript" language="javascript" src="js/dataTables.responsive.min.js"></script>
+<style type="text/css" class="init">
+    /* Ensure that the demo table scrolls */
+    th, td { white-space: nowrap; }
+    div.dataTables_wrapper {
+    	width: auto;
+    	margin: 0 auto;
+    }
+</style>
+<script type="text/javascript" language="javascript" class="init">
+    $.extend( $.fn.dataTable.defaults, {
+        responsive: true
+    } );
+    $(document).ready(function() {
+        $('#example1').DataTable();
+        } );
+        $('#example1').dataTable( {
+          "pageLength": 5
+        } );
+</script>
+<script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+</script>
 <script>
     $(function(){
      var myClick = $('[data-toggle="collapse"]');

@@ -385,7 +385,7 @@
                                         <li><a href="https://staging.mylocal3dprinting.com/contract/end-contract/2" class="bold">End Contract</a></li>   
                                     </ul>
                                 </div>
-                                <a class="btn btn-gradient margin-bottom margin-top-10 p-18 bold pull-right"><span class="glyphicon glyphicon-plus-sign"></span> Add Milestone</a>
+                                <a class="btn btn-gradient margin-bottom margin-top-10 p-18 bold pull-right" data-toggle="modal" data-target="#myModal-6"><span class="glyphicon glyphicon-plus-sign"></span> Add Milestone</a>
                             </div><!-- END right-content-table-head -->  
                         </div><!-- END table-head-top --> 
                         
@@ -1103,22 +1103,19 @@
             <a href=""><img src="images/logo-b.png"></a>
             <div class="socBox">
                 <a href="" class="soc-ico s1"></a>
-                <a href="" class="soc-ico s2"></a>
-                <a href="" class="soc-ico s3"></a>
-                <a href="" class="soc-ico s4"></a>
                 <a href="" class="soc-ico s5"></a>
                 <a href="" class="soc-ico s6"></a>
+                <a href="" class="soc-ico s4"></a>
+                <a href="" class="soc-ico s2"></a>
                 <a href="" class="soc-ico s7"></a>
-                <a href="" class="soc-ico s8"></a>
-                <a href="" class="soc-ico s9"></a>
                 <div class="clearN"></div>
             </div>
          </div>
      </div>
      <div class="row botCopy">
-         <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">Copyright 2015 © Tech International Pty Ltd</div>
-         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"><a href="">Privacy Policy</a></div>
-         <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a href="">Terms and Conditions</a></div>
+         <div class="col-sm-6 col-md-6 col-lg-6">Copyright 2015 © Tech International Pty Ltd</div>
+         <div class="col-sm-2 col-md-2 col-lg-2"><a href="">Privacy Policy</a></div>
+         <div class="col-sm-4 col-md-4 col-lg-4"><a href="">Terms and Conditions</a></div>
      </div>         
  
  </div>
@@ -2030,6 +2027,57 @@
                         <h4 class="modal-title">Edit Milestone</h4>
                     </div>                                        
                     <div class="modal-body">
+                        <form method="" accept-charset="" id=""><input name="_token" type="hidden" value="">
+                            
+                            <input id="milestoneID" name="" type="hidden" value="">
+                            <input name="contract_id" type="hidden" value="">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Milestone</label><br>
+                                <input placeholder="Enter Name" class="form-control" id="milestone_name" style="float:left; width: 85%;" maxlength="46" name="name" type="text" value="">
+                                <span class="counter" style="line-height:34px; margin-left:5px;">0/46</span>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Delivery Date</label>
+                                <input class="form-control dtPicker hasDatepicker" name="deliveryDate" type="text" value="" id="">
+                            </div>
+                            <div class="form-group amnt clearfix">
+                                <label for="exampleInputEmail1">Amount </label><br>
+                                <span class="curr">$</span>
+                                <input placeholder="0.00" class="form-control mil-amount" style="float:left; width: 55%" name="amount" type="text" value="">
+                                <span class="curr">AUD</span>
+                                
+                                <div class="row cartNZD wid-xs">
+                                    <div class="media">
+                                        <div class="pull-20-left title">MDL</div>
+                                        <div class="media-body price">75,510.78</div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 text">Source: Google Finance | 02.06.2015</div>
+                                </div>
+                            </div>
+                            <div class="form-group form-group-dop">
+                                <label for="exampleInputEmail1">Notes <span style="font-weight:normal;">(Optional)</span> </label>
+                                <textarea class="form-control" rows="2" name="notes" cols="50">555</textarea>
+                                <br>
+                                <div id="milestoneRemoveError"></div>
+                                <input class="btn btn-sm" type="submit" value="OK">&nbsp;
+                                <button data-href="" class="btn btn-sm deleteMilestone">Delete</button>
+                            </div>
+                            <div id="validationDiv"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clk">
+        <div class="modal fade milestonePopup" id="myModal-6" role="dialog" aria-hidden="true">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content modal-content-min modal-content-request modal-content-request-dop  modal-content-big-text">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                        <h4 class="modal-title">Add Milestone</h4>
+                    </div>                                        
+                    <div class="modal-body modal-body-dop">
                         <form method="" accept-charset="" id=""><input name="_token" type="hidden" value="">
                             
                             <input id="milestoneID" name="" type="hidden" value="">

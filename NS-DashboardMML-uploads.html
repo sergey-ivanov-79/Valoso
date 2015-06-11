@@ -37,7 +37,7 @@
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
 </head>
 
-<body class="dash-page">
+<body class="dash-page dash-page-cont">
 <div class="wrapp-row-offcanvas">
 <div class="row row-offcanvas row-offcanvas-left">
 <div class="page-wrap">
@@ -230,7 +230,7 @@
                                                         </div>
                                                         <div class="pull-right prof-sorted prof-sorted-mobile">
                                                             <div class="styled-select">
-                                                                <select data-placeholder="All" class="select2" style="">
+                                                                <select data-placeholder="All" class="js-select2" style="">
                                                                     <option value="1" selected="selected">All</option>
                                                                     <option value="2">Open</option>
                                                                     <option value="3">In progress</option>
@@ -238,7 +238,7 @@
                                                                 </select>                  
                                                             </div>
                                                             <div class="styled-select default_select wide_select">
-                                                                <select data-placeholder="All" class="select2" style="">
+                                                                <select data-placeholder="All" class="js-select2" style="">
                                                                     <option value="1" selected="selected">All</option>
                                                                     <option value="2">Projects I Created</option>
                                                                     <option value="3">Projects I am Working On</option>
@@ -893,7 +893,7 @@
                                                         </div>
                                                         <div class="pull-right prof-sorted prof-sorted-mobile">
                                                             <div class="styled-select">
-                                                                <select data-placeholder="All" class="select2" style="">
+                                                                <select data-placeholder="All" class="js-select2" style="">
                                                                     <option value="1" selected="selected">All</option>
                                                                     <option value="2">Open</option>
                                                                     <option value="3">In progress</option>
@@ -901,7 +901,7 @@
                                                                 </select>                  
                                                             </div>
                                                             <div class="styled-select default_select wide_select">
-                                                                <select data-placeholder="All" class="select2" style="">
+                                                                <select data-placeholder="All" class="js-select2" style="">
                                                                     <option value="1" selected="selected">All</option>
                                                                     <option value="2">Projects I Created</option>
                                                                     <option value="3">Projects I am Working On</option>
@@ -1816,128 +1816,146 @@
                                             </div><!-- END group-bottom-big -->
                                             <div class="wrapper-form clearfix"><!-- Begin wrapper-form -->
                                                 <div class="form-no-file"><!-- Begin form-no-file -->
-                                                    <h2 class="h2"><span class="color-blue">Media Library</span><img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="popover" data-placement="right auto" data-html="true" data-trigger="hover" data-content="<strong>Supported Formats:</strong><br/><i><strong>VIDEO:</strong> .fiv, .mp4, .webM, .ogg</i><br/><i><strong>IMAGE:</strong> .jpg, .png, .gif</i>" /> </h2>
-                                                    <div class="border-line"></div> 
-                                                    <div class="clearfix"><!-- Begin clearfix -->
-                                                        <div class="image-cont-group"><!-- Begin image-cont-group -->
-                                                            <div class="row row-5 gallery"><!-- Begin row row-5 -->
-                                                                <div class="col-xs-6 col-sm-4 col-xs-4-dop">
-                                                                    <div class="thumbnail">
-                                                                        <a href="images/p-a/img-med-big-1.png" style="max-width: 100%; max-height: 100%;" class="group1 img-responsive" title="Picture00001.jpg">
-                                                                            <div class="image-wrap">
-                                                                                <div class="image-backgr image-backgr-big" style="background-image: url(images/p-a/img-med-big-1.png);">
-                                                                                </div>
-                                                                            </div> 
-                                                                        </a>
-                                                                        <div class="mini-icons-img mini-icons-img-media">
-                                                                            <div class="clearfix">
-                                                                                <p>needforspeedlorem-dtisduisit.jpg</p>
-                                                                                <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
-                                                                                <div class="pull-right opacity-0"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-xs-6 col-sm-4 col-xs-4-dop">
-                                                                    <div class="thumbnail">
-                                                                        <a href="images/p-a/img-med-big-2.png" class="group1 img-responsive" title="Video00001.mp4">
-                                                                            <div class="image-wrap video-wrap">
-                                                                                <div class="image-backgr image-backgr-big" style="background-image: url(images/p-a/img-med-big-2.png);">
-                                                                                </div>
-                                                                            </div>
-                                                                        </a>
-                                                                        <div class="mini-icons-img">
-                                                                            <div class="clearfix">
-                                                                                <p>needforspeedlorem-dolor-raduisit.mp4</p>
-                                                                                <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1920 x 1080</span></div>
-                                                                                <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
-                                                                             </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-xs-6 col-sm-4 col-xs-4-dop">
-                                                                    <div class="thumbnail">
-                                                                        <a href="images/p-a/img-med-big-3.png" class="group1 img-responsive" title="Picture00002.jpg">
-                                                                            <div class="image-wrap">
-                                                                                <div class="image-backgr image-backgr-big" style="background-image: url(images/p-a/img-med-big-3.png);">
+                                                    <div role="tabpanel" class="tabpanel-img">
+                                                        <!-- Nav tabs -->
+                                                        <ul class="nav nav-tabs" role="tablist">
+                                                            <li role="presentation" class="active">
+                                                                <a href="#medlib" class="media-tab media-tab-1" aria-controls="medlib" role="tab" data-toggle="tab">
+                                                                    <h2 class="h2"><span class="color-blue">Media Library</span><img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="popover" data-placement="right auto" data-html="true" data-trigger="hover" data-content="<strong>Supported Formats:</strong><br/><i><strong>VIDEO:</strong> .fiv, .mp4, .webM, .ogg</i><br/><i><strong>IMAGE:</strong> .jpg, .png, .gif</i>" /> </h2>
+                                                                </a>
+                                                            </li>
+                                                            <li role="presentation">
+                                                                <a href="#compvid" class="media-tab" aria-controls="compvid" role="tab" data-toggle="tab">
+                                                                    <h2 class="h2"><span class="color-blue">Completed Videos</span><img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="popover" data-placement="right auto" data-html="true" data-trigger="hover" data-content="<strong>Supported Formats:</strong><br/><i><strong>VIDEO:</strong> .fiv, .mp4, .webM, .ogg</i><br/><i><strong>IMAGE:</strong> .jpg, .png, .gif</i>" /> </h2>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                        <!-- Tab panes -->
+                                                        <div class="tab-content">
+                                                            <div role="tabpanel" class="tab-pane active" id="medlib">
+                                                                <div class="clearfix"><!-- Begin clearfix -->
+                                                                    <div class="image-cont-group"><!-- Begin image-cont-group -->
+                                                                        <div class="row row-5 gallery"><!-- Begin row row-5 -->
+                                                                            <div class="col-xs-6 col-sm-4 col-xs-4-dop">
+                                                                                <div class="thumbnail">
+                                                                                    <a href="images/p-a/img-med-big-1.png" style="max-width: 100%; max-height: 100%;" class="group1 img-responsive" title="Picture00001.jpg">
+                                                                                        <div class="image-wrap">
+                                                                                            <div class="image-backgr image-backgr-big" style="background-image: url(images/p-a/img-med-big-1.png);">
+                                                                                            </div>
+                                                                                        </div> 
+                                                                                    </a>
+                                                                                    <div class="mini-icons-img mini-icons-img-media">
+                                                                                        <div class="clearfix">
+                                                                                            <p>needforspeedlorem-dtisduisit.jpg</p>
+                                                                                            <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
+                                                                                            <div class="pull-right opacity-0"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </a>
-                                                                        <div class="mini-icons-img">
-                                                                            <div class="clearfix">
-                                                                                <p>need-dolor-rackhameviventisduisit.jpg</p>
-                                                                                <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
-                                                                                <div class="pull-right opacity-0"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-xs-6 col-sm-4 col-xs-4-dop">
-                                                                    <div class="thumbnail">
-                                                                        <a href="images/p-a/img-med-big-4.png" class="group1 img-responsive" title="Video00002.mp4">
-                                                                            <div class="image-wrap video-wrap">
-                                                                                <div class="image-backgr image-backgr-big" style="background-image: url(images/p-a/img-med-big-4.png);">
+                                                                            <div class="col-xs-6 col-sm-4 col-xs-4-dop">
+                                                                                <div class="thumbnail">
+                                                                                    <a href="images/p-a/img-med-big-2.png" class="group1 img-responsive" title="Video00001.mp4">
+                                                                                        <div class="image-wrap video-wrap">
+                                                                                            <div class="image-backgr image-backgr-big" style="background-image: url(images/p-a/img-med-big-2.png);">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="mini-icons-img">
+                                                                                        <div class="clearfix">
+                                                                                            <p>needforspeedlorem-dolor-raduisit.mp4</p>
+                                                                                            <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1920 x 1080</span></div>
+                                                                                            <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
+                                                                                         </div>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </a>
-                                                                        <div class="mini-icons-img">
-                                                                            <div class="clearfix">
-                                                                                <p>lorem-dolor-rackhameviventisduisit.mp4</p>
-                                                                                <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1920 x 1080</span></div>
-                                                                                <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>04:30:10</span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-xs-6 col-sm-4 col-xs-4-dop">
-                                                                    <div class="thumbnail">
-                                                                        <a href="images/p-a/img-med-big-5.png" class="group1 img-responsive" title="Picture00003.jpg">
-                                                                            <div class="image-wrap">
-                                                                                <div class="image-backgr image-backgr-big" style="background-image: url(images/p-a/img-med-big-5.png);">
+                                                                            <div class="col-xs-6 col-sm-4 col-xs-4-dop">
+                                                                                <div class="thumbnail">
+                                                                                    <a href="images/p-a/img-med-big-3.png" class="group1 img-responsive" title="Picture00002.jpg">
+                                                                                        <div class="image-wrap">
+                                                                                            <div class="image-backgr image-backgr-big" style="background-image: url(images/p-a/img-med-big-3.png);">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="mini-icons-img">
+                                                                                        <div class="clearfix">
+                                                                                            <p>need-dolor-rackhameviventisduisit.jpg</p>
+                                                                                            <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
+                                                                                            <div class="pull-right opacity-0"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </a>
-                                                                        <div class="mini-icons-img">
-                                                                            <div class="clearfix">
-                                                                                <p>needforsp-dolor-raentisduisit.jpg</p>
-                                                                                <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
-                                                                                <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-xs-6 col-sm-4 col-xs-4-dop">
-                                                                    <div class="thumbnail">
-                                                                        <a href="images/p-a/img-med-big-6.png" class="group1 img-responsive" title="Picture00004.jpg">
-                                                                            <div class="image-wrap">
-                                                                                <div class="image-backgr image-backgr-big" style="background-image: url(images/p-a/img-med-big-6.png);">
+                                                                            <div class="col-xs-6 col-sm-4 col-xs-4-dop">
+                                                                                <div class="thumbnail">
+                                                                                    <a href="images/p-a/img-med-big-4.png" class="group1 img-responsive" title="Video00002.mp4">
+                                                                                        <div class="image-wrap video-wrap">
+                                                                                            <div class="image-backgr image-backgr-big" style="background-image: url(images/p-a/img-med-big-4.png);">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="mini-icons-img">
+                                                                                        <div class="clearfix">
+                                                                                            <p>lorem-dolor-rackhameviventisduisit.mp4</p>
+                                                                                            <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1920 x 1080</span></div>
+                                                                                            <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>04:30:10</span></div>
+                                                                                        </div>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
-                                                                        </a>
-                                                                        <div class="mini-icons-img">
-                                                                            <div class="clearfix">
-                                                                                <p>needforspeedlorem-dolor-ractisduisit.jpg</p>
-                                                                                <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
-                                                                                <div class="pull-right opacity-0"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20<span></span></div>
+                                                                            <div class="col-xs-6 col-sm-4 col-xs-4-dop">
+                                                                                <div class="thumbnail">
+                                                                                    <a href="images/p-a/img-med-big-5.png" class="group1 img-responsive" title="Picture00003.jpg">
+                                                                                        <div class="image-wrap">
+                                                                                            <div class="image-backgr image-backgr-big" style="background-image: url(images/p-a/img-med-big-5.png);">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="mini-icons-img">
+                                                                                        <div class="clearfix">
+                                                                                            <p>needforsp-dolor-raentisduisit.jpg</p>
+                                                                                            <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
+                                                                                            <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
                                                                             </div>
+                                                                            <div class="col-xs-6 col-sm-4 col-xs-4-dop">
+                                                                                <div class="thumbnail">
+                                                                                    <a href="images/p-a/img-med-big-6.png" class="group1 img-responsive" title="Picture00004.jpg">
+                                                                                        <div class="image-wrap">
+                                                                                            <div class="image-backgr image-backgr-big" style="background-image: url(images/p-a/img-med-big-6.png);">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="mini-icons-img">
+                                                                                        <div class="clearfix">
+                                                                                            <p>needforspeedlorem-dolor-ractisduisit.jpg</p>
+                                                                                            <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
+                                                                                            <div class="pull-right opacity-0"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20<span></span></div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div><!-- END row row-5 -->
+                                                                        <a href="#"><div class="loadmore"><p>Load More</p></div></a>
+                                                                        <div class="row row-5 dis-block-none">
+                                                                            <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-1.png" class="group1 img-responsive" title="Picture00001.jpg"><img src="images/p-a/img-med-min-1.png" alt="image"/></a></div>
+                                                                            <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-2.png" class="group1 img-responsive" title="Picture00002.jpg"><img src="images/p-a/img-med-min-2.png" alt="image"/></a></div>
+                                                                            <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-3.png" class="group1 img-responsive" title="Picture00003.jpg"><img src="images/p-a/img-med-min-3.png" alt="image"/></a></div>
                                                                         </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div><!-- END row row-5 -->
-                                                            <a href="#"><div class="loadmore"><p>Load More</p></div></a>
-                                                            <div class="row row-5 dis-block-none">
-                                                                <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-1.png" class="group1 img-responsive" title="Picture00001.jpg"><img src="images/p-a/img-med-min-1.png" alt="image"/></a></div>
-                                                                <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-2.png" class="group1 img-responsive" title="Picture00002.jpg"><img src="images/p-a/img-med-min-2.png" alt="image"/></a></div>
-                                                                <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-3.png" class="group1 img-responsive" title="Picture00003.jpg"><img src="images/p-a/img-med-min-3.png" alt="image"/></a></div>
+                                                                        <div class="row row-5 dis-block-none">
+                                                                            <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-4.png" class="group1 img-responsive" title="Picture00004.jpg"><img src="images/p-a/img-med-min-4.png" alt="image"/></a></div>
+                                                                            <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-5.png" class="group1 img-responsive" title="Picture00005.jpg"><img src="images/p-a/img-med-min-5.png" alt="image"/></a></div>
+                                                                            <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-6.png" class="group1 img-responsive" title="Picture00006.jpg"><img src="images/p-a/img-med-min-6.png" alt="image"/></a></div>
+                                                                        </div>
+                                                                    </div><!-- END image-cont-group -->
+                                                                </div><!-- END clearfix -->
                                                             </div>
-                                                            <div class="row row-5 dis-block-none">
-                                                                <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-4.png" class="group1 img-responsive" title="Picture00004.jpg"><img src="images/p-a/img-med-min-4.png" alt="image"/></a></div>
-                                                                <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-5.png" class="group1 img-responsive" title="Picture00005.jpg"><img src="images/p-a/img-med-min-5.png" alt="image"/></a></div>
-                                                                <div class="col-xs-4 col-xs-4-dop"><a href="images/p-a/img-med-big-6.png" class="group1 img-responsive" title="Picture00006.jpg"><img src="images/p-a/img-med-min-6.png" alt="image"/></a></div>
-                                                            </div>
-                                                        </div><!-- END image-cont-group -->
-                                                    </div><!-- END clearfix -->
-                                                </div><!-- END form-no-file -->
+                                                            <div role="tabpanel" class="tab-pane" id="compvid">...</div>
+                                                        </div>
+                                                    </div></div><!-- END form-no-file -->
                                             </div><!-- END wrapper-form -->
                                         </div><!-- END wrapp-myContent -->
                                     </div><!-- END row -->
@@ -2244,14 +2262,11 @@
             <a href="#"><img src="images/p-a/logo-footer.png"/></a>
             <div class="socBox">
                 <a href="" class="soc-ico s1"></a>
-                <a href="" class="soc-ico s2"></a>
-                <a href="" class="soc-ico s3"></a>
-                <a href="" class="soc-ico s4"></a>
                 <a href="" class="soc-ico s5"></a>
                 <a href="" class="soc-ico s6"></a>
+                <a href="" class="soc-ico s4"></a>
+                <a href="" class="soc-ico s2"></a>
                 <a href="" class="soc-ico s7"></a>
-                <a href="" class="soc-ico s8"></a>
-                <a href="" class="soc-ico s9"></a>
                 <div class="clearN"></div>
             </div>
          </div>
@@ -2396,12 +2411,11 @@
         }
        
     });
-    $('.select2').select2({
+    $('.js-select2').select2({
         minimumResultsForSearch: -1
     });
 });
 </script>
-
 <!--
 <script>
     $(function(){

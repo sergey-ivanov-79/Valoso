@@ -523,7 +523,7 @@ footer {
   background-position:0px 0px;
 }
 #footer .socBox .s1:HOVER{
-  background-position:30px -30px;
+  background-position:0px -30px;
 }
 #footer .socBox .s2{
   background-position:-30px 0px;
@@ -930,3 +930,5 @@ footer {
   }
 
 }
+/* for footer */
+#footer .botLink ul li a:hover, #footer .botCopy div a:hover {  color: #4DCBFF;}
