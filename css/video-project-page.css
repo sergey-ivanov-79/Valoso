@@ -2325,6 +2325,9 @@ div#link-profile-modal .modal-footer button:hover {
   .video-des-wrap > h4 > label, .video-des-wrap > p > label {
     width: 160px;
   }
+  label.span-height {
+    height: 61px;
+  }
   .video-span-wrap > span {
     font-size: 14px;
   }
@@ -2530,11 +2533,11 @@ div#link-profile-modal .modal-footer button:hover {
     position: relative;
   }
   .video-upload,.project-files {
-    left: -100%;
+    left: 100%;
     position: relative;
   }
   .description-right-down {
-    left: -100%;
+    left: 100%;
     position: relative;
   }
   .video-project-director .container > p {
@@ -3038,9 +3041,15 @@ div#link-profile-modal .modal-footer button:hover {
     margin-top: -8px;
   }
   span.video-dir-edi-new {
-    width: 35%!important;
+    width: 40%!important;
     padding-left: 8px!important;
     padding-right: 0!important;
+  }
+  .video-dir > span, .video-edi > span {
+    width: 40%;
+  }
+  .video-dir h5, .video-edi h5 {
+    width: 60%;
   }
   .video-project-form .vp-form-left .vp-form > div:nth-of-type(1) .input-group, .video-project-form .vp-form > div:nth-of-type(1) ul {
     width: 275px!important;
@@ -3074,6 +3083,12 @@ div#link-profile-modal .modal-footer button:hover {
   }
   .share-clicked {
     left: -6px;
+  }
+  div#download-project-files-modal .modal-footer button, div#delete-project-files-modal .modal-footer button, div#send-project-files-modal .modal-footer button {
+    width: 140px;
+  }
+  div#download-project-files-modal .modal-body > p, div#delete-project-files-modal .modal-body > p, div#send-project-files-modal .modal-body > p {
+    font-size: 19px;
   }
 }/* 320px End */
 @media only screen and (max-device-width:  1024px) and (orientation : landscape) {
