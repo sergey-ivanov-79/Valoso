@@ -689,7 +689,7 @@
                                                                                     </div> 
                                                                                 </div>
                                                                             <!--/a-->
-                                                                            <div class="mini-icons-img">
+                                                                            <div class="mini-icons-img mini-icons-img-media">
                                                                                 <div class="clearfix">
                                                                                     <div class="pull-left float-n"><img src="images/p-a/progects-icon-1.png" class="pos-rel"/><span>9999999</span></div>
                                                                                     <div class="pull-right float-n"><i class="fa fa-clock-o pos-rel"></i><span>00:00:00</span></div>
@@ -931,7 +931,7 @@
                                                                                     </div> 
                                                                                 </div>
                                                                             <!--/a-->
-                                                                            <div class="mini-icons-img">
+                                                                            <div class="mini-icons-img mini-icons-img-media">
                                                                                 <div class="clearfix">
                                                                                     <div class="pull-left float-n"><img src="images/p-a/progects-icon-1.png" class="pos-rel"/><span>9999999</span></div>
                                                                                     <div class="pull-right float-n"><i class="fa fa-clock-o pos-rel"></i><span>00:00:00</span></div>
@@ -1136,7 +1136,7 @@
                                                                                     </div> 
                                                                                 </div>
                                                                             <!--/a-->
-                                                                            <div class="mini-icons-img">
+                                                                            <div class="mini-icons-img mini-icons-img-media">
                                                                                 <div class="clearfix">
                                                                                     <div class="pull-left float-n"><img src="images/p-a/progects-icon-1.png" class="pos-rel"/><span>9999999</span></div>
                                                                                     <div class="pull-right float-n"><i class="fa fa-clock-o pos-rel"></i><span>00:00:00</span></div>
@@ -1328,7 +1328,7 @@
                                                                                     </div> 
                                                                                 </div>
                                                                             <!--/a-->
-                                                                            <div class="mini-icons-img">
+                                                                            <div class="mini-icons-img mini-icons-img-media">
                                                                                 <div class="clearfix">
                                                                                     <div class="pull-left float-n"><img src="images/p-a/progects-icon-1.png" class="pos-rel"/><span>9999999</span></div>
                                                                                     <div class="pull-right float-n"><i class="fa fa-clock-o pos-rel"></i><span>00:00:00</span></div>
@@ -1544,7 +1544,7 @@
                                                                                     </div> 
                                                                                 </div>
                                                                             <!--/a-->
-                                                                            <div class="mini-icons-img">
+                                                                            <div class="mini-icons-img mini-icons-img-media">
                                                                                 <div class="clearfix">
                                                                                     <div class="pull-left float-n"><img src="images/p-a/progects-icon-1.png" class="pos-rel"/><span>9999999</span></div>
                                                                                     <div class="pull-right float-n"><i class="fa fa-clock-o pos-rel"></i><span>00:00:00</span></div>
@@ -1748,16 +1748,20 @@
                                             <div class="group-bottom-big">
                                                 <div class="row">
                                                     <div class="col-xs-6 padd-0">
-                                                       <div class="browse-wrap">
-                                                            <div class="title"><img src="images/video-project/upload-icon.png" alt="" />Choose files <br/> from media <span class="dis-xs-none">library</span></div>
-                                                            <input type="file" name="upload" class="upload" data-toggle="modal" data-target="#download-project-files-modal" title="Choose a file to upload">
+                                                       <div class="wrapper-browse-wrap">
+                                                           <div class="browse-wrap" data-toggle="modal" data-target="#download-project-files-modal" >
+                                                                <div class="title"><img src="images/video-project/upload-icon.png" alt="" />Choose files <br/> from media <span class="dis-xs-none">library</span></div>
+                                                                <input type="file" name="upload" class="upload" title="Choose a file to upload">
+                                                           </div>
                                                         </div>
                                                         <span class="upload-path"></span>
                                                     </div>
                                                     <div class="col-xs-6 padd-0">
-                                                         <div class="browse-wrap">
-                                                            <div class="title"><img src="images/video-project/upload-icon.png" alt="" />Upload from <br/>My computer</div>
-                                                            <input type="file" name="upload" class="upload" title="Choose a file to upload">
+                                                         <div class="wrapper-browse-wrap">
+                                                            <div class="browse-wrap" data-toggle="modal" data-target="#link-profile-modal">
+                                                                <div class="title"><img src="images/video-project/upload-icon.png" alt="" />Upload from <br/>My computer</div>
+                                                                <input type="file" name="upload" class="upload" title="Choose a file to upload">
+                                                            </div>
                                                         </div>
                                                         <span class="upload-path"></span>
                                                     </div>
@@ -1797,7 +1801,7 @@
                                                 <div class="row">
                                                     <div class="col-xs-6 padd-0">
                                                         <div class="wrapper-browse-wrap">
-                                                            <div class="browse-wrap">
+                                                            <div class="browse-wrap"  data-toggle="modal" data-target="#link-profile-modal">
                                                                 <div class="title"><img src="images/video-project/upload-icon.png" alt="" /><p>Upload from <br/>My computer</p></div>
                                                                 <input type="file" name="upload" class="upload" title="Choose a file to upload">
                                                             </div>
@@ -1816,7 +1820,7 @@
                                             </div><!-- END group-bottom-big -->
                                             <div class="wrapper-form clearfix"><!-- Begin wrapper-form -->
                                                 <div class="form-no-file"><!-- Begin form-no-file -->
-                                                    <div role="tabpanel" class="tabpanel-img">
+                                                    <div role="tabpanel" class="tabpanel-img"><!-- Begin tabpanel-img -->
                                                         <!-- Nav tabs -->
                                                         <ul class="nav nav-tabs" role="tablist">
                                                             <li role="presentation" class="active">
@@ -1831,7 +1835,7 @@
                                                             </li>
                                                         </ul>
                                                         <!-- Tab panes -->
-                                                        <div class="tab-content">
+                                                        <div class="tab-content"><!-- Begin tab-content --> 
                                                             <div role="tabpanel" class="tab-pane active" id="medlib">
                                                                 <div class="clearfix"><!-- Begin clearfix -->
                                                                     <div class="image-cont-group"><!-- Begin image-cont-group -->
@@ -1849,7 +1853,7 @@
                                                                                             <p>needforspeedlorem-dtisduisit.jpg</p>
                                                                                             <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
                                                                                             <div class="pull-right opacity-0"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
-                                                                                        </div>
+                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -1861,7 +1865,7 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </a>
-                                                                                    <div class="mini-icons-img">
+                                                                                    <div class="mini-icons-img mini-icons-img-media">
                                                                                         <div class="clearfix">
                                                                                             <p>needforspeedlorem-dolor-raduisit.mp4</p>
                                                                                             <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1920 x 1080</span></div>
@@ -1878,7 +1882,7 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </a>
-                                                                                    <div class="mini-icons-img">
+                                                                                    <div class="mini-icons-img mini-icons-img-media">
                                                                                         <div class="clearfix">
                                                                                             <p>need-dolor-rackhameviventisduisit.jpg</p>
                                                                                             <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
@@ -1895,7 +1899,7 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </a>
-                                                                                    <div class="mini-icons-img">
+                                                                                    <div class="mini-icons-img mini-icons-img-media">
                                                                                         <div class="clearfix">
                                                                                             <p>lorem-dolor-rackhameviventisduisit.mp4</p>
                                                                                             <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1920 x 1080</span></div>
@@ -1912,7 +1916,7 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </a>
-                                                                                    <div class="mini-icons-img">
+                                                                                    <div class="mini-icons-img mini-icons-img-media">
                                                                                         <div class="clearfix">
                                                                                             <p>needforsp-dolor-raentisduisit.jpg</p>
                                                                                             <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
@@ -1929,7 +1933,7 @@
                                                                                             </div>
                                                                                         </div>
                                                                                     </a>
-                                                                                    <div class="mini-icons-img">
+                                                                                    <div class="mini-icons-img mini-icons-img-media">
                                                                                         <div class="clearfix">
                                                                                             <p>needforspeedlorem-dolor-ractisduisit.jpg</p>
                                                                                             <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
@@ -1953,9 +1957,79 @@
                                                                     </div><!-- END image-cont-group -->
                                                                 </div><!-- END clearfix -->
                                                             </div>
-                                                            <div role="tabpanel" class="tab-pane" id="compvid">...</div>
-                                                        </div>
-                                                    </div></div><!-- END form-no-file -->
+                                                            <div role="tabpanel" class="tab-pane" id="compvid"><!-- Begin #compvid --> 
+                                                                <div class="clearfix"><!-- Begin clearfix -->    
+                                                                    <div class="image-cont-group"><!-- Begin image-cont-group -->
+                                                                        <div class="row row-5 gallery"><!-- Begin row row-5 -->
+                                                                            <div class="col-xs-6 col-sm-4 col-xs-4-dop"><!-- Begin col-xs-6 col-sm-4 col-xs-4-dop -->
+                                                                                <div class="thumbnail">
+                                                                                    <a href="images/p-a/img-med-big-1.png" style="max-width: 100%; max-height: 100%;" class="group1 img-responsive" title="Picture00001.jpg">
+                                                                                        <div class="image-wrap">
+                                                                                            <div class="image-backgr image-backgr-big" style="background-image: url(images/p-a/img-med-big-1.png);">
+                                                                                            </div>
+                                                                                        </div> 
+                                                                                    </a>
+                                                                                    <div class="mini-icons-img mini-icons-img-media">
+                                                                                        <div class="clearfix">
+                                                                                            <p>needforspeedlorem-dtisduisit.jpg</p>
+                                                                                            <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
+                                                                                            <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
+                                                                                            <div class="share-button clearfix">
+                                                                                                Share<i class="fa fa-share-alt"></i>
+                                                                                                <div class="share-clicked">
+                                                                                                  <button class="share-fb"><i class="fa fa-facebook"></i></button>
+                                                                                                  <button class="share-google"><i class="fa fa-google-plus"></i></button>
+                                                                                                  <button class="share-twitter"><i class="fa fa-twitter"></i></button>
+                                                                                                  <button class="share-youtube"><i class="fa fa-youtube-play"></i></button>
+                                                                                                  <button class="share-vimeo"><img src="images/video-project/vimeo.png" alt="" /></button>
+                                                                                                  <button class="share-flickr"><i class="fa fa-flickr"></i></button>
+                                                                                                  <button class="share-tumblr"><i class="fa fa-tumblr"></i></button>
+                                                                                                  <button class="share-pinterest"><i class="fa fa-pinterest"></i></button>
+                                                                                                </div><!-- /.share-clicked -->
+                                                                                            </div><!-- /.share-button -->
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- END col-xs-6 col-sm-4 col-xs-4-dop -->
+                                                                            <div class="col-xs-6 col-sm-4 col-xs-4-dop"><!-- Begin col-xs-6 col-sm-4 col-xs-4-dop -->
+                                                                                <div class="thumbnail">
+                                                                                    <a href="images/p-a/img-med-big-2.png" class="group1 img-responsive" title="Video00001.mp4">
+                                                                                        <div class="image-wrap video-wrap">
+                                                                                            <div class="image-backgr image-backgr-big" style="background-image: url(images/p-a/img-med-big-2.png);">
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <div class="mini-icons-img mini-icons-img-media">
+                                                                                        <div class="clearfix">
+                                                                                            <p>needforspeedlorem-dtisduisit.jpg</p>
+                                                                                            <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
+                                                                                            <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
+                                                                                            <div class="share-button clearfix">
+                                                                                                Share<i class="fa fa-share-alt"></i>
+                                                                                                <div class="fon-share-clicked">
+                                                                                                    <div class="share-clicked">
+                                                                                                      <button class="share-fb"><i class="fa fa-facebook"></i></button>
+                                                                                                      <button class="share-google"><i class="fa fa-google-plus"></i></button>
+                                                                                                      <button class="share-twitter"><i class="fa fa-twitter"></i></button>
+                                                                                                      <button class="share-youtube"><i class="fa fa-youtube-play"></i></button>
+                                                                                                      <button class="share-vimeo"><img src="images/video-project/vimeo.png" alt="" /></button>
+                                                                                                      <button class="share-flickr"><i class="fa fa-flickr"></i></button>
+                                                                                                      <button class="share-tumblr"><i class="fa fa-tumblr"></i></button>
+                                                                                                      <button class="share-pinterest"><i class="fa fa-pinterest"></i></button>
+                                                                                                    </div><!-- /.share-clicked -->
+                                                                                                </div>
+                                                                                            </div><!-- /.share-button -->
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div><!-- END col-xs-6 col-sm-4 col-xs-4-dop -->
+                                                                        </div><!-- END row row-5 -->
+                                                                    </div><!-- END image-cont-group -->
+                                                                </div><!-- END clearfix --> 
+                                                            </div><!-- END #compvid --> 
+                                                        </div><!-- END tab-content -->
+                                                    </div><!-- END tabpanel-img -->
+                                                </div><!-- END form-no-file -->
                                             </div><!-- END wrapper-form -->
                                         </div><!-- END wrapp-myContent -->
                                     </div><!-- END row -->
@@ -2361,7 +2435,40 @@
         </div><!-- END  modal-content -->
     </div><!-- EndND  modal-dialog -->
 </div><!-- /.download-project-files-modal -->
-
+<div id="link-profile-modal" data-toggle="link-profile-modal" class="modal fade ">
+    <div class="modal-dialog modal-dialog-proj">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Link your file to a video project <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="popover" data-placement="right auto" data-html="true" data-trigger="hover" data-content="Linking files to a project will restrict the Video Director from downloading your file until they have released the funds to the milestone" data-original-title="" title=""></h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <h5>Please select which video project you want to link your file to</h5>
+                <select class="modal-block-visible link-select">
+                    <option value="0">videoprojectname01</option>
+                    <option value="1">videoprojectname02</option>
+                    <option value="2">videoprojectname03</option>
+                    <option value="3">videoprojectname04</option>
+                    <option value="4">videoprojectname05</option>
+                </select>
+                <h4 class="modal-block-visible link-milestones">Link your file to a milestone<img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="popover" data-placement="right auto" data-html="true" data-trigger="hover" data-content="Link milestones" data-original-title="" title=""></h4>
+                <h5 class="modal-block-visible">Please select the contract and the milestone</h5>
+                <p class="modal-block-visible">By selecting a milestone, a watermark will be place on your file until the Video Director has released the fund to the milestone. </p>
+                <select class="link-select">
+                    <option value="0">Do not link</option>
+                    <option value="1">Project-1</option>
+                    <option value="2">Project-2</option>
+                    <option value="3">Project-3</option>
+                    <option value="4">Project-4</option>
+                </select>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /#link-profile-modal -->
 <script src="js/jquery-1.11.2.min.js"></script>
 
 <script>
@@ -2706,5 +2813,22 @@ $('.gallery').each(function() { // the containers for all your galleries
         });
     </script>    
 <!-- Calendar End -->
+<script>
+    $('.share-button').click(function(){
+		$(this).parents('.mini-icons-img').find('.share-clicked').toggleClass('icons');
+	});
+</script>
+<script>
+$( ".link-select" )
+  .change(function () {
+        if ($(this).val()>0){
+            $('#link-profile-modal').addClass('visible-project');
+        }
+        else {
+            $('#link-profile-modal').removeClass('visible-project');
+        }
+    });
+</script>
+<script src="js/video-project-page.js"></script>
 </body>
 </html>
