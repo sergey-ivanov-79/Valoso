@@ -507,7 +507,7 @@ div#download-project-files-modal .modal-body > p.select-fil {
     /*position: relative;
     top: 5px;*/
     margin-top: 5px;
-    margin-right: 5px;        
+    margin-right: 1px;        
 }
 button.browse-wrap {
     background-color: #555555;
@@ -549,7 +549,7 @@ button.browse-wrap {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px; 
 }
-.image-cont-group:hover .video-wrap:after {
+.image-wrap:hover.video-wrap:after {
     content: "";
     position: absolute;
     display: block;
@@ -594,6 +594,54 @@ button.browse-wrap {
 .wrapper-form-con .nav-tabs > li > a.media-tab > h2 {
     margin-bottom: 0;
 }
+.image-cont-group .mini-icons-img .share-clicked {
+    left: -2px;
+}
+.image-cont-group .mini-icons-img .share-button {
+    margin-left: 0;
+}
+.mini-icons-img .share-button i.fa {
+    font-size: 18px;
+}
+#link-profile-modal .modal-header {
+    border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -moz-border-radius: 5px 5px 0 0;
+}
+#link-profile-modal .modal-footer {
+    border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -moz-border-radius: 0 0 5px 5px;
+}
+.share-clicked.icons { 
+    display: block;
+}
+#link-profile-modal .popover { width: 205px;}   
+.modal-block-visible { display: none;} 
+.visible-project .modal-block-visible { display: block !important;}
+div#link-profile-modal .modal-footer button:hover { 
+    border-color: #5dff60; 
+    background: none #fff;
+}
+div#link-profile-modal .modal-dialog-proj h4, 
+div#link-profile-modal .modal-dialog-proj .modal-body h5 {
+    font-weight: 600;
+}
+div#link-profile-modal .modal-dialog-proj .modal-body {
+    background: none #fff;
+}
+div#link-profile-modal .modal-dialog-proj .modal-body {
+    padding: 20px 20px 40px !important;
+}
+div#link-profile-modal .modal-body select.link-select { 
+    margin: 20px auto;
+    width: 326px;
+    height: 45px;
+}
+h4.link-milestones > img { margin-left: 10px;}
+div#link-profile-modal h4.link-milestones { float: none;}
+div#link-profile-modal .modal-dialog.modal-dialog-proj { width: 600px;}
+.fon-share-clicked { background-color: #fff;}
 /* END added */
 /* END My Media Library */
 
@@ -660,6 +708,10 @@ button.browse-wrap {
     }
     .mini-icons-img img { height: 25px;} 
     .mini-icons-img span { font-size: 14px;}
+    .mini-icons-img button.share-vimeo img { height: 18px;}
+    .mini-icons-img .share-clicked button { height: 23px; width: 23px; line-height: 25px;}
+    .mini-icons-img .share-button i.fa { font-size: 16px;}
+    .mini-icons-img.mini-icons-img-media .share-clicked.icons { width: 205px;}
     /* END My Media Library */
 }
 @media (max-width: 767px) {
@@ -669,7 +721,7 @@ button.browse-wrap {
     .dash-page-cont .container {
       padding: 0 !important;
     }
-    .headroom-dop { 
+    .headroom--not-top {
         display: block;
         position: fixed;
         top: -55px;
@@ -828,7 +880,8 @@ button.browse-wrap {
     .group-bottom-big .browse-wrap, .wrapp-myContent .video-download { margin: 0;}
     .group-bottom-big .browse-wrap { padding: 5px;}
     .wrapper-browse-wrap { margin-left: 0; margin-right: 0;}
-    
+    div#link-profile-modal .modal-dialog.modal-dialog-proj { width: auto;}
+    div#link-profile-modal .modal-body select.link-select { width: 200px;}
     /* END My Media Library */
 }
 @media (max-width: 767px) {
@@ -907,6 +960,9 @@ button.browse-wrap {
     .group-bottom-big .browse-wrap div.title { width: 170px;}
     /*.wrapp-myContent { padding-left: 0; padding-right: 0;}*/
     .mini-icons-img { font-size: 14px;}
+    .image-cont-group .mini-icons-img .share-clicked {
+        top: -30px;
+    }
     /* END My Media Library */
 }
 @media (max-width: 610px) and (min-width: 479px){
@@ -915,10 +971,23 @@ button.browse-wrap {
     .content-block .right-cont { padding-top: 5px;}
     .wrapp-content-block .content-block { padding-bottom: 5px;}
     .text-info p {  font-size: 12px;}
+    .mini-icons-img span {
+        font-size: 13px;
+    }
 }
 @media (max-width: 567px) and (min-width: 479px){
     .wide_select .select2-container { width: 130px !important;}
     .btn.btn_blue { padding: 6px 12px;}
+}
+@media (max-width: 568px) {
+    div#link-profile-modal .modal-dialog-proj .modal-body  h5 {
+      font-size: 14px;
+    }
+    div#link-profile-modal .modal-dialog-proj .modal-body {
+      padding: 10px !important;
+    }
+    div#link-profile-modal .modal-body select.link-select { margin: 10px auto;}
+    div#link-profile-modal .modal-dialog-proj .modal-body h5 { margin-top: 5px;}
 }
 @media (max-width: 479px) {
     /*.nav-tabs.nav-icon-based > li > a {
@@ -1052,6 +1121,19 @@ button.browse-wrap {
     .tabpanel-img .nav-tabs > li { 
         float: none;
         margin-bottom: 0px; 
+    }
+    div#link-profile-modal .modal-dialog-proj h4 { font-size: 14px;}
+    .modal .modal-dialog-proj .close { font-size: 30px;}
+    div#link-profile-modal .modal-dialog-proj .modal-header { padding: 20px 10px 50px;}
+    select.link-select option { font-size: 16px;}
+    .wrapper-form-con .nav-tabs > li > a.media-tab { margin-bottom: 0px;}
+    .mini-icons-img button.share-vimeo img { height: 18px;}
+    .mini-icons-img .share-clicked button { height: 30px; width: 30px; line-height: 32px;}
+    .mini-icons-img .share-button i.fa { font-size: 18px;}
+    .mini-icons-img.mini-icons-img-media .share-clicked.icons { width: 130px;}
+    .image-cont-group .mini-icons-img .share-clicked {
+        bottom: 38px;
+        top: auto;
     }
     /* END added */
     /* END My Media Library */
