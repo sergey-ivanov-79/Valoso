@@ -1885,6 +1885,9 @@ div#link-profile-modal .modal-footer button:hover {
 .share-button:hover button {
   color: white!important;
 }
+a.anchor.upArrow {
+  z-index: 99999999999;
+}
 @media (min-width: 1000px) {
   #view-screensh .screen-multi,#view-screensh-dir .screen-multi {
     padding: 15px 15px!important;
@@ -2542,6 +2545,9 @@ div#link-profile-modal .modal-footer button:hover {
   }
   .video-project-director .container > p {
     position: relative;
+  }
+  .video-upload {
+    margin-top: 0;
   }
 }/* 640px End */
 @media (max-width: 480px) {
