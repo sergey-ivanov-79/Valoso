@@ -36,14 +36,15 @@ $(document).ready(function(){
 		$('#video-collapseall').css('color','#4b8dcb');
 		$('.video-list').removeClass('video-toggle-collapsed');
 		$('.single-video-featuredimg,.single-video-description').fadeIn();
-		$('.project-more-opt.dropdown > button').css("display","none")
+		$('.project-more-opt.dropdown > button').css("display","none");
 	});
 	$('#video-collapseall').click(function() {
 		$(this).css('color','#474747');
 		$('#video-expandall').css('color','#4b8dcb');
 		$('.video-list').addClass('video-toggle-collapsed');
 		$('.single-video-featuredimg,.single-video-description').fadeOut();
-		$('.project-more-opt.dropdown > button').css("display","block")
+		$('.project-more-opt.dropdown > button').css("display","block");
+		$('.single-video-hover').hide();
 	});
 	/* Responsive menu */
 	$('.mobile-tabs-menu button:nth-of-type(1)').click(function(){
@@ -53,6 +54,9 @@ $(document).ready(function(){
 		   $('.video-project-director .container > p,.video-description-left,.description-right-up').addClass('vidljiv');
 		   $('.vidljiv').css('left','-100%');
 		   $('.vidljiv').animate({'left':'0%'}, 400);
+		}
+		else if ($('.mobile-tabs-menu button:nth-of-type(1)').hasClass('active')){
+
 		}
 		else {
 		   $('.vidljiv').animate({'left':'100%'}, 400);
@@ -69,6 +73,9 @@ $(document).ready(function(){
 		   $('.vidljiv').css('left','-100%');
 		   $('.vidljiv').animate({'left':'0%'}, 400);
 		}
+		else if ($('.mobile-tabs-menu button:nth-of-type(2)').hasClass('active')){
+			
+		}
 		else {
 		   $('.vidljiv').animate({'left':'100%'}, 400);
 		   $('.vidljiv').removeClass('vidljiv');
@@ -77,10 +84,15 @@ $(document).ready(function(){
 		}
 	});
 	$('.mobile-tabs-menu button:nth-of-type(3)').click(function(){
-		   $('.vidljiv').animate({'left':'100%'}, 400);
-		   $('.vidljiv').removeClass('vidljiv');
-		   $('.video-upload,.project-files').addClass('vidljiv');
-		   $('.vidljiv').animate({'left':'0%'}, 400);
+		if ($('.mobile-tabs-menu button:nth-of-type(3)').hasClass('active')){
+			
+		}
+		else {
+			$('.vidljiv').animate({'left':'100%'}, 400);
+		   	$('.vidljiv').removeClass('vidljiv');
+		   	$('.video-upload,.project-files').addClass('vidljiv');
+		   	$('.vidljiv').animate({'left':'0%'}, 400);
+		}
 	});
 	$(".mobile-tabs-menu button").click(function(){
 		$(".mobile-tabs-menu button").removeClass("active");
