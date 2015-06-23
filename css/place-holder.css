@@ -1,0 +1,216 @@
+.wrapper-slider { position: relative;}
+.inner-info-p { 
+    position: fixed;
+    width: 100%; 
+    height: 100%; 
+    z-index: 3;
+    top: 40%;
+    margin-top: -150px; 
+}
+.wrapper-slider .carousel-inner .item { 
+    background-size: cover; 
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0;
+    bottom: 0;
+    z-index: 1;     
+}
+.intro-1-home-2.dop { padding-top: 0px;}
+.frame-rec { 
+    position: absolute;
+    z-index: 2;
+    background-size: cover;
+    width: 150px;
+    height: 166px;
+    background-repeat: no-repeat;
+}
+.frame-rec-1 {
+    top: 10px;
+    left: 10px;
+    bottom: auto;
+    right: auto;
+}
+.frame-rec-2 {
+    top: 10px;
+    right: 10px;
+    bottom: auto;
+    left: auto;
+}
+.frame-rec-3 {
+    top: auto;
+    left: 10px;
+    bottom: 10px;
+    right: auto;
+}
+.frame-rec-4 {
+    top: auto;
+    left: auto;
+    right: 10px;
+    bottom: 10px;
+}
+.frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    height: 100%;
+    z-index: 2;
+}
+.p-1, .p-2, .p-3 { font-size: 18px;}
+.p-1 { padding-top: 50px;}
+.p-2 { padding-top: 30px;}
+.p-3 { padding-top: 70px;}
+.email-address {
+    max-width: 336px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.email-address input[type="text"] {
+    font-size: 14px;
+    min-height: 24px;
+    padding-left: 10px;
+    border: 0;
+    margin-right: 10px;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    font-size: 16px;
+    color: #ccc; 
+    font-style: normal;
+    width: 290px;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    border-radius: 5px !important;
+    height: 44px;
+}
+.email-address button[type="button"] {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 11px;
+}
+.btn-submit-default {
+    background-color: #00aeef;
+    border: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    width: 110px;
+    height: 44px;
+}
+.wrapper-timer-table {
+    width: 262px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+.colorDefinition {
+    background: none transparent !important;
+    border: none;
+}
+.style { 
+    font-weight: normal;
+}
+.wrapper-timer-table table tr td {
+    font-size: 14px;
+}
+.size_lg { 
+    font-size: 50px;
+}
+.td-time {
+    width:60px;
+    text-align:center;
+}
+.pos-relativ { position: relative;}
+.wrapper-timer-table { 
+    position: fixed; 
+    bottom: 10px; 
+    left: 38%;
+}
+.days-left { 
+    position: absolute; 
+    bottom: 10px; 
+    right: -60px;
+}
+@media (max-width: 768px){
+    .frame-rec {
+        width: 100px;
+        height: 110px;
+    }
+    .email-address {
+      max-width: 270px;
+    }
+    .email-address input[type="text"] {
+        width: 200px;
+        font-size: 14px;
+        height: 34px;
+    }
+    .email-address button[type="button"] {
+        font-size: 14px;
+        width: 70px;
+        height: 34px;
+    }
+    .wrapper-timer-table {
+        margin-top: 160px;
+    }
+    .size_lg { font-size: 40px;}
+    .td-time {
+        width:60px;
+    }
+    .p-1, .p-2, .p-3 { font-size: 16px;}
+    .days-left { 
+        position: absolute; 
+        bottom: 10px; 
+        right: -50px;
+    }
+    .logo-big { width: 200px;}
+    .p-1 {
+        padding-top: 15px;
+    }
+    .p-2 {
+        padding-top: 15px;
+    }
+    .p-3 {
+        padding-top: 15px;
+    }
+    .email-address {
+      padding-top: 10px;
+    }
+    .wrapper-timer-table {
+      margin-top: 0px;
+    }
+    .wrapper-timer-table { position: fixed; bottom: 10px; left: 30%;}
+    .days-left { right: -30px;}
+    .inner-info-p { top: 50%;}
+}
+@media (max-width: 768px) and (min-width: 479px) {
+    .p-1, .p-2, .p-3 {
+      font-size: 14px;
+    }
+}
+@media (max-width: 479px){
+    .frame-rec {
+        width: 80px;
+        height: 88px;
+    }
+    .email-address input[type="text"] {
+        width: 180px;
+    }
+    .p-1, .p-2, .p-3 { font-size: 14px;}
+    .wrapper-timer-table {
+        margin-top: 120px;
+    }
+    .days-left {
+        bottom: 5px;
+        right: 55px;
+    }
+    .size_lg {
+        font-size: 28px;
+    }
+    .logo-big { width: 160px;}
+    .td-time { display: none;}
+    
+}
+.color-white { color: #fff;}
