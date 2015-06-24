@@ -184,7 +184,7 @@
     .wrapper-timer-table {
       margin-top: 0px;
     }
-    .wrapper-timer-table { position: fixed; bottom: 10px; left: 20%; right: 20%;}
+    .wrapper-timer-table { position: fixed; bottom: 2%; left: 20%; right: 20%;}
     .days-left { right: -30px;}
     .inner-info-p { top: 50%;}
 }
@@ -202,9 +202,6 @@
         width: 180px;
     }
     .p-1, .p-2, .p-3 { font-size: 14px;}
-    .wrapper-timer-table {
-        margin-top: 120px;
-    }
     .days-left {
         bottom: 5px;
         right: 55px;
@@ -214,6 +211,6 @@
     }
     .logo-big { width: 160px;}
     .td-time { display: none;}
-    .wrapper-timer-table { bottom: 100px;}
+    .wrapper-timer-table { bottom: 10%;}
 }
 .color-white { color: #fff;}
