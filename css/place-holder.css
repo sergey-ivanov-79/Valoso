@@ -127,7 +127,8 @@
 .wrapper-timer-table { 
     position: fixed; 
     bottom: 10px; 
-    left: 38%;
+    left: 35%;
+    right: 35%;    
 }
 .days-left { 
     position: absolute; 
@@ -183,7 +184,7 @@
     .wrapper-timer-table {
       margin-top: 0px;
     }
-    .wrapper-timer-table { position: fixed; bottom: 10px; left: 30%;}
+    .wrapper-timer-table { position: fixed; bottom: 10px; left: 20%; right: 20%;}
     .days-left { right: -30px;}
     .inner-info-p { top: 50%;}
 }
@@ -213,6 +214,6 @@
     }
     .logo-big { width: 160px;}
     .td-time { display: none;}
-    
+    .wrapper-timer-table { bottom: 100px;}
 }
 .color-white { color: #fff;}
