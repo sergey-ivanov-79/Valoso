@@ -19,7 +19,7 @@
 .intro-1-home-2.dop { padding-top: 0px;}
 .frame-rec { 
     position: absolute;
-    z-index: 2;
+    z-index: 2 !important;
     background-size: cover;
     width: 150px;
     height: 166px;
@@ -134,6 +134,8 @@
     bottom: 10px; 
     right: -60px;
 }
+#portfolio { z-index: 1;}
+.inner-info-p p { margin-bottom: 0px !important;} 
 @media (max-width: 768px){
     .frame-rec {
         width: 100px;

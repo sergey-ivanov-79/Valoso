@@ -33,7 +33,8 @@
 <link rel="stylesheet" href="css/style-prev.css"/>
 <link rel="stylesheet" href="css/ns-dashboardMML-nouploads.css"/>
 <link rel="stylesheet" href="css/jquery.countdownTimer.css" />
-<link rel="stylesheet" href="css/place-holder.css"/>	   
+<link rel="stylesheet" href="css/place-holder.css"/>
+<link rel="stylesheet" href="css/jq_fade.css"/>	   
 <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
 </head>
@@ -41,19 +42,24 @@
 <body class="">
 <section class="">
     <div class="wrapper-slider"><!-- Begin wrapper-slider -->
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="5000" data-pause="false"><!-- Begin carousel -->
-            <div class="carousel-inner" role="listbox"><!-- Begin carousel-inner -->
-                <div class="item active"  style="background: url('./images/slide-V-1.jpg') center center no-repeat; background-size: cover;">
+        <ul id="portfolio" class="carousel-inner">	
+            <li>
+			     <div class="item"  style="background: url('./images/p-a/blend-img-1.jpg') center center no-repeat; background-size: cover;">
                     <div class="img-slide"></div>
                 </div>
-                <div class="item" style="background: url('./images/slide-V-2.jpg') center center no-repeat; background-size: cover;">
+            </li>
+			<li>
+			     <div class="item" style="background: url('./images/p-a/blend-img-2.jpg') center center no-repeat; background-size: cover;">
                     <div class="img-slide"></div>
                 </div>
-                <div class="item" style="background: url('./images/slide-V-3.jpg') center center no-repeat; background-size: cover;">
+            </li>					
+			<li>
+			     <div class="item" style="background: url('./images/p-a/blend-img-3.jpg') center center no-repeat; background-size: cover;">
                     <div class="img-slide"></div>
                 </div>
-            </div><!-- END carousel-inner -->
-        </div><!-- END carousel -->   
+            </li>				
+		</ul>
+          
         <div class="frame"><!-- Begin frame --> 
             <div class="frame-rec frame-rec-1"  style="background-image: url('./images/p-a/top-left-img.png'); ">
             </div>
@@ -118,6 +124,17 @@
         });
     });
 </script>
-
+<script type="text/javascript" src="js/jquery.innerfade.js"></script>
+<script type="text/javascript">
+   $(document).ready(
+		function(){
+    		$('ul#portfolio').innerfade({
+    			speed: 1000,
+    			timeout: 2000,
+    			type: 'sequence',
+    			containerheight: '220px'
+    		});
+	});
+</script>
 </body>
 </html>
