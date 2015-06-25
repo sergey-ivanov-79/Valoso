@@ -1,4 +1,5 @@
 .wrapper-slider { position: relative;}
+body { overflow: hidden;}
 .inner-info-p { 
     position: fixed;
     width: 100%; 
@@ -94,12 +95,25 @@
 }
 .btn-submit-default {
     background-color: #00aeef;
+    color: #fff;
     border: 0;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 5px;
     width: 110px;
     height: 44px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.btn-submit-default:hover {
+    background-color: #fff;
+    color: #00aeef;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 .wrapper-timer-table {
     width: 262px;
