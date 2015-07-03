@@ -32,10 +32,8 @@
 <link rel="stylesheet" href="css/calendar-custom.css"/>
 <!-- Calendar CSS End -->
 <link rel="stylesheet" href="css/style-prev.css"/>
-<link rel="stylesheet" href="css/ns-dashboardMML-nouploads.css"/>
-<!-- Scroll -->
-<!--link rel="stylesheet" href="css/for-scroll.css"/-->	   
-
+<link rel="stylesheet" href="css/ns-dashboardMML-nouploads.css"/>	
+<link rel="stylesheet" href="css/message.css"/>   
 <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
 </head>
@@ -54,8 +52,126 @@
                 				<div class="col-navbar-wrap no-margin-bottom">
                 					<ul class="shop-msg-noti-icos clearfix">
                 						<!--<li><a href="#" title="shopping cart"><i class="ico ico-cart2"></i></a></li>-->
-                						<li><a href="#" title="Inbox" class="hasItem"><span class="badge">5</span><i class="ico ico-inbox"></i></a></li>
-                						<li><a href="#" title="Notifications" class="hasItem"><span class="badge">2</span><i class="ico ico-notify"></i></a></li>
+                						<li class="li-messages"><a href="#" title="Inbox" class="hasItem"><span class="badge">5</span><i class="ico ico-inbox"></i></a></li>
+                						<li class="i-active vValue li-notifications">
+                                            <a href="#" title="Notifications" class="hasItem icons-mobile-notifications"><span class="badge">2</span><i class="ico ico-notify"></i></a>
+                                                <div class="popup-overlay wrapp-vList"><!-- Begin popup-overlay wrapp-vList -->
+                                                    <div class="inner-wrapp-vList">
+                                                        <ul class="vList vMessagesDropdownList">
+                                                            <li class="unselectable remove-block">
+                                                                <a href="#" class="vItem">
+                                                                    <div class="vMed">
+                                                                        <div class="oImgExt">
+                                                                            <div class="oBtnCloseMessage">
+                                                                                <span class="btn-delete-th">
+                                                                                    <span class="glyphicon glyphicon-remove"></span>
+                                                                                </span>                                                                    
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="oBd">
+                                                                            <div class="oNotification bold">Assessment finished on <span class="color-blue">cubes.stl</span>.</div>
+                                                                            <div class="time-n">5 minutes ago</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="unselectable remove-block">
+                                                                <a href="#" class="vItem">
+                                                                    <div class="vMed">
+                                                                        <div class="oImgExt">
+                                                                            <div class="oBtnCloseMessage">
+                                                                                <span class="btn-delete-th">
+                                                                                    <span class="glyphicon glyphicon-remove"></span>
+                                                                                </span>                                                                    
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="oBd">
+                                                                            <div class="oNotification bold">Assessment finished on <span class="color-blue">Active Tracker1_STL.STL</span>.</div>
+                                                                            <div class="time-n">39 minutes ago</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="unselectable remove-block">
+                                                                <a href="#" class="vItem">
+                                                                    <div class="vMed">
+                                                                        <div class="oImgExt">
+                                                                            <div class="oBtnCloseMessage">
+                                                                                <span class="btn-delete-th">
+                                                                                    <span class="glyphicon glyphicon-remove"></span>
+                                                                                </span>                                                                    
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="oBd">
+                                                                            <div class="oNotification bold">Assessment finished on <span class="color-blue">cubes.stl</span>.</div>
+                                                                            <div class="time-n">2 hours ago</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="unselectable remove-block">
+                                                                <a href="#" class="vItem">
+                                                                    <div class="vMed">
+                                                                        <div class="oImgExt">
+                                                                            <div class="oBtnCloseMessage">
+                                                                                <span class="btn-delete-th">
+                                                                                    <span class="glyphicon glyphicon-remove"></span>
+                                                                                </span>                                                                    
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="oBd">
+                                                                            <div class="oNotification bold">Assessment finished on <span class="color-blue">cubes.stl</span>.</div>
+                                                                            <div class="time-n">10 hours ago</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="unselectable remove-block">
+                                                                <a  href="#" class="vItem">
+                                                                    <div class="vMed">
+                                                                        <div class="oImgExt">
+                                                                            <div class="oBtnCloseMessage">
+                                                                                <span class="btn-delete-th">
+                                                                                    <span class="glyphicon glyphicon-remove"></span>
+                                                                                </span>                                                                    
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="oBd">
+                                                                            <div class="oNotification bold">Assessment finished on <span class="color-blue">sliding_box.STL</span>.</div>
+                                                                            <div class="time-n">May 16 at 10:30 PM</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="unselectable remove-block">
+                                                                <a  href="#" class="vItem">
+                                                                    <div class="vMed">
+                                                                        <div class="oImgExt">
+                                                                            <div class="oBtnCloseMessage">
+                                                                                <span class="btn-delete-th">
+                                                                                    <span class="glyphicon glyphicon-remove"></span>
+                                                                                </span>                                                                    
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="oBd">
+                                                                            <div class="oNotification">Milestones for contract: <span class="color-blue">how does contracts work</span> has been changed and now awating your approval. </div>
+                                                                            <div class="time-n">May 16 at 7:45 AM</div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </li>
+                                                            <li class="unselectable">
+                                                                <a  href="#" class="vItem">
+                                                                    <div class="bold">All notifications</div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="popup-overlay-backdrop"></div>
+                                                    <div data-to-back="" class="to-bottom"><img src="images/p-a/back-arrow.png" />Back</div>
+                                                </div><!-- END popup-overlay wrapp-vList -->
+                                            
+                                        </li>
                 					</ul>
                 					<div class="dropdown profile-dropdown profile-dropdown-mobile">
                 						<img data-toggle="dropdown" src="./images/p-a/img-1-public.png" alt="Name of User" width="56" height="56" class="userProp img-mobile">
@@ -146,33 +262,498 @@
                             </nav>
                         </div>
                     </div>
-                    <div id="" class="col-sm-12-max col-sm-12-max-dop">
-                        <div class="wrapp-shop-msg-noti-icos clearfix line-bott">
+                    <div id="" class="col-sm-12-max col-sm-12-max-dop line-bott">
+                        <div class="wrapp-shop-msg-noti-icos clearfix">
                             <div class="pull-left">
-                                <h3 class="h3 gray">Dashboard<br /><span class="gray p-11">Welcome back, John P. Smith</span></h3>
-                                
+                                <h3 class="h3 gray dash">Dashboard<br /><span class="gray p-11">Welcome back, John P. Smith</span></h3>
+                                <h3 class="h3 gray mess">Messages<br /><span class="gray p-11"></span></h3>
+                                <h3 class="h3 gray notif">Notifications<br /><span class="gray p-11"></span></h3>
                             </div>
                             <ul class="shop-msg-noti-icos">
                 				<!--<li><a href="#" title="shopping cart"><i class="ico ico-cart2"></i></a></li>-->
-                				<li><a href="#" title="Inbox" class="hasItem"><span class="badge">5</span><i class="ico ico-inbox"></i></a></li>
-                				<li><a href="#" title="Notifications" class="hasItem"><span class="badge">2</span><i class="ico ico-notify"></i></a></li>
+                				<li class="li-messages">
+                                    <a href="#" title="Inbox" class="hasItem icons-mobile-messages"><span class="badge">5</span><i class="ico ico-inbox"></i></a>
+                                    <div class="tab-content">
+                                        <div role="tabpanel" class="tab-pane active" id="messages-1">
+                                            <div class="popup-overlay wrapp-vList"><!-- Begin popup-overlay wrapp-vList -->
+                                                <div class="inner-wrapp-vList">
+                                                    <div class="wrapp-vList-nav-tabs  clearfix">
+                                                      <!-- Nav tabs -->
+                                                      <ul class="vList vMessagesDropdownList nav nav-tabs" role="tablist">
+                                                        <li role="presentation" class="active"><a class="width-45" href="#msg-inbox" aria-controls="msg-inbox" role="tab" data-toggle="tab"><img src="images/p-a/msg-inbox.png" /></a></li>
+                                                        <li role="presentation"><a class="width-45" href="#msg-search" aria-controls="msg-search" role="tab" data-toggle="tab"><img src="images/p-a/msg-search.png" /></a></li>
+                                                        <li role="presentation"><a class="width-45" href="#msg-arсhive" aria-controls="msg-arсhive" role="tab" data-toggle="tab"><img src="images/p-a/msg-arсhive.png" /></a></li>
+                                                        <li role="presentation"><a class="width-45" href="#msg-sent" aria-controls="msg-sent" role="tab" data-toggle="tab"><img src="images/p-a/msg-sent.png" /></a></li>
+                                                        <li role="presentation" class="pull-right"><a href="#chat" aria-controls="chat" role="tab" data-toggle="tab">CHAT (5)</a></li>
+                                                      </ul> 
+                                                      <!-- Tab panes -->
+                                                      <div class="tab-content tab-content-mobile">
+                                                        <div role="tabpanel" class="tab-pane active" id="msg-inbox">
+                                                            <div class="inner-t-p">
+                                                                <ul class="vList vMessagesDropdownList">
+                                                                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                                                                        <div class="creator-stats users-on clearfix">
+                                                                            <div class="media">
+                                                                                <div class="pull-left"><img src="images/p-a/img-1-creator.png" /></div>
+                                                                                <div class="media-body">
+                                                                                    <p><span class="bold">Paul123 - 10 minutes ago</span><br/><i class="bold">Additional revisions</i> </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="stats stats-on"></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                                                                        <div class="creator-stats users-on clearfix">
+                                                                            <div class="media">
+                                                                                <div class="pull-left"><img src="images/p-a/img-1-creator.png" /></div>
+                                                                                <div class="media-body">
+                                                                                    <p><span class="bold">Paul123 - 4 hours ago</span><br/><i class="bold">Please change this graphic</i> </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="stats stats-on"></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                                                                        <div class="creator-stats users-on clearfix">
+                                                                            <div class="media">
+                                                                                <div class="pull-left"><img src="images/p-a/img-1-creator.png" /></div>
+                                                                                <div class="media-body">
+                                                                                    <p><span class="bold">Paul123 - 1 day ago</span><br/><i>Great work!</i> </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="stats stats-on"></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                                                                        <div class="designer-stats users-on clearfix">
+                                                                            <div class="media">
+                                                                                <div class="pull-left"><img src="images/p-a/img-ann.png" /></div>
+                                                                                <div class="media-body">
+                                                                                    <p><span class="bold">Ann214 - 5 days ago</span><br/><i>My Project Proposal</i> </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="stats stats-off"></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                                                                        <div class="designer-stats users-on clearfix">
+                                                                            <div class="media">
+                                                                                <div class="pull-left"><img src="images/p-a/img-1-public.png" /></div>
+                                                                                <div class="media-body">
+                                                                                    <p><span class="bold">Shazey2014 - 1 week ago</span><br/><i>My Project Proposal</i> </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="stats stats-on"></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                                                                        <div class="creator-stats users-on clearfix">
+                                                                            <div class="media">
+                                                                                <div class="pull-left"><img src="images/p-a/img-1-creator.png" /></div>
+                                                                                <div class="media-body">
+                                                                                    <p><span class="bold">Paul123 - 1 day ago</span><br/><i>Great work!</i> </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="stats stats-on"></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                                                                        <div class="creator-stats users-on clearfix">
+                                                                            <div class="media">
+                                                                                <div class="pull-left"><img src="images/p-a/img-ann.png" /></div>
+                                                                                <div class="media-body">
+                                                                                    <p><span class="bold">Ann214 - 5 days ago</span><br/><i>My Project Proposal</i> </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="stats stats-off"></span>
+                                                                        </div>
+                                                                    </li>
+                                                                 </ul>
+                                                             </div> 
+                                                            <div class="wrapp-back-buttom">
+                                                                <div class="col-xs-6 new-msg">
+                                                                    <div data-target="#messages-0" aria-controls="messages-0" role="tab" data-toggle="tab">
+                                                                        <img class="pull-left" src="images/p-a/new-msg.png" />
+                                                                        <span>New Message</span>
+                                                                    </div>
+                                                               </div>
+                                                               <div data-to-back="" class="col-xs-6 to-bottom">
+                                                                    <img class="" src="images/p-a/back-arrow.png" />
+                                                                    <span>Back</span>
+                                                               </div>
+                                                           </div>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane" id="msg-search">
+                                                            <div class="inner-t-p">
+                                                                <form class="form-horizontal" role="form">
+                                                                    <div class="wrapper-top"><!-- Begin wrapper-top -->
+                                                                        <div class="form-group has-feedback col-sm-12"><!-- Begin form-group -->
+                                                                            <div class="btn-center search">
+                                                                                <span class="glyphicon glyphicon glyphicon-search form-control-feedback" style=""></span>
+                                                                                <input type="id" class="form-control" id="inputId" placeholder="Search Messages">
+                                                                            </div>
+                                                                        </div><!-- END form-group -->
+                                                                    </div><!-- END wrapper-top -->
+                                                                </form>
+                                                            </div>
+                                                            <div class="wrapp-back-buttom">
+                                                                <div data-to-back="" class="to-bottom"><img src="images/p-a/back-arrow.png" />Back</div>
+                                                            </div> 
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane" id="msg-arсhive">
+                                                            <div class="inner-t-p">
+                                                                <div>3</div>
+                                                            </div>
+                                                            <div class="wrapp-back-buttom">
+                                                                <div data-to-back="" class="to-bottom"><img src="images/p-a/back-arrow.png" />Back</div>
+                                                            </div>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane" id="msg-sent">
+                                                            <div class="inner-t-p">
+                                                                <div>4</div>
+                                                            </div>
+                                                            <div class="wrapp-back-buttom">
+                                                                <div data-to-back="" class="to-bottom"><img src="images/p-a/back-arrow.png" />Back</div>
+                                                            </div>
+                                                        </div>
+                                                        <div role="tabpanel" class="tab-pane" id="chat">
+                                                            <div class="inner-t-p">
+                                                                <ul class="vList vMessagesDropdownList">
+                                                                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                                                                        <div class="creator-stats users-on clearfix">
+                                                                            <div class="media">
+                                                                                <div class="pull-left"><img src="images/p-a/img-1-creator.png" /></div>
+                                                                                <div class="media-body">
+                                                                                    <p><span class="bold">Paul123 - 10 minutes ago</span><br/><i class="bold">Additional revisions</i> </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="stats stats-on"></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                                                                        <div class="creator-stats users-on clearfix">
+                                                                            <div class="media">
+                                                                                <div class="pull-left"><img src="images/p-a/img-1-creator.png" /></div>
+                                                                                <div class="media-body">
+                                                                                    <p><span class="bold">Paul123 - 4 hours ago</span><br/><i class="bold">Please change this graphic</i> </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="stats stats-on"></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                                                                        <div class="creator-stats users-on clearfix">
+                                                                            <div class="media">
+                                                                                <div class="pull-left"><img src="images/p-a/img-1-creator.png" /></div>
+                                                                                <div class="media-body">
+                                                                                    <p><span class="bold">Paul123 - 1 day ago</span><br/><i>Great work!</i> </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="stats stats-on"></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                                                                        <div class="designer-stats users-on clearfix">
+                                                                            <div class="media">
+                                                                                <div class="pull-left"><img src="images/p-a/img-ann.png" /></div>
+                                                                                <div class="media-body">
+                                                                                    <p><span class="bold">Ann214 - 5 days ago</span><br/><i>My Project Proposal</i> </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="stats stats-off"></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                                                                        <div class="designer-stats users-on clearfix">
+                                                                            <div class="media">
+                                                                                <div class="pull-left"><img src="images/p-a/img-1-public.png" /></div>
+                                                                                <div class="media-body">
+                                                                                    <p><span class="bold">Shazey2014 - 1 week ago</span><br/><i>My Project Proposal</i> </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="stats stats-on"></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                                                                        <div class="creator-stats users-on clearfix">
+                                                                            <div class="media">
+                                                                                <div class="pull-left"><img src="images/p-a/img-1-creator.png" /></div>
+                                                                                <div class="media-body">
+                                                                                    <p><span class="bold">Paul123 - 1 day ago</span><br/><i>Great work!</i> </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="stats stats-on"></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                                                                        <div class="creator-stats users-on clearfix">
+                                                                            <div class="media">
+                                                                                <div class="pull-left"><img src="images/p-a/img-ann.png" /></div>
+                                                                                <div class="media-body">
+                                                                                    <p><span class="bold">Ann214 - 5 days ago</span><br/><i>My Project Proposal</i> </p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <span class="stats stats-off"></span>
+                                                                        </div>
+                                                                    </li>
+                                                                 </ul>
+                                                             </div>                                                
+                                                            <div class="wrapp-back-buttom">
+                                                                <div data-to-back="" class="to-bottom"><img src="images/p-a/back-arrow.png" />Back</div>
+                                                            </div>
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                               </div>
+                                               <div class="popup-overlay-backdrop" style="display: none;"></div>
+                                            </div><!-- END popup-overlay wrapp-vList -->
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="messages-0">
+                                            <div class="popup-overlay wrapp-vList"><!-- Begin popup-overlay wrapp-vList -->
+                                                <div class="inner-wrapp-vList">
+                                                    <div class="wrapp-vList-nav-tabs  clearfix">
+                                                        <div class="inner-t-p">
+                                                            <div>
+                                                                <div class="name-top clearfix">
+                                                                    <p>Joe Smith</p>
+                                                                    <button type="button" class="close" data-target="#messages-1" data-toggle="tab" aria-label="Close" role="tab"><span aria-hidden="true">&times;</span></button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="wrapp-textarea">
+                                                                <textarea class="form-control" rows="5" placeholder="Dolor sit amet.."></textarea>
+                                                                <img class="icon-attachment" src="images/p-a/img-attachment.png" style="position: absolute;"/>
+                                                                <img class="icon-sent" src="images/p-a/img-sent.png" style="position: absolute;"/>
+                                                            </div>
+                                                        </div>
+                                                        <div class="wrapp-back-buttom" data-target="#messages-1" aria-controls="messages-1" role="tab" data-toggle="tab">
+                                                            <div class="to-bottom"><img src="images/p-a/back-arrow.png" />Back</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div role="tabpanel" class="tab-pane" id="messages-2">
+                                            <div class="popup-overlay wrapp-vList"><!-- Begin popup-overlay wrapp-vList -->
+                                                <div class="inner-wrapp-vList">
+                                                    <div class="wrapp-vList-nav-tabs  clearfix">
+                                                        <div class="inner-t-p">
+                                                            <div>
+                                                                <div class="name-top clearfix">
+                                                                    <p>Joe Smith</p>
+                                                                    <button type="button" class="close" data-target="#messages-1" data-toggle="tab" aria-label="Close" role="tab"><span aria-hidden="true">&times;</span></button>
+                                                                </div>
+                                                                <div class="chat-min clearfix">
+                                                                    <div class="clearfix media">
+                                                                        <div class="pull-left">
+                                                                            <img src="images/p-a/img-ann.png" />
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <div class="wrapp-mesg">
+                                                                                <div class="arrow message-u"></div>
+                                                                                <p class="message message-us">This is the msg from joe smith. Lorem ipsum dolor sit, amet consectetur!</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="clearfix media">
+                                                                        <div class="pull-left">
+                                                                            <img src="images/p-a/img-ann.png" />
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <div class="wrapp-mesg">
+                                                                                <div class="arrow message-u"></div>
+                                                                                <p class="message message-us">Another message. Lorem ipsum dolor sit amet consectetur adipiscing. Dolor sit amit, h rackham vientis sit elit amir quissut elur.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <p class="time">Monday, May 4 - 03:30:50 am</p>
+                                                                    <div class="clearfix media">
+                                                                        <div class="pull-right">
+                                                                            <img src="images/p-a/img-1-public.png" />
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <div class="wrapp-mesg">
+                                                                                <div class="arrow arrow-right message-i"></div>
+                                                                                <p class="message message-in">Hi Joe! Lorem ipsum dolor sit amet.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="clearfix media">
+                                                                        <div class="pull-left">
+                                                                            <img src="images/p-a/img-ann.png" />
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <div class="wrapp-mesg">
+                                                                                <div class="arrow message-u"></div>
+                                                                                <p class="message message-us">This is the msg from joe smith. Lorem</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div> 
+                                                                    <div class="clearfix media">
+                                                                        <div class="pull-right">
+                                                                            <img src="images/p-a/img-1-public.png" />
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <div class="wrapp-mesg">
+                                                                                <div class="arrow arrow-right message-i"></div>
+                                                                                <p class="message message-in">Hi Joe! Lorem ipsum dolor sit amet.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div> 
+                                                                    <p class="time">Monday, May 4 - 03:30:50 am</p> 
+                                                                    <div class="clearfix media">
+                                                                        <div class="pull-right">
+                                                                            <img src="images/p-a/img-1-public.png" />
+                                                                        </div>
+                                                                        <div class="media-body">
+                                                                            <div class="wrapp-mesg">
+                                                                                <div class="arrow arrow-right message-i"></div>
+                                                                                <p class="message message-in">Yes! Lorem ipsum dolor sit amet consectetur.</p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>                                                                 
+                                                                </div>
+                                                            </div>
+                                                            <div class="wrapp-textarea">
+                                                                <textarea class="form-control" rows="5" placeholder="Dolor sit amet.."></textarea>
+                                                                <img class="icon-attachment" src="images/p-a/img-attachment.png" />
+                                                                <img class="icon-sent" src="images/p-a/img-sent.png" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="wrapp-back-buttom" data-target="#messages-1" aria-controls="messages-1" role="tab" data-toggle="tab">
+                                                            <div class="to-bottom"><img src="images/p-a/back-arrow.png" />Back</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                				<li class="vValue li-notifications">
+                                    <a href="#" title="Notifications" class="hasItem icons-mobile-notifications"><span class="badge">2</span><i class="ico ico-notify"></i></a>
+                                    <div class="popup-overlay wrapp-vList"><!-- Begin popup-overlay wrapp-vList -->
+                                        <div class="inner-wrapp-vList">
+                                                <ul class="vList vMessagesDropdownList">
+                                                    <li class="unselectable remove-block">
+                                                        <a href="#" class="vItem">
+                                                            <div class="vMed">
+                                                                <div class="oImgExt">
+                                                                    <div class="oBtnCloseMessage">
+                                                                        <span class="btn-delete-th">
+                                                                            <span class="glyphicon glyphicon-remove"></span>
+                                                                        </span>                                                                    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="oBd">
+                                                                    <div class="oNotification bold">Assessment finished on <span class="color-blue">cubes.stl</span>.</div>
+                                                                    <div class="time-n">5 minutes ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="unselectable remove-block">
+                                                        <a href="#" class="vItem">
+                                                            <div class="vMed">
+                                                                <div class="oImgExt">
+                                                                    <div class="oBtnCloseMessage">
+                                                                        <span class="btn-delete-th">
+                                                                            <span class="glyphicon glyphicon-remove"></span>
+                                                                        </span>                                                                    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="oBd">
+                                                                    <div class="oNotification bold">Assessment finished on <span class="color-blue">Active Tracker1_STL.STL</span>.</div>
+                                                                    <div class="time-n">39 minutes ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="unselectable remove-block">
+                                                        <a href="#" class="vItem">
+                                                            <div class="vMed">
+                                                                <div class="oImgExt">
+                                                                    <div class="oBtnCloseMessage">
+                                                                        <span class="btn-delete-th">
+                                                                            <span class="glyphicon glyphicon-remove"></span>
+                                                                        </span>                                                                    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="oBd">
+                                                                    <div class="oNotification bold">Assessment finished on <span class="color-blue">cubes.stl</span>.</div>
+                                                                    <div class="time-n">2 hours ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="unselectable remove-block">
+                                                        <a href="#" class="vItem">
+                                                            <div class="vMed">
+                                                                <div class="oImgExt">
+                                                                    <div class="oBtnCloseMessage">
+                                                                        <span class="btn-delete-th">
+                                                                            <span class="glyphicon glyphicon-remove"></span>
+                                                                        </span>                                                                    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="oBd">
+                                                                    <div class="oNotification bold">Assessment finished on <span class="color-blue">cubes.stl</span>.</div>
+                                                                    <div class="time-n">10 hours ago</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="unselectable remove-block">
+                                                        <a  href="#" class="vItem">
+                                                            <div class="vMed">
+                                                                <div class="oImgExt">
+                                                                    <div class="oBtnCloseMessage">
+                                                                        <span class="btn-delete-th">
+                                                                            <span class="glyphicon glyphicon-remove"></span>
+                                                                        </span>                                                                    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="oBd">
+                                                                    <div class="oNotification bold">Assessment finished on <span class="color-blue">sliding_box.STL</span>.</div>
+                                                                    <div class="time-n">May 16 at 10:30 PM</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="unselectable remove-block">
+                                                        <a  href="#" class="vItem">
+                                                            <div class="vMed">
+                                                                <div class="oImgExt">
+                                                                    <div class="oBtnCloseMessage">
+                                                                        <span class="btn-delete-th">
+                                                                            <span class="glyphicon glyphicon-remove"></span>
+                                                                        </span>                                                                    
+                                                                    </div>
+                                                                </div>
+                                                                <div class="oBd">
+                                                                    <div class="oNotification">Milestones for contract: <span class="color-blue">how does contracts work</span> has been changed and now awating your approval. </div>
+                                                                    <div class="time-n">May 16 at 7:45 AM</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li class="unselectable">
+                                                        <a  href="#" class="vItem">
+                                                            <div class="bold">All notifications</div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                       </div>
+                                       <div class="popup-overlay-backdrop" style="display: none;"></div>
+                                       <div class="wrapp-back-buttom">
+                                            <div data-to-back="" class="to-bottom"><img src="images/p-a/back-arrow.png" />Back</div>
+                                       </div>
+                                    </div><!-- END popup-overlay wrapp-vList -->
+                                </li>
                 			</ul>
                         </div>
                     </div>
         		</div>
         	</div> <!-- .container -->
         </div>
-        <!--div class="container">
-             <div class="wrapper-aevents">
-                <div class="aevents">
-                    <div class=" alert-danger alert-dismissable alert" style="margin-top: 15px;">
-                       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
-                            Milestone payment for <strong>#27 TEST PROJECT for Annie</strong> setup under the project <strong>TEST PROJECT for Annie</strong> has been requested by <strong>bobby</strong>.
-                            <a style="color: inherit; text-decoration: underline; cursor:pointer;" onclick="milestoneSelect(1)">Click here</a> to RELEASE the funds for that milestone or visit the <a style="color: inherit; text-decoration: underline;" href="https://staging.mylocal3dprinting.com/contract/details/1">designer's contract page</a>
-                    </div>
-                </div>
-             </div>
-        </div-->
     </header> <!-- header -->
 
 <section class="content">
@@ -2237,7 +2818,7 @@
         </div><!-- END container -->
     </div><!-- END wrapper-form-con -->
 </section>
-</div>
+
     <div class="wrapper-sidebar-offcanvas">
         <div class="sidebar-offcanvas" id="sidebar">
             <div class="clearfix" id="navbar-collapse-1">
@@ -2303,7 +2884,101 @@
             </div><!-- /.navbar-collapse -->
         </div><!--/.sidebar-offcanvas-->
     </div>
-
+</div>
+<div class="container">
+    <div class="popup-overlay wrapp-vList"><!-- Begin popup-overlay wrapp-vList -->
+        <div class="inner-wrapp-vList">
+            <div class="wrapp-vList-nav-tabs  clearfix">
+                <div class="inner-t-p">
+                    <div>
+                        <div class="name-top clearfix">
+                            <p>Joe Smith</p>
+                            <button type="button" class="close" data-target="#messages-1" data-toggle="tab" aria-label="Close" role="tab"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="chat-min clearfix">
+                            <div class="clearfix media">
+                                <div class="pull-left">
+                                    <img src="images/p-a/img-ann.png" />
+                                </div>
+                                <div class="media-body">
+                                    <div class="wrapp-mesg">
+                                        <div class="arrow message-u"></div>
+                                        <p class="message message-us">This is the msg from joe smith. Lorem ipsum dolor sit, amet consectetur!</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix media">
+                                <div class="pull-left">
+                                    <img src="images/p-a/img-ann.png" />
+                                </div>
+                                <div class="media-body">
+                                    <div class="wrapp-mesg">
+                                        <div class="arrow message-u"></div>
+                                        <p class="message message-us">Another message. Lorem ipsum dolor sit amet consectetur adipiscing. Dolor sit amit, h rackham vientis sit elit amir quissut elur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="time">Monday, May 4 - 03:30:50 am</p>
+                            <div class="clearfix media">
+                                <div class="pull-right">
+                                    <img src="images/p-a/img-1-public.png" />
+                                </div>
+                                <div class="media-body">
+                                    <div class="wrapp-mesg">
+                                        <div class="arrow arrow-right message-i"></div>
+                                        <p class="message message-in">Hi Joe! Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix media">
+                                <div class="pull-left">
+                                    <img src="images/p-a/img-ann.png" />
+                                </div>
+                                <div class="media-body">
+                                    <div class="wrapp-mesg">
+                                        <div class="arrow message-u"></div>
+                                        <p class="message message-us">This is the msg from joe smith. Lorem</p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="clearfix media">
+                                <div class="pull-right">
+                                    <img src="images/p-a/img-1-public.png" />
+                                </div>
+                                <div class="media-body">
+                                    <div class="wrapp-mesg">
+                                        <div class="arrow arrow-right message-i"></div>
+                                        <p class="message message-in">Hi Joe! Lorem ipsum dolor sit amet.</p>
+                                    </div>
+                                </div>
+                            </div> 
+                            <p class="time">Monday, May 4 - 03:30:50 am</p> 
+                            <div class="clearfix media">
+                                <div class="pull-right">
+                                    <img src="images/p-a/img-1-public.png" />
+                                </div>
+                                <div class="media-body">
+                                    <div class="wrapp-mesg">
+                                        <div class="arrow-right message-i"></div>
+                                        <p class="message message-in">Yes! Lorem ipsum dolor sit amet consectetur.</p>
+                                    </div>
+                                </div>
+                            </div>                                                                 
+                        </div>
+                    </div>
+                    <div class="wrapp-textarea">
+                        <textarea class="form-control" rows="5" placeholder="Dolor sit amet.."></textarea>
+                        <img class="icon-attachment" src="images/p-a/img-attachment.png" />
+                        <img class="icon-sent" src="images/p-a/img-sent.png" />
+                    </div>
+                </div>
+                <div class="wrapp-back-buttom" data-target="#messages-1" aria-controls="messages-1" role="tab" data-toggle="tab">
+                    <div class="to-bottom"><img src="images/p-a/back-arrow.png" />Back</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <footer id="footer" class="site-footer">
  <div class="container">
      <div class="row botInfo">
@@ -2821,6 +3496,7 @@ $('.gallery').each(function() { // the containers for all your galleries
 		$(this).parents('.mini-icons-img').find('.share-clicked').toggleClass('icons');
 	});
 </script>
+
 <script>
 $( ".link-select" )
   .change(function () {
@@ -2832,6 +3508,45 @@ $( ".link-select" )
         }
     });
 </script>
+<!-- Begign js For Notifications and Messages -->
+<script>
+    // Open/Close Popup-overlay
+    $(document).on('click', '.icons-mobile-notifications', function(){
+        $('body').toggleClass('popup-overlay-opened-notifications'); // popup-overlay-opened
+        $('.li-notifications').toggleClass('i-active');
+        $('.li-messages').removeClass('i-active');
+        $('body').removeClass('popup-overlay-opened-messages'); 
+        $('#messages-1').addClass('active');       
+        $('#messages-2').removeClass('active');                
+    });
+    $(document).on('click', '[data-to-back]', function(){
+        $('body').removeClass('popup-overlay-opened-notifications'); // popup-overlay-opened
+    });
+    // Open/Close Popup-overlay
+    $(document).on('click', '.icons-mobile-messages', function(){
+        $('body').toggleClass('popup-overlay-opened-messages'); // popup-overlay-opened
+        $('.li-messages').toggleClass('i-active');
+        $('.li-notifications').removeClass('i-active');
+        $('body').removeClass('popup-overlay-opened-notifications'); 
+        $('#messages-1').addClass('active');       
+        $('#messages-2').removeClass('active');         
+    });
+    $(document).on('click', '[data-to-back]', function(){
+        $('body').removeClass('popup-overlay-opened-messages'); // popup-overlay-opened
+        $('.li-messages').removeClass('i-active');
+        $('.li-notifications').removeClass('i-active');
+    });        
+    // Close Popup-overlay
+    $(document).on('click', 'body.popup-overlay-opened-notifications .wrapp-vList .popup-overlay-backdrop', function() {
+        $('body').toggleClass('popup-overlay-opened-notifications'); // popup-overlay-opened
+    }); 
+</script>
+<!-- END js For Notifications and Messages -->
 <script src="js/video-project-page.js"></script>
+<script> 
+        $(document).on('click', '.btn-delete-th', function(){
+            $(this).parents('.remove-block').remove();
+        }); 
+</script>
 </body>
 </html>
