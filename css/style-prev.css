@@ -425,11 +425,11 @@ a:hover {
     vertical-align: bottom;
 }
 
-.shop-msg-noti-icos li {
+.shop-msg-noti-icos > li {
     float: left;
 }
 
-.shop-msg-noti-icos a {
+.shop-msg-noti-icos > li > a {
     display: inline-block;
     height: 29px;
     min-width: 33px;
@@ -967,7 +967,7 @@ a:hover {
     .wrapp-shop-msg-noti-icos, 
     .header-dop.header-mobile .wrapp-shop-msg-noti-icos .shop-msg-noti-icos { display: block;}
     .wrapp-shop-msg-noti-icos .shop-msg-noti-icos { float: right; margin-top: 5px;}
-    .wrapp-shop-msg-noti-icos .shop-msg-noti-icos a {
+    .wrapp-shop-msg-noti-icos .shop-msg-noti-icos > li > a {
         margin-right: 9px;
     }
     .wrapp-shop-msg-noti-icos h3.h3, .wrapp-shop-msg-noti-icos h4.h4 { line-height: 0.8; margin: 0;}
