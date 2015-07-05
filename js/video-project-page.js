@@ -26,7 +26,6 @@ $(document).ready(function(){
 		$('.single-video-hover').fadeOut();
 	});*/
 
-
 	if ($("#about").hasClass("opened")) {
 	  $("#about").animate({right: -700 +"px"}, 2000);
 	}
@@ -51,7 +50,7 @@ $(document).ready(function(){
 		if($('.mobile-tabs-menu button:nth-of-type(2),.mobile-tabs-menu button:nth-of-type(3)').hasClass('active')){
 	   	   $('.vidljiv').animate({'left':'100%'}, 400);
 		   $('.vidljiv').removeClass('vidljiv');
-		   $('.video-project-director .container > p,.video-description-left,.description-right-up').addClass('vidljiv');
+		   $('.video-project-director .container > p,.video-description-left,.description-right-up,.project-files-buttons').addClass('vidljiv');
 		   $('.vidljiv').css('left','-100%');
 		   $('.vidljiv').animate({'left':'0%'}, 400);
 		}
@@ -69,7 +68,7 @@ $(document).ready(function(){
 		if($('.mobile-tabs-menu button:nth-of-type(3)').hasClass('active')){
 	   	   $('.vidljiv').animate({'left':'100%'}, 400);
 		   $('.vidljiv').removeClass('vidljiv');
-		   $('.description-right-down, .wrapper-freelanser').addClass('vidljiv');
+		   $('.description-right-down, .wrapper-freelanser,.project-files-buttons').addClass('vidljiv');
 		   $('.vidljiv').css('left','-100%');
 		   $('.vidljiv').animate({'left':'0%'}, 400);
 		}
@@ -79,7 +78,7 @@ $(document).ready(function(){
 		else {
 		   $('.vidljiv').animate({'left':'100%'}, 400);
 		   $('.vidljiv').removeClass('vidljiv');
-		   $('.description-right-down, .wrapper-freelanser').addClass('vidljiv');
+		   $('.description-right-down, .wrapper-freelanser,.project-files-buttons').addClass('vidljiv');
 		   $('.vidljiv').animate({'left':'0%'}, 400);
 		}
 	});
@@ -90,7 +89,7 @@ $(document).ready(function(){
 		else {
 			$('.vidljiv').animate({'left':'100%'}, 400);
 		   	$('.vidljiv').removeClass('vidljiv');
-		   	$('.video-upload,.project-files').addClass('vidljiv');
+		   	$('.video-upload,.project-files,.project-files-buttons').addClass('vidljiv');
 		   	$('.vidljiv').animate({'left':'0%'}, 400);
 		}
 	});
@@ -614,3 +613,21 @@ $(window).resize(function(){
 
 
 	
+
+
+	/* Doc Ready, Not Ready */
+	$('#dur-vid').change(function(){
+        $('.other-time-hide').hide();
+        $('#' + $(this).val()).show();
+    });
+    /* Doc Ready, Not Ready  End*/
+    /* Popover duration */
+	$('.dur-trajanje').popover({
+		placement: 'bottom',
+	    container: 'body',
+	    html: true,
+	    content: function () {
+	        return $(this).next('.video-duration-select').html();
+	    }
+	});
+	/* Popover duration End */

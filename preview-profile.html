@@ -27,12 +27,18 @@
 	</head>
 	<body>
 		<div id="header-top" class="preview-profile-wrapper">
+			<div class="phone-simulator">
+				<img src="images/preview-profile/iphone.png" alt="" />
+			</div><!-- /.phone-simulator -->
+			<div class="ipad-simulator">
+				<img src="images/preview-profile/ipad.png" alt="Ipad Simulator" />
+			</div><!-- /.ipad-simulator -->
 			<div class="top-menu">
 				<div class="container no-padding">
 					<div class="desktop-devices">
-						<button class="active"><img src="images/preview-profile/desktop.png" alt="" /></button>
-						<button><img src="images/preview-profile/tablet.png" alt="" /></button>
-						<button><img src="images/preview-profile/mobile.png" alt="" /></button>
+						<button class="active" id="desktop-sim"><img src="images/preview-profile/desktop.png" alt="" /></button>
+						<button id="tablet-sim"><img src="images/preview-profile/tablet.png" alt="" /></button>
+						<button id="phone-sim"><img src="images/preview-profile/mobile.png" alt="" /></button>
 					</div><!-- /.desktop-devices -->
 					<div class="desktop-buttons">
 						<button>Edit</button>
