@@ -1206,6 +1206,9 @@ button.btn.save-btn:hover  {
 .buy-domain {
     padding: 0!important;
 }
+.upArrow {
+    z-index: 999999;
+}
 /* Ipad Simulator */
 	.sim-640  .rating {
 		width: 110px;
@@ -2018,7 +2021,7 @@ button.btn.save-btn:hover  {
 	.cert-name h4:nth-of-type(1) {
 	  	margin-top: 20px;
 	}
-	.user-portfolio .col-sm-3 img {
+	.user-portfolio .col-sm-3 .port-img-wrapper img {
 	  	height: 185px;
 	}
 	.user-ratings h5 span {
@@ -2079,7 +2082,7 @@ button.btn.save-btn:hover  {
 	  	font-size: 14px;
 	}
 }/* 640px End */
-@media(max-width: 480px) {
+@media all and (max-width: 480px) {
 	.cert-name h4 {
 	  	font-size: 14px;
 	}
@@ -2214,7 +2217,7 @@ button.btn.save-btn:hover  {
         line-height: 20px;
     }
 }/* 480px End */
-@media(max-width: 360px) {
+@media all and (max-width: 360px) {
 	.user-certifications-single {
 	  	width: 100%;
 	}
@@ -2331,7 +2334,7 @@ button.btn.save-btn:hover  {
         max-width: 1000px;
     }
 }/* 360px End */
-@media(max-width: 320px) {
+@media all and (max-width: 320px) {
 	.rating {
 	  	width: 40%;
 	}
