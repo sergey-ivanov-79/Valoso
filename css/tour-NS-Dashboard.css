@@ -160,7 +160,12 @@
     }
     
 }
-
+@media (max-width: 768px) {
+    .container {
+      padding-left: 0px!important;
+      padding-right: 0px !important;
+    }
+}
 @media (max-width: 767px) {
     .home-dash-menu .wrapper-nav-icon-based.headroom--pinned.headroom--not-top {
       margin-top: 55px;

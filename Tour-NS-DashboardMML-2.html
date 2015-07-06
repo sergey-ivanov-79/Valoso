@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title></title>
+<title>Tour-2</title>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
@@ -29,6 +29,7 @@
 <link rel="stylesheet" href="css/ns-dashboardMML-nouploads.css"/>
 <!-- added for  Toure -->
 <link rel="stylesheet" href="css/tour-NS-Dashboard.css"/>
+<link rel="stylesheet" href="css/tour-2.css"/>
 
 <!-- Magnific Popup core CSS file -->
 <link rel="stylesheet" href="css/magnific-popup.css"/>
@@ -159,7 +160,7 @@
              <div class="wrapper-aevents">
                 <div class="aevents">
                     <div class=" alert-danger alert-dismissable alert" style="margin-top: 15px;">
-                       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">Ã—</button>
+                       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">?</button>
                             Milestone payment for <strong>#27 TEST PROJECT for Annie</strong> setup under the project <strong>TEST PROJECT for Annie</strong> has been requested by <strong>bobby</strong>.
                             <a style="color: inherit; text-decoration: underline; cursor:pointer;" onclick="milestoneSelect(1)">Click here</a> to RELEASE the funds for that milestone or visit the <a style="color: inherit; text-decoration: underline;" href="https://staging.mylocal3dprinting.com/contract/details/1">designer's contract page</a>
                     </div>
@@ -168,9 +169,9 @@
         </div-->
     </header> <!-- header -->
     
-    <section class="content wrapp-tour">
-        <div class="wrapper-form-con wrapper-form-con-dop">
-            <div class="container">
+<section class="content wrapp-tour">
+    <div class="wrapper-form-con wrapper-form-con-dop">
+        <div class="container">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="home-dash-menu">
@@ -245,7 +246,7 @@
                                                         <div class="pull-right prof-sorted prof-sorted-mobile">
                                                             <div class="tab-tour stepn6 clearfix" id="step6">
                                                                 <div class="styled-select">
-                                                                    <select data-placeholder="All" class="select2" style="">
+                                                                    <select data-placeholder="All" class="js-select2" style="">
                                                                         <option value="1" selected="selected">All</option>
                                                                         <option value="2">Open</option>
                                                                         <option value="3">In progress</option>
@@ -253,7 +254,7 @@
                                                                     </select>                  
                                                                 </div>
                                                                 <div class="styled-select default_select wide_select">
-                                                                    <select data-placeholder="All" class="select2" style="">
+                                                                    <select data-placeholder="All" class="js-select2" style="">
                                                                         <option value="1" selected="selected">All</option>
                                                                         <option value="2">Projects I Created</option>
                                                                         <option value="3">Projects I am Working On</option>
@@ -274,12 +275,12 @@
                                                             <!-- Wrapper for slides -->
                                                             <div class="carousel-inner" role="listbox">
                                                                 <div class="item active">
-                                                                    <div class="image-wrap-slide"><div class="image-backgr" style='background-image: url("./images/p-a/img-slide1.png");'></div></div>
+                                                                    <div class="image-wrap-slide"><div class="image-backgr" style='background-image: url("./images/p-a/tour-pic1.jpg");'></div></div>
                                                                     <div class="carousel-caption">
                                                                     </div>
                                                                 </div>
                                                                 <div class="item">
-                                                                    <div class="image-wrap-slide"><div class="image-backgr" style='background-image: url("./images/p-a/img-slide2.png");'></div></div>
+                                                                    <div class="image-wrap-slide"><div class="image-backgr" style='background-image: url("./images/p-a/tour-pic2.jpg");'></div></div>
                                                                     <div class="carousel-caption">
                                                                     </div>
                                                                 </div>
@@ -1482,12 +1483,77 @@
                             <!-- END Tab panes -->
                         </div>
                     </div>
-                    
-                    </div>
+                    <!-- LEARN MORE -->
+                    <div class="wrapper-instance"><!-- Begin wrapper-instance -->
+                        <div class="row"><!-- Begin row -->
+                            <div class="instance clearfix"><!-- Begin instance -->
+                                <div class="col-sm-6 block-instance block-instance-right">
+                                    <h3 class="h3 color-text-green text-semibold"> Are you a designer?</h3>
+                                    <div class="row">
+                                        <div class="left-part">
+                                          <div class="text-instance-left">
+                                            <p class="p-18">Learn how to make your profile  and apply to a project.</p>
+                                          </div>
+                                        </div>
+                                        <div class="right-part text-center">
+                                          <button class="btn btn-learn-more btn-learn-more-green pull-right" id="actionTocall">LEARN MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 block-instance">
+                                    <h3 class="h3 color-text-blue text-semibold"> Are you a creator?</h3>
+                                    <div class="row">
+                                        <div class="left-part">
+                                          <div class="text-instance-left">
+                                            <p class="p-18">Learn how to post a project  and find your ideal designer.</p>
+                                          </div>
+                                        </div>
+                                        <div class="right-part text-center">
+                                          <button class="btn btn-learn-more btn-learn-more-blue pull-right" id="actionTocall">LEARN MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- END instance -->
+                        </div><!-- END row -->
+                    </div><!-- END wrapper-instance -->
+                    <div class="wrapper-instance"><!-- Begin wrapper-instance -->
+                        <div class="row"><!-- Begin row -->
+                            <div class="instance clearfix"><!-- Begin instance -->
+                                <div class="col-sm-6 block-instance block-instance-right">
+                                    <h3 class="h3 color-text-green text-semibold"> Are you a designer?</h3>
+                                    <div class="row">
+                                        <div class="left-part">
+                                          <div class="text-instance-left">
+                                            <p class="p-18">Learn how you can discuss your project with your client using the Project forum.</p>
+                                          </div>
+                                        </div>
+                                        <div class="right-part text-center">
+                                          <button class="btn btn-learn-more btn-learn-more-green pull-right" id="actionTocall">LEARN MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 block-instance">
+                                    <h3 class="h3 color-text-blue text-semibold"> Are you a creator?</h3>
+                                    <div class="row">
+                                        <div class="left-part">
+                                          <div class="text-instance-left">
+                                            <p class="p-18">Learn the effectivity in using the Project Forum and how to make it public or private.</p>
+                                          </div>
+                                        </div>
+                                        <div class="right-part text-center">
+                                          <button class="btn btn-learn-more btn-learn-more-blue pull-right" id="actionTocall">LEARN MORE</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- END instance -->
+                        </div><!-- END row -->
+                    </div><!-- END wrapper-instance -->
+                    <!-- END LEARN MORE -->
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 </div>
     <div class="wrapper-sidebar-offcanvas">
         <div class="sidebar-offcanvas" id="sidebar">
@@ -1567,7 +1633,7 @@
            <ul>
               <li><a href="">Help Center</a></li>
               <li><a href="">Contact Support</a></li>
-              <li><a href="">FAQâ€™s</a></li>
+              <li><a href="">FAQ’s</a></li>
               <li><a href="">Shipping info</a></li>
               <li><a href="">Fee Schedule</a></li>
               <li><a href="">Tutorials</a></li>              
@@ -1595,7 +1661,7 @@
          </div>
      </div>
      <div class="row botCopy">
-         <div class="col-sm-6 col-md-6 col-lg-6">Copyright 2015 Â© Tech International Pty Ltd</div>
+         <div class="col-sm-6 col-md-6 col-lg-6">Copyright 2015 © Tech International Pty Ltd</div>
          <div class="col-sm-2 col-md-2 col-lg-2"><a href="">Privacy Policy</a></div>
          <div class="col-sm-4 col-md-4 col-lg-4"><a href="">Terms and Conditions</a></div>
      </div>         
@@ -1735,7 +1801,7 @@
         }
        
     });
-    $('.select2').select2({
+    $('.js-select2').select2({
         minimumResultsForSearch: -1
     });
 });
@@ -1823,7 +1889,7 @@ $('.gallery').each(function() { // the containers for all your galleries
           element: "#step2",
           placement: "bottom",
           title: "2/15",
-          content: "Upload, download and/or view your project files."
+          content: "Upload, download and/or view your 3D Models."
         },
         {
           element: "#step3",
@@ -1835,13 +1901,13 @@ $('.gallery').each(function() { // the containers for all your galleries
           element: "#step4",
           placement: "bottom",
           title: "4/15",
-          content: "See your list of favorite video editors or video creators."
+          content: "See your list of favorite Designers and Project Creators."
         },
         {
           element: "#step5",
           placement: "bottom",
           title: "5/15",
-          content: "Start your video project. Define your requirements and set a budget to begin getting proposals."
+          content: "Start your project. Define your requirements and set a budget to begin getting proposals."
         },
         {
           element: "#step6",
@@ -1853,13 +1919,14 @@ $('.gallery').each(function() { // the containers for all your galleries
           element: "#step7",
           placement: "top",
           title: "7/15",
-          content: "VALOSO project box. </br> </br>A <strong>BLUE</strong> project box signifies your project as a <strong>Video Director</strong> while a GREEN one signifies your project as a <strong>Video Editor</strong>."
+          content: "VALOSO project box. </br> </br>A <strong>BLUE</strong> project box signifies your project as a <strong>Project Creator</strong> while a GREEN one signifies your <strong>the Designer in the project</strong>."
         },
         {
           element: "#step8",
           placement: "top",
           title: "8/15",
-          content: "Your <strong>OPEN</strong> project as a <em>Video Director.</em></br></br> Includes <em>total number of interested applicants</em>.</br></br> <em>No Milestone</em> has been set yet."
+          next: 9,
+          content: "Your <strong>OPEN</strong> project as a <em>Project Creator.</em></br></br> Includes <em>total number of interested applicants</em>.</br></br> <em>No Milestone</em> has been set yet."
         }, 
         {
           element: "#step9",
@@ -1877,32 +1944,32 @@ $('.gallery').each(function() { // the containers for all your galleries
           element: "#step11",
           placement: "top",
           title: "11/15",
-          content: "See the <em>name </em> and the full <em> description</em> of your project as a <em>Video Director</em>. </br></br> Project Status is currently <strong>OPEN</strong> therefore <em>No Milestone</em> has been set yet."
+          content: "See the <em>name </em> and the full <em> description</em> of your project as a <em>Project Creator</em>. </br></br> Project Status is currently <strong>OPEN</strong> therefore <em>No Milestone</em> has been set yet."
         },
         {
           element: "#step12",
           placement: "top",
           title: "12/15",
-          content: "Your <strong>IN PROGRESS</strong> project as a <em>Video Director.</em></br></br> Includes <em>information about your Video Editor.</em></br></br><em>365 days left</em></br></br> til due date.</br>Currently at <em>Milestone #1000 (out of 100000 set),</em> with 299 days left to complete the said milestone."
+          content: "Your <strong>IN PROGRESS</strong> project as a <em>Project Creator.</em></br></br> Includes <em>information about your Designer.</em></br></br><em>365 days left</em></br></br> til due date.</br>Currently at <em>Milestone #1000 (out of 100000 set),</em> with 299 days left to complete the said milestone."
         },
         {
           element: "#step13",
           placement: "top",
           title: "13/15",
-          content: "Your <strong>CLOSED</strong> project as a <em>Video Director.</em></br></br> You have received a <em>Rating</em> from your Video Editor after end of project."
+          content: "Your <strong>CLOSED</strong> project as a <em>Project Creator.</em></br></br> You have received a <em>Rating</em> from your Designer after end of project."
         },
         {
           element: "#step14",
           placement: "top",
           title: "14/15",
-          content: "Your <strong>CLOSED</strong> project as a <em>Video Director.</em></br></br>You are still <em>Awaiting Feedback</em> from your Video Editor."
+          content: "Your <strong>CLOSED</strong> project as a <em>Project Creator.</em></br></br>You are still <em>Awaiting Feedback</em> from your Designer."
         },
         {
           element: "#step15",
           placement: "top",
           title: "15/15",
           next: 0,
-          content: "Your <strong>IN PROGRESS</strong> project as a <em>Video Editor.</em></br></br> Includes <em>information about Video Director.</em></br></br> 365 <em>days left</em> til due date.</br></br> Currently at Milestone #1000 <em>out of 100000 set,</em> with 299 days left to complete the said milestone."
+          content: "Your <strong>IN PROGRESS</strong> project as a <em>Designer.</em></br></br> Includes <em>information about Project Creator.</em></br></br> 365 <em>days left</em> til due date.</br></br> Currently at Milestone #1000 <em>out of 100000 set,</em> with 299 days left to complete the said milestone."
         }
       ]
     });
@@ -1920,7 +1987,7 @@ $('.gallery').each(function() { // the containers for all your galleries
           element: ".stepn2",
           placement: "bottom",
           title: "2/15",
-          content: "Upload, download and/or view your project files."
+          content: "Upload, download and/or view your 3D Models."
         },
         {
           element: ".stepn3",
@@ -1932,13 +1999,13 @@ $('.gallery').each(function() { // the containers for all your galleries
           element: ".stepn4",
           placement: "bottom",
           title: "4/15",
-          content: "See your list of favorite video editors or video creators."
+          content: "See your list of favorite Designers and Project Creators."
         },
         {
           element: ".stepn5",
           placement: "bottom",
           title: "5/15",
-          content: "Start your video project. Define your requirements and set a budget to begin getting proposals."
+          content: "Start your project. Define your requirements and set a budget to begin getting proposals."
         },
         {
           element: ".stepn6",
@@ -1950,13 +2017,14 @@ $('.gallery').each(function() { // the containers for all your galleries
           element: ".stepn7",
           placement: "top",
           title: "7/15",
-          content: "VALOSO project box. </br> </br>A <strong>BLUE</strong> project box signifies your project as a <strong>Video Director</strong> while a GREEN one signifies your project as a <strong>Video Editor</strong>."
+          content: "VALOSO project box. </br> </br>A <strong>BLUE</strong> project box signifies your project as a <strong>Project Creator</strong> while a GREEN one signifies your  <strong>the Designer in the project</strong>."
         },
         {
           element: ".stepn8",
           placement: "top",
           title: "8/15",
-          content: "Your <strong>OPEN</strong> project as a <em>Video Director.</em></br></br> Includes <em>total number of interested applicants</em>.</br></br> <em>No Milestone</em> has been set yet."
+          next: 9,
+          content: "Your <strong>OPEN</strong> project as a <em>Project Creator.</em></br></br> Includes <em>total number of interested applicants</em>.</br></br> <em>No Milestone</em> has been set yet."
         }, 
         {
           element: ".stepn9",
@@ -1968,7 +2036,7 @@ $('.gallery').each(function() { // the containers for all your galleries
           element: ".stepn10",
           placement: "top",
           title: "10/15",
-          content: "See the <em>name </em> and the full <em> description</em> of your project as a <em>Video Director</em>. </br></br> Project Status is currently <strong>OPEN</strong> therefore <em>No Milestone</em> has been set yet."
+          content: "See the <em>name </em> and the full <em> description</em> of your project as a <em>Project Creator</em>. </br></br> Project Status is currently <strong>OPEN</strong> therefore <em>No Milestone</em> has been set yet."
         },
         {
           element: ".stepn11",
@@ -1982,26 +2050,26 @@ $('.gallery').each(function() { // the containers for all your galleries
           element: ".stepn12",
           placement: "top",
           title: "12/15",
-          content: "Your <strong>IN PROGRESS</strong> project as a <em>Video Director.</em></br></br> Includes <em>information about your Video Editor.</em></br></br><em>365 days left</em></br></br> til due date.</br>Currently at <em>Milestone #1000 (out of 100000 set),</em> with 299 days left to complete the said milestone."
+          content: "Your <strong>IN PROGRESS</strong> project as a <em>Project Creator.</em></br></br> Includes <em>information about your Designer.</em></br></br><em>365 days left</em></br></br> til due date.</br>Currently at <em>Milestone #1000 (out of 100000 set),</em> with 299 days left to complete the said milestone."
         },
         {
           element: ".stepn13",
           placement: "top",
           title: "13/15",
-          content: "Your <strong>CLOSED</strong> project as a <em>Video Director.</em></br></br> You have received a <em>Rating</em> from your Video Editor after end of project."
+          content: "Your <strong>CLOSED</strong> project as a <em>Project Creator.</em></br></br> You have received a <em>Rating</em> from your Designer after end of project."
         },
         {
           element: ".stepn14",
           placement: "top",
           title: "14/15",
-          content: "Your <strong>CLOSED</strong> project as a <em>Video Director.</em></br></br>You are still <em>Awaiting Feedback</em> from your Video Editor."
+          content: "Your <strong>CLOSED</strong> project as a <em>Project Creator.</em></br></br>You are still <em>Awaiting Feedback</em> from your Designer."
         },
         {
           element: ".stepn15",
           placement: "top",
           title: "15/15",
           next: 0,
-          content: "Your <strong>IN PROGRESS</strong> project as a <em>Video Editor.</em></br></br> Includes <em>information about Video Director.</em></br></br> 365 <em>days left</em> til due date.</br></br> Currently at Milestone #1000 <em>out of 100000 set,</em> with 299 days left to complete the said milestone."
+          content: "Your <strong>IN PROGRESS</strong> project as a <em>Designer.</em></br></br> Includes <em>information about Project Creator.</em></br></br> 365 <em>days left</em> til due date.</br></br> Currently at Milestone #1000 <em>out of 100000 set,</em> with 299 days left to complete the said milestone."
         }
       ]
     });
