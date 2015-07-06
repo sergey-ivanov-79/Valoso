@@ -1206,6 +1206,9 @@ button.btn.save-btn:hover  {
 .buy-domain {
     padding: 0!important;
 }
+.upArrow {
+    z-index: 999999;
+}
 /* Ipad Simulator */
 	.sim-640  .rating {
 		width: 110px;
