@@ -1244,7 +1244,7 @@ div#link-profile-modal .modal-dialog.modal-dialog-proj { width: 600px;}
     .row-offcanvas.active .page-wrap .headroom--unpinned.wrapper-nav-icon-based,
     .row-offcanvas.active .page-wrap .headroom--pinned.wrapper-nav-icon-based { display: none;}
     .row-offcanvas.active .page-wrap .header-mobile-fix { top: 0; bottom: 0;}
-    body.opened-offcanvas { height: 560px; overflow: hidden;}
+    body.opened-offcanvas { min-height: 560px; overflow: hidden;}
 }
 @media (max-width: 479px) {
     .row-offcanvas-left .sidebar-offcanvas {   left: -75% !important;}
