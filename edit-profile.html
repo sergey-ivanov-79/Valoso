@@ -1,7 +1,7 @@
 <html lang="en-US">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
 		<title></title>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
@@ -39,7 +39,7 @@
 						<label>Template in use:<input type="text" placeholder="Template name here"></label>
 					</div><!-- /.template-name -->
 					<div class="desktop-buttons">
-						<button class="cloud-button"><img src="images/preview-profile/cloud.png" alt="" /></button>
+						<button class="cloud-button" data-toggle="modal" data-target="#buy-domain"><img src="images/preview-profile/cloud.png" alt="" /></button>
 						<button class="edit-trigger">Preview</button>
 						<button>Save</button>
 						<button>Publish</button>
@@ -47,7 +47,7 @@
 					<div class="desktop-buttons-640">
 						<button class="templati"><img src="images/preview-profile/opt1.png" alt="" /></button>
 						<button class="paleta"><img src="images/preview-profile/opt2.png" alt="" /></button>
-						<button class="cloud-button"><img src="images/preview-profile/cloud.png" alt="" /></button>
+						<button class="cloud-button" data-toggle="modal" data-target="#buy-domain"><img src="images/preview-profile/cloud.png" alt="" /></button>
 						<button><img src="images/preview-profile/edit.png" alt="Edit Button"></button>
 						<button><img src="images/preview-profile/save.png" alt="Save Button"></button>
 						<button><img src="images/preview-profile/publish.png" alt="Publish Button"></button>
@@ -296,6 +296,16 @@
 					</div><!-- /.designers-tablet -->
 
 					<div class="profile-top-img">
+						<div class="buy-a-domain">
+						<h5>Your URL is johndoe.valoso.com</h5>
+							<div class="valoso-domain">
+								<input type="text" value="johndoe"><span>.valoso.com</span><button>Use</button>
+							</div><!-- /.valoso-domain -->
+							<div class="not-valoso-domain">
+								<input type="text" value="johndoe.com"> <button>Buy</button>
+							</div><!-- /.not-valoso-domain -->
+							<h5>Already have a domain name?</h5>
+						</div><!-- /.buy-a-domain -->
 						<img src="images/preview-profile/triangle.jpg" alt="Featured Image" />
 						<button><img src="images/preview-profile/cam.png" alt="Edit Icon" /></button>
 					</div><!-- /.profile-top-img -->
@@ -307,7 +317,7 @@
 							</li>
 							<li class="user-profile-left-details"><h3 class="clearfix"><span>John Doe</span> <div class="verified-icon"><i class="fa fa-check"></i>Verfied</div><!-- /.verified-icon --><img class="edit-name-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' value='John Doe'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h3></li>
 							<li class="hire-me-section"><button class="hire-me">Hire Me</button><!-- /.hire-me --></li>
-							<li class="user-profile-left-details"><h4><span>Position</span>|<span>Anything you want</span><img class="edit-position-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' value='Web Designer'><input type='text' value='Anything'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h4></li>
+							<li class="user-profile-left-details"><h4><span>Position</span>|<span>Anything</span><img class="edit-position-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' value='Web Designer'><input type='text' value='Anything'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h4></li>
 							<li class="hire-me-section edit-hour-pop"><h3>$50.00 <span class="user-currency">USD/hr</span><!-- /.user-currency --><img class="edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<input type='text' value='50'><input type='text' value='USD'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h3></li>
 							<li class="user-profile-left-details"><p>Summary about myself. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo incididunt ut labore et dolore magna aliqua sut. Consecteture adipiscing elit halum.<img class="edit-text-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<textarea></textarea><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></p></li>
 							<li class="hire-me-section"><h4>Australia</h4></li>
@@ -406,7 +416,7 @@
 					<h3>Portfolio</h3>
 					<div class="col-sm-3">
 						<div class="port-edit-buttons">
-							<img class="edit-port-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='URL'><textarea placeholder='Description'></textarea><div class='port-img'><img src='' alt='' /></div><div class='port-popover-buttons'><button>Choose From Media Library</button><button>Upload Image</button></div><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" />
+							<img class="edit-port-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='URL'><textarea placeholder='Description'></textarea><div class='port-img'><div class='port-img-wrap'><h5>No Image</h5></div></div><div class='port-popover-buttons'><button>Choose From Media Library</button><button>Upload Image</button></div><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" />
 							<img class="together-trash" src="images/preview-profile/trash.png" alt="" />
 						</div><!-- /.port-edit-buttons -->
 						<div class="port-img-wrapper">
@@ -415,7 +425,7 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="port-edit-buttons">
-							<img class="edit-port-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='URL'><textarea placeholder='Description'></textarea><div class='port-img'><img src='' alt='' /></div><div class='port-popover-buttons'><button>Choose From Media Library</button><button>Upload Image</button></div><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" />
+							<img class="edit-port-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='URL'><textarea placeholder='Description'></textarea><div class='port-img'><div class='port-img-wrap'><h5>No Image</h5></div></div><div class='port-popover-buttons'><button>Choose From Media Library</button><button>Upload Image</button></div><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" />
 							<img class="together-trash" src="images/preview-profile/trash.png" alt="" />
 						</div><!-- /.port-edit-buttons -->
 						<div class="port-img-wrapper">
@@ -424,7 +434,7 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="port-edit-buttons">
-							<img class="edit-port-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='URL'><textarea placeholder='Description'></textarea><div class='port-img'><img src='' alt='' /></div><div class='port-popover-buttons'><button>Choose From Media Library</button><button>Upload Image</button></div><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" />
+							<img class="edit-port-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='URL'><textarea placeholder='Description'></textarea><div class='port-img'><div class='port-img-wrap'><h5>No Image</h5></div></div><div class='port-popover-buttons'><button>Choose From Media Library</button><button>Upload Image</button></div><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" />
 							<img class="together-trash" src="images/preview-profile/trash.png" alt="" />
 						</div><!-- /.port-edit-buttons -->
 						<div class="port-img-wrapper">
@@ -433,7 +443,7 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="port-edit-buttons">
-							<img class="edit-port-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='URL'><textarea placeholder='Description'></textarea><div class='port-img'><img src='' alt='' /></div><div class='port-popover-buttons'><button>Choose From Media Library</button><button>Upload Image</button></div><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" />
+							<img class="edit-port-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='URL'><textarea placeholder='Description'></textarea><div class='port-img'><div class='port-img-wrap'><h5>No Image</h5></div></div><div class='port-popover-buttons'><button>Choose From Media Library</button><button>Upload Image</button></div><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" />
 							<img class="together-trash" src="images/preview-profile/trash.png" alt="" />
 						</div><!-- /.port-edit-buttons -->
 						<div class="port-img-wrapper">
@@ -442,7 +452,7 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="port-edit-buttons">
-							<img class="edit-port-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='URL'><textarea placeholder='Description'></textarea><div class='port-img'><img src='' alt='' /></div><div class='port-popover-buttons'><button>Choose From Media Library</button><button>Upload Image</button></div><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" />
+							<img class="edit-port-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='URL'><textarea placeholder='Description'></textarea><div class='port-img'><div class='port-img-wrap'><h5>No Image</h5></div></div><div class='port-popover-buttons'><button>Choose From Media Library</button><button>Upload Image</button></div><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" />
 							<img class="together-trash" src="images/preview-profile/trash.png" alt="" />
 						</div><!-- /.port-edit-buttons -->
 						<div class="port-img-wrapper">
@@ -684,7 +694,7 @@
 		 
 			 </div>
 			</footer>
-			<div class="modal fade bs-example-modal-lg buy-domain" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+			<div id="buy-domain" class="modal fade bs-example-modal-lg buy-domain" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
 			  <div class="modal-dialog" role="document">
 			    <div class="modal-content">
 			      <div class="modal-header">

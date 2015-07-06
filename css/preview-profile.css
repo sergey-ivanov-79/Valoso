@@ -209,6 +209,7 @@ span.user-experience-duration {
 }
 .user-portfolio .col-sm-3 {
 	margin-bottom: 20px;
+    padding-right: 0;
 }
 .port-img-wrapper {
 	overflow: hidden;
@@ -722,7 +723,7 @@ button.btn.save-btn:hover  {
 	color: white;
 	margin-bottom: 20px;
 }
-.popover-content input {
+.preview-profile-wrapper .popover-content input {
     height: 35px;
     background-color: #f5f3f5;
     border: 0;
@@ -731,8 +732,9 @@ button.btn.save-btn:hover  {
     color: #a1a1a1;
     font-size: 18px;
     outline: none;
+    width: 100%;
 }
-.popover-content textarea {
+.preview-profile-wrapper .popover-content textarea {
 	height: 70px;
 	background-color: #f5f3f5;
     border: 0;
@@ -761,14 +763,17 @@ button.btn.save-btn:hover  {
 .edit-experience-pop .popover input {
     width: 100%;
 }
-.edit-hour-pop .popover-content input:first-child {
+.edit-hour-pop .popover-content input:first-child,.rating .popover-content input:first-child {
     width: 70%;
 }
-.edit-hour-pop .popover-content input:nth-of-type(2) {
+.edit-hour-pop .popover-content input:nth-of-type(2),.rating .popover-content input:nth-of-type(2) {
     width: 25%;
     float: right;
 }
-.popover-content select {
+.rating .popover {
+    width: 270px;
+}
+.preview-profile-wrapper .popover-content select {
 	border: 0;
 	height: 35px;
 	background-color: #f5f3f5;
@@ -858,7 +863,7 @@ button.btn.save-btn:hover  {
     right: 45px;
     bottom: 10px;
 }
-.profile-top-img button {
+.profile-top-img > button {
   position: absolute;
   top: 10px;
   right: 5px;
@@ -969,6 +974,237 @@ button.btn.save-btn:hover  {
 }
 .designers-body .bg-color > img {
   float: none;
+}
+.port-popover-buttons button:nth-of-type(1) {
+    background-color: #a3a3a3;
+    border: solid 2px #a3a3a3;
+    border-radius: 5px;
+    white-space: nowrap;
+    margin-bottom: 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.port-popover-buttons button:nth-of-type(1):hover {
+    background-color: transparent;
+    color: #a3a3a3;
+}
+.port-popover-buttons button:nth-of-type(2) {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #ff7c99;
+    border: solid 2px #ff7c99;
+    border-radius: 5px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.port-popover-buttons button:nth-of-type(2):hover {
+    background-color: transparent;
+    color: #ff7c99;
+}
+.port-img-wrap {
+    height: 130px;
+    width: 160px;
+    margin: auto;
+    background-color: #d2d2d2;
+}
+.port-img-wrap h5 {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 130px;
+}
+.port-img {
+    margin-bottom: 10px;
+}
+.buy-a-domain {
+    position: absolute;
+    width: 320px;
+    top: 15px;
+    left: 10px;
+    background-color: rgba(255,255,255,0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+.buy-a-domain h5:nth-of-type(1) {
+    font-size: 15px;
+    color: #000000;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.valoso-domain {
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.valoso-domain span {
+    color: black;
+    font-size: 15px;
+    float: left;
+    margin-top: 10px;
+    margin-left: 3px;
+}
+.valoso-domain button,.not-valoso-domain button {
+    background-color: #48e875;
+    border-radius: 5px;
+    border: solid 1px white;
+    float: right;
+    font-size: 15px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 5px;
+    width: 55px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.valoso-domain button:hover {
+    background-color: transparent;
+    color: #48e875;
+    border-color: #48e875;
+}
+.not-valoso-domain button {
+    background-color: #0285c2;
+}
+.not-valoso-domain button:hover {
+    background-color: transparent;
+    color: #0285c2;
+    border-color: #0285c2;
+}
+.valoso-domain input,.not-valoso-domain input {
+    width: 150px;
+    float: left;
+    border: solid 1px black;
+    padding: 5px;
+    color: black;
+    font-size: 15px;
+    outline: none;
+}
+.not-valoso-domain {
+    padding-top: 10px;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+    border-top: solid 1px #b6b6b6;
+}
+.not-valoso-domain input {
+    width: 230px;
+}
+.buy-a-domain h5:nth-of-type(2) {
+    font-size: 15px;
+    font-weight: 700;
+    color: #148bc2;
+}
+.buy-domain {
+    margin-top: 50px;
+}
+.buy-domain .modal-title {
+    color: #727272;
+    font-size: 24px;
+    font-weight: 700;
+}
+.buy-domain .modal-body p {
+    font-size: 20px;
+    color: #474747;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.availability-form input {
+    border: solid 1px #bcbcbc;
+    border-radius: 10px;
+    padding: 10px;
+    color: #000000;
+    font-size: 18px;
+    margin-right: 10px;
+    outline: none;
+}
+.availability-form input::-webkit-input-placeholder {
+   color: black;
+   font-size: 18px;
+}
+.availability-form input:-moz-placeholder { /* Firefox 18- */
+   color: black;
+   font-size: 18px;  
+}
+.availability-form input::-moz-placeholder {  /* Firefox 19+ */
+   color: black;
+   font-size: 18px;  
+}
+.availability-form input:-ms-input-placeholder {  
+   color: black;
+   font-size: 18px;  
+}
+.availability-form button {
+    background-color: #48e875;
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: solid 1px #d7d7d7;
+    box-shadow: none;
+    outline: none;
+    border-radius: 10px;
+}
+.availability-form button:hover {
+    color: white;
+}
+.buy-domain .modal-body ul li {
+    border-top: solid 1px #c3c3c3;
+    padding: 5px 0;
+}
+.list-name {
+    color: #000000;
+    font-size: 18px;
+    line-height: 38px;
+}
+.list-buy span {
+    color: #ff9211;
+    font-size: 18px;
+    margin-right: 20px;
+}
+.list-buy button {
+    background-color: #474747;
+    width: 75px;
+    color: white;
+    font-size: 17px;
+    font-weight: 700;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.list-buy button:focus,.availability-form button:focus {
+    color: white;
+}
+.list-buy button:hover {
+    background-color: #0285c2;
+    color: white;
+}
+.buy-domain .modal-body {
+    padding: 25px 5px;
+}
+.availability-form {
+    margin-bottom: 20px;
+}
+.buy-domain {
+    padding: 0!important;
 }
 /* Ipad Simulator */
 	.sim-640  .rating {
@@ -1403,7 +1639,7 @@ button.btn.save-btn:hover  {
 	  	height: 130px;
 	}
 	.sim-320 .user-portfolio .col-sm-3 {
-		width: 100%;
+        width: 288px;
 	}
 	.sim-320 .user-portfolio .col-sm-3 img {
 	  	height: 295px;
@@ -1917,6 +2153,66 @@ button.btn.save-btn:hover  {
 	    width: 100%;
 	    margin-bottom: 10px;
 	}
+    .buy-a-domain h5:nth-of-type(1),.buy-a-domain h5:nth-of-type(2),.valoso-domain button, .not-valoso-domain button,.valoso-domain input, .not-valoso-domain input,.valoso-domain span {
+        font-size: 12px;
+    }
+    .buy-a-domain h5:nth-of-type(1),.valoso-domain,.not-valoso-domain {
+        margin-bottom: 5px;
+    }
+    .not-valoso-domain {
+        padding-top: 5px;
+    }
+    .buy-a-domain {
+        left: 5px;
+        top: 5px;
+        width: 270px;
+    }
+    .valoso-domain input {
+        width: 120px;
+        padding: 3px;
+    }
+    .not-valoso-domain input {
+        width: 185px;
+        padding: 3px;
+    }
+    .valoso-domain span {
+        margin-top: 8px;
+    }
+    .valoso-domain button, .not-valoso-domain button {
+        padding: 3px;
+    }
+    .buy-domain .modal-title {
+        font-size: 20px;
+    }
+    .buy-domain .modal-body p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .availability-form button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .availability-form input {
+        width: 100%;
+    }
+    .list-buy {
+        float: left!important;
+        width: 100%;
+    }
+    .list-buy button {
+        position: absolute;
+    }
+    .buy-domain .modal-body ul li {
+        position: relative;
+    }
+    .list-buy button {
+        position: absolute;
+        top: 6px;
+        right: 0px;
+    }
+    .list-name {
+        line-height: 20px;
+    }
 }/* 480px End */
 @media(max-width: 360px) {
 	.user-certifications-single {
@@ -2029,6 +2325,11 @@ button.btn.save-btn:hover  {
 	.port-edit-buttons img {
 	    height: auto!important;
 	}
+    .profile-top-img > img {
+        width: auto;
+        height: 250px;
+        max-width: 1000px;
+    }
 }/* 360px End */
 @media(max-width: 320px) {
 	.rating {
@@ -2074,4 +2375,14 @@ button.btn.save-btn:hover  {
 	.user-profile-left-details h3 .verified-icon {
 	  	margin-left: 5px;
 	}
+    .valoso-domain button, .not-valoso-domain button {
+        width: 35px;
+    }
+    .buy-a-domain {
+        width: 250px;
+    }
+    .profile-top-img > button {
+        top: 5px;
+        right: 0px;
+    }
 }/* 320px End */
