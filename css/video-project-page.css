@@ -1019,6 +1019,8 @@ img.video-edit {
 .video-description-right .description-right-up > h4.video-dur .popover-content select {
   width: 70%;
   margin-left: 0;
+  float: left;
+  margin-right: 6%;
 }
 .audio-track .popover-content select {
   width: 70%!important;
@@ -1888,6 +1890,27 @@ div#link-profile-modal .modal-footer button:hover {
 a.anchor.upArrow {
   z-index: 99999999999;
 }
+.video-description-right .description-right-up > h4 .popover-content input {
+  height: 35px;    
+  width: 22%;        
+  border-radius: 5px;    
+  padding-left: 10px;    
+  font-size: 18px;    
+  color: #474747;
+  float: left;
+}
+.video-duration-select label {
+  float: left;
+  margin-bottom: 5px;
+  width: 100%;
+}
+.but-ar {
+  text-align: center;
+  margin-top: 10px;
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+}
 @media (min-width: 1000px) {
   #view-screensh .screen-multi,#view-screensh-dir .screen-multi {
     padding: 15px 15px!important;
@@ -2543,11 +2566,14 @@ a.anchor.upArrow {
     left: 100%;
     position: relative;
   }
-  .video-project-director .container > p {
+  .video-project-director .container > p,.project-files-buttons {
     position: relative;
   }
   .video-upload {
     margin-top: 0;
+  }
+  .project-files-buttons {
+    display: none;
   }
 }/* 640px End */
 @media (max-width: 480px) {
