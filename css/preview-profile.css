@@ -1104,13 +1104,15 @@ button.btn.save-btn:hover  {
 .not-valoso-domain input {
     width: 230px;
 }
-.buy-a-domain h5:nth-of-type(2) {
+.buy-a-domain h5:nth-of-type(2) a {
     font-size: 15px;
     font-weight: 700;
     color: #148bc2;
+    text-decoration: none;
+    cursor: pointer;
 }
 .buy-domain {
-    margin-top: 50px;
+    margin-top: 60px;
 }
 .buy-domain .modal-title {
     color: #727272;
@@ -1208,6 +1210,63 @@ button.btn.save-btn:hover  {
 }
 .upArrow {
     z-index: 999999;
+}
+.already-have-domain .modal-header h4 {
+    font-size: 24px;
+    color: #727272;
+    font-weight: 700;
+}
+.already-have-domain .modal-body p {
+    color: #474747;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.already-have-domain .modal-body .dns-server-adress {
+    font-size: 18px;
+    color: #0285c2;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.already-have-domain .modal-body .dns-intructions {
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+.already-have-domain .modal-body ul li {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.already-have-domain .modal-body ul li p {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: 400;
+    float: left;
+    width: 95%;
+}
+.already-have-domain .modal-body ul li span {
+    float: left;
+    width: 5%;
+}
+.already-have-domain {
+    max-width: 615px;
+    width: 100%;
+    padding: 0!important;
+    margin: auto;
+    margin-top: 60px;
+}
+.already-have-domain .modal-dialog {
+    width: 100%;
+}
+.already-have-domain .modal-dialog .container-fluid {
+    padding: 0;
+}
+.already-have-domain .modal-body {
+    padding-bottom: 20px;
 }
 /* Ipad Simulator */
 	.sim-640  .rating {
@@ -2156,7 +2215,7 @@ button.btn.save-btn:hover  {
 	    width: 100%;
 	    margin-bottom: 10px;
 	}
-    .buy-a-domain h5:nth-of-type(1),.buy-a-domain h5:nth-of-type(2),.valoso-domain button, .not-valoso-domain button,.valoso-domain input, .not-valoso-domain input,.valoso-domain span {
+    .buy-a-domain h5:nth-of-type(1),.buy-a-domain h5:nth-of-type(2) a,.valoso-domain button, .not-valoso-domain button,.valoso-domain input, .not-valoso-domain input,.valoso-domain span {
         font-size: 12px;
     }
     .buy-a-domain h5:nth-of-type(1),.valoso-domain,.not-valoso-domain {
@@ -2222,6 +2281,24 @@ button.btn.save-btn:hover  {
     }
     .port-img-wrapper {
         height: 185px;
+    }
+    .already-have-domain .modal-header h4 {
+        font-size: 20px;
+    }
+    .already-have-domain .modal-body p {
+        font-size: 16px;  
+    }
+    .already-have-domain .modal-body .dns-server-adress,.already-have-domain .modal-body .dns-intructions {
+        font-size: 14px;
+    }
+    .already-have-domain .modal-body ul li p {
+        font-size: 14px;
+        margin-bottom: 0px;
+        width: 90%;
+    }
+    .already-have-domain .modal-body ul li span {
+        width: 10%;
+        font-size: 14px;
     }
 }/* 480px End */
 @media all and (max-width: 360px) {
