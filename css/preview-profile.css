@@ -6,6 +6,7 @@
 }
 .preview-profile-wrapper {
     background-color: #d1eeff;
+    padding-bottom: 20px;
 }
 .profile-top-img img {
     width: 100%;
@@ -219,7 +220,6 @@ span.user-experience-duration {
 }
 .preview-profile-wrapper > .container {
 	background-color: white;
-  	margin-bottom: 20px;
   	box-shadow: 0px 0px 10px #595959;
   	overflow: hidden;
 }
