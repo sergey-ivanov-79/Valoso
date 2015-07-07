@@ -2216,6 +2216,13 @@ button.btn.save-btn:hover  {
     .list-name {
         line-height: 20px;
     }
+    .user-portfolio .col-sm-3 .port-img-wrapper img {
+        height: auto;
+        width: 100%;
+    }
+    .port-img-wrapper {
+        height: 185px;
+    }
 }/* 480px End */
 @media all and (max-width: 360px) {
 	.user-certifications-single {
