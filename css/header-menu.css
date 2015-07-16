@@ -140,5 +140,5 @@
 }
 @media (max-width: 480px) {
     .preview-profile-wrapper .desktop-buttons-640 { margin: 5px auto; float: none; text-align: center;}
-    .preview-profile-wrapper .desktop-buttons-640 button { float: none;}
+    .preview-profile-wrapper .desktop-buttons-640 button { float: none; width: 45px; padding: 0;}
 }
