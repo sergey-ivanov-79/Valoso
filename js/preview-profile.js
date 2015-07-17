@@ -1,8 +1,5 @@
 $(document).ready(function(){
 
-	$( ".desktop-buttons .edit-trigger" ).click(function() {
-	  	$( '.edit-container' ).toggleClass( "activee" );
-	});
 	$('.desktop-devices button').click(function(){
 		$('.desktop-devices button').removeClass('active');
 		$(this).addClass('active');
@@ -15,12 +12,22 @@ $(document).ready(function(){
 	$('.edit-container-left button:nth-of-type(1)').click(function(){
 		$('.arrow-left').css('top','70px');
 		$('.edit-container-right').hide();
+		$('.edit-container').css('width','296px');
+		$('.arrow-left').fadeIn();
 		$('.edit-content-right-template').fadeIn();
 	});
 	$('.edit-container-left button:nth-of-type(2)').click(function(){
 		$('.arrow-left').css('top','130px');
+		$('.edit-container').css('width','296px');
+		$('.arrow-left').fadeIn();
 		$('.edit-content-right-template').hide();
 		$('.edit-container-right').fadeIn();
+	});
+	$('.design-btn span, .some-arrow img').click(function(){
+		$('.arrow-left').fadeOut();
+		$('.edit-content-right-template').fadeOut();
+		$('.edit-container-right').fadeOut();
+		$('.edit-container').css('width','85px');
 	});
 
 	$('.template-name-single > div').click(function(){
