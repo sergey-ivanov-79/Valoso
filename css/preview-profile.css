@@ -464,22 +464,15 @@ footer {
 	margin-bottom: 10px;
 }
 .edit-container {
-    width: 296px;
+    width: 85px;
   	background-color: #4f4f4f;
   	height: 100%;
   	float: left;
-  	left: -315px;
+  	left: 0px;
   	position: absolute;
   	padding-right: 11px;
+    z-index: 999;
   	-webkit-transition: all 300ms ease-in-out;
-  	-moz-transition: all 300ms ease-in-out;
-  	-o-transition: all 300ms ease-in-out;
-  	transition: all 300ms ease-in-out;
-}
-.activee {
-	left: 0px;
-	z-index: 999;
-	-webkit-transition: all 300ms ease-in-out;
   	-moz-transition: all 300ms ease-in-out;
   	-o-transition: all 300ms ease-in-out;
   	transition: all 300ms ease-in-out;
@@ -487,6 +480,9 @@ footer {
 .full-container {
   z-index: 99;
   position: relative;
+}
+.edit-container-right {
+    display: none;
 }
 h1.page-bg {
     background-color: #24a5db;
@@ -613,6 +609,7 @@ button.btn.save-btn:hover  {
     position: absolute;
     top: 5px;
     right: 5px;
+    cursor: pointer;
     color: white;
 }
 .bg-size label input {
@@ -625,6 +622,9 @@ button.btn.save-btn:hover  {
 }
 .some-arrow {
     margin-top: 20px;
+}
+.some-arrow img {
+    cursor: pointer;
 }
 .edit-container-left button {
     width: 48px;
@@ -652,6 +652,7 @@ button.btn.save-btn:hover  {
   	position: absolute;
 	left: 75px;
   	top: 130px;
+    display: none;
   	-webkit-transition: all 150ms ease-in-out;
   	-moz-transition: all 150ms ease-in-out;
   	-o-transition: all 150ms ease-in-out;
@@ -2025,9 +2026,15 @@ button.btn.save-btn:hover  {
   	.user-single-review h5 span {
 	  	padding: 0 10px 0 0;
 	}
+    footer a > img {
+        width: 50%;
+    }
 }/* 767px End */
 @media(max-width: 640px) {
-	.desktop-buttons-640 {
+    .wrapper-form-con {
+        display: none;
+    }
+	.desktop-buttons-640,.edit-container-right {
 		display: block;
 	}
 	.desktop-buttons,.desktop-devices {
