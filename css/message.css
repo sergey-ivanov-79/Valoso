@@ -1,6 +1,9 @@
 .vList {
     width: 350px; 
 }
+.wrapp-myContent {
+   padding-bottom: 115px;
+}
 .vValue { position: relative;}
 .popup-overlay-opened-notifications .li-notifications .vList, 
 .popup-overlay-opened-messages .li-messages .vList {
@@ -97,15 +100,82 @@
 }
 .to-bottom, .new-msg { display: none;}
 @media (min-width: 768px) {
-    .wrapp-textarea { position: relative; padding: 10px;}
+    .wrapp-textarea { 
+        position: relative; 
+        padding-top: 0;   
+        padding-right: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+    }
+    .bottom-block { display: block;}
+    .bottom-block .chat-min {
+        height: 240px;
+        overflow: auto;
+        overflow-x: hidden;
+        background-color: #fff;          /**/
+    }
+    .chat-min .media > .pull-right, .chat-min .media > .pull-left {
+        padding: 0;
+    }
+    .bottom-block .form-control {
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-left: none;
+        border-right: none;
+    }
+    .chat-min .media { margin-top: 10px;}
     .wrapp-textarea > .form-control { height: 70px; padding-right: 35px;}
-    .icon-attachment { position: absolute; right: 20px; top: 20px;}
-    .icon-sent { position: absolute; right: 20px; top: 50px;}
+    .icon-attachment { position: absolute; right: 20px; top: 10px;}
+    .icon-sent { position: absolute; right: 20px; top: 40px;}
     .i-active .active#messages-2  .wrapp-vList .inner-wrapp-vList { padding-top: 0px;}
-    .name-top { padding: 10px; background-color: #36566f;}
+    .name-top { 
+        padding: 10px; 
+        background-color: #36566f;
+        cursor: pointer;
+    } 
+    .name-top {
+      position: absolute;
+      bottom: 0px;
+      left: 0;
+      right: 0;
+    } 
+    .open-wrapper-chat.name-top {
+      position: absolute;
+      top: -352px;
+      left: 0;
+      right: 0;
+     } 
+    .wrapper-all {
+      position: relative;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+     }                     
+    .wrapper-chat {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+     } 
+    .border-left-1 { border-left: 1px solid #fff; float: left;} 
+       
+    .to-bottom, .new-msg { display: none;}
+    .block-open { display: block !important;}
+    .bottom-block .popup-overlay { width: 190px;}
+    .wrapper-chat {    
+        border: 1px solid#ccc;
+        border-top: none;
+       visibility: hidden;
+    } 
+    .open-wrapper-chat.wrapper-chat {
+        visibility: visible;
+    }
+    
     .name-top > p { color: #fff; float: left;}
     .name-top > button, .name-top > button span { color: #fff;}
-    .chat-min { padding: 10px;}
+    .chat-min { padding: 5px;}
     .chat-min img { width: 40px;}
     .message { 
         padding: 10px; 
@@ -145,10 +215,10 @@
         border-color: transparent;
         border-style: solid;
     }
-    .wrapp-mesg .arrow-right { left: auto; right: -19px;}
+    .wrapp-mesg .arrow-right { left: auto; right: -21px;}
     .wrapp-mesg .arrow-right:after { 
         left: auto; 
-        right: 1px; 
+        right: 3px; 
         border-right-width: 0;
         border-left-color: #cac8c9;
         border-right: none;
@@ -158,7 +228,7 @@
     .message-in { background-color: #cac8c9;}
     #messages-2 .inner-t-p { padding-bottom: 52px;}
     .i-active #messages-0 .inner-wrapp-vList { padding-top: 0;}
-    .time { font-size: 13px; font-weight: 600; text-align: center; padding: 10px 0;}
+    .time { font-size: 11px; font-weight: 600; text-align: center; padding: 5px 0;}
 }
 @media (max-width: 767px) {
     .i-active { border-bottom: 5px solid #385770;}
@@ -166,6 +236,7 @@
     .vValue {
       position: static;
     }
+    .bottom-block { display: none;}
     .vList:before, .vList:after { opacity: 0 !important;}
     .popup-overlay-opened-notifications .li-notifications .wrapp-vList, 
     .popup-overlay-opened-messages .li-messages .wrapp-vList { 
