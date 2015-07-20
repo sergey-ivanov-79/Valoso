@@ -132,7 +132,11 @@
         border-right: none;
     }
     .bottom-block .chat-min .media { margin-top: 10px;}
-    .bottom-block .wrapp-textarea > .form-control { height: 70px; padding-right: 35px;}
+    .bottom-block .wrapp-textarea > .form-control { 
+        max-width: 188px;
+        max-height: 70px;
+        padding-right: 35px;
+    }
     .bottom-block .icon-attachment { position: absolute; right: 20px; top: 10px;}
     .bottom-block .icon-sent { position: absolute; right: 20px; top: 40px;}
     .bottom-block .i-active .active#messages-2  .wrapp-vList .inner-wrapp-vList { padding-top: 0px;}
