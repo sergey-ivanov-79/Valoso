@@ -3862,9 +3862,9 @@ $( ".link-select" )
         $('body').toggleClass('popup-overlay-opened-notifications'); // popup-overlay-opened
         $('.li-notifications').toggleClass('i-active');
         $('.li-messages').removeClass('i-active');
-        $('body').removeClass('popup-overlay-opened-messages'); 
-        $('#messages-1').addClass('active');       
-        $('#messages-2').removeClass('active');                
+        $('body').removeClass('popup-overlay-opened-messages');
+        $('#messages-1').addClass('active');
+        $('#messages-2').removeClass('active');
     });
     $(document).on('click', '[data-to-back]', function(){
         $('body').removeClass('popup-overlay-opened-notifications'); // popup-overlay-opened
@@ -3874,35 +3874,55 @@ $( ".link-select" )
         $('body').toggleClass('popup-overlay-opened-messages'); // popup-overlay-opened
         $('.li-messages').toggleClass('i-active');
         $('.li-notifications').removeClass('i-active');
-        $('body').removeClass('popup-overlay-opened-notifications'); 
-        $('#messages-1').addClass('active');       
-        $('#messages-2').removeClass('active'); 
-        $('#messages-0').removeClass('active');     
+        $('body').removeClass('popup-overlay-opened-notifications');
+        $('#messages-1').addClass('active');
+        $('#messages-2').removeClass('active');
+        $('#messages-0').removeClass('active');
     });
     $(document).on('click', '[data-to-back]', function(){
         $('body').removeClass('popup-overlay-opened-messages'); // popup-overlay-opened
         $('.li-messages').removeClass('i-active');
         $('.li-notifications').removeClass('i-active');
-    });  
-      
+    });
+
     // Close Popup-overlay
     $(document).on('click', 'body.popup-overlay-opened-notifications .wrapp-vList .popup-overlay-backdrop', function() {
         $('body').toggleClass('popup-overlay-opened-notifications'); // popup-overlay-opened
-    }); 
+    });
     // Open/Close - item-chat-messages
     $(document).on('click', '.item-chat-messages [data-toggle="chat-messages"]', function() {
         $(this).closest('.item-chat-messages').addClass('opened');
-        $(".scrollbar").scrollbar("resize");                
+        $(".scrollbar").scrollbar("resize");
     });
     $(document).on('click', '.item-chat-messages.opened [data-toggle="chat-messages"]', function() {
         $(this).closest('.item-chat-messages').removeClass('opened');
     });
+
+    // Open/Close - item-chat-messages
+    $(document).on('click', '.item-chat-messages [data-toggle="chat-messages"]', function() {
+        var parent = $(this).closest('.item-chat-messages');
+
+        parent.addClass('opened');
+        $(".scrollbar").scrollbar("resize");
+
+        parent.removeClass('popup-overlay-min');
+
+        if (!parent.prev().hasClass('opened')) {
+            parent.prev().addClass('popup-overlay-min');
+        }
+    });
+
+    $(document).on('click', '.item-chat-messages.opened [data-toggle="chat-messages"]', function() {
+        var parent = $(this).closest('.item-chat-messages');
+
+        parent.removeClass('opened');
+        parent.addClass('popup-overlay-min');
+        parent.prev().removeClass('popup-overlay-min');
+    });
+
     $(document).on('click', '.to-messages', function(e) {
         $("html, body").animate({ scrollTop: $('#to-messages').offset().top }, 1500);
       });
-    $(document).on('click', '.popup-overlay-min [data-toggle="chat-messages"]', function(e) {
-        $('.popup-overlay.popup-overlay-min').removeClass('.popup-overlay-min');
-      });        
 </script>
 
 <!-- END js For Notifications and Messages -->
