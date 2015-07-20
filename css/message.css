@@ -295,7 +295,12 @@
           width: 110px;
     }
     .bottom-block .vList-desktop .users-on img { width: 30px;}
-    #footer .wrapper-t-p-chat { position: absolute; bottom: 100%; left: 0; right: 0; }
+    #footer .wrapper-t-p-chat {   
+        position: fixed;
+        bottom: 0; 
+        left: 0; 
+        right: 0; 
+    }
     .wrapper-t-p-chat { z-index: 1;}
     .close-message { display: none;}
     .badge-message {  
