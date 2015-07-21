@@ -1,9 +1,6 @@
 .vList {
     width: 350px; 
 }
-.wrapp-myContent {
-   padding-bottom: 115px;
-}
 .vValue { position: relative;}
 .popup-overlay-opened-notifications .li-notifications .vList, 
 .popup-overlay-opened-messages .li-messages .vList {
@@ -106,6 +103,12 @@
     text-align: center;
 }
 .to-bottom, .new-msg { display: none;}
+#footer .botCopy {
+    padding-bottom: 10px;
+}
+.padd-bottom-10 {
+    padding-bottom: 10px;
+}
 @media (min-width: 768px) {
     .wrapp-textarea { 
         position: relative; 
@@ -133,12 +136,12 @@
     }
     .bottom-block .chat-min .media { margin-top: 10px;}
     .bottom-block .wrapp-textarea > .form-control { 
-        max-width: 188px;
+        max-width: 240px;
         max-height: 70px;
-        padding-right: 35px;
+        padding-right: 45px;
     }
-    .bottom-block .icon-attachment { position: absolute; right: 20px; top: 10px;}
-    .bottom-block .icon-sent { position: absolute; right: 20px; top: 40px;}
+    .bottom-block .icon-attachment { position: absolute; right: 18px; top: 10px;}
+    .bottom-block .icon-sent { position: absolute; right: 18px; top: 40px;}
     .bottom-block .i-active .active#messages-2  .wrapp-vList .inner-wrapp-vList { padding-top: 0px;}
     .bottom-block .name-top { 
         padding: 5px 10px; 
@@ -233,7 +236,12 @@
         background-color: #fff;
     }
     
-    .bottom-block .wrapp-inner-t-p-chat, .bottom-block .popup-overlay { float: right; position: relative; min-height: 1px; width: 190px; }
+    .bottom-block .wrapp-inner-t-p-chat, .bottom-block .popup-overlay { 
+        float: right; 
+        position: relative; 
+        min-height: 1px; 
+        width: 242px; 
+    }
     
     .bottom-block .wrapp-inner-t-p-chat > .inner, 
     .bottom-block .popup-overlay > .inner { 
@@ -344,7 +352,10 @@
 }
 @media (max-width: 992px) and (min-width: 768px) {
     .bottom-block .wrapp-inner-t-p-chat, .bottom-block .popup-overlay {
-          width: 160px;
+          width: 192px;
+    }
+    .bottom-block .wrapp-textarea > .form-control { 
+        max-width: 190px;
     }
     .bottom-block .users-on .media-body p {
       font-size: 10px;
