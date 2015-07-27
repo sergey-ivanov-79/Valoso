@@ -31,6 +31,7 @@
 <link href="css/main.css" rel="stylesheet" type="text/css" /> 
 <link rel="stylesheet" href="css/calendar-custom.css"/>
 <!-- Calendar CSS End -->
+<link rel="stylesheet" href="css/scrollbar.css"/>
 <link rel="stylesheet" href="css/style-prev.css"/>
 <link rel="stylesheet" href="css/ns-dashboardMML-nouploads.css"/>	
 <link rel="stylesheet" href="css/message.css"/>   
@@ -52,7 +53,7 @@
                 				<div class="col-navbar-wrap no-margin-bottom">
                 					<ul class="shop-msg-noti-icos clearfix">
                 						<!--<li><a href="#" title="shopping cart"><i class="ico ico-cart2"></i></a></li>-->
-                						<li class="li-messages"><a href="#" title="Inbox" class="hasItem"><span class="badge">5</span><i class="ico ico-inbox"></i></a></li>
+                						<li class="li-messages"><a href="#to-messages" title="Inbox" class="hasItem  to-messages" ><span class="badge">5</span><i class="ico ico-inbox"></i></a></li>
                 						<li class="i-active vValue li-notifications">
                                             <a href="#" title="Notifications" class="hasItem icons-mobile-notifications"><span class="badge">2</span><i class="ico ico-notify"></i></a>
                                                 <div class="popup-overlay wrapp-vList"><!-- Begin popup-overlay wrapp-vList -->
@@ -271,7 +272,7 @@
                             </div>
                             <ul class="shop-msg-noti-icos">
                 				<!--<li><a href="#" title="shopping cart"><i class="ico ico-cart2"></i></a></li>-->
-                				<li class="li-messages">
+                				<li class="li-messages" >
                                     <a href="#" title="Inbox" class="hasItem icons-mobile-messages"><span class="badge">5</span><i class="ico ico-inbox"></i></a>
                                     <div class="tab-content">
                                         <div role="tabpanel" class="tab-pane active" id="messages-1">
@@ -2413,7 +2414,7 @@
                                                                 </a>
                                                             </li>
                                                             <li role="presentation">
-                                                                <a href="#compvid" class="media-tab" aria-controls="compvid" role="tab" data-toggle="tab">
+                                                                <a href="#compvid" class="media-tab media-tab-2" aria-controls="compvid" role="tab" data-toggle="tab">
                                                                     <h2 class="h2"><span class="color-blue">Completed Videos</span><img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="popover" data-placement="right auto" data-html="true" data-trigger="hover" data-content="<strong>Supported Formats:</strong><br/><i><strong>VIDEO:</strong> .fiv, .mp4, .webM, .ogg</i><br/><i><strong>IMAGE:</strong> .jpg, .png, .gif</i>" /> </h2>
                                                                 </a>
                                                             </li>
@@ -2436,7 +2437,20 @@
                                                                                         <div class="clearfix">
                                                                                             <p>needforspeedlorem-dtisduisit.jpg</p>
                                                                                             <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
-                                                                                            <div class="pull-right opacity-0"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
+                                                                                            <div class="pull-right"><!-- opacity-0 --><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
+                                                                                            <div class="share-button clearfix">
+                                                                                                Share<i class="fa fa-share-alt"></i>
+                                                                                                <div class="share-clicked">
+                                                                                                  <button class="share-fb"><i class="fa fa-facebook"></i></button>
+                                                                                                  <button class="share-google"><i class="fa fa-google-plus"></i></button>
+                                                                                                  <button class="share-twitter"><i class="fa fa-twitter"></i></button>
+                                                                                                  <button class="share-youtube"><i class="fa fa-youtube-play"></i></button>
+                                                                                                  <button class="share-vimeo"><img src="images/video-project/vimeo.png" alt="" /></button>
+                                                                                                  <button class="share-flickr"><i class="fa fa-flickr"></i></button>
+                                                                                                  <button class="share-tumblr"><i class="fa fa-tumblr"></i></button>
+                                                                                                  <button class="share-pinterest"><i class="fa fa-pinterest"></i></button>
+                                                                                                </div><!-- /.share-clicked -->
+                                                                                            </div><!-- /.share-button -->
                                                                                          </div>
                                                                                     </div>
                                                                                 </div>
@@ -2450,11 +2464,24 @@
                                                                                         </div>
                                                                                     </a>
                                                                                     <div class="mini-icons-img mini-icons-img-media">
-                                                                                        <div class="clearfix">
+                                                                                         <div class="clearfix">
                                                                                             <p>needforspeedlorem-dolor-raduisit.mp4</p>
                                                                                             <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1920 x 1080</span></div>
                                                                                             <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
-                                                                                         </div>
+                                                                                            <div class="share-button clearfix">
+                                                                                                Share<i class="fa fa-share-alt"></i>
+                                                                                                <div class="share-clicked">
+                                                                                                  <button class="share-fb"><i class="fa fa-facebook"></i></button>
+                                                                                                  <button class="share-google"><i class="fa fa-google-plus"></i></button>
+                                                                                                  <button class="share-twitter"><i class="fa fa-twitter"></i></button>
+                                                                                                  <button class="share-youtube"><i class="fa fa-youtube-play"></i></button>
+                                                                                                  <button class="share-vimeo"><img src="images/video-project/vimeo.png" alt="" /></button>
+                                                                                                  <button class="share-flickr"><i class="fa fa-flickr"></i></button>
+                                                                                                  <button class="share-tumblr"><i class="fa fa-tumblr"></i></button>
+                                                                                                  <button class="share-pinterest"><i class="fa fa-pinterest"></i></button>
+                                                                                                </div><!-- /.share-clicked -->
+                                                                                            </div><!-- /.share-button -->
+                                                                                        </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -2470,7 +2497,20 @@
                                                                                         <div class="clearfix">
                                                                                             <p>need-dolor-rackhameviventisduisit.jpg</p>
                                                                                             <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
-                                                                                            <div class="pull-right opacity-0"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
+                                                                                            <div class="pull-right"><!-- opacity-0 --><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
+                                                                                            <div class="share-button clearfix">
+                                                                                                Share<i class="fa fa-share-alt"></i>
+                                                                                                <div class="share-clicked">
+                                                                                                  <button class="share-fb"><i class="fa fa-facebook"></i></button>
+                                                                                                  <button class="share-google"><i class="fa fa-google-plus"></i></button>
+                                                                                                  <button class="share-twitter"><i class="fa fa-twitter"></i></button>
+                                                                                                  <button class="share-youtube"><i class="fa fa-youtube-play"></i></button>
+                                                                                                  <button class="share-vimeo"><img src="images/video-project/vimeo.png" alt="" /></button>
+                                                                                                  <button class="share-flickr"><i class="fa fa-flickr"></i></button>
+                                                                                                  <button class="share-tumblr"><i class="fa fa-tumblr"></i></button>
+                                                                                                  <button class="share-pinterest"><i class="fa fa-pinterest"></i></button>
+                                                                                                </div><!-- /.share-clicked -->
+                                                                                            </div><!-- /.share-button -->
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2488,6 +2528,19 @@
                                                                                             <p>lorem-dolor-rackhameviventisduisit.mp4</p>
                                                                                             <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1920 x 1080</span></div>
                                                                                             <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>04:30:10</span></div>
+                                                                                            <div class="share-button clearfix">
+                                                                                                Share<i class="fa fa-share-alt"></i>
+                                                                                                <div class="share-clicked">
+                                                                                                  <button class="share-fb"><i class="fa fa-facebook"></i></button>
+                                                                                                  <button class="share-google"><i class="fa fa-google-plus"></i></button>
+                                                                                                  <button class="share-twitter"><i class="fa fa-twitter"></i></button>
+                                                                                                  <button class="share-youtube"><i class="fa fa-youtube-play"></i></button>
+                                                                                                  <button class="share-vimeo"><img src="images/video-project/vimeo.png" alt="" /></button>
+                                                                                                  <button class="share-flickr"><i class="fa fa-flickr"></i></button>
+                                                                                                  <button class="share-tumblr"><i class="fa fa-tumblr"></i></button>
+                                                                                                  <button class="share-pinterest"><i class="fa fa-pinterest"></i></button>
+                                                                                                </div><!-- /.share-clicked -->
+                                                                                            </div><!-- /.share-button -->
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2505,6 +2558,19 @@
                                                                                             <p>needforsp-dolor-raentisduisit.jpg</p>
                                                                                             <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
                                                                                             <div class="pull-right"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20</span></div>
+                                                                                            <div class="share-button clearfix">
+                                                                                                Share<i class="fa fa-share-alt"></i>
+                                                                                                <div class="share-clicked">
+                                                                                                  <button class="share-fb"><i class="fa fa-facebook"></i></button>
+                                                                                                  <button class="share-google"><i class="fa fa-google-plus"></i></button>
+                                                                                                  <button class="share-twitter"><i class="fa fa-twitter"></i></button>
+                                                                                                  <button class="share-youtube"><i class="fa fa-youtube-play"></i></button>
+                                                                                                  <button class="share-vimeo"><img src="images/video-project/vimeo.png" alt="" /></button>
+                                                                                                  <button class="share-flickr"><i class="fa fa-flickr"></i></button>
+                                                                                                  <button class="share-tumblr"><i class="fa fa-tumblr"></i></button>
+                                                                                                  <button class="share-pinterest"><i class="fa fa-pinterest"></i></button>
+                                                                                                </div><!-- /.share-clicked -->
+                                                                                            </div><!-- /.share-button -->
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2521,7 +2587,20 @@
                                                                                         <div class="clearfix">
                                                                                             <p>needforspeedlorem-dolor-ractisduisit.jpg</p>
                                                                                             <div class="pull-left"><img src="images/p-a/icon-resolution.png" class="pos-rel"/><span>1024 x 980</span></div>
-                                                                                            <div class="pull-right opacity-0"><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20<span></span></div>
+                                                                                            <div class="pull-right"><!-- opacity-0 --><img src="images/p-a/progects-icon-2.png" class="pos-rel"/><span>03:44:20<span></span></div>
+                                                                                            <div class="share-button clearfix">
+                                                                                                Share<i class="fa fa-share-alt"></i>
+                                                                                                <div class="share-clicked">
+                                                                                                  <button class="share-fb"><i class="fa fa-facebook"></i></button>
+                                                                                                  <button class="share-google"><i class="fa fa-google-plus"></i></button>
+                                                                                                  <button class="share-twitter"><i class="fa fa-twitter"></i></button>
+                                                                                                  <button class="share-youtube"><i class="fa fa-youtube-play"></i></button>
+                                                                                                  <button class="share-vimeo"><img src="images/video-project/vimeo.png" alt="" /></button>
+                                                                                                  <button class="share-flickr"><i class="fa fa-flickr"></i></button>
+                                                                                                  <button class="share-tumblr"><i class="fa fa-tumblr"></i></button>
+                                                                                                  <button class="share-pinterest"><i class="fa fa-pinterest"></i></button>
+                                                                                                </div><!-- /.share-clicked -->
+                                                                                            </div><!-- /.share-button -->
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -2817,7 +2896,7 @@
             </div><!-- END row -->
         </div><!-- END container -->
     </div><!-- END wrapper-form-con -->
-</section>
+</section><div id="to-messages"></div>
 
     <div class="wrapper-sidebar-offcanvas">
         <div class="sidebar-offcanvas" id="sidebar">
@@ -2885,100 +2964,7 @@
         </div><!--/.sidebar-offcanvas-->
     </div>
 </div>
-<div class="container">
-    <div class="popup-overlay wrapp-vList"><!-- Begin popup-overlay wrapp-vList -->
-        <div class="inner-wrapp-vList">
-            <div class="wrapp-vList-nav-tabs  clearfix">
-                <div class="inner-t-p">
-                    <div>
-                        <div class="name-top clearfix">
-                            <p>Joe Smith</p>
-                            <button type="button" class="close" data-target="#messages-1" data-toggle="tab" aria-label="Close" role="tab"><span aria-hidden="true">&times;</span></button>
-                        </div>
-                        <div class="chat-min clearfix">
-                            <div class="clearfix media">
-                                <div class="pull-left">
-                                    <img src="images/p-a/img-ann.png" />
-                                </div>
-                                <div class="media-body">
-                                    <div class="wrapp-mesg">
-                                        <div class="arrow message-u"></div>
-                                        <p class="message message-us">This is the msg from joe smith. Lorem ipsum dolor sit, amet consectetur!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clearfix media">
-                                <div class="pull-left">
-                                    <img src="images/p-a/img-ann.png" />
-                                </div>
-                                <div class="media-body">
-                                    <div class="wrapp-mesg">
-                                        <div class="arrow message-u"></div>
-                                        <p class="message message-us">Another message. Lorem ipsum dolor sit amet consectetur adipiscing. Dolor sit amit, h rackham vientis sit elit amir quissut elur.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="time">Monday, May 4 - 03:30:50 am</p>
-                            <div class="clearfix media">
-                                <div class="pull-right">
-                                    <img src="images/p-a/img-1-public.png" />
-                                </div>
-                                <div class="media-body">
-                                    <div class="wrapp-mesg">
-                                        <div class="arrow arrow-right message-i"></div>
-                                        <p class="message message-in">Hi Joe! Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clearfix media">
-                                <div class="pull-left">
-                                    <img src="images/p-a/img-ann.png" />
-                                </div>
-                                <div class="media-body">
-                                    <div class="wrapp-mesg">
-                                        <div class="arrow message-u"></div>
-                                        <p class="message message-us">This is the msg from joe smith. Lorem</p>
-                                    </div>
-                                </div>
-                            </div> 
-                            <div class="clearfix media">
-                                <div class="pull-right">
-                                    <img src="images/p-a/img-1-public.png" />
-                                </div>
-                                <div class="media-body">
-                                    <div class="wrapp-mesg">
-                                        <div class="arrow arrow-right message-i"></div>
-                                        <p class="message message-in">Hi Joe! Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                </div>
-                            </div> 
-                            <p class="time">Monday, May 4 - 03:30:50 am</p> 
-                            <div class="clearfix media">
-                                <div class="pull-right">
-                                    <img src="images/p-a/img-1-public.png" />
-                                </div>
-                                <div class="media-body">
-                                    <div class="wrapp-mesg">
-                                        <div class="arrow-right message-i"></div>
-                                        <p class="message message-in">Yes! Lorem ipsum dolor sit amet consectetur.</p>
-                                    </div>
-                                </div>
-                            </div>                                                                 
-                        </div>
-                    </div>
-                    <div class="wrapp-textarea">
-                        <textarea class="form-control" rows="5" placeholder="Dolor sit amet.."></textarea>
-                        <img class="icon-attachment" src="images/p-a/img-attachment.png" />
-                        <img class="icon-sent" src="images/p-a/img-sent.png" />
-                    </div>
-                </div>
-                <div class="wrapp-back-buttom" data-target="#messages-1" aria-controls="messages-1" role="tab" data-toggle="tab">
-                    <div class="to-bottom"><img src="images/p-a/back-arrow.png" />Back</div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <footer id="footer" class="site-footer">
  <div class="container">
      <div class="row botInfo">
@@ -3004,7 +2990,7 @@
          </div>
          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 botLink">
            <h4>Get Inspired</h4>
-           <p>Weekly top projects, featured designers, tips, and tricks</p>
+           <p class="padd-bottom-10">Weekly top projects, featured designers, tips, and tricks</p>
            <div class="input-group">
               <input type="text" class="form-control" placeholder="Enter Email Here">
               <span class="input-group-btn"><button class="btn btn-default" type="button">Sign Up</button></span>
@@ -3030,7 +3016,440 @@
      </div>         
  
  </div>
-    
+
+<div class="wrapper-t-p-chat bottom-block">
+    <div class="container">
+       <div class="wrapp-inner-t-p-chat item-chat-messages">
+        <div class="inner">
+            <div class="name-top clearfix" id="name-top" data-toggle="chat-messages">
+                <p>CHAT <span>(3)</span></p>
+                <button type="button" class="btn-close" data-toggle="chat-messages"><span class="close-message" aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="inner-t-p-chat scrollbar">
+                <ul class="vList vList-desktop vMessagesDropdownList">
+                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                        <div class="creator-stats users-on clearfix">
+                            <div class="media">
+                                <div class="pull-left"><img src="images/p-a/img-1-creator.png"></div>
+                                <div class="media-body">
+                                    <p><span class="bold">Paul123 - 10 minutes ago</span><br><i class="bold">Additional revisions</i> </p>
+                                </div>
+                            </div>
+                            <span class="stats stats-on"></span>
+                        </div>
+                    </li>
+                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                        <div class="creator-stats users-on clearfix">
+                            <div class="media">
+                                <div class="pull-left"><img src="images/p-a/img-1-creator.png"></div>
+                                <div class="media-body">
+                                    <p><span class="bold">Paul123 - 4 hours ago</span><br><i class="bold">Please change this graphic</i> </p>
+                                </div>
+                            </div>
+                            <span class="stats stats-on"></span>
+                        </div>
+                    </li>
+                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                        <div class="creator-stats users-on clearfix">
+                            <div class="media">
+                                <div class="pull-left"><img src="images/p-a/img-1-creator.png"></div>
+                                <div class="media-body">
+                                    <p><span class="bold">Paul123 - 1 day ago</span><br><i>Great work!</i> </p>
+                                </div>
+                            </div>
+                            <span class="stats stats-on"></span>
+                        </div>
+                    </li>
+                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                        <div class="designer-stats users-on clearfix">
+                            <div class="media">
+                                <div class="pull-left"><img src="images/p-a/img-ann.png"></div>
+                                <div class="media-body">
+                                    <p><span class="bold">Ann214 - 5 days ago</span><br><i>My Project Proposal</i> </p>
+                                </div>
+                            </div>
+                            <span class="stats stats-off"></span>
+                        </div>
+                    </li>
+                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                        <div class="designer-stats users-on clearfix">
+                            <div class="media">
+                                <div class="pull-left"><img src="images/p-a/img-1-public.png"></div>
+                                <div class="media-body">
+                                    <p><span class="bold">Shazey2014 - 1 week ago</span><br><i>My Project Proposal</i> </p>
+                                </div>
+                            </div>
+                            <span class="stats stats-on"></span>
+                        </div>
+                    </li>
+                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                        <div class="creator-stats users-on clearfix">
+                            <div class="media">
+                                <div class="pull-left"><img src="images/p-a/img-1-creator.png"></div>
+                                <div class="media-body">
+                                    <p><span class="bold">Paul123 - 1 day ago</span><br><i>Great work!</i> </p>
+                                </div>
+                            </div>
+                            <span class="stats stats-on"></span>
+                        </div>
+                    </li>
+                    <li data-target="#messages-2" aria-controls="messages-2" role="tab" data-toggle="tab">
+                        <div class="creator-stats users-on clearfix">
+                            <div class="media">
+                                <div class="pull-left"><img src="images/p-a/img-ann.png"></div>
+                                <div class="media-body">
+                                    <p><span class="bold">Ann214 - 5 days ago</span><br><i>My Project Proposal</i> </p>
+                                </div>
+                            </div>
+                            <span class="stats stats-off"></span>
+                        </div>
+                    </li>
+                 </ul>
+             </div>
+            </div> <!-- END .inner -->
+         </div>
+         <div class="popup-overlay wrapp-vList item-chat-messages"><!-- Begin popup-overlay wrapp-vList -->
+            <div class="inner">
+                <div class="inner-wrapp-vList">
+                    <div class="wrapp-vList-nav-tabs  clearfix">
+                        <div class="inner-t-p">
+                            <div class="wrapper-all">
+                                <div class="name-top clearfix" id="name-top" data-toggle="chat-messages">
+                                    <p>John Doe</p>
+                                    <button type="button" class="btn-close" data-toggle="chat-messages"><span class="close-message" aria-hidden="true">&times;</span><span class="badge badge-message">2</span></button>
+                                </div>
+                                <div class="wrapper-chat" id="added">
+                                    <div class="chat-min clearfix scrollbar">
+                                        <div class="clearfix media">
+                                            <div class="pull-left">
+                                                <img src="images/p-a/img-ann.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow message-u"></div>
+                                                    <p class="message message-us">This is the msg from joe smith. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix media">
+                                            <div class="pull-left">
+                                                <img src="images/p-a/img-ann.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow message-u"></div>
+                                                    <p class="message message-us">Another message. Lorem ipsum dolor sit amet.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="time">Monday, May 4 - 03:30:50 am</p>
+                                        <div class="clearfix media">
+                                            <div class="pull-right">
+                                                <img src="images/p-a/img-1-public.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow arrow-right message-i"></div>
+                                                    <p class="message message-in">Hi Joe!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix media">
+                                            <div class="pull-left">
+                                                <img src="images/p-a/img-ann.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow message-u"></div>
+                                                    <p class="message message-us">This is the msg.</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="clearfix media">
+                                            <div class="pull-right">
+                                                <img src="images/p-a/img-1-public.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow arrow-right message-i"></div>
+                                                    <p class="message message-in">Hi Joe! Lorem ipsum.</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <p class="time">Monday, May 4 - 03:30:50 am</p>                                                                
+                                    </div>
+                                    <div class="wrapp-textarea">
+                                        <textarea class="form-control" rows="5" placeholder="Dolor sit amet.."></textarea>
+                                        <img class="icon-attachment" src="images/p-a/img-attachment.png" />
+                                        <img class="icon-sent" src="images/p-a/img-sent.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapp-back-buttom" data-target="#messages-1" aria-controls="messages-1" role="tab" data-toggle="tab">
+                            <div class="to-bottom"><img src="images/p-a/back-arrow.png" />Back</div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- END .inner -->
+        </div>
+         <div class="popup-overlay wrapp-vList item-chat-messages"><!-- Begin popup-overlay wrapp-vList -->
+            <div class="inner">
+                <div class="inner-wrapp-vList">
+                    <div class="wrapp-vList-nav-tabs  clearfix">
+                        <div class="inner-t-p">
+                            <div class="wrapper-all">
+                                <div class="name-top clearfix" id="name-top" data-toggle="chat-messages">
+                                    <p>Joe Smith</p>
+                                    <button type="button" class="btn-close" data-toggle="chat-messages"><span class="close-message" aria-hidden="true">&times;</span><span class="badge badge-message">3</span></button>
+                                </div>
+                                <div class="wrapper-chat" id="added">
+                                    <div class="chat-min clearfix scrollbar">
+                                        <div class="clearfix media">
+                                            <div class="pull-left">
+                                                <img src="images/p-a/img-ann.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow message-u"></div>
+                                                    <p class="message message-us">This is the msg from joe smith. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix media">
+                                            <div class="pull-left">
+                                                <img src="images/p-a/img-ann.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow message-u"></div>
+                                                    <p class="message message-us">Another message. Lorem ipsum dolor sit amet.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="time">Monday, May 4 - 03:30:50 am</p>
+                                        <div class="clearfix media">
+                                            <div class="pull-right">
+                                                <img src="images/p-a/img-1-public.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow arrow-right message-i"></div>
+                                                    <p class="message message-in">Hi Joe!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix media">
+                                            <div class="pull-left">
+                                                <img src="images/p-a/img-ann.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow message-u"></div>
+                                                    <p class="message message-us">This is the msg.</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="clearfix media">
+                                            <div class="pull-right">
+                                                <img src="images/p-a/img-1-public.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow arrow-right message-i"></div>
+                                                    <p class="message message-in">Hi Joe! Lorem ipsum.</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <p class="time">Monday, May 4 - 03:30:50 am</p>                                                                
+                                    </div>
+                                    <div class="wrapp-textarea">
+                                        <textarea class="form-control" rows="5" placeholder="Dolor sit amet.."></textarea>
+                                        <img class="icon-attachment" src="images/p-a/img-attachment.png" />
+                                        <img class="icon-sent" src="images/p-a/img-sent.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapp-back-buttom" data-target="#messages-1" aria-controls="messages-1" role="tab" data-toggle="tab">
+                            <div class="to-bottom"><img src="images/p-a/back-arrow.png" />Back</div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- END .inner -->
+        </div>
+        <div class="popup-overlay popup-overlay-min wrapp-vList item-chat-messages"><!-- Begin popup-overlay wrapp-vList -->
+            <div class="inner">
+                <div class="inner-wrapp-vList">
+                    <div class="wrapp-vList-nav-tabs  clearfix">
+                        <div class="inner-t-p">
+                            <div class="wrapper-all">
+                                <div class="name-top clearfix" id="name-top" data-toggle="chat-messages">
+                                    <p>Philip Rackhamovskii</p>
+                                    <button type="button" class="btn-close" data-toggle="chat-messages"><span class="close-message" aria-hidden="true">&times;</span><span class="badge badge-message">2</span></button>
+                                </div>
+                                <div class="wrapper-chat" id="added">
+                                    <div class="chat-min clearfix scrollbar">
+                                        <div class="clearfix media">
+                                            <div class="pull-left">
+                                                <img src="images/p-a/img-ann.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow message-u"></div>
+                                                    <p class="message message-us">This is the msg from joe smith. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix media">
+                                            <div class="pull-left">
+                                                <img src="images/p-a/img-ann.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow message-u"></div>
+                                                    <p class="message message-us">Another message. Lorem ipsum dolor sit amet.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="time">Monday, May 4 - 03:30:50 am</p>
+                                        <div class="clearfix media">
+                                            <div class="pull-right">
+                                                <img src="images/p-a/img-1-public.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow arrow-right message-i"></div>
+                                                    <p class="message message-in">Hi Joe!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix media">
+                                            <div class="pull-left">
+                                                <img src="images/p-a/img-ann.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow message-u"></div>
+                                                    <p class="message message-us">This is the msg.</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="clearfix media">
+                                            <div class="pull-right">
+                                                <img src="images/p-a/img-1-public.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow arrow-right message-i"></div>
+                                                    <p class="message message-in">Hi Joe! Lorem ipsum.</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <p class="time">Monday, May 4 - 03:30:50 am</p>                                                                
+                                    </div>
+                                    <div class="wrapp-textarea">
+                                        <textarea class="form-control" rows="5" placeholder="Dolor sit amet.."></textarea>
+                                        <img class="icon-attachment" src="images/p-a/img-attachment.png" />
+                                        <img class="icon-sent" src="images/p-a/img-sent.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapp-back-buttom" data-target="#messages-1" aria-controls="messages-1" role="tab" data-toggle="tab">
+                            <div class="to-bottom"><img src="images/p-a/back-arrow.png" />Back</div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- END .inner -->
+        </div>
+        <div class="popup-overlay popup-overlay-min wrapp-vList item-chat-messages"><!-- Begin popup-overlay wrapp-vList -->
+            <div class="inner">
+                <div class="inner-wrapp-vList">
+                    <div class="wrapp-vList-nav-tabs  clearfix">
+                        <div class="inner-t-p">
+                            <div class="wrapper-all popup-overlay-min">
+                                <div class="name-top clearfix" id="name-top" data-toggle="chat-messages">
+                                    <p>Joe Smith</p>
+                                    <button type="button" class="btn-close" data-toggle="chat-messages"><span class="close-message" aria-hidden="true">&times;</span><span class="badge badge-message">1</span></button>
+                                </div>
+                                <div class="wrapper-chat" id="added">
+                                    <div class="chat-min clearfix scrollbar">
+                                        <div class="clearfix media">
+                                            <div class="pull-left">
+                                                <img src="images/p-a/img-ann.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow message-u"></div>
+                                                    <p class="message message-us">This is the msg from joe smith. </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix media">
+                                            <div class="pull-left">
+                                                <img src="images/p-a/img-ann.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow message-u"></div>
+                                                    <p class="message message-us">Another message. Lorem ipsum dolor sit amet.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="time">Monday, May 4 - 03:30:50 am</p>
+                                        <div class="clearfix media">
+                                            <div class="pull-right">
+                                                <img src="images/p-a/img-1-public.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow arrow-right message-i"></div>
+                                                    <p class="message message-in">Hi Joe!</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix media">
+                                            <div class="pull-left">
+                                                <img src="images/p-a/img-ann.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow message-u"></div>
+                                                    <p class="message message-us">This is the msg.</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="clearfix media">
+                                            <div class="pull-right">
+                                                <img src="images/p-a/img-1-public.png" />
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="wrapp-mesg">
+                                                    <div class="arrow arrow-right message-i"></div>
+                                                    <p class="message message-in">Hi Joe! Lorem ipsum.</p>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <p class="time">Monday, May 4 - 03:30:50 am</p>                                                                
+                                    </div>
+                                    <div class="wrapp-textarea">
+                                        <textarea class="form-control" rows="5" placeholder="Dolor sit amet.."></textarea>
+                                        <img class="icon-attachment" src="images/p-a/img-attachment.png" />
+                                        <img class="icon-sent" src="images/p-a/img-sent.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrapp-back-buttom" data-target="#messages-1" aria-controls="messages-1" role="tab" data-toggle="tab">
+                            <div class="to-bottom"><img src="images/p-a/back-arrow.png" />Back</div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- END .inner -->
+        </div>
+    </div> <!-- END .container -->
+</div>   
 </footer>
 </div>
 </div>
@@ -3184,7 +3603,13 @@
 <!--
 <script src="js/video-project-page.js"></script>
 -->
-
+<script src="js/core.js"></script> 
+<script src="js/scrollbar.js"></script>
+<script>
+    $(function() {
+		$(".scrollbar").scrollbar();
+	});
+</script>
 <script type="text/javascript" language="javascript" src="js/tinymce/tinymce.min.js"></script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.1/js/select2.min.js" type="text/javascript"></script>
 <script>
@@ -3515,9 +3940,9 @@ $( ".link-select" )
         $('body').toggleClass('popup-overlay-opened-notifications'); // popup-overlay-opened
         $('.li-notifications').toggleClass('i-active');
         $('.li-messages').removeClass('i-active');
-        $('body').removeClass('popup-overlay-opened-messages'); 
-        $('#messages-1').addClass('active');       
-        $('#messages-2').removeClass('active');                
+        $('body').removeClass('popup-overlay-opened-messages');
+        $('#messages-1').addClass('active');
+        $('#messages-2').removeClass('active');
     });
     $(document).on('click', '[data-to-back]', function(){
         $('body').removeClass('popup-overlay-opened-notifications'); // popup-overlay-opened
@@ -3527,20 +3952,57 @@ $( ".link-select" )
         $('body').toggleClass('popup-overlay-opened-messages'); // popup-overlay-opened
         $('.li-messages').toggleClass('i-active');
         $('.li-notifications').removeClass('i-active');
-        $('body').removeClass('popup-overlay-opened-notifications'); 
-        $('#messages-1').addClass('active');       
-        $('#messages-2').removeClass('active');         
+        $('body').removeClass('popup-overlay-opened-notifications');
+        $('#messages-1').addClass('active');
+        $('#messages-2').removeClass('active');
+        $('#messages-0').removeClass('active');
     });
     $(document).on('click', '[data-to-back]', function(){
         $('body').removeClass('popup-overlay-opened-messages'); // popup-overlay-opened
         $('.li-messages').removeClass('i-active');
         $('.li-notifications').removeClass('i-active');
-    });        
+    });
+
     // Close Popup-overlay
     $(document).on('click', 'body.popup-overlay-opened-notifications .wrapp-vList .popup-overlay-backdrop', function() {
         $('body').toggleClass('popup-overlay-opened-notifications'); // popup-overlay-opened
-    }); 
+    });
+    // Open/Close - item-chat-messages
+    $(document).on('click', '.item-chat-messages [data-toggle="chat-messages"]', function() {
+        $(this).closest('.item-chat-messages').addClass('opened');
+        $(".scrollbar").scrollbar("resize");
+    });
+    $(document).on('click', '.item-chat-messages.opened [data-toggle="chat-messages"]', function() {
+        $(this).closest('.item-chat-messages').removeClass('opened');
+    });
+
+    // Open/Close - item-chat-messages
+    $(document).on('click', '.item-chat-messages [data-toggle="chat-messages"]', function() {
+        var parent = $(this).closest('.item-chat-messages');
+
+        parent.addClass('opened');
+        $(".scrollbar").scrollbar("resize");
+
+        parent.removeClass('popup-overlay-min');
+
+        if (!parent.prev().hasClass('opened')) {
+            parent.prev().addClass('popup-overlay-min');
+        }
+    });
+
+    $(document).on('click', '.item-chat-messages.opened [data-toggle="chat-messages"]', function() {
+        var parent = $(this).closest('.item-chat-messages');
+
+        parent.removeClass('opened');
+        parent.addClass('popup-overlay-min');
+        parent.prev().removeClass('popup-overlay-min');
+    });
+
+    $(document).on('click', '.to-messages', function(e) {
+        $("html, body").animate({ scrollTop: $('#to-messages').offset().top }, 1500);
+      });
 </script>
+
 <!-- END js For Notifications and Messages -->
 <script src="js/video-project-page.js"></script>
 <script> 
@@ -3548,5 +4010,6 @@ $( ".link-select" )
             $(this).parents('.remove-block').remove();
         }); 
 </script>
+
 </body>
 </html>
