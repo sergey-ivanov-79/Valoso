@@ -221,7 +221,6 @@ span.user-experience-duration {
 .preview-profile-wrapper > .container {
 	background-color: white;
   	box-shadow: 0px 0px 10px #595959;
-  	overflow: hidden;
 }
 footer {
 	background-color: #959595;
@@ -468,7 +467,7 @@ footer {
   	background-color: #4f4f4f;
   	height: 100%;
   	float: left;
-  	left: 0px;
+  	left: -85px;
   	position: absolute;
   	padding-right: 11px;
     z-index: 999;
@@ -531,6 +530,23 @@ h1.page-bg {
     font-size: 14px;
     font-weight: 700;
     border-radius: 8px;
+    border: solid 2px #ff7c99;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.upload-image button:first-child .fileupload span {
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; 
+}
+.upload-image button:first-child:hover {
+   background-color: white;
+}
+.upload-image button:first-child:hover .fileupload span {
+    color: #ff7c99;
 }
 .upload-image button:last-child {
     width: 100%;
@@ -829,6 +845,30 @@ button.btn.save-btn:hover  {
     width: 100px;
     line-height: 15px;
     padding: 5px 0;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.cer-pop-img button:hover {
+    background-color: transparent;
+}
+.cer-pop-img button:hover span {
+    color: #ff7c99;
+}
+.cer-pop-img button span {
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    white-space: initial;
+    cursor: pointer;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.cer-pop-img button .fileUpload {
+    cursor: pointer;
 }
 .port-edit-buttons {
     position: absolute;
@@ -1268,6 +1308,61 @@ button.btn.save-btn:hover  {
 }
 .already-have-domain .modal-body {
     padding-bottom: 20px;
+}
+.fileUpload {
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+    background-image: none;
+    border-color: 0;
+    box-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+.fileUpload:hover,.fileUpload:focus,.fileUpload:active {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+}
+.fileUpload input.upload {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.upload-image .fileupload span {
+    font-weight: 700;
+}
+.fileUpload > img {
+    padding: 1px;
+}
+.profile-top-img > button .fileUpload input,.user-profile-left-picture .fileUpload input {
+    height: 100%;
+}
+.user-certifications-single .popover {
+    max-width: 250px;
+    width: 100%;
+}
+.user-certifications-single .popover .placeholder-buttons button {
+    width: 48%;
+    margin: 0;
+}
+.user-certifications-single .popover .placeholder-buttons button:first-child {
+    margin-right: 2%;
+}
+.port-popover-buttons .fileUpload span {
+    font-size: 12px;
+    color: white;
+    font-weight: 700;
+    text-shadow: none;
+}
+.port-popover-buttons button:last-child:hover .fileUpload span {
+    color: #ff7c99;
 }
 /* Ipad Simulator */
 	.sim-640  .rating {
@@ -1831,6 +1926,11 @@ button.btn.save-btn:hover  {
 		padding-left: 5px;
 	}
 /* Phone Simulator End */
+@media(max-width: 1200px) {
+    .edit-container {
+        left: 0px;
+    }
+}
 @media(max-width: 1024px) {
 	.rating {
 		width: 110px;
@@ -1953,13 +2053,21 @@ button.btn.save-btn:hover  {
 		right: 40px;
 	}
 	.edit-together {
-	  margin: 0 0 0 1px;
+	   margin: 0 0 0 1px;
 	}
 	.absolute-left {
-	  position: absolute;
-	  left: -40px;
+	   position: absolute;
+	   left: -40px;
 	}
+    .edit-container {
+        left: -85px;
+    }
 }/* 991px End */
+@media(max-width: 930px) {
+    .edit-container {
+        left: 0px;
+    }
+}
 @media(max-width: 768px) {
 	.user-profile-left > .col-sm-9:after {
 	  	height: 190px;
