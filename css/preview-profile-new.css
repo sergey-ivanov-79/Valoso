@@ -1675,9 +1675,6 @@ button.btn.save-btn:hover  {
 	.sim-640 .cert-name h4:nth-of-type(1) {
 	  	margin-top: 20px;
 	}
-	.sim-640 .user-portfolio .col-sm-3 img {
-	  	height: 185px;
-	}
 	.sim-640 .user-ratings h5 span {
 	  	padding-right: 15px;
 	}
@@ -2535,6 +2532,15 @@ button.btn.save-btn:hover  {
     .sim-320 .user-profile-left-picture .fileUpload > img {
         width: 25px;
     }
+    .sim-320 .edit-together {
+        width: 11px;
+    }
+    .sim-320 img.together-trash {
+        width: 11px;
+    }
+    .cert-name img:nth-of-type(1) {
+        right: 40px;
+    }
 /* Phone Simulator End */
 @media(max-width: 1200px) {
     .edit-container {
@@ -3036,6 +3042,12 @@ button.btn.save-btn:hover  {
     .already-have-domain .modal-body ul li span {
         width: 10%;
         font-size: 14px;
+    }
+    .display-640,.display-desktop {
+        display: none!important;
+    }
+    .display-480 {
+        display: block;
     }
 }/* 480px End */
 @media all and (max-width: 360px) {
