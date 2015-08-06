@@ -38,6 +38,11 @@
 				<img src="images/preview-profile/ipad.png" alt="Ipad Simulator" />
 			</div><!-- /.ipad-simulator -->
 			<div class="top-menu">
+			<div class="desktop-devices">
+						<button class="active" id="desktop-sim"><img src="images/preview-profile/desktop.png" alt="" /></button>
+						<button id="tablet-sim"><img src="images/preview-profile/tablet.png" alt="" /></button>
+						<button id="phone-sim"><img src="images/preview-profile/mobile.png" alt="" /></button>
+					</div><!-- /.desktop-devices -->
 				<div class="container no-padding">
 					<div class="template-name">
 						<label>Template in use:<input type="text" placeholder="Template name here"></label>
@@ -461,7 +466,7 @@
 							</div>
 						</button>
 					</div><!-- /.profile-top-img -->
-					<div class="col-sm-12 user-profile-left user-profile-right clearfix">
+					<div class="col-sm-12 user-profile-left user-profile-right clearfix display-desktop">
 						<ul class="clearfix">
 							<li class="col-sm-3 user-profile-left-picture no-padding">
 								<img src="images/preview-profile/user-img.jpg" alt="User Image" />
@@ -480,6 +485,52 @@
 							<li class="hire-me-section"><h4>Australia</h4></li>
 							<li class="hire-me-section"><h5 class="user-star-rating">5.0/5 <img src="images/preview-profile/5-star.png" alt="User rating" /></h5></li>
 							<li class="hire-me-section"><h5 class="user-star-reviews">12 reviews</h5></li>
+							<li class="hire-me-section"><h5 class="user-exp-lang user-exp-lang-marg">Experience: Intermediate<img class="edit-experience-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<select><option>Option 1</option><option>Intermediate</option></select><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5></li>
+							<li class="hire-me-section"><h5 class="user-exp-lang">Languages: English, French, Arabic<img class="edit-language-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<select><option>English</option><option>French</option><option>Arabic</option></select><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5></li>
+						</ul>
+				</div><!-- /.user-profile-right -->
+				<div class="col-sm-12 user-profile-left user-profile-right clearfix display-640">
+						<ul class="clearfix">
+							<li class="col-sm-3 user-profile-left-picture no-padding">
+								<img src="images/preview-profile/user-img.jpg" alt="User Image" />
+								<button>
+									<div class="fileUpload btn btn-primary">
+									    <img src="images/preview-profile/cam.png" alt="Edit Icon" />
+									    <input type="file" class="upload" />
+									</div>
+								</button>
+							</li>
+							<li class="user-profile-left-details"><h3 class="clearfix"><span>John Doe</span> <div class="verified-icon"><i class="fa fa-check"></i>Verfied</div><!-- /.verified-icon --><img class="edit-name-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' value='John Doe'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h3></li>
+							<li class="hire-me-section"><button class="hire-me">Hire Me</button><!-- /.hire-me --></li>
+							<li class="user-profile-left-details"><h4><span>Position</span>|<span>Anything</span><img class="edit-position-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' value='Web Designer'><input type='text' value='Anything'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h4></li>
+							<li class="hire-me-section edit-hour-pop"><h3>$50.00 <span class="user-currency">USD/hr</span><!-- /.user-currency --><img class="edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<input type='text' value='50'><input type='text' value='USD'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h3></li>
+							<li class="hire-me-section"><h4>Australia</h4></li>
+							<li class="hire-me-section"><h5 class="user-star-rating">5.0/5 <img src="images/preview-profile/5-star.png" alt="User rating" /></h5></li>
+							<li class="hire-me-section"><h5 class="user-star-reviews">12 reviews</h5></li>
+							<li class="user-profile-left-details"><p>Summary about myself. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo incididunt ut labore et dolore magna aliqua sut. Consecteture adipiscing elit halum.<img class="edit-text-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<textarea></textarea><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></p></li>
+							<li class="hire-me-section"><h5 class="user-exp-lang user-exp-lang-marg">Experience: Intermediate<img class="edit-experience-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<select><option>Option 1</option><option>Intermediate</option></select><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5></li>
+							<li class="hire-me-section"><h5 class="user-exp-lang">Languages: English, French, Arabic<img class="edit-language-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<select><option>English</option><option>French</option><option>Arabic</option></select><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5></li>
+						</ul>
+				</div><!-- /.user-profile-right -->
+				<div class="col-sm-12 user-profile-left user-profile-right clearfix display-480">
+						<ul class="clearfix">
+							<li class="col-sm-3 user-profile-left-picture no-padding">
+								<img src="images/preview-profile/user-img.jpg" alt="User Image" />
+								<button>
+									<div class="fileUpload btn btn-primary">
+									    <img src="images/preview-profile/cam.png" alt="Edit Icon" />
+									    <input type="file" class="upload" />
+									</div>
+								</button>
+							</li>
+							<li class="user-profile-left-details"><h3 class="clearfix"><span>John Doe</span> <div class="verified-icon"><i class="fa fa-check"></i>Verfied</div><!-- /.verified-icon --><img class="edit-name-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' value='John Doe'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h3></li>
+							<li class="user-profile-left-details"><h4><span>Position</span>|<span>Anything</span><img class="edit-position-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' value='Web Designer'><input type='text' value='Anything'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h4></li>
+							<li class="hire-me-section"><button class="hire-me">Hire Me</button><!-- /.hire-me --></li>
+							<li class="hire-me-section edit-hour-pop"><h3>$50.00 <span class="user-currency">USD/hr</span><!-- /.user-currency --><img class="edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<input type='text' value='50'><input type='text' value='USD'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h3></li>
+							<li class="hire-me-section"><h4>Australia</h4></li>
+							<li class="hire-me-section"><h5 class="user-star-rating">5.0/5 <img src="images/preview-profile/5-star.png" alt="User rating" /></h5></li>
+							<li class="hire-me-section"><h5 class="user-star-reviews">12 reviews</h5></li>
+							<li class="user-profile-left-details"><p>Summary about myself. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo incididunt ut labore et dolore magna aliqua sut. Consecteture adipiscing elit halum.<img class="edit-text-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<textarea></textarea><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></p></li>
 							<li class="hire-me-section"><h5 class="user-exp-lang user-exp-lang-marg">Experience: Intermediate<img class="edit-experience-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<select><option>Option 1</option><option>Intermediate</option></select><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5></li>
 							<li class="hire-me-section"><h5 class="user-exp-lang">Languages: English, French, Arabic<img class="edit-language-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<select><option>English</option><option>French</option><option>Arabic</option></select><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5></li>
 						</ul>
