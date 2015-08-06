@@ -3217,4 +3217,10 @@ button.btn.save-btn:hover  {
     .user-profile-left-picture .fileUpload > img {
         width: 25px;
     }
+    .display-640,.display-desktop {
+        display: none;
+    }
+    .display-480 {
+        display: block;
+    }
 }/* 320px End */
