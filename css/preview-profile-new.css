@@ -41,7 +41,7 @@
     color: white;
     text-transform: uppercase;
     background-color: #48e875;
-    padding: 7px 10px 4px;
+    padding: 7px 5px 5px;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -133,7 +133,7 @@ h5.user-star-reviews {
 .user-education h3,
 .user-certifications h3,
 .user-publication h3,
-.user-portfolio h3, 
+.user-portfolio h3,
 .user-ratings h3,
 .skills-block h3,
 .big-materials-block h3 {
@@ -248,6 +248,9 @@ footer {
     margin: auto;
     height: 41px;
   	width: 120px;
+    position: absolute;
+    left: 0;
+    right: 0;
 }
 .desktop-buttons button {
     font-size: 16px;
@@ -554,7 +557,6 @@ h1.page-bg {
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
-    
     border: solid 2px #ff7c99;
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
@@ -1429,6 +1431,19 @@ button.btn.save-btn:hover  {
 .port-popover-buttons button:last-child:hover .fileUpload span {
     color: #ff7c99;
 }
+.user-profile-left-picture .fileUpload > img {
+    padding: 0;
+}
+.display-640,.display-480 {
+    display: none;
+}
+.phone-simulator {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        display: none;
+        margin-top: 60px;
+    }
 /* Ipad Simulator */
 	.sim-640  .rating {
 		width: 110px;
@@ -1736,26 +1751,208 @@ button.btn.save-btn:hover  {
 	}
 	.sim-640 .preview-profile-wrapper > .container {
 	    width: 640px;
-	    margin-top: 115px;
-	    height: 855px;
+	    height: 882px;
 	    overflow: hidden;
 	    margin-bottom: 120px;
 	    overflow-y: scroll;
 	}
+    .sim-640 .wrapp-row-offcanvas > .row {
+        margin: 0;
+    }
 /* Ipad Simulator End */
 
 /* Phone Simulator */
-	.phone-simulator {
-	    position: absolute;
-	    width: 100%;
-	    text-align: center;
-	    display: none;
-	    margin-top: 60px;
-	}
+    .sim-320 .user-profile-left > .col-sm-9:after {
+        height: 190px;
+    }
+    .sim-320 .user-profile-left-picture {
+        width: 25%;
+    }
+    .sim-320 .user-profile-left > .col-sm-9 {
+        width: 75%;
+        float: left;
+    }
+    .sim-320 .user-certifications-single {
+        width: 33.33%;
+        float: left;
+    }
+    .sim-320 .cert-name .col-sm-4 {
+        width: 33.33%;
+        float: left;
+    }
+    .sim-320 .cert-name .col-sm-8 {
+        width: 66.66%;
+        float: left;
+    }
+    .sim-320 .user-portfolio .col-sm-3 {
+        width: 33.33%;
+        float: left;
+    }
+    .sim-320 .user-ratings ul li div {
+        font-size: 16px;
+    }
+    .sim-320 .rating {
+        width: 65%;
+    }
+    .sim-320 .rating-color {
+        width: 90%;
+    }
+    .sim-320 .rating span {
+        margin-left: 10px;
+    }
+    .sim-320 .user-ratings > div:not(:last-child) {
+        border-bottom: dashed 1px #4f4f4f;
+    }
+    .sim-320 .user-ratings > div:not(:last-child):after {
+        display: none;
+    }
+    .sim-320 .user-ratings h5 span {
+        padding-right: 20px;
+    }
+    .sim-320 .user-ratings {
+        padding-top: 0;
+    }
+    .sim-320 .user-ratings h2 {
+        margin-top: 20px;
+    }
+    .sim-320 .user-ratings .col-sm-4 {
+        height: auto;
+        padding-bottom: 20px;
+    }
+    .sim-320 .user-reviews {
+        height: 210px;
+    }
+    .sim-320 .user-single-review h5 span {
+        padding: 0 10px 0 0;
+    }
+    .sim-320 footer a > img {
+        width: 50%;
+    }
+    .sim-320 .wrapper-form-con {
+        display: none;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(2),.sim-320 .user-profile-left ul li:nth-of-type(4)  {
+        width: 50%;
+    }
+    .sim-320 .user-profile-left > .col-sm-9:after {
+        display: none;
+    }
+    .sim-320 .user-profile-left ul li:not(:first-child) {
+        float: left;
+        width: 55%;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(3) {
+        width: 20%;
+    }
+    .sim-320 .user-profile-left ul:after {
+        display: none;
+    }
+    .sim-320 .user-experience h3,.sim-320 .user-education h3,.sim-320 .user-certifications h3,.sim-320 .user-publication h3,.sim-320 .user-portfolio h3 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    .sim-320 .user-experience-single h5,.sim-320 .user-education-single h5,.sim-320 .user-publication-single h5 {
+        font-size: 20px;
+    }
+    .sim-320 .user-experience-single p,.sim-320 .user-publication-single p {
+        font-size: 17px;
+    }
+    .sim-320 .user-certifications-single {
+        width: 50%;
+    }
+    .sim-320 .cert-name .col-sm-8 {
+        padding-right: 0;
+    }
+    .sim-320 .cert-name h4 {
+        font-size: 16px;
+    }
+    .sim-320 .cert-name span {
+        font-size: 15px;
+    }
+    .sim-320 .cert-name {
+        padding: 5px 0px 5px 5px;
+    }
+    .sim-320 .cert-name {
+        height: 120px;
+    }
+    .sim-320 .cert-name h4:nth-of-type(1) {
+        margin-top: 20px;
+    }
+    .sim-320 .user-portfolio .col-sm-3 .port-img-wrapper img {
+        height: 185px;
+    }
+    .sim-320 .user-ratings h5 span {
+        padding-right: 15px;
+    }
+    .sim-320 .user-single-review h5 {
+        font-size: 16px;
+    }
+    .sim-320 .user-single-review p,.sim-320 .user-single-review h5 span {
+        font-size: 16px;
+    }
+    .sim-320 .user-reviews {
+        height: 280px;
+    }
+    .sim-320 .preview-profile-wrapper > .container {
+        box-shadow: none;
+        margin-bottom: 0px;
+    }
+    .sim-320 .hire-me-section h3 {
+        font-size: 24px;
+    }
+    .sim-320 .hire-me-section h4 {
+        font-size: 18px;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(2),.sim-320 .user-profile-left ul li:nth-of-type(4),.sim-320 .user-profile-left ul li:nth-of-type(5),.sim-320 .user-profile-left ul li:nth-of-type(6),.sim-320 .user-profile-left ul li:nth-of-type(7),.sim-320 .user-profile-left ul li:nth-of-type(8) {
+        padding: 0 15px;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(9),.sim-320 .user-profile-left ul li:nth-of-type(10),.sim-320 .user-profile-left ul li:nth-of-type(11) {
+        width: 100%;
+    }
+    .sim-320 h5.user-star-reviews,.sim-320 h5.user-star-rating,.sim-320 .hire-me-section h4 {
+        margin-bottom: 0px;
+    }
+    .sim-320 .user-profile-left-details h3 div {
+        position: absolute;
+        right: 0;
+        top: 35px;  
+        width: 20%;
+        text-align: center;
+        padding: 7px 5px;
+    }
+    .sim-320 button.hire-me {
+        float: right;
+        width: 100%;
+        padding: 5px 0;
+    }
+    .sim-320 .verified-icon i {
+        float: none;
+        font-size: 17px;
+    }
+    .sim-320 .user-profile-left-details p {
+        line-height: 20px;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(10) {
+        margin-top: 10px;
+    }
+    .sim-320 .template-name label,.sim-320 .template-name input {
+        font-size: 14px;
+    }
+    .sim-320 .display-desktop {
+        display: none;
+    }
+    .sim-320 .display-640 {
+        display: block;
+    }
+    .sim-320 .phone-simulator {
+        display: block;
+    }
+    .sim-320 .wrapp-row-offcanvas > .row {
+        margin: 0;
+    }
 	.sim-320 .preview-profile-wrapper > .container {
 		width: 320px;
-		margin-top: 106px;
-		height: 570px;
+		height: 588px;
 		overflow-y: scroll;
 		margin-bottom: 150px;
 	  	padding-bottom: 0px;
@@ -1772,8 +1969,6 @@ button.btn.save-btn:hover  {
 	  	background-color: #48e875;
 	  	padding: 7px 0px 5px;
 	  	border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
 	  	font-size: 12px;
 	  	font-weight: 700;
 	  	margin-top: 2px;
@@ -1817,7 +2012,7 @@ button.btn.save-btn:hover  {
 		padding: 0;
 		height: 25px;
 	}
-	.sim-320 .user-profile-left-details p {
+	.user-profile-left-details p {
 	  	margin-top: -0px;
 	}
 	.sim-320 .user-profile-left ul li:nth-of-type(6),.sim-320 .user-profile-left ul li:nth-of-type(8) {
@@ -1861,14 +2056,7 @@ button.btn.save-btn:hover  {
 	.sim-320 .user-profile-left-details h3 .verified-icon {
 	  	margin-left: 5px;
 	}
-	.sim-320 .user-experience h3,
-    .sim-320 .user-education h3,
-    .sim-320 .user-certifications h3,
-    .sim-320 .user-publication h3,
-    .sim-320 .user-portfolio h3,
-    .sim-640 .user-ratings h3,
-    .sim-640 .skills-block h3,
-    .sim-640 .big-materials-block h3 {
+	.sim-320 .user-experience h3,.sim-320 .user-education h3,.sim-320 .user-certifications h3,.sim-320 .user-publication h3,.sim-320 .user-portfolio h3 {
 	  	font-size: 22px;
 	}
 	.sim-320 .user-experience-single h5,.sim-320 .user-education-single h5,.sim-320 .user-publication-single h5 {
@@ -2013,6 +2201,340 @@ button.btn.save-btn:hover  {
 	.sim-320 .user-profile-left ul li:nth-of-type(2),.sim-320 .user-profile-left ul li:nth-of-type(3),.sim-320 .user-profile-left ul li:nth-of-type(4) {
 		padding-left: 5px;
 	}
+    .sim-320 .display-640 {
+        display: none;
+    }
+    .sim-320 .display-480 {
+        display: block;
+    }
+    .sim-320 .cert-name h4 {
+        font-size: 14px;
+    }
+    .sim-320 .cert-name span {
+        font-size: 13px;
+    }
+    .sim-320 .cert-name .col-sm-8 {
+        padding-left: 5px;
+    }
+    .sim-320 .rating {
+        width: 55%;
+    }
+    .sim-320 .rating-color {
+        width: 83%;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(2),.sim-320 .user-profile-left ul li:nth-of-type(3),.sim-320 .user-profile-left ul li:nth-of-type(4) {
+        width: 75%;
+        padding: 0 15px;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(2) {
+        margin-bottom: 5px;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(3) {
+        margin-bottom: 10px;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(4) {
+        margin-bottom: 10px;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(5),.sim-320 .user-profile-left ul li:nth-of-type(6),.sim-320 .user-profile-left ul li:nth-of-type(7),.sim-320 .user-profile-left ul li:nth-of-type(8) {
+        width: 50%;
+        padding: 0;
+        height: 25px;
+    }
+    .sim-320 .user-profile-left-details p {
+        margin-top: -0px;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(6),.sim-320 .user-profile-left ul li:nth-of-type(8) {
+        text-align: right;
+    }
+    .sim-320 .hire-me-section h4 {
+        font-size: 16px;
+    }
+    .sim-320 .user-profile-left-details h3 span {
+        font-size: 28px;
+    }
+    .sim-320 .user-profile-left-details h4 {
+        font-size: 16px;
+    }
+    .sim-320 .user-profile-left-details h3 div {
+        float: right;
+        position: relative;
+        top: -5px;
+        width: 100px;
+    }
+    .sim-320 .user-profile-left-details p,.user-exp-lang {
+        font-size: 16px;
+    }
+    .sim-320 h5.user-star-reviews {
+        font-size: 16px;
+    }
+    .sim-320 .template-name {
+        display: none;
+    }
+    .sim-320 .templati-body .col-xs-4 {
+        width: 50%;
+    }
+    .sim-320 .templati-body .temp-pic-wrap {
+        height: 115px;
+    }
+    .sim-320 .designers-body .col-xs-6 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .sim-320 .buy-a-domain h5:nth-of-type(1),.sim-320 .buy-a-domain h5:nth-of-type(2) a,.sim-320 .valoso-domain button,.sim-320 .not-valoso-domain button,.sim-320 .valoso-domain input,.sim-320 .not-valoso-domain input,.sim-320 .valoso-domain span {
+        font-size: 12px;
+    }
+    .sim-320 .buy-a-domain h5:nth-of-type(1),.sim-320 .valoso-domain,.sim-320 .not-valoso-domain {
+        margin-bottom: 5px;
+    }
+    .sim-320 .not-valoso-domain {
+        padding-top: 5px;
+    }
+    .sim-320 .buy-a-domain {
+        left: 5px;
+        top: 5px;
+        width: 270px;
+    }
+    .sim-320 .valoso-domain input {
+        width: 120px;
+        padding: 3px;
+    }
+    .sim-320 .not-valoso-domain input {
+        width: 185px;
+        padding: 3px;
+    }
+    .sim-320 .valoso-domain span {
+        margin-top: 8px;
+    }
+    .sim-320 .valoso-domain button,.sim-320 .not-valoso-domain button {
+        padding: 3px;
+    }
+    .sim-320 .buy-domain .modal-title {
+        font-size: 20px;
+    }
+    .sim-320 .buy-domain .modal-body p {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .sim-320 .availability-form button {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .sim-320 .availability-form input {
+        width: 100%;
+    }
+    .sim-320 .list-buy {
+        float: left!important;
+        width: 100%;
+    }
+    .sim-320 .list-buy button {
+        position: absolute;
+    }
+    .sim-320 .buy-domain .modal-body ul li {
+        position: relative;
+    }
+    .sim-320 .list-buy button {
+        position: absolute;
+        top: 6px;
+        right: 0px;
+    }
+    .sim-320 .list-name {
+        line-height: 20px;
+    }
+    .sim-320 .user-portfolio .col-sm-3 .port-img-wrapper img {
+        height: auto;
+        width: 100%;
+    }
+    .sim-320 .port-img-wrapper {
+        height: 185px;
+    }
+    .sim-320 .already-have-domain .modal-header h4 {
+        font-size: 20px;
+    }
+    .sim-320 .already-have-domain .modal-body p {
+        font-size: 16px;  
+    }
+    .sim-320 .already-have-domain .modal-body .dns-server-adress,.sim-320 .already-have-domain .modal-body .dns-intructions {
+        font-size: 14px;
+    }
+    .sim-320 .already-have-domain .modal-body ul li p {
+        font-size: 14px;
+        margin-bottom: 0px;
+        width: 90%;
+    }
+    .sim-320 .already-have-domain .modal-body ul li span {
+        width: 10%;
+        font-size: 14px;
+    }
+    .sim-320 .user-certifications-single {
+        width: 100%;
+    }
+    .sim-320.user-experience h3,.sim-320 .user-education h3,.sim-320 .user-certifications h3,.sim-320 .user-publication h3,.sim-320 .user-portfolio h3 {
+        font-size: 22px;
+    }
+    .sim-320.user-experience-single h5,.sim-320 .user-education-single h5,.sim-320 .user-publication-single h5 {
+        font-size: 18px;
+        margin-bottom: 0;
+    }
+    .sim-320.user-experience-single p,.sim-320 .user-publication-single p,.sim-320 .cert-name h4,.sim-320 .cert-name span {
+        font-size: 16px;
+    }
+    .sim-320 .user-experience-single p span,.sim-320 .user-education-single span {
+        margin-bottom: 0;
+    }
+    .sim-320 .cert-name {
+        height: 130px;
+    }
+    .sim-320 .user-portfolio .col-sm-3 {
+        width: 100%;
+    }
+    .sim-320 .user-portfolio .col-sm-3 img {
+        height: 295px;
+    }
+    .sim-320 .user-ratings ul li div {
+        font-size: 14px;
+    }
+    .sim-320 .user-ratings h2 {
+        font-size: 22px;
+        margin: 15px 0 20px;
+    }
+    .sim-320 .user-ratings h5,.sim-320 .user-ratings h5 span {
+        font-size: 14px;
+    }
+    .sim-320 .rating {
+        width: 45%;
+    }
+    .sim-320 .rating-color {
+        width: 77%;
+    }
+    .sim-320 .user-ratings h5 span {
+        padding-right: 10px;
+    }
+    .sim-320 .user-ratings .col-sm-4 {
+      padding-bottom: 15px;
+    }
+    .sim-320 .user-ratings h5,.sim-320 .user-ratings h5 span {
+        font-size: 16px;
+    }
+    .sim-320 .user-reviews {
+        height: 340px;
+    }
+    .sim-320 .user-ratings {
+        padding-bottom: 0px;
+    }
+    .sim-320 .user-profile-left-details h3 span {
+        font-size: 22px;
+    }
+    .sim-320 .user-profile-left-details h3 div {
+        float: right;
+        position: relative;
+        top: 0;
+        width: 90px;
+        margin: 0;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(1) {
+        width: 30%;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(2),.sim-320 .user-profile-left ul li:nth-of-type(3),.sim-320 .user-profile-left ul li:nth-of-type(4) {
+        width: 70%;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(2),.sim-320 .user-profile-left ul li:nth-of-type(3) {
+        padding-right: 0;
+    }
+    .sim-320 .user-profile-left-details h4 {
+        font-size: 14px;
+    }
+    .sim-320 button.hire-me {
+        padding: 3px 0;
+    }
+    .sim-320 .user-profile-left-picture button img {
+        width: 30px;
+    }
+    .sim-320 .user-profile-left-details h3 .verified-icon {
+        float: left;
+        margin-left: 10px;
+        color: white;
+        text-transform: uppercase;
+        background-color: #48e875;
+        padding: 7px 0px 5px;
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 700;
+        margin-top: 2px;
+        width: 75px;
+    }
+    .sim-320 .verified-icon i {
+        float: none;
+        font-size: 15px;
+        margin-right: 1px;
+    }
+    .sim-320 .edit-hour-pop img {
+        position: absolute;
+        right: -5px;
+        top: 5px;
+    }
+    .sim-320 .port-edit-buttons img {
+        height: auto!important;
+    }
+    .sim-320 .profile-top-img > img {
+        height: 250px;
+        max-width: 1000px;
+    }
+    .sim-320 .rating {
+        width: 40%;
+    }
+    .sim-320 .rating-color {
+        width: 71%;
+    }
+    .sim-320 .user-profile-left-details h3 span {
+        font-size: 20px;
+    }
+    .sim-320 .user-profile-left-details h3 div {
+        font-size: 12px;    
+        width: 78px;
+    }
+    .sim-320 .verified-icon i {
+        font-size: 16px;
+        margin-right: 2px;
+    }
+    .sim-320 h5.user-star-rating img {
+        width: 80px;
+        margin-left: 5px;
+    }
+    .sim-320 .hire-me-section h3 {
+        font-size: 20px;
+    }
+    .sim-320 .hire-me-section h3 span {
+        font-size: 16px;
+    }
+    .sim-320 .user-profile-left-details h4 {
+        margin-top: 0px;
+    }
+    .sim-320 button.hire-me {
+        font-size: 14px;
+        padding: 5px 0;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(3) {
+        margin-bottom: 5px;
+    }
+    .sim-320 .user-profile-left ul li:nth-of-type(2),.sim-320  .user-profile-left ul li:nth-of-type(3),.sim-320 .user-profile-left ul li:nth-of-type(4) {
+        padding-left: 5px;
+    }
+    .sim-320 .user-profile-left-details h3 .verified-icon {
+        margin-left: 5px;
+    }
+    .sim-320 .valoso-domain button,.sim-320  .not-valoso-domain button {
+        width: 35px;
+    }
+    .sim-320 .buy-a-domain {
+        width: 250px;
+    }
+    .sim-320 .profile-top-img > button {
+        top: 5px;
+        right: 0px;
+    }
+    .sim-320 .user-profile-left-picture .fileUpload > img {
+        width: 25px;
+    }
 /* Phone Simulator End */
 @media(max-width: 1200px) {
     .edit-container {
@@ -2086,14 +2608,7 @@ button.btn.save-btn:hover  {
 	.hire-me-section:after {
 		bottom: 0;
 	}
-	.user-experience h3, 
-    .user-education h3, 
-    .user-certifications h3, 
-    .user-publication h3, 
-    .user-portfolio h3,
-    .user-ratings h3,
-    .skills-block h3,
-    .big-materials-block h3 {
+	.user-experience h3, .user-education h3, .user-certifications h3, .user-publication h3, .user-portfolio h3 {
 		font-size: 24px;
 	  	margin-bottom: 10px;
 	}
@@ -2259,14 +2774,7 @@ button.btn.save-btn:hover  {
 	.user-profile-left ul:after {
 		display: none;
 	}
-	.user-experience h3, 
-    .user-education h3, 
-    .user-certifications h3, 
-    .user-publication h3, 
-    .user-portfolio h3,
-    .user-ratings h3,
-    .skills-block h3,
-    .big-materials-block h3 {
+	.user-experience h3, .user-education h3, .user-certifications h3, .user-publication h3, .user-portfolio h3 {
 	  	font-size: 26px;
 	  	margin-bottom: 20px;
 	}
@@ -2357,8 +2865,20 @@ button.btn.save-btn:hover  {
 	.template-name label,.template-name input {
 	  	font-size: 14px;
 	}
+    .display-desktop {
+        display: none;
+    }
+    .display-640 {
+        display: block;
+    }
 }/* 640px End */
 @media all and (max-width: 480px) {
+    .display-640 {
+        display: none;
+    }
+    .display-480 {
+        display: block;
+    }
 	.cert-name h4 {
 	  	font-size: 14px;
 	}
@@ -2393,7 +2913,7 @@ button.btn.save-btn:hover  {
 		height: 25px;
 	}
 	.user-profile-left-details p {
-	  	margin-top: 0px;
+	  	margin-top: -0px;
 	}
 	.user-profile-left ul li:nth-of-type(6),.user-profile-left ul li:nth-of-type(8) {
 		text-align: right;
@@ -2522,14 +3042,7 @@ button.btn.save-btn:hover  {
 	.user-certifications-single {
 	  	width: 100%;
 	}
-	.user-experience h3, 
-    .user-education h3, 
-    .user-certifications h3, 
-    .user-publication h3, 
-    .user-portfolio h3,
-    .user-ratings h3,
-    .skills-block h3,
-    .big-materials-block h3 {
+	.user-experience h3, .user-education h3, .user-certifications h3, .user-publication h3, .user-portfolio h3 {
 	  	font-size: 22px;
 	}
 	.user-experience-single h5, .user-education-single h5, .user-publication-single h5 {
@@ -2618,8 +3131,6 @@ button.btn.save-btn:hover  {
 	  	background-color: #48e875;
 	  	padding: 7px 0px 5px;
 	  	border-radius: 5px;
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
 	  	font-size: 12px;
 	  	font-weight: 700;
 	  	margin-top: 2px;
@@ -2639,7 +3150,6 @@ button.btn.save-btn:hover  {
 	    height: auto!important;
 	}
     .profile-top-img > img {
-        width: auto;
         height: 250px;
         max-width: 1000px;
     }
@@ -2697,5 +3207,8 @@ button.btn.save-btn:hover  {
     .profile-top-img > button {
         top: 5px;
         right: 0px;
+    }
+    .user-profile-left-picture .fileUpload > img {
+        width: 25px;
     }
 }/* 320px End */
