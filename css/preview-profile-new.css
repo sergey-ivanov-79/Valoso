@@ -3043,6 +3043,12 @@ button.btn.save-btn:hover  {
         width: 10%;
         font-size: 14px;
     }
+    .display-640,.display-desktop {
+        display: none;
+    }
+    .display-480 {
+        display: block;
+    }
 }/* 480px End */
 @media all and (max-width: 360px) {
 	.user-certifications-single {
@@ -3216,11 +3222,5 @@ button.btn.save-btn:hover  {
     }
     .user-profile-left-picture .fileUpload > img {
         width: 25px;
-    }
-    .display-640,.display-desktop {
-        display: none;
-    }
-    .display-480 {
-        display: block;
     }
 }/* 320px End */
