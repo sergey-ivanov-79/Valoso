@@ -3044,7 +3044,7 @@ button.btn.save-btn:hover  {
         font-size: 14px;
     }
     .display-640,.display-desktop {
-        display: none;
+        display: none!important;
     }
     .display-480 {
         display: block;
