@@ -43,6 +43,8 @@
     background-color: #48e875;
     padding: 7px 5px 5px;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     font-size: 14px;
     font-weight: 700;
     margin-top: 5px;
@@ -72,6 +74,8 @@ button.hire-me {
     background-color: #0285c2;
     border: solid 2px #0285c2;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -90,10 +94,10 @@ button.hire-me:hover {
 .hire-me-section h3 {
     color: #222222;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
 }
 .hire-me-section h3 span {
-    font-weight: 400;
+    font-weight: 600;
     font-size: 20px;
 }
 .hire-me-section h4 {
@@ -112,7 +116,8 @@ h5.user-star-reviews {
     color: #222222;
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .user-exp-lang {
     font-size: 16px;
@@ -124,7 +129,14 @@ h5.user-star-reviews {
 .hire-me-section {
     position: relative;
 }
-.user-experience h3,.user-education h3,.user-certifications h3,.user-publication h3,.user-portfolio h3 {
+.user-experience h3,
+.user-education h3,
+.user-certifications h3,
+.user-publication h3,
+.user-portfolio h3,
+.user-ratings h3,
+.skills-block h3,
+.big-materials-block h3 {
     margin-top: 15px;
     color: #0d5496;
     font-size: 28px;
@@ -197,6 +209,8 @@ span.user-experience-duration {
     height: 135px;
     border: solid 1px #cacaca;
     border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     padding: 10px 0px 10px 10px;
 }
 .user-certifications-single .col-sm-8 {
@@ -299,6 +313,8 @@ footer {
     height: 20px;
     background-color: #d7d7d7;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     float: left;
     position: relative;
 }
@@ -313,6 +329,8 @@ footer {
 	height: 100%;
 	background-color: #24a5db;
 	border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 .rating-7 {
 	width: 70%;
@@ -326,15 +344,15 @@ footer {
 }
 .user-ratings h5 {
     font-size: 16px;
-    color: #222222;
-    font-weight: 700;
+    color: #fff;
+    font-weight: 600;
 }
 .user-ratings h5 span {
     font-size: 16px;    
-    color: #222222;    
-    font-weight: 700;
+    color: #fff;    
+    font-weight: 600;
     float: right;
-    padding-right: 40px;
+    padding-right: 25px;
 }
 .user-single-review h5 {
     margin: 5px 0;
@@ -489,7 +507,11 @@ footer {
 h1.page-bg {
     background-color: #24a5db;
     border-top-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
     color: white;
     font-size: 16px;
     padding: 7px 0px;
@@ -533,6 +555,8 @@ h1.page-bg {
     font-size: 14px;
     font-weight: 700;
     border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
     border: solid 2px #ff7c99;
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
@@ -560,6 +584,8 @@ h1.page-bg {
   	font-size: 14px;
   	font-weight: 700;
   	border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
 }
 button.btn.save-btn {
     background-color: #24a5db;
@@ -572,7 +598,11 @@ button.btn.save-btn {
   	width: 100px;
   	border-radius: 0;
   	border-top-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -moz-border-top-left-radius: 5px;
   	border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
   	font-size: 18px;
   	font-weight: 700;
   	-webkit-transition: all 300ms ease-in-out;
@@ -595,6 +625,10 @@ button.btn.save-btn:hover  {
   	background-color: #d1eeff;
   	padding-left: 20px;
   	padding-top: 55px;
+    -webkit-transition: all 300ms ease-in-out;
+  	-moz-transition: all 300ms ease-in-out;
+  	-o-transition: all 300ms ease-in-out;
+  	transition: all 300ms ease-in-out;
 }
 .edit-container-right {
     float: right;
@@ -611,9 +645,15 @@ button.btn.save-btn:hover  {
 .design-btn button {
     background-color: white!important;
     border-radius: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
     width: 100%;
     border-top-right-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    -moz-border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    -webkit-border-bottom-right-radius: 10px;
+    -moz-border-bottom-right-radius: 10px;
     font-size: 18px;
     color: #4f4f4f!importantr;
     font-weight: 700;
@@ -650,6 +690,8 @@ button.btn.save-btn:hover  {
     height: 44px;
     margin-bottom: 20px;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border: solid 1px #9e9e9e;
     background-color: #555555;
     text-align: center;
@@ -810,6 +852,8 @@ button.btn.save-btn:hover  {
     text-transform: uppercase;
     border: solid 1px;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     padding: 5px 10px;
     -webkit-transition: all 300ms ease-in-out;
   	-moz-transition: all 300ms ease-in-out;
@@ -841,6 +885,8 @@ button.btn.save-btn:hover  {
     background-color: #ff7c99;
     border: solid 2px #ff7c99;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     color: white;
     text-transform: uppercase;
     font-weight: 700;
@@ -932,7 +978,11 @@ button.btn.save-btn:hover  {
 .templati-title {
     width: 190px;
     border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-bottom-right-radius: 5px;
     background-color: white;
     height: 30px;
     color: #4f4f4f;
@@ -1023,6 +1073,8 @@ button.btn.save-btn:hover  {
     background-color: #a3a3a3;
     border: solid 2px #a3a3a3;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     white-space: nowrap;
     margin-bottom: 5px;
     color: white;
@@ -1048,6 +1100,8 @@ button.btn.save-btn:hover  {
     background-color: #ff7c99;
     border: solid 2px #ff7c99;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
@@ -1081,6 +1135,8 @@ button.btn.save-btn:hover  {
     background-color: rgba(255,255,255,0.7);
     padding: 10px;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
 .buy-a-domain h5:nth-of-type(1) {
     font-size: 15px;
@@ -1103,6 +1159,8 @@ button.btn.save-btn:hover  {
 .valoso-domain button,.not-valoso-domain button {
     background-color: #48e875;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     border: solid 1px white;
     float: right;
     font-size: 15px;
@@ -1172,6 +1230,8 @@ button.btn.save-btn:hover  {
 .availability-form input {
     border: solid 1px #bcbcbc;
     border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     padding: 10px;
     color: #000000;
     font-size: 18px;
@@ -1204,6 +1264,8 @@ button.btn.save-btn:hover  {
     box-shadow: none;
     outline: none;
     border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
 }
 .availability-form button:hover {
     color: white;
@@ -1229,6 +1291,8 @@ button.btn.save-btn:hover  {
     font-size: 17px;
     font-weight: 700;
     border-radius: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
     box-shadow: none;
     outline: none;
     -webkit-transition: all 300ms ease-in-out;
@@ -1448,7 +1512,14 @@ button.btn.save-btn:hover  {
 	.sim-640  .hire-me-section:after {
 		bottom: 0;
 	}
-	.sim-640  .user-experience h3,.sim-640 .user-education h3,.sim-640 .user-certifications h3,.sim-640 .user-publication h3,.sim-640 .user-portfolio h3 {
+	.sim-640  .user-experience h3,
+    .sim-640 .user-education h3,
+    .sim-640 .user-certifications h3,
+    .sim-640 .user-publication h3,
+    .sim-640 .user-portfolio h3,
+    .sim-640 .user-ratings h3,
+    .sim-640 .skills-block h3,
+    .sim-640 .big-materials-block h3 {
 		font-size: 24px;
 	  	margin-bottom: 10px;
 	}
@@ -1566,7 +1637,14 @@ button.btn.save-btn:hover  {
 	.sim-640 .user-profile-left ul:after {
 		display: none;
 	}
-	.sim-640 .user-experience h3,.sim-640 .user-education h3,.sim-640 .user-certifications h3,.sim-640 .user-publication h3,.sim-640 .user-portfolio h3 {
+	.sim-640 .user-experience h3,
+    .sim-640 .user-education h3,
+    .sim-640 .user-certifications h3,
+    .sim-640 .user-publication h3,
+    .sim-640 .user-portfolio h3,
+    .sim-640 .user-ratings h3,
+    .sim-640 .skills-block h3,
+    .sim-640 .big-materials-block h3 {
 	  	font-size: 26px;
 	  	margin-bottom: 20px;
 	}

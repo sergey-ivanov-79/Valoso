@@ -39,27 +39,40 @@ $(document).ready(function(){
 		$('.ipad-simulator').fadeIn();
 		$('.phone-simulator').hide();
 		$('body').addClass('sim-640');
+        $('body').addClass('added-sim-640');
 		$('body').removeClass('sim-320');
-		$('.display-desktop,.display-480').hide();
+        $('.display-desktop,.display-480').hide();
 		$('.display-640').show();
+        $('body').removeClass('added-sim-320');
 	});
 	$('#phone-sim').click(function(){
 		$('.phone-simulator').fadeIn();
 		$('.ipad-simulator').hide();
 		$('body').addClass('sim-320');
+        $('body').addClass('added-sim-320');
 		$('body').removeClass('sim-640');
-		$('.display-desktop,.display-640').hide();
+        $('.display-desktop,.display-640').hide();
 		$('.display-480').show();
+        $('body').removeClass('added-sim-640');
 	});
 	$('#desktop-sim').click(function(){
 		$('.ipad-simulator').fadeOut();
 		setTimeout(function(){
 			$('body').removeClass('sim-640');
+            $('body').removeClass('added-sim-640');
 			$('body').removeClass('sim-320');
+            $('body').removeClass('added-sim-320');
 		}, 300);
-		$('.display-480,.display-640').hide();
+        $('.display-480,.display-640').hide();
 		$('.display-desktop').show();
 	});
+/*	var ww = $(window).width();
+	if (ww < 640) {
+        $('.user-profile-left ul li:nth-child(6)').insertAfter('.user-profile-left ul li:nth-child(9)');
+	}
+	if (ww < 480) {
+        $('.user-profile-left ul li:nth-child(3)').insertAfter('.user-profile-left ul li:nth-child(4)');
+	}*/
 
 	/* Bootstrap Popover */
 		$(function () {

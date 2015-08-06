@@ -432,7 +432,7 @@ $(window).resize(function(){
 
 	/* Drag & Drop */
 	var adjustment
-	$("ol.video-list").sortable({
+	$(".video-list").sortable({
 	  group: 'no-drop',
 	  handle: '.click-absolute',
 	  onDragStart: function (item, container, _super) {
@@ -442,11 +442,11 @@ $(window).resize(function(){
 	    _super(item)
 	  }
 	});
-	$("ol.video-list").sortable({
+	$(".video-list").sortable({
 	  group: 'no-drop',
 	  drop: false
 	});
-	$("ol.video-list").sortable({
+	$(".video-list").sortable({
 	  group: 'no-drop',
 	  drag: false
 	});
