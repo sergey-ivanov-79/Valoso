@@ -66,13 +66,6 @@ $(document).ready(function(){
         $('.display-480,.display-640').hide();
 		$('.display-desktop').show();
 	});
-/*	var ww = $(window).width();
-	if (ww < 640) {
-        $('.user-profile-left ul li:nth-child(6)').insertAfter('.user-profile-left ul li:nth-child(9)');
-	}
-	if (ww < 480) {
-        $('.user-profile-left ul li:nth-child(3)').insertAfter('.user-profile-left ul li:nth-child(4)');
-	}*/
 
 	/* Bootstrap Popover */
 		$(function () {
@@ -99,12 +92,3 @@ $(document).ready(function(){
 });
 
 
-$(window).resize(function(){
-	var ww = $(window).width();
-	if (ww < 640) {
-        $('.user-profile-left ul li:nth-child(6)').insertAfter('.user-profile-left ul li:nth-child(9)');
-	}
-	if (ww < 480) {
-        $('.user-profile-left ul li:nth-child(3)').insertAfter('.user-profile-left ul li:nth-child(4)');
-	}
-});
