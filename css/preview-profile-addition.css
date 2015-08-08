@@ -354,6 +354,8 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
     color: #63CDEC;
     z-index: 150;
 }
+.dash-page .top-menu { z-index: 999;}
+/* Begin for tablet-sim */
 .added-sim-640 .col-sm-8.no-line, .added-sim-640  .col-sm-6-dop { width: 100% !important;}
 .added-sim-640 .addition .skills-block, 
 .added-sim-640 .addition .col-sm-8.no-line,
@@ -363,7 +365,6 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
     margin-top: 0;
     border-top: none;*/
 }
-
 .added-sim-640 .addition .materials-block {
     width: 32%;
     margin-right: 0.6665%;
@@ -372,6 +373,148 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
 .added-sim-640 .addition .materials-block .wrapp-backg-color .p-13 { font-size: 9px !important;} 
 .added-sim-640 .addition .text-printing { float: none;}
 .added-sim-640  .addition .text-printing { padding-top: 0px;}
+.added-sim-640.sim-640 .preview-profile-wrapper > .addition.container {
+    width: 640px;
+    margin-top: 170px;
+    height: 852px;
+}
+.added-sim-640.sim-640 .ipad-simulator { margin-top: 160px;}
+
+/* END for tablet-sim */
+
+/* Begin for phone-sim */
+.added-sim-320 .addition .tabsuper li { width: 100%;}
+.added-sim-320 .col-sm-8.no-line, .added-sim-320  .col-sm-6-dop { width: 100% !important;}
+.added-sim-320 .addition .user-ratings h5.total span { font-size: 12px;}
+.added-sim-320 .addition .wrapper-feedback { position: static;}
+.added-sim-320 .addition .tabline .top-5.rate { float: right;}
+.added-sim-320  .addition .amount h5, .added-sim-320  .status h5  { font-size: 12px;}
+.added-sim-320 .addition .profile-top-img > img { height: auto;}
+.sim-320 .desktop-buttons button {
+    font-size: 14px;
+    width: 80px;
+}
+.added-sim-320 .addition .progress-tab a, 
+.added-sim-320 .addition .progress-tab p,
+.added-sim-320 .addition .bid-tab a, 
+.added-sim-320 .addition .bid-tab p
+ { font-size: 12px;}
+.added-sim-320 .addition .tabsuper li {
+    border-right: none;
+    border-bottom: 1px solid #fff;
+}
+.added-sim-320 .addition .materials-block {
+    width: 48% !important;
+    margin-right: 1% !important;
+    margin-left: 1% !important;
+}
+.added-sim-320 .preview-profile-wrapper > .addition.container {
+    width: 320px;
+    margin-top: 160px;
+    height: 568px;
+}
+.added-sim-320 .addition .wrapp-min-logo { width: 100%;}
+.added-sim-320 .addition .tabsuper li { width: 100%; max-width: 100%;}
+.added-sim-320 .addition .nav.nav-tabs.tabsuper > li > a {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    line-height: 1;
+    font-size: 14px;
+}
+.added-sim-320 .addition .user-ratings h5.total { margin-right: 0px;}
+.top-menu, .top-menu {
+    top: 85px;
+}
+.header-min-height {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin-top: -41px;
+    margin-bottom: 41px;
+}
+.phone-simulator {  margin-top: 160px;}
+.added-sim-320 .addition .tabsuper { margin-right: 0px;}
+.added-sim-320 .addition .big-materials-block, .added-sim-320 .addition .block-min {
+    margin-left: 0px; 
+    margin-right: 0px; 
+}
+.added-sim-320 .addition .wrapp-materials-img {
+    display: table;
+}
+.added-sim-320 .addition .clearfix-dop {
+    clear: both;
+}
+.added-sim-320 .addition .materials-block {
+    height: 92px;
+}
+.added-sim-320 .addition .wrapp-backg-color {
+    float: left;
+    padding-top: 3px;
+}
+.added-sim-320 .addition .wrapp-print-img {
+    position: absolute;
+    right: 5px;
+}
+.added-sim-320 .addition .wrapp-backg-color.media .media-body {
+    width: auto;
+    display: block;
+}
+.added-sim-320 .addition .materials-img { margin-right: 3px;}
+.added-sim-320 .addition .wrapp-backg-color .p-13 {
+    font-size: 11px !important;
+}
+.added-sim-320  .addition .text-printing {
+    float: none !important;
+    padding-top: 4px;
+    font-size: 14px;
+}
+.added-sim-320 .addition .hover-cont-bg {
+    padding: 26px 8px;
+}
+.added-sim-320 .addition .bottom-total p { font-size: 12px;}
+.added-sim-320  .addition .bottom-total p:after { border-top: 30px solid #24a5db;}
+.added-sim-320 .addition .name-materials-desktop {
+    display: none;
+}
+.added-sim-320 .addition .name-materials-mobile {
+    display: table-cell;
+}
+.added-sim-320 .addition .name-materials {
+    font-size: 10px;
+    vertical-align: middle;
+    overflow: visible;
+    white-space: normal;
+}
+.added-sim-320 .addition .user-ratings h3, 
+.added-sim-320 .addition .skills-block h3, 
+.added-sim-320 .addition .big-materials-block h3 {
+    font-size: 22px;
+}
+.added-sim-640 .addition .user-ratings .col-sm-4.no-line, 
+.added-sim-320 .addition .user-ratings .col-sm-4.no-line {
+    border-bottom: dashed 1px #4f4f4f;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.added-sim-640 .addition .col-sm-8.no-line, .added-sim-320 .addition .col-sm-8.no-line {
+    padding-top: 20px;
+}
+.added-sim-640 .addition .user-ratings > div:not(:last-child), .added-sim-320 .addition .user-ratings > div:not(:last-child) {
+    border-bottom: none;
+}
+.added-sim-640 .addition .border-right-edit, .added-sim-320 .addition .border-right-edit {
+    border-right: none;
+}
+.added-sim-640 .addition .port-edit-buttons img { height: auto;} 
+
+/* END for phone-sim */
+@media (max-width: 767px) {
+    .top-menu {
+        top: 0;
+    }
+}
 .nav-list.nav > li > a { margin: 0;} 
 img { vertical-align: inherit !important;}
 @media (max-width: 1200px) {
@@ -614,6 +757,11 @@ img { vertical-align: inherit !important;}
     }
     .addition .big-materials-block > div.bottom-total { border-top: none;}
     .addition .bottom-total p { padding: 5px 17px; margin-right: 3px;}
+}
+@media (max-width: 360px)
+    .addition .profile-top-img > img {
+        height: auto; 
+    }
 }
 /* Special Classes */
 
