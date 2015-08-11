@@ -28,6 +28,7 @@ $(document).ready(function(){
 		$('.edit-content-right-template').fadeOut();
 		$('.edit-container-right').fadeOut();
 		$('.edit-container').css('width','85px');
+        $('.edit-container-left button').removeClass('active');
 	});
 
 	$('.template-name-single > div').click(function(){
