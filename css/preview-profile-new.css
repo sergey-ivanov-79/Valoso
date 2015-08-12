@@ -1749,9 +1749,9 @@ button.btn.save-btn:hover  {
 	.sim-640 .preview-profile-wrapper > .container {
 	    width: 640px;
 	    height: 882px;
-	    overflow: hidden;
+	    /*overflow: hidden;*/
 	    margin-bottom: 120px;
-	    overflow-y: scroll;
+	    /*overflow-y: scroll;*/
 	}
     .sim-640 .wrapp-row-offcanvas > .row {
         margin: 0;
@@ -1950,7 +1950,7 @@ button.btn.save-btn:hover  {
 	.sim-320 .preview-profile-wrapper > .container {
 		width: 320px;
 		height: 588px;
-		overflow-y: scroll;
+		/*overflow-y: scroll;*/
 		margin-bottom: 150px;
 	  	padding-bottom: 0px;
 	  	box-shadow: none;
