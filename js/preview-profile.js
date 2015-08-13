@@ -45,6 +45,10 @@ $(document).ready(function(){
         $('.display-desktop,.display-480').hide();
 		$('.display-640').show();
         $('body').removeClass('added-sim-320');
+        $(".scrollbar-big").scrollbar("destroy");        
+        $(".scrollbar-big").scrollbar();
+        $(".scrollbar").scrollbar("destroy");
+        $(".scrollbar").scrollbar();       
 	});
 	$('#phone-sim').click(function(){
 		$('.phone-simulator').fadeIn();
@@ -55,6 +59,10 @@ $(document).ready(function(){
         $('.display-desktop,.display-640').hide();
 		$('.display-480').show();
         $('body').removeClass('added-sim-640');
+        $(".scrollbar-big").scrollbar("destroy");        
+        $(".scrollbar-big").scrollbar(); 
+        $(".scrollbar").scrollbar("destroy");
+        $(".scrollbar").scrollbar();      
 	});
 	$('#desktop-sim').click(function(){
 		$('.ipad-simulator').fadeOut();
@@ -63,9 +71,13 @@ $(document).ready(function(){
             $('body').removeClass('added-sim-640');
 			$('body').removeClass('sim-320');
             $('body').removeClass('added-sim-320');
+                      
 		}, 300);
         $('.display-480,.display-640').hide();
 		$('.display-desktop').show();
+        $(".scrollbar-big").scrollbar("destroy"); 
+        $(".scrollbar").scrollbar("destroy");
+        $(".scrollbar").scrollbar(); 
 	});
 
 	/* Bootstrap Popover */
