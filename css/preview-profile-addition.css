@@ -358,7 +358,7 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
     outline: 2px solid #4fc2f3;
     border: none;
 }
-.scrollbar-big .fs-scrollbar-bar { visibility: hidden;}
+
 .added-sim-640.sim-640 .scrollbar-big .fs-scrollbar-bar { visibility: visible;}
 .added-sim-320.sim-320 .scrollbar-big .fs-scrollbar-bar { visibility: visible;}
 .added-sim-640.sim-640 .scrollbar-big {
@@ -369,7 +369,23 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
     margin-right: -39px;
     padding-right: 22px;
 }
-.scrollbar-big .fs-scrollbar-handle, .scrollbar-big .fs-scrollbar-bar { width: 8px;}
+.added-sim-640.sim-640 .scrollbar-big .fs-scrollbar-handle, .added-sim-640.sim-640 .scrollbar-big .fs-scrollbar-bar,
+.added-sim-320.sim-320 .scrollbar-big .fs-scrollbar-handle, .added-sim-320.sim-320 .scrollbar-big .fs-scrollbar-bar { 
+    width: 8px !important;
+}
+.added-sim-640.sim-640 .scrollbar-big .scrollbar .fs-scrollbar-handle, 
+.added-sim-640.sim-640 .scrollbar-big .scrollbar .fs-scrollbar-bar,
+.added-sim-320.sim-320 .scrollbar-big .scrollbar .fs-scrollbar-handle, 
+.added-sim-320.sim-320 .scrollbar-big .scrollbar .fs-scrollbar-bar { 
+    width: 5px !important;
+}
+/* Begin remove for tablet-sim and for phone-sim */
+.added-sim-640.sim-640 .edit-together, .added-sim-320.sim-320 .edit-together,
+.added-sim-640.sim-640 .port-edit-buttons, .added-sim-320.sim-320 .port-edit-buttons,
+.added-sim-640.sim-640 .together-trash, .added-sim-320.sim-320 .together-trash {
+    display: none;
+}
+/* END remove for tablet-sim and for phone-sim*/
 .scrollbar-big .fs-scrollbar-handle {
     border-radius: 0px 0px 0 0;
     -webkit-border-radius: 0px 0px 0 0;
