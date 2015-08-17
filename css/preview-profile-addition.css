@@ -631,12 +631,12 @@ img { vertical-align: inherit !important;}
 }
 @media (min-width: 1680px) {
     .wrapper-form-con.desktop-mobile-views.edit-container {
-        left: 4%;
+        left: 6%;
     }
 }
 @media (min-width: 1900px) {
     .wrapper-form-con.desktop-mobile-views.edit-container {
-        left: 9%;
+        left: 13%;
     }
 }
 @media (max-width: 1200px) and (min-width: 1060px) { 
