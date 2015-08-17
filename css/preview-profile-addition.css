@@ -636,7 +636,7 @@ img { vertical-align: inherit !important;}
 }
 @media (min-width: 1900px) {
     .wrapper-form-con.desktop-mobile-views.edit-container {
-        left: 13%;
+        left: 10%;
     }
 }
 @media (max-width: 1200px) and (min-width: 1060px) { 
