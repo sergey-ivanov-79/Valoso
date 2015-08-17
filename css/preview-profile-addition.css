@@ -601,6 +601,12 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
 .header-min-height {
     z-index: 1001;
 }
+.added-sim-640 .addition .fs-scrollbar-content,
+.added-sim-320 .addition .fs-scrollbar-content {
+    margin-right: -65px;
+    padding-right: 65px;
+}
+
 /* END for phone-sim */
 @media (max-width: 767px) {
     .top-menu {
@@ -609,6 +615,7 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
 }
 .nav-list.nav > li > a { margin: 0;} 
 img { vertical-align: inherit !important;}
+
 @media (max-width: 1200px) {
     .addition .tabsuper {
         margin-right: -2px;
@@ -617,8 +624,12 @@ img { vertical-align: inherit !important;}
         height: 398px;
     }*/
 }
-
-@media (min-width: 1535px) {
+@media (min-width: 1480px) {
+    .wrapper-form-con.desktop-mobile-views.edit-container {
+        left: 1%;
+    }
+}
+@media (min-width: 1680px) {
     .wrapper-form-con.desktop-mobile-views.edit-container {
         left: 4%;
     }
