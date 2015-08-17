@@ -351,7 +351,7 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
     float: none;
     display: table-cell;
     vertical-align: top;
-    min-width: 85px;
+    padding-right: 17px;
 }
 .desktop-mobile-views.edit-container .template-name-single > div:hover,
 .desktop-mobile-views.edit-container .template-name-single > div.active {
@@ -433,6 +433,7 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
     background-color: #ccc;
     border: 1px solid #fff;
     z-index: 150;
+    cursor: pointer;
 }
 .addition .fa-plus-circle { 
     position: absolute;
@@ -597,7 +598,9 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
     border-right: none;
 }
 .added-sim-640 .addition .port-edit-buttons img { height: auto;} 
-
+.header-min-height {
+    z-index: 1001;
+}
 /* END for phone-sim */
 @media (max-width: 767px) {
     .top-menu {
@@ -613,6 +616,17 @@ img { vertical-align: inherit !important;}
     /*.edit-container.wrapper-form-con, .edit-container-left {
         height: 398px;
     }*/
+}
+
+@media (min-width: 1535px) {
+    .wrapper-form-con.desktop-mobile-views.edit-container {
+        left: 13%;
+    }
+}
+@media (min-width: 1900px) {
+    .wrapper-form-con.desktop-mobile-views.edit-container {
+        left: 17%;
+    }
 }
 @media (max-width: 1200px) and (min-width: 1060px) { 
     .wrapper-form-con.desktop-mobile-views.edit-container {
