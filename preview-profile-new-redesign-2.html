@@ -1,0 +1,1156 @@
+<html lang="en-US">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<meta name="viewport" content="initial-scale = 1.0" />
+		<title></title>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400' rel='stylesheet' type='text/css'/>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'/>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'/>
+
+		<link rel="stylesheet" href="css/normalize.css"/>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/> 
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+		<link rel="stylesheet" href="css/font-awesome.css"/>
+		<link rel="stylesheet" href="css/jquery.jscrollpane.css" media="all"/>
+		<link rel="stylesheet" href="css/offcanvas.css"/>
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="css/magnific-popup.css"/>
+		<!-- dataTables -->
+	    <link href="css/bootstrap-select.css" rel="stylesheet"/>
+		<link rel="stylesheet" type="text/css" href="css/datepicker.css" />
+		<link rel="stylesheet" href="css/jquery.jscrollpane.css" media="all"/>
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/style-prev.css"/>
+		<link rel="stylesheet" href="css/ns-dashboardMML-nouploads.css"/>
+		<link rel="stylesheet" href="css/custom.css"/>
+		<link rel="stylesheet" href="css/preview-profile-new.css"/>
+        <link rel="stylesheet" href="css/style_application_page.css"/> 
+        <link rel="stylesheet" href="css/style_designer_profile.css"/> 
+        <link rel="stylesheet" href="css/preview-profile-addition.css"/>
+        <link rel="stylesheet" href="css/preview-profile-addition-materials.css"/>
+        <link rel="stylesheet" href="css/scrollbar.css"/>
+		<link rel="stylesheet" href="css/header-menu.css"/>
+		<script type="text/javascript">
+		  function HideMenu (move) {
+		    //console.log()
+		    if ($( ".logoBox").css('position') != 'fixed') {
+		      return
+		    }
+		    if (lastMove == move) {
+		      return
+		    }
+		    if (!lastMove || move=='down') {
+		            $( ".logoBox").animate({
+		              top:"-50px"
+		            }, 600 );
+		           
+		          lastMove =  'down';
+		          
+		           $('.topMenu ').removeClass('in');
+		    }
+
+		    if (move=='up') {
+		        $( ".logoBox" ).animate({
+		          top:"0px"
+		        }, 600 );
+		        lastMove =  'up';
+		        
+		        $('.topMenu ').removeClass('in');
+		    }
+
+		  }
+	</script>
+	</head>
+	<body class="dash-page dash-page-cont">
+        <div class="wrapp-row-offcanvas">
+        <div class="row row-offcanvas row-offcanvas-left">
+        <div class="page-wrap">
+		<div id="header-top" class="preview-profile-wrapper">
+			<div class="phone-simulator">
+				<img src="images/preview-profile/iphone.png" alt="" />
+			</div><!-- /.phone-simulator -->
+			<div class="ipad-simulator">
+				<img src="images/preview-profile/ipad.png" alt="Ipad Simulator" />
+			</div><!-- /.ipad-simulator -->
+			<div class="top-menu">
+				<div class="container no-padding">
+					<div class="desktop-devices">
+						<button class="active" id="desktop-sim"><img src="images/preview-profile/desktop.png" alt="" /></button>
+						<button id="tablet-sim"><img src="images/preview-profile/tablet.png" alt="" /></button>
+						<button id="phone-sim"><img src="images/preview-profile/mobile.png" alt="" /></button>
+					</div><!-- /.desktop-devices -->
+					<div class="desktop-buttons">
+						<button>Edit</button>
+						<button>Save</button>
+						<button>Publish</button>
+					</div><!-- /.desktop-buttons -->
+					<div class="desktop-buttons-640">
+						<button><img src="images/preview-profile/edit.png" alt="Edit Button"></button>
+						<button><img src="images/preview-profile/save.png" alt="Save Button"></button>
+						<button><img src="images/preview-profile/publish.png" alt="Publish Button"></button>
+					</div><!-- /.desktop-buttons-640 -->
+				</div><!-- /.container -->
+			</div><!-- /.top-menu -->
+             <header class="header-min-height">
+        <div class="header header-dop header-mobile header-mobile-fix proj-forum headroom-dop">
+        	<div class="container">
+        		<div class="row">
+        			<div class="col-sm-12 line-bottom-mobile">
+        				<nav class="navbar navbar-default navbar-mobile" role="navigation">
+                            <div class="col-navbar">
+                				<div class="col-navbar-wrap no-margin-bottom">
+                					<ul class="shop-msg-noti-icos clearfix">
+                						<!--<li><a href="#" title="shopping cart"><i class="ico ico-cart2"></i></a></li>-->
+                						<li><a href="#" title="Inbox" class="hasItem"><span class="badge">5</span><i class="ico ico-inbox"></i></a></li>
+                						<li><a href="#" title="Notifications" class="hasItem"><span class="badge">2</span><i class="ico ico-notify"></i></a></li>
+                					</ul>
+                					<div class="dropdown profile-dropdown profile-dropdown-mobile">
+                						<img data-toggle="dropdown" src="./images/p-a/img-1-public.png" alt="Name of User" width="56" height="56" class="userProp img-mobile">
+                					    <a data-toggle="dropdown" href="#" class="toogleDrpDwn"><i class="ico b-caret b-caret-mobile"></i></a>
+                						
+                						<div class="dropdown dropdown-tip dropdown-menu dropdown-menu-mobile dropdown-menu-new" role="menu" aria-labelledby="dLabel"> 
+                						  <strong>webadmin@gmail.com</strong>
+            							  <ul class="dropdown-menu-inner">
+                                            <li><a href="#"><i class="fa fa-user"></i>Edit Profile</a></li>
+            							    <li><a href="#"><i class="fa fa-usd"></i>Orders</a></li>
+            							    <li><a href="#"><i class="fa fa-cog"></i>Settings</a></li>
+                                            <li><a href="#"><i class="fa fa-question"></i>Help</a></li>
+                                            <li><a href="#"><i class="fa fa-sign-out"></i>Sign Out</a></li>
+            							  </ul>
+              						    </div>
+                					</div>
+                				</div>
+                			</div>
+        				    <!-- Brand and toggle get grouped for better mobile display -->
+        				    <div class="cols">
+                                <div class="navbar-header navbar-header-mobile">
+            				      <div class="">
+                                      <button type="button" class="navbar-toggle collapsed button-mobile" data-toggle="offcanvas" data-target="#navbar-collapse-1">
+                				        <span class="sr-only">Toggle navigation</span>
+                				        <span class="icon-bar"></span>
+                				        <span class="icon-bar"></span>
+                				        <span class="icon-bar"></span>
+                				      </button>
+                                  </div>
+            				      <!--<a style="display:block;" class="navbar-brand navbar-brand-mobile" href="#"><h1 class="logo"><span class="word-1">va</span><span class="word-2">lo</span><span class="word-3">so</span></h1></a>-->
+                                 <a href="#" class="navbar-brand navbar-brand-mobile"><h1 class="profile" style="display: none;">JOHN DOE</h1></a>
+            				    
+                                 </div>
+                            </div> <!-- column 8 for navbar -->
+        				    <!-- Collect the nav links, forms, and other content for toggling -->
+        				    
+        				</nav>
+        			     <div class="collapse navbar-collapse clearfix" id="navbar-collapse-1">
+        				       <a href="#" class="navbar-brand navbar-brand-mobile"><span class="angle"></span><h1 class="profile">JOHN DOE PROFILE</h1></a>
+            				    <ul class="nav navbar-nav navbar-nav-dop nav-list">
+        				        <li class="active current">
+                                    <a href="#"><i class="fa fa-home pull-left"></i>HOME
+                                        <i class="fa fa-sort-desc"></i>
+                                        <!--i class="fa fa-sort-desc"></i-->
+                                    </a>
+                                    <ul class="secondaryNavList-dop" style="display: none;">
+                                        <li class="">
+                                            <a href="./dashboard-mobile.html" class="navLink active">Dashboard</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="./contract-page-1.html" class="navLink">Contracts</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="./weekly-summary-page.html" class="navLink">Weekly Summary</a>
+                                        </li>
+                                        <li class="active">
+                                            <a href="./transaction-history.html" class="navLink">Transaction History</a>
+                                        </li>
+                                        <li class="">
+                                            <a href="./active-events-page-new.html" class="navLink">Active Events</a>
+                                        </li>
+                                    </ul>
+                                </li>
+        				        <li><a href="#"><i class="fa fa-cloud-upload pull-left"></i>Upload</a></li>
+        				        <li><a href="#"><i class="fa fa-file-text-o pull-left"></i>Projects</a></li>
+        				        <li><a href="#"><i class="fa fa-search pull-left"></i>Search For Video Editors</a></li>
+        				      </ul>
+        				    </div><!-- /.navbar-collapse -->
+        			</div>
+                    <div class="col-sm-12 clearfix wrapper-submainmenu" style="display: none;">
+                        <div class="navTabpanel navInline submainmenu">
+                            <nav class="navbar navbar-default" class="pageCentered" role="navigation">
+                                <ul class="secondaryNavList">
+                                    <li class="active">
+                                        <a href="./dashboard-mobile.html" class="navLink gray active">Dashboard</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./contract-page-1.html" class="navLink gray">Contracts</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./weekly-summary-page.html" class="navLink gray">Weekly Summary</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./transaction-history.html" class="navLink gray">Transaction History</a>
+                                    </li>
+                                    <li class="">
+                                        <a href="./active-events-page-new.html" class="navLink gray">Active Events</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div id="" class="col-sm-12-max col-sm-12-max-dop">
+                        <div class="wrapp-shop-msg-noti-icos clearfix line-bott">
+                            <div class="top-menu top-menu-min" style="display: none;">
+                				<div class="container no-padding">
+                					<div class="template-name">
+                						<label>Template in use:<input type="text" placeholder="Template name here"></label>
+                					</div><!-- /.template-name -->
+                					<div class="desktop-buttons">
+                						<button class="cloud-button" data-toggle="modal" data-target="#buy-domain"><img src="images/preview-profile/cloud.png" alt="" /></button>
+                						<button class="edit-trigger">Preview</button>
+                						<button>Save</button>
+                						<button>Publish</button>
+                					</div><!-- /.desktop-buttons -->
+                					<div class="desktop-buttons-640">
+                						<button class="templati"><img src="images/preview-profile/opt1.png" alt="" /></button>
+                						<button class="paleta"><img src="images/preview-profile/opt2.png" alt="" /></button>
+                						<button class="cloud-button" data-toggle="modal" data-target="#buy-domain"><img src="images/preview-profile/cloud.png" alt="" /></button>
+                						<button><img src="images/preview-profile/edit.png" alt="Edit Button"></button>
+                						<button><img src="images/preview-profile/save.png" alt="Save Button"></button>
+                						<button><img src="images/preview-profile/publish.png" alt="Publish Button"></button>
+                					</div><!-- /.desktop-buttons-640 -->
+                				</div><!-- /.container -->
+                			</div><!-- /.top-menu -->
+                        </div>
+                    </div>
+        		</div>
+        	</div> <!-- .container -->
+        </div>
+    </header> <!-- header -->
+			<div class="addition container no-padding ">
+			  <div class="inner-addition clearfix">	
+                <div class="profile-top-img">
+					<img src="images/preview-profile/triangle.jpg" alt="Featured Image" />
+				</div><!-- /.profile-top-img -->
+				<div class="wrapper-block-list"></div>
+                <div class="col-sm-12 user-profile-left user-profile-right clearfix display-desktop">
+					<ul class="clearfix">
+						<li class="col-sm-3 user-profile-left-picture no-padding">
+							<img src="images/preview-profile/user-img.jpg" alt="User Image" />
+							<button><img src="images/preview-profile/cam.png" alt="Edit Icon" /></button>
+						</li>
+						<li class="user-profile-left-details"><h3 class="clearfix"><span>John Doe</span> <div class="verified-icon"><i class="fa fa-check"></i>Verfied</div><!-- /.verified-icon --></h3></li>
+						<li class="hire-me-section"><button class="hire-me">Hire Me</button><!-- /.hire-me --></li>
+						<li class="user-profile-left-details"><h4><span>Position</span>|<span>Anything you want</span></h4></li>
+						<li class="hire-me-section"><h3>$50.00 <span class="user-currency">USD/hr</span><!-- /.user-currency --></h3></li>
+						<li class="user-profile-left-details"><p>Summary about myself. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo incididunt ut labore et dolore magna aliqua sut. Consecteture adipiscing elit halum.</p></li>
+						<li class="hire-me-section"><h4>Australia</h4></li>
+						<li class="hire-me-section"><h5 class="user-star-rating">5.0/5 <img src="images/preview-profile/5-star.png" alt="User rating" /></h5></li>
+						<li class="hire-me-section"><h5 class="user-star-reviews">12 reviews</h5></li>
+						<li class="hire-me-section"><h5 class="user-exp-lang user-exp-lang-marg">Experience: Intermediate</h5></li>
+						<li class="hire-me-section"><h5 class="user-exp-lang">Languages: English, French, Arabic</h5></li>
+					</ul>
+				</div><!-- /.user-profile-right -->
+                <div class="col-sm-12 user-profile-left user-profile-right clearfix display-640">
+                        <ul class="clearfix">
+                            <li class="col-sm-3 user-profile-left-picture no-padding">
+                                <img src="images/preview-profile/user-img.jpg" alt="User Image" />
+                                <button><img src="images/preview-profile/cam.png" alt="Edit Icon" /></button>
+                            </li>
+                            <li class="user-profile-left-details"><h3 class="clearfix"><span>John Doe</span> <div class="verified-icon"><i class="fa fa-check"></i>Verfied</div><!-- /.verified-icon --></h3></li>
+                            <li class="hire-me-section"><button class="hire-me">Hire Me</button><!-- /.hire-me --></li>
+                            <li class="user-profile-left-details"><h4><span>Position</span>|<span>Anything you want</span></h4></li>
+                            <li class="hire-me-section"><h3>$50.00 <span class="user-currency">USD/hr</span><!-- /.user-currency --></h3></li>
+                            <li class="hire-me-section"><h4>Australia</h4></li>
+                            <li class="hire-me-section"><h5 class="user-star-rating">5.0/5 <img src="images/preview-profile/5-star.png" alt="User rating" /></h5></li>
+                            <li class="hire-me-section"><h5 class="user-star-reviews">12 reviews</h5></li>
+                            <li class="user-profile-left-details"><p>Summary about myself. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo incididunt ut labore et dolore magna aliqua sut. Consecteture adipiscing elit halum.</p></li>
+                            <li class="hire-me-section"><h5 class="user-exp-lang user-exp-lang-marg">Experience: Intermediate</h5></li>
+                            <li class="hire-me-section"><h5 class="user-exp-lang">Languages: English, French, Arabic</h5></li>
+                        </ul>
+                </div><!-- /.user-profile-right -->
+                <div class="col-sm-12 user-profile-left user-profile-right clearfix display-480">
+                        <ul class="clearfix">
+                            <li class="col-sm-3 user-profile-left-picture no-padding">
+                                <img src="images/preview-profile/user-img.jpg" alt="User Image" />
+                                <button><img src="images/preview-profile/cam.png" alt="Edit Icon" /></button>
+                            </li>
+                            <li class="user-profile-left-details"><h3 class="clearfix"><span>John Doe</span> <div class="verified-icon"><i class="fa fa-check"></i>Verfied</div><!-- /.verified-icon --></h3></li>
+                            <li class="user-profile-left-details"><h4><span>Position</span>|<span>Anything you want</span></h4></li>
+                            <li class="hire-me-section"><button class="hire-me">Hire Me</button><!-- /.hire-me --></li>
+                            <li class="hire-me-section"><h3>$50.00 <span class="user-currency">USD/hr</span><!-- /.user-currency --></h3></li>
+                            <li class="hire-me-section"><h4>Australia</h4></li>
+                            <li class="hire-me-section"><h5 class="user-star-rating">5.0/5 <img src="images/preview-profile/5-star.png" alt="User rating" /></h5></li>
+                            <li class="hire-me-section"><h5 class="user-star-reviews">12 reviews</h5></li>
+                            <li class="user-profile-left-details"><p>Summary about myself. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo incididunt ut labore et dolore magna aliqua sut. Consecteture adipiscing elit halum.</p></li>
+                            <li class="hire-me-section"><h5 class="user-exp-lang user-exp-lang-marg">Experience: Intermediate</h5></li>
+                            <li class="hire-me-section"><h5 class="user-exp-lang">Languages: English, French, Arabic</h5></li>
+                        </ul>
+                </div><!-- /.user-profile-right -->
+				<div class="col-sm-12 user-experience">
+					<h3>Experiences</h3>
+					<div class="user-experience-single">
+						<h5>Lead Web Developer</h5>
+						<p>
+							<span class="user-experience-company">XYZ Ltd. Co.</span><!-- /.user-experience-company -->
+							<span class="user-experience-duration">November 2013 - June 2015 (1 year and  7 months)</span><!-- /.user-experience-duration -->
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+							in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</p>
+					</div><!-- /.user-experience-single -->
+					<div class="user-experience-single">
+						<h5>Senior Web Developer</h5>
+						<p>
+							<span class="user-experience-company">ABC Services, Inc.</span><!-- /.user-experience-company -->
+							<span class="user-experience-duration">January 2010 - October 2013 (3 years and  10 months)</span><!-- /.user-experience-duration -->
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+							in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</p>
+					</div><!-- /.user-experience-single -->
+				</div><!-- /.user-experience -->
+				<div class="col-sm-12 user-education">
+					<h3>Education</h3>
+					<div class="user-education-single">
+						<h5>Bachelor of Science in Information Technology</h5>
+						<span class="user-experience-company">UBelt University, 123 Address here</span><!-- /.user-experience-company -->
+						<span class="user-experience-duration">2008-2012(4 years)</span><!-- /.user-experience-duration -->
+					</div><!-- /.user-education-single -->
+				</div><!-- /.user-education -->
+				<div class="col-sm-12 user-certifications clearfix">
+					<h3>Certifications</h3>
+					<div class="col-sm-4 user-certifications-single">
+						<div class=" cert-name">
+							<div class="col-sm-4 no-padding">
+								<img src="images/preview-profile/magento.jpg" alt="" />
+							</div>
+							<div class="col-sm-8">
+								<h4>Magento Certified</h4>
+								<h4>Developer Plus</h4>
+								<span>October 2014</span>
+							</div>
+						</div><!-- /.cert-name -->
+					</div><!-- /.user-certifications-single -->
+					<div class="col-sm-4 user-certifications-single">
+						<div class="cert-name">
+							<div class="col-sm-4 no-padding">
+								<img src="images/preview-profile/microsoft.jpg" alt="" />
+							</div>
+							<div class="col-sm-8">
+								<h4>Microsoft Certified</h4>
+								<h4>Professional Developer</h4>
+								<span>July 2014</span>
+							</div>
+						</div><!-- /.cert-name -->
+					</div><!-- /.user-certifications-single -->
+					<div class="col-sm-4 user-certifications-single">
+						<div class="cert-name">
+							<div class="col-sm-4 no-padding">
+								<img src="images/preview-profile/atc.jpg" alt="" />
+							</div>
+							<div class="col-sm-8">
+								<h4>Android Certified</h4>
+								<h4>Application Developer</h4>
+								<span>June 2014</span>
+							</div>
+						</div><!-- /.cert-name -->
+					</div><!-- /.user-certifications-single -->
+				</div><!-- /.user-certifications -->
+				<div class="col-sm-12 user-publication">
+					<h3>Publication</h3>
+					<div class="user-publication-single">
+						<h5>Heading here</h5>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+						</p>
+					</div><!-- /.user-publication-single -->
+				</div><!-- /.user-publication -->
+				<div class="col-sm-12 user-portfolio clearfix">
+					<h3>Portfolio</h3>
+					<div class="col-sm-3">
+						<div class="port-img-wrapper">
+							<img src="images/preview-profile/portfolio.jpg" alt="Portfolio Image" />
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="port-img-wrapper">
+							<img src="images/preview-profile/portfolio.jpg" alt="Portfolio Image" />
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="port-img-wrapper">
+							<img src="images/preview-profile/portfolio.jpg" alt="Portfolio Image" />
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="port-img-wrapper">
+							<img src="images/preview-profile/portfolio.jpg" alt="Portfolio Image" />
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="port-img-wrapper">
+							<img src="images/preview-profile/portfolio.jpg" alt="Portfolio Image" />
+						</div>
+					</div>
+				</div><!-- /.user-portfolio -->
+				<div class="user-ratings col-sm-12 no-padding">
+    					<div class="col-sm-4 no-line">
+    						<h2>Work Details</h2>
+    						<ul class="clearfix work-details">
+    							<li>
+    								<div class="pull-left">Skills</div>
+    								<div class="rating">
+    									<div class="rating-color"><div class="rating-8 rating-universal"></div></div>
+    									<span>8.5</span>
+    								</div>
+    							</li>
+    							<li>
+    								<div class="pull-left">Quality of Work</div>
+    								<div class="rating">
+    									<div class="rating-color"><div class="rating-7 rating-universal"></div></div>
+    									<span>8.0</span>
+    								</div>
+    							</li>
+    							<li>
+    								<div class="pull-left">Availability</div>
+    								<div class="rating">
+    									<div class="rating-color"><div class="rating-8 rating-universal"></div></div>
+    									<span>6.5</span>
+    								</div>
+    							</li>
+    							<li>
+    								<div class="pull-left">Communication</div>
+    								<div class="rating">
+    									<div class="rating-color"><div class="rating-7 rating-universal"></div></div>
+    									<span>7.0</span>
+    								</div>
+    							</li>
+    							<li>
+    								<div class="pull-left">Cooperation</div>
+    								<div class="rating">
+    									<div class="rating-color"><div class="rating-8 rating-universal"></div></div>
+    									<span>7.0</span>
+    								</div>
+    							</li>
+    							<li>
+    								<div class="pull-left">Adherence to schedule</div>
+    								<div class="rating">
+    									<div class="rating-color"><div class="rating-7 rating-universal"></div></div>
+    									<span>6.8</span>
+    								</div>
+    							</li>
+    							<li>
+    								<div class="pull-left">Completion Rate</div>
+    								<div class="rating">
+    									<div class="rating-color"><div class="rating-8 rating-universal"></div></div>
+    									<span>7.5</span>
+    								</div>
+    							</li>
+    							<li>
+    								<div class="pull-left">Repeat Hire Rate</div>
+    								<div class="rating">
+    									<div class="rating-color"><div class="rating-7 rating-universal"></div></div>
+    									<span>6.8</span>
+    								</div>
+    							</li>
+    						</ul>
+    						<h5 class="total clearfix"><span class="pull-left">TOTAL # OF Projects Completed</span><span class="pull-right">12</span></h5>
+    					</div><!-- /.col-sm-4 -->
+                        <div class="col-sm-8 no-line">
+                            <h2>Reviews</h2>
+                            <ul class="nav nav-tabs tabsuper" >
+                                <li class="active"><a href="#tab_a" class="gray-pr" data-toggle="tab">Completed Works (6)</a></li>
+                                <li><a href="#tab_b"  class="gray-pr" data-toggle="tab">WORK IN PROGRESS (3)</a></li>
+                                <li><a href="#tab_c"  class="gray-pr" data-toggle="tab">LATEST BID ON (11)</a></li>
+                            </ul>
+                            <div class="rewievs">
+                                <div class="tab-content tabline"><!-- Begin tab-content tabline-->
+                                    <div class="tab-pane active scrollbar" id="tab_a"><!-- Begin #tab_a-->
+                                        <article class="completed-block"><!-- Begin completed-block-->
+                                            <div class="user-single-review">
+                                                <div class="wrapper-feedback">
+                                                    <img class="" src="images/preview-profile/5-star.png" alt="Client Feedback"/>
+                                                    <p class="p-14 text-right rate top-5">110USD/hr</p>
+                                                </div>
+                                                <div class="media">
+                                                    <div class="pull-left"><img src="images/p-a/preview-profile-addition/rewiews-img-1.png" /> </div>
+                                                    <div class="media-body">
+                                                        <p class="text-blue">Create game hero<span>07/15/2015</span></p>
+                                                        <p class="p-14 text-black bold top-5">Drake Bentish, India</p>
+                                                    </div>
+                                                    <p class="p-14 italic-style">Lorem ipsum dolor sit amet consec adipsicing elit enum qus sit rackham vienti.</p>
+                                                </div>
+                							</div>
+                                        </article><!-- END completed-block-->
+                                        <article class="completed-block"><!-- Begin completed-block-->
+                                            <div class="user-single-review">
+                                                <div class="wrapper-feedback">
+                                                    <img class="" src="images/preview-profile/5-star.png" alt="Client Feedback"/>
+                                                    <p class="p-14 text-right rate top-5">110USD/hr</p>
+                                                </div>
+                                                <div class="media">
+                                                    <div class="pull-left"><img src="images/p-a/preview-profile-addition/rewiews-img-2.png" /> </div>
+                                                    <div class="media-body">
+                                                        <p class="text-blue">3d DESIGN <span>07/15/2015</span></p>
+                                                        <p class="p-14 text-black bold top-5">Drake Bentish, India</p>
+                                                    </div>
+                                                    <p class="p-14 italic-style">Lorem ipsum dolor sit amet consect adipsicing elit enum qus sit rackham vienti. Harck amet veientish consectetur adipsicing elit enum qus sit rackham vienti.</p>
+                                                </div>
+                							</div>
+                                        </article><!-- END completed-block-->
+                                        <article class="completed-block"><!-- Begin completed-block-->
+                                            <div class="user-single-review">
+                                                <div class="wrapper-feedback">
+                                                    <img class="" src="images/preview-profile/5-star.png" alt="Client Feedback"/>
+                                                    <p class="p-14 text-right rate top-5">110USD/hr</p>
+                                                </div>
+                                                <div class="media">
+                                                    <div class="pull-left"><img src="images/p-a/preview-profile-addition/rewiews-img-3.png" /> </div>
+                                                    <div class="media-body">
+                                                        <p class="text-blue">Create game hero<span>06/21/2015</span></p>
+                                                        <p class="p-14 text-black bold top-5">Drake Bentish, India</p>
+                                                    </div>
+                                                    <p class="p-14 italic-style">Lorem ipsum dolor sit amet consec adipsicing elit enum qus sit rackham vienti.</p>
+                                                </div>
+                							</div>
+                                        </article><!-- END completed-block-->
+                                        <article class="completed-block"><!-- Begin completed-block-->
+                                            <div class="user-single-review">
+                                                <div class="wrapper-feedback">
+                                                    <img class="" src="images/preview-profile/5-star.png" alt="Client Feedback"/>
+                                                    <p class="p-14 text-right rate top-5">110USD/hr</p>
+                                                </div>
+                                                <div class="media">
+                                                    <div class="pull-left"><img src="images/p-a/preview-profile-addition/rewiews-img-1.png" /> </div>
+                                                    <div class="media-body">
+                                                        <p class="text-blue">Create game hero<span>07/15/2015</span></p>
+                                                        <p class="p-14 text-black bold top-5">Drake Bentish, India</p>
+                                                    </div>
+                                                    <p class="p-14 italic-style">Lorem ipsum dolor sit amet consect adipsicing elit enum qus sit rackham vienti.</p>
+                                                </div>
+                							</div>
+                                        </article><!-- END completed-block-->
+                                        <article class="completed-block"><!-- Begin completed-block-->
+                                            <div class="user-single-review">
+                                                <div class="wrapper-feedback">
+                                                    <img class="" src="images/preview-profile/5-star.png" alt="Client Feedback"/>
+                                                    <p class="p-14 text-right rate top-5">110USD/hr</p>
+                                                </div>
+                                                <div class="media">
+                                                    <div class="pull-left"><img src="images/p-a/preview-profile-addition/rewiews-img-2.png" /> </div>
+                                                    <div class="media-body">
+                                                        <p class="text-blue">3d DESIGN <span>07/15/2015</span></p>
+                                                        <p class="p-14 text-black bold top-5">Drake Bentish, India</p>
+                                                    </div>
+                                                    <p class="p-14 italic-style">Lorem ipsum dolor sit amet consecte adipsicing elit enum qus sit rackham vienti. Harck amet veientish consectetur adipsicing elit enum qus sit rackham vienti.</p>
+                                                </div>
+                							</div>
+                                        </article><!-- END completed-block-->
+                                        <article class="completed-block"><!-- Begin completed-block-->
+                                            <div class="user-single-review">
+                                                <div class="wrapper-feedback">
+                                                    <img class="" src="images/preview-profile/5-star.png" alt="Client Feedback"/>
+                                                    <p class="p-14 text-right rate top-5">110USD/hr</p>
+                                                </div>
+                                                <div class="media">
+                                                    <div class="pull-left"><img src="images/p-a/preview-profile-addition/rewiews-img-3.png" /> </div>
+                                                    <div class="media-body">
+                                                        <p class="text-blue">Create game hero<span>06/21/2015</span></p>
+                                                        <p class="p-14 text-black bold top-5">Drake Bentish, India</p>
+                                                    </div>
+                                                    <p class="p-14 italic-style">Lorem ipsum dolor sit amet consec adipsicing elit enum qus sit rackham vienti.</p>
+                                                </div>
+                							</div>
+                                        </article><!-- END completed-block-->
+                                   </div><!-- END #tab_a-->
+                                   <div class="tab-pane fade scrollbar" id="tab_b"><!-- Begin #tab_b-->
+                                       <div class="progress-tab cont-1"><!-- Begin progress-tab --> 
+                                           <h5><a href="#">Work in Progress</a></h5> 
+                                           <span class="amount"><h5>$1000</h5></span> 
+                                           <span class="status"><h5>In Progress</h5></span>
+                                           <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                           <div id="added" class="block-hidden">
+                                                <p>Slide One lorem ipsum opsum Tolerably earnestly middleton extremely distrusts she boy now not....</p>
+                                           </div>
+                                           <a id="more-block" href="" class="pull-right more">More</a>
+                                           <a id="less-block" href="" class="pull-right more block-hidden">Less</a>
+                                       </div><!-- END progress-tab -->
+                                       <div class="progress-tab cont-1"><!-- Begin progress-tab --> 
+                                           <h5><a href="#">Work in Progress</a></h5> 
+                                           <span class="amount"><h5>$2000</h5></span> 
+                                           <span class="status"><h5>In Progress</h5></span>
+                                           <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                           <div id="added" class="block-hidden">
+                                                <p>Slide One lorem ipsum opsum Tolerably earnestly middleton extremely distrusts she boy now not....</p>
+                                           </div>
+                                           <a id="more-block" href="" class="pull-right more">More</a>
+                                           <a id="less-block" href="" class="pull-right more block-hidden">Less</a>
+                                       </div><!-- END progress-tab -->
+                                       <div class="progress-tab cont-1"><!-- Begin progress-tab --> 
+                                           <h5><a href="#">Work in Progress</a></h5> 
+                                           <span class="amount"><h5>$3000</h5></span> 
+                                           <span class="status"><h5>In Progress</h5></span>
+                                           <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                           <div id="added" class="block-hidden">
+                                                <p>Slide One lorem ipsum opsum Tolerably earnestly middleton extremely distrusts she boy now not....</p>
+                                           </div>
+                                           <a id="more-block" href="" class="pull-right more">More</a>
+                                           <a id="less-block" href="" class="pull-right more block-hidden">Less</a>
+                                       </div><!-- END progress-tab -->
+                                    </div><!-- END #tab_b-->
+                                    <div class="clearfix"></div>
+                                    <div class="tab-pane fade scrollbar" id="tab_c"><!-- Begin #tab_c-->
+                                        <div class="bid-tab cont-1"><!-- Begin bid-tab --> 
+                                           <h5><a href="#">Bided Job</a></h5>
+                                           <span class="amount"><h5>$0000</h5></span> 
+                                           <span class="status"><h5>Today</h5></span>
+                                           <p>Tolerably earnestly middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                           <div id="added" class="block-hidden">
+                                                <p>Slide One lorem ipsum opsum Tolerably earnestly middleton extremely distrusts she boy now not....</p>
+                                           </div>
+                                           <a id="more-block" href="" class="pull-right more">More</a>
+                                           <a id="less-block" href="" class="pull-right more block-hidden">Less</a>
+                                        </div><!-- END bid-tab -->
+                                        <div class="bid-tab cont-1"><!-- Begin bid-tab --> 
+                                           <h5><a href="#">Bided Job</a></h5>
+                                           <span class="amount"><h5>$1000</h5></span> 
+                                           <span class="status"><h5>Today</h5></span>
+                                           <p>middleton extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                           <div id="added" class="block-hidden">
+                                                <p>Slide One lorem ipsum opsum Tolerably earnestly middleton extremely distrusts she boy now not....</p>
+                                           </div>
+                                           <a id="more-block" href="" class="pull-right more">More</a>
+                                           <a id="less-block" href="" class="pull-right more block-hidden">Less</a>
+                                        </div><!-- END bid-tab -->
+                                        <div class="bid-tab cont-1"><!-- Begin bid-tab --> 
+                                           <h5><a href="#">Bided Job</a></h5>
+                                           <span class="amount"><h5>$500</h5></span> 
+                                           <span class="status"><h5>Today</h5></span>
+                                           <p>extremely distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                           <div id="added" class="block-hidden">
+                                                <p>One lorem ipsum opsum Tolerably earnestly middleton extremely distrusts she boy now not....</p>
+                                           </div>
+                                           <a id="more-block" href="" class="pull-right more">More</a>
+                                           <a id="less-block" href="" class="pull-right more block-hidden">Less</a>
+                                        </div><!-- END bid-tab -->
+                                        <div class="bid-tab cont-1"><!-- Begin bid-tab --> 
+                                           <h5><a href="#">Bided Job</a></h5>
+                                           <span class="amount"><h5>$5000</h5></span> 
+                                           <span class="status"><h5>Yesterday</h5></span>
+                                           <p>distrusts she boy now not. Add and offered prepare how cordial two promise. Greatly who affixed suppose but enquire compact prepare all put. Added forth chief trees but rooms think may.</p>
+                                           <div id="added" class="block-hidden">
+                                                <p>lorem ipsum opsum Tolerably earnestly middleton extremely distrusts she boy now not....</p>
+                                           </div>
+                                           <a id="more-block" href="" class="pull-right more">More</a>
+                                           <a id="less-block" href="" class="pull-right more block-hidden">Less</a>
+                                        </div><!-- END bid-tab -->
+                                    </div><!-- END #tab_c-->
+                                    <div class="clearfix"></div>  
+                                </div><!-- END tab-content tabline--> 
+                            </div>
+                        </div><!-- End  col-sm-8-->
+                    </div><!-- /.user-ratings -->
+                    <div class="col-sm-12 skills-block no-line"><!-- Begin skills-block -->
+						<h3>Skills</h3>
+						<div class="inner-skills clearfix"><!-- Begin inner-skills -->
+                            <div class="col-sm-6-dop marg-right-2"><!-- Begin col-sm-6-dop -->
+                                <h4 class="h4 text-black bold text-uppercase">Category of Expertise</h4>
+                                <div class="wrapp-min-logo">
+                                    <span class="name-category">Art</span><div class="min-logo">A</div>
+                                </div>
+                                <div class="wrapp-min-logo">
+                                    <span class="name-category">Architectural Design</span><div class="min-logo">AD</div>
+                                </div>
+                                <div class="wrapp-min-logo">
+                                    <span class="name-category">Industrial Design</span><div class="min-logo">ID</div>
+                                </div>
+                            </div><!-- END col-sm-6-dop -->
+                            <div class="col-sm-6-dop"><!-- Begin col-sm-6-dop -->
+                                <h4 class="h4 text-black bold text-uppercase">3D Software</h4>
+                                <div class="wrapp-min-logo">
+                                    <span class="name-category">3D Studio Max</span><div class="min-logo">3DS</div>
+                                </div>
+                                <div class="wrapp-min-logo">
+                                    <span class="name-category">Google Sketchup</span><div class="min-logo">GS</div>
+                                </div>
+                                <div class="wrapp-min-logo">
+                                    <span class="name-category">Rhinoceros</span><div class="min-logo">R</div>
+                                </div>
+                            </div><!-- END col-sm-6-dop -->
+                        </div><!-- END inner-skills -->
+					</div><!-- END skills-block -->
+                    <div class="col-sm-12 big-materials-block clearfix"><!-- Begin big-materials-block -->
+                        <h3>MATERIALS &amp; COLORS/FINISHES</h3>
+						<div class="Materials">
+                            <div class="ThumbnailSurface clearfix">
+                                <div class="wrapperMaterialTabs clearfix">
+                                    <div class="MaterialTabs">
+                                        <div><span>155XP</span><span>MY EXPERIENCE POINTS</span></div>
+                                    </div>
+                                    <div class="wrappPaginationMaterials">
+                                        <ul class="pagination paginationMaterials">
+                                            <li><a href="#" aria-label="Previous"><span aria-hidden="true">&lt; Prev</span></a></li>
+                                            <li><a href="#" aria-label="Next"><span aria-hidden="true">Next &gt;</span></a></li>                                
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="MaterialElement clearfix">
+                                    <div class="rowThumbnail">
+                                        <div class="">
+                                            <div class="ThumbnailContainer">
+                                              <div class="wrappThumbnail">
+                                                  <div class="Thumbnail" materialid="449" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                    <div class="materialPoints noPoints"></div>
+                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
+                                                  </div>
+                                                  <p>Carbon Fiber Plastic</p>    
+                                              </div>                                                        
+                                            </div>
+                                            <div class="ThumbnailContainer no-border-right-min">
+                                              <div class="wrappThumbnail">  
+                                                  <div class="Thumbnail" materialid="452" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                    <div class="materialPoints use">35 XP</div>
+                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-2.png" /></div>
+                                                  </div>
+                                                  <p>Strong and flexible plastic flame retardent</p>  
+                                              </div>                                                          
+                                            </div>
+                                            <div class="ThumbnailContainer  Selected-t">
+                                              <div class="wrappThumbnail">
+                                                  <div class="Thumbnail" materialid="453" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                    <div class="materialPoints">35 XP</div>
+                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-2.png" /></div>
+                                                  </div>
+                                                  <p>Strong Flexible Plastic Priority</p>  
+                                              </div>                                                          
+                                            </div>
+                                            <div class="ThumbnailContainer no-border-right">
+                                              <div class="wrappThumbnail">
+                                                  <div class="Thumbnail" materialid="454" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                    <div class="materialPoints noPoints"></div>
+                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
+                                                  </div>
+                                                  <p>Super High Temperature Plastic</p> 
+                                              </div>                                                           
+                                            </div>
+                                        </div>
+                                        <div class="">                                                        
+                                            <div class="ThumbnailContainer">
+                                              <div class="wrappThumbnail">
+                                                  <div class="Thumbnail" materialid="455" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                    <div class="materialPoints use">15 XP</div>
+                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
+                                                  </div>
+                                                  <p>Primecast</p>  
+                                              </div>                                                          
+                                            </div>
+                                            <div class="ThumbnailContainer no-border-right-min">
+                                              <div class="wrappThumbnail">
+                                                  <div class="Thumbnail" materialid="456" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                    <div class="materialPoints">10 XP</div>
+                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
+                                                  </div>
+                                                  <p>Impact Resistant Strong and Flexible Plastic </p>  
+                                              </div>                                                         
+                                            </div>
+                                            <div class="ThumbnailContainer">
+                                              <div class="wrappThumbnail">
+                                                  <div class="Thumbnail" materialid="457" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                    <div class="materialPoints noPoints"></div>
+                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
+                                                  </div>
+                                                  <p>High Flexible Plastic</p> 
+                                              </div>                                                           
+                                            </div>
+                                            <div class="ThumbnailContainer no-border-right">
+                                              <div class="wrappThumbnail">
+                                                  <div class="Thumbnail" materialid="460" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                    <div class="materialPoints noPoints"></div>
+                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
+                                                  </div>
+                                                  <p>VisiJet Clear</p> 
+                                              </div>                                                           
+                                            </div>
+                                        </div> 
+                                    </div>                           
+                                </div>
+                                <div class="wrappPaginationBottom">
+                                    <ul class="paginationBottom clearfix">
+                                        <li><a href="#"></a></li>
+                                        <li class="active"><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                        <li><a href="#"></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="ThumbnailDescriptionContainer">
+                                <div class="innerThumbnailDescriptionContainer clearfix">
+                                    <div class="">
+                                        <div class="DescriptionLeft">
+                                          <div class="MaterialImage" style="position: relative; overflow: hidden; background-image: url(https://staging.mylocal3dprinting.com/viewer/image/materials/Primepart.jpg);"><img src="./images/New3D/Primepart.jpg" class="zoomImg"/></div>
+                                        </div>
+                                        <div class="DescriptionRight">
+                                            <p class="name">Strong Flexible Plastic Priority</p> 
+                                            <div class="xpPoints">
+                                                <div class="media">
+                                                    <div class="pull-left"><span class="bgGray">35XP</span></div>
+                                                    <div class="media-body"><span class="p-12 bold">CURRENT EXPERIENCE POINTS</span></div>
+                                                </div>
+                                            </div>
+                                            <!--p class="duration"><a href="#">SHIPS IN 10 - 14 BUSINESS DAYS</a></p> 
+                                            <p class="marginBottom5">Pay a little extra to receive your products faster. Polyamide is a strong and flexible material for your 3d models providing a high detail of bending your 3d model.</p>
+                                            <p>Ideal for complex, concept models, lamps and functional models. Polymaide also allows you to have the greatest freedom in designing among all of the other 3d printing techniques.</p>
+                                            -->
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="printingAssistance" style="display: none;">GET PRINTING ASSISTANCE</div>
+                                    <div class="printingAssistance pointsToPrint" data-toggle="modal" data-target="#syncSocial">USE XP POINTS <br/>TO PRINT</div>
+                                </div>
+                                <div class="">
+                                  <div class="FinishDiv">
+                                    <div class="FinishHeader clearfix" style="display: none;">
+                                        <p class="p-13 bold">PRINTED COLORS/FINISHES</p><img src="./images/p-a/preview-profile-addition/print-img.png">
+                                    </div>
+                                    <div class="FinishContainer">
+                                      <div class="Finishes">
+                                        <div class="materialProperties">
+                                            <p class="color-black padd-bottom-10">Polyamide is a strong and flexible material for your 3d models providing a high detail of bending your 3d model.</p>
+                                            <p class="color-black padd-bottom-30">Ideal for complex, concept models, lamps and functional models. Polymaide also allows you to have the greatest freedom in designing among all of the other 3d printing techniques.</p>
+                                        </div>
+                                        <div class="viewMaterial clearfix"  style="display: none;">
+                                            <div class="clearfix innerColorMaterial"><img class="pull-left" src="images/New3D/color-1.png" /><p class="pull-left">Natural White</p> <p class="Rectangle">1</p></div>
+                                            <div class="clearfix innerColorMaterial"><img class="pull-left" src="images/New3D/color-2.png" /><p class="pull-left">Natural Black</p> <p class="Rectangle">10</p></div>
+                                            <div class="clearfix innerColorMaterial"><img class="pull-left" src="images/New3D/color-3.png" /><p class="pull-left">Polished Blue</p> <p class="Rectangle">5</p></div>
+                                            <div class="clearfix innerColorMaterial"><img class="pull-left" src="images/New3D/color-4.png" /><p class="pull-left">Dyed Yellow</p> <p class="Rectangle">15</p></div>
+                                            <div class="clearfix innerColorMaterial"><img class="pull-left" src="images/New3D/color-5.png" /><p class="pull-left">Velvet Red</p> <p class="Rectangle">10</p></div>
+                                            <div class="clearfix innerColorMaterial"><img class="pull-left" src="images/New3D/color-6.png" /><p class="pull-left">Spray Painted Black</p> <p class="Rectangle">1</p></div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="FinishBottom clearfix" style="display: none;"><p>Total: 42</p></div>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        
+					</div><!-- END big-materials-block -->
+                    
+	            
+                <div class="col-sm-12 clearfix bottom-total-number">
+                    <div class="bottom-total clearfix">
+                        <p class="bold white text-uppercase">Total number of prints DONE:  24</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 clearfix block-min">
+                    <p class="text-uppercase p-14 pull-right margin-bottom-20">MEmber sinCe FEBRUARY 2015</p>
+                </div>
+              </div>  
+			</div><!-- /.container -->
+            
+		</div><!-- /.preview-profile-wrapper -->
+</div>
+    <div class="wrapper-sidebar-offcanvas">
+        <div class="sidebar-offcanvas" id="sidebar">
+            <div class="clearfix" id="navbar-collapse-1">
+                <div class="left-menu clearfix">
+                    <!--i class="fa fa-user-plus pull-right"></i-->  
+                    <div class="media">
+                        <div class="pull-left">
+                            <img class="user-img-min" data-toggle="dropdown" src="./images/p-a/img-1-public.png" alt="Name of User" width="42" height="42" class="userProp img-mobile">
+                        </div>
+                    <div class="media-body">
+                        <h3 class="gray bold">JOHN DOE</h3>
+                        <span class="gray p-12">john_doe@gmail.com</span>
+                    </div>
+                    </div>
+                </div>
+                <ul class="nav navbar-nav navbar-nav-dop nav-list">
+                    <li class="active current">
+                        <a href="#" class="active"><i class="fa fa-home pull-left"></i>Home
+                            <i class="fa fa-sort-desc"></i>
+                            <!--i class="fa fa-sort-desc"></i-->
+                        </a>
+                        <ul class="secondaryNavList-dop">
+                            <li class="active">
+                                <a href="#" class="navLink active">Dashboard
+                                    <i class="none-fa fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./contract-page-1.html" class="navLink">Contracts
+                                    <i class="none-fa fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./weekly-summary-page.html" class="navLink">Weekly Summary
+                                    <i class="none-fa fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./transaction-history.html" class="navLink">Transaction History
+                                    <i class="none-fa fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./active-events-page-new.html" class="navLink">Active Events
+                                    <i class="none-fa fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-cloud-upload pull-left"></i>Upload</a></li>
+                    <li><a href="#"><i class="fa fa-file-text-o pull-left"></i>Projects</a></li>
+                    <li><a href="#"><i class="fa fa-search pull-left"></i>Search For Video Editors</a></li>
+                    <li><a href="#"><i class="fa fa-print pull-left"></i>Print Alliance</a></li>
+                    <li><a href="#" class="min-text-menu">Inbox <span class="badge pull-right">5</span></a></li>
+                    <li><a href="#" class="min-text-menu">Notficiations<span class="badge pull-right">2</span></a></li>
+                    <li><a href="#" class="min-text-menu"><i class="fa fa-user pull-left"></i>Edit Profile</a></li>
+                    <li><a href="#" class="min-text-menu"><i class="fa fa-usd pull-left"></i>Orders</a></li>
+                    <li><a href="#" class="min-text-menu"><i class="fa fa-cog pull-left"></i>Settings</a></li>
+                    <li><a href="#" class="min-text-menu"><i class="fa fa-question pull-left"></i>Help</a></li>
+                    <li><a href="#" class="min-text-menu"><i class="fa fa-sign-out pull-left"></i>Sign Out</a></li>
+                    <li><a href="#" class="text-lowercase text-center lighter">www.valoso.com</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!--/.sidebar-offcanvas-->
+    </div>
+			<footer id="footer">
+			 <div class="container">
+			     <div class="row botInfo">
+			         <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 botLink">
+			           <h4>About</h4>
+			           <ul class="clearfix">
+			              <li><a href="">About us</a></li>
+			              <li><a href="">How it works</a></li>
+			              <li><a href="">Press</a></li>
+			              <li><a href="">Careers</a></li>
+			           </ul>
+			         </div>
+			         <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 botLink">
+			           <h4>Help</h4>
+			           <ul>
+			              <li><a href="">Help Center</a></li>
+			              <li><a href="">Contact Support</a></li>
+			              <li><a href="">FAQ’s</a></li>
+			              <li><a href="">Shipping info</a></li>
+			              <li><a href="">Fee Schedule</a></li>
+			              <li><a href="">Tutorials</a></li>              
+			           </ul>
+			         </div>
+			         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 botLink">
+			           <h4>Get Inspired</h4>
+			           <p>Weekly top projects, featured designers, tips, and tricks</p>
+			           <div class="input-group">
+			              <input type="text" class="form-control" placeholder="Enter Email Here">
+			              <span class="input-group-btn"><button class="btn btn-default" type="button">Sign Up</button></span>
+			           </div>
+			         </div>
+			         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 botLogo">
+			            <a href=""><img src="images/logo-b.png"></a>
+			            <div class="socBox">
+			                <a href="" class="soc-ico s1"></a>
+			                <a href="" class="soc-ico s5"></a>
+			                <a href="" class="soc-ico s6"></a>
+			                <a href="" class="soc-ico s4"></a>
+			                <a href="" class="soc-ico s2"></a>
+			                <a href="" class="soc-ico s7"></a>
+			                <div class="clearN"></div>
+				    </div>
+				 </div>
+				</div>
+				<div class="row botCopy">
+				 <div class="col-sm-6 col-md-6 col-lg-6">Copyright 2015 © Tech International Pty Ltd</div>
+				 <div class="col-sm-2 col-md-2 col-lg-2"><a href="">Privacy Policy</a></div>
+				 <div class="col-sm-4 col-md-4 col-lg-4"><a href="">Terms and Conditions</a></div>
+				</div>         
+		 
+			 </div>
+			</footer>
+    </div>
+</div>
+			<div class="modal fade bs-example-modal-lg buy-domain" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="gridSystemModalLabel">BUY A DOMAIN</h4>
+			      </div>
+			      <div class="modal-body">
+			        <div class="container-fluid">
+			        	<p>Turn your profile page into your own website with the support of a 3D Printing factory behind you.</p>
+			        	<div class="clearfix availability-form">
+			        		<input type="text" placeholder="jogndoe.com">
+			        		<button class="btn">Check Availability</button>
+			        	</div>
+			        	<ul>
+			        		<li class="clearfix">
+			        			<div class="list-name pull-left">johndoe.com</div>
+			        			<div class="list-buy pull-right"><span><s>$59.99 AUD</s></span><button class="btn">BUY</button></div>
+			        		</li>
+			        		<li class="clearfix">
+			        			<div class="list-name pull-left">johndoe.com</div>
+			        			<div class="list-buy pull-right"><span>$59.99 AUD</span><button class="btn">BUY</button></div>
+			        		</li>
+			        		<li class="clearfix">
+			        			<div class="list-name pull-left">johndoe.com</div>
+			        			<div class="list-buy pull-right"><span>$59.99 AUD</span><button class="btn">BUY</button></div>
+			        		</li>
+			        		<li class="clearfix">
+			        			<div class="list-name pull-left">johndoe.com</div>
+			        			<div class="list-buy pull-right"><span>$59.99 AUD</span><button class="btn">BUY</button></div>
+			        		</li>
+			        		<li class="clearfix">
+			        			<div class="list-name pull-left">johndoe.com</div>
+			        			<div class="list-buy pull-right"><span>$59.99 AUD</span><button class="btn">BUY</button></div>
+			        		</li>
+			        	</ul>
+			        </div>
+			      </div>
+			      
+			    </div><!-- /.modal-content -->
+			  </div><!-- /.modal-dialog -->
+			</div>
+    <!-- Modal -->    
+    <div  id="syncSocial" data-toggle="sync-social" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>SYNC DETAILS</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                <h5>Sync your profile details from the social networks below.</h5>
+                <div class="social-icons">
+                    <img src="images/New3D/socialicon-1.png" />
+                    <img src="images/New3D/socialicon-2.png" />
+                </div>
+            </div>
+        </div><!-- /.modal-content -->
+      </div>><!-- /.modal-dialog -->
+    </div><!-- /#syncSocial -->    
+    
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script>
+		  var group = ''; 
+		  var lastMove = '';
+		  $(function() {
+		    $('a[href*=#].anchor:not([href=#])').click(function() {
+		      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+		        var target = $(this.hash);
+		        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		        if (target.length) {
+		          $('html,body').animate({
+		            scrollTop: target.offset().top-50
+		          }, 1000);
+		          return false;
+		        }
+		      }
+		    });
+		    $(window).scroll(function () {
+		        if ($(this).scrollTop() >500) {
+		          $('.upArrow').show()
+		        }else{
+		           $('.upArrow').hide()
+		        }
+		    });
+		  });
+		</script>
+		<a href="#header-top" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-select.js"></script>
+		<script type="text/javascript" language="javascript" src="js/bootstrap-datepicker.js"></script>
+		<script src='js/jquery.jscrollpane.min.js'></script>
+		<script type="text/javascript" language="javascript" src="js/tinymce/tinymce.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.1/js/select2.min.js" type="text/javascript"></script>		
+		<script src="js/preview-profile.js"></script>
+		<script type="text/javascript">
+		    /*$(function(){
+			    $('.scroll-pane').jScrollPane();
+		  	});*/
+		</script>
+<script src="js/core.js"></script> 
+<script src="js/scrollbar.js"></script>
+<script>
+    $(function() {
+		$(".scrollbar").scrollbar();
+	});
+</script>
+<script>
+     $(document).on('shown.bs.tab', function() { 
+        $(".scrollbar").scrollbar("resize");
+    });
+</script>
+		<script>
+		 $(document).ready(function () {
+		    $('.styled-select').on('click', function () {
+		        if ($(this).attr('class') == 'styled-select default_select') {
+		            $('.select2-container').addClass("colored_select");
+		            $('.select2-container').find('.select2-results__option:hover:nth(2)').css('color', '#64FF65');
+		        }
+		       
+		    });
+		    $('.select2').select2({
+		        minimumResultsForSearch: -1
+		    });
+		});
+		</script>
+		<script src="js/jquery.magnific-popup.js"></script>
+<script>
+$('.gallery').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
+});
+</script>
+<!-- Added -->
+        <script type="text/javascript" src="js/headroom.min.js"></script>
+        <script type="text/javascript" src="js/jquery.headroom.js"></script>
+        <script type="text/javascript">
+            // Init Headroom for .header
+            $(".header").headroom(); 
+        
+            // Init Headroom for .headroom-icons
+            $(".headroom-icons").headroom({
+                offset: 209    
+            }); 
+        </script>
+        <script src="js/offcanvas.js"></script>
+        <script>
+            $(document).on('click', '.button-mobile', function(){
+                $('body').toggleClass('opened-offcanvas');
+            });
+        </script>
+        <script>
+            $('.share-button').click(function(){
+        		$(this).parents('.mini-icons-img').find('.share-clicked').toggleClass('icons');
+        	});
+        </script>
+<script>
+    $(function() {
+        $(document).on('click', '#more-block', function(e){
+                e.preventDefault();
+                var parent = $(this).parents('.cont-1');
+                parent.find('#added').addClass('block-open');
+                parent.find('#added-dop').addClass('block-open');
+                parent.find('#less-block').addClass('block-open');
+                parent.find('#more-block').hide();
+                parent.find('#h4-hidden').hide();
+        });
+        $(document).on('click', '#less-block', function(e){
+                e.preventDefault();
+                var parent = $(this).parents('.cont-1');
+                parent.find('#added').removeClass('block-open');
+                parent.find('#added-dop').removeClass('block-open');
+                parent.find('#less-block').removeClass('block-open');
+                parent.find('#more-block').show();
+                parent.find('#h4-hidden').show();
+        });
+    });
+</script>  
+
+	</body>
+</html>
