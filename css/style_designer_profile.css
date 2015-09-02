@@ -357,6 +357,7 @@ background-color: #64ff65;
 .progress-tab h5 {
     font-size: 12px;
     display: inline-block;
+    color: #616161 !important;
 }
 
 .progress-tab .status {
@@ -369,6 +370,7 @@ background-color: #64ff65;
 
 .progress-tab p {
     font-style: normal;
+    color: #616161 !important;
 }
 
 .more a {

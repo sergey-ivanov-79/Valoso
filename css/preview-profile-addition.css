@@ -609,6 +609,28 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
 }
 
 /* END for phone-sim */
+
+.inner-skills .popover {
+    max-width: 400px;
+}
+.wrapper-checkbox {
+    width: 33.33%;
+    float: left;
+}
+.wrapper-checkbox > label {
+    display: block;
+    margin-left: 10px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    font-size: 13px;
+} 
+.preview-profile-wrapper .inner-skills .popover-content input {
+    height: auto;
+    width: auto;
+}
+.inner-skills .p-18 {
+    margin-bottom: 15px;
+}
 @media (max-width: 767px) {
     .top-menu {
         top: 0;
@@ -795,7 +817,9 @@ img { vertical-align: inherit !important;}
     .addition .border-right-edit {
         border-right: none;
     }
-    
+    .popover-content textarea {
+        max-width: 200px;
+    }
     .addition .templati-tablet {
         height: auto;
         padding-bottom: 15px;
@@ -854,6 +878,36 @@ img { vertical-align: inherit !important;}
         border-top: 26px solid #24a5db;
         border-left: 20px solid transparent;
     }
+    .inner-skills .popover {
+        position: fixed !important;
+        top: 5% !important;
+        left: 50% !important;
+        right: auto !important;
+        width: 220px !important;
+        margin-left: -110px;
+        min-width: 0 !important;
+        max-width: none !important;
+       z-index: 9999 !important;
+      
+    }
+    ol.simple_with_drop {
+        z-index: 9999 !important;
+        position: static !important;
+    }
+    .inner-skills .popover .popover-content {
+        overflow-y: auto;
+    }
+    .inner-skills .popover:after {
+        position: fixed !important;
+        opacity: 0.65 !important;
+        content: "" !important;
+        background-color: #000 !important;
+        top: 0 !important;
+        left: 0 !important;
+        z-index: 5 !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
 }
 @media (max-width: 639px) and (min-width: 521px) {
     .addition .text-printing { padding-top: 10px;}
@@ -885,6 +939,21 @@ img { vertical-align: inherit !important;}
     .colpick.colpick_rgbhex.colpick_dark {
         left: 19px !important;    
     }
+    .wrapper-checkbox {
+        width: auto;
+    }
+    .wrapper-checkbox > label {
+        margin-left: 5px !important;
+        padding-left: 0 !important;
+        font-size: 12px;
+    }
+    .icheckbox_square-blue {
+        margin-right: 5px !important;
+    }
+    .inner-skills .p-18 {
+        margin-bottom: 10px;
+        font-size: 14px !important;
+    }
 }
 @media (max-width: 479px) {
     .addition .user-ratings h5.total span {
@@ -914,6 +983,10 @@ img { vertical-align: inherit !important;}
     .addition .user-single-review .media { margin-top: 5px;}
     .addition .tabline .top-5 { font-size: 13px !important; margin-top: 0px;}
     .addition div.bottom-total { border-top: none;}
+    .inner-skills .popover {
+        max-width: 280px;
+    }
+    
 }
 @media (max-width: 374px) {
     .addition .hover-cont-bg {

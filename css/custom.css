@@ -730,16 +730,29 @@ span.timeline-time-red:after {
   margin-top: 15px;
   margin-bottom: 20px;
 }
-.video-slider h1 .popover {
+.video-slider h1 .popover, .video-slider p .popover {
   max-width: 420px;
   width: 100%;
 }
 .video-slider h1 .popover input {
   width: 70%;
 }
+.video-slider p .popover input {
+  width: 70%;
+}
 .video-slider h1 .popover button:nth-of-type(1) {
   margin: 0 5px 0 10px;
 }
+.video-slider p .popover button:nth-of-type(1) {
+    margin: 0 5px 0 10px;
+}
+.video-item {
+    margin-top: 50px;
+}
+a.left.carousel-control, a.right.carousel-control {
+    margin-top: 50px;
+}
+
 .video-notes-wrapper {
   height: 411px;
   overflow-y: scroll;
@@ -2753,4 +2766,20 @@ div#vn-editor-gallery .modal-content {
   button.edit-zoom-out, button.edit-zoom-in {
     padding: 1px;
   }
+}
+
+
+
+.video-description-right .description-right-up > h4 .popover-content label {
+    font-size: 17px !important;
+}
+#music-genre-main,
+.video-description-right .description-right-up > h4.video-dur .popover-content select {
+    margin-right: 0px !important;
+}
+.video-project-director .container > h3 .popover-content input, 
+.video-pop-input .popover-content input, 
+.project-deadline .popover-content input, 
+.single-video-description .popover-content input {
+    width: 290px;
 }
