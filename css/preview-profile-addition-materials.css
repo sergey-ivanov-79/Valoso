@@ -353,8 +353,11 @@
     margin-bottom: 8px;
     font-size: 14px;
 }
-.addition .skills-block, .addition .big-materials-block {
+.addition .big-materials-block {
     padding-bottom: 0;
+}
+.port-edit-buttons .popover-content textarea {
+    max-width: 200px;
 }
 .addition div.bottom-total {
     margin-top: 3px;
