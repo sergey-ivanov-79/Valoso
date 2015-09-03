@@ -1708,12 +1708,13 @@
     $(function() {
         $(document).on('click', '.closed', function(e){
                 e.preventDefault();
-                $('.inner-skills .popover').addClass('dis-none');
-                $('.inner-skills .popover').removeClass('in');
+                $(this).parents('h4').addClass('disp-none');
+               /* $('.inner-skills .popover').removeClass('in');*/
         });
         $(document).on('click', '.edit-together', function(e){
                 e.preventDefault();
-                $('.inner-skills .popover').removeClass('dis-none');
+                 $(this).parents('h4').removeClass('disp-none');
+                /*$('.inner-skills .popover').addClass('in');*/
         });                        
     });
 </script>
