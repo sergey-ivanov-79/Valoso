@@ -403,8 +403,8 @@ div#syncSocial .social-icons img {
 .printingAssistance br {
     display: none;
 }
-.added-sim-640.sim-640 .ThumbnailSurface, .ThumbnailDescriptionContainer,
-.added-sim-320.sim-320 .ThumbnailSurface, .ThumbnailDescriptionContainer {
+.added-sim-640.sim-640 .ThumbnailSurface,.added-sim-640.sim-640 .ThumbnailDescriptionContainer,
+.added-sim-320.sim-320 .ThumbnailSurface,.added-sim-320.sim-320 .ThumbnailDescriptionContainer {
         display: block;
         width: 100%;
     }
