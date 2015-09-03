@@ -639,7 +639,7 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
 .nav-list.nav > li > a { margin: 0;} 
 img { vertical-align: inherit !important;}
 .header-min-height {
-    z-index: 1;
+    z-index: 1001;
 }
 @media (max-width: 1200px) {
     .addition .tabsuper {
