@@ -638,7 +638,9 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
 }
 .nav-list.nav > li > a { margin: 0;} 
 img { vertical-align: inherit !important;}
-
+.header-min-height {
+    z-index: 1;
+}
 @media (max-width: 1200px) {
     .addition .tabsuper {
         margin-right: -2px;
@@ -878,7 +880,26 @@ img { vertical-align: inherit !important;}
         border-top: 26px solid #24a5db;
         border-left: 20px solid transparent;
     }
-    .inner-skills .popover {
+   
+    .inner-skills .popover:after {
+        position: fixed !important;
+        opacity: 0.65 !important;
+        content: "" !important;
+        background-color: #000 !important;
+        top: 0 !important;
+        left: 0 !important;
+        z-index: 5;
+        width: 100% !important;
+        height: 100% !important;
+    }
+    .opened-offcanvas .inner-skills .popover, .opened-offcanvas .inner-skills .popover:after {
+        content: none !important;
+        display: none !important;
+    }
+    .opened-offcanvas  .header-min-height {
+        z-index: 1001;
+    }
+     .inner-skills .popover {
         position: fixed !important;
         top: 5% !important;
         left: 50% !important;
@@ -887,7 +908,7 @@ img { vertical-align: inherit !important;}
         margin-left: -110px;
         min-width: 0 !important;
         max-width: none !important;
-       z-index: 9999 !important;
+        z-index: 155 !important;
       
     }
     ol.simple_with_drop {
@@ -896,17 +917,23 @@ img { vertical-align: inherit !important;}
     }
     .inner-skills .popover .popover-content {
         overflow-y: auto;
+        position: static;
+        height: 300px;
+        z-index: 1000;
+        position: fixed;
+        background-color: #fff;
+        top: 10px;
+        left: 10px;
+        right: 10px;
     }
-    .inner-skills .popover:after {
-        position: fixed !important;
-        opacity: 0.65 !important;
-        content: "" !important;
-        background-color: #000 !important;
-        top: 0 !important;
-        left: 0 !important;
-        z-index: 5 !important;
-        width: 100% !important;
-        height: 100% !important;
+    .inner-skills .popover.top>.arrow { display: none;}
+    .wrapper-checkbox > label { width: 100%;}
+    .icheckbox_square-blue.checked { float: right;}
+    .wrapper-checkbox {
+        width: 100%;
+    }
+    .dis-none {
+        display: none !important;
     }
 }
 @media (max-width: 639px) and (min-width: 521px) {
@@ -938,9 +965,6 @@ img { vertical-align: inherit !important;}
     }
     .colpick.colpick_rgbhex.colpick_dark {
         left: 19px !important;    
-    }
-    .wrapper-checkbox {
-        width: auto;
     }
     .wrapper-checkbox > label {
         margin-left: 5px !important;
