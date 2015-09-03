@@ -899,6 +899,9 @@ img { vertical-align: inherit !important;}
     .opened-offcanvas  .header-min-height {
         z-index: 1001;
     }
+    .header-min-height {
+        z-index: 1;
+    }
      .inner-skills .popover {
         position: fixed !important;
         top: 5% !important;
@@ -932,9 +935,12 @@ img { vertical-align: inherit !important;}
     .wrapper-checkbox {
         width: 100%;
     }
-    .dis-none {
+    h4.disp-none  .popover {
         display: none !important;
     }
+   /* .in {
+       display: block !important; 
+    }*/
 }
 @media (max-width: 639px) and (min-width: 521px) {
     .addition .text-printing { padding-top: 10px;}
