@@ -1,43 +1,54 @@
+<!doctype html>
 <html lang="en-US">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
-		<meta name="viewport" content="initial-scale = 1.0" />
-		<title></title>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400' rel='stylesheet' type='text/css'/>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'/>
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'/>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/normalize.css">
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
+<link rel="stylesheet" href="css/bootstrap.css" />
+<!--
+<link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+-->
+<link href="css/font-awesome.css" rel="stylesheet"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.tosrus.all.css" />
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.1/css/select2.min.css">
+<link rel="stylesheet" href="css/style-prev.css"/>
+<link rel="stylesheet" href="css/video-project-page.css"/>
+<link rel="stylesheet" href="css/vp-form.css"/>
 
-		<link rel="stylesheet" href="./css/normalize.css"/>
-		<link rel="stylesheet" href="./css/bootstrap.min.css"/> 
-		<link rel="stylesheet" href="./css/bootstrap-theme.min.css"/>
-		<link rel="stylesheet" href="./css/font-awesome.css"/>
-		<link rel="stylesheet" href="./css/jquery.jscrollpane.css" media="all"/>
-		<link rel="stylesheet" href="./css/offcanvas.css"/>
-		<!-- Magnific  core CSS file -->
-		<link rel="stylesheet" href="./css/magnific-popup.css"/>
-		<!-- dataTables -->
-	    <link href="css/bootstrap-select.css" rel="stylesheet"/>
-		<link rel="stylesheet" type="text/css" href="./css/datepicker.css" />
-		<link rel="stylesheet" href="./css/jquery.jscrollpane.css" media="all"/>
-        <link rel="stylesheet" href="./css/colpick.css" type="text/css"/>
-		<link rel="stylesheet" href="./css/style.css"/>
-		<link rel="stylesheet" href="./css/style-prev.css"/>
-		<link rel="stylesheet" href="./css/ns-dashboardMML-nouploads.css"/>
-		<link rel="stylesheet" href="./css/custom.css"/>
-		<link rel="stylesheet" href="./css/preview-profile-new.css"/>
-        <link rel="stylesheet" href="./css/style_application_page.css"/> 
-        <link rel="stylesheet" href="./css/style_designer_profile.css"/> 
-        <link rel="stylesheet" href="./css/preview-profile-addition.css"/>
-        <link type="text/css" rel="stylesheet" href="./css/slick.css" />
-        <link rel="stylesheet" href="./css/video-project-page.css"/>
-        <link rel="stylesheet" href="./css/scrollbar.css"/>
-		<link rel="stylesheet" href="./css/header-menu.css"/>
-        <link rel="stylesheet" href="./css/popover-checkbox.css"/>
-        <link rel="stylesheet" href="./css/blue.css"/>
-        <link rel="stylesheet" href="./css/preview-profile-addition-materials.css"/>
-		<link rel="stylesheet" href="./css/header-menu.css"/>        
-	</head>
-<body class="dash-page dash-page-cont">
+<link rel="stylesheet" href="./css/ns-dashboardMML-nouploads.css"/>
+<link rel="stylesheet" href="./css/custom.css"/>
+<link rel="stylesheet" href="./css/preview-profile-new.css"/>
+<link rel="stylesheet" href="./css/style_application_page.css"/> 
+<link rel="stylesheet" href="./css/style_designer_profile.css"/> 
+<link rel="stylesheet" href="./css/preview-profile-addition.css"/>
+<link type="text/css" rel="stylesheet" href="./css/slick.css" />
+<link rel="stylesheet" href="./css/video-project-page.css"/>
+<link rel="stylesheet" href="./css/scrollbar.css"/>
+<link rel="stylesheet" href="./css/header-menu.css"/>
+<link rel="stylesheet" href="./css/popover-checkbox.css"/>
+<link rel="stylesheet" href="./css/blue.css"/>
+<link rel="stylesheet" href="./css/preview-profile-addition-materials.css"/>
+<link rel="stylesheet" href="css/offcanvas.css"/>
+<!-- Toure CSS file -->
+<link rel="stylesheet" href="css/bootstrap-tour.min.css"/>
+<link rel="stylesheet" href="css/bootstrap-tour-standalone.min.css"/>
+
+<link rel="stylesheet" href="css/ns-dashboardMML-nouploads.css"/>
+<!-- added for  Toure -->
+<link rel="stylesheet" href="css/tour-NS-Dashboard.css"/>
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="css/magnific-popup.css"/>
+</head>
+
+<body class="dash-page">
     <div class="wrapp-row-offcanvas">
     <div class="row row-offcanvas row-offcanvas-left">
     <div class="page-wrap">
@@ -50,7 +61,7 @@
 			</div><!-- /.ipad-simulator -->
 			<div class="top-menu">
                 <div class="desktop-devices">
-					<button class="active" id="desktop-sim"><img src="images/preview-profile/desktop.png" alt="" /></button>
+					<div  class="tab-tour stepn1" id="step1"><button class="active" id="desktop-sim"><img src="images/preview-profile/desktop.png" alt="" /></button></div>
 					<button id="tablet-sim"><img src="images/preview-profile/tablet.png" alt="" /></button>
 					<button id="phone-sim"><img src="images/preview-profile/mobile.png" alt="" /></button>
 				</div><!-- /.desktop-devices -->
@@ -476,6 +487,9 @@
 							</div>
 						</button>
 					</div><!-- /.profile-top-img -->
+                    <div class="text-center">
+                        <div class="col-sm-offset-3 col-xs-12 col-sm-6 col-md-6 col-lg-6 tourStart"><a href="#" data-demo="false">Start The Toure</a> </div>
+                    </div>
 					<div class="col-sm-12 user-profile-left user-profile-right clearfix display-desktop">
 						<ul class="clearfix">
 							<li class="col-sm-3 user-profile-left-picture no-padding">
@@ -1162,7 +1176,7 @@
                             <div class="ThumbnailSurface clearfix">
                                 <div class="wrapperMaterialTabs clearfix">
                                     <div class="MaterialTabs">
-                                        <div><span>155XP</span><span>YOUR EXPERIENCE POINTS</span></div>
+                                        <div><span>155XP</span><span>MY EXPERIENCE POINTS</span></div>
                                     </div>
                                     <div class="wrappPaginationMaterials">
                                         <ul class="pagination paginationMaterials">
@@ -1173,83 +1187,81 @@
                                 </div>
                                 <div class="MaterialElement clearfix">
                                     <div class="rowThumbnail">
-                                        <div class="">
-                                            <div class="ThumbnailContainer">
-                                              <div class="wrappThumbnail">
-                                                  <div class="Thumbnail" materialid="449" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints noPoints"></div>
-                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
-                                                  </div>
-                                                  <p>Carbon Fiber Plastic</p>    
-                                              </div>                                                        
-                                            </div>
-                                            <div class="ThumbnailContainer no-border-right-min">
-                                              <div class="wrappThumbnail">  
-                                                  <div class="Thumbnail" materialid="452" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints use">35 XP</div>
-                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-2.png" /></div>
-                                                  </div>
-                                                  <p>Strong and flexible plastic flame retardent</p>  
-                                              </div>                                                          
-                                            </div>
-                                            <div class="ThumbnailContainer  Selected-t">
-                                              <div class="wrappThumbnail">
-                                                  <div class="Thumbnail" materialid="453" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints">35 XP</div>
-                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-2.png" /></div>
-                                                  </div>
-                                                  <p>Strong Flexible Plastic Priority</p>  
-                                              </div>                                                          
-                                            </div>
-                                            <div class="ThumbnailContainer no-border-right">
-                                              <div class="wrappThumbnail">
-                                                  <div class="Thumbnail" materialid="454" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints noPoints"></div>
-                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
-                                                  </div>
-                                                  <p>Super High Temperature Plastic</p> 
-                                              </div>                                                           
-                                            </div>
+                                        <div class="ThumbnailContainer">
+                                          <div class="wrappThumbnail">
+                                              <div class="Thumbnail" materialid="449" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                <div class="materialPoints noPoints"></div>
+                                                <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
+                                              </div>
+                                              <p>Carbon Fiber Plastic</p>    
+                                          </div>                                                        
                                         </div>
-                                        <div class="">                                                        
-                                            <div class="ThumbnailContainer">
-                                              <div class="wrappThumbnail">
-                                                  <div class="Thumbnail" materialid="455" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints use">15 XP</div>
-                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
-                                                  </div>
-                                                  <p>Primecast</p>  
-                                              </div>                                                          
-                                            </div>
-                                            <div class="ThumbnailContainer no-border-right-min">
-                                              <div class="wrappThumbnail">
-                                                  <div class="Thumbnail" materialid="456" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints">10 XP</div>
-                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
-                                                  </div>
-                                                  <p>Impact Resistant Strong and Flexible Plastic </p>  
-                                              </div>                                                         
-                                            </div>
-                                            <div class="ThumbnailContainer">
-                                              <div class="wrappThumbnail">
-                                                  <div class="Thumbnail" materialid="457" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints noPoints"></div>
-                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
-                                                  </div>
-                                                  <p>High Flexible Plastic</p> 
-                                              </div>                                                           
-                                            </div>
-                                            <div class="ThumbnailContainer no-border-right">
-                                              <div class="wrappThumbnail">
-                                                  <div class="Thumbnail" materialid="460" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints noPoints"></div>
-                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
-                                                  </div>
-                                                  <p>VisiJet Clear</p> 
-                                              </div>                                                           
-                                            </div>
-                                        </div> 
-                                    </div>                           
+                                        <div class="ThumbnailContainer">
+                                          <div class="wrappThumbnail">  
+                                              <div class="Thumbnail" materialid="452" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                <div class="materialPoints use">35 XP</div>
+                                                <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-2.png" /></div>
+                                              </div>
+                                              <p>Strong and flexible plastic flame retardent</p>  
+                                          </div>                                                          
+                                        </div>
+                                        <div class="ThumbnailContainer  Selected-t">
+                                          <div class="wrappThumbnail">
+                                              <div class="Thumbnail" materialid="453" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                <div class="materialPoints use">35 XP</div>
+                                                <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-2.png" /></div>
+                                              </div>
+                                              <p>Strong Flexible Plastic Priority</p>  
+                                          </div>                                                          
+                                        </div>
+                                        <div class="ThumbnailContainer">
+                                          <div class="wrappThumbnail">
+                                              <div class="Thumbnail" materialid="454" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                <div class="materialPoints noPoints"></div>
+                                                <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
+                                              </div>
+                                              <p>Super High Temperature Plastic</p> 
+                                          </div>                                                           
+                                        </div>
+                                    </div>
+                                    <div class="rowThumbnail">                                                        
+                                        <div class="ThumbnailContainer">
+                                          <div class="wrappThumbnail">
+                                              <div class="Thumbnail" materialid="455" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                <div class="materialPoints use">15 XP</div>
+                                                <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
+                                              </div>
+                                              <p>Primecast</p>  
+                                          </div>                                                          
+                                        </div>
+                                        <div class="ThumbnailContainer">
+                                          <div class="wrappThumbnail">
+                                              <div class="Thumbnail" materialid="456" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                <div class="materialPoints use">10 XP</div>
+                                                <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
+                                              </div>
+                                              <p>Impact Resistant Strong and Flexible Plastic </p>  
+                                          </div>                                                         
+                                        </div>
+                                        <div class="ThumbnailContainer">
+                                          <div class="wrappThumbnail">
+                                              <div class="Thumbnail" materialid="457" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                <div class="materialPoints noPoints"></div>
+                                                <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
+                                              </div>
+                                              <p>High Flexible Plastic</p> 
+                                          </div>                                                           
+                                        </div>
+                                        <div class="ThumbnailContainer">
+                                          <div class="wrappThumbnail">
+                                              <div class="Thumbnail" materialid="460" style="background-image:url('./images/New3D/Primepart.jpg');">
+                                                <div class="materialPoints noPoints"></div>
+                                                <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
+                                              </div>
+                                              <p>VisiJet Clear</p> 
+                                          </div>                                                           
+                                        </div>
+                                    </div>                            
                                 </div>
                                 <div class="wrappPaginationBottom">
                                     <ul class="paginationBottom clearfix">
@@ -1281,21 +1293,16 @@
                                             
                                         </div>
                                     </div>
-                                    <div class="printingAssistance" style="display: none;">GET PRINTING ASSISTANCE</div>
-                                    <div class="printingAssistance pointsToPrint" data-toggle="modal" data-target="#syncSocial">USE XP POINTS <br/>TO PRINT</div>
+                                    <div class="printingAssistance">GET PRINTING <br/>ASSISTANCE</div>
                                 </div>
                                 <div class="">
                                   <div class="FinishDiv">
-                                    <div class="FinishHeader clearfix" style="display: none;">
+                                    <div class="FinishHeader clearfix">
                                         <p class="p-13 bold">PRINTED COLORS/FINISHES</p><img src="./images/p-a/preview-profile-addition/print-img.png">
                                     </div>
                                     <div class="FinishContainer">
                                       <div class="Finishes">
-                                        <div class="materialProperties">
-                                            <p class="color-black padd-bottom-10">Polyamide is a strong and flexible material for your 3d models providing a high detail of bending your 3d model.</p>
-                                            <p class="color-black padd-bottom-30">Ideal for complex, concept models, lamps and functional models. Polymaide also allows you to have the greatest freedom in designing among all of the other 3d printing techniques.</p>
-                                        </div>
-                                        <div class="viewMaterial clearfix"  style="display: none;">
+                                        <div class="viewMaterial clearfix">
                                             <div class="clearfix innerColorMaterial"><img class="pull-left" src="images/New3D/color-1.png" /><p class="pull-left">Natural White</p> <p class="Rectangle">1</p></div>
                                             <div class="clearfix innerColorMaterial"><img class="pull-left" src="images/New3D/color-2.png" /><p class="pull-left">Natural Black</p> <p class="Rectangle">10</p></div>
                                             <div class="clearfix innerColorMaterial"><img class="pull-left" src="images/New3D/color-3.png" /><p class="pull-left">Polished Blue</p> <p class="Rectangle">5</p></div>
@@ -1305,7 +1312,7 @@
                                         </div>
                                       </div>
                                     </div>
-                                    <div class="FinishBottom clearfix" style="display: none;"><p>Total: 42</p></div>
+                                    <div class="FinishBottom clearfix"><p>Total: 42</p></div>
                                   </div>
                                 </div>
                             </div>
@@ -1445,290 +1452,432 @@
 			 </div>
 			</footer>
     </div>
-</div>
-			<div id="buy-domain" class="modal fade bs-example-modal-lg buy-domain" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-			  <div class="modal-dialog" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			        <h4 class="modal-title" id="gridSystemModalLabel">BUY A DOMAIN</h4>
-			      </div>
-			      <div class="modal-body">
-			        <div class="container-fluid">
-			        	<p>Turn your profile page into your own website with the support of a 3D Printing factory behind you.</p>
-			        	<div class="clearfix availability-form">
-			        		<input type="text" placeholder="jogndoe.com">
-			        		<button class="btn">Check Availability</button>
-			        	</div>
-			        	<ul>
-			        		<li class="clearfix">
-			        			<div class="list-name pull-left">johndoe.com</div>
-			        			<div class="list-buy pull-right"><span><s>$59.99 AUD</s></span><button class="btn">BUY</button></div>
-			        		</li>
-			        		<li class="clearfix">
-			        			<div class="list-name pull-left">johndoe.com</div>
-			        			<div class="list-buy pull-right"><span>$59.99 AUD</span><button class="btn">BUY</button></div>
-			        		</li>
-			        		<li class="clearfix">
-			        			<div class="list-name pull-left">johndoe.com</div>
-			        			<div class="list-buy pull-right"><span>$59.99 AUD</span><button class="btn">BUY</button></div>
-			        		</li>
-			        		<li class="clearfix">
-			        			<div class="list-name pull-left">johndoe.com</div>
-			        			<div class="list-buy pull-right"><span>$59.99 AUD</span><button class="btn">BUY</button></div>
-			        		</li>
-			        		<li class="clearfix">
-			        			<div class="list-name pull-left">johndoe.com</div>
-			        			<div class="list-buy pull-right"><span>$59.99 AUD</span><button class="btn">BUY</button></div>
-			        		</li>
-			        	</ul>
-			        </div>
-			      </div>
-			      
-			    </div><!-- /.modal-content -->
-			  </div><!-- /.modal-dialog -->
-			</div>
+</div>     
+<!-- /Modal -->
+<div id="download-project-files-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Download Project Files</h4>
+      </div>
+      <div class="modal-body">
+        <p>Please select files to download. <span>(5 files selected)</span></p>
+        <form action="" class="clearfix form-imges">
+                    <div class="col-sm-12">
+                        <input type="checkbox" name="picture" value="picture1" id="selecctall"><span class="sel-all">Select All</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-xs-4-dop">
+                        <div class="image-wrap img-modal">
+                            <div class="image-backgr" style="background-image: url(images/p-a/img-med-big-6.png);">
+                              
+                            </div>
+                         </div> <!-- /.video-dl-wrap -->
+                         <input type="checkbox" name="picture" class="checkbox1" value="Picture000002"><span class="span-p">Picture000001.JPG</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-xs-4-dop">
+                        <div class="image-wrap img-modal">
+                            <div class="image-backgr" style="background-image: url(images/p-a/img-med-big-5.png);">
+                              
+                            </div>
+                         </div> <!-- /.video-dl-wrap -->
+                        <input type="checkbox" name="video" class="checkbox1" value="Video000001"><span class="span-p">Video000001.mp4</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-xs-4-dop">
+                        <div class="image-wrap img-modal">
+                            <div class="image-backgr" style="background-image: url(images/p-a/img-med-big-4.png);">
+                              
+                            </div>
+                         </div> <!-- /.video-dl-wrap -->
+                        <input type="checkbox" name="picture" class="checkbox1" value="Picture000002"><span class="span-p">Picture000002.JPG</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-xs-4-dop">
+                        <div class="image-wrap img-modal">
+                            <div class="image-backgr" style="background-image: url(images/p-a/img-med-big-3.png);">
+                              
+                            </div>
+                         </div> <!-- /.video-dl-wrap -->
+                        <input type="checkbox" name="video" class="checkbox1" value="Video000002"><span class="span-p">Video000002.mp4</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-xs-4-dop">
+                        <div class="image-wrap img-modal">
+                            <div class="image-backgr" style="background-image: url(images/p-a/img-med-big-2.png);">
+                              
+                            </div>
+                         </div> <!-- /.video-dl-wrap -->
+                        <input type="checkbox" name="picture" class="checkbox1" value="Picture000003"><span class="span-p">Picture000003.JPG</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-xs-4-dop">
+                        <div class="image-wrap img-modal">
+                            <div class="image-backgr" style="background-image: url(images/p-a/img-med-big-1.png);">
+                              
+                            </div>
+                         </div> <!-- /.video-dl-wrap -->
+                        <input type="checkbox" name="picture" class="checkbox1" value="Picture000004"><span class="span-p">Picture000004.JPG</span>
+                    </div>
+                    <div class="col-xs-6 col-sm-4 col-xs-4-dop">
+                        <div class="image-wrap img-modal">
+                            <div class="image-backgr" style="background-image: url(images/p-a/img-med-big-6.png);">
+                              
+                            </div>
+                         </div> <!-- /.video-dl-wrap -->
+                        <input type="checkbox" name="picture" class="checkbox1" value="Picture000001"><span class="span-p">Picture000001.JPG</span>
+                    </div>
+                </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Download</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">Cancel</button>
+          </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.download-project-files-modal -->
 
-			<div id="already-have-domain" class="modal fade bs-example-modal-lg already-have-domain" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
-			  <div class="modal-dialog" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			        <h4 class="modal-title" id="gridSystemModalLabel">USE AN EXISTING DOMAIN</h4>
-			      </div>
-			      <div class="modal-body">
-			        <div class="container-fluid">
-			        	<p>Turn your profile page into your own website with the support of a 3D Printing factory behind you</p>
-			        	<h5 class="dns-server-adress">DNS Server Address: 127.0.0.1</h5>
-			        	<h5 class="dns-intructions">Instructions on how to change the DNS records of your current domain name.</h5>
-			        	<ul>
-			        		<li class="clearfix">
-			        			<span>1.</span> <p>Lorem ipsum dolor sit amet consectetur adipsicing elit ventus,
-    ut set rackham viventus.</p>
-			        		</li>
-			        		<li class="clearfix">
-			        			<span>2.</span> <p>Lorem ipsum dolor sit amet consectetur adipsicing elit ventus,
-    ut set rackham viventus.</p>
-			        		</li>
-			        		<li class="clearfix">
-			        			<span>3.</span> <p>Lorem ipsum dolor sit amet consectetur adipsicing elit ventus,
-    ut set rackham viventus.</p>
-			        		</li>
-			        		<li class="clearfix">
-			        			<span>4.</span> <p>Lorem ipsum dolor sit amet consectetur adipsicing elit ventus,
-    ut set rackham viventus.</p>
-			        		</li>
-			        		<li class="clearfix">
-			        			<span>5.</span> <p>Lorem ipsum dolor sit amet consectetur adipsicing elit ventus,
-    ut set rackham viventus. H. Rackham dolor aquis sud tarum
-    hadjing qutas.</p>
-			        		</li>
-			        	</ul>
-			        </div>
-			      </div>
-			      
-			    </div><!-- /.modal-content -->
-			  </div><!-- /.modal-dialog -->
-			</div>
-		<script src="./js/jquery-1.11.2.min.js"></script>
-        
-		<script>
-		  var group = ''; 
-		  var lastMove = '';
-		  $(function() {
-		    $('a[href*=#].anchor:not([href=#])').click(function() {
-		      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+<script src="js/jquery-1.11.2.min.js"></script>
 
-		        var target = $(this.hash);
-		        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-		        if (target.length) {
-		          $('html,body').animate({
-		            scrollTop: target.offset().top-50
-		          }, 1000);
-		          return false;
-		        }
-		      }
-		    });
-		    $(window).scroll(function () {
-		        if ($(this).scrollTop() >500) {
-		          $('.upArrow').show()
-		        }else{
-		           $('.upArrow').hide()
-		        }
-		    });
-		  });
-		</script>
-		<a href="#header-top" class="anchor upArrow"><img src="./images/to-top-arrow.png"></a>
-		<script src="./js/bootstrap.min.js"></script>
-		<script src="./js/bootstrap-select.js"></script>
-		<script type="text/javascript" language="javascript" src="./js/bootstrap-datepicker.js"></script>
-		<script src='./js/jquery.jscrollpane.min.js'></script>
-		<script src="./js/preview-profile.js"></script>
-		<script type="text/javascript">
-		    $(function(){
-			    $('.scroll-pane').jScrollPane();
-		  	});
-		</script>
-        <!-- Added -->
-        <script type="text/javascript" src="./js/headroom.min.js"></script>
-        <script type="text/javascript" src="./js/jquery.headroom.js"></script>
-        <script type="text/javascript">
-            // Init Headroom for .header
-            $(".header").headroom(); 
-        
-            // Init Headroom for .headroom-icons
-            $(".headroom-icons").headroom({
-                offset: 209    
-            }); 
-        </script>
-        <script src="./js/offcanvas.js"></script>
-        <script>
-            $(document).on('click', '.button-mobile', function(){
-                $('body').toggleClass('opened-offcanvas');
-            });
-        </script>
-        <script>
-            $('.share-button').click(function(){
-        		$(this).parents('.mini-icons-img').find('.share-clicked').toggleClass('icons');
-        	});
-        </script>
-<script src="./js/core.js"></script> 
-<script src="./js/scrollbar.js"></script>
 <script>
-    $(function() {
-		$(".scrollbar").scrollbar();
-	});
-</script>
-<script>
-     $(document).on('shown.bs.tab', function() { 
-        $(".scrollbar").scrollbar("resize");
+  var group = ''; 
+  var lastMove = '';
+  $(function() {
+    $('a[href*=#].anchor:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top-50
+          }, 1000);
+          return false;
+        }
+      }
     });
-</script>
-<script type="text/javascript" src="./js/jquery.tosrus.min.all.js"></script>
-<script src="./js/slick.min.js"></script>
-<script>
-    $(function() {
-        $(document).on('click', '#more-block', function(e){
-                e.preventDefault();
-                var parent = $(this).parents('.cont-1');
-                parent.find('#added').addClass('block-open');
-                parent.find('#added-dop').addClass('block-open');
-                parent.find('#less-block').addClass('block-open');
-                parent.find('#more-block').hide();
-                parent.find('#h4-hidden').hide();
-        });
-        $(document).on('click', '#less-block', function(e){
-                e.preventDefault();
-                var parent = $(this).parents('.cont-1');
-                parent.find('#added').removeClass('block-open');
-                parent.find('#added-dop').removeClass('block-open');
-                parent.find('#less-block').removeClass('block-open');
-                parent.find('#more-block').show();
-                parent.find('#h4-hidden').show();
-        });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >500) {
+          $('.upArrow').show()
+        }else{
+           $('.upArrow').hide()
+        }
     });
-</script>
-<script>
-    $(function() {
-        $(document).on('click', '.edit-container-left button.active', function(e){
-                e.preventDefault();
-                $('body').addClass('visible');
-                
-        });
-        $(document).on('click', '.some-arrow img', function(e){
-                e.preventDefault();
-                $('body').removeClass('visible');
-                
-        });
-        $(document).on('click', '.design-btn span', function(e){
-                e.preventDefault();
-                $('body').removeClass('visible');
-                
-        });
-    });
-</script>
-<script>
-        $(document).on('click', '.delault-background li', function() {
-            $('.delault-background li').each(function(index) {
-                $(this).removeClass('active');
-            }); 
-            $(this).addClass('active');
-    	}); 
-        
-        
-</script>
-<script src="./js/colpick.js" type="text/javascript"></script>
-<script>
-    $('#picker-1').colpick({
-    	colorScheme:'dark',
-    	layout:'rgbhex',
-    	color:'ffffff',
-    	onSubmit:function(hsb,hex,rgb,el) {
-    		$(el).css('border-color', '#'+hex);
-    		$(el).colpickHide();
-    	}
-    });
-   $('#picker-2').colpick({
-    	colorScheme:'dark',
-    	layout:'rgbhex',
-    	color:'ffffff',
-    	onSubmit:function(hsb,hex,rgb,el) {
-    		$(el).css('border-color', '#'+hex);
-    		$(el).colpickHide();
-    	}
-    });
-    $('#picker-3').colpick({
-    	colorScheme:'dark',
-    	layout:'rgbhex',
-    	color:'ffffff',
-    	onSubmit:function(hsb,hex,rgb,el) {
-    		$(el).css('border-color', '#'+hex);
-    		$(el).colpickHide();
-    	}
-    });
-    $('#picker-4').colpick({
-    	colorScheme:'dark',
-    	layout:'rgbhex',
-    	color:'ffffff',
-    	onSubmit:function(hsb,hex,rgb,el) {
-    		$(el).css('border-color', '#'+hex);
-    		$(el).colpickHide();
-    	}
-    });
+  });
 </script>
 
-<script src="./js/jquery-sortable.js"></script> 
+<a href="#header-top" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
 
-<script src="./js/edit-profile.js"></script>
-  <script src="./js/chosen.jquery.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    var config = {
-      '.chosen-select' : {}
-    }
-    for (var selector in config) {
-      $(selector).chosen(config[selector]);
-    }
-  </script>
-<script src="./js/custom-for-plagin.js"></script> 
-<script src="./js/icheck.js"></script>  
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-select.js"></script>
+<script type="text/javascript" src="js/jquery.tosrus.min.all.js"></script>
+<!--
+<script src="js/video-project-page.js"></script>
+-->
+
+<script type="text/javascript" language="javascript" src="js/tinymce/tinymce.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.1/js/select2.min.js" type="text/javascript"></script>
+               
 <script>
-    $(function() {
-        $(document).on('click', '.closed', function(e){
-                e.preventDefault();
-                $(this).parents('h4').addClass('disp-none');
-               /* $('.inner-skills .popover').removeClass('in');*/
-        });
-        $(document).on('click', '.edit-together', function(e){
-                e.preventDefault();
-                 $(this).parents('h4').removeClass('disp-none');
-                /*$('.inner-skills .popover').addClass('in');*/
-        });                        
+ $(document).ready(function () {
+    $('.styled-select').on('click', function () {
+        if ($(this).attr('class') == 'styled-select default_select') {
+            $('.select2-container').addClass("colored_select");
+            $('.select2-container').find('.select2-results__option:hover:nth(2)').css('color', '#64FF65');
+        }
+       
     });
-</script>
-<!--script>
-$(document).on('click', '.checkbox1', function() {
-$(this).toggleClass('checked');
+    $('.select2').select2({
+        minimumResultsForSearch: -1
+    });
 });
-</script-->
-	</body>
+</script>
+
+<!--
+<script>
+    $(function(){
+     var myClick = $('[data-toggle="collapse"]');
+     myClick.click(function(){
+        $('body').toggleClass('opened-navigation');
+    });
+    // Navigation submenu
+		
+	$(document).on('click', '.nav-list li > a', function() {
+    var parent = $(this).parents('li').eq(0);
+    if( parent.hasClass('opened-submeny') ){
+        parent.removeClass('opened-submeny');
+    }
+    else {
+       $(this).parents('ul').eq(0).find('> li.opened-submeny').removeClass('opened-submeny');
+    	 parent.addClass('opened-submeny');    
+         
+    }
+    });
+        
+    
+});
+</script>
+-->
+<script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    $(function () {
+      $('[data-toggle="popover"]').popover()
+    })
+</script>
+<script type="text/javascript" src="js/headroom.min.js"></script>
+<script type="text/javascript" src="js/jquery.headroom.js"></script>
+<script type="text/javascript">
+    /*// Init Headroom for .header
+    $(".header").headroom(); 
+
+    // Init Headroom for .headroom-icons
+    $(".headroom-icons").headroom({
+        offset: 209    
+    }); */
+</script> 
+<script src="js/jquery.magnific-popup.js"></script>
+<script>
+$('.gallery').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
+});
+</script>
+<script src="js/offcanvas.js"></script>
+<script>
+    $(document).on('click', '.button-mobile', function(){
+        $('body').toggleClass('opened-offcanvas');
+    });
+</script>
+<script src="js/bootstrap-tour.min.js"></script>
+<script src="js/bootstrap-tour-standalone.min.js"></script>
+<script>
+(function() {
+  $(function() {
+    var tour, tour_mobile;
+    tour = new Tour({
+      debug: true,
+      backdrop: true,
+      steps: [
+        {
+          element: "#step1",
+          placement: "bottom",
+          title: "1/15",
+          content: "View all your projects."
+        }, 
+        {
+          element: "#step2",
+          placement: "bottom",
+          title: "2/15",
+          content: "Upload, download and/or view your project files."
+        },
+        {
+          element: "#step3",
+          placement: "bottom",
+          title: "3/15",
+          content: "See your calendar of projects and transactions - past, present and future."
+        },
+         {
+          element: "#step4",
+          placement: "bottom",
+          title: "4/15",
+          content: "See your list of favorite video editors or video creators."
+        },
+        {
+          element: "#step5",
+          placement: "bottom",
+          title: "5/15",
+          content: "Start your video project. Define your requirements and set a budget to begin getting proposals."
+        },
+        {
+          element: "#step6",
+          placement: "bottom",
+          title: "6/15",
+          content: "Filter your project list based on status (OPEN, IN PROGRESS, CLOSED) or project type (PROJECTS YOU CREATED, PROJECTS YOU ARE WORKING ON)."
+        },
+        {
+          element: "#step7",
+          placement: "top",
+          title: "7/15",
+          content: "VALOSO project box. </br> </br>A <strong>BLUE</strong> project box signifies your project as a <strong>Video Director</strong> while a GREEN one signifies your project as a <strong>Video Editor</strong>."
+        },
+        {
+          element: "#step8",
+          placement: "top",
+          title: "8/15",
+          content: "Your <strong>OPEN</strong> project as a <em>Video Director.</em></br></br> Includes <em>total number of interested applicants</em>.</br></br> <em>No Milestone</em> has been set yet."
+        }, 
+        {
+          element: "#step9",
+          placement: "top",
+          title: "9/15",
+          content: "See project's <em>video thumbnail,</em> the <em>number of scenes</em> on the project, <em>video duration,</em> and selected <em>audio track's genre and sub-genre.</em>"
+        },
+        {
+          element: "#step10",
+          placement: "top",
+          title: "10/15",
+          content: "Review project's <em>post date,</em> its <em>deadline, budget</em> and its <em>currency conversion.</em></br></br>Determine the <em>total number of interested applicants</em> instantly including the ones you haven't had the change to check yet (<em>new</em>)"
+        },
+         {
+          element: "#step11",
+          placement: "top",
+          title: "11/15",
+          content: "See the <em>name </em> and the full <em> description</em> of your project as a <em>Video Director</em>. </br></br> Project Status is currently <strong>OPEN</strong> therefore <em>No Milestone</em> has been set yet."
+        },
+        {
+          element: "#step12",
+          placement: "top",
+          title: "12/15",
+          content: "Your <strong>IN PROGRESS</strong> project as a <em>Video Director.</em></br></br> Includes <em>information about your Video Editor.</em></br></br><em>365 days left</em></br></br> til due date.</br>Currently at <em>Milestone #1000 (out of 100000 set),</em> with 299 days left to complete the said milestone."
+        },
+        {
+          element: "#step13",
+          placement: "top",
+          title: "13/15",
+          content: "Your <strong>CLOSED</strong> project as a <em>Video Director.</em></br></br> You have received a <em>Rating</em> from your Video Editor after end of project."
+        },
+        {
+          element: "#step14",
+          placement: "top",
+          title: "14/15",
+          content: "Your <strong>CLOSED</strong> project as a <em>Video Director.</em></br></br>You are still <em>Awaiting Feedback</em> from your Video Editor."
+        },
+        {
+          element: "#step15",
+          placement: "top",
+          title: "15/15",
+          next: 0,
+          content: "Your <strong>IN PROGRESS</strong> project as a <em>Video Editor.</em></br></br> Includes <em>information about Video Director.</em></br></br> 365 <em>days left</em> til due date.</br></br> Currently at Milestone #1000 <em>out of 100000 set,</em> with 299 days left to complete the said milestone."
+        }
+      ]
+    });
+    tour_mobile = new Tour({
+      debug: true,
+      backdrop: true,
+      steps: [
+        {
+          element: ".stepn1",
+          placement: "bottom",
+          title: "1/15",
+          content: "View all your projects."
+        }, 
+        {
+          element: ".stepn2",
+          placement: "bottom",
+          title: "2/15",
+          content: "Upload, download and/or view your project files."
+        },
+        {
+          element: ".stepn3",
+          placement: "bottom",
+          title: "3/15",
+          content: "See your calendar of projects and transactions - past, present and future."
+        },
+         {
+          element: ".stepn4",
+          placement: "bottom",
+          title: "4/15",
+          content: "See your list of favorite video editors or video creators."
+        },
+        {
+          element: ".stepn5",
+          placement: "bottom",
+          title: "5/15",
+          content: "Start your video project. Define your requirements and set a budget to begin getting proposals."
+        },
+        {
+          element: ".stepn6",
+          placement: "bottom",
+          title: "6/15",
+          content: "Filter your project list based on status (OPEN, IN PROGRESS, CLOSED) or project type (PROJECTS YOU CREATED, PROJECTS YOU ARE WORKING ON)."
+        },
+        {
+          element: ".stepn7",
+          placement: "top",
+          title: "7/15",
+          content: "VALOSO project box. </br> </br>A <strong>BLUE</strong> project box signifies your project as a <strong>Video Director</strong> while a GREEN one signifies your project as a <strong>Video Editor</strong>."
+        },
+        {
+          element: ".stepn8",
+          placement: "top",
+          title: "8/15",
+          content: "Your <strong>OPEN</strong> project as a <em>Video Director.</em></br></br> Includes <em>total number of interested applicants</em>.</br></br> <em>No Milestone</em> has been set yet."
+        }, 
+        {
+          element: ".stepn9",
+          placement: "top",
+          title: "9/15",
+          content: "See project's <em>video thumbnail,</em> the <em>number of scenes</em> on the project, <em>video duration,</em> and selected <em>audio track's genre and sub-genre.</em>"
+        },
+         {
+          element: ".stepn10",
+          placement: "top",
+          title: "10/15",
+          content: "See the <em>name </em> and the full <em> description</em> of your project as a <em>Video Director</em>. </br></br> Project Status is currently <strong>OPEN</strong> therefore <em>No Milestone</em> has been set yet."
+        },
+        {
+          element: ".stepn11",
+          placement: "top",
+          title: "11/15",
+          next: 11,
+          prev:9,
+          content: "Review project's <em>post date,</em> its <em>deadline, budget</em> and its <em>currency conversion.</em></br></br>Determine the <em>total number of interested applicants</em> instantly including the ones you haven't had the change to check yet (<em>new</em>)"
+        },
+        {
+          element: ".stepn12",
+          placement: "top",
+          title: "12/15",
+          content: "Your <strong>IN PROGRESS</strong> project as a <em>Video Director.</em></br></br> Includes <em>information about your Video Editor.</em></br></br><em>365 days left</em></br></br> til due date.</br>Currently at <em>Milestone #1000 (out of 100000 set),</em> with 299 days left to complete the said milestone."
+        },
+        {
+          element: ".stepn13",
+          placement: "top",
+          title: "13/15",
+          content: "Your <strong>CLOSED</strong> project as a <em>Video Director.</em></br></br> You have received a <em>Rating</em> from your Video Editor after end of project."
+        },
+        {
+          element: ".stepn14",
+          placement: "top",
+          title: "14/15",
+          content: "Your <strong>CLOSED</strong> project as a <em>Video Director.</em></br></br>You are still <em>Awaiting Feedback</em> from your Video Editor."
+        },
+        {
+          element: ".stepn15",
+          placement: "top",
+          title: "15/15",
+          next: 0,
+          content: "Your <strong>IN PROGRESS</strong> project as a <em>Video Editor.</em></br></br> Includes <em>information about Video Director.</em></br></br> 365 <em>days left</em> til due date.</br></br> Currently at Milestone #1000 <em>out of 100000 set,</em> with 299 days left to complete the said milestone."
+        }
+      ]
+    });
+    
+    /*$(window).on('resize', function() {
+      if($(window).width() >= 768) {
+        tour.restart();
+      }
+      else {
+        tour_mobile.restart();
+      }
+    });*/
+    
+    $(document).on('click', '[data-demo]', function(e) {
+      e.preventDefault();
+    
+      if($(window).width() >= 768) {
+        tour.restart().start(true);
+      }
+      else {
+        tour_mobile.restart().start(true);
+      }
+    });
+    
+  });
+
+}).call(this);  
+</script>
+
+</body>
 </html>
