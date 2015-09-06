@@ -12,16 +12,7 @@
 		<link rel="stylesheet" href="./css/bootstrap-theme.min.css"/>
 		<link rel="stylesheet" href="./css/font-awesome.css"/>
 		<link rel="stylesheet" href="./css/jquery.jscrollpane.css" media="all"/>
-		<link rel="stylesheet" href="./css/offcanvas.css"/>
-		<!-- Magnific  core CSS file -->
-		<link rel="stylesheet" href="./css/magnific-popup.css"/>
-        <!-- Toure CSS file -->
-        <link rel="stylesheet" href="./css/bootstrap-tour.min.css"/>
-        <link rel="stylesheet" href="./css/bootstrap-tour-standalone.min.css"/>
-        
-        <link rel="stylesheet" href="./css/ns-dashboardMML-nouploads.css"/>
-        <!-- added for  Toure -->
-        <link rel="stylesheet" href="./css/tour-NS-Dashboard.css"/>
+		
 		<!-- dataTables -->
 	    <link href="./css/bootstrap-select.css" rel="stylesheet"/>
 		<link rel="stylesheet" type="text/css" href="./css/datepicker.css" />
@@ -42,7 +33,17 @@
         <link rel="stylesheet" href="./css/popover-checkbox.css"/>
         <link rel="stylesheet" href="./css/blue.css"/>
         <link rel="stylesheet" href="./css/preview-profile-addition-materials.css"/>
-		<link rel="stylesheet" href="./css/header-menu.css"/>        
+		<link rel="stylesheet" href="./css/header-menu.css"/>   
+        <link rel="stylesheet" href="./css/offcanvas.css"/>
+		<!-- Magnific  core CSS file -->
+		<link rel="stylesheet" href="./css/magnific-popup.css"/>
+        <!-- Toure CSS file -->
+        <link rel="stylesheet" href="./css/bootstrap-tour.min.css"/>
+        <link rel="stylesheet" href="./css/bootstrap-tour-standalone.min.css"/>
+        
+        <link rel="stylesheet" href="./css/ns-dashboardMML-nouploads.css"/>
+        <!-- added for  Toure -->
+        <link rel="stylesheet" href="./css/tour-NS-Dashboard.css"/>     
 	</head>
 <body class="dash-page dash-page-cont">
     <div class="wrapp-row-offcanvas">
@@ -57,7 +58,7 @@
 			</div><!-- /.ipad-simulator -->
 			<div class="top-menu">
                 <div class="desktop-devices">
-					<button class="active" id="desktop-sim"><img src="images/preview-profile/desktop.png" alt="" /></button>
+					<div  class="tab-tour stepn1" id="step1"><button class="active" id="desktop-sim"><img src="images/preview-profile/desktop.png" alt="" /></button></div>
 					<button id="tablet-sim"><img src="images/preview-profile/tablet.png" alt="" /></button>
 					<button id="phone-sim"><img src="images/preview-profile/mobile.png" alt="" /></button>
 				</div><!-- /.desktop-devices -->
@@ -483,6 +484,9 @@
 							</div>
 						</button>
 					</div><!-- /.profile-top-img -->
+                    <div class="text-center">
+                        <div class="col-sm-offset-3 col-xs-12 col-sm-6 col-md-6 col-lg-6 tourStart"><a href="#" data-demo="false">Start The Toure</a> </div>
+                    </div>
 					<div class="col-sm-12 user-profile-left user-profile-right clearfix display-desktop">
 						<ul class="clearfix">
 							<li class="col-sm-3 user-profile-left-picture no-padding">
@@ -592,18 +596,20 @@
     						</p>
     					</div><!-- /.user-experience-single -->
     				</li><!-- /.user-experience -->
-    				<li class="backgr-fon-hover col-sm-12 user-education">
-    					<h3>Education</h3>
-                        <div>
-                            <span class="fa fa-arrows-v"></span>
-                            <span class="fa fa-plus-circle"></span>
-    					</div>
-    					<div class="user-education-single edit-education-pop">
-    						<h5>Bachelor of Science in Information Technology<img class="edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Course/Degree'><input type='text' placeholder=Name of School/University'><input type='text' placeholder='From (yyyy)'><input type='text' placeholder='To (yyyy)'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5>
-    						<span class="user-experience-company">UBelt University, 123 Address here</span><!-- /.user-experience-company -->
-    						<span class="user-experience-duration">2008-2012(4 years)</span><!-- /.user-experience-duration -->
-    					</div><!-- /.user-education-single -->
-    				</li><!-- /.user-education -->
+    				<div class="tab-tour stepn2 clearfix" id="step2">
+                        <li class="backgr-fon-hover col-sm-12 user-education">
+        					<h3>Education</h3>
+                            <div>
+                                <span class="fa fa-arrows-v"></span>
+                                <span class="fa fa-plus-circle"></span>
+        					</div>
+        					<div class="user-education-single edit-education-pop">
+        						<h5>Bachelor of Science in Information Technology<img class="edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Course/Degree'><input type='text' placeholder=Name of School/University'><input type='text' placeholder='From (yyyy)'><input type='text' placeholder='To (yyyy)'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5>
+        						<span class="user-experience-company">UBelt University, 123 Address here</span><!-- /.user-experience-company -->
+        						<span class="user-experience-duration">2008-2012(4 years)</span><!-- /.user-experience-duration -->
+        					</div><!-- /.user-education-single -->
+        				</li><!-- /.user-education -->
+                    </div>
     				<li class="backgr-fon-hover col-sm-12 user-certifications clearfix">
     					<h3>Certifications</h3>
                         <div>
@@ -1729,6 +1735,233 @@
 $(document).on('click', '.checkbox1', function() {
 $(this).toggleClass('checked');
 });
-</script-->
+</script--><script src="js/bootstrap-tour.min.js"></script>
+<script src="js/bootstrap-tour-standalone.min.js"></script>
+<script>
+(function() {
+  $(function() {
+    var tour, tour_mobile;
+    tour = new Tour({
+      debug: true,
+      backdrop: true,
+      steps: [
+        {
+          element: "#step1",
+          placement: "bottom",
+          title: "1/15",
+          content: "View all your projects."
+        }, 
+        {
+          element: "#step2",
+          placement: "bottom",
+          title: "2/15",
+          content: "Upload, download and/or view your project files."
+        },
+        {
+          element: "#step3",
+          placement: "bottom",
+          title: "3/15",
+          content: "See your calendar of projects and transactions - past, present and future."
+        },
+         {
+          element: "#step4",
+          placement: "bottom",
+          title: "4/15",
+          content: "See your list of favorite video editors or video creators."
+        },
+        {
+          element: "#step5",
+          placement: "bottom",
+          title: "5/15",
+          content: "Start your video project. Define your requirements and set a budget to begin getting proposals."
+        },
+        {
+          element: "#step6",
+          placement: "bottom",
+          title: "6/15",
+          content: "Filter your project list based on status (OPEN, IN PROGRESS, CLOSED) or project type (PROJECTS YOU CREATED, PROJECTS YOU ARE WORKING ON)."
+        },
+        {
+          element: "#step7",
+          placement: "top",
+          title: "7/15",
+          content: "VALOSO project box. </br> </br>A <strong>BLUE</strong> project box signifies your project as a <strong>Video Director</strong> while a GREEN one signifies your project as a <strong>Video Editor</strong>."
+        },
+        {
+          element: "#step8",
+          placement: "top",
+          title: "8/15",
+          content: "Your <strong>OPEN</strong> project as a <em>Video Director.</em></br></br> Includes <em>total number of interested applicants</em>.</br></br> <em>No Milestone</em> has been set yet."
+        }, 
+        {
+          element: "#step9",
+          placement: "top",
+          title: "9/15",
+          content: "See project's <em>video thumbnail,</em> the <em>number of scenes</em> on the project, <em>video duration,</em> and selected <em>audio track's genre and sub-genre.</em>"
+        },
+        {
+          element: "#step10",
+          placement: "top",
+          title: "10/15",
+          content: "Review project's <em>post date,</em> its <em>deadline, budget</em> and its <em>currency conversion.</em></br></br>Determine the <em>total number of interested applicants</em> instantly including the ones you haven't had the change to check yet (<em>new</em>)"
+        },
+         {
+          element: "#step11",
+          placement: "top",
+          title: "11/15",
+          content: "See the <em>name </em> and the full <em> description</em> of your project as a <em>Video Director</em>. </br></br> Project Status is currently <strong>OPEN</strong> therefore <em>No Milestone</em> has been set yet."
+        },
+        {
+          element: "#step12",
+          placement: "top",
+          title: "12/15",
+          content: "Your <strong>IN PROGRESS</strong> project as a <em>Video Director.</em></br></br> Includes <em>information about your Video Editor.</em></br></br><em>365 days left</em></br></br> til due date.</br>Currently at <em>Milestone #1000 (out of 100000 set),</em> with 299 days left to complete the said milestone."
+        },
+        {
+          element: "#step13",
+          placement: "top",
+          title: "13/15",
+          content: "Your <strong>CLOSED</strong> project as a <em>Video Director.</em></br></br> You have received a <em>Rating</em> from your Video Editor after end of project."
+        },
+        {
+          element: "#step14",
+          placement: "top",
+          title: "14/15",
+          content: "Your <strong>CLOSED</strong> project as a <em>Video Director.</em></br></br>You are still <em>Awaiting Feedback</em> from your Video Editor."
+        },
+        {
+          element: "#step15",
+          placement: "top",
+          title: "15/15",
+          next: 0,
+          content: "Your <strong>IN PROGRESS</strong> project as a <em>Video Editor.</em></br></br> Includes <em>information about Video Director.</em></br></br> 365 <em>days left</em> til due date.</br></br> Currently at Milestone #1000 <em>out of 100000 set,</em> with 299 days left to complete the said milestone."
+        }
+      ]
+    });
+    tour_mobile = new Tour({
+      debug: true,
+      backdrop: true,
+      steps: [
+        {
+          element: ".stepn1",
+          placement: "bottom",
+          title: "1/15",
+          content: "View all your projects."
+        }, 
+        {
+          element: ".stepn2",
+          placement: "bottom",
+          title: "2/15",
+          content: "Upload, download and/or view your project files."
+        },
+        {
+          element: ".stepn3",
+          placement: "bottom",
+          title: "3/15",
+          content: "See your calendar of projects and transactions - past, present and future."
+        },
+         {
+          element: ".stepn4",
+          placement: "bottom",
+          title: "4/15",
+          content: "See your list of favorite video editors or video creators."
+        },
+        {
+          element: ".stepn5",
+          placement: "bottom",
+          title: "5/15",
+          content: "Start your video project. Define your requirements and set a budget to begin getting proposals."
+        },
+        {
+          element: ".stepn6",
+          placement: "bottom",
+          title: "6/15",
+          content: "Filter your project list based on status (OPEN, IN PROGRESS, CLOSED) or project type (PROJECTS YOU CREATED, PROJECTS YOU ARE WORKING ON)."
+        },
+        {
+          element: ".stepn7",
+          placement: "top",
+          title: "7/15",
+          content: "VALOSO project box. </br> </br>A <strong>BLUE</strong> project box signifies your project as a <strong>Video Director</strong> while a GREEN one signifies your project as a <strong>Video Editor</strong>."
+        },
+        {
+          element: ".stepn8",
+          placement: "top",
+          title: "8/15",
+          content: "Your <strong>OPEN</strong> project as a <em>Video Director.</em></br></br> Includes <em>total number of interested applicants</em>.</br></br> <em>No Milestone</em> has been set yet."
+        }, 
+        {
+          element: ".stepn9",
+          placement: "top",
+          title: "9/15",
+          content: "See project's <em>video thumbnail,</em> the <em>number of scenes</em> on the project, <em>video duration,</em> and selected <em>audio track's genre and sub-genre.</em>"
+        },
+         {
+          element: ".stepn10",
+          placement: "top",
+          title: "10/15",
+          content: "See the <em>name </em> and the full <em> description</em> of your project as a <em>Video Director</em>. </br></br> Project Status is currently <strong>OPEN</strong> therefore <em>No Milestone</em> has been set yet."
+        },
+        {
+          element: ".stepn11",
+          placement: "top",
+          title: "11/15",
+          next: 11,
+          prev:9,
+          content: "Review project's <em>post date,</em> its <em>deadline, budget</em> and its <em>currency conversion.</em></br></br>Determine the <em>total number of interested applicants</em> instantly including the ones you haven't had the change to check yet (<em>new</em>)"
+        },
+        {
+          element: ".stepn12",
+          placement: "top",
+          title: "12/15",
+          content: "Your <strong>IN PROGRESS</strong> project as a <em>Video Director.</em></br></br> Includes <em>information about your Video Editor.</em></br></br><em>365 days left</em></br></br> til due date.</br>Currently at <em>Milestone #1000 (out of 100000 set),</em> with 299 days left to complete the said milestone."
+        },
+        {
+          element: ".stepn13",
+          placement: "top",
+          title: "13/15",
+          content: "Your <strong>CLOSED</strong> project as a <em>Video Director.</em></br></br> You have received a <em>Rating</em> from your Video Editor after end of project."
+        },
+        {
+          element: ".stepn14",
+          placement: "top",
+          title: "14/15",
+          content: "Your <strong>CLOSED</strong> project as a <em>Video Director.</em></br></br>You are still <em>Awaiting Feedback</em> from your Video Editor."
+        },
+        {
+          element: ".stepn15",
+          placement: "top",
+          title: "15/15",
+          next: 0,
+          content: "Your <strong>IN PROGRESS</strong> project as a <em>Video Editor.</em></br></br> Includes <em>information about Video Director.</em></br></br> 365 <em>days left</em> til due date.</br></br> Currently at Milestone #1000 <em>out of 100000 set,</em> with 299 days left to complete the said milestone."
+        }
+      ]
+    });
+    
+    /*$(window).on('resize', function() {
+      if($(window).width() >= 768) {
+        tour.restart();
+      }
+      else {
+        tour_mobile.restart();
+      }
+    });*/
+    
+    $(document).on('click', '[data-demo]', function(e) {
+      e.preventDefault();
+    
+      if($(window).width() >= 768) {
+        tour.restart().start(true);
+      }
+      else {
+        tour_mobile.restart().start(true);
+      }
+    });
+    
+  });
+
+}).call(this);  
+</script>
+
 	</body>
 </html>
