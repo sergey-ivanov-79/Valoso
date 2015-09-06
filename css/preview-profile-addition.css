@@ -452,7 +452,7 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
     color: #63CDEC;
     z-index: 150;
 }
-.dash-page .top-menu { z-index: 999;}
+/*.dash-page .top-menu { z-index: 999;}*/
 /* Begin for tablet-sim */
 .added-sim-640 .col-sm-8.no-line, .added-sim-640  .col-sm-6-dop { width: 100% !important;}
 .added-sim-640 .addition .skills-block, 
