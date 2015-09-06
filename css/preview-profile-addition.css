@@ -607,9 +607,7 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
     border-right: none;
 }
 .added-sim-640 .addition .port-edit-buttons img { height: auto;} 
-.header-min-height {
-    z-index: 1001;
-}
+
 .added-sim-320 .addition .user-single-review .p-14.text-black.bold.top-5 { font-size: 15px !important;}
 .added-sim-640 .addition .fs-scrollbar-content,
 .added-sim-320 .addition .fs-scrollbar-content {
@@ -647,9 +645,7 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
 }
 .nav-list.nav > li > a { margin: 0;} 
 img { vertical-align: inherit !important;}
-.header-min-height {
-    z-index: 1001;
-}
+
 @media (max-width: 1200px) {
     .addition .tabsuper {
         margin-right: -2px;
@@ -907,9 +903,6 @@ img { vertical-align: inherit !important;}
     }
     .opened-offcanvas  .header-min-height {
         z-index: 1001;
-    }
-    .header-min-height {
-        z-index: 1;
     }
      .inner-skills .popover {
         position: fixed !important;

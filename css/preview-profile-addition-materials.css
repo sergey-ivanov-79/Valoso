@@ -1,5 +1,6 @@
 .Materials {
     display: table;
+    width: 100%;
 }
 .ThumbnailSurface {
     border: 1px solid #ccc;
@@ -427,6 +428,7 @@ div#syncSocial .social-icons img {
 .added-sim-320.sim-320 .MaterialTabs {
     float: none;
     width: 100%;
+    font-size: 15px;
 }
 .added-sim-320.sim-320 .MaterialTabs > div {
     margin-right: 0px;
