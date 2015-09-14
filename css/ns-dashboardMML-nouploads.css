@@ -368,7 +368,7 @@ body.dash-page { padding-top: 0;}
 .bacgr-img-tour { background-image: url("../images/p-a/top-tour.png"); height: 44px;}
 .group-stars { display: inline-block; margin-left: 25px;}
 
- /*.wrapper-form-con-dop .home-dash-menu */.collapse { display: block; height: 100% !important;}
+.wrapp-content-block .collapse { display: block; height: 100% !important;}
 /* END right cont*/
 /* END My Project */
 

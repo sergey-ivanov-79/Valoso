@@ -510,6 +510,7 @@ a:hover {
     right: 50px;
     position: absolute;
     top: -13px;
+    left: auto;
 }
 
 .dropdown.dropdown-tip:after {
@@ -521,6 +522,7 @@ a:hover {
     right: 49px;
     position: absolute;
     top: -11px;
+    left: auto;
 }
 
 .dropdown.dropdown-tip {
