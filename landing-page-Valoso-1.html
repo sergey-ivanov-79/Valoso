@@ -1,0 +1,639 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. --> 
+
+<head>
+
+	<meta charset="utf-8">
+	
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<!-- Important stuff for SEO, don't neglect. (And don't dupicate values across your site!) -->
+	<title>My local 3d printing -  Landing page</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	
+	<!-- Don't forget to set your site up: http://google.com/webmasters -->
+	<meta name="google-site-verification" content="" />
+	
+	<!-- Who owns the content of this site? -->
+	<meta name="Copyright" content="" />
+	
+	<!--  Mobile Viewport
+	http://j.mp/mobileviewport & http://davidbcalhoun.com/2010/viewport-metatag
+	device-width : Occupy full width of the screen in its current orientation
+	initial-scale = 1.0 retains dimensions instead of zooming out if page height > device height
+	maximum-scale = 1.0 retains dimensions instead of zooming in if page width < device width (wrong for most sites)
+	-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<!-- Use Iconifyer to generate all the favicons and touch icons you need: http://iconifier.net -->
+	<link rel="shortcut icon" href="favicon.ico" />
+	
+	<!-- concatenate and minify for production -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800' rel='stylesheet' type='text/css'> -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css" />
+    <!--  font-awesome -->
+    <link rel="stylesheet" href="./assets/css/font-awesome.css" type="text/css" />
+	<link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/guest-landing-page.css" />
+	
+    
+	<!-- This is an un-minified, complete version of Modernizr. 
+		 Before you move to production, you should generate a custom build that only has the detects you need. -->
+	<script src="assets/js/libs/modernizr-2.7.1.dev.js"></script>
+	
+	<!-- Application-specific meta tags -->
+	<!-- Windows 8: see http://msdn.microsoft.com/en-us/library/ie/dn255024%28v=vs.85%29.aspx for details -->
+	<meta name="application-name" content="" /> 
+	<meta name="msapplication-TileColor" content="" /> 
+	<meta name="msapplication-TileImage" content="" />
+	<meta name="msapplication-square150x150logo" content="" />
+	<meta name="msapplication-square310x310logo" content="" />
+	<meta name="msapplication-square70x70logo" content="" />
+	<meta name="msapplication-wide310x150logo" content="" />
+	<!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
+	<meta name="twitter:card" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:url" content="">
+	<!-- Facebook (and some others) use the Open Graph protocol: see http://ogp.me/ for details -->
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+
+	<!-- HTML5 shim for IE backwards compatibility -->
+	<!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+
+<header class="header header-guest" id="headEr">
+	<nav class="navbar navbar-default">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a style="display:block;" class="navbar-brand navbar-brand-mobile" href="#">
+            <img src="./images/p-a/logo-valoso.png"/>
+          </a>
+        </div>
+    
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse clearfix" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">How it works<span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Browse video projects</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Register as a Video Editor</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal" id="btnSignUp">Sign Up</a></li>
+            <li class="hidden-xs"><p class="blue-color">/</p></li>
+            <li><a href="#" data-toggle="modal" data-target="#myModal" id="btnLogIn">Log in</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+</header> <!-- header -->
+
+<a id="showHere"></a>
+<div class="new-landing-page" id="">
+	<div class="intro-1-home-2 dop">
+		<div class="container-fluid">
+			<div class="">
+                <div class="row">
+                    <div class="bg-top" style="background-image: url('./images/New-Landing-page/kid_director.jpg');">
+                        <div class="inner-bg-top"></div>
+                        <div class="carousel-capt">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h2>Get a custom made video / movie just the way you want it</h2>
+                                        <p class="designe">It's easy and safe</p>
+                                        <a class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal-1">Get Started</a>
+                                    </div>
+                                </div>
+                            </div>
+                      </div>
+                    </div>
+                    <div class="wrapp-images clearfix">
+                        <div class="col-sm-6">
+                            <div class="text-center left-image">
+                                <p class="gray">Don't let your video footage go to waste</p>
+                                <p class="gray">Get it made by  Video Editor</p>
+                                <a href="#"><img src="images/New-Landing-page/videographer.jpg"/></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-center right-image">
+                                <p class="gray">No need to explain what you want</p>
+                                <p class="gray">Show it with Vizsnap</p>
+                                <a href="#"><img src="images/New-Landing-page/video-editing-edit.jpg"/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://youtu.be/2pil__U684o"></iframe>
+                    </div>
+                </div>
+			</div>
+		</div> <!-- .container -->
+	</div> <!-- .intro-home -->
+    
+    
+    
+	<div class="center-block checkout-port">
+		<p class="text-center">Or browse our worldwide network of designers and their portfolios <a href="#" class="link">here</a></p>
+	</div>
+	<!--div class="home-port-wrap text-center" id="portfolioImage">
+	</div-->
+    <div class="how-top-block" id="how-work"></div>
+	<div class="post-project" >
+		<h2>How does it work?</h2>
+		<img src="images/post-project.png" alt="Post project" class="post-project-1"> 
+		<img src="images/post-project-2.png" alt="Post project" class="post-project-2"> 
+	</div>
+    <a href="#" class="scrollToTop">Scroll To Top</a>
+</div> <!-- #wrapHome1 -->
+<footer class="footer">
+	<div class="footer-widget-area">
+		<div class="container">
+			<div class="row"> 
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<div class="footer-widget">
+						<h3 class="widget-title">About</h3>
+						<div class="widget-content">
+							<ul>
+								<li><a href="#">About us</a></li>
+								<li><a href="#">How it works</a></li>
+								<li><a href="#">Press</a></li>
+								<li><a href="#">Contact us</a></li>
+								<li><a href="#">Careers</a></li>
+								<li><a href="#">Developers</a></li>							
+							</ul>
+						</div> <!-- .widget-content -->
+					</div> <!-- .footer-widget -->
+				</div>
+				<div class="col-md-2 col-sm-2 col-xs-2">
+					<div class="footer-widget">
+						<h3 class="widget-title">Help</h3>
+						<div class="widget-content">
+							<ul>
+								<li><a href="#">Help Center</a></li>
+								<li><a href="#">Contact Support</a></li>
+								<li><a href="#">FAQ's</a></li>
+								<li><a href="#">Shopping info</a></li>
+								<li><a href="#">Tutorials</a></li>						
+							</ul>
+						</div> <!-- .widget-content -->
+					</div> <!-- .footer-widget -->
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4">
+					<div class="footer-widget">
+						<h3 class="widget-title">Get Inspired</h3>
+						<div class="widget-content">				
+							<p>Weekly top projects, featured designers, tips, and tricks</p>					
+							<div class="input-group search-footer">
+						      <input type="text" class="form-control btn-rounded-lyf" placeholder="Enter Email Here">
+						      <span class="input-group-btn">
+						        <button class="btn-scrh btn-rounded-ryt btn-scrh-default" type="button">Sign Up</button>
+						      </span>
+						    </div><!-- /input-group -->
+						</div> <!-- .widget-content -->
+					</div> <!-- .footer-widget -->
+				</div>
+				<div class="col-md-4 col-sm-4 col-xs-4">
+					<div class="footer-widget">
+						<div class="widget-content widget-content-last">
+								<a href="#"><h1 class="logo"><span class="word-1">my</span><span class="word-2">local</span><span class="word-3">3dprinting</span></h1></a>
+								<div class="socials">
+									<ul class="clearfix">
+										<li><a href="" title="Flicker"><i class="ico ico-flicker">flicker</i></a></li>
+										<li><a href="" title="facebook"><i class="ico ico-fb">facebook</i></a></li>
+										<li><a href="" title="google+"><i class="ico ico-gplus">google+</i></a></li>
+										<li><a href="" title="pinterest"><i class="ico ico-pinterest">pinterest</i></a></li>
+										<li><a href="" title="instagram"><i class="ico ico-instagram">instagram</i></a></li>
+										<li><a href="" title="tumbler"><i class="ico ico-tumbler">tumbler</i></a></li>
+										<li><a href="" title="twitter"><i class="ico ico-tw">twitter</i></a></li>
+										<li><a href="" title="youtube"><i class="ico ico-utube">youtube</i></a></li>
+										<li><a href="" title="vimeo"><i class="ico ico-vimeo">vimeo</i></a></li>
+									</ul>
+								</div>
+						</div> <!-- .widget-content -->
+					</div> <!-- .footer-widget -->
+				</div>
+
+			</div>
+		</div> <!-- .container -->
+	</div> <!-- .footer-widget-area -->
+	<div class="footer-copy-right">
+		<div class="container">
+			<div class="row">
+				<div class="col-12-md">
+					<ul class="clearfix">
+						<li>Copyright 2014 © Tech International Pty Ltd</li>
+						<li><a href="">Privacy Policy</a></li>
+						<li><a href="">Term and Conditions</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer> <!-- .footer -->
+<a style="display:none;cursor: pointer;z-index: 1;" class="cd-top cd-is-visible to-top">Top</a>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-1">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel"></h4>
+      </div>
+      <div class="tab-content">
+          <div class="modal-body modal-body-center tab-pane active" id="black">
+            <p class="designe gray">Do you have a 3D file?</p>
+            <a class="btn btn-primary btn-lg" href="#upload" aria-controls="home" role="tab" data-toggle="tab">Yes, I do have a 3D file</a>
+            <a class="btn btn-primary btn-lg">No, create one for me</a>
+          </div>
+          <div class="modal-body modal-body-center tab-pane" id="upload">
+            <p class="designe gray">Upload your 3D file (64mb max)</p>
+            <div class="wrapper-info">
+                <p class="gray">For monocolor upload with STL file</p>
+                <p class="gray">For monocolor upload use OBJ file with UV coordinates</p>
+                <p class="gray">If you are not sure you can hire a designer</p>
+            </div>
+            <a class="btn btn-primary btn-lg" href="#select" aria-controls="select" role="tab" data-toggle="tab">Upload</a>
+            <a class="btn btn-lg blue-color" href="#black" aria-controls="black" role="tab" data-toggle="tab">Black</a>
+          </div>
+          <div class="modal-body modal-body-center tab-pane" id="select">
+                <p class="designe gray">Search your product</p>
+                <div class="wrapper-info">
+                    <form class="form-horizontal">
+                        <select class="form-control">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>
+                        <p class="gray">OR</p>
+                        <div class="input-group">
+                            <input name="search" type="text" class="form-control" placeholder="Search"/>
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <a class="btn btn-lg blue-color" href="#search" aria-controls="black" role="tab" data-toggle="tab">Black</a>
+          </div>
+          <div class="modal-body modal-body-center tab-pane" id="">
+                <p class="designe gray">Search your product</p>
+                <form class="form-horizontal">
+                    <select class="form-control">
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                </form>
+                <div class="wrapper-info">
+                    <div id="carouselBot" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="row item">
+                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                             </div>
+                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                             </div>
+                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                             </div>
+                              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">                
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                              </div>
+                          </div>
+                           <div class="row item active">
+                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                             </div>
+                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                             </div>
+                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                             </div>
+                              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">                
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carouselBot" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carouselBot" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                <a class="btn btn-primary btn-lg margin-top-20">More modals</a>
+                </div>
+                <a class="btn btn-lg blue-color" href="#black" aria-controls="black" role="tab" data-toggle="tab">Black</a>
+                <a class="btn btn-success btn-lg">Create custom model</a>
+          </div>
+          <div class="modal-body modal-body-center tab-pane" id="search">
+                <p class="designe gray">Search your product</p>
+                <form class="form-horizontal">
+                    <div class="input-group">
+                        <input name="search" type="text" class="form-control" placeholder="Search"/>
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </div>
+                    </div>
+                </form>
+                <div class="wrapper-info">
+                    <div id="carouselBot-1" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                          <div class="row item">
+                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                             </div>
+                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                             </div>
+                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                             </div>
+                              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">                
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                              </div>
+                          </div>
+                           <div class="row item active">
+                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                             </div>
+                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                             </div>
+                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                             </div>
+                              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">                
+                                <div class="box">
+                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
+                                    <h3>Name / Price</h3>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                        
+                        <!-- Controls -->
+                        <a class="left carousel-control" href="#carouselBot-1" role="button" data-slide="prev">
+                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#carouselBot-1" role="button" data-slide="next">
+                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                <a class="btn btn-primary btn-lg margin-top-20">More modals</a>
+                </div>
+                <a class="btn btn-lg blue-color" href="#black" aria-controls="black" role="tab" data-toggle="tab">Black</a>
+                <a class="btn btn-success btn-lg">Create custom model</a>
+          </div>
+      </div>
+      <!--div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div-->
+    </div>
+  </div>
+</div>
+
+
+
+<!-- LOGIN AND SIGN UP MODAL -->
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+      	<a class="sgn-up sgn-in-up">Sign up</a>
+      	<a class="log-in sgn-in-up">Log in</a>
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      </div>
+      <div class="modal-body">
+        	<div class="container-fluid">
+        		<div class="row">
+        			<div class="col-md-6">
+        				<form role="form" id="formSingUp">
+						  <div class="form-group">
+						    <label>Email address</label>
+						    <input type="email" class="form-control inputText-default">
+						  </div>
+						  <div class="form-group">
+						    <label>Choose a Username</label>
+						    <input type="text" class="form-control inputText-default">
+						  </div>
+						  <div class="form-group">
+						    <label>Password</label>
+						    <input type="password" class="form-control inputText-default">
+						  </div>
+						  <div class="form-group">
+						    <label>Confirm Password</label>
+						    <input type="password" class="form-control inputText-default">
+						  </div>
+						  <div class="checkbox">
+						    <div class="customR">
+								<input type="checkbox" name="jquery_like" value="1" /><label>Send me exclusive offers, tips, and tricks.</label>
+							</div>
+						  </div>
+						  <div class="form-group term-submit clearfix">
+						    <p class="help-block terms-condi col-md-6 col-sm-6">By signing up you agree to the<a href="#"> Terms and Conditions</a></p>
+						    <p class="col-md-5 col-sm-5"><button type="submit" class="btn b-btn-process">Sign up</button></p>
+						  </div>
+						</form> <!-- #formSingUp -->
+						<form role="form" id="formLogIn">
+						  <div class="form-group">
+						    <label>Username</label>
+						    <input type="text" class="form-control inputText-default">
+						  </div>
+						  <div class="form-group">
+						    <label>Password</label>
+						    <input type="password" class="form-control inputText-default">
+						  </div>
+						  <div class="checkbox">
+						    <div class="customR">
+								<input type="checkbox" name="jquery_like" value="1" /><label>Remember me</label>
+								<p class="help-block terms-condi pull-right"><a href="#">Forgot username or password</a></p>
+							</div>							
+						  </div>
+						  <div class="form-group term-submit clearfix pull-right">
+						    <button type="submit" class="btn b-btn-process" style="color:#fff;">Log in</button>
+						  </div>
+						</form> <!-- #formLogIn -->
+        			</div>
+        			<div class="divider-v col-md-1 clearfix">
+						<span class="line-up"></span>
+        				OR
+        				<span class="line-down"></span>
+        			</div>
+        			<div class="divider-hr col-md-1 clearfix">
+						<span class="line-left"></span>
+        				OR
+        				<span class="line-right"></span>
+        			</div>
+        			<div class="col-md-5 socials-btn" id="signUpsocials">
+        				<button class="btn btn-fb"><i class="ico ico-fb"></i>Sign up with Facebook</button>
+        				<button class="btn btn-gplus"><i class="ico ico-gplus"></i>Sign up with Google</button>
+        				<button class="btn btn-tw"><i class="ico ico-tw"></i>Sign up with twitter</button>
+        				<p class="help-block terms-condi">We will never post anything without permission</p>
+        			</div>
+        			<div class="col-md-5 socials-btn" id="logInsocials">
+        				<button class="btn btn-fb"><i class="ico ico-fb"></i>Log in with Facebook</button>
+        				<button class="btn btn-gplus"><i class="ico ico-gplus"></i>Log in up with Google</button>
+        				<button class="btn btn-tw"><i class="ico ico-tw"></i>Log in up with twitter</button>
+        				<p class="help-block terms-condi">We will never post anything without permission</p>
+        			</div>
+        			
+        		</div>
+        	</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src='./assets/js/libs/moment.min.js'></script>
+
+<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+<script src='./assets/js/libs/jquery-1.11.0.min.js'></script>
+
+<!-- this is where we put our custom functions -->
+<!-- don't forget to concatenate and minify if needed -->
+<script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="./assets/js/functions.js"></script>
+<script src="./assets/js/slider.js"></script>
+<!-- <script src="assets/js/sticky-header.js"></script> -->
+<script src="./assets/js/waypoints.min.js" type="text/javascript"></script>
+<script src="./assets/js/navbar2.js" type="text/javascript"></script>
+<script>
+	$(document).ready(function() {   
+	  function animateDivers() {
+	    $('#portfolioImage').animate({'background-position': '+=1433px'},40000).animate({'background-position': '+=1433px'},40000, animateDivers); 
+	  }
+	  animateDivers();
+      
+      $(document).on('click', '.btn-rounded-click', function(e) {
+        $("html, body").animate({ scrollTop: $('#how-work').offset().top }, 1500);
+      });
+      
+      
+}); 
+</script>
+<script>
+    $(document).ready(function(){
+            var h = $('.forum-posts').outerHeight();
+            $(window).scroll(function() {
+                var bodyscroll = $(this).scrollTop();
+                if(bodyscroll >= 500){
+                    $('.to-top').show();
+                }else{
+                    $('.to-top').hide();
+                }
+            });
+            
+            $('.to-top').click(function(){
+                 $('html,body').animate({ scrollTop: 0 }, 'slow');
+            });
+            
+            $('.forum-posts').scrollTop(5000);
+            });
+            
+            // Scroll To
+            $(document).on('click', '[data-toggle="scroll-to"]', function(e){
+                e.preventDefault();
+                
+                var offset = $(this).data('offset') || 0,
+                    scrollTo = $($(this).data('target')).position().top;
+                    
+                if($('body').scrollTop() > scrollTo) {
+                    offset -= 53;
+                }
+                    
+                $('body').animate({ scrollTop: (scrollTo + offset) }, 'slow');
+            });
+</script> 
+</body>
+</html>
