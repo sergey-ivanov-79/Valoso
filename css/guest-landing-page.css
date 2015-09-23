@@ -210,6 +210,46 @@ a.blue-color:hover {
     margin-right: 10px;
     margin-left: 10px;
 }
+#slider {
+  height:290px;
+  position:relative;
+}
+#slideContent.slideContent-new #slider {
+    height: 670px;
+}
+#slideContent.slideContent-new .sliderControl {
+    height: 670px;
+}
+#slideContent.slideContent-new .sliderBox  .slider-size {
+    height: 670px;
+}
+.carousel-capt {
+    position: absolute;
+    width: 100%;
+    min-height: 0px;
+    top: 50%;
+    margin-top: -150px;
+}
+.intro-1-home-2 h2 {
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-top: 11px;
+    margin-bottom: 118px;
+}
+.checkout-port {
+    padding-top: 25px;
+    padding-bottom: 40px;
+    color: #6E6E6E;
+    background-color: #fff;
+}
+.header-guest .navbar {
+    border: none;
+    margin-bottom: 0;
+}
+.carousel-capt h2, .carousel-capt p {
+    color: #fff;
+}
 @media (max-width: 1160px) and (min-width: 992px){
     .new-landing-page .intro-1-home-2 h2 {
         font-size: 42px;
