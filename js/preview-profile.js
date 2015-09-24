@@ -23,7 +23,7 @@ $(document).ready(function(){
 		$('.edit-content-right-template').hide();
 		$('.edit-container-right').fadeIn();
 	});
-	$('.design-btn span, .some-arrow img').click(function(){
+	$('.design-btn span, .some-arrow img, .addition').click(function(){
 		$('.arrow-left').fadeOut();
 		$('.edit-content-right-template').fadeOut();
 		$('.edit-container-right').fadeOut();
