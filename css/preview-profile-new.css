@@ -2731,6 +2731,9 @@ button.btn.save-btn:hover  {
     .user-profile-left ul:after {
         left: 69%;
     }
+    .hire-me-section button.hire-me {
+        width: 102px;
+    }
 }/* 991px End */
 @media(max-width: 930px) {
     .edit-container {
@@ -2805,6 +2808,17 @@ button.btn.save-btn:hover  {
 	}
     footer a > img {
         width: 50%;
+    }
+    .hire-me-section button.hire-me {
+        width: 85px;
+        padding: 5px 0;
+        font-size: 11px;
+    }
+    button.hire-me.favorite img {
+        width: 17px;
+    }
+    .header-min-height {
+        min-height: 0px;
     }
 }/* 767px End */
 @media(max-width: 640px) {
