@@ -840,17 +840,11 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
     .addition .edit-container.wrapper-form-con, .addition .edit-container-left {
         height: 242px;
     }
-    .addition .fa-arrows-v { top: 20px; }
-    .addition .fa-plus-circle { 
-        position: absolute;
-        font-size: 20px;
-        top: 22px;
-        right: 40px;
-    }
     .header-min-height { 
         margin-top: 0;
         margin-bottom: 0;
     }
+    .col-sm-12 > div .edit-together  { width: auto;}
 }
 @media (max-width: 767px) and (min-width: 740px) {
     .addition .text-printing { padding-top: 10px;}
