@@ -63,7 +63,7 @@ a.blue-color:hover {
 }
 .bg-top {
     position: relative;
-    padding-bottom: 40%;
+    padding-bottom: 36%;
     background-size: cover;
     background-position: center center;
     display: block;
@@ -85,7 +85,7 @@ a.blue-color:hover {
    padding: 20px 0;
 }
 .left-image p, .right-image p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     padding-bottom: 30px;
     padding-top: 20px;
@@ -238,7 +238,7 @@ a.blue-color:hover {
     text-transform: uppercase;
     font-weight: 600;
     margin-top: 11px;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
 }
 .checkout-port {
     padding-top: 25px;
@@ -254,7 +254,7 @@ a.blue-color:hover {
     color: #fff;
 }
 .carousel-capt {
-    margin-top: -200px;
+    margin-top: -150px;
 }
 .secure {
     font-size: 30px;
@@ -263,6 +263,10 @@ a.blue-color:hover {
 .wrapper-how-to-work {
     padding: 20px 0;
 }
+.left-image .h3, .right-image .h3 {
+    font-size: 18px;
+    padding: 0px 30px;
+}
 @media (max-width: 1160px) and (min-width: 992px){
     .new-landing-page .intro-1-home-2 h2 {
         font-size: 42px;
@@ -270,13 +274,13 @@ a.blue-color:hover {
 }
 @media (max-width: 991px) {
     .carousel-capt {
-        margin-top: -120px;
+        margin-top: -96px;
     }  
     .header-guest .navbar-header img {
         width: 120px;
     }
     .intro-1-home-2 h2 {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 }
 @media (max-width: 991px) and (min-width: 768px){
@@ -295,6 +299,11 @@ a.blue-color:hover {
     }
     .header-guest .navbar-default .navbar-brand {
         padding: 10px 5px;
+    }
+}
+@media (max-width: 768px) {
+    .new-landing-page .intro-1-home-2 h2 {
+        font-size: 24px;
     }
 }
 @media (max-width: 767px) {
@@ -329,13 +338,21 @@ a.blue-color:hover {
     .header-guest .navbar-toggle {
         margin-top: 17px;
     }
+    .header-guest .collapse.navbar-collapse {
+        margin-top: 0;
+    }
+}
+@media (max-width: 767px) and (min-width: 639px) {
+   .left-image p, .right-image p {
+        font-size: 13px;
+   } 
 }
 @media (max-width: 639px) {
     .new-landing-page .intro-1-home-2 h2 {
         font-size: 18px;
     }
     .new-landing-page .carousel-capt {
-            margin-top: -100px;
+            margin-top: -80px;
     }
     .new-landing-page .intro-1-home-2.dop h2 {
         margin-bottom: 20px;
@@ -349,6 +366,22 @@ a.blue-color:hover {
     }
     .wrapp-images .col-xs-offset-1.col-xs-4 {
         width: 100%;
+    }
+    .wrapp-images .col-xs-offset-1 {
+        margin-left: 0%;
+    }
+    .new-landing-page .carousel-capt .btn.btn-primary.btn-lg {
+        margin-top: 0;
+    }
+    .left-image, .right-image {
+        padding-top: 0;
+    }
+    .left-image p, .right-image p {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+    .wrapp-images {
+        padding: 0;
     }
 }
 @media (max-width: 480px) {
@@ -368,10 +401,10 @@ a.blue-color:hover {
         margin: 0;
     }
     .new-landing-page .intro-1-home-2.dop h2 {
-        margin-bottom: 20px;
+        margin-bottom: 0px;
     }
     .new-landing-page .carousel-capt {
-        margin-top: -75px;
+        margin-top: -60px;
     }
     .new-landing-page .carousel-capt .btn.btn-primary.btn-lg {
         margin-top: 8px;
