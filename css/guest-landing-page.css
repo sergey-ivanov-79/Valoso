@@ -63,7 +63,7 @@ a.blue-color:hover {
 }
 .bg-top {
     position: relative;
-    padding-bottom: 50%;
+    padding-bottom: 40%;
     background-size: cover;
     background-position: center center;
     display: block;
@@ -270,10 +270,13 @@ a.blue-color:hover {
 }
 @media (max-width: 991px) {
     .carousel-capt {
-        margin-top: -150px;
+        margin-top: -120px;
     }  
     .header-guest .navbar-header img {
         width: 120px;
+    }
+    .intro-1-home-2 h2 {
+        margin-bottom: 40px;
     }
 }
 @media (max-width: 991px) and (min-width: 768px){
@@ -343,6 +346,9 @@ a.blue-color:hover {
     }
     .how-work a.btn {
         font-size: 16px;
+    }
+    .wrapp-images .col-xs-offset-1.col-xs-4 {
+        width: 100%;
     }
 }
 @media (max-width: 480px) {
