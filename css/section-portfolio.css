@@ -36,6 +36,36 @@
 .add-new-portfolio {
     display: none;
 }
+
+.add-new-block {
+    position: relative;
+    padding-bottom: 75%;
+    background-color: #eee;
+    margin: 10px 0;
+    cursor: pointer;
+    border: 1px solid #24a5db;
+}
+.add-new-block .fa-plus {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    margin-top: -30px;
+    margin-left: -30px;
+    text-shadow: 1px 1px #000;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    line-height: 64px;
+    background-color: #555;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    color: #fff;
+}
+.add-new-block:hover .fa-plus {
+    background-color: #24a5db;
+} 
 @media(max-width: 767px) {
     .header-min-height {
         min-height: 60px;

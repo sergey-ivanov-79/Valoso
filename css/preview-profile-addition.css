@@ -32,6 +32,12 @@ ol li { list-style-type: none;}
     height: 230px;
     background-color: #eff8fd;
 }
+
+.addition .rewievs .fs-scrollbar-content {
+    height: 230px;
+}
+
+
 .addition  .user-ratings h2,
 .addition  .skills-block h2,
 .addition  .big-materials-block h2  {

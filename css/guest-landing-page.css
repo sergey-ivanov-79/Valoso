@@ -61,6 +61,9 @@ a.blue-color:hover {
 .new-landing-page .intro-1-home-2 h2 {
     font-size: 44px;
 }
+.wrapp-images > table {
+    margin: 0 auto;
+}
 .bg-top {
     position: relative;
     padding-bottom: 36%;
@@ -132,6 +135,8 @@ a.blue-color:hover {
     position: absolute;
     background: #c4c4c4;
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     padding-top: 6px;
     width: 43px;
     height: 43px;
@@ -204,6 +209,7 @@ a.blue-color:hover {
 .how-work a.btn {
     font-size: 30px;
     font-weight: 600;
+    margin-top: 20px;
 }
 .wrapp-images table tr td {
     width: 50%;
@@ -260,9 +266,9 @@ a.blue-color:hover {
     font-size: 30px;
     text-transform: uppercase;
 }
-.wrapper-how-to-work {
-    padding: 20px 0;
-}
+/*.wrapper-how-to-work {
+    padding: 40px 0 30px;
+}*/
 .left-image .h3, .right-image .h3 {
     font-size: 18px;
     padding: 0px 30px;
