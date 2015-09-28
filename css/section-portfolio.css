@@ -84,8 +84,33 @@
 .video-software .popover .arrow, .category .popover .arrow {
     display: none;
 }
+.video-software .nav>li>a {
+    margin: auto;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.addition .tab-content>.tab-pane {
+    margin-top: 20px;
+}
 .inner-skills .popover {
     min-width: 406px !important;
+}
+.user-portfolio {
+    position: relative;
+}
+.user-portfolio .add-new-portfolio {
+    position: absolute;
+    top: 50%;
+    margin-top: 100px; /* changes */
+    left: 50%;
+    margin-left: 150px; /* changes */
+}
+.opened .add-new-portfolio {
+    display: block;
+}
+.inner-skills .popover .popover-content {
+    top: auto;
 }
 @media(max-width: 767px) {
     .header-min-height {
