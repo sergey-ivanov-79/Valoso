@@ -28,7 +28,19 @@
     margin: 10px 0;
 }
 .check-inn .checkbox-inline {
-    padding-left: 0px;
+    padding-left: 5px;
+}
+.row.check-inn {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+.FinishHeader p.title-software {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+.software .panel {
+    border: none;
 }
 .wrapper-checkbox > label {
     font-size: 12px;
@@ -66,6 +78,15 @@
 .add-new-block:hover .fa-plus {
     background-color: #24a5db;
 } 
+.video-software .popover, .category .popover {
+    top: 120px !important;
+}
+.video-software .popover .arrow, .category .popover .arrow {
+    display: none;
+}
+.inner-skills .popover {
+    min-width: 406px !important;
+}
 @media(max-width: 767px) {
     .header-min-height {
         min-height: 60px;
