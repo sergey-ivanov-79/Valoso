@@ -763,12 +763,12 @@
                                 </div><!-- END col-sm-6-dop -->
                                 <div class="col-sm-6-dop"><!-- Begin col-sm-6-dop -->
                                     <h4 class="h4 text-black bold text-uppercase software video-software">video editing software <img class="edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<div class='form-group'>
-                                		<div class='description-dop' id='accordion' role='tablist' aria-multiselectable='true'>
-                                            <div class='panel panel-default'>
-                                                <div id='headingOne' class='FinishHeader clearfix'  data-toggle='collapse' data-parent='#accordion' href='#collapseOne' aria-expanded='true' aria-controls='collapseOne'>
-                                                    <p class='title-software'>Video Editing Software</p>
-                                                </div>
-                                                <div id='collapseOne' class='panel-collapse collapse in' role='tabpanel' aria-labelledby='headingOne'>
+                        		                <ul class='nav nav-tabs' role='tablist'>
+                                                    <li role='presentation' class='active'><a href='#home' aria-controls='home' role='tab' data-toggle='tab'>Video Editing Software</a></li>
+                                                    <li role='presentation'><a href='#profile' aria-controls='profile' role='tab' data-toggle='tab'>3D Software</a></li>
+                                                </ul>
+                                                <div class='tab-content'>    
+                                                   <div role='tabpanel' class='tab-pane active' id='home'> 
                                                     <div class='row check-inn'>
                                                         <div class='wrapper-checkbox'> 
                                                             <label class='checkbox-inline'>
@@ -956,14 +956,9 @@
                                                               <input type='checkbox' id='inlineCheckbox020' value='option020'> VideoLan Movie Creator
                                                             </label> 
                                                         </div>
-                                                   </div> <!-- row -->
-                                                </div>    
-                                            </div>
-                                            <div class='panel panel-default'>
-                                                <div id='headingTwo' class='FinishHeader clearfix'  data-toggle='collapse' data-parent='#accordion' href='#collapseTwo' aria-expanded='true' aria-controls='collapseTwo'>
-                                                    <p class='title-software'>3D Software</p>
-                                                </div>
-                                                <div id='collapseTwo' class='panel-collapse collapse' role='tabpanel' aria-labelledby='headingTwo'>
+                                                   </div> <!--  / row -->
+                                                </div><!-- / tab-pane -->
+                                             <div role='tabpanel' class='tab-pane' id='profile'>  
                                                     <div class='row check-inn'>
                                                         <div class='wrapper-checkbox'> 
                                                             <label class='checkbox-inline'>
@@ -1049,10 +1044,9 @@
                                                               <input type='checkbox' id='inlineCheckbox13' value='option3'> Wavefront
                                                             </label>
                                                         </div>
-                                                   </div> <!-- row -->
-                                                </div>
-                                             </div>    
-                                        </div>
+                                                   </div> <!-- / row -->
+                                            </div><!-- / tab-pane -->
+                                       </div>   <!-- / tab-content -->
                                     </div><div class='placeholder-buttons'><button>Save</button><button class='closed'>Cancel</button></div>
                                     <script>
                                   $(document).ready(function(){
@@ -1787,6 +1781,12 @@ $('.popup-youtube').magnificPopup({
   
   
 });
+</script>
+<script>
+   /* $('.add-new-block').on("click", function(e){
+        e.preventDefault();
+        $(this).closest("")
+    });*/
 </script>
 	</body>
 </html>
