@@ -172,10 +172,10 @@
                 						<label>Template in use:<input type="text" placeholder="Template name here"/></label>
                 					</div><!-- /.template-name -->
                 					<div class="desktop-buttons">
-                						<button class="cloud-button" ><img src="./images/preview-profile/cloud.png" alt="" /></button>
+                						<!--button class="cloud-button" ><img src="./images/preview-profile/cloud.png" alt="" /></button>
                 						<button class="edit-trigger">Preview</button>
                 						<button>Save</button>
-                						<button>Publish</button>
+                						<button>Publish</button-->
                 					</div><!-- /.desktop-buttons -->
                 					<div class="desktop-buttons-640">
                 						<button class="templati"><img src="./images/preview-profile/opt1.png" alt="" /></button>
@@ -659,18 +659,30 @@
                             <span class="fa fa-arrows-v"></span>
                             <span class="fa fa-plus-circle"></span>
     					</div>
-                        <div class="col-sm-12 wrapper-popup-youtube">
+                        <div class="col-sm-12 wrapper-popup-youtube clearfix">
                             <div class="col-xs-6 col-sm-4"><a class="popup-youtube" href="https://www.youtube.com/watch?v=fvoXkpjnzbk"><img class="img-responsive" src="http://img.youtube.com/vi/fvoXkpjnzbk/0.jpg"></a></div>
                             <div class="col-xs-6 col-sm-4"><a class="popup-youtube" href="https://www.youtube.com/watch?v=l2pKANFUnMQ"><img class="img-responsive" src="http://img.youtube.com/vi/l2pKANFUnMQ/0.jpg"></a></div>
                             <div class="col-xs-6 col-sm-4"><a class="popup-youtube" href="https://www.youtube.com/watch?v=KiysBlUFUP8"><img class="img-responsive" src="http://img.youtube.com/vi/KiysBlUFUP8/0.jpg"></a></div>
                             <div class="col-xs-6 col-sm-4"><a class="popup-youtube" href="https://www.youtube.com/watch?v=rg97LNmGdWE"><img class="img-responsive" src="http://img.youtube.com/vi/rg97LNmGdWE/0.jpg"></a></div>
                             <div class="col-xs-6 col-sm-4"><a class="popup-youtube" href="https://www.youtube.com/watch?v=fvoXkpjnzbk"><img class="img-responsive" src="http://img.youtube.com/vi/fvoXkpjnzbk/0.jpg"></a></div>
-                            <div class="col-xs-6 col-sm-4"><div class="add-new-block"><i class="fa fa-plus"></i></div></div>
+                            <div class="col-xs-6 col-sm-4">
+                                <div class="add-new-block">
+                                    <i class="fa fa-plus"></i>
+                                </div>
+                            </div>
                         </div>
                         <div class="add-new-portfolio clearfix">
-                            <h3 class="h3">ADD NEW PORTFOLIO ITEM</h3> 
+                            <h4 class="h4 bold">ADD NEW PORTFOLIO ITEM</h4> 
                             <p>Get your video embed code from where you have uploaded your video and paste it below.</p>   
+                            <textarea placeholder="Embed code..."></textarea>
+                            <select tabindex="Topic">
+                                <option>Select a Topic</option>
+                                <option>Select 2</option>
+                                <option>Select 3</option>
+                            </select>
+                            <div class="placeholder-buttons"><button>Save</button><button class="closed">Cancel</button></div>
                         </div>
+                        <div class="modal-backdrop-1 fade"></div>
     				</li><!-- /.user-portfolio -->
                     <li class="backgr-fon-hover col-sm-12 skills-block no-line"><!-- Begin skills-block -->
     						<h3>Skills</h3>
@@ -685,53 +697,52 @@
                                         <div class='row check-inn'>
                                             <div class='wrapper-checkbox'> 
                                                 <label class='checkbox-inline'>
-                                					<input type='checkbox' id='inlineCheckbox1' class='checkbox1' value='option1' checked> Autos and Vehicles
+                                					<div class='pull-left'><input type='checkbox' id='inlineCheckbox1' class='checkbox1' value='option1' checked></div><div class='media-body'> Autos and Vehicles</div>
                                 				</label> 
                                                 <label class='checkbox-inline'>
-                                                  <input type='checkbox' id='inlineCheckbox2' class='checkbox1' value='option2'> Comedy
+                                                  <div class='pull-left'><input type='checkbox' id='inlineCheckbox2' class='checkbox1' value='option2'></div><div class='media-body'> Comedy</div>
                                                 </label> 
                                                 <label class='checkbox-inline'>
-                                                  <input type='checkbox' id='inlineCheckbox3' class='checkbox1' value='option3'> Education
+                                                  <div class='pull-left'><input type='checkbox' id='inlineCheckbox3' class='checkbox1' value='option3'></div><div class='media-body'> Education</div>
                                                 </label> 
                                                 <label class='checkbox-inline'>
-                                                  <input type='checkbox' id='inlineCheckbox4' class='checkbox1' value='option4'> Film & Animation
+                                                  <div class='pull-left'><input type='checkbox' id='inlineCheckbox4' class='checkbox1' value='option4'></div><div class='media-body'> Film & Animation</div>
                                                 </label> 
                                                 <label class='checkbox-inline'>
-                                                  <input type='checkbox' id='inlineCheckbox5' class='checkbox1' value='option5'> Gaming
+                                                  <div class='pull-left'><input type='checkbox' id='inlineCheckbox5' class='checkbox1' value='option5'></div><div class='media-body'> Gaming</div>
                                                 </label>
                                             </div>
                                             <div class='wrapper-checkbox'>
                                                 <label class='checkbox-inline'>
-                                					<input type='checkbox' id='inlineCheckbox6' class='checkbox1' value='option6'> Howto & Style
+                                					<div class='pull-left'><input type='checkbox' id='inlineCheckbox6' class='checkbox1' value='option6'></div><div class='media-body'> Howto & Style</div>
                                 				</label>
                                                 <label class='checkbox-inline'>
-                                                  <input type='checkbox' id='inlineCheckbox7' class='checkbox1' value='option7'> Music
+                                                  <div class='pull-left'><input type='checkbox' id='inlineCheckbox7' class='checkbox1' value='option7'></div><div class='media-body'> Music</div>
                                                 </label>
                                                 <label class='checkbox-inline'>
-                                                  <input type='checkbox' id='inlineCheckbox8' class='checkbox1' value='option8'> News & Politics
+                                                  <div class='pull-left'><input type='checkbox' id='inlineCheckbox8' class='checkbox1' value='option8'></div><div class='media-body'> News & Politics</div>
                                                 </label>
                                                 <label class='checkbox-inline'>
-                                                  <input type='checkbox' id='inlineCheckbox9' class='checkbox1' value='option9'> Nonprofits & Activism
+                                                  <div class='pull-left'><input type='checkbox' id='inlineCheckbox9' class='checkbox1' value='option9'></div><div class='media-body'> Nonprofits & Activism</div>
                                                 </label>
                                                 <label class='checkbox-inline'>
-                                                  <input type='checkbox' id='inlineCheckbox10' class='checkbox1' value='option10'> People & Blogs
+                                                  <div class='pull-left'><input type='checkbox' id='inlineCheckbox10' class='checkbox1' value='option10'></div><div class='media-body'> People & Blogs</div>
                                                 </label>
                                             </div>
                                             <div class='wrapper-checkbox'>
                                                 <label class='checkbox-inline'>
-                                					<input type='checkbox' id='inlineCheckbox11' class='checkbox1' value='option11'> Pets & Animals
+                                					<div class='pull-left'><input type='checkbox' id='inlineCheckbox11' class='checkbox1' value='option11'></div><div class='media-body'> Pets & Animals</div>
                                 				</label>
                                                 <label class='checkbox-inline'>
-                                                  <input type='checkbox' id='inlineCheckbox12' class='checkbox1' value='option12'> Science & Technology
+                                                  <div class='pull-left'><input type='checkbox' id='inlineCheckbox12' class='checkbox1' value='option12'></div><div class='media-body'> Science & Technology</div>
                                                 </label>
                                                 <label class='checkbox-inline'>
-                                                  <input type='checkbox' id='inlineCheckbox13' class='checkbox1' value='option13'> Sports
+                                                  <div class='pull-left'><input type='checkbox' id='inlineCheckbox13' class='checkbox1' value='option13'></div><div class='media-body'> Sports</div>
                                                 </label>
                                                 <label class='checkbox-inline'>
-                                                  <input type='checkbox' id='inlineCheckbox14' class='checkbox1' value='option14'> Travel & Events
+                                                  <div class='pull-left'><input type='checkbox' id='inlineCheckbox14' class='checkbox1' value='option14'></div><div class='media-body'> Travel & Events</div>
                                                 </label>
                                                 <label class='checkbox-inline'>
-                                                  <input type='checkbox' id='inlineCheckbox15' class='checkbox1' value='option15'> 
                                                 </label>
                                             </div>
                                        </div> <!-- row -->
@@ -764,284 +775,283 @@
                                 <div class="col-sm-6-dop"><!-- Begin col-sm-6-dop -->
                                     <h4 class="h4 text-black bold text-uppercase software video-software">video editing software <img class="edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<div class='form-group'>
                         		                <ul class='nav nav-tabs' role='tablist'>
-                                                    <li role='presentation' class='active'><a href='#home' aria-controls='home' role='tab' data-toggle='tab'>Video Editing Software</a></li>
-                                                    <li role='presentation'><a href='#profile' aria-controls='profile' role='tab' data-toggle='tab'>3D Software</a></li>
+                                                    <li role='presentation' class='active'><a href='#Video' aria-controls='Video' role='tab' data-toggle='tab'>Video Editing Software</a></li>
+                                                    <li role='presentation'><a href='#Software' aria-controls='Software' role='tab' data-toggle='tab'>3D Software</a></li>
                                                 </ul>
                                                 <div class='tab-content'>    
-                                                   <div role='tabpanel' class='tab-pane active' id='home'> 
+                                                   <div role='tabpanel' class='tab-pane active' id='Video'> 
                                                     <div class='row check-inn'>
                                                         <div class='wrapper-checkbox'> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox01' value='option01'> Avidemux
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox01' value='option01'></div><div class='media-body'> Avidemux</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox02' value='option02'> Adobe After Effects
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox02' value='option02'></div><div class='media-body'> Adobe After Effects</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox03' value='option03'> Adobe Premiere Elements
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox03' value='option03'></div><div class='media-body'> Adobe Premiere Elements</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox04' value='option04'> Adobe Premiere Express
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox04' value='option04'></div><div class='media-body'> Adobe Premiere Express</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox05' value='option05'> Adobe Premiere Pro
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox05' value='option05'></div><div class='media-body'> Adobe Premiere Pro</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox06' value='option06'> ArcSoft ShowBiz
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox06' value='option06'></div><div class='media-body'> ArcSoft ShowBiz</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox07' value='option07'> Autodesk Flame
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox07' value='option07'></div><div class='media-body'> Autodesk Flame</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox08' value='option08'> Autodesk Smoke
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox08' value='option08'></div><div class='media-body'> Autodesk Smoke</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox09' value='option09'> Avid DS
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox09' value='option09'></div><div class='media-body'> Avid DS</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox010' value='option010'> Avidemux
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox010' value='option010'></div><div class='media-body'> Avid Symphony</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox011' value='option011'> Adobe After Effects
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox011' value='option011'></div><div class='media-body'> AviSynth</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox012' value='option012'> Adobe Premiere Elements
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox012' value='option012'></div><div class='media-body'> Blender VSE</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox013' value='option013'> Adobe Premiere Express
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox013' value='option013'></div><div class='media-body'> Camtasia Studio</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox014' value='option014'> Adobe Premiere Pro
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox014' value='option014'></div><div class='media-body'> Cinelerra</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox015' value='option015'> ArcSoft ShowBiz
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox015' value='option015'></div><div class='media-body'> Clesh</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox016' value='option016'> Autodesk Flame
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox016' value='option016'></div><div class='media-body'> Corel VideoStudio</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox017' value='option017'> Autodesk Smoke
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox017' value='option017'></div><div class='media-body'> Debugmode Wax</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox018' value='option018'> Avid DS
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox018' value='option018'></div><div class='media-body'> Edius</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox019' value='option019'> Avid Symphony
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox019' value='option019'></div><div class='media-body'> Final Cut Express</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox020' value='option020'> AviSynth
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox020' value='option020'></div><div class='media-body'> Final Cut Pro</div>
                                                             </label> 
                                                         </div>
                                                         <div class='wrapper-checkbox'> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox021' value='option021'> Blender VSE
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox021' value='option021'></div><div class='media-body'> FORscene</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox022' value='option022'> Camtasia Studio
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox022' value='option022'></div><div class='media-body'> Freemake Video Converter</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox023' value='option023'> Cinelerra
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox023' value='option023'></div><div class='media-body'> FXhome Limited</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox024' value='option024'> Clesh
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox024' value='option024'></div><div class='media-body'> Harris Broadcast Velocity</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox025' value='option025'> Corel VideoStudio
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox025' value='option025'></div><div class='media-body'> iMovie</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox026' value='option026'> Debugmode Wax
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox026' value='option026'></div><div class='media-body'> ivsEdits</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox027' value='option027'> Edius
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox027' value='option027'></div><div class='media-body'> Kaltura</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox028' value='option028'> Final Cut Express
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox028' value='option028'></div><div class='media-body'> Kdenlive</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox029' value='option029'> Final Cut Pro
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox029' value='option029'></div><div class='media-body'> Kino</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox030' value='option030'> FORscene
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox030' value='option030'></div><div class='media-body'> Lightworks</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox031' value='option031'> Freemake Video
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox031' value='option031'></div><div class='media-body'> LiVES</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox032' value='option032'> FXhome Limited
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox032' value='option032'></div><div class='media-body'> Lumiera</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox033' value='option033'> Harris Broadcast Velocity
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox033' value='option033'></div><div class='media-body'> Magix Movie Edit Pro</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox034' value='option034'> iMovie
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox034' value='option034'></div><div class='media-body'> Media 100 Suite</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox035' value='option035'> ivsEdits
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox035' value='option035'></div><div class='media-body'> Media Composer</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox016' value='option016'> Kaltura
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox016' value='option036'></div><div class='media-body'> Montage Extreme</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox017' value='option017'> Kdenlive
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox017' value='option037'></div><div class='media-body'> MoviePlus</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox018' value='option018'> Kino
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox018' value='option018'></div><div class='media-body'> MPEG Video Wizard DVD</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox019' value='option019'> Lightworks
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox019' value='option019'></div><div class='media-body'> muvee Reveal</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox020' value='option020'> LiVES
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox020' value='option020'></div><div class='media-body'> OpenShot Video Editor</div>
                                                             </label> 
                                                         </div>
                                                         <div class='wrapper-checkbox'> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox01' value='option01'> Lumiera
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox01' value='option01'></div><div class='media-body'> Pinnacle Studio</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox02' value='option02'> Magix Movie Edit Pro
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox02' value='option02'></div><div class='media-body'> Pinnacle Videospin</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox03' value='option03'> Media 100 Suite
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox03' value='option03'></div><div class='media-body'> Pitivi</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox04' value='option04'> Media Composer
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox04' value='option04'></div><div class='media-body'> Pixorial</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox05' value='option05'> Montage Extreme
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox05' value='option05'></div><div class='media-body'> Roxio Creator</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox06' value='option06'> MoviePlus
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox06' value='option06'></div><div class='media-body'> SGO Mistika</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox07' value='option07'> MPEG Video Wizard DVD
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox07' value='option07'></div><div class='media-body'> Shotcut</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox08' value='option08'> muvee Reveal
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox08' value='option08'></div><div class='media-body'> Sony Vegas Movie Studio</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox09' value='option09'> OpenShot Video Editor
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox09' value='option09'></div><div class='media-body'> Sony Vegas Pro</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox010' value='option010'> Pinnacle Studio
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox010' value='option010'></div><div class='media-body'> Video Toaster</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox011' value='option011'> Pinnacle Videospin
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox011' value='option011'></div><div class='media-body'> VideoLan Movie Creator</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox012' value='option012'> Pitivi
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox012' value='option012'></div><div class='media-body'> VideoPad</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox013' value='option013'> Pixorial
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox013' value='option013'></div><div class='media-body'> VideoThang</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox014' value='option014'> Roxio Creator
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox014' value='option014'></div><div class='media-body'> VirtualDub</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox015' value='option015'> SGO Mistika
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox015' value='option015'></div><div class='media-body'> VirtualDubMod</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox016' value='option016'> Shotcut
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox016' value='option016'></div><div class='media-body'> WeVideo</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox017' value='option017'> Sony Vegas Movie Studio
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox017' value='option017'></div><div class='media-body'> Windows Movie Makero</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox018' value='option018'> Sony Vegas Pro
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox018' value='option018'></div><div class='media-body'> Xedio</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox019' value='option019'> Video Toaster
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox019' value='option019'></div><div class='media-body'> Xpress Pro</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox020' value='option020'> VideoLan Movie Creator
                                                             </label> 
                                                         </div>
                                                    </div> <!--  / row -->
                                                 </div><!-- / tab-pane -->
-                                             <div role='tabpanel' class='tab-pane' id='profile'>  
+                                             <div role='tabpanel' class='tab-pane' id='Software'>  
                                                     <div class='row check-inn'>
                                                         <div class='wrapper-checkbox'> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox1' value='option1'> 3D Studio Max
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox1' value='option1'></div><div class='media-body'> 3D Studio Max</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox2' value='option2'> Autodesk Inventor
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox2' value='option2'></div><div class='media-body'> Autodesk Inventor</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox22' value='option22'> Cinema 4D
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox22' value='option22'></div><div class='media-body'> Cinema 4D</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox3' value='option3'> Electric Image
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox3' value='option3'></div><div class='media-body'> Electric Image</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox4' value='option4'> Google Sketchup
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox4' value='option4'></div><div class='media-body'> Google Sketchup</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox44' value='option44'> Materialise
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox44' value='option44'></div><div class='media-body'> Materialise</div>
                                 							</label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox5' value='option5'> POV-Ray document
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox5' value='option5'></div><div class='media-body'> POV-Ray document</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox55' value='option55'> Solid Edge
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox55' value='option55'></div><div class='media-body'> Solid Edge</div>
                                                             </label> 
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox19' value='option19'> Z Brush
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox19' value='option19'></div><div class='media-body'> Z Brush</div>
                                                             </label> 
                                                         </div>
                                                         <div class='wrapper-checkbox'>
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox8' value='option1'> 3D Coat
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox8' value='option1'></div><div class='media-body'> 3D Coat</div>
                                 							</label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox9' value='option2'> Blender
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox9' value='option2'></div><div class='media-body'> Blender</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox99' value='option2'> Corona 3D
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox99' value='option2'></div><div class='media-body'> Corona 3D</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox10' value='option3'> Gemvision
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox10' value='option3'></div><div class='media-body'> Gemvision</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox11' value='option1'> Lightwave 3D
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox11' value='option1'></div><div class='media-body'> Lightwave 3D</div>
                                 							</label>
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox1101' value='option1'> Maya
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox1101' value='option1'></div><div class='media-body'> Maya</div>
                                 							</label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox12' value='option2'> Rhinoceros
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox12' value='option2'></div><div class='media-body'> Rhinoceros</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox6' value='option6'> Solidworks
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox6' value='option6'></div><div class='media-body'> Solidworks</div>
                                                             </label>
                                                             <label class='checkbox-inline chk-oth other-1'>
-                                                              <input type='checkbox' id='other-1' value='option7'> <span class='oth-box'>Other </span>
+                                                              <div class='pull-left'><input type='checkbox' id='other-1' value='option7'></div><div class='media-body'> <span class='oth-box'>Other </span></div>
                                                             </label>
                                                         </div>
                                                         <div class='wrapper-checkbox'>
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox14' value='option14'> Autocad
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox14' value='option14'></div><div class='media-body'> Autocad</div>
                                 							</label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox15' value='option15'> Blitz3D
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox15' value='option15'></div><div class='media-body'> Blitz3D</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox16' value='option16'> Geomagic
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox16' value='option16'></div><div class='media-body'> Geomagic</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                  								<input type='checkbox' id='inlineCheckbox17' value='option17'> Messiah
+                                  								<div class='pull-left'><input type='checkbox' id='inlineCheckbox17' value='option17'></div><div class='media-body'> Messiah</div>
                                 							</label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox18' value='option18'> Sculptress
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox18' value='option18'></div><div class='media-body'> Sculptress</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox1801' value='option18'> Pro-E
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox1801' value='option18'></div><div class='media-body'> Pro-E</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox66' value='option66'> CATIA
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox66' value='option66'></div><div class='media-body'> CATIA</div>
                                                             </label>
                                                             <label class='checkbox-inline'>
-                                                              <input type='checkbox' id='inlineCheckbox13' value='option3'> Wavefront
+                                                              <div class='pull-left'><input type='checkbox' id='inlineCheckbox13' value='option3'></div><div class='media-body'> Wavefront</div>
                                                             </label>
                                                         </div>
                                                    </div> <!-- / row -->
@@ -1652,7 +1662,7 @@
     });
 </script>
 <script>
-    $(function() {
+   /* $(function() {
         $(document).on('click', '.edit-container-left button.active', function(e){
                 e.preventDefault();
                 $('body').addClass('visible');
@@ -1668,7 +1678,7 @@
                 $('body').removeClass('visible');
                 
         });
-    });
+    });*/
 </script>
 <script>
         $(document).on('click', '.delault-background li', function() {
@@ -1783,10 +1793,18 @@ $('.popup-youtube').magnificPopup({
 });
 </script>
 <script>
-   /* $('.add-new-block').on("click", function(e){
+    $('.add-new-block').on("click", function(e){
         e.preventDefault();
-        $(this).closest("")
-    });*/
+        $(this).closest(".backgr-fon-hover").addClass('opened');
+        $(this).closest(".backgr-fon-hover").removeClass('disp-none');
+    });
+</script>
+<script>
+    $('.closed, .addition').click(function(e){
+        e.preventDefault();
+        $(this).parents('.backgr-fon-hover').removeClass('opened');
+        $(this).parents('.backgr-fon-hover').addClass('disp-none');
+    });
 </script>
 	</body>
 </html>

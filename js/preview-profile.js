@@ -94,13 +94,17 @@ $(document).ready(function(){
 		$('.templati-tablet-trigger').fadeOut();
 	});
 	$('.templati').click(function(){
+	   $('.designers-tablet').fadeOut();
 		$('.templati-tablet-trigger').fadeIn();
 	});
 	$('.close-designers').click(function(){
+	   
 		$('.designers-tablet').fadeOut();
 	});
 	$('.paleta').click(function(){
+	   $('.templati-tablet-trigger').fadeOut();
 		$('.designers-tablet').fadeIn();
+        $('.designers-tablet').addClass('active');
 	});
 });
 

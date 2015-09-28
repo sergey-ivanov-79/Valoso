@@ -1,6 +1,6 @@
 .filter-btn {
     padding-left: 15px;
-    margin: 20px 0;
+    margin: 25px 0 5px;
 }
 .filter-btn p {
     font-size: 16px;
@@ -28,12 +28,20 @@
     margin: 10px 0;
 }
 .check-inn .checkbox-inline {
-    padding-left: 5px;
+    padding-left: 0px;
+    margin-left: 0;
 }
 .row.check-inn {
     margin-right: 0px;
     margin-left: 0px;
 }
+.wrapper-checkbox .checkbox-inline .media-body {
+    padding-left: 5px;
+}
+.software .tab-content>.tab-pane {
+    padding-left: 0;
+    padding-right: 0;
+} 
 .FinishHeader p.title-software {
     color: #fff;
     font-size: 16px;
@@ -43,7 +51,7 @@
     border: none;
 }
 .wrapper-checkbox > label {
-    font-size: 12px;
+    font-size: 11px;
 }
 .add-new-portfolio {
     display: none;
@@ -84,14 +92,59 @@
 .video-software .popover .arrow, .category .popover .arrow {
     display: none;
 }
-.video-software .nav>li>a {
+.video-software .nav.nav-tabs>li>a {
     margin: auto;
     padding: 10px;
     font-size: 16px;
     font-weight: 600;
+    border: 1px solid #24a5db;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin-right: 5px;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.video-software .nav-tabs>li.active>a, 
+.video-software .nav-tabs>li.active>a:focus, 
+.video-software .nav-tabs>li.active>a:hover {
+    color: #fff;
+    background-color: #24a5db;
+}
+.video-software .nav-tabs {
+    border: none;
 }
 .addition .tab-content>.tab-pane {
-    margin-top: 20px;
+    margin-top: 15px;
+}
+.add-new-portfolio .h4 {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+.add-new-portfolio textarea {
+    height: 70px;
+    background-color: #f5f3f5;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #a1a1a1;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    width: 100%;
+    margin-top: 15px;
+}
+.add-new-portfolio select {
+    border: 1px solid #ddd;
+    height: 35px;
+    background-color: #f5f3f5;
+    outline: none;
+    width: 100%;
+    margin-bottom: 25px;
+    color: #a1a1a1;
+    padding: 0 10px;
 }
 .inner-skills .popover {
     min-width: 406px !important;
@@ -102,9 +155,15 @@
 .user-portfolio .add-new-portfolio {
     position: absolute;
     top: 50%;
-    margin-top: 100px; /* changes */
+    margin-top: -152px;
     left: 50%;
-    margin-left: 150px; /* changes */
+    background-color: #fff;
+    width: 564px;
+    padding: 20px;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+    box-shadow: 2px 3px 9px 1px rgba(0, 0, 0, .5);
+    margin-left: -282px;
+    z-index: 152;
 }
 .opened .add-new-portfolio {
     display: block;
@@ -112,8 +171,61 @@
 .inner-skills .popover .popover-content {
     top: auto;
 }
+.opened .modal-backdrop-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 151;
+    background-color: #000;
+    opacity: 0.5;
+}
+.disp-none .add-new-portfolio, .disp-none .modal-backdrop-1 {
+    display: none;
+}
+.user-portfolio {
+    padding-left: 0;
+    padding-right: 0;
+}
+.wrapper-popup-youtube { padding: 0 5px;}
+.wrapper-popup-youtube .col-xs-6.col-sm-4 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
 @media(max-width: 767px) {
     .header-min-height {
-        min-height: 60px;
+        /*min-height: 60px;*/
+    }
+    .user-profile-left-details h3 div.popover {
+        width: auto;
+        max-width: 276px !important;
+    }
+    .designers-tablet.active .edit-container-right {
+        display: block !important;
+    }
+}
+@media(max-width: 639px) {
+    .user-portfolio .add-new-portfolio {
+        margin-top: -152px;
+        width: 284px;
+        margin-left: -142px;
+    }
+    .add-new-block .fa-plus {
+        font-size: 16px;
+        margin-top: -13px;
+        margin-left: -13px;
+        height: 26px;
+        width: 26px;
+        line-height: 28px;
+    }
+    .filter-btn .btn  {
+        font-size: 12px;
+    }
+}
+@media(max-width: 479px) {
+    .video-software .nav.nav-tabs>li>a {
+        padding: 5px;
+        font-size: 12px;
     }
 }
