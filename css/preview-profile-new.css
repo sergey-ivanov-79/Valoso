@@ -592,6 +592,7 @@ h1.page-bg {
 }
 .upload-image button:first-child:hover {
    background-color: white;
+   color: #ff7c99;
 }
 .upload-image button:first-child:hover .fileupload span {
     color: #ff7c99;
@@ -757,6 +758,7 @@ button.btn.save-btn:hover  {
     left: 5px;
     height: 100%;
     padding-top: 10px;
+    z-index: -1;
 }
 .template-name label {
     color: white;
@@ -2744,6 +2746,9 @@ button.btn.save-btn:hover  {
 	.user-profile-left > .col-sm-9:after {
 	  	height: 190px;
 	}
+    .upload-image button:first-child, .upload-image button:last-child {
+        font-size: 12px;
+    } 
 }/* 768px End */
 @media(max-width: 767px) {
 	.user-profile-left-picture {
@@ -2914,11 +2919,11 @@ button.btn.save-btn:hover  {
 	}
 	.user-profile-left-details h3 div {
 	  	/*position: absolute;*/
-	  	right: 0;
-	  	top: 35px;	
+	  	/*right: 0;
+	  	top: 35px;*/	
   	  	/*width: 20%;*/
-  		text-align: center;
-	  	padding: 7px 5px;
+  		/*text-align: center;
+	  	padding: 7px 5px;*/
 	}
 	button.hire-me {
 		float: right;
@@ -3008,10 +3013,10 @@ button.btn.save-btn:hover  {
 	  	font-size: 16px;
 	}
 	.user-profile-left-details h3 div {
-	    float: right;
+	    /*float: right;
 	    position: relative;
 	    top: -5px;
-	    width: 100px;
+	    width: 100px;*/
 	}
 	.user-profile-left-details p,.user-exp-lang {
 	  	font-size: 16px;
@@ -3185,11 +3190,11 @@ button.btn.save-btn:hover  {
 	  	font-size: 22px;
 	}
 	.user-profile-left-details h3 div {
-	  	float: right;
+	  	/*float: right;
 	  	position: relative;
 	  	top: 0;
 	  	width: 90px;
-	  	margin: 0;
+	  	margin: 0;*/
 	}
 	.user-profile-left ul li:nth-of-type(1) {
 		width: 30%;
@@ -3251,8 +3256,8 @@ button.btn.save-btn:hover  {
 	  	font-size: 20px;
 	}
 	.user-profile-left-details h3 div {
-	  	font-size: 12px;	
-  	  	width: 78px;
+	  	/*font-size: 12px;	
+  	  	width: 78px;*/
 	}
 	.verified-icon i {
 	  	font-size: 16px;
