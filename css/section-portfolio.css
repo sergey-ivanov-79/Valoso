@@ -119,6 +119,9 @@
 .addition .tab-content>.tab-pane {
     margin-top: 15px;
 }
+.addition .tab-content.tabline>.tab-pane {
+    margin-top: 0;
+}
 .add-new-portfolio .h4 {
     margin-top: 0;
     margin-bottom: 25px;
