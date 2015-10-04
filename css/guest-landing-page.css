@@ -112,12 +112,12 @@ a.blue-color:hover {
     opacity: 0.3;
     z-index: 0;
 }
+.hidden-xs > p {
+    line-height: 1;
+}
 .header-guest  .collapse.navbar-collapse {
     margin-left: -15px;
     margin-top: 10px;
-}
-.hidden-xs > p {
-    line-height: 1;
 }
 .header-guest .navbar-brand.navbar-brand-mobile {
     margin-left: 0;
@@ -286,6 +286,15 @@ a.blue-color:hover {
 .wrapp-images .col-xs-offset-1 {
     margin-right: 8.33333333%;
 }
+.footer-widget .widget-content ul {
+    text-align: left;
+}
+.text-center .b-hover:hover {
+    border: 2px solid #6ec7eb;
+}
+.footer-widget .widget-content ul li a:hover {
+    color: #4DCBFF;
+}
 @media (max-width: 1160px) and (min-width: 992px){
     .new-landing-page .intro-1-home-2 h2 {
         font-size: 42px;
@@ -360,6 +369,14 @@ a.blue-color:hover {
     .header-guest .collapse.navbar-collapse {
         margin-top: 0;
     }
+    .footer-widget .widget-content ul {
+        text-align: center;
+    }
+    .new-landing-page .container-fluid div > .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .row.botCopy { text-align: center;}
 }
 @media (max-width: 767px) and (min-width: 639px) {
    .left-image p, .right-image p {
@@ -397,8 +414,8 @@ a.blue-color:hover {
         padding-top: 0;
     }
     .left-image p, .right-image p {
-        padding-bottom: 0px;
-        padding-top: 0px;
+        /*padding-bottom: 0px;
+        padding-top: 0px;*/
     }
     .wrapp-images {
         padding: 0;
