@@ -295,6 +295,12 @@ a.blue-color:hover {
 .footer-widget .widget-content ul li a:hover {
     color: #4DCBFF;
 }
+.modal-content .tab-pane .btn.btn-primary.btn-lg {
+    margin-bottom: 10px;
+}
+.modal-content .tab-content .tab-pane .btn.btn-lg {
+    text-align: center;
+}
 @media (max-width: 1160px) and (min-width: 992px){
     .new-landing-page .intro-1-home-2 h2 {
         font-size: 42px;
@@ -351,7 +357,7 @@ a.blue-color:hover {
         border-width: 0px;
     }
     .designe {
-        font-size: 18px;
+        font-size: 16px;
     }
     .header-guest .navbar {
         border: 1px solid #ddd;
@@ -377,6 +383,9 @@ a.blue-color:hover {
         margin-right: 0;
     }
     .row.botCopy { text-align: center;}
+    .modal-content .tab-pane .btn.btn-primary.btn-lg {
+        font-size: 12px;
+    }
 }
 @media (max-width: 767px) and (min-width: 639px) {
    .left-image p, .right-image p {
@@ -420,6 +429,9 @@ a.blue-color:hover {
     .wrapp-images {
         padding: 0;
     }
+    .tab-pane .wrapper-info p {
+        font-size: 14px;
+    }
 }
 @media (max-width: 480px) {
     .header.header-guest .logo-main-tab {
@@ -428,6 +440,9 @@ a.blue-color:hover {
     }
     .new-landing-page .carousel-capt .btn.btn-primary.btn-lg {
         padding: 5px 10px;
+    }
+    .new-landing-page .carousel-capt .btn.btn-primary.btn-lg {
+        font-size: 11px;
     }
 }
 @media (max-width: 479px) {
@@ -445,9 +460,6 @@ a.blue-color:hover {
     }
     .new-landing-page .carousel-capt .btn.btn-primary.btn-lg {
         margin-top: 8px;
-    }
-    .new-landing-page .carousel-capt .btn.btn-primary.btn-lg {
-        font-size: 11px;
     }
     .wrapper-featured .col-xs-6.col-sm-3 {
         width: 100%;
