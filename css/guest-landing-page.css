@@ -394,7 +394,7 @@ a.blue-color:hover {
 }
 @media (max-width: 639px) {
     .new-landing-page .intro-1-home-2 h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
     .new-landing-page .carousel-capt {
             margin-top: -80px;
@@ -432,6 +432,10 @@ a.blue-color:hover {
     .tab-pane .wrapper-info p {
         font-size: 14px;
     }
+    
+    .new-landing-page .bg-top{
+        padding-bottom: 80%;
+    }
 }
 @media (max-width: 480px) {
     .header.header-guest .logo-main-tab {
@@ -447,16 +451,13 @@ a.blue-color:hover {
 }
 @media (max-width: 479px) {
     .new-landing-page .intro-1-home-2 h2 {
-        font-size: 16px;
+        font-size: 18px;
     }
     .designe {
         margin: 0;
     }
     .new-landing-page .intro-1-home-2.dop h2 {
         margin-bottom: 0px;
-    }
-    .new-landing-page .carousel-capt {
-        margin-top: -60px;
     }
     .new-landing-page .carousel-capt .btn.btn-primary.btn-lg {
         margin-top: 8px;
