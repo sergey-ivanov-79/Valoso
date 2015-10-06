@@ -230,22 +230,22 @@
     font-size: 30px;
     font-weight: 600;
 }
-.added-sim-640.sim-640 .preview-profile-wrapper > .addition.container {
+.added-sim-640.sim-640 .preview-profile-wrapper > .addition.container.dop-top-info {
     margin-top: 106px;
 }
-.sim-640 .preview-profile-wrapper > .container {
+.sim-640 .preview-profile-wrapper > .container.wrapp-emptyprofile-info {
     margin-bottom: 108px;
 }
-.added-sim-640.sim-640 .ipad-simulator {
+.added-sim-640.sim-640 .ipad-simulator.ipad-simulator-dop {
     margin-top: 201px;
 }
-.phone-simulator {
+.phone-simulator.phone-simulator-dop {
     margin-top: 201px;
 }
-.added-sim-320 .preview-profile-wrapper > .addition.container {
+.added-sim-320 .preview-profile-wrapper > .addition.container.dop-top-info {
     margin-top: 98px;
 }
-.sim-320 .preview-profile-wrapper > .container {
+.sim-320 .preview-profile-wrapper > .container.wrapp-emptyprofile-info {
     margin-bottom: 98px;
 }
 .user-profile-left-picture > img {
@@ -284,6 +284,13 @@
     text-align: center;
     background-color: #cccccc;
     color: #474747;
+}
+.dop-top-info .MaterialTabs,  .total-of-prints {
+    margin-bottom: 10px;
+}
+.sim-320 .dop-top-info .MaterialTabs,
+.sim-320 .dop-top-info .total-of-prints {
+    width: 100%;
 }
 .addition .big-materials-block {
     padding-bottom: 20px;
