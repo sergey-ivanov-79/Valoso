@@ -311,6 +311,32 @@
     color: #727272;
 }
 .innerColorMaterial p.Rectangle { color: #fff;}
+.emptyprofile-info > .btn.btn-primary {
+    background-image: -webkit-linear-gradient(top, #9fe3ff 0%, #42add9 100%);
+    background-image: -o-linear-gradient(top, #9fe3ff 0%, #42add9 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#9fe3ff), to(#42add9));
+    background-image: linear-gradient(to bottom, #9fe3ff 0%, #42add9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff9fe3ff', endColorstr='#ff42add9', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border: 2px solid #9fe3ff ;
+}
+.emptyprofile-info > .btn.btn-primary:hover {
+    background-image: -webkit-linear-gradient(top, #42add9 0%, #9fe3ff 100%);
+    background-image: -o-linear-gradient(top, #42add9 0%, #9fe3ff 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#42add9), to(#9fe3ff));
+    background-image: linear-gradient(to bottom, #42add9 0%, #9fe3ff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#42add9', endColorstr='#9fe3ff', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+    background-repeat: repeat-x;
+    border: 2px solid #42add9 ;
+}
+.footer-widget .widget-content ul {
+    text-align: left;
+}
+.footer-widget .widget-content ul li a:hover {
+    color: #4DCBFF;
+}
 @media (max-width: 992px) {
     .desktop-buttons {
         right: 35%;
@@ -332,6 +358,9 @@
     }
     .desktop-buttons .cloud-button { display: none;}
     .desktop-buttons-640 { display: block;}
+    .footer-widget .widget-content ul {
+        text-align: center;
+    }
 }
 @media(max-width: 639px) {
     .user-portfolio .add-new-portfolio {

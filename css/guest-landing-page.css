@@ -301,6 +301,18 @@ a.blue-color:hover {
 .modal-content .tab-content .tab-pane .btn.btn-lg {
     text-align: center;
 }
+.modal-body .checkbox#remember_me_box, .modal-body .checkbox#exclusive_offers_box  {
+    margin-top: 0;
+}
+.modal-body .checkbox#remember_me_box .customR > input,
+.modal-body .checkbox#exclusive_offers_box .customR > input {
+    margin-left: 0;
+}
+.modal-body .checkbox#remember_me_box .customR > label,
+.modal-body .checkbox#exclusive_offers_box .customR > label {
+    margin-left: 15px;
+    margin-top: 4px;
+}
 @media (max-width: 1160px) and (min-width: 992px){
     .new-landing-page .intro-1-home-2 h2 {
         font-size: 42px;
@@ -465,6 +477,10 @@ a.blue-color:hover {
     .carousel-capt a.btn {
         margin-right: 0px;
         margin-left: 0px; 
+    }
+    #remember_me_box, .password-request-p.pull-right {
+        float: none !important;
+        text-align: center;
     }
 }
 @media (max-width: 479px) {
