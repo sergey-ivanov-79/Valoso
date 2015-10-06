@@ -32,12 +32,9 @@ ol li { list-style-type: none;}
     height: 230px;
     background-color: #eff8fd;
 }
-
 .addition .rewievs .fs-scrollbar-content {
     height: 230px;
 }
-
-
 .addition  .user-ratings h2,
 .addition  .skills-block h2,
 .addition  .big-materials-block h2  {
@@ -62,6 +59,8 @@ ol li { list-style-type: none;}
     margin: 0;
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .addition .tabsuper {
     border: none; 
@@ -400,6 +399,9 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
 .added-sim-640.sim-640 .together-trash, .added-sim-320.sim-320 .together-trash {
     display: none;
 }
+.added-sim-640.sim-640 .edit-together.edit-together-dop, .added-sim-320.sim-320 .edit-together.edit-together-dop {
+    display: block;
+}
 /* END remove for tablet-sim and for phone-sim*/
 .scrollbar-big .fs-scrollbar-handle {
     border-radius: 0px 0px 0 0;
@@ -432,7 +434,7 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
 .delault-background li.active img { opacity: 1; outline: 1px solid red;}
 
 #picker-1, #picker-2, #picker-3, #picker-4 {
-	border-left:20px solid #ffffff;
+	border-left: 10px solid #ffffff;
 }
 .colpick { z-index: 999;}
 .colpick  {height: 178px; }
@@ -496,7 +498,7 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
 .added-sim-320 .addition .profile-top-img > img { height: auto;}
 .sim-320 .desktop-buttons button {
     font-size: 14px;
-    width: 80px;
+    /*width: 80px;*/
 }
 .added-sim-320 .addition .progress-tab a, 
 .added-sim-320 .addition .progress-tab p,
@@ -627,10 +629,14 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
     padding-right: 82px;
 } 
 } 
-/* END for phone-sim */
 
+.user-profile-left-details .description { min-height: 120px;}
+@media (max-width: 992px) {
+    .user-profile-left-details .description { min-height: 105px;}
+}
+/* END for phone-sim */
 .inner-skills .popover {
-    max-width: 406px;
+    max-width: 400px;
 }
 .wrapper-checkbox {
     width: 33.33%;
@@ -650,6 +656,75 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
 .inner-skills .p-18 {
     margin-bottom: 15px;
 }
+
+
+/* Begin for Proposal*/
+
+.proposed-table table { 
+    width: 100%;
+}
+.proposed-table .table-responsive {
+    border: 1px solid #ddd;
+}
+.proposed-table .table {
+    margin-bottom: 0px;
+}
+/*.proposed-table table tr th:first-child, .proposed-table table tr td:first-child {
+    width: 4%;
+}*/
+.proposed-table .table > thead > tr > th {
+    border-bottom: 1px solid #ddd;
+    background-color: #a3a3a3;
+    color: #fff;
+    padding: 5px 8px;
+}
+.proposed-table .table > tbody > tr > td {
+    padding: 5px 8px;
+} 
+.proposed-table table tr th.th-1,  .proposed-table table tr td.td-1 {
+    width: 1%;
+    text-align: center;
+} 
+.proposed-table table tr td.td-1 {
+    border-right: 1px solid #ddd;
+}
+.proposed-table table tr th.th-2,  .proposed-table table tr td.td-2 {
+    width: 49%;
+} 
+.proposed-table table tr th.th-3,  .proposed-table table tr td.td-3,
+.proposed-table table tr th.th-4,  .proposed-table table tr td.td-4 {
+    width: 25%;
+} 
+.proposed-table table tr th, .proposed-table table tr td  {
+    width: 32%;
+    color: #474747;
+    font-size: 14px;
+}
+.user-proposal-single {
+    border: 1px solid #ddd;
+    background-color: #eff8fd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.user-proposal-single .color-blue.bold {
+    padding: 20px 0 10px;
+}
+.wrapp-proposal-total { margin-top: 15px;}
+.wrapp-proposal-total p.p-total { 
+    float: left;
+    color: #474747;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.wrapp-proposal-total button.hire-me {
+    font-weight: 400;
+    float: right;
+    margin-bottom: 0;
+}
+/* END for Proposal*/
+
 @media (max-width: 767px) {
     .top-menu {
         top: 0;
@@ -1098,3 +1173,32 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
 .text-black { color: #222222 !important;}
 
 /* END Special Classes */
+.dropdown.dropdown-tip {
+    right: -20px;
+    left: auto;
+}
+.dropdown.dropdown-tip:before {
+    border-bottom: 13px solid rgba(0, 0, 0, 0.2);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    content: "";
+    display: inline-block;
+    right: 50px;
+    left: auto;
+    position: absolute;
+    top: -13px;
+}
+.dropdown.dropdown-tip:after {
+    border-bottom: 13px solid #fff;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+    content: "";
+    display: inline-block;
+    right: 49px;
+    left: auto;
+    position: absolute;
+    top: -11px;
+}
+.wrappPaginationMaterials .pagination.paginationMaterials {
+    position: static;
+}

@@ -196,6 +196,112 @@
     padding-right: 10px;
     padding-left: 10px;
 }
+.desktop-buttons {
+    right: 40%;
+}
+.profile-top-img {
+    position: relative;
+}
+.emptyprofile-info {
+    border: 1px solid #ff7c99;
+    background-color: #fdf2f5;
+    margin: 5px 0;
+    text-align: center;
+}
+.preview-profile-wrapper > .container.wrapp-emptyprofile-info {
+    background: none;
+    box-shadow: none;
+    height: auto;
+    width: auto;
+}
+.upload-foto {
+    background-color: #cccccc;
+    position: relative;
+    padding-top: 17.576%;
+    max-height: 100%;
+    width: 100%;
+    z-index: -1;
+    padding-bottom: 18%;
+}
+.upload-foto .h2 {
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+}
+.added-sim-640.sim-640 .preview-profile-wrapper > .addition.container {
+    margin-top: 106px;
+}
+.sim-640 .preview-profile-wrapper > .container {
+    margin-bottom: 108px;
+}
+.added-sim-640.sim-640 .ipad-simulator {
+    margin-top: 201px;
+}
+.phone-simulator {
+    margin-top: 201px;
+}
+.added-sim-320 .preview-profile-wrapper > .addition.container {
+    margin-top: 98px;
+}
+.sim-320 .preview-profile-wrapper > .container {
+    margin-bottom: 98px;
+}
+.user-profile-left-picture > img {
+    border: 2px solid #4f4f4f;
+}
+.user-profile-left ul li:nth-of-type(6) {
+    min-height: 116px;
+}
+.new-gray {
+    color: #cccccc !important;
+}
+.addition .fa-arrows-v {
+    font-size: 24px;
+    padding: 3px 7px;
+}
+.user-proposal h3, .user-experience h3, .user-education h3, .user-certifications h3, .user-publication h3, .user-portfolio h3, .user-ratings h3, .skills-block h3, .big-materials-block h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.addition .fa-arrows-v {
+    top: 10px;
+}
+.addition .fa-plus-circle {
+    font-size: 32px;
+    top: 10px;
+    right: 50px;
+}
+.MaterialTabs {
+    width: 49%;
+    margin-right: 1%;
+}
+.total-of-prints {
+    float: left;
+    width: 49%;
+    padding: 11px;
+    text-align: center;
+    background-color: #cccccc;
+    color: #474747;
+}
+.addition .big-materials-block {
+    padding-bottom: 20px;
+}
+.emptyprofile-info i {
+    color: #474747;
+    font-weight: 600;
+}
+.emptyprofile-info P {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 15px 10px;
+}
+@media (max-width: 992px) {
+    .desktop-buttons {
+        right: 35%;
+    }
+}
 @media(max-width: 767px) {
     .header-min-height {
         /*min-height: 60px;*/
@@ -207,6 +313,11 @@
     .designers-tablet.active .edit-container-right {
         display: block !important;
     }
+    .MaterialTabs, .total-of-prints {
+        width: 100%;
+    }
+    .desktop-buttons .cloud-button { display: none;}
+    .desktop-buttons-640 { display: block;}
 }
 @media(max-width: 639px) {
     .user-portfolio .add-new-portfolio {
@@ -224,6 +335,14 @@
     }
     .filter-btn .btn  {
         font-size: 12px;
+    }
+}
+@media(max-width: 480px) {
+    .hire-me-section button.hire-me {
+        margin-right: 3px;
+    }
+    .display-desktop {
+        display: block !important;
     }
 }
 @media(max-width: 479px) {

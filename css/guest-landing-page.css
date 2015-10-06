@@ -370,7 +370,7 @@ a.blue-color:hover {
         padding-right: 0;
     }
     .header-guest .navbar-toggle {
-        margin-top: 17px;
+        margin-top: 12px;
     }
     .header-guest .collapse.navbar-collapse {
         margin-top: 0;
@@ -455,9 +455,6 @@ a.blue-color:hover {
     }
     .designe {
         margin: 0;
-    }
-    .new-landing-page .intro-1-home-2.dop h2 {
-        margin-bottom: 0px;
     }
     .new-landing-page .carousel-capt .btn.btn-primary.btn-lg {
         margin-top: 8px;
