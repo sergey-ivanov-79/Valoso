@@ -60,9 +60,9 @@
 					</div><!-- /.template-name -->
 					<div class="desktop-buttons">
 						<button class="cloud-button"><img src="images/preview-profile/cloud.png" alt="" /></button>
-						<button class="edit-trigger">Preview</button>
-						<button>Save</button>
-						<button>Publish</button>
+						<button class="edit-trigger" style="display: none;">Preview</button>
+						<button style="display: none;">Save</button>
+						<button style="display: none;">Publish</button>
 					</div><!-- /.desktop-buttons -->
 					<div class="desktop-buttons-640">
 						<button class="templati"><img src="images/preview-profile/opt1.png" alt="" /></button>
@@ -187,9 +187,9 @@
                 					</div><!-- /.template-name -->
                 					<div class="desktop-buttons">
                 						<button class="cloud-button" ><img src="./images/preview-profile/cloud.png" alt="" /></button>
-                						<button class="edit-trigger">Preview</button>
-                						<button>Save</button>
-                						<button>Publish</button>
+                						<button class="edit-trigger" style="display: none;">Preview</button>
+                						<button style="display: none;">Save</button>
+                						<button style="display: none;">Publish</button>
                 					</div><!-- /.desktop-buttons -->
                 					<div class="desktop-buttons-640">
                 						<button class="templati"><img src="./images/preview-profile/opt1.png" alt="" /></button>
@@ -335,6 +335,13 @@
 					</div><!-- /.some-arrow -->
 				</div><!-- /.edit-content-right-template -->
 			</div><!-- /.edit-container -->
+            <div class="container wrapp-emptyprofile-info">
+                <div class="row">
+                    <div class="emptyprofile-info">
+                        <button class="btn btn-primary p-16">Click here</button><p>to make your bid for <i>project title</i></p>
+                    </div>
+                </div>
+            </div>
 			<div class="addition container no-padding">
               <div class="scrollbar-big inner-addition clearfix">	  
 				<div class="full-container">
@@ -456,7 +463,7 @@
 							</div>
 						</div><!-- /.designers-body -->
 					</div><!-- /.designers-tablet -->
-
+                    
 					<div class="profile-top-img">
 						<div class="buy-a-domain">
 						<h5>Your URL is johndoe.valoso.com</h5>
@@ -468,7 +475,10 @@
 							</div><!-- /.not-valoso-domain -->
 							<h5 class="clearfix"><a data-toggle="modal" data-target="#already-have-domain">Already have a domain name?</a></h5>
 						</div><!-- /.buy-a-domain -->
-						<img src="./images/preview-profile/triangle.jpg" alt="Featured Image" />
+                        <div class="upload-foto">
+                            <h2 class="h2">UPLOAD A COVER PHOTO</h2>
+                        </div>
+						<img src="./images/preview-profile/city.jpg" alt="Featured Image" style="display: none;"/>
 						<button>
 							<div class="fileUpload btn btn-primary">
 							    <img src="./images/preview-profile/cam.png" alt="Edit Icon" />
@@ -476,10 +486,10 @@
 							</div>
 						</button>
 					</div><!-- /.profile-top-img -->
-					<div class="col-sm-12 user-profile-left user-profile-right clearfix display-desktop">
+					<div class="col-sm-12 user-profile-left user-profile-right clearfix display-desktop"  style="display: block;">
 						<ul class="clearfix">
 							<li class="col-sm-3 user-profile-left-picture no-padding">
-								<img src="./images/preview-profile/user-img.jpg" alt="User Image" />
+								<img src="./images/preview-profile/face.jpg" alt="User Image" />
 								<button>
 									<div class="fileUpload btn btn-primary">
 									    <img src="./images/preview-profile/cam.png" alt="Edit Icon" />
@@ -487,23 +497,23 @@
 									</div>
 								</button>
 							</li>
-							<li class="user-profile-left-details"><h3 class="clearfix"><span>John Doe</span> <div class="verified-icon"><i class="fa fa-check"></i>Verfied</div><!-- /.verified-icon --><img class="edit-name-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' value='John Doe'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h3></li>
-							<li class="hire-me-section"><button class="hire-me">Hire Me</button><!-- /.hire-me --></li>
-							<li class="user-profile-left-details"><h4><span>Position</span>|<span>Anything</span><img class="edit-position-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' value='Web Designer'><input type='text' value='Anything'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h4></li>
-							<li class="hire-me-section edit-hour-pop"><h3>$50.00 <span class="user-currency">USD/hr</span><!-- /.user-currency --><img class="edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<input type='text' value='50'><input type='text' value='USD'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h3></li>
-							<li class="user-profile-left-details"><p>Summary about myself. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo incididunt ut labore et dolore magna aliqua sut. Consecteture adipiscing elit halum.<img class="edit-text-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<textarea></textarea><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></p></li>
-							<li class="hire-me-section"><h4>Australia</h4></li>
-							<li class="hire-me-section">
+							<li class="user-profile-left-details"><h3 class="clearfix"><span>John Doe</span> <img class="edit-name-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' value='John Doe'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h3></li>
+							<li class="hire-me-section"><button class="hire-me">Hire Me</button><!-- /.hire-me --><button class="hire-me favorite"><img src="images/preview-profile/favorite.png"/>Favorite</button></li>
+							<li class="user-profile-left-details"><h4 class="new-gray"><span>Position</span><span></span><img class="edit-position-pop edit-together" src="images/preview-profile/red-pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' value='Web Designer'><input type='text' value='Anything'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h4></li>
+							<li class="hire-me-section edit-hour-pop"><h3 class="new-gray">$00.00 <span class="user-currency">USD/hr</span><!-- /.user-currency --><img class="edit-together" src="images/preview-profile/red-pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<input type='text' value='50'><input type='text' value='USD'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h3></li>
+							<li class="user-profile-left-details"><p class="new-gray">Summary about myself<img class="edit-text-pop edit-together" src="images/preview-profile/red-pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<textarea></textarea><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></p></li>
+							<li class="hire-me-section"><h4>Philippines<img class="edit-position-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' value='Country'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h4></li>
+							<li class="hire-me-section" style="display: none;">
                                 <h5 class="user-star-rating">4.0/5 
                                     <img src="./images/preview-profile/4-star.png" alt="User rating" />
                                 </h5>
                             </li>
-							<li class="hire-me-section"><h5 class="user-star-reviews">12 reviews</h5></li>
-							<li class="hire-me-section"><h5 class="user-exp-lang user-exp-lang-marg">Experience: Intermediate<img class="edit-experience-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<select><option>Option 1</option><option>Intermediate</option></select><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5></li>
-							<li class="hire-me-section"><h5 class="user-exp-lang">Languages: English, French, Arabic<img class="edit-language-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<select><option>English</option><option>French</option><option>Arabic</option></select><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5></li>
+							<li class="hire-me-section"><h5 class="user-star-reviews">0 Review</h5></li>
+							<li class="hire-me-section"><h5 class="user-exp-lang user-exp-lang-marg new-gray">Experience: <img class="edit-experience-pop edit-together" src="images/preview-profile/red-pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<select><option>Option 1</option><option>Intermediate</option></select><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5></li>
+							<li class="hire-me-section"><h5 class="user-exp-lang new-gray">Languages: <img class="edit-language-pop edit-together" src="images/preview-profile/red-pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<select><option>English</option><option>French</option><option>Arabic</option></select><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5></li>
 						</ul>
 				    </div><!-- /.user-profile-right -->
-                    <div class="col-sm-12 user-profile-left user-profile-right clearfix display-640">
+                    <div class="col-sm-12 user-profile-left user-profile-right clearfix display-640" style="display: none;">
 						<ul class="clearfix">
 							<li class="col-sm-3 user-profile-left-picture no-padding">
 								<img src="./images/preview-profile/user-img.jpg" alt="User Image" />
@@ -530,7 +540,7 @@
 							<li class="hire-me-section"><h5 class="user-exp-lang">Languages: English, French, Arabic<img class="edit-language-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="left" data-html="true" data-trigger="click" data-content="<select><option>English</option><option>French</option><option>Arabic</option></select><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5></li>
 						</ul>
     				</div><!-- /.user-profile-right -->
-    				<div class="col-sm-12 user-profile-left user-profile-right clearfix display-480">
+    				<div class="col-sm-12 user-profile-left user-profile-right clearfix display-480"  style="display: none;">
 						<ul class="clearfix">
 							<li class="col-sm-3 user-profile-left-picture no-padding">
 								<img src="images/preview-profile/user-img.jpg" alt="User Image" />
@@ -564,7 +574,7 @@
                             <span class="fa fa-arrows-v"></span>
                             <span class="fa fa-plus-circle"></span>
     					</div>
-    					<div class="user-experience-single edit-experience-pop">
+    					<div class="user-experience-single edit-experience-pop" style="display: none;">
     						<h5>Lead Web Developer<img class="edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' value='Lead Web Developer'><input type='text' value='XYZ Ltd. Co.'><input type='text' value='November 2013 - June 2015'><textarea></textarea><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5>
     						<p>
     							<span class="user-experience-company">XYZ Ltd. Co.</span><!-- /.user-experience-company -->
@@ -574,7 +584,7 @@
     							in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
     						</p>
     					</div><!-- /.user-experience-single -->
-    					<div class="user-experience-single edit-experience-pop">
+    					<div class="user-experience-single edit-experience-pop"  style="display: none;">
     						<h5>Senior Web Developer<img class="edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' value='Lead Web Developer'><input type='text' value='XYZ Ltd. Co.'><input type='text' value='November 2013 - June 2015'><textarea></textarea><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5>
     						<p>
     							<span class="user-experience-company">ABC Services, Inc.</span><!-- /.user-experience-company -->
@@ -591,7 +601,7 @@
                             <span class="fa fa-arrows-v"></span>
                             <span class="fa fa-plus-circle"></span>
     					</div>
-    					<div class="user-education-single edit-education-pop">
+    					<div class="user-education-single edit-education-pop" style="display: none;">
     						<h5>Bachelor of Science in Information Technology<img class="edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Course/Degree'><input type='text' placeholder=Name of School/University'><input type='text' placeholder='From (yyyy)'><input type='text' placeholder='To (yyyy)'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5>
     						<span class="user-experience-company">UBelt University, 123 Address here</span><!-- /.user-experience-company -->
     						<span class="user-experience-duration">2008-2012(4 years)</span><!-- /.user-experience-duration -->
@@ -603,7 +613,7 @@
                             <span class="fa fa-arrows-v"></span>
                             <span class="fa fa-plus-circle"></span>
     					</div>
-    					<div class="col-sm-4 user-certifications-single">
+    					<div class="col-sm-4 user-certifications-single" style="display: none;">
     						<div class=" cert-name">
     							<div class="col-sm-4 no-padding">
     								<img src="images/preview-profile/magento.jpg" alt="" />
@@ -617,7 +627,7 @@
     							<img class="together-trash" src="images/preview-profile/trash.png" alt="" />
     						</div><!-- /.cert-name -->
     					</div><!-- /.user-certifications-single -->
-    					<div class="col-sm-4 user-certifications-single">
+    					<div class="col-sm-4 user-certifications-single" style="display: none;">
     						<div class="cert-name">
     							<div class="col-sm-4 no-padding">
     								<img src="images/preview-profile/microsoft.jpg" alt="" />
@@ -631,7 +641,7 @@
     							<img class="together-trash" src="images/preview-profile/trash.png" alt="" />
     						</div><!-- /.cert-name -->
     					</div><!-- /.user-certifications-single -->
-    					<div class="col-sm-4 user-certifications-single">
+    					<div class="col-sm-4 user-certifications-single" style="display: none;">
     						<div class="cert-name">
     							<div class="col-sm-4 no-padding">
     								<img src="images/preview-profile/atc.jpg" alt="" />
@@ -652,7 +662,7 @@
                             <span class="fa fa-arrows-v"></span>
                             <span class="fa fa-plus-circle"></span>
     					</div>
-    					<div class="user-publication-single">
+    					<div class="user-publication-single" style="display: none;">
     						<h5>Heading here<img class="edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='Description'><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" /></h5>
     						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     						Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -665,7 +675,7 @@
                             <span class="fa fa-arrows-v"></span>
                             <span class="fa fa-plus-circle"></span>
     					</div>
-    					<div class="col-sm-3">
+    					<div class="col-sm-3" style="display: none;">
     						<div class="port-edit-buttons">
     							<img class="edit-port-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='URL'><textarea placeholder='Description'></textarea><div class='port-img'><div class='port-img-wrap'><h5>No Image</h5></div></div><div class='port-popover-buttons'><button>Choose From Media Library</button><button><div class='fileUpload btn btn-primary'><span>Upload Image</span><input type='file' class='upload' /></div></button></div><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" />
     							<img class="together-trash" src="images/preview-profile/trash.png" alt="" />
@@ -674,7 +684,7 @@
     							<img src="images/preview-profile/portfolio.jpg" alt="Portfolio Image" />
     						</div><!-- /.port-img-wrapper -->
     					</div>
-    					<div class="col-sm-3">
+    					<div class="col-sm-3" style="display: none;">
     						<div class="port-edit-buttons">
     							<img class="edit-port-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='URL'><textarea placeholder='Description'></textarea><div class='port-img'><div class='port-img-wrap'><h5>No Image</h5></div></div><div class='port-popover-buttons'><button>Choose From Media Library</button><button><div class='fileUpload btn btn-primary'><span>Upload Image</span><input type='file' class='upload' /></div></button></div><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" />
     							<img class="together-trash" src="images/preview-profile/trash.png" alt="" />
@@ -683,7 +693,7 @@
     							<img src="images/preview-profile/portfolio.jpg" alt="Portfolio Image" />
     						</div><!-- /.port-img-wrapper -->
     					</div>
-    					<div class="col-sm-3">
+    					<div class="col-sm-3" style="display: none;">
     						<div class="port-edit-buttons">
     							<img class="edit-port-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='URL'><textarea placeholder='Description'></textarea><div class='port-img'><div class='port-img-wrap'><h5>No Image</h5></div></div><div class='port-popover-buttons'><button>Choose From Media Library</button><button><div class='fileUpload btn btn-primary'><span>Upload Image</span><input type='file' class='upload' /></div></button></div><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" />
     							<img class="together-trash" src="images/preview-profile/trash.png" alt="" />
@@ -692,7 +702,7 @@
     							<img src="images/preview-profile/portfolio.jpg" alt="Portfolio Image" />
     						</div><!-- /.port-img-wrapper -->
     					</div>
-    					<div class="col-sm-3">
+    					<div class="col-sm-3" style="display: none;">
     						<div class="port-edit-buttons">
     							<img class="edit-port-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='URL'><textarea placeholder='Description'></textarea><div class='port-img'><div class='port-img-wrap'><h5>No Image</h5></div></div><div class='port-popover-buttons'><button>Choose From Media Library</button><button><div class='fileUpload btn btn-primary'><span>Upload Image</span><input type='file' class='upload' /></div></button></div><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" />
     							<img class="together-trash" src="images/preview-profile/trash.png" alt="" />
@@ -701,7 +711,7 @@
     							<img src="images/preview-profile/portfolio.jpg" alt="Portfolio Image" />
     						</div><!-- /.port-img-wrapper -->
     					</div>
-    					<div class="col-sm-3">
+    					<div class="col-sm-3" style="display: none;">
     						<div class="port-edit-buttons">
     							<img class="edit-port-pop edit-together" src="images/preview-profile/pencil.png" alt="" data-toggle="popover" data-placement="top" data-html="true" data-trigger="click" data-content="<input type='text' placeholder='Title'><input type='text' placeholder='URL'><textarea placeholder='Description'></textarea><div class='port-img'><div class='port-img-wrap'><h5>No Image</h5></div></div><div class='port-popover-buttons'><button>Choose From Media Library</button><button><div class='fileUpload btn btn-primary'><span>Upload Image</span><input type='file' class='upload' /></div></button></div><div class='placeholder-buttons'><button>Save</button><button>Cancel</button></div>" />
     							<img class="together-trash" src="images/preview-profile/trash.png" alt="" />
@@ -714,7 +724,6 @@
 				    <li class="user-ratings backgr-fon-hover col-sm-12 no-padding">
                         <div>
                             <span class="fa fa-arrows-v"></span>
-                            <span class="fa fa-plus-circle"></span>
     					</div>
  				           <ol class="">	
                                 <li class=" backgr-fon-hover col-sm-4 border-right-edit  no-line">
@@ -725,73 +734,73 @@
             								<div class="pull-left">Skills</div>
             								<div class="rating">
             									<div class="rating-color"><div class="rating-8 rating-universal"></div></div>
-            									<span>8.5</span>
+            									<span>0.0</span>
             								</div>
             							</li>
             							<li>
             								<div class="pull-left">Quality of Work</div>
             								<div class="rating">
             									<div class="rating-color"><div class="rating-7 rating-universal"></div></div>
-            									<span>8.0</span>
+            									<span>0.0</span>
             								</div>
             							</li>
             							<li>
             								<div class="pull-left">Availability</div>
             								<div class="rating">
             									<div class="rating-color"><div class="rating-8 rating-universal"></div></div>
-            									<span>6.5</span>
+            									<span>0.0</span>
             								</div>
             							</li>
             							<li>
             								<div class="pull-left">Communication</div>
             								<div class="rating">
             									<div class="rating-color"><div class="rating-7 rating-universal"></div></div>
-            									<span>7.0</span>
+            									<span>0.0</span>
             								</div>
             							</li>
             							<li>
             								<div class="pull-left">Cooperation</div>
             								<div class="rating">
             									<div class="rating-color"><div class="rating-8 rating-universal"></div></div>
-            									<span>7.0</span>
+            									<span>0.0</span>
             								</div>
             							</li>
             							<li>
             								<div class="pull-left">Adherence to schedule</div>
             								<div class="rating">
             									<div class="rating-color"><div class="rating-7 rating-universal"></div></div>
-            									<span>6.8</span>
+            									<span>0.0</span>
             								</div>
             							</li>
             							<li>
             								<div class="pull-left">Completion Rate</div>
             								<div class="rating">
             									<div class="rating-color"><div class="rating-8 rating-universal"></div></div>
-            									<span>7.5</span>
+            									<span>0.0</span>
             								</div>
             							</li>
             							<li>
             								<div class="pull-left">Repeat Hire Rate</div>
             								<div class="rating">
             									<div class="rating-color"><div class="rating-7 rating-universal"></div></div>
-            									<span>6.8</span>
+            									<span>0.0</span>
             								</div>
             							</li>
             						</ul>
-            						<h5 class="total clearfix"><span class="pull-left">TOTAL # OF Projects Completed</span><span class="pull-right">12</span></h5>
+            						<h5 class="total clearfix"><span class="pull-left">TOTAL # OF Projects Completed</span><span class="pull-right">0</span></h5>
             					</li><!-- /.col-sm-4 -->
                                 <li class=" backgr-fon-hover col-sm-8 no-line">
                                     <h3>Reviews</h3>
                                     
                                     <ul class="nav nav-tabs tabsuper" >
-                                        <li class="active"><a href="#tab_a" class="gray-pr" data-toggle="tab">Completed Works (6)</a></li>
-                                        <li><a href="#tab_b"  class="gray-pr" data-toggle="tab">WORK IN PROGRESS (3)</a></li>
-                                        <li><a href="#tab_c"  class="gray-pr" data-toggle="tab">LATEST BID ON (11)</a></li>
+                                        <li class="active"><a href="#tab_a" class="gray-pr" data-toggle="tab">Completed Works (0)</a></li>
+                                        <li><a href="#tab_b"  class="gray-pr" data-toggle="tab">WORK IN PROGRESS (0)</a></li>
+                                        <li><a href="#tab_c"  class="gray-pr" data-toggle="tab">LATEST BID ON (0)</a></li>
                                     </ul>
                                     <div class="rewievs">
                                         <div class="tab-content tabline"><!-- Begin tab-content tabline-->
                                             <div class="tab-pane active scrollbar" id="tab_a"><!-- Begin #tab_a-->
-                                                <article class="completed-block"><!-- Begin completed-block-->
+                                                <article class="completed-block" style="display: none;"><!-- Begin completed-block-->
                                                     <div class="user-single-review">
                                                         <div class="wrapper-feedback">
                                                             <img class="" src="images/preview-profile/5-star.png" alt="Client Feedback"/>
@@ -807,7 +816,7 @@
                                                         </div>
                         							</div>
                                                 </article><!-- END completed-block-->
-                                                <article class="completed-block"><!-- Begin completed-block-->
+                                                <article class="completed-block" style="display: none;"><!-- Begin completed-block-->
                                                     <div class="user-single-review">
                                                         <div class="wrapper-feedback">
                                                             <img class="" src="images/preview-profile/5-star.png" alt="Client Feedback"/>
@@ -823,7 +832,7 @@
                                                         </div>
                         							</div>
                                                 </article><!-- END completed-block-->
-                                                <article class="completed-block"><!-- Begin completed-block-->
+                                                <article class="completed-block" style="display: none;"><!-- Begin completed-block-->
                                                     <div class="user-single-review">
                                                         <div class="wrapper-feedback">
                                                             <img class="" src="images/preview-profile/5-star.png" alt="Client Feedback"/>
@@ -839,7 +848,7 @@
                                                         </div>
                         							</div>
                                                 </article><!-- END completed-block-->
-                                                <article class="completed-block"><!-- Begin completed-block-->
+                                                <article class="completed-block" style="display: none;"><!-- Begin completed-block-->
                                                     <div class="user-single-review">
                                                         <div class="wrapper-feedback">
                                                             <img class="" src="images/preview-profile/5-star.png" alt="Client Feedback"/>
@@ -855,7 +864,7 @@
                                                         </div>
                         							</div>
                                                 </article><!-- END completed-block-->
-                                                <article class="completed-block"><!-- Begin completed-block-->
+                                                <article class="completed-block" style="display: none;"><!-- Begin completed-block-->
                                                     <div class="user-single-review">
                                                         <div class="wrapper-feedback">
                                                             <img class="" src="images/preview-profile/5-star.png" alt="Client Feedback"/>
@@ -871,7 +880,7 @@
                                                         </div>
                         							</div>
                                                 </article><!-- END completed-block-->
-                                                <article class="completed-block"><!-- Begin completed-block-->
+                                                <article class="completed-block" style="display: none;"><!-- Begin completed-block-->
                                                     <div class="user-single-review">
                                                         <div class="wrapper-feedback">
                                                             <img class="" src="images/preview-profile/5-star.png" alt="Client Feedback"/>
@@ -889,7 +898,7 @@
                                                 </article><!-- END completed-block-->
                                            </div><!-- END #tab_a-->
                                            <div class="tab-pane fade scrollbar" id="tab_b"><!-- Begin #tab_b-->
-                                               <div class="progress-tab cont-1"><!-- Begin progress-tab --> 
+                                               <div class="progress-tab cont-1" style="display: none;"><!-- Begin progress-tab --> 
                                                    <h5><a href="#">Work in Progress</a></h5> 
                                                    <span class="amount"><h5>$1000</h5></span> 
                                                    <span class="status"><h5>In Progress</h5></span>
@@ -900,7 +909,7 @@
                                                    <a id="more-block" href="" class="pull-right more">More</a>
                                                    <a id="less-block" href="" class="pull-right more block-hidden">Less</a>
                                                </div><!-- END progress-tab -->
-                                               <div class="progress-tab cont-1"><!-- Begin progress-tab --> 
+                                               <div class="progress-tab cont-1" style="display: none;"><!-- Begin progress-tab --> 
                                                    <h5><a href="#">Work in Progress</a></h5> 
                                                    <span class="amount"><h5>$2000</h5></span> 
                                                    <span class="status"><h5>In Progress</h5></span>
@@ -911,7 +920,7 @@
                                                    <a id="more-block" href="" class="pull-right more">More</a>
                                                    <a id="less-block" href="" class="pull-right more block-hidden">Less</a>
                                                </div><!-- END progress-tab -->
-                                               <div class="progress-tab cont-1"><!-- Begin progress-tab --> 
+                                               <div class="progress-tab cont-1" style="display: none;"><!-- Begin progress-tab --> 
                                                    <h5><a href="#">Work in Progress</a></h5> 
                                                    <span class="amount"><h5>$3000</h5></span> 
                                                    <span class="status"><h5>In Progress</h5></span>
@@ -925,7 +934,7 @@
                                             </div><!-- END #tab_b-->
                                             <div class="clearfix"></div>
                                             <div class="tab-pane fade scrollbar" id="tab_c"><!-- Begin #tab_c-->
-                                                <div class="bid-tab cont-1"><!-- Begin bid-tab --> 
+                                                <div class="bid-tab cont-1" style="display: none;"><!-- Begin bid-tab --> 
                                                    <h5><a href="#">Bided Job</a></h5>
                                                    <span class="amount"><h5>$0000</h5></span> 
                                                    <span class="status"><h5>Today</h5></span>
@@ -936,7 +945,7 @@
                                                    <a id="more-block" href="" class="pull-right more">More</a>
                                                    <a id="less-block" href="" class="pull-right more block-hidden">Less</a>
                                                 </div><!-- END bid-tab -->
-                                                <div class="bid-tab cont-1"><!-- Begin bid-tab --> 
+                                                <div class="bid-tab cont-1" style="display: none;"><!-- Begin bid-tab --> 
                                                    <h5><a href="#">Bided Job</a></h5>
                                                    <span class="amount"><h5>$1000</h5></span> 
                                                    <span class="status"><h5>Today</h5></span>
@@ -947,7 +956,7 @@
                                                    <a id="more-block" href="" class="pull-right more">More</a>
                                                    <a id="less-block" href="" class="pull-right more block-hidden">Less</a>
                                                 </div><!-- END bid-tab -->
-                                                <div class="bid-tab cont-1"><!-- Begin bid-tab --> 
+                                                <div class="bid-tab cont-1" style="display: none;"><!-- Begin bid-tab --> 
                                                    <h5><a href="#">Bided Job</a></h5>
                                                    <span class="amount"><h5>$500</h5></span> 
                                                    <span class="status"><h5>Today</h5></span>
@@ -958,7 +967,7 @@
                                                    <a id="more-block" href="" class="pull-right more">More</a>
                                                    <a id="less-block" href="" class="pull-right more block-hidden">Less</a>
                                                 </div><!-- END bid-tab -->
-                                                <div class="bid-tab cont-1"><!-- Begin bid-tab --> 
+                                                <div class="bid-tab cont-1" style="display: none;"><!-- Begin bid-tab --> 
                                                    <h5><a href="#">Bided Job</a></h5>
                                                    <span class="amount"><h5>$5000</h5></span> 
                                                    <span class="status"><h5>Yesterday</h5></span>
@@ -980,7 +989,6 @@
     						<h3>Skills</h3>
                             <div>
                                 <span class="fa fa-arrows-v"></span>
-                                <span class="fa fa-plus-circle"></span>
         					</div>
     						<div class="inner-skills clearfix"><!-- Begin inner-skills -->
                                 <div class="col-sm-6-dop marg-right-2"><!-- Begin col-sm-6-dop -->
@@ -1156,168 +1164,19 @@
                         <h3>MATERIALS &amp; COLORS/FINISHES</h3>
                         <div>
                             <span class="fa fa-arrows-v"></span>
-                            <span class="fa fa-plus-circle"></span>
                         </div>                        
 						<div class="Materials">
-                            <div class="ThumbnailSurface clearfix">
-                                <div class="wrapperMaterialTabs clearfix">
-                                    <div class="MaterialTabs">
-                                        <div><span>155XP</span><span>YOUR EXPERIENCE POINTS</span></div>
-                                    </div>
-                                    <div class="wrappPaginationMaterials">
-                                        <ul class="pagination paginationMaterials">
-                                            <li><a href="#" aria-label="Previous"><span aria-hidden="true">&lt; Prev</span></a></li>
-                                            <li><a href="#" aria-label="Next"><span aria-hidden="true">Next &gt;</span></a></li>                                
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="MaterialElement clearfix">
-                                    <div class="rowThumbnail">
-                                        <div class="">
-                                            <div class="ThumbnailContainer">
-                                              <div class="wrappThumbnail">
-                                                  <div class="Thumbnail" materialid="449" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints noPoints"></div>
-                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
-                                                  </div>
-                                                  <p>Carbon Fiber Plastic</p>    
-                                              </div>                                                        
-                                            </div>
-                                            <div class="ThumbnailContainer no-border-right-min">
-                                              <div class="wrappThumbnail">  
-                                                  <div class="Thumbnail" materialid="452" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints use">35 XP</div>
-                                                    <div class="prioIcon"><img src="./images/New3D/prio-icon-2.png" /></div>
-                                                  </div>
-                                                  <p>Strong and flexible plastic flame retardent</p>  
-                                              </div>                                                          
-                                            </div>
-                                            <div class="ThumbnailContainer  Selected-t">
-                                              <div class="wrappThumbnail">
-                                                  <div class="Thumbnail" materialid="453" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints">35 XP</div>
-                                                    <div class="prioIcon"><img src="./images/New3D/prio-icon-2.png" /></div>
-                                                  </div>
-                                                  <p>Strong Flexible Plastic Priority</p>  
-                                              </div>                                                          
-                                            </div>
-                                            <div class="ThumbnailContainer no-border-right">
-                                              <div class="wrappThumbnail">
-                                                  <div class="Thumbnail" materialid="454" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints noPoints"></div>
-                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
-                                                  </div>
-                                                  <p>Super High Temperature Plastic</p> 
-                                              </div>                                                           
-                                            </div>
-                                        </div>
-                                        <div class="">                                                        
-                                            <div class="ThumbnailContainer">
-                                              <div class="wrappThumbnail">
-                                                  <div class="Thumbnail" materialid="455" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints use">15 XP</div>
-                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
-                                                  </div>
-                                                  <p>Primecast</p>  
-                                              </div>                                                          
-                                            </div>
-                                            <div class="ThumbnailContainer no-border-right-min">
-                                              <div class="wrappThumbnail">
-                                                  <div class="Thumbnail" materialid="456" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints">10 XP</div>
-                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
-                                                  </div>
-                                                  <p>Impact Resistant Strong and Flexible Plastic </p>  
-                                              </div>                                                         
-                                            </div>
-                                            <div class="ThumbnailContainer">
-                                              <div class="wrappThumbnail">
-                                                  <div class="Thumbnail" materialid="457" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints noPoints"></div>
-                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
-                                                  </div>
-                                                  <p>High Flexible Plastic</p> 
-                                              </div>                                                           
-                                            </div>
-                                            <div class="ThumbnailContainer no-border-right">
-                                              <div class="wrappThumbnail">
-                                                  <div class="Thumbnail" materialid="460" style="background-image:url('./images/New3D/Primepart.jpg');">
-                                                    <div class="materialPoints noPoints"></div>
-                                                    <div class="prioIcon" style="display: none;"><img src="./images/New3D/prio-icon-1.png" /></div>
-                                                  </div>
-                                                  <p>VisiJet Clear</p> 
-                                              </div>                                                           
-                                            </div>
-                                        </div> 
-                                    </div>                           
-                                </div>
-                                <div class="wrappPaginationBottom">
-                                    <ul class="paginationBottom clearfix">
-                                        <li><a href="#"></a></li>
-                                        <li class="active"><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                        <li><a href="#"></a></li>
-                                    </ul>
-                                </div>
+                            <div class="MaterialTabs">
+                                <div><span>155XP</span><span>YOUR EXPERIENCE POINTS</span></div>
                             </div>
-                            <div class="ThumbnailDescriptionContainer">
-                                <div class="innerThumbnailDescriptionContainer clearfix">
-                                    <div class="">
-                                        <div class="DescriptionLeft">
-                                          <div class="MaterialImage" style="position: relative; overflow: hidden; background-image: url(https://staging.mylocal3dprinting.com/viewer/image/materials/Primepart.jpg);"><img src="./images/New3D/Primepart.jpg" class="zoomImg"/></div>
-                                        </div>
-                                        <div class="DescriptionRight">
-                                            <p class="name">Strong Flexible Plastic Priority</p> 
-                                            <div class="xpPoints">
-                                                <div class="media">
-                                                    <div class="pull-left"><span class="bgGray">35XP</span></div>
-                                                    <div class="media-body"><span class="p-12 bold"></span></div>
-                                                </div>
-                                            </div>
-                                            <!--p class="duration"><a href="#">SHIPS IN 10 - 14 BUSINESS DAYS</a></p> 
-                                            <p class="marginBottom5">Pay a little extra to receive your products faster. Polyamide is a strong and flexible material for your 3d models providing a high detail of bending your 3d model.</p>
-                                            <p>Ideal for complex, concept models, lamps and functional models. Polymaide also allows you to have the greatest freedom in designing among all of the other 3d printing techniques.</p>
-                                            -->
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="printingAssistance" style="display: none;">GET PRINTING ASSISTANCE</div>
-                                    <div class="printingAssistance pointsToPrint" data-toggle="modal" data-target="#syncSocial">UNLOCK THIS MATERIAL</div>
-                                </div>
-                                <div class="">
-                                  <div class="FinishDiv">
-                                    <div class="FinishHeader clearfix" style="display: none;">
-                                        <p class="p-13 bold">PRINTED COLORS/FINISHES</p><img src="./images/p-a/preview-profile-addition/print-img.png">
-                                    </div>
-                                    <div class="FinishContainer">
-                                      <div class="Finishes">
-                                        <div class="materialProperties">
-                                            <p class="color-black padd-bottom-10">Polyamide is a strong and flexible material for your 3d models providing a high detail of bending your 3d model.</p>
-                                            <p class="color-black padd-bottom-30">Ideal for complex, concept models, lamps and functional models. Polymaide also allows you to have the greatest freedom in designing among all of the other 3d printing techniques.</p>
-                                        </div>
-                                        <div class="viewMaterial clearfix"  style="display: none;">
-                                            <div class="clearfix innerColorMaterial"><img class="pull-left" src="images/New3D/color-1.png" /><p class="pull-left">Natural White</p> <p class="Rectangle">1</p></div>
-                                            <div class="clearfix innerColorMaterial"><img class="pull-left" src="images/New3D/color-2.png" /><p class="pull-left">Natural Black</p> <p class="Rectangle">10</p></div>
-                                            <div class="clearfix innerColorMaterial"><img class="pull-left" src="images/New3D/color-3.png" /><p class="pull-left">Polished Blue</p> <p class="Rectangle">5</p></div>
-                                            <div class="clearfix innerColorMaterial"><img class="pull-left" src="images/New3D/color-4.png" /><p class="pull-left">Dyed Yellow</p> <p class="Rectangle">15</p></div>
-                                            <div class="clearfix innerColorMaterial"><img class="pull-left" src="images/New3D/color-5.png" /><p class="pull-left">Velvet Red</p> <p class="Rectangle">10</p></div>
-                                            <div class="clearfix innerColorMaterial"><img class="pull-left" src="images/New3D/color-6.png" /><p class="pull-left">Spray Painted Black</p> <p class="Rectangle">1</p></div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div class="FinishBottom clearfix" style="display: none;"><p>Total: 42</p></div>
-                                  </div>
-                                </div>
+                            <div class="total-of-prints">
+                                <p class="bold text-uppercase">Total # of Prints Done:  0</p>
                             </div>
-                          </div>
+                        </div>
                         
 					</li><!-- END big-materials-block -->
                     </ol>
-                    <div class="col-sm-12 clearfix bottom-total-number">
-                        <div class="bottom-total clearfix">
-                            <p class="bold white text-uppercase">Total number of prints DONE:  24</p>
-                        </div>
-                    </div> 
+                     
                     <div class="col-sm-12 clearfix block-min">
                         <p class="text-uppercase p-14 pull-right margin-bottom-20">MEmber sinCe FEBRUARY 2015</p>
                     </div>
