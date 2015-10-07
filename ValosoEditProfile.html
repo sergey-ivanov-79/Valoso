@@ -338,7 +338,7 @@
             <div class="container wrapp-emptyprofile-info">
                 <div class="row">
                     <div class="emptyprofile-info">
-                        <p class="gray">The fields with  must &nbsp;<img src="./images/preview-profile/red-pencil.png" />&nbsp; be filled before you can apply to the project <i>project title</i></p>
+                        <p class="gray">The fields with  must &nbsp;<img data-toggle="modal" data-target="#createNow" src="./images/preview-profile/red-pencil.png" />&nbsp; be filled before you can apply to the project <i>project title</i></p>
                     </div>
                 </div>
             </div>
@@ -1619,6 +1619,32 @@
 			    </div><!-- /.modal-content -->
 			  </div><!-- /.modal-dialog -->
 			</div>
+<!-- Modal -->
+<div class="modalCreateNow modal fade" id="createNow" tabindex="-1" role="dialog" aria-labelledby="createNow" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="modal-title">CREATE YOUR PROFILE</p>
+        
+      </div>
+      <div class="modal-body">
+        <p>Before you can apply for a project, you will need to create your
+            profile. In this way, you can showcase your skills and
+            experiences where you can benefit to get more projects in the
+            future.
+        </p>
+        <br />
+        <p>Don't know how to create your profile? Take the tour to learn how!</p>
+      </div> 
+      <div class="modal-footer">
+        <a class="btn btn-start-t btn-lg">START THE TOUR</a>
+        <a class="btn btn-create-n btn-lg">CREATE NOW</a>
+      </div>    
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
 		<script src="./js/jquery-1.11.2.min.js"></script>
         
 		<script>
