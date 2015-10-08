@@ -423,6 +423,9 @@
    border-bottom: none; 
    padding: 20px;
 }
+.modalCreateNow.modaldirectorEdit .modal-body {
+   padding: 20px;
+}
 .modalCreateNow.modaldirectorEdit .modal-footer > .btn {
     width: 280px;
 }
