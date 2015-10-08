@@ -337,6 +337,18 @@
 .footer-widget .widget-content ul li a:hover {
     color: #4DCBFF;
 }
+.modalCreateNow .modal-footer .btn-create-n-img2,
+.modalCreateNow .modal-footer .btn-start-t-img2 {
+    display: none;
+}
+.modalCreateNow .modal-footer .btn-create-n:hover .btn-create-n-img2,
+.modalCreateNow .modal-footer .btn-start-t:hover .btn-start-t-img2 {
+    display: inline-block;
+}
+.modalCreateNow .modal-footer .btn-create-n:hover .btn-create-n-img1,
+.modalCreateNow .modal-footer .btn-start-t:hover .btn-start-t-img1 {
+    display: none;
+}
 @media (max-width: 992px) {
     .desktop-buttons {
         right: 35%;
@@ -380,6 +392,11 @@
         font-size: 12px;
     }
 }
+@media(max-width: 613px) {
+    .modalCreateNow.modaldirectorEdit .modal-footer .btn+.btn {
+          margin-left: 0px;
+    }
+}
 @media(max-width: 480px) {
     .hire-me-section button.hire-me {
         margin-right: 3px;
@@ -402,6 +419,13 @@
     padding: 15px;
     border-bottom: 1px solid #e5e5e5;
 } 
+.modalCreateNow.modaldirectorEdit .modal-header {
+   border-bottom: none; 
+   padding: 20px;
+}
+.modalCreateNow.modaldirectorEdit .modal-footer > .btn {
+    width: 280px;
+}
 .modalCreateNow .modal-header .modal-title {
     font-size: 24px;
     color: #727272;
