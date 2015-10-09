@@ -56,7 +56,7 @@ body:after{
 }
 
 #slideContent .sliderBox .carousel-caption h2{
-  font-size:36;
+  font-size:36px;
   font-weight:bold;
   padding-left:30px;
   padding-right:30px;
@@ -677,9 +677,25 @@ footer {
   background-image:none;
   filter:none;
 }
+.wrap-t h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
 .wrap-t p {
     font-size: 14px;
     line-height: 2;
+}
+.wrap-t .h-4, .wrap-t .proj-area h4 {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.wrap-t, .wrap-t p {
+    color: #6d6d6d !important;
+    font-weight: 400;
+}
+.wrap-t strong {
+    font-weight: 600;
 }
 .wrap-t table {
     max-width: 700px;
@@ -687,7 +703,7 @@ footer {
     width: 100%;
 }
 .wrap-t table tbody tr:hover td {
-    background-color: #f2f8fd;
+    background: none;
 }
 .wrap-t table, .wrap-t table td {
     border: 1px solid #6d6d6d;
@@ -695,6 +711,58 @@ footer {
 .wrap-t td {
     padding: 10px;
     font-size: 14px;
+}
+.wrap-t a:hover {
+    color: #23527c;
+}
+.prop-title {
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+}
+.wrap-t.about p {
+    margin-bottom: 10px;
+}
+.prop-title.prop-title-bottom {
+    text-align: left;
+}
+.wrap-t.about .contact-area {
+    max-width: 260px;
+    padding: 0 15px 15px 15px;
+    width: 100%;
+    border: 3px solid #ccc;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+.wrap-t.about .secure {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.wrap-t.about .how-work a.btn {
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.wrap-t .f-14 {
+    font-size: 14px;
+}
+.wrap-t .f-14 li {
+    list-style-type: disc;
+}
+.wrap-t .f-14 li {
+    margin-left: 25px;
+}
+.wrap-t p.color-blue {
+    color: #337ab7 !important;
+    margin-bottom: 0;
 }
 @media (min-width: 1060px) {
   .container {
@@ -874,6 +942,14 @@ footer {
   }
 
 }
+@media (max-width: 639px) {
+    .wrap-t.about .secure {
+        font-size: 16px;
+    }
+    .wrap-t.about .how-work a.btn {
+        font-size: 16px;
+    }
+}
 @media (max-width: 428px) {
     .butPanel a {
     max-width:320px;
@@ -991,5 +1067,10 @@ footer {
     color: #fff;
 }
 /* for footer */
-
+.margin-bottom-20 {
+    margin-bottom: 20px;
+}
 #footer .botLink ul li a:hover, #footer .botCopy div a:hover {  color: #4DCBFF;}
+.color-blue {
+    color: #337ab7 !important;
+}
