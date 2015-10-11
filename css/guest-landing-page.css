@@ -16,7 +16,6 @@
 .header-guest  .navbar-toggle {
     margin-top: 30px;
 }
-.header-guest .navbar-nav li.active a, 
 .header-guest .navbar-nav li a:hover {
     text-decoration: underline;
 }
