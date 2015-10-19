@@ -5,7 +5,7 @@
     padding-left: 15px;
     padding-right: 15px;
 }
-.header-guest  .navbar-header img {
+.navbar-header .navbar-brand-mobile img {
     margin: 0 auto;
     text-align: center;
     width: 150px;
@@ -15,7 +15,7 @@
 }
 .header-guest  .navbar-toggle {
     margin-top: 30px;
-}
+} 
 .header-guest .navbar-nav li a:hover {
     text-decoration: underline;
 }
@@ -211,6 +211,7 @@ a.blue-color:hover {
 .how-work  {
     text-align: center;
     padding-bottom: 50px;
+    margin-top: 50px;
 }
 .how-work a.btn {
     font-size: 30px;
@@ -280,10 +281,17 @@ a.blue-color:hover {
 }*/
 .left-image .h3, .right-image .h3 {
     font-size: 18px;
-    padding: 0px 30px;
+    /*padding: 0px 30px;*/
 }
 .wrapp-images .col-xs-offset-1 {
     margin-right: 8.33333333%;
+}
+.wrapp-images.wrapp-images-dop .col-xs-offset-1 {
+    margin-left: 0;
+    margin-right: 0;
+}
+.wrapp-images.wrapp-images-dop .col-xs-offset-1:first-child {
+    margin-left: 16.66%;
 }
 .footer-widget .widget-content ul {
     text-align: left;
@@ -321,7 +329,7 @@ a.blue-color:hover {
     .carousel-capt {
         margin-top: -96px;
     }  
-    .header-guest .navbar-header img {
+    .navbar-header .navbar-brand-mobile img {
         width: 120px;
     }
     .intro-1-home-2 h2 {
@@ -344,6 +352,18 @@ a.blue-color:hover {
     }
     .header-guest .navbar-default .navbar-brand {
         padding: 10px 5px;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px){
+    .left-image .h3.h3-min {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 767px) and (min-width: 640px){
+    .left-image .h3.h3-min {
+        font-size: 12px;
+        margin-top: 10px;
     }
 }
 @media (max-width: 768px) {
