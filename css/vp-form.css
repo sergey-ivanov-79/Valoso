@@ -200,6 +200,7 @@ input {
 .video-project-form .vp-form-right .vp-form label > img {
     width: 25px;
     margin-left: 20px;
+    cursor: pointer;
 }
 .video-project-form .vp-form-right .aud input {
     margin: 0 5px;
