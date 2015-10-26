@@ -400,7 +400,7 @@
         <button class="button-active">View Only</button>
       </div> <!-- /.change-buttons -->
       <div class="col-sm-12 save-project-button">
-        <button data-toggle="modal" data-target="#confirm-modal-new">Save Project</button>
+        <button data-toggle="modal" data-target="#confirm-modal">Save Project</button>
       </div> <!-- /.save-project-button -->
     </div> <!-- /.project-files-buttons -->
   </div> <!-- /.container -->
@@ -1223,113 +1223,7 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /#share-modal -->
 
-<div class="modal fade" id="confirm-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-1" aria-hidden="false">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-        <h4 class="modal-title" id="myModalLabel"></h4>
-      </div>
-      <div class="tab-content">
-          <div class="modal-body modal-body-center tab-pane tab-pane-first active" id="black">
-            <p class="designe gray">Do you have a 3D file?</p>
-            <a class="btn btn-primary btn-lg" href="#upload" aria-controls="upload" role="tab" data-toggle="tab">Yes, I do have a 3D file</a>
-            <a class="btn btn-primary btn-lg" href="#noupload" aria-controls="noupload" role="tab" data-toggle="tab">No, I want to find a 3D file</a>
-          </div>
-          <div class="modal-body modal-body-center tab-pane" id="upload">
-            <p class="designe gray">Upload your 3D file (64mb max)</p>
-            <div class="wrapper-info">
-                <p class="gray">For monocolor upload with STL file</p>
-                <p class="gray">For monocolor upload use OBJ file with UV coordinates</p>
-                <p class="gray">If you are not sure you can hire a designer</p>
-            </div>
-            <a class="btn btn-primary btn-lg">Upload</a>
-            <a class="btn btn-lg blue-color" href="#black" aria-controls="black" role="tab" data-toggle="tab">Black</a>
-          </div>
-          <div class="modal-body modal-body-center tab-pane" id="noupload">
-            <p class="designe gray">Search your product</p>
-                <div class="wrapper-info">
-                    <div id="carouselBot" class="carousel slide" data-ride="carousel">
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                          <div class="row item">
-                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                                <div class="box">
-                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
-                                    <h3>Name / Price</h3>
-                                </div>
-                             </div>
-                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                                <div class="box">
-                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
-                                    <h3>Name / Price</h3>
-                                </div>
-                             </div>
-                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                                <div class="box">
-                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
-                                    <h3>Name / Price</h3>
-                                </div>
-                             </div>
-                              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">                
-                                <div class="box">
-                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
-                                    <h3>Name / Price</h3>
-                                </div>
-                              </div>
-                          </div>
-                           <div class="row item active">
-                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                                <div class="box">
-                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
-                                    <h3>Name / Price</h3>
-                                </div>
-                             </div>
-                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                                <div class="box">
-                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
-                                    <h3>Name / Price</h3>
-                                </div>
-                             </div>
-                             <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">
-                                <div class="box">
-                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
-                                    <h3>Name / Price</h3>
-                                </div>
-                             </div>
-                              <div class="col-xs-6 col-sm-3 col-md-3 col-lg-3">                
-                                <div class="box">
-                                    <div class="boxImg"><img src="./images/p-a/alumide.jpg"></div>
-                                    <h3>Name / Price</h3>
-                                </div>
-                              </div>
-                          </div>
-                        </div>
-                        
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carouselBot" role="button" data-slide="prev">
-                          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="right carousel-control" href="#carouselBot" role="button" data-slide="next">
-                          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
-                        </a>
-                      </div>
-                </div>
-                <a class="btn btn-lg blue-color" href="#black" aria-controls="black" role="tab" data-toggle="tab">Black</a>
-                <a class="btn btn-success btn-lg">Create custom model</a>
-          </div>
-      </div>
-      <!--div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div-->
-    </div>
-  </div>
-</div>
-
-<div id="confirm-modal-new" class="modal fade">
+<div id="confirm-modal" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
