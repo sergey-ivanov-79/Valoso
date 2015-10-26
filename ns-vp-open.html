@@ -10,7 +10,7 @@
 <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
 <link rel="stylesheet" href="css/bootstrap.min.css"> 
-<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<!--link rel="stylesheet" href="css/bootstrap-theme.min.css"-->
 <link rel="stylesheet" href="css/font-awesome.css">
 <link rel="stylesheet" type="text/css" href="css/jquery.tosrus.all.css" />
 <link type="text/css" rel="stylesheet" href="css/slick.css" /> 
@@ -23,6 +23,7 @@
 <link rel="stylesheet" href="css/ns-dashboardMML-nouploads.css"/>
 <link rel="stylesheet" href="css/custom.css">
 <link rel="stylesheet" href="css/video-project-page.css">
+<link rel="stylesheet" href="./css/guest-landing-page.css">
 <link rel="stylesheet" href="css/ns-vp-open.css">
 <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
@@ -399,7 +400,7 @@
         <button class="button-active">View Only</button>
       </div> <!-- /.change-buttons -->
       <div class="col-sm-12 save-project-button">
-        <button>Save Project</button>
+        <button data-toggle="modal" data-target="#confirm-modal">Save Project</button>
       </div> <!-- /.save-project-button -->
     </div> <!-- /.project-files-buttons -->
   </div> <!-- /.container -->
@@ -1221,6 +1222,48 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /#share-modal -->
+
+<div id="confirm-modal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <i class="fa fa-group"></i>
+      </div>
+      <div class="modal-body">
+        <p class="bold">Congratulations on submitting your video project! We will process your information and find the best video editors for you to choose from.</p>
+        <br><p class="p-14">Please add your phone number including country code if you would like us to contact you via telephone otherwise click submit and we will email you within 48hrs.</p>
+      </div>
+      <div class="modal-footer"> 
+          <form class="form-inline">
+            <input type="" class="form-control" id="" placeholder="">
+            <a class="btn btn-primary" href="#">CONFIRM</a>
+          </form>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /#confirm-modal -->
+<style>
+#confirm-modal-new .modal-header {
+    text-align: center;
+    border-bottom: none;
+}
+#confirm-modal-new .modal-dialog {
+    margin: 30px auto;
+}
+#confirm-modal-new .modal-body {
+    padding: 0px 20px 0px;
+}
+#confirm-modal-new .modal-header .fa-group {
+    font-size: 42px;
+}
+#confirm-modal-new .modal-footer {
+    border-top: none;
+    text-align: center;
+}
+#confirm-modal-new .modal-footer a {
+    margin-left: 10px;
+}
+</style>
 <script src="js/jquery-1.11.2.min.js"></script>
 <script>
   var group = ''; 

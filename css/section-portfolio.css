@@ -92,6 +92,11 @@
 .video-software .popover .arrow, .category .popover .arrow {
     display: none;
 }
+.text-uppercase.category .popover-content .form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Open sans", sans-serif;
+}
 .video-software .nav.nav-tabs>li>a {
     margin: auto;
     padding: 10px;
@@ -248,6 +253,10 @@
 }
 .sim-320 .preview-profile-wrapper > .container.wrapp-emptyprofile-info {
     margin-bottom: 98px;
+}
+.sim-320 .user-portfolio .add-new-portfolio {
+    width: 300px;
+    margin-left: -150px;
 }
 .user-profile-left-picture > img {
     border: 2px solid #4f4f4f;
