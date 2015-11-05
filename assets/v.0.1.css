@@ -107,7 +107,9 @@
 .browse-wrap {
   left:30% !important;
 }
-
+.video-upload .browse-wrap {
+    width: 35% !important;
+}
 @media (max-width: 479px) {
     #userLoginContent .formSub input {
         font-size: 14px;
