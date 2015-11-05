@@ -83,7 +83,7 @@
 }
 
 .anchor.upArrow {
-    background: url("../../images/p-a/to-top-arrow.png") no-repeat scroll center 50% rgba(255, 83, 121, 0.8) !important;
+    background: url("../images/to-top-arrow.png") no-repeat scroll center 50% rgba(255, 83, 121, 0.8) !important;
     bottom: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     display: inline-block;
