@@ -119,3 +119,12 @@
         padding: 15px;
     }
 }
+@media (max-width: 360px) {
+    .video-upload .browse-wrap div.title > img {
+        width: 18px;
+    }
+    .video-upload .browse-wrap {
+        width: 40% !important;
+        margin: 0 !important;
+    }
+}
