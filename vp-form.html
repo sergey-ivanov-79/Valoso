@@ -10,7 +10,7 @@
 <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
 <link rel="stylesheet" href="css/bootstrap.min.css"> 
-<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<!--link rel="stylesheet" href="css/bootstrap-theme.min.css"-->
 <link href="css/font-awesome.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/jquery.tosrus.all.css" />
 <link rel="stylesheet" type="text/css" href="css/datepicker.css" />
@@ -18,7 +18,7 @@
 <link rel="stylesheet" href="css/video-project-page.css">
 <link rel="stylesheet" href="css/vp-form.css">
 <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"--><!--/script-->
 <script src="js/jquery-1.11.2.min.js"></script>
 
 
@@ -166,7 +166,7 @@
 
 <div class="video-project-director video-project-form">
   <div class="container">
-    <h3>Start A Video Project</h3>
+    <h3 class="img-tooltip">Start A Video Project</h3>
     <p> Welcome to the Video Project Page! Instructions about what Video Director can do on this page like adding notes, viewing screenshots... 
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vitae gravida ex. 
       <span>For more information, visit the <b>FAQ</b> page.</span>
@@ -175,7 +175,7 @@
       <div class="col-sm-6 vp-form-left">
         <div class="vp-form">
           <div class="form-group form-group-sm">
-            <label for="search-sleeps12">Choose a Category <img data-toggle="tooltip" data-placement="top" title="Choosing a category for your project will help you attract specialized designers in your field" src="images/video-project/info-icon.png" alt="Hover for more info." /></label>
+            <label for="search-sleeps12">Choose a Category <img data-toggle="popover" data-placement="top" title="Choosing a category for your project will help you attract specialized designers in your field" src="images/video-project/info-icon.png" alt="Hover for more info." /></label>
             <select id="search-sleeps12"  name="sleeps" class="form-control" >
               <option>Choose Below</option>
               <option>Autos and Vehicles</option>
@@ -193,7 +193,7 @@
             </select>
           </div> <!-- /.form-group-sm -->
           <div class="form-group form-group-sm">
-            <label for="search-sleeps">Name your Project <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="What do you need done?" /><div id="charNum">60</div></label>
+            <label for="search-sleeps">Name your Project <img class="img-tooltip" src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="What do you need done?" /><div id="charNum">60</div></label>
             <input type="text" placeholder="" class="form-control" id="field" onkeyup="countChar(this)">
           </div> <!-- /.form-group-sm -->
           <label for="search-sleeps">Describe your Project in Detail <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="The more detail you give the better the result you will receive in return" /></label>
@@ -218,7 +218,8 @@
       <div class="col-sm-6 vp-form-right">
         <div class="vp-form">
            <div class="form-group form-group-sm">
-            <label for="search-sleeps">Set your Price <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="Your choice of pricing for your project. Either set your price or price range, or allow designers to bid for the project"  /></label>
+            <label for="search-sleeps">Set your Price <img src="images/video-project/info-icon.png" alt="Hover for more info."  data-toggle="tooltip" data-placement="top" title="Your choice of pricing for your project. Either set your price or price range, or allow designers to bid for the project"  /></label>
+            <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" data-trigger="hover click" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
           </div> <!-- /.form-group-sm -->
           <div class="form-group form-group-sm clearfix">
             <div class="bid">
@@ -984,7 +985,11 @@
 
 <!-- Added -->
 <script type="text/javascript" language="javascript" src="js/tinymce/plugins/placeholder/plugin.js"></script>
-
+<script>
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+</script>
 <!--
 <script>
 $('document').ready(function(){
@@ -1070,5 +1075,13 @@ tinymce.init({
   }).data('datepicker');
 </script>
 <script src="js/video-project-page.js"></script>
+<script>
+(document).ready(function(){
+    $('body').on('click','.img-tooltip', function(){
+        alert(1);
+        
+	});
+});
+</script>
 </body>
 </html>
