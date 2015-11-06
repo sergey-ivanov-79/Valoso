@@ -120,6 +120,9 @@
     .video-project-director .bs-wizard > .bs-wizard-step.has-icon .bs-wizard-dot {
         top: 88px !important;
     }
+    .video-project-director .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {
+        margin-bottom: 0px !important;
+    }
 }
 @media (max-width: 479px) {
     #userLoginContent .formSub input {
