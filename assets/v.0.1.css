@@ -110,6 +110,17 @@
 .video-upload .browse-wrap {
     width: 35% !important;
 }
+@media (max-width: 767px) {
+    .bs-wizard .col-sm-4.col-xs-12.bs-wizard-step {
+        width: 33.33333333%;
+    } 
+    .video-project-director .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {
+        min-height: 66px;
+    }
+    .video-project-director .bs-wizard > .bs-wizard-step.has-icon .bs-wizard-dot {
+        top: 88px !important;
+    }
+}
 @media (max-width: 479px) {
     #userLoginContent .formSub input {
         font-size: 14px;
@@ -119,12 +130,15 @@
         padding: 15px;
     }
 }
-@media (max-width: 360px) {
+@media (max-width: 375px) {
     .video-upload .browse-wrap div.title > img {
         width: 18px;
     }
     .video-upload .browse-wrap {
         width: 40% !important;
         margin: 0 !important;
+    }
+    .video-upload .browse-wrap div.title {
+        font-size: 13px !important;
     }
 }
