@@ -609,6 +609,6 @@ a.blue-color:hover {
     width: 32px;
     height: 32px;
     margin: 0 auto;
-    background-image: url('../admin/img/ajax-loader-fb-big.gif');
+    background-image: url('img/ajax-loader-fb-big.gif');
     background-repeat: no-repeat;
 }
