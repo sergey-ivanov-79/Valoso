@@ -4583,13 +4583,13 @@ a.anchor.upArrow {
 /* End changes for password-request-reset page */
 
 @media (max-width: 767px) {
-    .video-project-director .bs-wizard > .bs-wizard-step .progress {
+    /*.video-project-director .bs-wizard > .bs-wizard-step .progress {
         display: none;
     }
 
     .video-project-director .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {
         margin-bottom: 50px;
-    }
+    }*/
 }
 
 @media (max-width: 640px) {
