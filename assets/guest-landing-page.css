@@ -588,27 +588,27 @@ a.blue-color:hover {
     color: #478cca;
 }
 
-.overlay-wrapper {
+.overlay-wrapper, .overlay-wrapper2 {
     z-index: 9500;
     display: none;
     position: absolute;
 }
 
-.overlay-wrapper .loading-overlay {
+.overlay-wrapper .loading-overlay, .overlay-wrapper2 .loading-overlay  {
     width: 100%;
     height: 100%;
     background: #d1d1d1;
     opacity: 0.5;
 }
 
-.overlay-wrapper .overlay-ajax-loader {
+.overlay-wrapper .overlay-ajax-loader, .overlay-wrapper2 .overlay-ajax-loader2 {
     position: absolute;
 }
 
-.overlay-wrapper .overlay-ajax-loader .ajax-loader-big {
+.overlay-wrapper .overlay-ajax-loader .ajax-loader-big, .overlay-wrapper2 .overlay-ajax-loader2 .ajax-loader-big {
     width: 32px;
     height: 32px;
     margin: 0 auto;
-    background-image: url('../admin/img/ajax-loader-fb-big.gif');
+    background-image: url('img/ajax-loader-fb-big.gif');
     background-repeat: no-repeat;
 }
