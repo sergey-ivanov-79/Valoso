@@ -2247,7 +2247,7 @@ img.video-edit {
 .video-description-right .description-right-up > h4 .popover-content > h4,
 .single-video-description .popover-content > h4,
 .edit-category .popover-content > h4,
-.video-dur .popover-content > h4  {
+.video-dur .popover-content h4  {
   margin: 0;
   padding: 10px 25px 15px;
   background-color: #f7f7f7;
