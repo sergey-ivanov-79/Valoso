@@ -2267,6 +2267,12 @@ img.video-edit {
   width: 100%;
   padding: 5px 10px;
 }
+.popover-content > #video-duration-edit-helper-holder {
+    padding: 0;
+}
+.popover-content > #video-duration-edit-helper-holder .clearfix.ng-scope {
+    padding: 20px 20px 15px;
+}
 .video-des-wrap > p .popover-content div.clearfix,.video-description-right .description-right-up > h4 .popover-content > div,.single-video-description .popover-content > div  {
   padding: 20px 20px 15px;
 }
