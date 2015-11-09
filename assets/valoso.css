@@ -2299,7 +2299,10 @@ img.video-edit {
   max-width: 100%;
   border-color: #bbbbbb;
 }
-.video-project-director .container > h3 .popover-content > h4,.video-pop-input .popover-content > h4,.project-deadline .popover-content > h4  {
+.video-project-director .container > h3 .popover-content > h4,
+.video-pop-input .popover-content > h4,
+.project-deadline .popover-content > h4,
+.edit-category .popover-content h4  {
   margin: 0;
   padding: 10px 25px 15px;
   background-color: #f7f7f7;
@@ -2310,7 +2313,10 @@ img.video-edit {
 .video-project-director .container > h3 .popover-content,.video-pop-input .popover-content,.project-deadline .popover-content  {
   padding: 0;
 }
-.video-project-director .container > h3 .popover-content > div.clearfix,.video-pop-input .popover-content > div,.project-deadline .popover-content > div {
+.video-project-director .container > h3 .popover-content > div.clearfix,
+.video-pop-input .popover-content > div,
+.project-deadline .popover-content > div,
+.edit-category #video-category-edit-helper-holder div.clearfix {
   padding: 20px 20px 15px;
 }
 .video-project-director .container > h3 .popover-content > div button,.video-pop-input .popover-content > div button,.project-deadline .popover-content > div button,.audio-track .popover-content > div button  {
