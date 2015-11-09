@@ -121,7 +121,7 @@
     .video-project-director .bs-wizard > .bs-wizard-step.has-icon .bs-wizard-dot {
         top: 88px !important;
     }
-    #register-as-a-video-editor-modal .col-sm-6.col-xs-12.bs-wizard-step {
+    #register-as-a-video-editor-modal .bs-wizard .col-sm-6.col-xs-12.bs-wizard-step {
         width: 50%;
     } 
     .video-project-director .bs-wizard .col-sm-3.col-xs-12.bs-wizard-step {
