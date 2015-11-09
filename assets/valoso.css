@@ -2271,7 +2271,8 @@ img.video-edit {
   font-size: 18px;
   color: #474747;
 }
-.video-description-right .description-right-up > h4 .popover-content select {
+.video-description-right .description-right-up > h4 .popover-content select,
+.edit-category .popover-content select {
   height: 35px;
   width: 100px;
   margin: 0 13px;
@@ -2280,7 +2281,8 @@ img.video-edit {
   font-size: 18px;
   color: #474747;
 }
-.video-project-director .container > h3 .popover,.video-pop-input .popover,.project-deadline .popover  {
+.video-project-director .container > h3 .popover, .video-pop-input .popover, 
+.project-deadline .popover, .edit-category .popover {
   width: 420px;
   max-width: 100%;
   border-color: #bbbbbb;
@@ -2296,7 +2298,7 @@ img.video-edit {
 .video-project-director .container > h3 .popover-content,.video-pop-input .popover-content,.project-deadline .popover-content  {
   padding: 0;
 }
-.video-project-director .container > h3 .popover-content > div,.video-pop-input .popover-content > div,.project-deadline .popover-content > div {
+.video-project-director .container > h3 .popover-content > div.clearfix,.video-pop-input .popover-content > div,.project-deadline .popover-content > div {
   padding: 20px 20px 15px;
 }
 .video-project-director .container > h3 .popover-content > div button,.video-pop-input .popover-content > div button,.project-deadline .popover-content > div button,.audio-track .popover-content > div button  {
