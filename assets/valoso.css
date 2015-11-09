@@ -2243,7 +2243,10 @@ img.video-edit {
   max-width: 100%;
   border-color: #bbbbbb;
 }
-.video-des-wrap > p .popover-content > h4,.video-description-right .description-right-up > h4 .popover-content > h4,.single-video-description .popover-content > h4 {
+.video-des-wrap > p .popover-content > h4,
+.video-description-right .description-right-up > h4 .popover-content > h4,
+.single-video-description .popover-content > h4,
+.edit-category .popover-content > h4 {
   margin: 0;
   padding: 10px 25px 15px;
   background-color: #f7f7f7;
@@ -2251,7 +2254,10 @@ img.video-edit {
   font-size: 20px;
   color: #333333;
 }
-.video-des-wrap > p .popover-content,.video-description-right .description-right-up > h4 .popover-content,.single-video-description .popover-content {
+.video-des-wrap > p .popover-content,
+.video-description-right .description-right-up > h4 .popover-content,
+.single-video-description .popover-content,
+.edit-category .popover-content {
   padding: 0;
 }
 .video-des-wrap > p .popover-content textarea {
@@ -2271,8 +2277,7 @@ img.video-edit {
   font-size: 18px;
   color: #474747;
 }
-.video-description-right .description-right-up > h4 .popover-content select,
-.edit-category .popover-content select {
+.video-description-right .description-right-up > h4 .popover-content select {
   height: 35px;
   width: 100px;
   margin: 0 13px;
@@ -2280,6 +2285,13 @@ img.video-edit {
   padding-left: 10px;
   font-size: 18px;
   color: #474747;
+}
+.edit-category .popover-content select {
+    height: 35px;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 18px;
+    color: #474747; 
 }
 .video-project-director .container > h3 .popover, .video-pop-input .popover, 
 .project-deadline .popover, .edit-category .popover {
