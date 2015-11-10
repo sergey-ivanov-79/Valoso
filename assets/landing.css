@@ -1,0 +1,132 @@
+.modalCreateNow .modal-dialog {
+    margin: 30px auto;
+    width: 612px;
+}
+.modalCreateNow .modal-header {
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+} 
+.modalCreateNow.modaldirectorEdit .modal-header {
+   border-bottom: none; 
+   padding: 20px;
+}
+.modalCreateNow.modaldirectorEdit .modal-body {
+   padding: 20px;
+}
+.modalCreateNow.modaldirectorEdit .modal-footer > .btn {
+    width: 280px;
+}
+.modalCreateNow .modal-header .modal-title {
+    font-size: 24px;
+    color: #727272;
+    font-weight: 600;
+}
+.modalCreateNow .modal-footer {
+    text-align: center;
+    border-top-width: 0px;
+}
+.modalCreateNow .modal-footer > .btn {
+    font-size: 20px;
+    font-weight: 600;
+    width: 198px;
+    text-align: center;
+    color: #fff;
+}
+.modalCreateNow .modal-footer > .btn.btn-start-t {
+    background-color: #ff6c8d;
+    border-color: #ff6c8d;
+}
+.modalCreateNow .modal-footer > .btn.btn-start-t:hover {
+    background-color: #fff;
+    border-color: #ff6c8d;
+    color: #ff6c8d;
+}
+.modalCreateNow .modal-footer > .btn.btn-create-n {
+    background-color: #488cca;
+    border-color: #488cca;
+}
+
+/* additions for role selection bootbox */
+
+.bootbox.modal .modal-footer > button.btn.btn-default,
+.bootbox.modal .modal-footer > button.btn.btn-default:hover,
+.bootbox.modal .modal-footer > button.btn.btn-primary,
+.bootbox.modal .modal-footer > button.btn.btn-primary:hover {
+    background-color: transparent;
+    border-color: transparent;
+    width: 280px;
+    padding: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+}
+
+.bootbox.modal .modal-footer > button >.btn.btn-create-n {
+    background-color: #488cca;
+    border-color: #488cca;
+    color: #ffffff;
+    text-transform: none;
+}
+
+.bootbox.modal .modal-footer > button >.btn.btn-create-n:hover {
+    background-color: #ffffff;
+    border-color: #488cca;
+    color: #488cca;
+    text-transform: none;
+}
+
+.bootbox.modal .modal-footer > button >.btn.btn-start-t {
+    background-color: #ff6c8d;
+    border-color: #ff6c8d;
+    color: #ffffff;
+    text-transform: none;
+}
+
+.bootbox.modal .modal-footer > button >.btn.btn-start-t:hover {
+    background-color: #ffffff;
+    border-color: #ff6c8d;
+    color: #ff6c8d;
+    text-transform: none;
+}
+
+.modalCreateNow .modal-body {
+    color: #474747;
+    line-height: 1.4;
+    font-size: 20px;
+    color: #474747;}
+
+/* /additions for role selection bootbox */
+
+.modalCreateNow .modal-footer > .btn.btn-create-n:hover {
+    background-color: #fff;
+    border-color: #488cca;
+    color: #488cca;
+}
+.modalCreateNow .modal-body {
+    padding: 15px;
+}
+.modalCreateNow.modal .close {
+    outline-width: 0px;
+}
+.modalCreateNow .modal-body > p {
+    line-height: 1.4;
+    font-size: 20px;
+    color: #474747;
+}
+.modal-open .modalCreateNow.modal {
+    overflow-y: hidden;
+}
+@media(max-width: 639px) {
+    .modalCreateNow .modal-dialog {
+        width: auto;
+    }
+    .modalCreateNow .modal-header .modal-title {
+        font-size: 20px;
+    }
+    .modalCreateNow .modal-footer > .btn {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .modalCreateNow .modal-body > p {
+        font-size: 16px;
+    }
+}
