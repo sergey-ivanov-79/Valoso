@@ -338,18 +338,6 @@
 .footer-widget .widget-content ul li a:hover {
     color: #4DCBFF;
 }
-.modalCreateNow .modal-footer .btn-create-n-img2,
-.modalCreateNow .modal-footer .btn-start-t-img2 {
-    display: none;
-}
-.modalCreateNow .modal-footer .btn-create-n:hover .btn-create-n-img2,
-.modalCreateNow .modal-footer .btn-start-t:hover .btn-start-t-img2 {
-    display: inline-block;
-}
-.modalCreateNow .modal-footer .btn-create-n:hover .btn-create-n-img1,
-.modalCreateNow .modal-footer .btn-start-t:hover .btn-start-t-img1 {
-    display: none;
-}
 @media (max-width: 992px) {
     .desktop-buttons {
         right: 35%;
