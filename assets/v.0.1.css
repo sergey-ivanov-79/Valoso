@@ -137,7 +137,7 @@
         padding: 15px;
     }
     .video-project-director .container > h3 .popover-content input, .video-pop-input .popover-content input, .project-deadline .popover-content input, .single-video-description .popover-content input {
-        width: auto;
+        width: auto !important;
     }
 }
 @media (max-width: 375px) {
