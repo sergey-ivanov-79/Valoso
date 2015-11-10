@@ -136,6 +136,9 @@
     #register-as-a-video-editor-modal .modal-body {
         padding: 15px;
     }
+    .video-project-director .container > h3 .popover-content input, .video-pop-input .popover-content input, .project-deadline .popover-content input, .single-video-description .popover-content input {
+        width: auto;
+    }
 }
 @media (max-width: 375px) {
     .video-upload .browse-wrap div.title > img {
