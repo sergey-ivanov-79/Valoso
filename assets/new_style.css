@@ -15,14 +15,9 @@ and open the template in the editor.
     border-radius: 30px;
     color: black;
 }
-
-
 .section_table .btn {
     padding: 6px 12px;
 }
-
-
-
 .section_table .btn-info:hover,
 .section_table .btn-info:focus, 
 .section_table .btn-info:active, 
@@ -32,7 +27,6 @@ and open the template in the editor.
     background-color: #31b0d5;
     border-color: #269abc;
 }
-
 .section_table .btn-danger:hover,
 .section_table .btn-danger:focus,
 .section_table .btn-danger:active, 
@@ -42,13 +36,10 @@ and open the template in the editor.
     background-color: #c9302c;
     border-color: #ac2925;
 }
-
 .section_table .table > thead > tr > th,
 .section_table .table > tbody > tr > td{
     text-align: center;
 }
-
-
 .add_section{
     background-color: #ebebeb;
     padding: 15px;
@@ -57,18 +48,14 @@ and open the template in the editor.
     text-align: center;
     min-height: 305px;
 }
-
 .add_section h1{
-
     margin-bottom: 25px;
     font-size: 22px;
 }
-
 .add_section .form-control{
     width:50%;
     display: inline-block;
 }
-
 .add_section .btn{
     color: #fff;
     background-color: #3071a9;
@@ -76,20 +63,16 @@ and open the template in the editor.
     padding: 6px 12px;
     font-size: 14px;
 }
-
 .add_video .form-control{
     margin-bottom: 15px;
 }
-
 .row .col-md-5{
     height: auto !important;
 }
-
 .section-box{
     box-shadow: #3F3E3E 0px 0px 10px;
     border-radius: 8px;
 }
-
 .tutorials{
     font-size: 24px;
     margin-left: 20px;
@@ -103,11 +86,9 @@ and open the template in the editor.
     font-size: 20px;
     color: #ff6c8d
 }
-
 #addSectionModal .modal-content{
     min-height: 230px;
 }
-
 #addSectionModal .add-sections, .add-sections:hover{
     background-color: rgb(86, 140, 237);
     border-color: rgb(86, 140, 237);
@@ -152,11 +133,9 @@ and open the template in the editor.
 .modal-body iframe{
     height: 450px;
 }
-
 .btn-top a {
     font-size: 14px;
 }
-
 .wrapper-top .btn-new-red{
     color: #fff;
     padding: 7px 15px !important;
@@ -168,7 +147,6 @@ and open the template in the editor.
     background: #4dcbff -moz-linear-gradient(to top, #4fcbff, #45a1c7);
     background: #4dcbff -o-linear-gradient(to top, #4fcbff, #45a1c7);
 }
-
 .wrapper-top .btn-new-red:hover {
     color: #6f6f6f;
     background: #66ff67;
@@ -182,14 +160,12 @@ and open the template in the editor.
     border: 2px solid #6dbe38;
     text-decoration: none;
 }
-
 .wrapper-messages .content-left > a {
     min-width: 110px !important;
     text-decoration: none;
     color: #fff;
     padding: 7px 15px !important;
 }
-
 .wrapper-messages .content-left > a:hover {
     text-decoration: none;
 }
@@ -207,14 +183,12 @@ and open the template in the editor.
 .wrapper-freelanser table {
     margin-bottom: 5px;
 }
-
 input[type="checkbox"] {
     vertical-align: bottom;
 }
 .table.table-t-i > thead:first-child > tr:first-child > th {
     border-top: 0px;
 }
-
 .content-right .btn-top-min {
     padding: 5px 15px !important;
     font-size: 12px;
@@ -226,7 +200,6 @@ input[type="checkbox"] {
     background: none !important;
     margin-right: 10px;
 }
-
 .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
     pointer-events: none;
     cursor: not-allowed;
@@ -239,7 +212,6 @@ input[type="checkbox"] {
     text-decoration: underline;
     border: 2px solid #6E6E6E;
 }
-
 .content-right .btn-top-min > span {
     margin-right: 15px;
     color: #ccc;
@@ -252,11 +224,9 @@ input[type="checkbox"] {
 .pozit-t-i .table-t-i tr > td {
     font-size: 12px;
 }
-
 .pozit-t-i .table-t-i tr > th, .pozit-t-i .table-t-i tr > td {
     color: #6f6f6f;
 }
-
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     padding: 8px;
     line-height: 1.42857143;
@@ -267,7 +237,6 @@ td {
     font-weight: normal;
     vertical-align: top;
 }
-
 .content-right tbody tr td .checkbox {
     webkit-transition: opacity .1s ease-in-out;
     -moz-transition: opacity .1s ease-in-out;
@@ -275,7 +244,6 @@ td {
     transition: opacity .1s ease-in-out;
     /* opacity: 0; */
 }
-
 .content-right .margin-right {
     margin-right: 10px;
 }
@@ -285,7 +253,6 @@ td {
 /*.content-right .height {
     height: 41px;
 }*/
-
 .content-right .send, .content-right .cancel {
     padding: 5px 10px;
     margin-top: 30px;
@@ -295,7 +262,6 @@ td {
     text-decoration: none !important;
     color: #fff !important;
 }
-
 .content-right.new .send, .content-right.new .cancel {
     font-size: 16px;
 }
@@ -306,30 +272,25 @@ td {
     background-color: #ff6c8d;
     color: #fff !important;
 }
-
 textarea textarea.form-control {
     margin: 10px 0 !important;
 }
-
 .no-margin-bottom {
     margin-bottom: 0px !important;
 }
 .content-right caption {
     padding: 10px 15px;
 }
-
 .wrapper-messages a, .contract-content a {
     margin-top: 12px;
     color: #428bca !important;
 }
-
 .content-right .pointer-none {
     cursor: auto;
 }
 .pozit-t-i .table-t-i tr > td {
     font-size: 12px;
 }
-
 .wrapper-content .cont-left {
     border-radius: 5px !important;
     -webkit-border-radius: 5px !important;
@@ -344,11 +305,9 @@ textarea textarea.form-control {
     margin-top: 20px;
     margin-bottom: 10px;
 }
-
 .contrt {
     color: #666;
 }
-
 .form-box {
     padding-bottom: 50px;
     color: #6e6e6e;
@@ -357,7 +316,6 @@ textarea textarea.form-control {
     color: #666;
     padding-bottom: 10px;
 }
-
 .fback {
     border: 2px solid #f0f1ec;
     padding: 14px 0 30px 18px;
@@ -570,7 +528,6 @@ a {
     font-size: 18px;
     color: #4ecef6;
 }
-
 .main-title {
     font-weight: 700;
     color: #6e6e6e;
@@ -599,7 +556,6 @@ a {
     border: none;
     padding-bottom: 0;
 }
-
 .proposal-area {
     color: #6e6e6e;
     padding-bottom: 50px;
@@ -610,11 +566,9 @@ a {
 .table-page {
     margin-bottom: 100px;
 }
-
 .table-page tbody tr td {
     vertical-align: bottom;
 }
-
 .table-page tbody tr td {
     border-top: none;
     border-bottom: 2px solid #ccc;
@@ -643,7 +597,6 @@ a {
 .table-notif tbody tr td > p a {
     color: #51ccff;
 }
-
 .wrapper-element span.marg {    
     margin-right: 5px;
 }
@@ -654,14 +607,12 @@ a {
     margin-top: 30px;
     margin-bottom: 100px;
 }
-
 .wrapper-element .wrap-table-not {
     border-radius: 10px !important;
     -webkit-border-radius: 10px !important;
     -moz-border-radius: 10px !important;
     border: 1px solid #ddd;
 }
-
 .wrap-table-not {
     margin-bottom: 15px;
 }
@@ -671,13 +622,11 @@ a {
 .wrap-table-not tbody tr td.no-border {
     border: none;
 }
-
 .proposal-area p {
     color: #6e6e6e;
     margin-bottom: 10px;
     line-height: 21px;
 }
-
 .wrapper-element .img-not {
     border-radius: 5px !important;
     -webkit-border-radius: 5px !important;
@@ -690,7 +639,6 @@ a {
 .proposal-area img {
     vertical-align: middle;
 }
-
 .unread-notification{
     display: inline-block;
     background: rgb(255, 2, 2);
@@ -702,11 +650,9 @@ a {
 .td_cut {
     width: 60%;
 }
-
 .form-box #designer_profile_picture, .form-box #designer_portfolio_picture {
     min-height: 42px;
 }
-
 #designer_profile_picture, #designer_portfolio_picture {
     position: absolute;
     opacity: 0;
@@ -714,19 +660,16 @@ a {
     filter: alpha(opacity=0);
     cursor: pointer;
 }
-
 #signInerror_icon , #signInloader , #signUperror_icon , #signUploader{
     width: 40px;
     vertical-align: bottom;
 }
-
 /*.mess-inside-content{
     word-break: break-all;
 }*/
 #img-name{
     margin:5px 5px -10px 1px;
 }
-
 .del-img-name {
     margin-left: 10px;
     border: 0 none;
@@ -740,19 +683,15 @@ a {
 .mess-count-color{
     color: cornflowerblue
 }
-
 .body-tab .table {
     margin-bottom: 0;
 }
-
 #scrollbar1 .disable {
     display: block !important;
 }
-
 #milesec img {
     margin-top: 13px;
 }
-
 .min-mob .p-reply{
     border-radius: 12px;
     -webkit-border-radius: 12px;
@@ -768,7 +707,6 @@ a {
     margin-right: 5px;
     border-color: #4dcbff;
 }
-
 .subscr .p-reply-submit{
     border-radius: 12px;
     -webkit-border-radius: 12px;
@@ -781,12 +719,10 @@ a {
     font-weight: 600;
     padding: 5px 0;
 }
-
 .p-reply-submit {
     background-color: #4dcbff;
     margin-right: 5px;
 }
-
 .subscr .p-reply-submit:hover {
     background-color: #4dcbff;
     text-decoration: none;
@@ -797,11 +733,9 @@ a {
     left: auto;
     font-size: 100px;
 }
-
 .wrapper-form .attach{
     cursor: pointer;
 }
-
 .utitle{
     -o-text-overflow: ellipsis;   /* Opera */
     text-overflow:    ellipsis;   /* IE, Safari (WebKit) */
@@ -809,17 +743,14 @@ a {
     white-space:nowrap;           /* force single line */
     width: 180px;
 }
-
 .wrapper-messages ul.pagination li a{
   margin-top: 0px !important;  
 }
-
 .stat-left-orange {
     background: none #FFD85F !important;
     padding-top: 30px !important;
     padding-bottom: 30px !important;
 }
-
 .stat-left-orange i {
     font-size: 22px;
     padding-right: 10px;
