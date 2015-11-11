@@ -139,6 +139,10 @@
     .video-project-director .container > h3 .popover-content input, h4.video-pop-input .popover-content input, .project-deadline .popover-content input, .single-video-description .popover-content input {
         width: auto !important;
     }
+    #userLoginContent .butLink a {
+        padding: 10px;
+        font-size: 16px;
+    }
 }
 @media (max-width: 375px) {
     .video-upload .browse-wrap div.title > img {
