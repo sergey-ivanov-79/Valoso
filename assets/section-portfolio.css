@@ -231,8 +231,11 @@
     font-size: 30px;
     font-weight: 600;
 }
-.added-sim-640.sim-640 .preview-profile-wrapper > .addition.container.dop-top-info {
+/*.added-sim-640.sim-640 .preview-profile-wrapper > .addition.container.dop-top-info {
     margin-top: 106px;
+}*/
+.added-sim-640.sim-640 .preview-profile-wrapper > .addition.container.dop-top-info {
+    margin-top: 210px;
 }
 .sim-640 .preview-profile-wrapper > .container.wrapp-emptyprofile-info {
     margin-bottom: 108px;
@@ -243,8 +246,11 @@
 .phone-simulator.phone-simulator-dop {
     margin-top: 201px;
 }
-.added-sim-320 .preview-profile-wrapper > .addition.container.dop-top-info {
+/*.added-sim-320 .preview-profile-wrapper > .addition.container.dop-top-info {
     margin-top: 98px;
+}*/
+.added-sim-320 .preview-profile-wrapper > .addition.container.dop-top-info {
+    margin-top: 201px;
 }
 .sim-320 .preview-profile-wrapper > .container.wrapp-emptyprofile-info {
     margin-bottom: 98px;
