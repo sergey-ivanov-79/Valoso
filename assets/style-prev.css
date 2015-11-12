@@ -236,7 +236,7 @@ a:hover {
 }
 
 /* icons */
-.ico { position: relative;background: url("./images/sprites.png") no-repeat scroll 0 0 transparent; text-indent: -9999px !important;display: inline-block;}
+.ico { position: relative;background: url("../images/sprites.png") no-repeat scroll 0 0 transparent; text-indent: -9999px !important;display: inline-block;}
 .ico-cart,
 .ico-cart2 {background-position: -105px -32px;height: 26px;top: -8px;width: 28px;}
 .ico-cart:hover {background-position: -76px -32px;height: 26px;top: -8px;width: 28px;}
