@@ -1559,6 +1559,11 @@ span.upload-path {
   width: 45%;
   margin: 0 2.5%;
 }
+/* add for button */
+.video-upload .browse-wrap {
+    float: none !important;
+    margin: 0 auto !important;
+}
 .video-upload .upload-path {
   margin: 0;
 }
