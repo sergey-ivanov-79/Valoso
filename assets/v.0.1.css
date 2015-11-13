@@ -110,6 +110,12 @@
 .video-upload .browse-wrap {
     width: 35% !important;
 }
+@media (max-width: 1059px) {
+    .col-sm-4.single-video-featuredimg,
+    col-sm-8 single-video-description {
+        width: 50%;
+    }
+}
 @media (max-width: 767px) {
     .bs-wizard .col-sm-4.col-xs-12.bs-wizard-step {
         width: 33.33333333%;
@@ -126,6 +132,10 @@
     } 
     .video-project-director .bs-wizard .col-sm-3.col-xs-12.bs-wizard-step {
         width: 25%;
+    }
+    .col-sm-4.single-video-featuredimg,
+    col-sm-8 single-video-description {
+        width: 100%;
     }
 }
 @media (max-width: 479px) {
