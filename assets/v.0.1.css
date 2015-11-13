@@ -112,7 +112,7 @@
 }
 @media (max-width: 1059px) {
     .col-sm-4.single-video-featuredimg,
-    col-sm-8 single-video-description {
+    .col-sm-8.single-video-description {
         width: 50%;
     }
 }
@@ -134,7 +134,7 @@
         width: 25%;
     }
     .col-sm-4.single-video-featuredimg,
-    col-sm-8 single-video-description {
+    .col-sm-8.single-video-description {
         width: 100%;
     }
 }
