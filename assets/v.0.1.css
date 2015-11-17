@@ -127,6 +127,9 @@
     height: auto;
     margin-bottom: 20px;
 }
+button#project-delete-file {
+    float: right;
+}
 @media (max-width: 1059px) {
     .col-sm-4.single-video-featuredimg,
     .col-sm-8.single-video-description {
@@ -180,7 +183,7 @@
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
-        width: 250px;
+        width: 248px;
         display: block;
     }
 }
