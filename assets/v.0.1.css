@@ -105,10 +105,26 @@
     border-color: transparent;
 }
 .browse-wrap {
-  left:30% !important;
+  margin-left: auto;
+  margin-right: auto;
+  float: none;
+  left:auto !important;
 }
 .video-upload .browse-wrap {
-    width: 35% !important;
+    width: 40% !important;
+}
+.project-files .video-list {
+    padding: 0 10px;
+}
+.single-video-featuredimg .ng-scope > img {
+    display: block;
+    max-width: 100%;
+    height: auto; 
+    max-height: 100% !important;
+}
+.single-video .single-video-featuredimg, .single-video-description {
+    height: auto;
+    margin-bottom: 20px;
 }
 @media (max-width: 1059px) {
     .col-sm-4.single-video-featuredimg,
@@ -137,6 +153,9 @@
     .col-sm-8.single-video-description {
         width: 100%;
     }
+    .video-upload .browse-wrap {
+        width: 60% !important;
+    }
 }
 @media (max-width: 479px) {
     #userLoginContent .formSub input {
@@ -159,7 +178,6 @@
         width: 18px;
     }
     .video-upload .browse-wrap {
-        width: 40% !important;
         margin: 0 !important;
     }
     .video-upload .browse-wrap div.title {
