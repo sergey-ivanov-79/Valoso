@@ -121,8 +121,9 @@
     max-width: 100%;
     height: auto; 
     max-height: 100% !important;
+    margin: 0 auto;
 }
-.single-video .single-video-featuredimg, .single-video-description {
+.single-video .single-video-featuredimg,.single-video .single-video-description {
     height: auto;
     margin-bottom: 20px;
 }
@@ -172,6 +173,16 @@
         padding: 10px;
         font-size: 16px;
     }
+    .single-video-featuredimg video.ng-scope {
+        width: 238px;
+    }
+    .single-video-description .single-video-title.ng-binding {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 250px;
+        display: block;
+    }
 }
 @media (max-width: 375px) {
     .video-upload .browse-wrap div.title > img {
@@ -181,6 +192,6 @@
         margin: 0 !important;
     }
     .video-upload .browse-wrap div.title {
-        font-size: 13px !important;
+        font-size: 14px !important;
     }
 }
