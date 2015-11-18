@@ -4751,3 +4751,8 @@ form .errors-list ul {
     margin-top: 15px;
     padding-left: 20px;
 }
+.upArrow, .how-work .btn.btn-success.btn-lg,
+#loginBox .modal-body #tabSign,
+#loginBox .modal-body #tabLogin {
+    outline: none;
+}
