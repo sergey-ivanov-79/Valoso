@@ -4754,5 +4754,5 @@ form .errors-list ul {
 .upArrow, .how-work .btn.btn-success.btn-lg,
 #loginBox .modal-body #tabSign,
 #loginBox .modal-body #tabLogin {
-    outline: none;
+    outline: none !important;
 }
