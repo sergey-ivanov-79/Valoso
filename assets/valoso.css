@@ -1573,6 +1573,7 @@ span.upload-path {
   width: 100%;
   background-color: #f6f3f2;
   border-radius: 5px;
+  margin-top: 15px !important;
 }
 .project-files > h3 {
   color: #474747;
@@ -4755,4 +4756,7 @@ form .errors-list ul {
 #loginBox .modal-body #tabSign,
 #loginBox .modal-body #tabLogin {
     outline: none !important;
+}
+.displayNone {
+    display: none;
 }
