@@ -2147,10 +2147,10 @@ div#download-project-files-modal .col-sm-4 .video-dl-wrap > img,div#delete-proje
   bottom: 5px;
   right: 5px;
   top: 5px;
-  background-image: url('../images/video-project/dl1.jpg');
+/*  background-image: url('../images/video-project/dl1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center;*/
 }
 div#download-project-files-modal .modal-title,div#delete-project-files-modal .modal-title,div#send-project-files-modal .modal-title {
   font-size: 24px;
