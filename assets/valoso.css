@@ -4780,6 +4780,9 @@ form .errors-list ul {
 .form-group-popover .bid .form-group.rang {
     margin-bottom: 9px !important;
 }
+.video-description-right .description-right-up > h4 div {
+    display: inline-block;
+}
 @media (max-width: 479px) {
     .video-pop-input .popover-content .form-group-popover button.submit-popover {
         width: 100%;
