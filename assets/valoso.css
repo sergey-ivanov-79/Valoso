@@ -4760,3 +4760,18 @@ form .errors-list ul {
 .displayNone {
     display: none;
 }
+/* Begin Changes for VP */
+.video-pop-input .popover-content .form-group-popover input.form-control#budget_fixed,
+.video-pop-input .popover-content .form-group-popover input.form-control#budget_min,
+.video-pop-input .popover-content .form-group-popover input.form-control#budget_max {
+    width: auto !important;
+}
+.video-pop-input .popover-content .form-group-popover input.ng-valid {
+    width: auto !important;
+    height: auto !important;
+    margin-top: 5px;
+}
+.video-pop-input .popover-content .form-group-popover button.submit-popover {
+    float: right;
+}
+/* END Changes for VP */
