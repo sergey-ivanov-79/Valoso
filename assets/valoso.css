@@ -4778,6 +4778,12 @@ form .errors-list ul {
     padding-bottom: 0px !important;
 }
 .form-group-popover .bid .form-group.rang {
-    margin-bottom: 12px !important;
+    margin-bottom: 9px !important;
+}
+@media (max-width: 479px) {
+    .video-pop-input .popover-content .form-group-popover button.submit-popover {
+        width: 100%;
+        text-align: right;
+    }
 }
 /* END Changes for VP */
