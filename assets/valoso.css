@@ -4764,14 +4764,20 @@ form .errors-list ul {
 .video-pop-input .popover-content .form-group-popover input.form-control#budget_fixed,
 .video-pop-input .popover-content .form-group-popover input.form-control#budget_min,
 .video-pop-input .popover-content .form-group-popover input.form-control#budget_max {
-    width: auto !important;
+    width: auto;
 }
 .video-pop-input .popover-content .form-group-popover input.ng-valid {
-    width: auto !important;
-    height: auto !important;
+    width: auto;
+    height: auto;
     margin-top: 5px;
 }
 .video-pop-input .popover-content .form-group-popover button.submit-popover {
     float: right;
+}
+.form-group-popover .bid {
+    padding-bottom: 0px;
+}
+.form-group-popover .bid .form-group.rang {
+    margin-bottom: 12px;
 }
 /* END Changes for VP */
