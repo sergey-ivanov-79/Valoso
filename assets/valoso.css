@@ -4761,6 +4761,11 @@ form .errors-list ul {
     display: none;
 }
 /* Begin Changes for VP */
+
+#confirm-modal-new .btn.btn-primary.confirm-submission,
+#confirm-modal-new .form-control.ng-pristine.ng-valid {
+    margin-bottom: 10px;
+}
 .video-pop-input .popover-content .form-group-popover input.form-control#budget_fixed,
 .video-pop-input .popover-content .form-group-popover input.form-control#budget_min,
 .video-pop-input .popover-content .form-group-popover input.form-control#budget_max {
@@ -4790,3 +4795,10 @@ form .errors-list ul {
     }
 }
 /* END Changes for VP */
+/* Begin Changes for edit page */
+@media (max-width: 991px) {
+   .fa.fa-plus-circle.edit-together {
+        width: auto;
+    } 
+}
+/* END Changes for edit page */
