@@ -4762,8 +4762,7 @@ form .errors-list ul {
 }
 /* Begin Changes for VP */
 
-#confirm-modal-new .btn.btn-primary.confirm-submission,
-#confirm-modal-new .form-control.ng-pristine.ng-valid {
+#confirm-modal-new .form-inline input.form-control {
     margin-bottom: 10px;
 }
 .video-pop-input .popover-content .form-group-popover input.form-control#budget_fixed,
@@ -4802,3 +4801,20 @@ form .errors-list ul {
     } 
 }
 /* END Changes for edit page */
+/* Begin changes for blog page */
+.new-article-block .content-wrapper p > iframe {
+    height: 360px;
+    width: 640px;
+    margin: 0 auto;
+}
+@media (max-width: 640px) {
+    .new-article-block .content-wrapper p > iframe {
+        height: 250px;
+    }
+}
+@media (max-width: 375px) {
+    .new-article-block .content-wrapper p > iframe {
+        height: auto;
+    }
+}
+/* END changes for blog page */
