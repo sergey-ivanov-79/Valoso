@@ -4723,7 +4723,7 @@ a.anchor.upArrow {
     }
     .vp-form-pack .col-sm-6 {
         padding-left: 15px;
-    }
+    } 
     
     #userLoginContent .formSub {
         margin-top: 15px;
@@ -4826,6 +4826,15 @@ form .errors-list ul {
         height: 250px;
     }
 }
+@media (max-width: 420px) {
+    #userLoginContent .formCheck .forgotPass {
+        float: none !important;
+        margin-top: 10px;
+    }
+    #userLoginContent .formCheck {
+        text-align: center;
+    }
+}
 @media (max-width: 375px) {
     .new-article-block .content-wrapper p > iframe {
         height: auto;
@@ -4833,6 +4842,7 @@ form .errors-list ul {
 }
 /* END changes for blog page */
 /* Begin changes for LP */
-
-
+.overlay-wrapper .overlay-ajax-loader {
+    margin-left: -16px;
+}
 /* END changes for blog LP */
