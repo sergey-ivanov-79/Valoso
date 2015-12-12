@@ -92,6 +92,7 @@
     border-color: #ff6c8d;
     color: #ffffff;
     text-transform: none;
+    width: 270px !important;
 }
 
 .bootbox.modal .modal-footer > button >.btn.btn-start-t:hover {
