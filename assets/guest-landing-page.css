@@ -519,6 +519,9 @@ a.blue-color:hover {
         font-size: 18px;
         padding: 10px 15px;
     }
+    .wrapp-images.wrapp-images-dop .col-xs-offset-1:first-child {
+        margin-left: 0;
+    }
 }
 @media (max-width: 480px) {
     .header.header-guest .logo-main-tab {

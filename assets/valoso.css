@@ -4714,12 +4714,26 @@ a.anchor.upArrow {
 .preview-profile-wrapper .header-dop.header-mobile .navbar-brand.navbar-brand-mobile {
     left: -15px !important;
 }
+.bootbox.modal.fade.modalCreateNow.in {
+    padding-right: 0px !important;
+}
 @media (max-width: 767px) {
     .header-min-height {
         margin: 0 !important;
     }
     .vp-form-pack .col-sm-6 {
         padding-left: 15px;
+    }
+    
+    #userLoginContent .formSub {
+        margin-top: 15px;
+    }
+    #userLoginContent .formCheck input[type=checkbox] {
+        margin-right: 0px !important;
+    }
+    .header-mobile-fix.proj-forum > .container > .row {
+        margin-left: 0px !important;
+        margin-right: 0px !important;
     }
 }
 .video-project-form .vp-form-right .vp-form label img[data-toggle="tooltip"] {
@@ -4818,3 +4832,9 @@ form .errors-list ul {
     }
 }
 /* END changes for blog page */
+/* Begin changes for LP */
+#userLoginContent .formSub {
+    
+}
+
+/* END changes for blog LP */
