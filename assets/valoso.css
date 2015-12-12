@@ -4735,6 +4735,9 @@ a.anchor.upArrow {
         margin-left: 0px !important;
         margin-right: 0px !important;
     }
+    .header-guest .nav.navbar-nav {
+        top: 0 !important;
+    }
 }
 .video-project-form .vp-form-right .vp-form label img[data-toggle="tooltip"] {
     font-size: 14px;

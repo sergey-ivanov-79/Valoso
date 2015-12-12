@@ -77,6 +77,7 @@
     border-color: #488cca;
     color: #ffffff;
     text-transform: none;
+    width: 270px !important;
 }
 
 .bootbox.modal .modal-footer > button >.btn.btn-create-n:hover {
