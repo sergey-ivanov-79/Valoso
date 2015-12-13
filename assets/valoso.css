@@ -1264,7 +1264,9 @@ div#link-profile-modal .modal-dialog.modal-dialog-proj { width: 600px;}
     }
     .min-text-menu { font-size: 12px !important;}
     .nav-list li a.min-text-menu .fa { font-size: 16px;}
-    .dash-page .dropdown-menu-new { display: none;}
+    
+    /*.dash-page .dropdown-menu-new { display: none;}*/
+    
     .active .header-mobile { z-index: 41;}
     .wrapp-row-offcanvas {
       overflow-x: hidden; /* Prevent scroll on narrow devices */
@@ -4716,6 +4718,9 @@ a.anchor.upArrow {
 }
 .bootbox.modal.fade.modalCreateNow.in {
     padding-right: 0px !important;
+}
+#loginBox {
+    padding-right: 0px !important; 
 }
 @media (max-width: 767px) {
     .header-min-height {

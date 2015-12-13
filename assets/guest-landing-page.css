@@ -615,3 +615,6 @@ a.blue-color:hover {
     background-image: url('img/ajax-loader-fb-big.gif');
     background-repeat: no-repeat;
 }
+.content-wrapper p:first-child {
+    text-align: center;
+}
