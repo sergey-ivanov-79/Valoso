@@ -26,7 +26,7 @@ a.blue-color:hover {
     font-size: 28px;
 }
 .header-guest .navbar-default .navbar-brand {
-    padding: 10px 10px;
+    padding: 10px 10px !important;
 }
 .header-guest .navbar-header {
     background: none;
@@ -431,7 +431,7 @@ a.blue-color:hover {
         border: 1px solid #ddd;
     }
     .header-guest .navbar-default .navbar-brand {
-        padding: 10px 5px;
+        padding: 5px 10px !important;
     }
     .new-landing-page  .container-fluid {
         padding-left: 0;
@@ -617,4 +617,7 @@ a.blue-color:hover {
 }
 .content-wrapper p:first-child {
     text-align: center;
+}
+.content-wrapper .wp-video {
+    margin: 10px auto;
 }
