@@ -76,9 +76,9 @@
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#">Register as a Video Editor</a></li>
-            <li><a href="#" id="SignOpen">Sign Up</a></li>
+            <li><a href="#" class="SignOpen">Sign Up</a></li>
             <li class="hidden-xs"><p class="blue-color">/</p></li>
-            <li><a href="#" id="loginOpen">Log in</a></li>
+            <li><a href="#" class="loginOpen">Log in</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -313,11 +313,11 @@
 	      }
 	    }
 	  });
-    $('#loginOpen').click(function() {
+    $('.loginOpen').click(function() {
        $('#userLoginTab a[href="#conLogin"]').tab('show');   
        $('#loginBox').modal('show');    
     });
-    $('#SignOpen').click(function() {
+    $('.SignOpen').click(function() {
       $('#userLoginTab a[href="#conSign"]').tab('show'); 
       $('#loginBox').modal('show');
     });
