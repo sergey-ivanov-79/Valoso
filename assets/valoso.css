@@ -4887,10 +4887,7 @@ img.video-edit {
         padding: 10px 0px !important; 
     } 
     .slow-loading-holder {
-        min-height: 0;
-    }
-    .slow-loading-holder .video-upload-info {
-        display: none !important;
+        min-height: 0 !important;
     }
     .video-upload-info {
         left: 100%;
