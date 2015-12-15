@@ -89,7 +89,7 @@ $(document).ready(function(){
 		else {
 			$('.vidljiv').animate({'left':'100%'}, 400);
 		   	$('.vidljiv').removeClass('vidljiv');
-		   	$('.video-upload,.project-files,.project-files-buttons, video-upload-info').addClass('vidljiv');
+		   	$('.video-upload,.project-files,.project-files-buttons, .video-upload-info').addClass('vidljiv');
 		   	$('.vidljiv').animate({'left':'0%'}, 400);
 		}
 	});

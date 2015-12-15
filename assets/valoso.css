@@ -4889,6 +4889,12 @@ img.video-edit {
     .slow-loading-holder {
         min-height: 0 !important;
     }
+    .video-upload-info {
+        left: 100%;
+    }
+    .slow-loading-holder  .video-upload.vidljiv + div {
+        left: 0;
+    }
     .video-description-right .description-right-up > h4 .popover, .single-video-description .popover,
     .video-project-director .container > h3 .popover, .video-pop-input .popover, .project-deadline .popover {
         width: auto !important;
@@ -4913,5 +4919,11 @@ img.video-edit {
     .edit-category .popover,
     .video-description-right .description-right-up > h4 .popover {
         left: 0 !important;
+    }
+}
+@media (max-width: 360px) {
+    div.title > img {
+        margin-right: 20px;
+        margin-left: 15px;
     }
 }
