@@ -4868,3 +4868,13 @@ form .errors-list ul {
 .site-footer, .page-wrap:after {
   min-height: 340px;
 }
+
+@media (max-width: 640px) {
+    .project-files-buttons {
+        display: block !important;
+        padding: 10px 0px; 
+    }
+    .slow-loading-holder {
+        display: none;
+    }
+}
