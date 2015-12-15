@@ -2240,6 +2240,7 @@ img.video-edit {
 }
 .video-des-wrap > p .popover-content > h4,
 .video-description-right .description-right-up > h4 .popover-content > h4,
+.video-description-right .description-right-up #audio-genre-edit-helper-holder > h4,
 .single-video-description .popover-content > h4,
 .edit-category .popover-content > h4,
 .video-dur .popover-content h4  {
@@ -4793,7 +4794,7 @@ form .errors-list ul {
 .form-group-popover .bid .form-group.rang {
     margin-bottom: 9px !important;
 }
-.video-description-right .description-right-up > h4 div {
+.video-description-right .description-right-up > h4 > div {
     display: inline-block;
 }
 @media (max-width: 479px) {
@@ -4802,6 +4803,7 @@ form .errors-list ul {
         text-align: right;
     }
 }
+
 /* END Changes for VP */
 /* Begin Changes for edit page */
 @media (max-width: 991px) {
@@ -4868,7 +4870,9 @@ form .errors-list ul {
 .site-footer, .page-wrap:after {
   min-height: 340px;
 }
-
+img.video-edit {
+    margin-left: 0 !important;
+}
 @media (max-width: 640px) {
     .project-files-buttons {
         display: block !important;
@@ -4882,7 +4886,7 @@ form .errors-list ul {
         width: auto !important;
     }
     .bid-inn {
-        width: 120px;
+        width: 120px !important;
     }
     .video-pop-input .popover-content .form-group-popover input.form-control#budget_fixed, 
     .video-pop-input .popover-content .form-group-popover input.form-control#budget_min, 
