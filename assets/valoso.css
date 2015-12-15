@@ -4847,6 +4847,9 @@ form .errors-list ul {
     min-height: 560px;
     overflow: hidden;
 }
+.sidebar-offcanvas .left-menu {
+    padding-bottom: 2px;
+}
 .wrapp-row-offcanvas, .row-offcanvas {
     height: 100%;
 }
