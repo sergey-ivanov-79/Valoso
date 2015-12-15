@@ -4873,6 +4873,11 @@ form .errors-list ul {
 img.video-edit {
     margin-left: 0 !important;
 }
+.video-description-right .description-right-up #audio-genre-edit-helper-holder {
+    padding: 0;
+}
+
+
 @media (max-width: 640px) {
     .project-files-buttons {
         display: block !important;
@@ -4902,7 +4907,8 @@ img.video-edit {
     .video-project-director .container > h3 .popover, 
     .video-pop-input .popover, 
     .project-deadline .popover, 
-    .edit-category .popover {
+    .edit-category .popover,
+    .video-description-right .description-right-up > h4 .popover {
         left: 0 !important;
     }
 }
