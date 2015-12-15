@@ -3681,8 +3681,8 @@ a.anchor.upArrow {
     font-size: 14px;
   }
   div.title > img {
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 20px !important;
+    margin-left: 20px !important;
   }
   .video-des-button-wrap > button {
     font-size: 12px;
@@ -4923,7 +4923,7 @@ img.video-edit {
 }
 @media (max-width: 360px) {
     div.title > img {
-        margin-right: 20px;
-        margin-left: 15px;
+        margin-right: 20px !important;
+        margin-left: 15px !important;
     }
 }
