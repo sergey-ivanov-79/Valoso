@@ -4877,7 +4877,16 @@ form .errors-list ul {
     .slow-loading-holder {
         display: none;
     }
-    .video-description-right .description-right-up > h4 .popover, .single-video-description .popover {
-        width: auto;
+    .video-description-right .description-right-up > h4 .popover, .single-video-description .popover,
+    .video-project-director .container > h3 .popover, .video-pop-input .popover, .project-deadline .popover {
+        width: auto !important;
+    }
+    .bid-inn {
+        max-width: 125px;
+    }
+    .video-pop-input .popover-content .form-group-popover input.form-control#budget_fixed, 
+    .video-pop-input .popover-content .form-group-popover input.form-control#budget_min, 
+    .video-pop-input .popover-content .form-group-popover input.form-control#budget_max {
+        width: 120px !important;
     }
 }
