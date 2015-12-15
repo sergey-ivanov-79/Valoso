@@ -4887,7 +4887,16 @@ img.video-edit {
         padding: 10px 0px !important; 
     } 
     .slow-loading-holder {
+        min-height: 0;
+    }
+    .slow-loading-holder .video-upload-info {
         display: none !important;
+    }
+    .video-upload-info {
+        left: 100%;
+    }
+    .slow-loading-holder  .video-upload.vidljiv + div {
+        left: 0;
     }
     .video-description-right .description-right-up > h4 .popover, .single-video-description .popover,
     .video-project-director .container > h3 .popover, .video-pop-input .popover, .project-deadline .popover {
