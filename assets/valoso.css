@@ -4843,6 +4843,10 @@ form .errors-list ul {
 /* END changes for blog LP */
 
 /* stick */
+.opened-offcanvas .wrapp-row-offcanvas {
+    min-height: 560px;
+    overflow: hidden;
+}
 .wrapp-row-offcanvas, .row-offcanvas {
     height: 100%;
 }
