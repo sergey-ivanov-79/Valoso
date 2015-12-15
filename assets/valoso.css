@@ -4872,21 +4872,33 @@ form .errors-list ul {
 @media (max-width: 640px) {
     .project-files-buttons {
         display: block !important;
-        padding: 10px 0px; 
+        padding: 10px 0px !important; 
     } 
     .slow-loading-holder {
-        display: none;
+        display: none !important;
     }
     .video-description-right .description-right-up > h4 .popover, .single-video-description .popover,
     .video-project-director .container > h3 .popover, .video-pop-input .popover, .project-deadline .popover {
         width: auto !important;
     }
     .bid-inn {
-        max-width: 125px;
+        width: 120px;
     }
     .video-pop-input .popover-content .form-group-popover input.form-control#budget_fixed, 
     .video-pop-input .popover-content .form-group-popover input.form-control#budget_min, 
     .video-pop-input .popover-content .form-group-popover input.form-control#budget_max {
-        width: 120px !important;
+        width: 115px !important;
+    }
+    .col-navbar-wrap .profile-dropdown .dropdown.dropdown-tip.dropdown-menu {
+        left: auto !important;
+    }
+    
+}
+@media (max-width: 479px) {
+    .video-project-director .container > h3 .popover, 
+    .video-pop-input .popover, 
+    .project-deadline .popover, 
+    .edit-category .popover {
+        left: 0 !important;
     }
 }
