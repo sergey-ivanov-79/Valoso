@@ -4873,8 +4873,9 @@ form .errors-list ul {
     .project-files-buttons {
         display: block !important;
         padding: 10px 0px; 
-    }
+    } 
     .slow-loading-holder {
         display: none;
     }
+    
 }
