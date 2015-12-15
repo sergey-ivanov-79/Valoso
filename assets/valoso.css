@@ -2283,7 +2283,7 @@ img.video-edit {
 .video-description-right .description-right-up > h4 .popover-content select {
   height: 35px;
   width: 100px;
-  margin: 0 13px;
+  margin: 0 10px !important;
   border-radius: 5px;
   padding-left: 10px;
   font-size: 18px;
@@ -4876,7 +4876,10 @@ img.video-edit {
 .video-description-right .description-right-up #audio-genre-edit-helper-holder {
     padding: 0;
 }
-
+#audio-genre-edit-helper-holder .ng-scope {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 @media (max-width: 640px) {
     .project-files-buttons {
