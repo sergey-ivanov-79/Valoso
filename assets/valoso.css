@@ -4877,5 +4877,7 @@ form .errors-list ul {
     .slow-loading-holder {
         display: none;
     }
-    
+    .video-description-right .description-right-up > h4 .popover, .single-video-description .popover {
+        width: auto;
+    }
 }
