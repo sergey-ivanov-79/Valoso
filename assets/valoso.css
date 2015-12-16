@@ -4860,9 +4860,6 @@ form .errors-list ul {
   /* equal to footer height */
   margin-bottom: -340px;
 }
-.row-offcanvas .page-wrap {
-    margin-bottom: 0px;
-}
 .page-wrap:after {
   content: "";
   display: block;
