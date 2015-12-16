@@ -451,6 +451,9 @@ a.blue-color:hover {
     .modal-body.modal-body-center .wrapper-info .box {
         margin-bottom: 10px;
     } 
+    .wrapp-images.wrapp-images-dop .col-xs-offset-1:first-child {
+        margin-left: 0%;
+    }
 }
 @media (max-width: 767px) and (min-width: 639px) {
    .left-image p, .right-image p {

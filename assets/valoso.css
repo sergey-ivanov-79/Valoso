@@ -4852,9 +4852,9 @@ form .errors-list ul {
 .sidebar-offcanvas .left-menu {
     padding-bottom: 2px;
 }
-.wrapp-row-offcanvas, .row-offcanvas {
+/*.wrapp-row-offcanvas {
     height: 100%;
-}
+}*/
 .row-offcanvas, .page-wrap  {
     background: none #fff;
 }
