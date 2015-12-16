@@ -4855,7 +4855,7 @@ form .errors-list ul {
 .wrapp-row-offcanvas, .row-offcanvas {
     height: 100%;
 }
-.row-offcanvas {
+.row-offcanvas, .page-wrap  {
     background: none #fff;
 }
 .page-wrap {
