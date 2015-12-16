@@ -4855,6 +4855,9 @@ form .errors-list ul {
 .wrapp-row-offcanvas, .row-offcanvas {
     height: 100%;
 }
+.row-offcanvas {
+    background: none #fff;
+}
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
