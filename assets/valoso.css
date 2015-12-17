@@ -4912,6 +4912,20 @@ img.video-edit {
     }
     
 }
+/* Begin changes for mobile edit page */
+.placeholder-buttons .popover-dismiss.close {
+    background-color: #838383;
+    border-color: #838383;
+    opacity: 1;
+    font-weight: normal;
+    text-shadow: none;
+    line-height: 20px;
+}
+.cer-pop-img .ajax-file-upload {
+    width: auto !important;    
+    bottom: 0 !important;
+    top: 0 !important;
+}
 @media (max-width: 479px) {
     .video-project-director .container > h3 .popover, 
     .video-pop-input .popover, 
@@ -4920,10 +4934,21 @@ img.video-edit {
     .video-description-right .description-right-up > h4 .popover {
         left: 0 !important;
     }
+    .inner-addition .popover {
+        left: 0 !important;
+    }
+    .user-profile-left ul li:nth-of-type(6) {
+        min-height: 0;
+        margin-bottom: 10px;
+    }
 }
 @media (max-width: 360px) {
     div.title > img {
         margin-right: 20px !important;
         margin-left: 15px !important;
     }
+    .edit-hour-pop img {
+        position: static !important; 
+    }
 }
+/* END changes for mobile edit page */

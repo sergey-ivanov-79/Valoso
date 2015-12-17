@@ -3136,7 +3136,7 @@ button.btn.save-btn:hover  {
   .user-certifications-single {
       width: 100%;
   }
-  .user-proposal h3, .user-experience h3, .user-education h3, .user-certifications h3, .user-publication h3, .user-portfolio h3 {
+  .user-proposal h3, .user-experience h3, .user-education h3, .user-certifications h3, .user-publication h3, .user-portfolio h3, .skills-block h3 {
       font-size: 22px;
   }
   .user-experience-single h5, .user-education-single h5, .user-publication-single h5 {
