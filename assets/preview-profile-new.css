@@ -832,8 +832,8 @@ button.btn.save-btn:hover  {
     width: 100%;
 }
 .preview-profile-wrapper .popover-content textarea {
-  height: 70px;
-  background-color: #f5f3f5;
+    height: 70px;
+    background-color: #f5f3f5;
     border: 0;
     margin-bottom: 10px;
     padding: 10px;
@@ -841,6 +841,8 @@ button.btn.save-btn:hover  {
     font-size: 18px;
     outline: none;
     width: 100%;
+    max-width: 100%;
+    max-height: 70px;
 }
 .edit-experience-pop .popover {
     max-width: 400px;
@@ -2660,7 +2662,7 @@ button.btn.save-btn:hover  {
   .hire-me-section:after {
     bottom: 0;
   }
-  .user-experience h3, .user-education h3, .user-certifications h3, .user-publication h3, .user-portfolio h3 {
+  .user-experience h3, .user-education h3, .user-certifications h3, .user-publication h3, .user-portfolio h3, .skills-block h3 {
     font-size: 24px;
       margin-bottom: 10px;
   }
@@ -2855,7 +2857,7 @@ button.btn.save-btn:hover  {
   .user-profile-left ul:after {
     display: none;
   }
-  .user-experience h3, .user-education h3, .user-certifications h3, .user-publication h3, .user-portfolio h3 {
+  .user-experience h3, .user-education h3, .user-certifications h3, .user-publication h3, .user-portfolio h3, .skills-block h3 {
       font-size: 26px;
       margin-bottom: 20px;
   }
@@ -3041,7 +3043,7 @@ button.btn.save-btn:hover  {
       margin-bottom: 10px;
   }
     .buy-a-domain h5:nth-of-type(1),.buy-a-domain h5:nth-of-type(2) a,.valoso-domain button, .not-valoso-domain button,.valoso-domain input, .not-valoso-domain input,.valoso-domain span {
-        font-size: 10px;
+        font-size: 11px;
     }
     .buy-a-domain h5:nth-of-type(1),.valoso-domain,.not-valoso-domain {
         margin-bottom: 0px;
@@ -3055,8 +3057,8 @@ button.btn.save-btn:hover  {
         width: 270px;
     }
     .valoso-domain input {
-        width: 120px;
-        padding: 3px;
+        /*width: 120px;
+        padding: 3px;*/
     }
     .not-valoso-domain input {
         width: 185px;

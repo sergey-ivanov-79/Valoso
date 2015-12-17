@@ -4936,9 +4936,10 @@ img.video-edit {
     }
     .inner-addition .popover {
         left: 0 !important;
+        margin-left: 2px !important;
     }
     .user-profile-left ul li:nth-of-type(6) {
-        min-height: 0;
+        min-height: 0 !important;
         margin-bottom: 10px;
     }
 }
