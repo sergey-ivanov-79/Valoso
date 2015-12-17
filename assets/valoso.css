@@ -3205,7 +3205,7 @@ div#link-profile-modal .modal-footer button:hover {
   color: white!important;
 }
 a.anchor.upArrow {
-  z-index: 99999999999;
+  z-index: 99999999999 !important;
 }
 .video-description-right .description-right-up > h4 .popover-content input {
   height: 35px;
@@ -4899,7 +4899,7 @@ img.video-edit {
     .video-project-director .container > h3 .popover, .video-pop-input .popover, .project-deadline .popover {
         width: auto !important;
     }
-    .bid-inn {
+    .form-group-popover .bid-inn {
         width: 120px !important;
     }
     .video-pop-input .popover-content .form-group-popover input.form-control#budget_fixed, 
