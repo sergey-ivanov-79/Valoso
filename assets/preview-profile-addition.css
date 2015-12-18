@@ -632,9 +632,9 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
 }
 }
 
-.user-profile-left-details .description { min-height: 120px;}
+.user-profile-left-details .description { display: inline;}
 @media (max-width: 992px) {
-    .user-profile-left-details .description { min-height: 105px;}
+    .user-profile-left-details .description { min-height: 105px; }
 }
 /* END for phone-sim */
 .inner-skills .popover {
