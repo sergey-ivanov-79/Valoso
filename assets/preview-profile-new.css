@@ -899,6 +899,7 @@ button.btn.save-btn:hover  {
     -moz-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
+    line-height: 15px;
 }
 .placeholder-buttons button:first-child {
   background-color: #24a5db;
@@ -3328,5 +3329,5 @@ button.btn.save-btn:hover  {
     opacity: 1;
     font-weight: normal;
     text-shadow: none;
-    line-height: 20px;
+    line-height: 15px;
 }
