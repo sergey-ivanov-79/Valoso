@@ -4735,10 +4735,6 @@ a.anchor.upArrow {
 .video-project-form .vp-form-right .vp-form label img[data-toggle="tooltip"] {
     font-size: 14px;
 }
-.touch .upArrow {
-    right: auto !important;
-    left: 25px !important;
-}
 .ui-tooltip {
     font-size: 14px !important;
 }
@@ -4950,4 +4946,15 @@ img.video-edit {
 }
 .header-top .navbar-brand-mobile img {
     margin: 0 auto;
+}
+@media (max-width: 768px) {
+    .anchor.upArrow, .cd-top {
+        bottom: 130px;
+    }
+}
+@media (max-width: 479px) {
+    .anchor.upArrow, .cd-top {
+        bottom: 60px;
+        right: 10px;
+    }
 }
