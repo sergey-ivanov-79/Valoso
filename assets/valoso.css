@@ -4945,3 +4945,9 @@ img.video-edit {
     }
 }
 /* END changes for mobile edit page */
+.header-top .navbar-brand-mobile {
+    padding: 5px 10px !important;
+}
+.header-top .navbar-brand-mobile img {
+    margin: 0 auto;
+}
