@@ -4913,14 +4913,6 @@ img.video-edit {
     
 }
 /* Begin changes for mobile edit page */
-.placeholder-buttons .popover-dismiss.close {
-    background-color: #838383;
-    border-color: #838383;
-    opacity: 1;
-    font-weight: normal;
-    text-shadow: none;
-    line-height: 20px;
-}
 .cer-pop-img .ajax-file-upload {
     width: auto !important;    
     bottom: 0 !important;

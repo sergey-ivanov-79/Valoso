@@ -3322,3 +3322,11 @@ button.btn.save-btn:hover  {
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 6px #ce8483;
 }
+.placeholder-buttons .popover-dismiss.close {
+    background-color: #838383;
+    border-color: #838383;
+    opacity: 1;
+    font-weight: normal;
+    text-shadow: none;
+    line-height: 20px;
+}
