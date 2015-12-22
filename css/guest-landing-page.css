@@ -603,3 +603,7 @@ a.blue-color:hover {
     background-image: url('../admin/img/ajax-loader-fb-big.gif');
     background-repeat: no-repeat;
 }
+.select2-dropdown.select2-dropdown--below {
+    height: 300px;
+    overflow-y: scroll;
+}
