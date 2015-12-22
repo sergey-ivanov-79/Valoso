@@ -1778,6 +1778,10 @@ button.btn.save-btn:hover  {
     box-shadow: none;
       margin-bottom: 0px;
   }
+  .added-sim-640 .preview-profile-wrapper .wrapp-emptyprofile-info,
+  .added-sim-320 .preview-profile-wrapper .wrapp-emptyprofile-info {
+    display: none;
+  }
   .ipad-simulator {
     display: none;
   }
