@@ -26,6 +26,7 @@
 <link rel="stylesheet" href="./assets/style.css"/>
 <link rel="stylesheet" href="./assets/guest-landing-page.css"/>
 <link rel="stylesheet" href="./assets/valoso.css"/>
+<link rel="stylesheet" href="./assets/header-offcanvas.css"/> 
 
 <!-- Application-specific meta tags -->
 	<!-- Windows 8: see http://msdn.microsoft.com/en-us/library/ie/dn255024%28v=vs.85%29.aspx for details -->
@@ -56,62 +57,64 @@
 </head>
 
 <body>
+<div class="wrapp-row-offcanvas">
+    <div class="row row-offcanvas row-offcanvas-left">
+<div class="page-wrap"><!-- page-wrap -->
 
 <header  id="header-top">
-
-    <div class="navbar-header navbar-header-mobile">
-
-        <button type="button" class="navbar-toggle collapsed button-mobile toggle-panel" style="float:left">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-        </button>
-
-        <a style="display:block;" class="navbar-brand navbar-brand-mobile" href="https://staging.valoso.com">
-            <div class="beta">Beta</div>
-            <img src="https://staging.valoso.com/assets/images/logo-valoso.png">
-        </a>
-    </div>
-
-    <div class="header-guest header header-dop header-mobile header-mobile-fix proj-forum headroom-dop">
-        <nav class="navbar navbar-default navbar-mobile" id="top-nav">
-            <div class="container">
+            <div class="header-guest header header-dop header-mobile header-mobile-fix proj-forum headroom-dop">
+                    <nav class="navbar navbar-default navbar-mobile" id="top-nav">
+                        <div class="container">
+                            <div class="cols">
+                                <div class="navbar-header navbar-header-mobile">
+                                      <button type="button" class="navbar-toggle collapsed button-mobile" data-toggle="offcanvas" data-target="#navbar-collapse-1" aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                      </button>
+                                    <a style="display:block;" class="navbar-brand navbar-brand-mobile" href="https://staging.valoso.com">
+                                        <div class="beta">Beta</div>
+                                        <img src="https://staging.valoso.com/assets/images/logo-valoso.png">
+                                    </a>
+                                </div>
+                            </div> <!-- column 8 for navbar -->
                 
-                <div>
-                    <ul class="nav navbar-nav">
-                        <li class="active">
-                            <a href="https://staging.valoso.com/#how-does-it-work" class="how-to-work">
-                                How it works<span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                                            <li>
-                            <a href="https://staging.valoso.com/pages/faq">
-                                FAQ
-                            </a>
-                        </li>
-                    </ul>
-    
-                    <ul class="nav navbar-nav navbar-right" style="position: relative; top: 7px;">
-                        
-                        <li>
-                            <a class="register-as-a-video-editor-toggle" style="cursor: pointer;">
-                                Register as a Video Editor
-                            </a>
-                        </li>
-                        <li>
-                                                                                                                                    >
-                            <p class="blue-color">
-                                /
-                            </p>
-                            <a id="loginOpen" style="cursor: pointer;">
-                                Log in
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                            <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
+                                <ul class="nav navbar-nav" style="position: relative; top: 7px;">
+                                    <li class="active">
+                                        <a href="https://staging.valoso.com/#how-does-it-work" class="how-to-work">
+                                            How it works<span class="sr-only">(current)</span>
+                                        </a>
+                                    </li>
+                                                        <li>
+                                        <a href="https://staging.valoso.com/pages/faq">
+                                            FAQ
+                                        </a>
+                                    </li>
+                                </ul>
+                
+                                <ul class="nav navbar-nav navbar-right" style="position: relative; top: 7px;">
+                                    
+                                    <li>
+                                        <a class="register-as-a-video-editor-toggle" style="cursor: pointer;">
+                                            Register as a Video Editor
+                                        </a>
+                                    </li>
+                                                                                                                                                        <li class="hidden-xs">
+                                        <p class="blue-color">
+                                            /
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a id="loginOpen" style="cursor: pointer;">
+                                            Log in
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
     </div>
 </header>
 
@@ -172,7 +175,71 @@
 	</div> <!-- .intro-home -->
 </div> <!-- #wrapHome1 -->
 </div><!-- / page-wrap -->
-
+    <div class="wrapper-sidebar-offcanvas"><!-- wrapper-sidebar-offcanvas -->
+        <div class="sidebar-offcanvas" id="sidebar">
+            <div class="clearfix" id="navbar-collapse-1">
+                <div class="left-menu clearfix">
+                    <!--i class="fa fa-user-plus pull-right"></i-->  
+                    <div class="media">
+                        <div class="pull-left">
+                            <img class="user-img-min" data-toggle="dropdown" src="./images/p-a/img-1-public.png" alt="Name of User" width="42" height="42" class="userProp img-mobile">
+                        </div>
+                    <div class="media-body">
+                        <h3 class="gray bold">JOHN DOE</h3>
+                        <span class="gray p-12">john_doe@gmail.com</span>
+                    </div>
+                    </div>
+                </div>
+                <ul class="nav navbar-nav navbar-nav-dop nav-list">
+                    <li class="active current">
+                        <a href="#" class="active"><i class="fa fa-home pull-left"></i>Home
+                            <i class="fa fa-sort-desc"></i>
+                            <!--i class="fa fa-sort-desc"></i-->
+                        </a>
+                        <ul class="secondaryNavList-dop">
+                            <li class="active">
+                                <a href="#" class="navLink active">Dashboard
+                                    <i class="none-fa fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./contract-page-1.html" class="navLink">Contracts
+                                    <i class="none-fa fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./weekly-summary-page.html" class="navLink">Weekly Summary
+                                    <i class="none-fa fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./transaction-history.html" class="navLink">Transaction History
+                                    <i class="none-fa fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="./active-events-page-new.html" class="navLink">Active Events
+                                    <i class="none-fa fa fa-caret-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fa fa-cloud-upload pull-left"></i>Upload</a></li>
+                    <li><a href="#"><i class="fa fa-file-text-o pull-left"></i>Projects</a></li>
+                    <li><a href="#"><i class="fa fa-search pull-left"></i>Search For Video Editors</a></li>
+                    <li><a href="#"><i class="fa fa-print pull-left"></i>Print Alliance</a></li>
+                    <li><a href="#" class="min-text-menu">Inbox <span class="badge pull-right">5</span></a></li>
+                    <li><a href="#" class="min-text-menu">Notficiations<span class="badge pull-right">2</span></a></li>
+                    <li><a href="#" class="min-text-menu"><i class="fa fa-user pull-left"></i>Edit Profile</a></li>
+                    <li><a href="#" class="min-text-menu"><i class="fa fa-usd pull-left"></i>Orders</a></li>
+                    <li><a href="#" class="min-text-menu"><i class="fa fa-cog pull-left"></i>Settings</a></li>
+                    <li><a href="#" class="min-text-menu"><i class="fa fa-question pull-left"></i>Help</a></li>
+                    <li><a href="#" class="min-text-menu"><i class="fa fa-sign-out pull-left"></i>Sign Out</a></li>
+                    <li><a href="#" class="text-lowercase text-center lighter">www.valoso.com</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!--/.sidebar-offcanvas-->
+    </div><!-- / wrapper-sidebar-offcanvas -->
 
 <footer id="footer" class="site-footer">
  <div class="container">
@@ -226,6 +293,8 @@
  
  </div>
 </footer>
+</div>
+</div>
 <!-- Modal -->
 <div class="modal fade" id="loginBox" tabindex="-1" role="dialog" aria-labelledby="loginBoxLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -324,9 +393,6 @@
 </div>
 <!-- /Modal -->
 <a href="#header-top" class="anchor upArrow" style="display: none;"><img src="images/to-top-arrow.png"></a>
-
-
-
 <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
 <script src="./js/jquery-1.11.2.min.js"></script>
@@ -470,38 +536,24 @@ $('.popup-youtube').magnificPopup({
   
   
 });
-
-
-
 </script>
-
-
-
-
-<script src="https://panels.scotch.io/dist/scotchPanels.js"></script>
-
+<script type="text/javascript" src="./js/headroom.min.js"></script>
+<script type="text/javascript" src="./js/jquery.headroom.js"></script>
 <script type="text/javascript">
+    // Init Headroom for .header
+    $(".header").headroom(); 
 
-$(document).ready(function(){
-
-var easyPanel = $('.header').scotchPanel({
-  containerSelector: 'body',
-  direction: 'left',
-  duration: 300,
-  transition: 'ease',
-  distanceX: '70%',
-  enableEscapeKey: true
-});
-
-$('.toggle-panel').click(function() {
-  easyPanel.toggle();
-  return false;
-});
-
-})
-
+    // Init Headroom for .headroom-icons
+    $(".headroom-icons").headroom({
+        offset: 209    
+    }); 
 </script>
-
+<script src="./js/offcanvas.js"></script>
+<script>
+    $(document).on('click', '.button-mobile', function(){
+        $('body').toggleClass('opened-offcanvas');
+    });
+</script>
 
 </body>
 </html>
