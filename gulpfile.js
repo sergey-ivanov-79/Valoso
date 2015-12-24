@@ -12,13 +12,12 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     del = require('del'),
     rename = require('gulp-rename'),
+    stripCssComments = require('gulp-strip-css-comments'),
     sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('styles', function() {
   return gulp.src('assets/*.css')
-    .pipe(sourcemaps.init())
     .pipe(minifycss())
-    .pipe(sourcemaps.write())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('dist'));
 });
