@@ -4962,3 +4962,17 @@ img.video-edit {
     height: 300px;
     overflow-y: scroll;
 }
+/* Begon for how-work block */
+.lp-step {
+    width: 90px !important;
+}
+.lp-arrow {
+    width: 30px !important;
+}
+.padd-bottom-30 {
+    padding-bottom: 30px;
+}
+.how-work > .text-center > .col-sm-6  {
+    margin-top: 20px;
+}
+/* END for how-work block */
