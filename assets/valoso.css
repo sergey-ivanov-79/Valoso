@@ -4984,3 +4984,19 @@ img.video-edit {
     .how-work .text-center p { font-size: 16px;}
 }
 /* END for how-work block */
+/* Begin changes for top bs-wizard */
+.bs-wizard>.bs-wizard-step>.bs-wizard-dot { top: 61px !important;}
+.text-center.bs-wizard-stepnum h2 {
+    font-size: 16px !important;
+    display: inline-block !important;
+    margin: 0 !important;
+    line-height: 1 !important;
+}
+.bs-wizard>.bs-wizard-step .bs-wizard-stepnum {
+    line-height: 19.2px !important;
+}
+@media (max-width: 767px) {
+    .text-center.bs-wizard-stepnum h2 { font-size: 12px !important;}
+    .bs-wizard>.bs-wizard-step>.bs-wizard-dot { top: 88px !important;}
+}
+/* END changes for top bs-wizard */
