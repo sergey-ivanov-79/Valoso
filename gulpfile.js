@@ -12,13 +12,21 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     del = require('del'),
     rename = require('gulp-rename'),
+<<<<<<< HEAD
+=======
+    stripCssComments = require('gulp-strip-css-comments'),
+>>>>>>> 15940a86554b79e6424514b51308c4f3ad7b44a3
     sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('styles', function() {
   return gulp.src('assets/*.css')
+<<<<<<< HEAD
     .pipe(sourcemaps.init())
     .pipe(minifycss())
     .pipe(sourcemaps.write())
+=======
+    .pipe(minifycss())
+>>>>>>> 15940a86554b79e6424514b51308c4f3ad7b44a3
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('dist'));
 });
