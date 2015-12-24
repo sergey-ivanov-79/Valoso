@@ -1097,7 +1097,7 @@ a:hover {
     .project-forum { padding-top: 180px;}
     .wrapp-shop-msg-noti-icos { padding-top: 10px; padding-bottom: 7px;}
 }
-.dropdown-menu-inner .fa.fa-question { margin-left: 3px;}
+.dropdown-menu-inner .fa.fa-question { /*margin-left: 3px;*/}
 .cd-top {
   display: inline-block;
   height: 40px;

@@ -621,3 +621,7 @@ a.blue-color:hover {
 .content-wrapper .wp-video {
     margin: 10px auto;
 }
+.select2-dropdown.select2-dropdown--below {
+    height: 300px;
+    overflow-y: scroll;
+}
