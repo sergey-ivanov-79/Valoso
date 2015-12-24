@@ -35,7 +35,7 @@ gulp.task('default', ['clean'], function() {
 gulp.task('watch', function() {
 
   // Watch .css files
-  gulp.watch('src/styles/**/*.scss', ['styles']);
+  gulp.watch('assets/*.css', ['styles']);
 
   // Create LiveReload server
   livereload.listen();
