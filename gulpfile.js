@@ -11,6 +11,7 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     livereload = require('gulp-livereload'),
     del = require('del'),
+    rename = require('gulp-rename'),
     sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('styles', function() {
@@ -18,12 +19,13 @@ gulp.task('styles', function() {
     .pipe(sourcemaps.init())
     .pipe(minifycss())
     .pipe(sourcemaps.write())
+    .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('dist'));
 });
 
 // Clean
 gulp.task('clean', function() {
-  return del(['dist/styles']);
+  return del(['dist']);
 });
 
 // Default task
