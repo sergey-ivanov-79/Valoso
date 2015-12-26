@@ -4994,9 +4994,19 @@ img.video-edit {
 }
 .bs-wizard>.bs-wizard-step .bs-wizard-stepnum {
     line-height: 19.2px !important;
+    min-height: 38px;
 }
 @media (max-width: 767px) {
     .text-center.bs-wizard-stepnum h2 { font-size: 12px !important;}
     .bs-wizard>.bs-wizard-step>.bs-wizard-dot { top: 88px !important;}
+    .bs-wizard>.bs-wizard-step .bs-wizard-stepnum { min-height: 66px;}
+    #userLoginContent .formSub input { font-size: 22px;}
 }
 /* END changes for top bs-wizard */
+@media (max-width: 479px) {
+    #userLoginContent .formSub input {
+        font-size: 12px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
