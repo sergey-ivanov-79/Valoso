@@ -4954,7 +4954,7 @@ img.video-edit {
 }
 @media (max-width: 479px) {
     .anchor.upArrow, .cd-top {
-        bottom: 60px;
+        bottom: 80px;
         right: 10px;
     }
 }
@@ -4996,6 +4996,8 @@ img.video-edit {
     line-height: 19.2px !important;
     min-height: 38px;
 }
+.wrapper-featured img { width: 100%;}
+.wrapper-how-to-work img { width: 100%;}
 @media (max-width: 767px) {
     .text-center.bs-wizard-stepnum h2 { font-size: 12px !important;}
     .bs-wizard>.bs-wizard-step>.bs-wizard-dot { top: 88px !important;}
