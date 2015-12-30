@@ -4998,11 +4998,13 @@ img.video-edit {
 }
 .wrapper-featured img { width: 100%;}
 .wrapper-how-to-work img { width: 100%;}
+#footer .botLink > ul li { margin-bottom: 10px;}
 @media (max-width: 767px) {
     .text-center.bs-wizard-stepnum h2 { font-size: 12px !important;}
     .bs-wizard>.bs-wizard-step>.bs-wizard-dot { top: 88px !important;}
     .bs-wizard>.bs-wizard-step .bs-wizard-stepnum { min-height: 66px;}
     #userLoginContent .formSub input { font-size: 22px;}
+    .botCopy>div { margin-bottom: 10px;}
 }
 /* END changes for top bs-wizard */
 @media (max-width: 479px) {
