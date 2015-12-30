@@ -5005,6 +5005,7 @@ img.video-edit {
     .bs-wizard>.bs-wizard-step .bs-wizard-stepnum { min-height: 66px;}
     #userLoginContent .formSub input { font-size: 22px;}
     .botCopy>div { margin-bottom: 10px;}
+    #footer .botCopy, #footer .botLink ul li a { font-size: 15px;}
 }
 /* END changes for top bs-wizard */
 @media (max-width: 479px) {
