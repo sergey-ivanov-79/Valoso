@@ -5015,3 +5015,4 @@ img.video-edit {
         padding-bottom: 10px;
     }
 }
+.select2-dropdown.select2-dropdown--below { height: auto !important; overflow-y: inherit !important;}
