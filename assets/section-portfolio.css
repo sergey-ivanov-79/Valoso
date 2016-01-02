@@ -129,6 +129,8 @@
 }
 .add-new-portfolio textarea {
     height: 70px;
+    max-height: 70px;
+    max-width: 524px;
     background-color: #f5f3f5;
     border: 1px solid #ddd;
     margin-bottom: 10px;
@@ -385,6 +387,9 @@
     }
     .filter-btn .btn  {
         font-size: 12px;
+    }
+    .add-new-portfolio textarea {
+        max-width: 244px;
     }
 }
 @media(max-width: 613px) {
