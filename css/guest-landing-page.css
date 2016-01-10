@@ -604,6 +604,6 @@ a.blue-color:hover {
     background-repeat: no-repeat;
 }
 .select2-dropdown.select2-dropdown--below {
-    height: 300px;
-    overflow-y: scroll;
+    /*height: 300px;
+    overflow-y: scroll;*/
 }

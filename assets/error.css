@@ -12,8 +12,7 @@
     margin-top: 50px;
     margin-bottom: 35px;
 }
-.error-page .error-logo-valoso {
-    margin-top: 100px;
+.error-logo-valoso {
     margin-right: 80px;
     margin-bottom: 30px;
 }
@@ -126,7 +125,7 @@
     .no-line {
         border: none !important;
     }
-    .error-page .error-logo-valoso {
+    .error-logo-valoso {
         margin-top: 15px;
         margin-right: 0;
     }
@@ -151,3 +150,18 @@
         margin-top: 0;
     }
 }
+/* Begin Sticky Footer*/
+.wrap-error-page {
+    min-height: 100%;
+    /* equal to footer height */
+    margin-bottom: -134px;
+    background: none #edfbfb; 
+}
+.wrap-error-page:after {
+    content: "";
+    display: block;
+}
+.footer-bottom, .wrap-error-page:after {
+    height: 134px; 
+}
+/* END Sticky Footer*/
