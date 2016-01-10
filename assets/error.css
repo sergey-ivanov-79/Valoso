@@ -151,6 +151,9 @@
     }
 }
 /* Begin Sticky Footer*/
+html, body {
+  height: 100% !important;
+}
 .wrap-error-page {
     min-height: 100%;
     /* equal to footer height */
