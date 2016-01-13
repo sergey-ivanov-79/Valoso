@@ -4967,6 +4967,9 @@ img.video-edit {
 .how-work { padding-left: 10px; padding-right: 10px;}
 .how-work table { width: 100%; margin-top: 30px; margin-bottom: 70px;}
 .how-work img { width: auto;}
+.about .how-work table img { width: 100%;}
+.about.wrap-t .how-work table { max-width: 100%;}
+.about.wrap-t .how-work table, .about.wrap-t .how-work table td { border: none;}
 .text-inf p {
     margin: 10px auto;
     margin-top: 30px;
@@ -4977,6 +4980,7 @@ img.video-edit {
 .how-work > .text-center > .col-xs-6 { margin-top: 20px;}
 @media (max-width: 1060px) {
     .how-work  img { width: 100%;}
+    .how-work .text-center p { font-size: 18px;}
 }
 @media (max-width: 767px) {
     .lp-step { width: 90px !important;}
