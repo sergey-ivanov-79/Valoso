@@ -5046,8 +5046,7 @@ img.video-edit {
 .inner-narration > div input {
     float: left;
 }
-.inner-narration > div span {
-    margin-left: 20px;
-    font-size: 14px;
-    display: block;
+.vp-form-right .narration .inner-narration label {
+    width: 100%;
+    padding-top: 0px;
 }
