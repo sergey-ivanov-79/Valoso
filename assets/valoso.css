@@ -5046,7 +5046,10 @@ img.video-edit {
 .inner-narration > div input {
     float: left;
 }
-.vp-form-right .narration .inner-narration label {
+.vp-form-right .narration .inner-narration .radio label {
     width: 100%;
     padding-top: 0px;
+}
+.video-project-form .vp-form-right .inner-narration .radio label {
+    font-size: 16px;
 }
