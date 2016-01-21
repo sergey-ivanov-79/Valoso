@@ -711,9 +711,23 @@
             <div class="clearfix">
               <label for="search-sleeps">Narration Required</label>
               <select id="search-sleeps" name="sleeps">
-                <option>No</option>
-                <option>Yes</option>
+                <option value="0">No</option>
+                <option value="1">Yes</option>
               </select>
+              <div class="inner-narration clearfix"> 
+                <div class="radio"> 
+                    <label class="first-label" style="width: 100%;"> 
+                        <input type="radio" class="" name="narration-radios" id="narration-radios1" value="nar-radios1"/> 
+                        I have my own audio file for narration and I will deliver this once a contract is formed.
+                    </label> 
+                </div> 
+                <div class="radio"> 
+                    <label class="second-label" style="width: 100%;"> 
+                        <input type="radio" class="" name="narration-radios" id="narration-radios2" value="nar-radios2"/> 
+                        I need editor to supply narration and voice over services. This is an additional service that editors will charge for.
+                    </label> 
+                </div> 
+              </div> 
             </div> <!-- /.clearfix -->
           </div> <!-- /.narration -->
           <div class="form-group form-group-sm narration">
@@ -1076,12 +1090,26 @@ tinymce.init({
 </script>
 <script src="js/video-project-page.js"></script>
 <script>
-(document).ready(function(){
-    $('body').on('click','.img-tooltip', function(){
-        alert(1);
-        
-	});
-});
+$('.first-label').click(function(){
+    	$('.second-label').hide();
+    });
+$('.second-label').click(function(){
+    	$('.first-label').hide();
+    });
+jQuery(document).on('change','#search-sleeps',function(){
+     if(jQuery(this).val() == 1)
+      jQuery('.inner-narration').show();
+     else
+      jQuery('.inner-narration').hide();
+    });
 </script>
+
+<style>
+.second-label.dis-none, .first-label.dis-none {
+    display: none;
+}
+.inner-narration { display: none;}
+.inner-narration.dis-block { display: block;}
+</style>
 </body>
 </html>
