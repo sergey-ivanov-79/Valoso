@@ -5051,10 +5051,7 @@ img.video-edit {
     padding-top: 0px;
 }
 .video-project-form .vp-form-right .inner-narration .radio label {
-    font-size: 16px;
-}
-.second-label.dis-none, .first-label.dis-none {
-    display: none;
+    font-size: 18px;
 }
 .inner-narration { display: none;}
 .inner-narration.dis-block { display: block;}

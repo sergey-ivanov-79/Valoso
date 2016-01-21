@@ -21,7 +21,13 @@
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"--><!--/script-->
 <script src="js/jquery-1.11.2.min.js"></script>
 
-
+<style>
+.inner-narration { display: none;}
+.inner-narration.dis-block { display: block;}
+.second-label.dis-none, .first-label.dis-none {
+    display: none;
+}
+</style>
 <script>
   var group = ''; 
   var lastMove = '';
@@ -716,13 +722,13 @@
               </select>
               <div class="inner-narration clearfix"> 
                 <div class="radio"> 
-                    <label class="first-label" style="width: 100%;"> 
+                    <label class="first-label" style="width: 100%; font-size: 18px;"> 
                         <input type="radio" class="" name="narration-radios" id="narration-radios1" value="nar-radios1"/> 
                         I have my own audio file for narration and I will deliver this once a contract is formed.
                     </label> 
                 </div> 
                 <div class="radio"> 
-                    <label class="second-label" style="width: 100%;"> 
+                    <label class="second-label" style="width: 100%; font-size: 18px;"> 
                         <input type="radio" class="" name="narration-radios" id="narration-radios2" value="nar-radios2"/> 
                         I need editor to supply narration and voice over services. This is an additional service that editors will charge for.
                     </label> 
@@ -1090,26 +1096,13 @@ tinymce.init({
 </script>
 <script src="js/video-project-page.js"></script>
 <script>
-$('.first-label').click(function(){
-    	$('.second-label').hide();
-    });
-$('.second-label').click(function(){
-    	$('.first-label').hide();
-    });
-jQuery(document).on('change','#search-sleeps',function(){
-     if(jQuery(this).val() == 1)
-      jQuery('.inner-narration').show();
+$(document).on('change','#search-sleeps',function(){
+     if($(this).val() == 1)
+      $('.inner-narration').addClass('dis-block');
      else
-      jQuery('.inner-narration').hide();
+      $('.inner-narration').removeClass('dis-block');
     });
 </script>
 
-<style>
-.second-label.dis-none, .first-label.dis-none {
-    display: none;
-}
-.inner-narration { display: none;}
-.inner-narration.dis-block { display: block;}
-</style>
 </body>
 </html>
