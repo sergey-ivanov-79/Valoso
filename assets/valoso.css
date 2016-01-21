@@ -5029,6 +5029,7 @@ img.video-edit {
 .video-project-form .vp-form-left .vp-form label {  color: #474747 !important;}
 .video-project-director.video-project-form .vp-form-right > div:nth-of-type(1) > div:last-child input {
     box-shadow: none !important;
+    height: auto;
 }
 .video-project-form .vp-form-right > div:nth-of-type(1) {
     padding-bottom: 15px !important;
@@ -5038,4 +5039,15 @@ img.video-edit {
 }
 .video-project-form .vp-form-right .vp-form label > img {
     margin-left: 10px !important; 
+}
+.vp-form > .form-group:first-child {
+    margin-bottom: 5px;
+}
+.inner-narration > div input {
+    float: left;
+}
+.inner-narration > div span {
+    margin-left: 20px;
+    font-size: 14px;
+    display: block;
 }
