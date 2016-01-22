@@ -5029,7 +5029,7 @@ img.video-edit {
 .video-project-form .vp-form-left .vp-form label {  color: #474747 !important;}
 .video-project-director.video-project-form .vp-form-right > div:nth-of-type(1) > div:last-child input {
     box-shadow: none !important;
-    height: auto;
+    height: auto !important;
 }
 .video-project-form .vp-form-right > div:nth-of-type(1) {
     padding-bottom: 15px !important;
