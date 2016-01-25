@@ -5056,3 +5056,8 @@ img.video-edit {
 .inner-narration { display: none;}
 .inner-narration.dis-block { display: block;}
 #copyrights-radio, #copyrights-input { font-size: 14px;}
+.header-min-height {
+    position: relative;
+    left: 0;
+    top: 0;
+}
