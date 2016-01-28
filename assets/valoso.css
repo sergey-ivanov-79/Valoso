@@ -5085,7 +5085,8 @@ img.video-edit {
     display: none;
 }
 .modal-price {
-    margin: 15px 0;
+    margin: 15px 15px 15px 0;
+    float: left;
 } 
 #applyModal .row.cartNZD.wid-sm {
     float: none;
