@@ -1219,7 +1219,7 @@ div#link-profile-modal .modal-dialog.modal-dialog-proj { width: 600px;}
     .left-menu { background: none #fff;}
     .sidebar-offcanvas #navbar-collapse-1 { border-right: 1px solid #474747;}
     .left-menu .media { margin-top: 8px;}
-    .left-menu .user-img-min { margin-left: 10px;}
+    .left-menu .user-img-min { margin-left: 10px; margin-right: 0;}
     .left-menu h3 {
         font-size: 18px;
         width: 150px;
@@ -5060,4 +5060,7 @@ img.video-edit {
     position: relative;
     left: 0;
     top: 0;
+}
+.video-project-director.video-project-form .project-files-buttons {
+    padding-top: 0px;
 }
