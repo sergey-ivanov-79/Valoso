@@ -5099,5 +5099,27 @@ img.video-edit {
     width: auto;
     line-height: 16.8px;
     float: left;
+    width: 33.33333333%;
 } 
+#applyModal .row.cartNZD.wid-sm  .price {
+    font-size: 14px;
+}
+#applyModal .row.cartNZD.wid-sm .text {
+    font-size: 10px;
+}
+#applyModal .form-control#price {
+    width: 60px;
+}
+#applyModal  .additional-info {
+    margin: 10px 0;
+}
+#applyModal  .additional-info > p {
+    margin-bottom: 10px;
+}
+#applyModal  .additional-info > ul li {
+    font-size: 14px;
+}
+#applyModal  .form-control.datePicker {
+    width: 44%;
+}
 /* END changes for projects/apply/ */  
