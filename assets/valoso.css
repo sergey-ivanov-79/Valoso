@@ -5064,10 +5064,10 @@ img.video-edit {
 /* Begin changes for projects/apply/ */
 .video-project-director.video-project-form .project-files-buttons {
     padding-top: 0px;
-}
+}/*
 .video-project-director.video-project-editor.video-project-view #loginModal .modal-header {
     display: none;
-}
+}*/
 .modal .close {
     opacity: 0.7;
 }
