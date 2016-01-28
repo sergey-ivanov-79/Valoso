@@ -5064,10 +5064,7 @@ img.video-edit {
 /* Begin changes for projects/apply/ */
 .video-project-director.video-project-form .project-files-buttons {
     padding-top: 0px;
-}/*
-.video-project-director.video-project-editor.video-project-view #loginModal .modal-header {
-    display: none;
-}*/
+}
 .modal .close {
     opacity: 0.7;
 }
@@ -5090,12 +5087,12 @@ img.video-edit {
 .modal-price {
     margin: 15px 0;
 } 
-#applyModal .row.cartNZD.wid-xs {
+#applyModal .row.cartNZD.wid-sm {
     float: none;
     margin-right: 0;
     margin-left: 0;    
 } 
-#applyModal .row.cartNZD.wid-xs .title{
+#applyModal .row.cartNZD.wid-sm  .title{
     color: #8d8d8d;
     font-size: 14px;
     text-align: center;
