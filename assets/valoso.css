@@ -5133,7 +5133,7 @@ img.video-edit {
     color: #fe5d83;
 }
 .additional-info ul > p {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     font-size: 18px;
 }
 .additional-info ul li .media .fa-arrow-right {
