@@ -5123,7 +5123,7 @@ img.video-edit {
 #applyModal  .form-control.datePicker {
     width: 44%;
 }
-.p-apply { font-size: 22px; margin-top: 15px;}
+.p-apply { font-size: 22px; margin-top: 15px !important;}
 .project-files-buttons .col-sm-12.save-project-button button {
     margin-bottom: 5px;
 }
