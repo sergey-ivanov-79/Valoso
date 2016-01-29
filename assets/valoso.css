@@ -5147,4 +5147,9 @@ img.video-edit {
     color: #fff;
     background-color: #51ccff;
 }
+@media (max-width: 767px) {
+    .padd-0-10 {
+        padding: 0 10px;
+    }
+}
 /* END changes for projects/apply/ */  
