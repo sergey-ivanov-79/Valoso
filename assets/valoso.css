@@ -5132,7 +5132,7 @@ img.video-edit {
     margin-bottom: 5px;
 }
 .video-des-wrap.video-des-wrap-first {
-    background: #5afe62;
+    /*background: #5afe62;*/
 }
 .additional-info .media { margin-bottom: 15px;}
 .additional-info .media .fa-hand-o-right {
