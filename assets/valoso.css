@@ -5071,14 +5071,18 @@ img.video-edit {
 .modal .close:hover {
     opacity: 1;
 }
-#applyModal .modal-content .modal-header, #loginModal .modal-content .modal-header {
+#applyModal .modal-content .modal-header, 
+#loginModal .modal-content .modal-header,
+#declineModal .modal-content .modal-header {
     background: #54cdff;
     border-radius: 5px 5px 0 0;
     -webkit-border-radius: 5px 5px 0 0;
     -moz-border-radius: 5px 5px 0 0;
     color: #fff;
 }
-#applyModal .modal-content .modal-header h4, #loginModal .modal-content .modal-header h4 {
+#applyModal .modal-content .modal-header h4, 
+#loginModal .modal-content .modal-header h4,
+#declineModal .modal-content .modal-header h4 {
     font-size: 20px;
 }
 .video-project-director.video-project-editor.video-project-view #loginModal .modal-body {
