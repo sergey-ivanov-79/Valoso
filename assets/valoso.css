@@ -5123,4 +5123,25 @@ img.video-edit {
 #applyModal  .form-control.datePicker {
     width: 44%;
 }
+.p-apply { font-size: 22px;}
+.video-des-wrap.video-des-wrap-first {
+    background: #5afe62;
+}
+.additional-info .media { margin-bottom: 15px;}
+.additional-info .media .fa-hand-o-right {
+    font-size: 18px;
+    color: #fe5d83;
+}
+.additional-info ul > p {
+    margin-bottom: 0px;
+    font-size: 18px;
+}
+.additional-info ul li .media .fa-arrow-right {
+    padding: 4px 5px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    color: #fff;
+    background-color: #51ccff;
+}
 /* END changes for projects/apply/ */  
