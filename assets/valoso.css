@@ -5139,9 +5139,15 @@ img.video-edit {
     font-size: 18px;
     color: #fe5d83;
 }
+.additional-info ul {
+    border: 1px solid;
+    padding: 5px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+}
 .additional-info ul > p {
     margin-bottom: 10px;
-    font-size: 18px;
 }
 .additional-info ul li .media .fa-arrow-right {
     padding: 4px 5px;
