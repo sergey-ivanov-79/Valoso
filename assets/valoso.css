@@ -5134,7 +5134,8 @@ img.video-edit {
 .video-des-wrap.video-des-wrap-first {
     /*background: #5afe62;*/
 }
-.additional-info .media { margin-bottom: 15px;}
+.additional-info  > .media { margin-bottom: 15px;}
+.additional-info  ul > .media { margin-bottom: 5px;}
 .additional-info .media .fa-hand-o-right {
     font-size: 18px;
     color: #fe5d83;
