@@ -5173,5 +5173,9 @@ img.video-edit {
     .modal-price:last-child {
         margin-top: 0px;
     }
+    .p-apply { font-size: 16px;}
+    #applyModal .form-control.datePicker {
+        width: 83%;
+    }
 }
 /* END changes for projects/apply/ */  
