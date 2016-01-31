@@ -2765,6 +2765,8 @@ div#view-screensh .featured-screenshot-text .col-sm-3 button,div#view-screensh-d
   color: white;
   line-height: 38px;
   margin: 0 0 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .mobile-tabs-menu h2 img {
   float: left;
@@ -5158,9 +5160,18 @@ img.video-edit {
     color: #fff;
     background-color: #51ccff;
 }
+#applyModal textarea {
+    max-height: 100px;
+    max-width: 488px;
+}
 @media (max-width: 767px) {
     .padd-0-10 {
         padding: 0 10px;
+    }
+}
+@media (max-width: 479px) {
+    .modal-price:last-child {
+        margin-top: 0px;
     }
 }
 /* END changes for projects/apply/ */  
