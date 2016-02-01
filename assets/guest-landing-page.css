@@ -626,7 +626,7 @@ a.blue-color:hover {
     overflow-y: scroll;*/
 }
 .wrapper-content > a img {
-    display: block;
+    display: block !important;
     max-width: 640px;
     margin: 0 auto;
 }
