@@ -5178,4 +5178,20 @@ img.video-edit {
         width: 83%;
     }
 }
+/* for widget*/
+#applyModal .row.cartNZD.wid-sm.clearfix {
+    width: 55%;
+    margin-top: 24px;
+    margin-bottom: 0;
+    float: right;
+}
+#applyModal input.form-control {
+    height: 36px;
+}
+div.wrapp-bid { position: absolute;}
+@media (max-width: 479px) {
+    .row.cartNZD.wid-sm { float: none;}
+    div.wrapp-bid { position: static;}
+    #applyModal .row.cartNZD.wid-sm.clearfix { width: 100%;}
+/* end for widget*/
 /* END changes for projects/apply/ */  
