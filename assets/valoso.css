@@ -2073,8 +2073,8 @@ span.single-video-hover-buttons > button:nth-of-type(2):hover {
   padding-right: 15px !important;
   padding-left: 15px !important;
 }
-.bs-wizard>.bs-wizard-step .bs-wizard-stepnum .fa {
-    font-size: 20px !important;
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum .fa {
+    font-size: 30px !important;
 }
 .project-files-buttons .save-project-button button {
   font-size: 24px;
@@ -5054,6 +5054,7 @@ img.video-edit {
 }
 .video-project-form .vp-form-right .inner-narration .radio label {
     font-size: 14px;
+    color: #8d8d8d;
 }
 .inner-narration { display: none;}
 .inner-narration.dis-block { display: block;}
