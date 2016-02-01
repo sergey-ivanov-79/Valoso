@@ -135,10 +135,7 @@ button#project-delete-file {
 }
 #register-as-a-video-editor-modal .bs-wizard>.bs-wizard-step>.bs-wizard-dot {
     top: 61px!important;
-}    
-.bs-wizard>.bs-wizard-step>.bs-wizard-dot {
-    top: 72px!important;
-}
+}  
 @media (max-width: 1059px) {
     .col-sm-4.single-video-featuredimg,
     .col-sm-8.single-video-description {
