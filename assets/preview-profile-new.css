@@ -3339,9 +3339,13 @@ button.btn.save-btn:hover  {
 /* Begin added changes for widget */
 
 .cartNZD {
-    float: right;
-    margin-bottom: 15px;
+    /*float: right;*/
+    float: none;
+    margin-bottom: 5px;
     text-align: center;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .cartNZD .text {
     text-align: center;
@@ -3361,6 +3365,13 @@ button.btn.save-btn:hover  {
   background: #fadadc;
   border-radius: 15px 0 0 15px;
   padding: 10px;
+    width: auto;
+    float: left;
+    font-size: 14px;
+    line-height: 1.2;
+    margin: 0;
+    color: #8d8d8d;
+    text-align: center;
 }
 .cartNZD .text {
   text-align: center;
