@@ -5196,3 +5196,93 @@ div.wrapp-bid { position: absolute;}
     #applyModal .row.cartNZD.wid-sm.clearfix { width: 100%;}
 /* end for widget*/
 /* END changes for projects/apply/ */  
+/* Begin added changes for widget */
+
+.cartNZD {
+    float: right;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.cartNZD .text {
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.cartNZD .price {
+  border: 1px solid #e4e4e4;
+  background: #fff3f4;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 0 15px 15px 0;
+}
+.cartNZD div.title {
+  font-weight: bold;
+  border: 1px solid #e4e4e4;
+  background: #fadadc;
+  border-radius: 15px 0 0 15px;
+  padding: 10px;
+}
+.cartNZD .text {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+/* Begin wid-lg */
+.cartNZD.wid-lg {
+  font-size: 32px;
+  width: 430px;
+  max-width: 100%;
+}
+
+.cartNZD.wid-lg .text {
+  font-size: 16px;
+}
+/* END wid-lg */
+
+/* Begin wid-md */
+.cartNZD.wid-md {
+  font-size: 24px;
+  width: 340px;
+  max-width: 100%;
+}
+.cartNZD.wid-md .text {
+  font-size: 14px;
+}
+/* END wid-md */
+
+/* Begin wid-sm */
+.cartNZD.wid-sm {
+  font-size: 18px;
+  width: 280px;
+  max-width: 100%;
+}
+.cartNZD.wid-sm .text {
+  font-size: 14px;
+}
+.cartNZD.wid-sm .price {
+  border-radius: 0 5px 5px 0;
+}
+.cartNZD.wid-sm .title {
+  border-radius: 5px 0 0 5px;
+}
+/* END wid-sm */
+
+/* Begin wid-xs */
+.cartNZD.wid-xs {
+  font-size: 14px;
+  width: 180px;
+  max-width: 100%;
+}
+.cartNZD.wid-xs .text {
+  font-size: 10px;
+}
+.cartNZD.wid-xs .price {
+  border-radius: 0 5px 5px 0;
+}
+.cartNZD.wid-xs .title {
+  border-radius: 5px 0 0 5px;
+}
+/* END wid-xs */
+
+/* END added changes for widget*/
