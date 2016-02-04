@@ -5217,12 +5217,16 @@ div.wrapp-bid { position: absolute;}
   font-weight: bold;
   padding: 10px;
   border-radius: 0 15px 15px 0;
+    -webkit-border-radius: 0 15px 15px 0;
+    -moz-border-radius: 0 15px 15px 0;
 }
 .cartNZD div.title {
   font-weight: bold;
   border: 1px solid #e4e4e4;
   background: #fadadc;
   border-radius: 15px 0 0 15px;
+    -webkit-border-radius: 15px 0 0 15px;
+    -moz-border-radius: 15px 0 0 15px;
   padding: 10px;
     width: auto;
     float: left;
@@ -5274,9 +5278,13 @@ div.wrapp-bid { position: absolute;}
 }
 .cartNZD.wid-sm .price {
   border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
 }
 .cartNZD.wid-sm .title {
   border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
 }
 /* END wid-sm */
 
@@ -5291,17 +5299,24 @@ div.wrapp-bid { position: absolute;}
 }
 .cartNZD.wid-xs .price {
   border-radius: 0 5px 5px 0;
+    -webkit-border-radius: 0 5px 5px 0;
+    -moz-border-radius: 0 5px 5px 0;
 }
 .cartNZD.wid-xs .title {
   border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
 }
 /* END wid-xs */
 
 /* END added changes for widget*/
-.single-video .add-notes-toggle,
-.single-video-description .video-director-editor {
-    display: none;
+
+.add-notes-toggle {
+    display: none !important;
 }
-.single-video button#project-delete-file {
-    float: none;
+.video-director-editor {
+    display: none !important;
+}
+button#project-delete-file {
+    float: none !important;
 }
