@@ -1807,6 +1807,7 @@ span.icon-reorder {
 }
 .video-des-button-wrap > button:nth-of-type(2) {
   background-color: #e54a3a;
+  float: none !important;/**/ 
 }
 .video-des-button-wrap > button:nth-of-type(2):hover {
   background-color: transparent;
@@ -5312,13 +5313,3 @@ div.wrapp-bid { position: absolute;}
 /* END wid-xs */
 
 /* END added changes for widget*/
-
-.add-notes-toggle {
-    display: none !important;
-}
-.video-director-editor {
-    display: none !important;
-}
-button#project-delete-file {
-    float: none !important;
-}
