@@ -5298,3 +5298,7 @@ div.wrapp-bid { position: absolute;}
 /* END wid-xs */
 
 /* END added changes for widget*/
+.single-video .add-notes-toggle,
+.single-video-description .video-director-editor {
+    display: none;
+}
