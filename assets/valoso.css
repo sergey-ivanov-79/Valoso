@@ -1798,6 +1798,7 @@ span.icon-reorder {
 .video-des-button-wrap > button:nth-of-type(1) {
   background-color: #4b8dcb;
   margin-right: 2%;
+  display: none !important;/**/
 }
 .video-des-button-wrap > button:nth-of-type(1):hover {
   background-color: transparent;
@@ -2468,6 +2469,7 @@ span.video-list-draft {
   left: 15px;
   bottom: 0px;
   right: 0;
+  display: none !important;/**/
 }
 .video-director-editor > div {
   margin-bottom: 10px;
