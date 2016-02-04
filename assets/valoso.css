@@ -5302,3 +5302,6 @@ div.wrapp-bid { position: absolute;}
 .single-video-description .video-director-editor {
     display: none;
 }
+.single-video button#project-delete-file {
+    float: none;
+}
