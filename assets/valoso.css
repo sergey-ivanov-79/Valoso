@@ -5313,3 +5313,21 @@ div.wrapp-bid { position: absolute;}
 /* END wid-xs */
 
 /* END added changes for widget*/
+
+/* Begin Toggle Navigation (close) */
+.opened-offcanvas .page-wrap:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 10000000;
+    opacity: 0;
+}
+
+.opened-offcanvas { overflow: hidden !important; height: 100% !important; min-height: 0 !important; }
+
+/* END Toggle Navigation (close) */

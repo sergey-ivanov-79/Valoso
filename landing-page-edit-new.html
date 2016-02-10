@@ -571,5 +571,13 @@ $('.popup-youtube').magnificPopup({
     });
 </script>
 
+<script>
+    $('.modal').on('shown.bs.modal', function () {
+      if($(this).find('input').length) {
+        $(this).find('input').eq(0).focus();
+      }
+    });
+</script>
+
 </body>
 </html>
