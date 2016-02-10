@@ -5014,7 +5014,8 @@ img.video-edit {
 #footer .botLink > ul li { margin-bottom: 10px;}
 @media (max-width: 767px) {
     .text-center.bs-wizard-stepnum h2 { font-size: 12px !important;}
-    .bs-wizard>.bs-wizard-step>.bs-wizard-dot { top: 88px !important;}
+    .bs-wizard>.bs-wizard-step>.bs-wizard-dot,
+	#register-as-a-video-editor-modal .bs-wizard>.bs-wizard-step>.bs-wizard-dot	{ top: 88px !important;}
     .bs-wizard>.bs-wizard-step .bs-wizard-stepnum { min-height: 66px;}
     #userLoginContent .formSub input { font-size: 22px;}
     .botCopy>div { margin-bottom: 10px;}
@@ -5026,9 +5027,15 @@ img.video-edit {
 @media (max-width: 479px) {
     #userLoginContent .formSub input {
         font-size: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding: 10px;
+		font-weight: 300;
     }
+	#userLoginContent .formSub input[value="Login"] {
+		padding: 10px 20px;
+		font-weight: 700;
+		display: block;
+		margin: 0 auto;
+	}
 }
 .select2-dropdown.select2-dropdown--below { height: auto !important; overflow-y: inherit !important;}
 .video-project-form .vp-form-left .vp-form label {  color: #474747 !important;}
