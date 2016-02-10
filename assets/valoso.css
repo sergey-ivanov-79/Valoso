@@ -5319,7 +5319,7 @@ div.wrapp-bid { position: absolute;}
 
 /* Begin Toggle Navigation (close) */
 @media (max-width: 767px) {
-    .opened-offcanvas .page-wrap:after {
+    .opened-offcanvas .page-wrap:after { /*need add div .close-nav into .page-wrap, and replace after to .close-nav*/
         content: '';
         display: block;
         position: absolute;
