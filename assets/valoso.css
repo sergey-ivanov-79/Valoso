@@ -5197,8 +5197,11 @@ div.wrapp-bid { position: absolute;}
     .row.cartNZD.wid-sm { float: none;}
     div.wrapp-bid { position: static;}
     #applyModal .row.cartNZD.wid-sm.clearfix { width: 100%;}
+}
 /* end for widget*/
 /* END changes for projects/apply/ */  
+
+
 /* Begin added changes for widget */
 
 .cartNZD {
@@ -5315,19 +5318,20 @@ div.wrapp-bid { position: absolute;}
 /* END added changes for widget*/
 
 /* Begin Toggle Navigation (close) */
-.opened-offcanvas .page-wrap:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #fff;
-    z-index: 10000000;
-    opacity: 0;
+@media (max-width: 767px) {
+    .opened-offcanvas .page-wrap:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        z-index: 1000;
+        opacity: 0;
+    }
+    
+    .opened-offcanvas { overflow: hidden !important; height: 100% !important; min-height: 0 !important; }
 }
-
-.opened-offcanvas { overflow: hidden !important; height: 100% !important; min-height: 0 !important; }
-
 /* END Toggle Navigation (close) */
