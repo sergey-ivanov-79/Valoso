@@ -4830,12 +4830,13 @@ form .errors-list ul {
     }
 }
 @media (max-width: 420px) {
-    #userLoginContent .formCheck .forgotPass {
+    /*#userLoginContent .formCheck .forgotPass {
         float: none !important;
         margin-top: 10px;
-    }
+    }*/
     #userLoginContent .formCheck {
         text-align: center;
+        padding: 0;
     }
 }
 @media (max-width: 375px) {
