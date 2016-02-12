@@ -4572,6 +4572,9 @@ a.anchor.upArrow {
     font-weight: 300;
     margin-bottom: 95px;
 }
+.sec-retriv #messModal p {
+        margin-bottom: 0;
+}
 .rtrv-user-pw {
     margin: 0 auto;
     max-width: 44%;
@@ -5325,6 +5328,9 @@ div.wrapp-bid { position: absolute;}
 /* END added changes for widget*/
 
 /* Begin Toggle Navigation (close) */
+.status-wrapper > p {
+        display: none;
+    }
 @media (max-width: 767px) {
     .opened-offcanvas .page-wrap  .close-nav { /*need add div .close-nav into .page-wrap, and replace after to .close-nav*/
         content: '';
@@ -5352,6 +5358,9 @@ div.wrapp-bid { position: absolute;}
         border-radius: 5px;
         padding: 10px 15px;
         margin-bottom: 10px;
+    }
+    .status-wrapper > p {
+        display: block;
     }
     .wrapper-sidebar-offcanvas #navbar-collapse-1 .nav>li.active>a, 
     .wrapper-sidebar-offcanvas #navbar-collapse-1 .nav>li>a:hover {
