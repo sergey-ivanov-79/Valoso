@@ -4835,7 +4835,6 @@ form .errors-list ul {
         margin-top: 10px;
     }*/
     #userLoginContent .formCheck {
-        text-align: center;
         padding: 0;
     }
 }
@@ -5341,5 +5340,22 @@ div.wrapp-bid { position: absolute;}
     }
     
     .opened-offcanvas { overflow: hidden !important; height: 100% !important; min-height: 0 !important; }
+    .video-upload.vidljiv {
+        margin: 0;
+    }
+    .status-wrapper > p,
+    .upload-notification .bellow50,
+    .upload-notification .above50 {
+        font-size: 14px;
+        margin: auto;
+        background-color: #f6f3f2;
+        border-radius: 5px;
+        padding: 10px 15px;
+        margin-bottom: 10px;
+    }
+    .wrapper-sidebar-offcanvas #navbar-collapse-1 .nav>li.active>a, 
+    .wrapper-sidebar-offcanvas #navbar-collapse-1 .nav>li>a:hover {
+        background-color: #ff965e;
+    }
 }
 /* END Toggle Navigation (close) */
