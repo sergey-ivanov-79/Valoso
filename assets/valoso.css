@@ -3862,7 +3862,7 @@ a.anchor.upArrow {
     height: 125px;
   }
   .description-right-down,.video-upload,.project-files {
-    display: none;
+    /*display: none;*/
   }
   .mobile-tabs-menu {
     display: block;
@@ -3892,6 +3892,12 @@ a.anchor.upArrow {
   .description-right-down {
     left: 100%;
     position: relative;
+  }
+  .apply-page .description-right-down,
+  .apply-page .video-upload,
+  .apply-page .project-files {
+    position: static;
+    display: block;
   }
   .video-project-director .container > p,.project-files-buttons {
     position: relative;
