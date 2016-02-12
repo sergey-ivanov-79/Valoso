@@ -5393,9 +5393,6 @@ div.wrapp-bid { position: absolute;}
         text-transform: lowercase;
         font-size: 12px;
     }
-    .assets-btn:hover > span {
-        opacity: 1;
-    } 
     .apply-page .mobile-tabs-menu h2 {
         margin: 0;
     }
@@ -5403,9 +5400,9 @@ div.wrapp-bid { position: absolute;}
         margin-bottom: 20px;
     }
 }
-@media (max-width: 489px) {
+@media (max-width: 479px) {
     .assets-btn > span {
-        top: -44px;
+        top: -43px;
     }
     .project-page-mobile .mobile-tabs-menu h2 {
         margin-bottom: 35px;
