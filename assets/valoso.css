@@ -5362,6 +5362,8 @@ div.wrapp-bid { position: absolute;}
         margin: auto;
         background-color: #f6f3f2;
         border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
         padding: 10px 15px;
         margin-bottom: 10px;
     }
@@ -5374,3 +5376,39 @@ div.wrapp-bid { position: absolute;}
     }
 }
 /* END Toggle Navigation (close) */
+/* Begin temporary overlay on project page */
+@media (max-width: 640px) {
+    .assets-btn > span {
+        position: absolute;
+        top: -30px;
+        right: 0;
+        left: 0;
+        background: #fff;
+        opacity: 0.8;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        padding: 2px 5px;
+        color: #e54a3a;
+        text-transform: lowercase;
+        font-size: 12px;
+    }
+    .assets-btn:hover > span {
+        opacity: 1;
+    } 
+    .apply-page .mobile-tabs-menu h2 {
+        margin: 0;
+    }
+    .project-page-mobile .mobile-tabs-menu h2 {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 489px) {
+    .assets-btn > span {
+        top: -44px;
+    }
+    .project-page-mobile .mobile-tabs-menu h2 {
+        margin-bottom: 35px;
+    }
+}
+/* END temporary overlay on project page */
