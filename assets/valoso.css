@@ -5431,5 +5431,9 @@ body.modal-open { height: 100% !important;}
         display: block;
         padding-right: 0px !important;
     }
+    .preview-profile-wrapper h1.profile {
+        margin-left: 0px !important;
+    }
+    
 }
 /*  END changes for header  project page and profile page  */
