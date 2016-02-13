@@ -5422,7 +5422,8 @@ body.modal-open { height: 100% !important;}
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile {
         display: none;    
     }
-    .cols.header-temp .navbar-toggle.button-mobile {
+    .cols.header-temp .navbar-toggle.button-mobile, 
+    .header-guest .navbar-toggle  {
         position: absolute;
         left: 0;
     }
