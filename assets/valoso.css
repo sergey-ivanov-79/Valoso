@@ -4843,7 +4843,13 @@ form .errors-list ul {
         float: none !important;
         margin-top: 10px;
     }*/
-    #userLoginContent .formCheck {
+    #userLoginContent .formCheck, 
+    #userLoginContent .formField,
+    #userLoginContent .formInput,
+    #userLoginContent .formText,
+    #userLoginContent .formSub,
+    #userLoginContent .line,
+    #userLoginContent .butLink {
         padding: 0;
     }
 }
