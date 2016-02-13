@@ -5429,8 +5429,7 @@ body.modal-open { height: 100% !important;}
     .preview-profile-wrapper .header-dop.header-mobile .navbar-brand.navbar-brand-mobile {
         margin-top: 9px;
         display: block;
-        padding-top: 9px;
-        padding-right: 0px;
+        padding-right: 0px !important;
     }
 }
 /*  END changes for header  project page and profile page  */
