@@ -5405,7 +5405,6 @@ div.wrapp-bid { position: absolute;}
         top: -43px;
     }
     .project-page-mobile .mobile-tabs-menu h2 {
-        margin-bottom: 35px;
-    }
 }
 /* END temporary overlay on project page */
+body.modal-open { height: 100% !important;}
