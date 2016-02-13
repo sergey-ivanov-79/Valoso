@@ -5417,3 +5417,20 @@ div.wrapp-bid { position: absolute;}
 /* END temporary overlay on project page */
 
 body.modal-open { height: 100% !important;}
+/*  Begin changes for header  project page and profile page  */
+@media (max-width: 767px) {
+    .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile {
+        display: none;    
+    }
+    .cols.header-temp .navbar-toggle.button-mobile {
+        position: absolute;
+        left: 0;
+    }
+    .preview-profile-wrapper .header-dop.header-mobile .navbar-brand.navbar-brand-mobile {
+        margin-top: 9px;
+        display: block;
+        padding-top: 9px;
+        padding-right: 0px;
+    }
+}
+/*  END changes for header  project page and profile page  */
