@@ -157,7 +157,7 @@ body.dash-page { padding-top: 0;}
 .headroom-icons.headroom--not-top {
     background: none #fefcfb;
 }
-.wrapper-sidebar-offcanvas { display: none;}
+.wrapper-sidebar-offcanvas { display: none !important;}
 /* Begin My Project */
 
 /*Start styling selects project*/
@@ -892,7 +892,7 @@ div#link-profile-modal .modal-dialog.modal-dialog-proj { width: 600px;}
     /* END My Media Library */
 }
 @media (max-width: 767px) {
-    .wrapper-sidebar-offcanvas { display: block;}
+    .opened-offcanvas .wrapper-sidebar-offcanvas { display: block !important;}
 }
 @media (max-width: 768px) and (min-width: 640px) {
     .right-bl .text-center .text-uppercase, .left-bl .text-center .text-uppercase.text-gray { font-size: 20px;}
@@ -5199,6 +5199,7 @@ img.video-edit {
     .modal-price:last-child {
         margin-top: 0px;
     }
+    .modal-price { float: none;}
     .p-apply { font-size: 16px;}
     #applyModal .form-control.datePicker {
         width: 83%;
@@ -5417,6 +5418,7 @@ div.wrapp-bid { position: absolute;}
 /* END temporary overlay on project page */
 
 body.modal-open { height: 100% !important;}
+.dis-none { padding: 0 !important;}
 /*  Begin changes for header  project page and profile page  */
 @media (max-width: 767px) {
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile {
