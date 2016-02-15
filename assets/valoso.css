@@ -5422,6 +5422,7 @@ body.modal-open {
     overflow: hidden !important;
 }
 .dis-none { padding: 0 !important;}
+
 /*  Begin changes for header  project page and profile page  */
 @media (max-width: 767px) {
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile {
@@ -5440,6 +5441,9 @@ body.modal-open {
     .preview-profile-wrapper h1.profile {
         margin-left: 0px !important;
     }
-    
+    #loginBox,
+    #register-as-a-video-editor-modal {
+        overflow-y: scroll;
+    }
 }
 /*  END changes for header  project page and profile page  */
