@@ -157,7 +157,7 @@ body.dash-page { padding-top: 0;}
 .headroom-icons.headroom--not-top {
     background: none #fefcfb;
 }
-.wrapper-sidebar-offcanvas { display: none !important;}
+.wrapper-sidebar-offcanvas { display: none;}
 /* Begin My Project */
 
 /*Start styling selects project*/
@@ -892,7 +892,7 @@ div#link-profile-modal .modal-dialog.modal-dialog-proj { width: 600px;}
     /* END My Media Library */
 }
 @media (max-width: 767px) {
-    .opened-offcanvas .wrapper-sidebar-offcanvas { display: block !important;}
+    .wrapper-sidebar-offcanvas { display: block !important;}
 }
 @media (max-width: 768px) and (min-width: 640px) {
     .right-bl .text-center .text-uppercase, .left-bl .text-center .text-uppercase.text-gray { font-size: 20px;}
@@ -5121,7 +5121,7 @@ img.video-edit {
     float: left;
 } 
 #applyModal .row.cartNZD.wid-sm {
-    float: none;
+    float: left !important;
     margin-right: 0;
     margin-left: 0;    
 } 
@@ -5417,7 +5417,10 @@ div.wrapp-bid { position: absolute;}
 }
 /* END temporary overlay on project page */
 
-body.modal-open { height: 100% !important;}
+body.modal-open { 
+    height: 100% !important;
+    overflow: hidden !important;
+}
 .dis-none { padding: 0 !important;}
 /*  Begin changes for header  project page and profile page  */
 @media (max-width: 767px) {
