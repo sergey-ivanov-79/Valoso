@@ -5429,7 +5429,17 @@ body.modal-open {
 .autoload-currency .cartNZD.wid-xs {
     margin: 10px 0 0 0;
 }
-
+.backgr-fon-hover .nav.nav-tabs.tabsuper li a {
+    text-align: center;
+}
+.bid-tab .amount h5,
+.bid-tab .status h5 {
+    color: #474747;
+    padding: 5px 0;
+}
+.addition a.more {
+    cursor: pointer;
+}
 /*  Begin changes for header  project page and profile page  */
 @media (max-width: 767px) {
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile {
