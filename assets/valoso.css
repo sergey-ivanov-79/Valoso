@@ -5429,8 +5429,12 @@ body.modal-open {
 .autoload-currency .cartNZD.wid-xs {
     margin: 10px 0 0 0;
 }
+/* Begin changes for edit page*/
 .backgr-fon-hover .nav.nav-tabs.tabsuper li a {
     text-align: center;
+}
+.bid-tab.cont-1 {
+    
 }
 .bid-tab .amount h5,
 .bid-tab .status h5 {
@@ -5440,6 +5444,10 @@ body.modal-open {
 .addition a.more {
     cursor: pointer;
 }
+.addition .bid-tab.cont-1 {
+    padding: 0 10px;
+}
+/* END changes for edit page*/
 /*  Begin changes for header  project page and profile page  */
 @media (max-width: 767px) {
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile {
