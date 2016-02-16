@@ -5423,6 +5423,12 @@ body.modal-open {
 }
 .dis-none { padding: 0 !important;}
 
+.autoload-currency {
+    float: left;
+}
+.autoload-currency .cartNZD.wid-xs {
+    margin: 10px 0 0 0;
+}
 /*  Begin changes for header  project page and profile page  */
 @media (max-width: 767px) {
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile {
@@ -5445,5 +5451,25 @@ body.modal-open {
     #register-as-a-video-editor-modal {
         overflow-y: scroll;
     }
+    .autoload-currency .cartNZD.wid-xs {
+        margin: 0px 0 0 10px;
+    }
+    .preview-profile-wrapper .col-sm-12-max.col-sm-12-max-dop {
+        display: none;
+    }
+    .preview-profile-wrapper  .header-min-height {
+        min-height: 0;
+    }
+}
+@media (max-width: 420px) {
+    .autoload-currency {
+        float: none;
+    }
+    .autoload-currency .cartNZD.wid-xs {
+        margin: 0px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
 }
 /*  END changes for header  project page and profile page  */
