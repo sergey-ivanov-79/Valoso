@@ -5460,6 +5460,17 @@ body.modal-open {
     .preview-profile-wrapper  .header-min-height {
         min-height: 0;
     }
+    .preview-profile-wrapper  .hire-me-section.edit-hour-pop > h3 {
+        float: left;
+    }
+    .autoload-currency {
+        float: right;
+    }
+}
+@media (max-width: 640px) {
+    .preview-profile-wrapper  .user-profile-left ul li:nth-of-type(6) {
+        min-height: 0;
+    }
 }
 @media (max-width: 420px) {
     .autoload-currency {
