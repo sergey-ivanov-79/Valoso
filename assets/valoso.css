@@ -5417,9 +5417,9 @@ div.wrapp-bid { position: absolute;}
 }
 /* END temporary overlay on project page */
 
-body.modal-open { 
-    /*height: 100% !important;
-    overflow: hidden !important;*/
+body { 
+    height: 100% !important;
+    overflow: hidden !important;
 }
 .dis-none { padding: 0 !important;}
 
