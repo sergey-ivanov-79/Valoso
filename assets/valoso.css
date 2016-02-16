@@ -5447,6 +5447,7 @@ body.modal-open {
 .addition .bid-tab.cont-1 {
     padding: 0 10px;
 }
+
 /* END changes for edit page*/
 /*  Begin changes for header  project page and profile page  */
 @media (max-width: 767px) {
@@ -5484,6 +5485,18 @@ body.modal-open {
     }
     .autoload-currency {
         float: right;
+    }
+    .active.row-offcanvas:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        opacity: .65;
+        z-index: 40;
     }
 }
 @media (max-width: 640px) {
