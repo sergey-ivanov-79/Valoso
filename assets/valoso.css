@@ -5418,7 +5418,7 @@ div.wrapp-bid { position: absolute;}
 /* END temporary overlay on project page */
 
 body.modal-open { 
-    height: 100% !important;
+    /*height: 100% !important;*/
     overflow: hidden !important;
 }
 .dis-none { padding: 0 !important;}
@@ -5429,6 +5429,7 @@ body.modal-open {
 .autoload-currency .cartNZD.wid-xs {
     margin: 10px 0 0 0;
 }
+
 /*  Begin changes for header  project page and profile page  */
 @media (max-width: 767px) {
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile {
