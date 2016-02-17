@@ -5353,9 +5353,9 @@ div.wrapp-bid { position: absolute;}
         left: 0;
         right: 0;
         bottom: 0;
-        background: #fff;
+        background: #000;
         z-index: 1000;
-        opacity: 0;
+        opacity: 0.3;
     }
     
     .opened-offcanvas { overflow: hidden !important; height: 100% !important; min-height: 0 !important; }
