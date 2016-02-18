@@ -352,12 +352,12 @@ a.blue-color:hover {
 /**
  * Disable the links from the blog
  */
-.blog .navbar-collapse .navbar-nav, .blog .socBox, .blog .botLink, .blog .botCopy {
+/*.blog .navbar-collapse .navbar-nav, .blog .socBox, .blog .botLink, .blog .botCopy {
   display: none;
 }
 .blog .botInfo, .blog .botLogo {
   width: 100% !important;
-}
+}*/
 
 @media (max-width: 1160px) and (min-width: 992px){
     .new-landing-page .intro-1-home-2 h2 {
