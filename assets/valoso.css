@@ -3423,8 +3423,8 @@ a.anchor.upArrow {
     bottom: 5px;
   }
   .video-list {
-    height: 680px;
-    overflow-y: scroll !important;
+    /*height: 680px;*/
+    overflow-y: scroll;
   }
   .screenshot-gallery > h3 {
     font-size: 26px;
