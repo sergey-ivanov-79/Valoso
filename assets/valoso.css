@@ -5426,13 +5426,15 @@ body.modal-open {
     padding-right: 17px !important;
    /* overflow: hidden !important;*/
 }
-.row.row-offcanvas.row-offcanvas-left {
-    margin-right: 0px;
-    margin-left: 0px;
-}
-body.modal-open .row.row-offcanvas.row-offcanvas-left {
-    margin-right: -15px;
-    margin-left: -15px;
+@media (min-width: 768px) {
+    .row.row-offcanvas.row-offcanvas-left {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    body.modal-open .row.row-offcanvas.row-offcanvas-left {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
 }
 .dis-none { padding: 0 !important;}
 
