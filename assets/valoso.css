@@ -5418,23 +5418,10 @@ div.wrapp-bid { position: absolute;}
     }
 }
 /* END temporary overlay on project page */
-body {
-    padding-right: 0 !important;
-}
+
 body.modal-open { 
-    height: auto !important;
-    /*padding-right: 17px !important;*/
-    overflow: hidden !important;
-}
-@media (min-width: 768px) {
-    .row.row-offcanvas.row-offcanvas-left {
-        margin-right: 0px;
-        margin-left: 0px;
-    }
-    body.modal-open .row.row-offcanvas.row-offcanvas-left {
-        margin-right: -15px;
-        margin-left: -15px;
-    }
+    height: 100% !important;
+   /* overflow: hidden !important;*/
 }
 .dis-none { padding: 0 !important;}
 
