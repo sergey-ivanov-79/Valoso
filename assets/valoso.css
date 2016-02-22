@@ -5423,8 +5423,8 @@ body {
 }
 body.modal-open { 
     height: auto !important;
-    padding-right: 17px !important;
-   /* overflow: hidden !important;*/
+    /*padding-right: 17px !important;*/
+    overflow: hidden !important;
 }
 @media (min-width: 768px) {
     .row.row-offcanvas.row-offcanvas-left {
