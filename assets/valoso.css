@@ -5418,7 +5418,9 @@ div.wrapp-bid { position: absolute;}
     }
 }
 /* END temporary overlay on project page */
-
+body {
+    padding-right: 0 !important;
+}
 body.modal-open { 
     height: auto !important;
     padding-right: 17px !important;
