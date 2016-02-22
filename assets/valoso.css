@@ -5420,8 +5420,17 @@ div.wrapp-bid { position: absolute;}
 /* END temporary overlay on project page */
 
 body.modal-open { 
-    height: 100% !important;
+    height: auto !important;
+    padding-right: 17px !important;
    /* overflow: hidden !important;*/
+}
+.row.row-offcanvas.row-offcanvas-left {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+body.modal-open .row.row-offcanvas.row-offcanvas-left {
+    margin-right: -15px;
+    margin-left: -15px;
 }
 .dis-none { padding: 0 !important;}
 
@@ -5510,8 +5519,8 @@ body.modal-open {
 /* Begin Changes for long links */
 .page-wrap a {
     -ms-word-break: break-all;
+    word-break: break-word;
     word-break: break-all;
-    /*word-break: break-word;*/
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;

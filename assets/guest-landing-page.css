@@ -428,7 +428,8 @@ a.blue-color:hover {
         font-size: 16px;
     }
     .header-guest .navbar {
-        border: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        border-radius: 0px;
     }
     .header-guest .navbar-default .navbar-brand {
         padding: 5px 10px !important;
