@@ -5518,9 +5518,9 @@ body.modal-open {
     hyphens: auto;
 }
 /* END Changes for long links */
-html.none-overflow-x {
+/*html.none-overflow-x {
     overflow-x: visible;
-}
+}*/
 body {
     padding-right: 0px !important;
 }
