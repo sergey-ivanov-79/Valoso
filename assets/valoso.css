@@ -5359,9 +5359,6 @@ div.wrapp-bid { position: absolute;}
         z-index: 1000;
         opacity: 0.3;
     }
-    body.opened-offcanvas.modal-open {
-        padding-right: 0px!important;
-    }
     .opened-offcanvas { overflow: hidden !important; height: 100% !important; min-height: 0 !important; }
     .video-upload.vidljiv {
         margin: 0;
@@ -5525,7 +5522,4 @@ body.modal-open {
 }*/
 body {
     padding-right: 0px !important;
-}
-body.modal-open {
-    padding-right: 17px !important;
 }
