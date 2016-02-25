@@ -3169,3 +3169,7 @@ a.anchor.upArrow {
     padding-top: 1px!important;
   }
 }
+/*html.none-overflow-x {
+    overflow-y: hidden;
+    overflow-x: hidden;
+}*/

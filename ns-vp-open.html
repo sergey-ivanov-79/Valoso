@@ -1373,7 +1373,10 @@ $('.gallery').each(function() { // the containers for all your galleries
 });
 </script>
 <script>
-    $(document).on('click', '.button-mobile', function(){
+    /*$(document).on('click', '.button-mobile', function(){
+        $('body').toggleClass('opened-offcanvas');
+    });*/
+    $('.button-mobile').click(function(){
         $('body').toggleClass('opened-offcanvas');
     });
 </script>
@@ -1381,6 +1384,20 @@ $('.gallery').each(function() { // the containers for all your galleries
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
+</script>
+<script>
+   /* $('.modal').on('shown.bs.modal', function (e) {
+      $('html').addClass('none-overflow-x'); 
+    });
+    $('.modal').on('hidden.bs.modal', function (e) {
+      $('html').removeClass('none-overflow-x'); 
+    });*/
+    $('.modal').on('shown.bs.modal', function (e) {
+      $('body').addClass('modal-open'); 
+    });
+    $('.modal').on('hidden.bs.modal', function (e) {
+      $('body').removeClass('modal-open'); 
+    });
 </script>
 </body>
 </html>

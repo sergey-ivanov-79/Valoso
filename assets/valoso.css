@@ -5518,3 +5518,12 @@ body.modal-open {
     hyphens: auto;
 }
 /* END Changes for long links */
+html.none-overflow-x {
+    overflow-x: visible;
+}
+body {
+    padding-right: 0px !important;
+}
+body.modal-open {
+    padding-right: 17px !important;
+}
