@@ -5541,9 +5541,6 @@ body.modal-open {
 /*html.none-overflow-x {
     overflow-x: visible;
 }*/
-body {
-    padding-right: 0px !important;
-}
 .wrapp-proposal-total .btn-here {
     background: #0285c2;
     border: 1px solid #0285c2;
