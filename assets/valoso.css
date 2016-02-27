@@ -5143,7 +5143,7 @@ img.video-edit {
     font-size: 10px;
 }
 #applyModal .form-control#price {
-    width: 60px;
+    width: 65px;
 }
 #applyModal  .additional-info {
     margin: 10px 0;
@@ -5192,6 +5192,16 @@ img.video-edit {
     max-height: 100px;
     max-width: 488px;
 }
+.wrapper-bid {
+    float: left;
+    width: 40%;
+}
+.wrapper-modal-price {
+    float: right;
+}
+.wrapper-modal-price .modal-price {
+    margin: 8px 0px 8px 0px;
+}
 @media (max-width: 767px) {
     .padd-0-10 {
         padding: 0 10px;
@@ -5205,6 +5215,14 @@ img.video-edit {
     .p-apply { font-size: 16px;}
     #applyModal .form-control.datePicker {
         width: 83%;
+    }
+    .wrapper-bid {
+        width: 100%; 
+        float: none;   
+    }
+    .wrapper-modal-price {
+        float: none;
+        margin-top: 15px;
     }
 }
 /* for widget*/
