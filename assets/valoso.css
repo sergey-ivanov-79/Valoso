@@ -5202,6 +5202,9 @@ img.video-edit {
 .wrapper-modal-price .modal-price {
     margin: 8px 0px 8px 0px;
 }
+.wrapper-modal-price .modal-price {
+    float: none;
+}
 @media (max-width: 767px) {
     .padd-0-10 {
         padding: 0 10px;
