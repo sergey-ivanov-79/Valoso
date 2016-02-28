@@ -5195,6 +5195,7 @@ img.video-edit {
 .wrapper-bid {
     float: left;
     width: 40%;
+    margin-bottom: 15px;
 }
 .wrapper-modal-price {
     float: right;
