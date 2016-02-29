@@ -7,14 +7,16 @@
     margin-left: -15px;
 }
 @media (max-width: 767px) {
-    #navbar-collapse-1 li a {
+    #navbar-collapse-1 li a,
+    #bs-example-navbar-collapse-1 li a {
         font-size: 14px;
     }
     .secondaryNavList-dop {
         list-style: none !important;
         padding: 0;
     }
-    #navbar-collapse-1 li a:hover, #navbar-collapse-1 li a:focus {
+    #navbar-collapse-1 li a:hover, #navbar-collapse-1 li a:focus,
+    #bs-example-navbar-collapse-1 li a:hover, #bs-example-navbar-collapse-1 li a:focus {
         text-decoration: underline;
         background-color: #ff965e;
     }
@@ -30,14 +32,16 @@
         cursor: pointer;
         line-height: 15px;
     }
-    #navbar-collapse-1 li a {
+    #navbar-collapse-1 li a,
+    #bs-example-navbar-collapse-1 li a {
         font-size: 14px;
         text-decoration: none;
         padding-left: 10px;
         font-weight: bold;
         background: #474747;
     }
-    #navbar-collapse-1 li ul.secondaryNavList-dop li a {
+    #navbar-collapse-1 li ul.secondaryNavList-dop li a,
+    #bs-example-navbar-collapse-1 li ul.secondaryNavList-dop li a  {
         border: none;
         padding-left: 36px;
         padding-right: 30px;
@@ -51,7 +55,10 @@
     .left-menu h3 {
         margin: 0;
     }
-    .wrapper-sidebar-offcanvas #navbar-collapse-1 .nav > li > a, .wrapper-sidebar-offcanvas #navbar-collapse-1 li a {
+    .wrapper-sidebar-offcanvas #navbar-collapse-1 .nav > li > a, 
+    .wrapper-sidebar-offcanvas #navbar-collapse-1 li a,
+    .wrapper-sidebar-offcanvas #bs-example-navbar-collapse-1 .nav > li > a, 
+    .wrapper-sidebar-offcanvas #bs-example-navbar-collapse-1 li a {
         padding-top: 4px;
         padding-bottom: 4px;
     }

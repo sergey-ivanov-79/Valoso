@@ -743,7 +743,9 @@ div#link-profile-modal .modal-dialog.modal-dialog-proj { width: 600px;}
       margin-top: 7px;
     }
     #navbar-collapse-1 .navbar-nav-dop.nav-list,
-    #navbar-collapse-1 .navbar-nav-dop.nav-list .fa.fa-sort-desc { margin: 0;}
+    #navbar-collapse-1 .navbar-nav-dop.nav-list .fa.fa-sort-desc,
+    #bs-example-navbar-collapse-1 .navbar-nav-dop.nav-list,
+    #bs-example-navbar-collapse-1 .navbar-nav-dop.nav-list .fa.fa-sort-desc { margin: 0;}
     .tab-p, .tab-p span { font-size: 12px;}
     .wrapper-form-con .nav-tabs.nav-icon-based > li > a {
       text-align: center;
@@ -5621,4 +5623,19 @@ body.modal-open {
 }
 .success-page p  {
     padding: 10px 0px;
+}
+.sidebar-offcanvas .left-menu .media .media-body span {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+.profile-dropdown-mobile .dropdown-tip .dropdown-menu-inner .dropdown-line {
+    border-top: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+.cols.header-temp .navbar-brand-mobile h1.profile {
+    margin-top: 0;
+    margin-bottom: 0;
 }
