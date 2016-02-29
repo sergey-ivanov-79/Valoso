@@ -5631,6 +5631,10 @@ body.modal-open {
     text-overflow: ellipsis;
     display: block;
 }
+.sidebar-offcanvas .left-menu .media .media-body h3 {
+    margin-top: 0px;
+    padding-bottom: 5px;
+}
 .profile-dropdown-mobile .dropdown-tip .dropdown-menu-inner .dropdown-line {
     border-top: 1px solid #ccc;
     padding-bottom: 10px;
