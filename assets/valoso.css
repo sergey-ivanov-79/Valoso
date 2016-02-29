@@ -5637,7 +5637,8 @@ body.modal-open {
 }
 .profile-dropdown-mobile .dropdown-tip .dropdown-menu-inner .dropdown-line {
     border-top: 1px solid #ccc;
-    padding-bottom: 10px;
+    border-bottom: 1px solid #727272;
+    margin: 0 5px 5px 5px;
 }
 .cols.header-temp .navbar-brand-mobile h1.profile {
     margin-top: 0;
