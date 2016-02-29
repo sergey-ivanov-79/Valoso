@@ -5450,7 +5450,7 @@ body.modal-open {
     float: left;
 }
 .autoload-currency .cartNZD.wid-xs {
-    margin: 10px 0 0 0;
+    margin: 0px 0px 0px 15px;
 }
 /* Begin changes for edit page*/
 .backgr-fon-hover .nav.nav-tabs.tabsuper li a {
