@@ -5639,3 +5639,10 @@ body.modal-open {
     margin-top: 0;
     margin-bottom: 0;
 }
+.addition .tabline p {
+    font-size: 14px;
+}
+/* remove padding left */
+ol, ul {
+    padding-left: 0;
+}
