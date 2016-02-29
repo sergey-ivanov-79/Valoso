@@ -2079,8 +2079,7 @@ span.single-video-hover-buttons > button:nth-of-type(2):hover {
 .bs-wizard > .bs-wizard-step .bs-wizard-stepnum .fa {
     font-size: 30px !important;
 }
-.project-files-buttons .save-project-button button,
-.success-page-btn a.btn-project {
+.project-files-buttons .save-project-button button {
   font-size: 24px;
   color: #fefefe;
   background-color: #4b8dcb;
@@ -2094,12 +2093,10 @@ span.single-video-hover-buttons > button:nth-of-type(2):hover {
   -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
-.success-page a.btn-contact {
+.success-page-btn a.btn-project {
     font-size: 24px;
     color: #fefefe;
-    background-color: #ff818c;
-    height: 50px;
-    width: 340px;
+    background-color: #4b8dcb;
     border: 0;
     border-radius: 5px;
     border: solid 2px transparent;
@@ -2107,6 +2104,23 @@ span.single-video-hover-buttons > button:nth-of-type(2):hover {
     -moz-transition: all 300ms ease-in-out;
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
+}
+
+.success-page-btn {
+    margin: 50px 0px;  
+}
+.success-page a.btn-contact {
+    font-size: 24px;
+    color: #fefefe;
+    background-color: #ff818c;
+    border: 0;
+    border-radius: 5px;
+    border: solid 2px transparent;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+    float: right;
 }
 .project-files-buttons .save-project-button button:hover,
 .success-page-btn a.btn-project:hover {
@@ -3344,11 +3358,11 @@ a.anchor.upArrow {
     width: 160px;
     font-size: 18px;
   }
-  .project-files-buttons .save-project-button button,
-  .success-page-btn a.btn-project {
+  .project-files-buttons .save-project-button button {
     font-size: 22px;
     width: 320px;
   }
+  .success-page-btn a.btn-project,
   .success-page a.btn-contact {
     font-size: 22px;
   }
@@ -3601,12 +3615,12 @@ a.anchor.upArrow {
     font-size: 16px;
     height: 45px;
   }
-  .project-files-buttons .save-project-button button,
-  .success-page-btn a.btn-project {
+  .project-files-buttons .save-project-button button {
     font-size: 20px;
     width: 280px;
     height: 45px;
   }
+  .success-page-btn a.btn-project,
   .success-page a.btn-contact {
     font-size: 20px;
   }
@@ -3769,12 +3783,12 @@ a.anchor.upArrow {
   .project-files-buttons .change-buttons > img {
     margin: 6px 15px 0px 0px;
   }
-  .project-files-buttons .save-project-button button,
-  .success-page-btn a.btn-project {
+  .project-files-buttons .save-project-button button{
     font-size: 18px;
     width: 240px;
     height: 40px;
   }
+  .success-page-btn a.btn-project,
   .success-page a.btn-contact {
     font-size: 18px;
   }
@@ -3940,6 +3954,13 @@ a.anchor.upArrow {
   .video-upload {
     margin-top: 0;
   }
+  
+  .success-page-btn a.btn-project,
+  .success-page a.btn-contact {
+    width: 100%;
+    font-size:20px;
+    margin-top: 10px;
+  }
   /*.project-files-buttons {
     display: none;
   }*/
@@ -4049,17 +4070,10 @@ a.anchor.upArrow {
     right: 0px;
     top: -30px;
   }
-  .project-files-buttons .save-project-button button,
-  .success-page-btn a.btn-project {
+  .project-files-buttons .save-project-button button {
     width: 100%;
     font-size:20px;
     height: 45px;
-  }
-  .success-page a.btn-contact {
-    width: 100%;
-    font-size:20px;
-    height: 45px;
-    margin-top: 10px;
   }
   .video-des-wrap > p {
     line-height: 20px;
