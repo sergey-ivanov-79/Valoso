@@ -11,17 +11,13 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title></title>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
-
- 
 <!-- Magnific Popup core CSS file -->
 <link rel="stylesheet" href="./assets/magnific-popup.css"/>
 
 <link rel="stylesheet" href="./assets/offcanvas.css"/>
 <link rel="stylesheet" href="./assets/section-portfolio.css" />
 <link rel="stylesheet" href="./assets/normalize.css"/>
-<link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.css"/>
+<link rel="stylesheet" href="./assets/base.css"/>
 <link rel="stylesheet" href="./assets/font-awesome.css"/>
 <link rel="stylesheet" href="./assets/style.css"/>
 <link rel="stylesheet" href="./assets/guest-landing-page.css"/>
@@ -60,7 +56,7 @@
 <div class="wrapp-row-offcanvas">
     <div class="row row-offcanvas row-offcanvas-left">
 <div class="page-wrap"><!-- page-wrap -->
-
+<div class="close-nav"></div>
 <header  id="header-top">
             <div class="header-guest header header-dop header-mobile header-mobile-fix proj-forum headroom-dop">
                     <nav class="navbar navbar-default navbar-mobile" id="top-nav">
@@ -578,6 +574,27 @@ $('.popup-youtube').magnificPopup({
       }
     });
 </script>
+<script type="text/javascript">
 
+  $('.modal').on('shown.bs.modal', function () {
+
+    var field = $(this).find('input[type="text"], input[type="email"], input[type="password"]');
+
+    if(field.length){
+         field.eq(0).focus();
+    }
+
+  });
+   // Toggle Navigation (close)
+   var closeNavMobile = function() {
+      $('.opened-offcanvas').removeClass('opened-offcanvas');
+      $('.row-offcanvas-left.active').removeClass('active');
+   }
+
+  $(document).on('swipeleft', '.opened-offcanvas .page-wrap .close-nav', closeNavMobile);
+
+  $(document).on('click', '.opened-offcanvas .page-wrap .close-nav', closeNavMobile);
+
+</script>
 </body>
 </html>
