@@ -5517,14 +5517,17 @@ body.modal-open {
     
 }
 .bid-tab .amount h5,
-.bid-tab .status h5 {
+.bid-tab .status h5,
+.progress-tab .amount h5,
+.progress-tab .status h5 {
     color: #474747;
     padding: 5px 0;
 }
 .addition a.more {
     cursor: pointer;
 }
-.addition .bid-tab.cont-1 {
+.addition .bid-tab.cont-1,
+.addition .progress-tab.cont-1 {
     padding: 0 10px;
 }
 
