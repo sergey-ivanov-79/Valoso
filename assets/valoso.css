@@ -5492,7 +5492,7 @@ body.modal-open {
     }
     #loginBox,
     #register-as-a-video-editor-modal {
-        overflow-y: scroll;
+        /*overflow-y: scroll;*/
     }
     .autoload-currency .cartNZD.wid-xs {
         margin: 0px 0 0 10px;
