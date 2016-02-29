@@ -5449,6 +5449,9 @@ body.modal-open {
 .autoload-currency {
     float: left;
 }
+.autoload-currency#hourly_rate_convert .cartNZD.wid-xs {
+    margin: 10px 0px 0px 0px;
+}
 .autoload-currency .cartNZD.wid-xs {
     margin: 0px 0px 0px 15px;
 }
