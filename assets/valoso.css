@@ -5590,9 +5590,14 @@ body.modal-open {
     .describe-project {
         width: 250px !important;
         margin: 0px auto 30px;
+    }
+    #project_description_field_ifr {
         height: 157px;
     }
-        
+    #project_description_field_ifr html {
+        margin: 0px !important;
+        padding: 0px !important;
+    }    
 }
 /*  END changes for header  project page and profile page  */
 /* Begin Changes for long links */
