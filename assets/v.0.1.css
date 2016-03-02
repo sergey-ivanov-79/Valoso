@@ -148,7 +148,7 @@ button#project-delete-file {
     } 
     .video-project-director .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {
         min-height: 66px;
-        font-size: 12px;
+        font-size: 11px;
         line-height: 1 !important;
     }
     .video-project-director .bs-wizard>.bs-wizard-step>.bs-wizard-dot {

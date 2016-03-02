@@ -5086,7 +5086,7 @@ img.video-edit {
 .wrapper-how-to-work img { width: 100%;}
 #footer .botLink > ul li { margin-bottom: 10px;}
 @media (max-width: 767px) {
-    .text-center.bs-wizard-stepnum h2 { font-size: 12px !important;}
+    .text-center.bs-wizard-stepnum h2 { font-size: 11px !important;}
     .bs-wizard>.bs-wizard-step>.bs-wizard-dot,
 	#register-as-a-video-editor-modal .bs-wizard>.bs-wizard-step>.bs-wizard-dot	{ top: 88px !important;}
     .bs-wizard>.bs-wizard-step .bs-wizard-stepnum { min-height: 66px;}
@@ -5650,4 +5650,17 @@ body.modal-open {
 /* remove padding left */
 ol, ul {
     padding-left: 0;
+}
+.contracts p {
+    margin: 10px 0px;
+}
+.contracts p {
+    margin: 20px 0px;
+}
+.payment-page row {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.payment-page row {
+
 }
