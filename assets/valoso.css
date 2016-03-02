@@ -5588,16 +5588,9 @@ body.modal-open {
         padding-bottom: 10px;
     }
     .describe-project {
-        width: 250px !important;
+        width: 220px !important;
         margin: 0px auto 30px;
-    }
-    #project_description_field_ifr {
-        height: 157px !important;
-    }
-    #project_description_field_ifr html {
-        margin: 0px !important;
-        padding: 0px !important;
-    }    
+    }   
 }
 /*  END changes for header  project page and profile page  */
 /* Begin Changes for long links */
