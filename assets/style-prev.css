@@ -1,4 +1,4 @@
-
+/*
         HTML5 Reset :: style.css
         ----------------------------------------------------------
         We have learned much from/been inspired by/taken code where offered from:
@@ -200,7 +200,7 @@ html {
 }
 
 body {
-    font-size: 100%;
+    font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     /*font-family: 'Open Sans Condensed', sans-serif;*/
     height: 100%;
