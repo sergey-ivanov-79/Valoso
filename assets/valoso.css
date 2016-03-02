@@ -5708,3 +5708,7 @@ ol, ul {
     }
 }
 /* / payment page */
+.page-wrap #project-form {
+    padding: 0 !important;
+    margin: 0 !important;
+}
