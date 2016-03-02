@@ -5592,7 +5592,7 @@ body.modal-open {
         margin: 0px auto 30px;
     }
     #project_description_field_ifr {
-        height: 157px;
+        height: 157px !important;
     }
     #project_description_field_ifr html {
         margin: 0px !important;
@@ -5661,16 +5661,47 @@ body.modal-open {
 ol, ul {
     padding-left: 0;
 }
+/* payment page */
 .contracts p {
     margin: 10px 0px;
 }
 .contracts p {
-    margin: 20px 0px;
+    margin: 28px 0px;
 }
 .payment-page row {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.payment-page row {
-
+.payment-content {
+    margin: 20px 0;
 }
+.payment-page .bs-wizard>.bs-wizard-step .bs-wizard-stepnum {
+    min-height: 80px;
+}
+.payment-page .bs-wizard>.bs-wizard-step>.bs-wizard-dot {
+    top: 103px!important;
+}
+.payment-left-block,
+.payment-right-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.payment-right-block .form-row {
+    padding-bottom: 10px;
+}
+.payment-right-block .form-row .form-control {
+    margin: 5px 0;
+}
+@media (max-width: 767px) {
+    .payment-page .bs-wizard>.bs-wizard-step .bs-wizard-stepnum {
+        min-height: 90px;
+    }
+    .payment-page .bs-wizard>.bs-wizard-step>.bs-wizard-dot {
+        top: 113px!important;
+    }
+    .payment-page .bs-wizard>.bs-wizard-step .bs-wizard-stepnum {
+        font-size: 12px;
+        line-height: 1.2 !important;
+    }
+}
+/* / payment page */
