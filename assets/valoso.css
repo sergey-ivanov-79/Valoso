@@ -5587,7 +5587,11 @@ body.modal-open {
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    
+    .describe-project {
+        width: 250px !important;
+        margin: 0px auto 30px;
+    }
+        
 }
 /*  END changes for header  project page and profile page  */
 /* Begin Changes for long links */
