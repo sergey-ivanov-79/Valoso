@@ -5590,7 +5590,7 @@ body.modal-open {
     .describe-project {
         width: 250px !important;
         margin: 0px auto 30px;
-        display: none;
+        height: 157px;
     }
         
 }
