@@ -5588,9 +5588,11 @@ body.modal-open {
         padding-bottom: 10px;
     }
     .describe-project {
-        width: 220px !important;
         margin: 0px auto 30px;
     }   
+    .vp-form-pack {
+        padding: 0 15px;
+    }
 }
 /*  END changes for header  project page and profile page  */
 /* Begin Changes for long links */

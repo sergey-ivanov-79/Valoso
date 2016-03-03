@@ -532,6 +532,9 @@ div#charNum {
     div#charNum {
         top: 48px;
     }
+    .vp-form-pack {
+        padding: 0 20px;
+    }
 }/* 360px End */
 @media (max-width: 320px) {
     .mce-btn button {
