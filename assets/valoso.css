@@ -5535,6 +5535,11 @@ body.modal-open {
 
 /* END changes for edit page*/
 /*  Begin changes for header  project page and profile page  */
+.inner-payment-right .payment-proj-name,
+.inner-payment-right .payment-applicant,
+.inner-payment-right .payment-value {
+    margin: 10px 0;
+}
 @media (max-width: 767px) {
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile {
         display: none;    
@@ -5589,10 +5594,7 @@ body.modal-open {
     }
     .describe-project {
         margin: 0px auto 30px;
-    }   
-    .vp-form-pack {
-        padding: 0 15px;
-    }
+    }  
 }
 /*  END changes for header  project page and profile page  */
 /* Begin Changes for long links */
