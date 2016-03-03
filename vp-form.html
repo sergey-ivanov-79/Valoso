@@ -1046,7 +1046,7 @@ $('document').ready(function(){
 });
 </script>
 <script type="text/javascript">
-tinymce.init({
+/*tinymce.init({
     selector: "#project_description_field",
     theme: "videoblue",
 	plugins: [
@@ -1064,7 +1064,121 @@ tinymce.init({
    
     toolbar1: " bold italic underline | forecolor | link image | html | paste",
 	
-});
+});*/
+</script>
+<script>
+$.tinyMce = {
+    init: function(settings) {
+        $.tinyMce.config = {
+            theme: 'videoblue',
+            selector: '#project_description_field',
+        };
+        $.tinyMce.setup();
+    },
+
+    setup: function() {
+        tinymce.init({
+            plugins: ["code", "paste"],
+            selector: $.tinyMce.config.selector,
+            theme: $.tinyMce.config.theme,
+            menubar:false,
+            statusbar: true,
+            image_description: false,
+            image_dimensions: false,
+            link_title: false,
+            target_list: false,
+            //valid_elements : "a[href|target=_blank|style],strong|b,div[class|align|style],br,p[class|align|style],span[class|align|style],font[face|size|color|style],style[type]",
+            valid_elements : "",
+            toolbar1: " bold italic underline | link image | html | paste",
+            paste_auto_cleanup_on_paste : true,
+            paste_remove_styles: true,
+            paste_remove_spans: true,
+            paste_remove_styles_if_webkit: true,
+            theme_advanced_path : false,
+            paste_retain_style_properties: '',
+            paste_strip_class_attributes: 'all',
+            paste_text_sticky: true,
+            paste_preprocess : function(pl, o) {
+                // remove all tags => plain text
+                o.content = strip_tags( o.content, '<b><i><p><h1><h2><h3><h4><h5><ul><ol><li>' );
+            },
+
+        });
+    }
+};
+
+// Strips HTML and PHP tags from a string
+function strip_tags (str, allowed_tags)
+{
+    var key = '', allowed = false;
+    var matches = [];
+    var allowed_array = [];
+    var allowed_tag = '';
+    var i = 0;
+    var k = '';
+    var html = '';
+    var replacer = function (search, replace, str) {
+        return str.split(search).join(replace);
+    };
+    // Build allowed tags associative array
+    if (allowed_tags) {
+        allowed_array = allowed_tags.match(/([a-zA-Z0-9]+)/gi);
+    }
+    str += '';
+
+    // Match tags
+    matches = str.match(/(<\/?[\S][^>]*>)/gi);
+    // Go through all HTML tags
+    for (key in matches) {
+        if (isNaN(key)) {
+            // IE7 Hack
+            continue;
+        }
+
+        // Save HTML tag
+        html = matches[key].toString();
+        // Is tag not in allowed list? Remove from str!
+        allowed = false;
+
+        // Go through all allowed tags
+        for (k in allowed_array) {            // Init
+            allowed_tag = allowed_array[k];
+            i = -1;
+
+            if (i != 0) { i = html.toLowerCase().indexOf('<'+allowed_tag+'>');}
+            if (i != 0) { i = html.toLowerCase().indexOf('<'+allowed_tag+' ');}
+            if (i != 0) { i = html.toLowerCase().indexOf('</'+allowed_tag)   ;}
+
+            // Determine
+            if (i == 0) {                allowed = true;
+                break;
+            }
+        }
+        if (!allowed) {
+            str = replacer(html, "", str); // Custom replace. No regexing
+        }
+    }
+
+    var tagReplacemets = [
+        {from: '<h1>', to: '<p><b>'},
+        {from: '</h1>', to: '</b><p>'},
+        {from: '<h2>', to: '<p><b>'},
+        {from: '</h2>', to: '</b><p>'},
+        {from: '<h3>', to: '<p><b>'},
+        {from: '</h3>', to: '</b><p>'},
+        {from: '<h4>', to: '<p><b>'},
+        {from: '</h4>', to: '</b><p>'},
+        {from: '<h5>', to: '<p><b>'},
+        {from: '</h5>', to: '</b><p>'},
+    ];
+
+    for (i in tagReplacemets) {
+        str = replacer(tagReplacemets[i].from, tagReplacemets[i].to, str);
+    }
+    return str;
+}
+
+$(document).ready($.tinyMce.init);
 </script>
 <script type="text/javascript">
   $('.datepicker').datepicker();
