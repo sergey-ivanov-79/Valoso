@@ -1108,7 +1108,7 @@ $.tinyMce = {
 };
 
 // Strips HTML and PHP tags from a string
-function strip_tags (str, allowed_tags)
+/*function strip_tags (str, allowed_tags)
 {
     var key = '', allowed = false;
     var matches = [];
@@ -1176,9 +1176,10 @@ function strip_tags (str, allowed_tags)
         str = replacer(tagReplacemets[i].from, tagReplacemets[i].to, str);
     }
     return str;
-}
+}*/
 
 $(document).ready($.tinyMce.init);
+
 </script>
 <script type="text/javascript">
   $('.datepicker').datepicker();
