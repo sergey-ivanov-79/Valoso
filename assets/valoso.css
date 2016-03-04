@@ -5718,7 +5718,7 @@ ol, ul {
     padding: 30px 0 40px 0;
 }
 .video-des-wrap>h4:nth-of-type(2) >span {
-    display: inline-block;
+    display: inline;
 }
 .video-des-wrap>h4:nth-of-type(2) >span p {
     display: inline-block;
