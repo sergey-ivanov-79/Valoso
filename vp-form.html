@@ -2,7 +2,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1"><!--, maximum-scale=1, user-scalable=no-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <title></title>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
@@ -1108,7 +1108,7 @@ $.tinyMce = {
 };
 
 // Strips HTML and PHP tags from a string
-/*function strip_tags (str, allowed_tags)
+function strip_tags (str, allowed_tags)
 {
     var key = '', allowed = false;
     var matches = [];
@@ -1176,7 +1176,7 @@ $.tinyMce = {
         str = replacer(tagReplacemets[i].from, tagReplacemets[i].to, str);
     }
     return str;
-}*/
+}
 
 $(document).ready($.tinyMce.init);
 

@@ -5715,7 +5715,7 @@ ol, ul {
     float: right;
 }
 #footer {
-    padding: 30px 0 40px 0;
+    padding: 30px 0 40px 0 !important;
 }
 .video-des-wrap>h4:nth-of-type(2) >span {
     display: inline;
