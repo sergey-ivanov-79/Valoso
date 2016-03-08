@@ -5749,9 +5749,9 @@ ol, ul {
 }
 .preview-profile-wrapper .navbar-nav > li > a,
 .preview-profile-wrapper .navbar-nav > li > p {
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 10px;
-    padding-right: 20px;
+    padding-right: 20px !important;
 }
 .modal .close span {
     font-weight: bold;
