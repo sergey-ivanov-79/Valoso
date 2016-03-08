@@ -5758,7 +5758,7 @@ ol, ul {
 }
 /* / for Modal in edit page  */
 html {
-    overflow: visible;
+    overflow: visible !important;
 }
 body {
     height: 100% !important;
