@@ -5087,6 +5087,7 @@ img.video-edit {
 .wrapper-featured img { width: 100%;}
 .wrapper-how-to-work img { width: 100%;}
 #footer .botLink > ul li { margin-bottom: 10px;}
+#userLoginContent .formSub input {     font-family: "Open Sans", sans-serif; }
 @media (max-width: 767px) {
     .text-center.bs-wizard-stepnum h2 { font-size: 11px !important;}
     .bs-wizard>.bs-wizard-step>.bs-wizard-dot,
@@ -5725,6 +5726,7 @@ ol, ul {
     width: 90%;
     margin-top: 10px;
 }
+/* for Modal in edit page  */
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #8d8d8d;
   font-weight: 300;
@@ -5745,3 +5747,13 @@ ol, ul {
 #register-as-a-video-editor-modal {
     font-size: 18px;
 }
+.preview-profile-wrapper .navbar-nav>li>a,
+.preview-profile-wrapper .navbar-nav>li>p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+}
+.modal .close span {
+    font-weight: bold;
+}
+/* / for Modal in edit page  */

@@ -48,7 +48,9 @@ html {
 img,
 object,
 embed {max-width: 100%;}
-
+img {
+    vertical-align: middle;
+}
 /* force a vertical scrollbar to prevent a jumpy page */
 /*html {overflow-y: scroll;}*/
 
