@@ -5747,8 +5747,8 @@ ol, ul {
 #register-as-a-video-editor-modal {
     font-size: 18px;
 }
-.preview-profile-wrapper .navbar-nav>li>a,
-.preview-profile-wrapper .navbar-nav>li>p {
+.preview-profile-wrapper .navbar-nav > li > a,
+.preview-profile-wrapper .navbar-nav > li > p {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 20px;
