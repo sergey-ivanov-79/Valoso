@@ -5757,3 +5757,7 @@ ol, ul {
     font-weight: bold;
 }
 /* / for Modal in edit page  */
+.wrapp-row-offcanvas, 
+.row-offcanvas {
+    height: 100%;
+}

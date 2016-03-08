@@ -1264,7 +1264,7 @@ div#link-profile-modal .modal-dialog.modal-dialog-proj { width: 600px;}
     .dash-page .dropdown-menu-new { display: none;}
     .active .header-mobile { z-index: 41;}
     .wrapp-row-offcanvas {
-      overflow-x: hidden; /* Prevent scroll on narrow devices */
+      /*overflow-x: hidden;*/ /* Prevent scroll on narrow devices */
     }
     .row-offcanvas.active .page-wrap .headroom--unpinned.wrapper-nav-icon-based,
     .row-offcanvas.active .page-wrap .headroom--pinned.wrapper-nav-icon-based { display: none;}

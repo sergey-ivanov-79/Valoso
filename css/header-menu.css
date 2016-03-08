@@ -1,4 +1,10 @@
-
+.wrapp-row-offcanvas, 
+.row-offcanvas {
+    height: 100%;
+}
+html {
+  overflow: visible;  
+}
 .preview-profile-wrapper .container.no-padding {
     z-index: 2;
 }
