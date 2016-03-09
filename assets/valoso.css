@@ -1259,7 +1259,7 @@ div#link-profile-modal .modal-dialog.modal-dialog-proj { width: 600px;}
     
     .active .header-mobile { z-index: 41;}
     .wrapp-row-offcanvas {
-      overflow-x: hidden; /* Prevent scroll on narrow devices */
+      /*overflow-x: hidden;*/ /* Prevent scroll on narrow devices */
     }
     .row-offcanvas.active .page-wrap .headroom--unpinned.wrapper-nav-icon-based,
     .row-offcanvas.active .page-wrap .headroom--pinned.wrapper-nav-icon-based { display: none;}
@@ -5766,4 +5766,7 @@ body {
 .wrapp-row-offcanvas, 
 .row-offcanvas {
     height: 100%;
+}
+.navbar.navbar-default {
+    outline: none;
 }
