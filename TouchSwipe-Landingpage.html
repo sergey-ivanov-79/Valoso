@@ -202,16 +202,7 @@
                         <a class="btn btn-success btn-lg">START A VIDEO PROJECT TODAY</a>
                     </div><!-- / how-work  -->
                 </div>
-			</div>
-            <div class="">
-			
-			
-			
-			
-			
-			<div id="test" class="box">Swipe me</div>
-			
-		</div>		
+			</div>		
 		</div> <!-- .container -->
 	</div> <!-- .intro-home -->
 </div> <!-- #wrapHome1 -->
@@ -498,6 +489,7 @@ $('.popup-youtube').magnificPopup({
 <script>
     $(document).on('click', '.button-mobile', function(){
         $('body').toggleClass('opened-offcanvas');
+        $('html').addClass('overflow-hidden'); 
     });
 </script>
 <!-- / offcanvas -->
@@ -522,6 +514,7 @@ $(function() {
 	$(".close-nav").swipe( {
 		//Generic swipe handler for all directions
 		swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+		     $('html').removeClass('overflow-hidden'); 
 			$('body').removeClass('opened-offcanvas');	
             $('.row-offcanvas').removeClass('active');
 			if(direction == 'right') {
