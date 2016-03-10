@@ -203,6 +203,15 @@
                     </div><!-- / how-work  -->
                 </div>
 			</div>
+            <div class="">
+			
+			
+			
+			
+			
+			<div id="test" class="box">Swipe me</div>
+			
+		</div>		
 		</div> <!-- .container -->
 	</div> <!-- .intro-home -->
 </div> <!-- #wrapHome1 -->
@@ -396,7 +405,7 @@
   </div>
 </div>
 <!-- /Modal -->
-<a href="#top-nav" class="anchor upArrow to-top"><img src="images/to-top-arrow.png"></a>
+<a href="#top-nav" class="anchor upArrow to-top" style="display: none;"><img src="images/to-top-arrow.png"></a>
 <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
 <script src="./js/jquery-1.11.2.min.js"></script>
@@ -507,15 +516,57 @@ $('.popup-youtube').magnificPopup({
 
   });
    // Toggle Navigation (close)
-   var closeNavMobile = function() {
+  /* var closeNavMobile = function() {
       $('.opened-offcanvas').removeClass('opened-offcanvas');
       $('.row-offcanvas-left.active').removeClass('active');
    }
 
   $(document).on('swipeleft', '.opened-offcanvas .page-wrap .close-nav', closeNavMobile);
 
-  $(document).on('click', '.opened-offcanvas .page-wrap .close-nav', closeNavMobile);
+  $(document).on('click', '.opened-offcanvas .page-wrap .close-nav', closeNavMobile);*/
 
 </script>
+<script type="text/javascript" src="./js/jquery.touchSwipe.min.js"></script>
+<!--
+<script type="text/javascript" src="./js/main.js"></script>
+-->
+<script>
+				$(function() {			
+					//Enable swiping...
+					$(".close-nav").swipe( {
+						//Generic swipe handler for all directions
+						swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+							$('body').removeClass('opened-offcanvas');	
+                            $('.row-offcanvas').removeClass('active');
+							if(direction == 'right') {
+							}
+						},
+						//Default is 75px, set to 0 for demo so any distance triggers swipe
+					   threshold:0
+					});
+				});
+			</script>
+<style>
+.box
+{
+	margin-top:20px;
+	margin-bottom:20px;
+	max-width:768px;
+	height:300px;
+	
+	padding: 10px;
+	background-color: #EEE;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	
+	text-align:center;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 36px;
+	
+	overflow:hidden;
+}
+</style>
 </body>
 </html>
