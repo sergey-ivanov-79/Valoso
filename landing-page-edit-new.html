@@ -396,44 +396,36 @@
   </div>
 </div>
 <!-- /Modal -->
-<a href="#top-nav" class="anchor upArrow to-top"><img src="images/to-top-arrow.png"></a>
+<a href="#header-top" class="anchor upArrow" style="display: none;"><img src="images/to-top-arrow.png"></a>
 <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
 <script src="./js/jquery-1.11.2.min.js"></script>
 <script src="./js/bootstrap.min.js"></script>
 <script>
-  // Scroll .to-top
-    $(document).ready(function(){
-        var h = $('.wrapp-row-offcanvas').outerHeight();
-        $(window).scroll(function() {
-            var bodyscroll = $(this).scrollTop();
-            if(bodyscroll >= 500){
-                $('.to-top').show();
-            }else{
-                $('.to-top').hide();
-            }
-        });
-        
-        $('.to-top').click(function(){
-             $('html,body').animate({ scrollTop: 0 }, 'slow');
-        });
-        
-        $('.wrapp-row-offcanvas').scrollTop(5000);
-    });
-   // End Scroll .to-top
-   // Scroll To position = offset
-        $(document).on('click', '[data-toggle="scroll-to"]', function(e){
-            e.preventDefault();
-            
-            var offset = $(this).data('offset') || 0,
-                scrollTo = $($(this).data('target')).position().top;
-                
-            if($('body').scrollTop() > scrollTo) {
-                offset -= 53;
-            }
-                
-            $('body').animate({ scrollTop: (scrollTo + offset) }, 'slow');
-        });
+		  var group = ''; 
+		  var lastMove = '';
+		  $(function() {
+		    $('a[href*=#].anchor:not([href=#])').click(function() {
+		      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+		        var target = $(this.hash);
+		        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+		        if (target.length) {
+		          $('html,body').animate({
+		            scrollTop: target.offset().top-50
+		          }, 1000);
+		          return false;
+		        }
+		      }
+		    });
+		    $(window).scroll(function () {
+		        if ($(this).scrollTop() >500) {
+		          $('.upArrow').show()
+		        }else{
+		           $('.upArrow').hide()
+		        }
+		    });
+		  });
         
 </script>
 <script>
