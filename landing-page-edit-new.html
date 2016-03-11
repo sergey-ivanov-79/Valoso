@@ -14,7 +14,7 @@
  
 <link rel="stylesheet" href="./assets/offcanvas.css"/>
 <link rel="stylesheet" href="./assets/header-offcanvas.css"/> <!--  headroom !!! -->
-<link rel="stylesheet" href="./assets/base.css"/>
+<link rel="stylesheet" href="./dist/base.min.css"/>
 <link rel="stylesheet" href="./assets/landing.css" />
 
 <!-- Application-specific meta tags -->
@@ -560,11 +560,12 @@ $('#loginBox').on('hide.bs.modal',function(){
 
 $('#confirm-modal-notes').on('hidden.bs.modal', function() {
     if($('body').hasClass('open-login-modal')) {
-        $('#confirm-modal-new').modal('show');
-        $('body').removeClass('open-login-modal');
+        $('#confirm-modal-new').modal('show');;
     }
 });
-
+$('#confirm-modal-new').on('hidden.bs.modal', function() {
+    $('body').removeClass('open-login-modal')
+});
 $(document).on('click', '[data-target="#confirm-modal-new"]', function() {
     $('body').addClass('open-login-modal');
     $('#confirm-modal-notes').modal('hide');

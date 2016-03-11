@@ -3253,7 +3253,7 @@ div#link-profile-modal .modal-footer button:hover {
   color: white!important;
 }
 a.anchor.upArrow {
-  z-index: 99999999999 !important;
+  z-index: 1039 !important;
 }
 .video-description-right .description-right-up > h4 .popover-content input {
   height: 35px;
