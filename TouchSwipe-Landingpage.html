@@ -49,8 +49,8 @@
 </head>
 
 <body>
-<div class="wrapp-row-offcanvas">
-    <div class="row row-offcanvas row-offcanvas-left">
+<div class="wrapp-row-offcanvas"><!-- wrapp-row-offcanvas -->
+    <div class="row row-offcanvas row-offcanvas-left"><!-- row row-offcanvas -->
 <div class="page-wrap"><!-- page-wrap -->
 <div class="close-nav"></div>
 <header  id="header-top">
@@ -295,8 +295,8 @@
  
  </div>
 </footer>
-</div>
-</div>
+</div><!-- /row row-offcanvas -->
+</div><!-- /wrapp-row-offcanvas -->
 <!-- Modal -->
 <div class="modal fade" id="loginBox" tabindex="-1" role="dialog" aria-labelledby="loginBoxLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -522,7 +522,7 @@ $(function() {
 			$('body').removeClass('opened-offcanvas');	
             $('.row-offcanvas').removeClass('active');
 			if(direction == 'right') {
-				alert(1);
+				//alert(1);
 			}
 		},
 		//Default is 75px, set to 0 for demo so any distance triggers swipe

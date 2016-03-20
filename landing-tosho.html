@@ -60,7 +60,7 @@
 <div class="wrapp-row-offcanvas">
     <div class="row row-offcanvas row-offcanvas-left">
 <div class="page-wrap"><!-- page-wrap -->
-
+<div class="close-nav"></div>
 <header  id="header-top">
             <div class="header-guest header header-dop header-mobile header-mobile-fix proj-forum headroom-dop">
                     <nav class="navbar navbar-default navbar-mobile" id="top-nav">
@@ -554,6 +554,16 @@ $('.popup-youtube').magnificPopup({
         $('body').toggleClass('opened-offcanvas');
     });
 </script>
+<script>
+// Toggle Navigation (close)
+   var closeNavMobile = function() {
+      $('.opened-offcanvas').removeClass('opened-offcanvas');
+      $('.row-offcanvas-left.active').removeClass('active');
+   }
 
+  $(document).on('swipeleft', '.opened-offcanvas .page-wrap .close-nav', closeNavMobile);
+
+  $(document).on('click', '.opened-offcanvas .page-wrap .close-nav', closeNavMobile);
+</script>
 </body>
 </html>

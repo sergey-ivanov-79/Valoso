@@ -6,33 +6,66 @@
 <title></title>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="./css/normalize.css">
 <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">-->
-<link rel="stylesheet" href="css/bootstrap.min.css"> 
+<link rel="stylesheet" href="./css/bootstrap.min.css"> 
 <!--link rel="stylesheet" href="css/bootstrap-theme.min.css"-->
-<link rel="stylesheet" href="css/font-awesome.css">
-<link rel="stylesheet" type="text/css" href="css/jquery.tosrus.all.css" />
-<link type="text/css" rel="stylesheet" href="css/slick.css" /> 
-<link rel="stylesheet" href="css/jquery.jscrollpane.css" media="all">
-<link rel="stylesheet" href="css/offcanvas.css"/>
+<link rel="stylesheet" href="./css/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="./css/jquery.tosrus.all.css" />
+<link type="text/css" rel="stylesheet" href="./css/slick.css" /> 
+<link rel="stylesheet" href="./css/jquery.jscrollpane.css" media="all">
+<link rel="stylesheet" href="./css/offcanvas.css"/>
 <!-- Magnific Popup core CSS file -->
-<link rel="stylesheet" href="css/magnific-popup.css"/>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/style-prev.css"/>
-<link rel="stylesheet" href="css/ns-dashboardMML-nouploads.css"/>
-<link rel="stylesheet" href="css/custom.css">
-<link rel="stylesheet" href="css/video-project-page.css">
+<link rel="stylesheet" href="./css/magnific-popup.css"/>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/style-prev.css"/>
+<link rel="stylesheet" href="./css/ns-dashboardMML-nouploads.css"/>
+<link rel="stylesheet" href="./css/custom.css">
+<link rel="stylesheet" href="./css/video-project-page.css">
 <link rel="stylesheet" href="./css/guest-landing-page.css">
-<link rel="stylesheet" href="css/ns-vp-open.css">
+<link rel="stylesheet" href="./css/ns-vp-open.css">
 <!-- <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
 <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
-
+<style>
+/* / for Modal in edit page  */
+html {
+    overflow: visible !important;
+}
+html.overflow-hidden {
+   overflow: hidden !important; 
+}
+body {
+    height: 100% !important;
+}
+.wrapp-row-offcanvas, 
+.row-offcanvas {
+    height: 100%;
+}
+.navbar.navbar-default {
+    outline: none;
+}
+.opened-offcanvas .page-wrap  .close-nav { /*need add div .close-nav into .page-wrap, and replace after to .close-nav*/
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #000;
+        z-index: 1039;
+        opacity: 0.3;
+    }
+    .opened-offcanvas { overflow: hidden !important; height: 100% !important; min-height: 0 !important; }
+</style>
 </head>
 
 <body class="ns-vp-open">
 <div class="wrapp-row-offcanvas">
 <div class="row-offcanvas row-offcanvas-left">
+<div class="page-wrap"><!-- page-wrap -->
+<div class="close-nav"></div>
 <header id="header-top">
         <div class="header header-dop header-mobile header-mobile-fix proj-forum headroom-dop ">
           <div class="container">
@@ -154,7 +187,7 @@
              <div class="wrapper-aevents">
                 <div class="aevents">
                     <div class=" alert-danger alert-dismissable alert" style="margin-top: 15px;">
-                       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">Ã—</button>
+                       <button type="button" class="close" data-dismiss="alert" aria-hidden="true">?</button>
                             Milestone payment for <strong>#27 TEST PROJECT for Annie</strong> setup under the project <strong>TEST PROJECT for Annie</strong> has been requested by <strong>bobby</strong>.
                             <a style="color: inherit; text-decoration: underline; cursor:pointer;" onclick="milestoneSelect(1)">Click here</a> to RELEASE the funds for that milestone or visit the <a style="color: inherit; text-decoration: underline;" href="https://staging.mylocal3dprinting.com/contract/details/1">designer's contract page</a>
                     </div>
@@ -407,6 +440,7 @@
     </div> <!-- /.project-files-buttons -->
   </div> <!-- /.container -->
 </div> <!-- /.video-project-director -->
+</div> <!-- / page-wrap -->
 <div class="wrapper-sidebar-offcanvas">
         <div class="sidebar-offcanvas" id="sidebar">
             <div class="clearfix" id="navbar-collapse-1">
@@ -484,7 +518,7 @@
            <ul>
               <li><a href="">Help Center</a></li>
               <li><a href="">Contact Support</a></li>
-              <li><a href="">FAQâ€™s</a></li>
+              <li><a href="">FAQ’s</a></li>
               <li><a href="">Shipping info</a></li>
               <li><a href="">Fee Schedule</a></li>
               <li><a href="">Tutorials</a></li>              
@@ -512,7 +546,7 @@
          </div>
      </div>
      <div class="row botCopy">
-         <div class="col-sm-6 col-md-6 col-lg-6">Copyright 2015 Â© Tech International Pty Ltd</div>
+         <div class="col-sm-6 col-md-6 col-lg-6">Copyright 2015 © Tech International Pty Ltd</div>
          <div class="col-sm-2 col-md-2 col-lg-2"><a href="">Privacy Policy</a></div>
          <div class="col-sm-4 col-md-4 col-lg-4"><a href="">Terms and Conditions</a></div>
      </div>         
@@ -1270,7 +1304,7 @@
     margin-left: 10px;
 }
 </style>
-<script src="js/jquery-1.11.2.min.js"></script>
+<script src="./js/jquery-1.11.2.min.js"></script>
 <script>
   var group = ''; 
   var lastMove = '';
@@ -1298,72 +1332,23 @@
   });
 </script>
 <a href="#header-top" class="anchor upArrow"><img src="images/to-top-arrow.png"></a>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script type="text/javascript" src="js/jquery.tosrus.min.all.js"></script>
-<script type="text/javascript" src="js/headroom.min.js"></script>
-<script type="text/javascript" src="js/jquery.headroom.js"></script>
-<script type="text/javascript" src="js/jquery.tosrus.min.all.js"></script>
-<script src='js/jquery-sortable.js'></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/select2/4.0.0-rc.1/js/select2.min.js" type="text/javascript"></script>
-<script src="js/offcanvas.js"></script>
-<script src='js/jquery.jscrollpane.min.js'></script>
-<script src="js/video-project-page.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/slick.min.js"></script>
+<script type="text/javascript" src="./js/jquery.tosrus.min.all.js"></script>
+<script type="text/javascript" src="./js/jquery.tosrus.min.all.js"></script>
+<script src='./js/jquery-sortable.js'></script>
+<script src="./js/offcanvas.js"></script>
+<script src='./js/jquery.jscrollpane.min.js'></script>
+<script src="./js/video-project-page.js"></script>
 <script type="text/javascript">
     $(function(){
     $('.scroll-pane').jScrollPane();
   });
 </script>
-<script>
- $(document).ready(function () {
-    $('.styled-select').on('click', function () {
-        if ($(this).attr('class') == 'styled-select default_select') {
-            $('.select2-container').addClass("colored_select");
-            $('.select2-container').find('.select2-results__option:hover:nth(2)').css('color', '#64FF65');
-        }
-       
-    });
-    $('.select2').select2({
-        minimumResultsForSearch: -1
-    });
-});
-</script>
 
-<script>
-    $(function(){
-     var myClick = $('[data-toggle="collapse"]');
-     myClick.click(function(){
-        $('body').toggleClass('opened-navigation');
-    });
-    // Navigation submenu
-    
-  $(document).on('click', '.nav-list li > a', function() {
-    var parent = $(this).parents('li').eq(0);
-    if( parent.hasClass('opened-submeny') ){
-        parent.removeClass('opened-submeny');
-    }
-    else {
-       $(this).parents('ul').eq(0).find('> li.opened-submeny').removeClass('opened-submeny');
-       parent.addClass('opened-submeny');    
-         
-    }
-    });
-        
-    
-});
-</script>
 
-<script type="text/javascript">
-    // Init Headroom for .header
-    $(".header").headroom(); 
 
-    // Init Headroom for .headroom-icons
-    $(".headroom-icons").headroom({
-        offset: 209    
-    }); 
-</script> 
-
-<script src="js/jquery.magnific-popup.js"></script>
+<script src="./js/jquery.magnific-popup.js"></script>
 <script>
 $('.gallery').each(function() { // the containers for all your galleries
     $(this).magnificPopup({
@@ -1374,14 +1359,6 @@ $('.gallery').each(function() { // the containers for all your galleries
         }
     });
 });
-</script>
-<script>
-    /*$(document).on('click', '.button-mobile', function(){
-        $('body').toggleClass('opened-offcanvas');
-    });*/
-    $('.button-mobile').click(function(){
-        $('body').toggleClass('opened-offcanvas');
-    });
 </script>
 <script>
     $(function () {
@@ -1402,5 +1379,48 @@ $('.gallery').each(function() { // the containers for all your galleries
       $('body').removeClass('modal-open'); 
     });*/
 </script>
+
+<!-- headroom -->
+<script type="text/javascript" src="./js/headroom.min.js"></script>
+<script type="text/javascript" src="./js/jquery.headroom.js"></script>
+<script type="text/javascript">
+    // Init Headroom for .header
+    $(".header").headroom();  
+</script>
+<!-- / headroom -->
+
+<!-- offcanvas -->
+<script src="./js/offcanvas.js"></script>
+<script>
+    $(document).on('click', '.button-mobile', function(){
+        $('body').toggleClass('opened-offcanvas');
+        $('.row-offcanvas').toggleClass('active');
+        $('html').addClass('overflow-hidden'); 
+    });
+</script>
+<!-- / offcanvas -->
+
+<!-- Swipe -->
+<script type="text/javascript" src="./js/jquery.touchSwipe.min.js"></script>
+<script>
+$(function() {			
+	//Enable swiping...
+	$(".close-nav").swipe( {
+		//Generic swipe handler for all directions
+		swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+		     $('html').removeClass('overflow-hidden'); 
+			$('body').removeClass('opened-offcanvas');	
+            $('.row-offcanvas').removeClass('active');
+			if(direction == 'right') {
+				//alert(1);
+			}
+		},
+		//Default is 75px, set to 0 for demo so any distance triggers swipe
+	   threshold:0
+	});
+});
+</script>
+<!-- / Swipe -->
+
 </body>
 </html>
