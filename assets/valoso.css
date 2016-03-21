@@ -5765,6 +5765,7 @@ html.overflow-hidden {
 }
 body {
     height: 100% !important;
+    overflow-x: hidden;
 }
 .wrapp-row-offcanvas, 
 .row-offcanvas {

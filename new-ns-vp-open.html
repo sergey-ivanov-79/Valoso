@@ -1379,7 +1379,16 @@ $('.gallery').each(function() { // the containers for all your galleries
       $('body').removeClass('modal-open'); 
     });*/
 </script>
-
+<!-- offcanvas -->
+<script src="./js/offcanvas.js"></script>
+<script>
+    $(document).on('click', '.button-mobile', function(){
+        $('body').addClass('opened-offcanvas');
+        $('.row-offcanvas').addClass('active');
+        $('html').addClass('overflow-hidden'); 
+    });
+</script>
+<!-- / offcanvas -->
 <!-- headroom -->
 <script type="text/javascript" src="./js/headroom.min.js"></script>
 <script type="text/javascript" src="./js/jquery.headroom.js"></script>
@@ -1389,16 +1398,7 @@ $('.gallery').each(function() { // the containers for all your galleries
 </script>
 <!-- / headroom -->
 
-<!-- offcanvas -->
-<script src="./js/offcanvas.js"></script>
-<script>
-    $(document).on('click', '.button-mobile', function(){
-        $('body').toggleClass('opened-offcanvas');
-        $('.row-offcanvas').toggleClass('active');
-        $('html').addClass('overflow-hidden'); 
-    });
-</script>
-<!-- / offcanvas -->
+
 
 <!-- Swipe -->
 <script type="text/javascript" src="./js/jquery.touchSwipe.min.js"></script>
