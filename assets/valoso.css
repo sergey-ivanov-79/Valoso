@@ -1327,6 +1327,9 @@ a {
   width: 200px;
   float: left;
 }
+.video-des-wrap > h4 > label {
+    float: none;
+}
 .video-des-wrap > h4 > span,.video-des-wrap > p > span,.video-description-right .description-right-uph4 > span {
   color: #474747;
   font-size: 20px;
@@ -3919,7 +3922,7 @@ a.anchor.upArrow {
     display: block;
   }
   .video-project-director .container > h3 {
-    display: none;
+    /*display: none;*/ /**/
   }
   #view-screensh .modal-footer, #view-screensh-dir .modal-footer, .vp-edit-screen .screen-edit-container {
     display: none;
@@ -3927,7 +3930,7 @@ a.anchor.upArrow {
   #view-screensh-dir .featured-screenshot-wrap, #view-screensh .featured-screenshot-wrap {
     padding: 15px 0px;
   }
-  .video-project-director .container > p,.video-description-left,.description-right-up {
+  .video-project-director .container > p,/*.video-description-left,*/ /**/.description-right-up {
     display: none;
   }
   .video-project-director .container > p.vidljiv,.video-description-left.vidljiv,.description-right-up.vidljiv {
@@ -5779,4 +5782,10 @@ body, body div {
 }
 .navbar.navbar-default {
     outline: none;
+}
+.apply-page .video-des-wrap>h4 {
+    margin-bottom: 10px;
+}
+.apply-page .video-des-wrap>h4>span>p {
+    display: inline-block;
 }
