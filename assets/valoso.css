@@ -4394,11 +4394,11 @@ a.anchor.upArrow {
   .uploader-info-button button:nth-of-type(2) {
     display: none;
   }
-  .video-project-director .container > h3 {
+  .apply-page .video-project-director .container > h3 {
     background-size: 30px;
     padding: 15px 10px 15px 40px;
     font-size: 14px;
-    display: none;
+    /*display: none;*//**/
   }
   .video-des-wrap > h4 > label, .video-des-wrap > p > label, .video-description-right .description-right-up h4 > label {
     font-size: 14px;
