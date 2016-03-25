@@ -817,8 +817,8 @@ a:hover {
         background: none;
     }
     .header-dop.header-mobile .navbar-mobile {
-        margin-left: -15px;
-        margin-right: -15px;
+        /*margin-left: -15px;*//**/
+        /*margin-right: -15px;*//**/
     }
     .header-dop.header-mobile .navbar-header-mobile, .header-dop .navbar-mobile {
         background: #474747 !important;
