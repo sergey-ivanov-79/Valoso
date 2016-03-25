@@ -5786,6 +5786,6 @@ body, body div {
 .apply-page .video-des-wrap>h4 {
     margin-bottom: 10px;
 }
-.apply-page .video-des-wrap>h4>span>p {
+.apply-page .video-des-wrap>h4>span>p, .apply-page .video-des-wrap>h4>p  {
     display: inline-block;
 }
