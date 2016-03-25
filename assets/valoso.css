@@ -3722,7 +3722,11 @@ a.anchor.upArrow {
   .video-des-wrap > h4 > label, .video-des-wrap > p > label, .video-description-right .description-right-up h4 > label {
     font-size: 16px;
   }
-  .video-des-wrap > h4 > span, .video-des-wrap > p > span, .video-description-right .description-right-uph4 > span {
+  .video-des-wrap > h4 > span, 
+  .video-des-wrap > p > span, 
+  .video-description-right .description-right-uph4 > span,
+  .apply-page .video-des-wrap>h4>p, 
+  .apply-page .video-des-wrap>h4>span>p {
     font-size: 14px;
   }
   .video-des-wrap > h4 > label, .video-des-wrap > p > label {
@@ -5713,6 +5717,11 @@ ol, ul {
         display: none;
     }
 }
+@media (min-width: 768px) {
+    .apply-page .video-des-wrap>h4>p {
+        font-size: 20px;
+    }
+}
 /* / payment page */
 .page-wrap #project-form {
     padding: 0 !important;
@@ -5788,4 +5797,7 @@ body, body div {
 }
 .apply-page .video-des-wrap>h4>span>p, .apply-page .video-des-wrap>h4>p  {
     display: inline-block;
+}
+.apply-page .video-des-wrap {
+    margin-bottom: 20px;
 }
