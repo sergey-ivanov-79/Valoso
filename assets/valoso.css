@@ -5706,6 +5706,9 @@ ol, ul {
         font-size: 12px;
         line-height: 1.2 !important;
     }
+    .navbar-brand.navbar-brand-mobile .angle {
+        display: none;
+    }
 }
 /* / payment page */
 .page-wrap #project-form {
@@ -5766,6 +5769,9 @@ html.overflow-hidden {
 body {
     height: 100% !important;
     overflow-x: hidden;
+}
+body, body div {
+    font-weight: 300;
 }
 .wrapp-row-offcanvas, 
 .row-offcanvas {
