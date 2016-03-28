@@ -64,6 +64,88 @@
   font-size: 15px;
   font-weight: 400;
 }
+.pl30 a {
+  color: #29a8dd;
+  text-decoration: underline;
+}
 .blk {
 	font-weight: 800;
+}
+.tbl-head {
+	font-weight: 800;
+	font-size: 18px;
+}
+.label-update {
+  background-color: #f5393d;
+  margin: 0;
+  padding: 6px 12px 5px;
+  margin-left: 10px;
+  height: 100%;
+  font-weight: 600;
+  color: #fff;
+}
+.tbl-red {
+  color: #fe567c;
+  font-weight: 600 !important;
+}
+.tbl-green {
+  color: #53e97d;
+  font-weight: 600 !important;
+}
+.messages {
+  -webkit-box-shadow: 1px 2px 0 #e5eaee;
+  box-shadow: 1px 2px 0 #e5eaee;
+  padding: 25px;
+}
+.messages-heading {
+  background-color: transparent;
+  border: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  height: auto;
+  line-height: 24px;
+  padding: 0;
+}
+.messages-title {
+  font: 700 20px/24px 'Lato';
+  letter-spacing: 0;
+  padding: 0;
+}
+.messages-body {
+  margin-top: 15px;
+}
+
+.br-t {
+  border-top: 1px solid #eeeeee !important;
+}
+.pr  td{
+  padding-right: 18px;
+  color: #2a2f43;
+  font: 700 14px/30px 'Open Sans';
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.normaltxt {
+  color: #2a2f43;
+  font: 400 12px/30px 'Open Sans';
+  text-transform: none;
+}
+
+.date-time {
+  color: #2a2f43;
+  font: 400 10px/30px 'Open Sans';
+  line-height: 10px;
+}
+
+.prof-pic {
+  width: 32px;
+  height: 32px;
+  background: url('../images/preview-profile/user-img.jpg') no-repeat top left;
+  background-size: contain;
+  margin-right: 5px !important;
+  vertical-align: bottom !important;
+  display: inline-block;
+  vertical-align: middle;
 }
