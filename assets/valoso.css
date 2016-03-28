@@ -5721,6 +5721,10 @@ ol, ul {
     .apply-page .video-des-wrap>h4>p {
         font-size: 20px;
     }
+    .navbar-default.navbar-mobile {
+        background: none;
+        box-shadow: none;
+    }
 }
 /* / payment page */
 .page-wrap #project-form {
