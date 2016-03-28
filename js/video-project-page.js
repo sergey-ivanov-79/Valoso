@@ -392,9 +392,9 @@ $(document).ready(function(){
 		$("#screen-edit div.item div.modal-footer").toggleClass("edit-block");
 	})
 	/* Video snap show/hide landscape End */
-	$(".navbar-toggle").click(function(){
+	/*$(".navbar-toggle").click(function(){
 		$(".header").toggleClass("position-relative");
-	});
+	});*//**/
 });
 $(document).on('pagebeforeshow', '#index', function(){ 
     $( "#edit-landscape-focus" ).popup({
