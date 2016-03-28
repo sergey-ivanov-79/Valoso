@@ -5801,3 +5801,6 @@ body, body div {
 .apply-page .video-des-wrap {
     margin-bottom: 20px;
 }
+#header-top.position-relative {
+    position: static !important;
+}
