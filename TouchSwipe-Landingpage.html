@@ -497,19 +497,6 @@ $('.popup-youtube').magnificPopup({
     });
 </script>
 <!-- / offcanvas -->
-
-<!-- modal focus -->
-<script type="text/javascript">
-  $('.modal').on('shown.bs.modal', function () {
-    var field = $(this).find('input[type="text"], input[type="email"], input[type="password"]');
-
-    if(field.length){
-         field.eq(0).focus();
-    }
-  });
-</script>
-<!-- / modal focus -->
-
 <!-- Swipe -->
 <script type="text/javascript" src="./js/jquery.touchSwipe.min.js"></script>
 <script>
@@ -531,5 +518,17 @@ $(function() {
 });
 </script>
 <!-- / Swipe -->
+
+<!-- modal focus -->
+<script type="text/javascript">
+  $('.modal').on('shown.bs.modal', function () {
+    var field = $(this).find('input[type="text"], input[type="email"], input[type="password"]');
+
+    if(field.length){
+         field.eq(0).focus();
+    }
+  });
+</script>
+<!-- / modal focus -->
 </body>
 </html>

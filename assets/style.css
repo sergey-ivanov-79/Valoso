@@ -1100,7 +1100,7 @@ footer {
 }
 @media (max-width: 767px) {
     .beta {
-        left: 45px;
+        left: 35px;
         top: 15px;
     }
     .header-guest .navbar-brand.navbar-brand-mobile {
