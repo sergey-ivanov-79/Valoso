@@ -5805,12 +5805,16 @@ body, body div {
 .apply-page .video-des-wrap {
     margin-bottom: 20px;
 }
-.video-des-wrap>h4>span, .apply-page .video-des-wrap>h4>span>p {
+.apply-page .video-des-wrap>h4>span,
+.apply-page .description-right-up .video-des-wrap>h4>span:last-child {
     padding: 5px;
     background: none #fff !important;
     z-index: 2;
     border: 1px solid #ccc;
-    display: block;
+    display: block !important;
     width: 100%;
     margin-top: 10px;
+}
+.apply-page .video-des-wrap>h4>span>p { 
+    margin-top: 0 !important;
 }
