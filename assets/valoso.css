@@ -1339,7 +1339,7 @@ a {
 }
 .video-des-wrap > h4,.video-des-wrap > p,.video-description-right .description-right-up > h4 {
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .video-description-right .description-right-up > h4:last-child {
   margin-bottom: 0;
@@ -1360,7 +1360,7 @@ a {
   box-shadow: #666 2px 2px 3px;
 }
 .video-description-right .description-right-up {
-  padding: 30px 20px;
+  padding: 20px 20px;
   background-color: #fefcfb;
   position: relative;
   float: left;
