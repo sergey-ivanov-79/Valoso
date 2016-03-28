@@ -5807,7 +5807,7 @@ body, body div {
 }
 .apply-page .video-des-wrap>h4>span,
 .apply-page .video-span-wrap>span,
-.apply-page .apply-page .description-right-up>h4>span:last-child {
+.apply-page .description-right-up>h4>span:last-child {
     padding: 5px;
     background: none #fff !important;
     z-index: 2;
@@ -5823,5 +5823,5 @@ body, body div {
     float: none;
 }
 .span-height {
-    height: auto;
+    height: auto !important;
 }
