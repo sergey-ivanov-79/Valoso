@@ -92,11 +92,7 @@
   color: #53e97d;
   font-weight: 600 !important;
 }
-.messages {
-  -webkit-box-shadow: 1px 2px 0 #e5eaee;
-  box-shadow: 1px 2px 0 #e5eaee;
-  padding: 25px;
-}
+
 .messages-heading {
   background-color: transparent;
   border: 0;
@@ -118,7 +114,7 @@
 .br-t {
   border-top: 1px solid #eeeeee !important;
 }
-.pr  td{
+.pr a{
   padding-right: 18px;
   color: #2a2f43;
   font: 700 14px/30px 'Open Sans';
@@ -226,5 +222,58 @@
 }
 #user .intro-content .btn-success {
   background-color: #38de8a;
+  border-color: inherit;
+}
+/*
+|----------------------------------------------------------------------------
+| CHAT
+|----------------------------------------------------------------------------
+*/
+#chat {
+	margin: 15px;
+  -webkit-box-shadow: 1px 2px 0 #e5eaee;
+  box-shadow: 1px 2px 0 #e5eaee;
+  padding: 25px;
+  border-width: 1px #e5eaee;
+}
+
+#chat .reply .form-control {
+
+width: 85%;
+}
+#chat .media-list {
+margin-bottom:0;
+  height: 350px;
+  overflow-y: scroll;
+}
+#chat .media-list .media {
+margin:0;
+}
+.card {
+box-shadow:0 2px 3px rgba(0,0,0,.05);
+}
+.card-block-half {
+padding:.625rem;
+}
+.text-muted {
+color:#818a91;
+}
+.pull-xs-right {
+float:right !important;
+}
+.m-b-0 {
+margin-bottom:0 !important;
+}
+#chat   .btn {
+  border-color: inherit;
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 5px 30px;
+}
+#chat   .btn a {
+  color: #fff;
+}
+#chat  .btn-info {
+  background-color: #00a9ff;
   border-color: inherit;
 }
