@@ -212,17 +212,13 @@
   text-transform: uppercase;
   margin: 10px;
   padding: 5px 30px;
+  color: #38de8a;
 }
-#user .intro-content .btn a {
-  color: #fff;
-}
-#user .intro-content .btn-info {
-  background-color: #00a9ff;
-  border-color: inherit;
-}
+
 #user .intro-content .btn-success {
   background-color: #38de8a;
   border-color: inherit;
+  color: #fff;
 }
 /*
 |----------------------------------------------------------------------------
@@ -264,16 +260,17 @@ float:right !important;
 .m-b-0 {
 margin-bottom:0 !important;
 }
-#chat   .btn {
+#chat  .btn {
   border-color: inherit;
   text-transform: uppercase;
   margin: 10px;
   padding: 5px 30px;
+  color: #38de8a;
 }
 #chat   .btn a {
   color: #fff;
 }
 #chat  .btn-info {
-  background-color: #00a9ff;
+  background-color: #38de8a;
   border-color: inherit;
 }
