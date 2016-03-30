@@ -274,3 +274,20 @@ margin-bottom:0 !important;
   background-color: #38de8a;
   border-color: inherit;
 }
+.dash-icon, .user-presence-icon, [class*=" dash-icon-"], [class^=dash-icon-] {
+    font-family: dash-icons;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.project-files-buttons .save-project-button button, .success-page-btn a.btn-project {
+    background-color: #38de8a;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
