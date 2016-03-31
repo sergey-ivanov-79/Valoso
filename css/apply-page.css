@@ -1,11 +1,22 @@
  .table-responsive-ad {
-    width: 100%;
+
     margin-bottom: 15px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+
+    -webkit-overflow-scrolling: touch;
+	overflow:hidden;
+  }
+   .table-responsive-ad2 {
+    
     overflow-y: hidden;
     overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
     border: 1px solid #e5eaee;
     -webkit-overflow-scrolling: touch;
+	overflow:hidden;
+	padding: 3px;
   }
   .table-responsive-ad > .table {
     margin-bottom: 0;
@@ -155,6 +166,9 @@
   padding-top: 100px;
   margin-bottom: 10px;
   text-align: center;
+  width: 387px;
+  height: 456px;
+  float: right;
 }
 #user .container-user .intro {
   background: #fff;
