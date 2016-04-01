@@ -5716,6 +5716,9 @@ ol, ul {
     .navbar-brand.navbar-brand-mobile .angle {
         display: none;
     }
+    .preview-profile-wrapper .header-dop.header-mobile .col-navbar {
+        display: none;
+    }
 }
 @media (min-width: 768px) {
     .apply-page .video-des-wrap>h4>p {
