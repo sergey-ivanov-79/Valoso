@@ -887,9 +887,12 @@ div#link-profile-modal .modal-dialog.modal-dialog-proj { width: 600px;}
     div#link-profile-modal .modal-dialog.modal-dialog-proj { width: auto;}
     div#link-profile-modal .modal-body select.link-select { width: 200px;}
     /* END My Media Library */
+    
 }
 @media (max-width: 767px) {
-    .wrapper-sidebar-offcanvas { display: block;}  
+    .wrapper-sidebar-offcanvas { display: block;} 
+    .wrapp-content-block .collapse { display: none !important;}
+    .wrapp-content-block .collapse.in { display: block !important;} 
 }
 @media (max-width: 768px) and (min-width: 640px) {
     .right-bl .text-center .text-uppercase, .left-bl .text-center .text-uppercase.text-gray { font-size: 20px;}

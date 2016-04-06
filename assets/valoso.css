@@ -5828,3 +5828,6 @@ body, body div {
 .span-height {
     height: auto !important;
 }
+.wrapper-sidebar-offcanvas .navbar-nav {
+   /* margin: 0;*/ /* need add ! */
+}
