@@ -5870,3 +5870,13 @@ body, body div {
     font-size: 15px;
     padding: 10px;
 }
+.navbar-mobile {
+    border: none;
+}
+#header-top .header-dop.header-mobile .navbar-brand.navbar-brand-mobile {
+    padding: 10px;
+    height: auto;
+}
+.header-dop .navbar.navbar-mobile {
+    border: none;
+}
