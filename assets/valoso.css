@@ -5844,7 +5844,7 @@ body, body div {
     cursor: pointer;
 }
 .header-dop .navbar-brand {
-    height: auto;
+    /*height: auto;*/
 }
 .header-dop .navbar-default .navbar-nav>.active>a, 
 .header-dop .navbar-default .navbar-nav>.active>a:focus, 
@@ -5856,6 +5856,16 @@ body, body div {
     color: #478cca;
     background: 0 0;
 }
+.header-min-height .header-dop .navbar-default .navbar-nav>.active>a, 
+.header-min-height .header-dop .navbar-default .navbar-nav>.active>a:focus, 
+.header-min-height .header-dop .navbar-default .navbar-nav>.active>a:hover, 
+.header-min-height .header-dop .navbar-default .navbar-nav>li>a, 
+.header-min-height .header-dop .navbar-default .navbar-nav>li>a:focus, 
+.header-min-height .header-dop .navbar-default .navbar-nav>li>a:hover
+.header-min-height {
+    font-weight: 600;
+}
+
 .header-dop .navbar-default .navbar-nav>li>a {
     font-size: 15px;
     padding: 10px;
