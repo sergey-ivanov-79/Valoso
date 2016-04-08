@@ -2,10 +2,6 @@
 .p-12 {
     font-size: 12px !important;
 }
-.container .cols > .navbar-header {
-    /*margin-right: -15px;*//**/
-    /*margin-left: -15px;*//**/
-}
 @media (max-width: 767px) {
     #navbar-collapse-1 li a,
     #bs-example-navbar-collapse-1 li a {

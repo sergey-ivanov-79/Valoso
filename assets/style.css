@@ -1091,6 +1091,7 @@ footer {
     opacity: 0.3;
     color: #fff;
     z-index: 999;
+    font-weight: 300;
 }
 @media (max-width: 991px) {
     .beta {

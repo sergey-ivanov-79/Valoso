@@ -5837,3 +5837,6 @@ body, body div {
 .header-dop .cols {
     margin-top: 0px !important;
 }
+.header-dop .navbar-header {
+    position: relative;
+}
