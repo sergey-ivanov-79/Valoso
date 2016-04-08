@@ -72,6 +72,8 @@ body {
     line-height: 26px;
 }
 .btn-hire.hire-me {
+    text-align: center;
+    display: inline-block;
     background-color: #0285c2;
     border: solid 2px #0285c2;
     border-radius: 5px;
