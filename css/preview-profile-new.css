@@ -70,7 +70,7 @@ body {
     color: #222222;
     line-height: 26px;
 }
-button.hire-me {
+.btn-hire.hire-me {
     background-color: #0285c2;
     border: solid 2px #0285c2;
     border-radius: 5px;
@@ -87,30 +87,30 @@ button.hire-me {
   	-o-transition: all 300ms ease-in-out;
   	transition: all 300ms ease-in-out;
 }
-button.hire-me:hover {
+.btn-hire.hire-me:hover {
 	background-color: transparent;
 	color: #0285c2;
 }
-.hire-me-section button.hire-me {
+.hire-me-section .btn-hire.hire-me {
     width: 130px;
 }
- button.hire-me:first-child {
+ .btn-hire.hire-me:first-child {
     margin-right: 5px;
 }
-.sim-640  button.hire-me:first-child, .sim-320  button.hire-me:first-child {
+.sim-640  .btn-hire.hire-me:first-child, .sim-320  .btn-hire.hire-me:first-child {
     margin-right: 0px;
 }
-button.hire-me.favorite {
+.btn-hire.hire-me.favorite {
     padding: 5px;
     background-color: #ff7c99;
     border: solid 2px #ff7c99;
 }
-button.hire-me.favorite:hover {
+.btn-hire.hire-me.favorite:hover {
     background-color: #f75075;
     border: solid 2px #f75075;
     color: #fff;
 }
-button.hire-me.favorite img { float: left;}
+.btn-hire.hire-me.favorite img { float: left;}
 .hire-me-section h3 {
     color: #222222;
     font-size: 30px;
@@ -1511,7 +1511,7 @@ button.btn.save-btn:hover  {
 	  	font-size: 14px;
 	  	line-height: 22px;
 	}
-	.sim-640  button.hire-me {
+	.sim-640  .btn-hire.hire-me {
 	  	padding: 5px 20px;
   		font-size: 16px;
 	  	margin-bottom: 5px;
@@ -1756,7 +1756,7 @@ button.btn.save-btn:hover  {
   		text-align: center;
 	  	padding: 7px 5px;
 	}
-	.sim-640 button.hire-me {
+	.sim-640 .btn-hire.hire-me {
 		float: right;
 		width: 100%;
 		padding: 5px 0;
@@ -1955,7 +1955,7 @@ button.btn.save-btn:hover  {
         text-align: center;
         padding: 7px 5px;
     }
-    .sim-320 button.hire-me {
+    .sim-320 .btn-hire.hire-me {
         float: right;
         width: 100%;
         padding: 5px 0;
@@ -2190,7 +2190,7 @@ button.btn.save-btn:hover  {
 	.sim-320 .user-profile-left-details h4 {
 	  	font-size: 14px;
 	}
-	.sim-320 button.hire-me {
+	.sim-320 .btn-hire.hire-me {
 	  	padding: 3px 0;
 	}
 	.sim-320 .user-profile-left-picture button img {
@@ -2226,7 +2226,7 @@ button.btn.save-btn:hover  {
 	.sim-320 .user-profile-left-details h4 {
 	  	margin-top: 0px;
 	}
-	.sim-320 button.hire-me {
+	.sim-320 .btn-hire.hire-me {
 		font-size: 14px;
 	  	padding: 5px 0;
 	}
@@ -2478,7 +2478,7 @@ button.btn.save-btn:hover  {
     .sim-320 .user-profile-left-details h4 {
         font-size: 14px;
     }
-    .sim-320 button.hire-me {
+    .sim-320 .btn-hire.hire-me {
         padding: 3px 0;
     }
     .sim-320 .user-profile-left-picture button img {
@@ -2544,7 +2544,7 @@ button.btn.save-btn:hover  {
     .sim-320 .user-profile-left-details h4 {
         margin-top: 0px;
     }
-    .sim-320 button.hire-me {
+    .sim-320 .btn-hire.hire-me {
         font-size: 14px;
         padding: 5px 0;
     }
@@ -2587,7 +2587,7 @@ button.btn.save-btn:hover  {
     }
 }
 @media(max-width: 1059px) {
-    button.hire-me {
+    .btn-hire.hire-me {
         width: 124px;
     }
     
@@ -2620,12 +2620,12 @@ button.btn.save-btn:hover  {
 	  	font-size: 13px;
 	  	line-height: 22px;
 	}
-	button.hire-me {
+	.btn-hire.hire-me {
 	  	padding: 5px 4px;
   		font-size: 14px;
 	  	margin-bottom: 5px;
 	}
-    button.hire-me.favorite img {width: 20px;}
+    .btn-hire.hire-me.favorite img {width: 20px;}
 	.hire-me-section h3 {
 	  	font-size: 26px;
 	}
@@ -2724,7 +2724,7 @@ button.btn.save-btn:hover  {
     .edit-container {
         left: -85px;
     }
-    button.hire-me {
+    .btn-hire.hire-me {
         width: 102px;
     }
     .user-profile-left ul li:not(:first-child) {
@@ -2736,7 +2736,7 @@ button.btn.save-btn:hover  {
     .user-profile-left ul:after {
         left: 69%;
     }
-    .hire-me-section button.hire-me {
+    .hire-me-section .btn-hire.hire-me {
         width: 102px;
     }
 }/* 991px End */
@@ -2817,12 +2817,12 @@ button.btn.save-btn:hover  {
     footer a > img {
         width: 50%;
     }
-    .hire-me-section button.hire-me {
+    .hire-me-section .btn-hire.hire-me {
         width: 85px;
         padding: 5px 0;
         font-size: 11px;
     }
-    button.hire-me.favorite img {
+    .btn-hire.hire-me.favorite img {
         width: 17px;
     }
     .header-min-height {
@@ -2928,12 +2928,12 @@ button.btn.save-btn:hover  {
   		/*text-align: center;
 	  	padding: 7px 5px;*/
 	}
-	button.hire-me {
+	.btn-hire.hire-me {
 		float: right;
 		width: 100%;
 		padding: 5px 0;
 	}
-    .wrapp-proposal-total button.hire-me {
+    .wrapp-proposal-total .btn-hire.hire-me {
         width: auto;
     }
 	.verified-icon i {
@@ -2956,7 +2956,7 @@ button.btn.save-btn:hover  {
         display: block;
     }
     .fileUpload { margin: 0;}
-    button.hire-me:first-child {
+    .btn-hire.hire-me:first-child {
         margin-right: 0px;
     }
 }/* 640px End */
@@ -3211,7 +3211,7 @@ button.btn.save-btn:hover  {
 	.user-profile-left-details h4 {
 	  	font-size: 14px;
 	}
-	button.hire-me {
+	.btn-hire.hire-me {
 	  	padding: 3px 0;
 	}
 	.user-profile-left-picture button img {
@@ -3279,7 +3279,7 @@ button.btn.save-btn:hover  {
 	.user-profile-left-details h4 {
 	  	margin-top: 0px;
 	}
-	button.hire-me {
+	.btn-hire.hire-me {
 		font-size: 14px;
 	  	padding: 5px 0;
 	}

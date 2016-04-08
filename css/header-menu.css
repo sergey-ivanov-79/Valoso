@@ -29,7 +29,7 @@ html {
     position: absolute;
     left: 0;
     top: -20px;
-    background-color: #4f4f4f;
+    background-color: #474747;
     padding-top: 10px;
     padding-right: 50px;
     border-top-left-radius: 7px;
@@ -46,7 +46,7 @@ html {
 }
 .preview-profile-wrapper .header-dop.header-mobile .col-navbar { position: static;}
 .preview-profile-wrapper .col-sm-12.line-bottom-mobile {
-    background-color: #4f4f4f;
+    background-color: #474747;
     margin-top: 34px;
     border-bottom: 1px solid #fff;
 }
