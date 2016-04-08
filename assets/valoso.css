@@ -5832,5 +5832,8 @@ body, body div {
    /* margin: 0;*/ /* need add ! */
 }
 .header-dop .collapse.navbar-collapse  {
-        margin-top: 0px !important;
+    margin-top: 0px !important;
+}
+.header-dop .cols {
+    margin-top: 0px !important;
 }
