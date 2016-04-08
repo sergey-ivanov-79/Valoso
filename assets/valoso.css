@@ -5873,7 +5873,7 @@ body, body div {
 .navbar-mobile {
     border: none;
 }
-#header-top .header-dop.header-mobile .navbar-brand.navbar-brand-mobile {
+header#header-top .header-dop.header-mobile .navbar-brand.navbar-brand-mobile {
     padding: 10px;
     height: auto;
 }
