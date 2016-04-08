@@ -1,7 +1,7 @@
 .header-dop  .navbar-collapse.clearfix {
     clear: both;
 }
-.header-dop .container {
+.header-guest .container {
     padding-left: 15px;
     padding-right: 15px;
 }
