@@ -5840,3 +5840,23 @@ body, body div {
 .header-dop .navbar-header {
     /*position: relative;*/
 }
+.profile-dropdown > img {
+    cursor: pointer;
+}
+.header-dop .navbar-brand {
+    height: auto;
+}
+.header-dop .navbar-default .navbar-nav>.active>a, 
+.header-dop .navbar-default .navbar-nav>.active>a:focus, 
+.header-dop .navbar-default .navbar-nav>.active>a:hover, 
+.header-dop .navbar-default .navbar-nav>li>a, 
+.header-dop .navbar-default .navbar-nav>li>a:focus, 
+.header-dop .navbar-default .navbar-nav>li>a:hover {
+    font-weight: 300;
+    color: #478cca;
+    background: 0 0;
+}
+.header-dop .navbar-default .navbar-nav>li>a {
+    font-size: 15px;
+    padding: 10px;
+}

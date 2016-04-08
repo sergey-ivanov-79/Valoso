@@ -69,7 +69,7 @@
 .angle {
     width: 0;
 	height: 0;
-	border-bottom: 20px solid #4f4f4f;
+	border-bottom: 20px solid #474747;
 	border-right: 20px solid transparent;
     position: absolute;
     right: -20px;
