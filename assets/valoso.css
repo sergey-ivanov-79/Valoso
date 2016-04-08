@@ -5891,4 +5891,11 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
     header#header-top .line-bottom-mobile {
         border-bottom: 1px solid #ddd;
     }
+    header#header-top .header-dop.header-mobile .navbar-toggle {
+        margin-top: 12px;
+    }
+    header#header-top .header-dop.header-mobile .line-bottom-mobile .navbar-brand-mobile img {
+        margin-top: 5px;
+        margin-bottom: 1px;
+    }
 }
