@@ -5883,10 +5883,12 @@ header#header-top .header-dop.header-mobile .navbar-brand.navbar-brand-mobile {
 .col-navbar-wrap .nav.navbar-nav.navbar-right {
     z-index: 2;
 }
-header#header-top .line-bottom-mobile {
-    border-bottom: 1px solid #ddd;
-}
 header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon-bar {
     background-color: #888;
     height: 2px;
+}
+@media (max-width: 767px) { 
+    header#header-top .line-bottom-mobile {
+        border-bottom: 1px solid #ddd;
+    }
 }
