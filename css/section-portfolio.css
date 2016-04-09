@@ -415,7 +415,7 @@
     }
 }
 @media(max-width: 480px) {
-    .hire-me-section .btn-hire.hire-me {
+    .hire-me-section .btn-hire.hire-me, .hire-me-section button.hire-me {
         margin-right: 3px;
     }
     .display-desktop {

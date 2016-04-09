@@ -720,7 +720,7 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
     padding-top: 10px;
     padding-bottom: 10px;
 }
-.wrapp-proposal-total .btn-hire.hire-me {
+.wrapp-proposal-total .btn-hire.hire-me, .wrapp-proposal-total button.hire-me {
     font-weight: 400;
     float: right;
     margin-bottom: 0;
