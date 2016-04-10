@@ -179,6 +179,10 @@ ol li { list-style-type: none;}
     position: absolute;
     top: 3px;
     left: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
 }
 .addition .name-category {
     padding: 4px 5px;
