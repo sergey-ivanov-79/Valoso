@@ -1232,7 +1232,12 @@ div#link-profile-modal .modal-dialog.modal-dialog-proj { width: 600px;}
     }
     .left-menu .fa { font-size: 18px; margin: 5px 5px 5px 0;}
     .sidebar-offcanvas .badge { background-color: #E54A3A;}
-    .wrapper-sidebar-offcanvas #navbar-collapse-1 .nav > li > a, .wrapper-sidebar-offcanvas #navbar-collapse-1 li a { padding-top: 4px; padding-bottom: 4px; color: #dfdedf;}
+    .wrapper-sidebar-offcanvas #navbar-collapse-1 .nav > li > a, .wrapper-sidebar-offcanvas #navbar-collapse-1 li a {
+        padding-top: 4px; 
+        padding-bottom: 4px; 
+        color: #dfdedf;
+        font-family: "Open Sans Condensed",sans-serif;
+    }
     .wrapper-sidebar-offcanvas #navbar-collapse-1 .nav > li > a:hover,
     .wrapper-sidebar-offcanvas #navbar-collapse-1 .nav > li.active > a { color: #fff;}
     .wrapper-sidebar-offcanvas #navbar-collapse-1 li a { text-transform: capitalize;}
