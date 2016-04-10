@@ -5597,12 +5597,23 @@ body.modal-open {
         min-height: 0;
     }
 }
+@media (max-width: 480px) {
+    .autoload-currency {
+        float: none;
+    }
+    .autoload-currency .cartNZD.wid-xs {
+        margin: 10px auto;
+    }
+    .wrapp-proposal-total .btn-here {
+        float: none !important;
+        display: block;
+    }
+}
 @media (max-width: 420px) {
     .autoload-currency {
         float: none;
     }
     .autoload-currency .cartNZD.wid-xs {
-        margin: 0px;
         padding-top: 10px;
         padding-bottom: 10px;
     }
