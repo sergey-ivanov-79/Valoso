@@ -1,6 +1,6 @@
  .table-responsive-ad {
 
-    margin-bottom: 15px;
+    /*margin-bottom: 15px;*/
     overflow-y: hidden;
     overflow-x: auto;
     -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -166,9 +166,7 @@
   padding-top: 100px;
   margin-bottom: 10px;
   text-align: center;
-  width: 387px;
-  height: 456px;
-  float: right;
+  /*float: right;*/
 }
 #user .container-user .intro {
   background: #fff;
