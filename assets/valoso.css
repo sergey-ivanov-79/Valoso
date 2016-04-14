@@ -5130,7 +5130,10 @@ img.video-edit {
 	}
 }
 .select2-dropdown.select2-dropdown--below { height: auto !important; overflow-y: inherit !important;}
-.video-project-form .container .vp-form-left .vp-form .form-group > label {  color: #474747 !important;}
+.video-project-form .container .vp-form-left .vp-form .form-group > label,
+.video-project-form .container .vp-form-left .vp-form > label {  
+    color: #474747 !important;
+}
 .video-project-director.video-project-form .vp-form-right > div:nth-of-type(1) > div:last-child input {
     box-shadow: none !important;
     height: auto !important;
