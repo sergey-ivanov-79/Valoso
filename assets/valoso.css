@@ -5914,6 +5914,13 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
     margin-right: 0px;
     margin-left: 0px;
 }
+.video-project-view {
+    line-height: 1.42857143;
+    font-size: 18px;
+}
+.table-responsive-ad2 {
+    font-weight: 300;
+}
 @media (max-width: 767px) { 
     header#header-top .line-bottom-mobile {
         border-bottom: 1px solid #ddd;
