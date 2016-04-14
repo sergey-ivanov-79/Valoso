@@ -5942,7 +5942,7 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
     font-size: 16px !important;
 }
 @media (max-width: 991px) {
-    .video-project-form .vp-form-right .vp-form label {
+    .video-project-form .container .vp-form-right .vp-form label {
         font-size: 20px;
     }
 }
