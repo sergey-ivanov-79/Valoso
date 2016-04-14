@@ -5921,6 +5921,10 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
 .table-responsive-ad2 {
     font-weight: 300;
 }
+.table-responsive-ad2 p {
+    font-weight: 300;
+    margin: 0 0 10px;
+}
 @media (max-width: 767px) { 
     header#header-top .line-bottom-mobile {
         border-bottom: 1px solid #ddd;
