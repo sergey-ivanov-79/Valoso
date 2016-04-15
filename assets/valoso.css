@@ -5557,11 +5557,6 @@ body.modal-open {
 
 /* END changes for edit page*/
 /*  Begin changes for header  project page and profile page  */
-.inner-payment-right .payment-proj-name,
-.inner-payment-right .payment-applicant,
-.inner-payment-right .payment-value {
-    margin: 10px 0;
-}
 @media (max-width: 767px) {
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile {
         display: none;    
@@ -5641,9 +5636,6 @@ body.modal-open {
     hyphens: auto;
 }
 /* END Changes for long links */
-/*html.none-overflow-x {
-    overflow-x: visible;
-}*/
 .wrapp-proposal-total .btn-here {
     background: #0285c2;
     border: 1px solid #0285c2;
@@ -5692,35 +5684,209 @@ ol, ul {
     padding-left: 0;
 }
 /* payment page */
-.contracts p {
-    margin: 10px 0px;
+.payment-page .payment-content {
+    margin: 20px 15px;
+    border: 1px solid #d7d7d7;
+    font-size: 18px;
+    color: #646464;
 }
-.contracts p {
-    margin: 28px 0px;
+.payment-page .payment-content div {
+    font-weight: normal;
 }
-.payment-page row {
+.payment-page .row {
     margin-top: 15px;
     margin-bottom: 15px;
 }
-.payment-content {
-    margin: 20px 0;
+.contracts p {
+    margin: 10px 0px;
+}
+.contracts .media-body p.text-center {
+    margin-top: 30px;
+}
+.contracts hr {
+    margin-top: -1px;
+    margin-left: 25px;
+    border-color: #fcc600;
+}
+.contracts-inner {
+    text-align: center;
+    padding: 20px 20px 0px 20px;
+}
+.contracts-inner .win-win {
+    color: #48af46;
+    font-size: 30px;
+    font-weight: 600;
 }
 .payment-page .bs-wizard>.bs-wizard-step .bs-wizard-stepnum {
     min-height: 80px;
+    font-size: 15px;
 }
 .payment-page .bs-wizard>.bs-wizard-step>.bs-wizard-dot {
     top: 103px!important;
 }
-.payment-left-block,
+.payment-left-block {
+    padding-top: 30px;
+}
 .payment-right-block {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    border-left: 1px solid #d7d7d7;
 }
 .payment-right-block .form-row {
     padding-bottom: 10px;
 }
+.payment-wizard .bs-wizard-stepnum .fa {
+   color: #a5a3a3; 
+}
+.payment-wizard .bs-wizard-stepnum.blue .fa {
+    color: #337ab7;
+}
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum.blue{
+    color: #3a85bf;
+}
 .payment-right-block .form-row .form-control {
     margin: 5px 0;
+}
+.billing-details {
+    padding: 8px 0 8px 35px;
+    font-size: 24px;
+    color: #fff;
+    background-color: #3a85bf;
+    margin-left: -16px;
+    margin-right: -16px;
+    text-transform: uppercase;
+}
+.credit-card {
+    padding: 5px 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #3a85bf;
+    text-transform: uppercase;
+}
+.wrapper-proj-info div label:first-child {
+    width: 40%;
+    float: left;
+}
+.wrapper-proj-info div label:last-child {
+    width: 60%;
+    float: left;
+}
+.wrapper-proj-info {
+    background-color: #f0f0f0;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 12px 15px 12px 15px;
+    border-top: 1px solid #fff;
+}
+.wrapper-proj-info label {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+.wrapper-proj-info label:first-child {
+    color: #3a85bf;
+    width: 140px;
+    text-transform: uppercase;
+}
+.wrapper-btn-submit-payment {
+    padding: 15px;
+    background: #f0f0f0;
+    border-top: 1px solid #d7d7d7;
+}
+.btn-submit-payment {
+    text-transform: uppercase;
+    width: 230px;
+    background-color: #555555;
+    border: 1px solid #555555;
+    font-weight: 600;
+    color: #fff;
+    outline: none !important;
+    box-shadow: none !important;
+}
+.btn-submit-payment:hover, .btn-submit-payment:focus, .btn-submit-payment:active  {
+    background-color: #f0f0f0;
+    outline: none !important;
+    box-shadow: none !important;
+}
+a.word-break-normal {
+    word-break: normal;
+    text-decoration: none;
+}
+a.word-break-normal:hover {
+    color: #337ab7;
+}
+#payment-form {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.col-xs-dop-4 > span {
+    margin-top: 10px;
+    display: inline-block;
+}
+.data-card {
+    padding: 10px 15px 15px 15px;
+}
+.inner-data-card {
+    border: 1px solid #d7d7d7;
+    border-top: none;
+    background: #fafafa;
+}
+.inner-data-card .col-xs-dop-4 {
+    font-size: 16px;
+}
+.personal-details {
+    margin-top: 15px;
+}
+.inner-data-card {
+    padding-top: 15px;
+}
+.inner-data-card .star-red{
+    color: #d40606;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.code .form-control {
+    float: left;
+    min-width: 150px;
+    width: auto;
+    margin-right: 10px;
+    margin-right: 3px !important;
+}
+.code img {
+    margin-top: 7px;
+}
+.code  a {
+    font-size: 12px;
+    margin-top: 15px;
+    display: block;
+    float: left;
+    text-decoration: underline;
+}
+@media (max-width: 1060px) {
+    .contracts .media-body p.text-center {
+        font-size: 16px;
+    }
+}
+@media (max-width: 1060px) and (min-width: 992px) {
+    .code .form-control {
+        min-width: 130px;
+    }
+}
+@media (max-width: 991px) {
+    .contracts .media-body p.text-center br {
+        display: block !important;
+    }
+}
+@media (max-width: 991px) and (min-width: 768px){
+    .payment-page .payment-content {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .contracts .media-body p.text-center {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    .contracts {
+        font-size: 16px;
+    }
 }
 @media (max-width: 767px) {
     .payment-content {
@@ -5735,12 +5901,91 @@ ol, ul {
     .payment-page .bs-wizard>.bs-wizard-step .bs-wizard-stepnum {
         font-size: 12px;
         line-height: 1.2 !important;
+        padding: 0px 3px;
     }
     .navbar-brand.navbar-brand-mobile .angle {
         display: none;
     }
     .preview-profile-wrapper .header-dop.header-mobile .col-navbar {
         display: none;
+    }
+    .payment-page .payment-content {
+        border: none;
+    }
+    .payment-right-block {
+        border: 1px solid #d7d7d7;
+        border-bottom-width: 0px;
+    }
+    .wrapper-btn-submit-payment {
+        border: 1px solid #d7d7d7;
+        text-align: center;
+    }
+    .btn-submit-payment {
+        float: none !important;
+    }
+}
+@media (max-width: 639px) {
+    .contracts .media-body p.text-center br {
+        display: block;
+    }
+}
+@media (max-width: 480px) {
+    .contracts .media-body p.text-center br {
+        display: none !important;
+    }
+    .contracts .media-body p.text-center {
+        margin-top: 10px;
+    }
+    .payment-right-block, .inner-data-card .col-xs-dop-4 {
+        font-size: 15px;
+    }
+}
+@media (max-width: 479px) {
+    .contracts .media-body p.text-center {
+        font-size: 13px;
+        margin-top: 0;
+        margin-bottom: 0px;
+        line-height: 1.2;
+    }
+    .contracts .media .img-responsive  {
+        width: 100px;
+    }
+    .contracts-inner {
+        padding: 10px;
+        font-size: 16px;
+    }
+    .data-card {
+        padding: 0px;
+    }
+    .credit-card {
+        margin-right: -1px;
+        margin-left: -1px;
+    }
+    .inner-data-card {
+        border: none;
+    }
+    .payment-right-block, .inner-data-card .col-xs-dop-4 {
+        font-size: 12px;
+    }
+    .inner-data-card .form-row:first-child .col-xs-dop-4 {
+        line-height: 1;
+    }
+    .col-xs-dop-4 > span {
+        margin-top: 15px;
+    }
+    .inner-data-card .form-row:first-child .col-xs-dop-4 > span {
+        margin-top: 10px;
+    }
+    .wrapper-btn-submit-payment {
+        padding: 0;
+    }
+    .btn-submit-payment {
+        width: 100%;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        margin-left: -1px;
+        margin-left: -1px;
     }
 }
 @media (min-width: 768px) {
@@ -5888,7 +6133,6 @@ body, body div {
 .header-min-height {
     font-weight: 600;
 }
-
 .header-dop .navbar-default .navbar-nav>li>a {
     font-size: 15px;
     padding: 10px;
@@ -5943,6 +6187,9 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
 .copyrights-holder #copyrights-input,
 .copyrights-holder #copyrights-radio {
     font-size: 16px !important;
+}
+.profile-dropdown .toogleDrpDwn:hover {
+    text-decoration: none;
 }
 @media (max-width: 991px) {
     .video-project-form .container .vp-form-right .vp-form label {

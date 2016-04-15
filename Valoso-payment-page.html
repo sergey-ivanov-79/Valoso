@@ -1,0 +1,571 @@
+<!doctype html>
+
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. --> 
+
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title></title>
+
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="./css/magnific-popup.css"/>
+ 
+<link rel="stylesheet" href="./assets/offcanvas.css"/>
+<link rel="stylesheet" href="./assets/header-offcanvas.css"/> <!--  headroom !!! -->
+<link rel="stylesheet" href="./assets/base.css"/>
+<link rel="stylesheet" href="./assets/landing.css" />
+
+<!-- Application-specific meta tags -->
+	<!-- Windows 8: see http://msdn.microsoft.com/en-us/library/ie/dn255024%28v=vs.85%29.aspx for details -->
+	<meta name="application-name" content="" /> 
+	<meta name="msapplication-TileColor" content="" /> 
+	<meta name="msapplication-TileImage" content="" />
+	<meta name="msapplication-square150x150logo" content="" />
+	<meta name="msapplication-square310x310logo" content="" />
+	<meta name="msapplication-square70x70logo" content="" />
+	<meta name="msapplication-wide310x150logo" content="" />
+	<!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
+	<meta name="twitter:card" content="">
+	<meta name="twitter:site" content="">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="">
+	<meta name="twitter:url" content="">
+	<!-- Facebook (and some others) use the Open Graph protocol: see http://ogp.me/ for details -->
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:image" content="" />
+  
+        
+	<!-- HTML5 shim for IE backwards compatibility -->
+	<!--[if lt IE 9]>
+	      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+<div class="wrapp-row-offcanvas">
+    <div class="row row-offcanvas row-offcanvas-left">
+<div class="page-wrap"><!-- page-wrap -->
+    <div class="close-nav"></div>
+    <header  id="header-top">
+        <div class="header-guest header header-dop header-mobile header-mobile-fix proj-forum headroom-dop">
+            <nav class="navbar navbar-default navbar-mobile" id="top-nav">
+                <div class="container">
+                    <div class="cols">
+                        <div class="navbar-header navbar-header-mobile">
+                              <button type="button" class="navbar-toggle collapsed button-mobile" data-toggle="offcanvas" data-target="#navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                            <a style="display:block;" class="navbar-brand navbar-brand-mobile" href="#">
+                                <div class="beta">Beta</div>
+                                <img src="./images/p-a/logo-valoso.png">
+                            </a>
+                        </div>
+                    </div> <!-- column 8 for navbar -->
+        
+                    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="false" style="height: 1px;">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="#how-does-it-work" class="how-to-work">
+                                    How it works<span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://staging.valoso.com/pages/faq">
+                                    FAQ
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a id="register-as-a-video-editor-toggle" style="cursor: pointer;">
+                                    Register as a Video Editor
+                                </a>
+                            </li>
+                            <li>                                                                                                                    <li class="hidden-xs">
+                                <p class="blue-color">
+                                    /
+                                </p>
+                            </li>
+                            <li>
+                                <a id="loginOpen" style="cursor: pointer;">
+                                    Log in
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container payment-page"><!-- payment-page -->
+        <div class="row payment-wizard"><!-- payment-wizard -->
+            <div class="col-md-12">
+                <div class="row bs-wizard" style="border-bottom: 0; padding: 20px 0 0 0;">
+                    <div class="col-sm-4 col-xs-12 bs-wizard-step "><!-- bs-wizard-step -->
+                        <div class="text-center bs-wizard-stepnum blue">
+                            <a  href="#billing" class="billing-it"><i class="fa fa-dollar"></i></a>
+                            <br>
+                            <a href="#billing" class="billing-it word-break-normal">Deposit money into <br class="hidden-xs"> your virtual account</a>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar"><!-- --></div>
+                        </div>
+                        <a class="bs-wizard-dot" style="cursor: default;"></a>
+                    </div><!-- / bs-wizard-step -->
+                    <div class="col-sm-4 col-xs-12 bs-wizard-step disabled"><!-- bs-wizard-step -->
+                        <div class="text-center bs-wizard-stepnum">
+                            <i class="fa fa-play-circle-o"></i>
+                            <br>
+                            Editor starts making <br class="hidden-xs">your video
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar"><!-- --></div>
+                        </div>
+                        <a class="bs-wizard-dot" style="cursor: default;"></a>
+                    </div><!-- / bs-wizard-step -->
+                    <div class="col-sm-4 col-xs-12 bs-wizard-step disabled"><!-- bs-wizard-step -->
+                        <div class="text-center bs-wizard-stepnum">
+                            <i class="fa  fa-paper-plane-o"></i>
+                            <br>
+                            Once the video is complete and you <br class="hidden-xs">are happy, release payment
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar"><!-- --></div>
+                        </div>
+                        <a class="bs-wizard-dot" style="cursor: default;"></a>
+                    </div><!-- / bs-wizard-step -->
+                </div>
+            </div>
+        </div><!-- / payment-wizard -->
+        <div class="row payment-content"><!-- payment-content -->
+            <div class="col-sm-6 payment-left-block"><!-- payment-left-block -->
+                <div class="contracts"><!-- contracts -->
+                    <div class="media">
+                        <div class="pull-left">
+                            <img class="img-responsive"src="./images/p-a/virtual-account.png" />
+                        </div>
+                        <div class="media-body">
+                            <p class="text-center bold">The money you deposit is kept <br class="visible-xs hidden-sm"> safe in your virtual account.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="contracts-inner">
+                        <p>It is only released to the editor when you are happy with the final video.</p>
+                        <p>The editor is encouraged to upload their work to your video project page when they achieve their first draft.</p>
+                        <p>You have an obligation to review editor's work when they submit it for your review.</p>
+                        <p>You will be only able to download the final video once you release your payment for the video.</p>
+                        <p class="win-win">It is a win - win.</p>
+                    </div>
+                </div><!-- / contracts -->  
+            </div><!-- / payment-left-block -->
+            <div class="col-sm-6 payment-right-block"><!-- payment-right-block -->
+                <div class="inner-payment-right"><!-- inner-payment-right -->
+                    <div id="billing-details" class="visible-xs hidden-sm" ></div>
+                    <div class="billing-details">
+                        BILLING DETAILS
+                    </div>
+                    <div class="wrapper-proj-info clearfix"> 
+                        <div class="payment-proj-name">
+                            <label>Project Name:</label>
+                            <label>First Project First Project</label>
+                        </div>
+                        <div class="payment-value">
+                            <label>Amout:</label>
+                            <label> $999.00 USD</label>
+                        </div>
+                    </div>
+                </div><!-- / inner-payment-right -->
+                <form action="" method="POST" id="payment-form" class="form">
+                    <div class="payment-errors"></div>
+                    <div class="personal-details">
+                        <div class="form-row clearfix">
+                            <div class="col-xs-4 col-xs-dop-4"><span>First Name</span></div>
+                            <div class="col-xs-8"><input class="form-control" type="text" name="first_name" value="Tosho"></div>
+                        </div>
+                        <div class="form-row clearfix">
+                            <div class="col-xs-4 col-xs-dop-4"><span>Last Name</span></div>
+                            <div class="col-xs-8"><input class="form-control" type="text" name="last_name" value="Trajanov"></div>
+                        </div>
+                        <div class="form-row clearfix">
+                            <div class="col-xs-4 col-xs-dop-4"><span>Email</span></div>
+                            <div class="col-xs-8"><input class="form-control" type="email" name="email" value="toso.trajanov@gmail.com"></div>
+                        </div>
+                    </div>
+                    <div class="data-card">
+                        <div class="credit-card">credit card</div>
+                        <div class="inner-data-card">
+                            <div class="form-row clearfix">
+                                <div class="col-xs-4 col-xs-dop-4"><span>Card Number<span class="star-red">*</span></span></div>
+                                <div class="col-xs-8"><input class="form-control" type="text" size="20" data-stripe="number" value="XXXXXXXX"></div>
+                            </div>
+                            <div class="form-row clearfix">
+                                <div class="col-xs-4 col-xs-dop-4"><span>Expiration<span class="star-red">*</span></span></div>
+                                <div class="col-xs-8"><input class="form-control" type="text" size="2" data-stripe="exp-month" value="MM/YYYY"></div>
+                            </div>
+                            <div class="form-row clearfix">
+                                <div class="col-xs-4 col-xs-dop-4"><span>CVC code<span class="star-red">*</span></span></div>
+                                <div class="col-xs-8 code"><input class="form-control" type="text" size="4" data-stripe="cvc"><img class="pull-left" src="./images/p-a/credit-card.png" /><a href="#">What's this?</a></div>
+                            </div>                            
+                        </div>
+                    </div>
+                </form>
+            </div><!-- / payment-right-block -->
+            <div class="col-sm-12 wrapper-btn-submit-payment clearfix">
+                <button type="submit" class="btn btn-submit-payment btn-lg pull-right">Submit Payment</button>
+            </div>
+        </div><!-- / payment-content -->
+    </div><!-- / payment-page -->
+</div><!-- / page-wrap -->
+<div class="wrapper-sidebar-offcanvas"><!-- wrapper-sidebar-offcanvas -->
+    <div id="sidebar" class="sidebar-offcanvas">
+        <div id="navbar-collapse-1" class="clearfix">
+            <div class="left-menu clearfix">
+                <div class="media">
+                </div>
+            </div>
+
+            <ul class="nav navbar-nav navbar-nav-dop nav-list">
+                <li class="active">
+                    <a href="https://staging.valoso.com/#how-does-it-work" class="how-to-work">
+                        How it works<span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://staging.valoso.com/pages/faq">
+                        FAQ
+                    </a>
+                </li>
+                  <li>
+                      <a class="register-as-a-video-editor-toggle" style="cursor: pointer;">
+                          Register as a Video Editor
+                      </a>
+                  </li>
+                  <li>
+                      <a class="login-box-toggle" style="cursor: pointer;">
+                          Log in
+                      </a>
+                  </li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!--/.sidebar-offcanvas-->
+</div><!-- / wrapper-sidebar-offcanvas -->
+
+<footer id="footer" class="site-footer">
+ <div class="container">
+     <div class="row botInfo">
+         <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 botLink">
+           <h4>About</h4>
+           <ul>
+              <li><a href="">About us</a></li>
+              <li><a href="">How it works</a></li>
+              <li><a href="">Press</a></li>
+              <li><a href="">Careers</a></li>
+           </ul>
+         </div>
+         <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 botLink">
+           <h4>Help</h4>
+           <ul>
+              <li><a href="">Help Center</a></li>
+              <li><a href="">Contact Support</a></li>
+              <li><a href="">FAQ's</a></li>
+              <li><a href="">Shipping info</a></li>
+              <li><a href="">Fee Schedule</a></li>
+              <li><a href="">Tutorials</a></li>              
+           </ul>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 botLink">
+           <h4>Get Inspired</h4>
+           <p>Weekly top projects, featured designers, tips, and tricks</p>
+           <div class="input-group">
+              <input type="text" class="form-control" placeholder="Enter Email Here">
+              <span class="input-group-btn"><button class="btn btn-default" type="button">Sign Up</button></span>
+           </div>
+         </div>
+         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 botLogo">
+            <a href=""><img src="images/logo-b.png"></a>
+            <div class="socBox">
+                <a href="" class="soc-ico s1"></a>
+                <a href="" class="soc-ico s5"></a>
+                <a href="" class="soc-ico s6"></a>
+                <a href="" class="soc-ico s4"></a>
+                <a href="" class="soc-ico s2"></a>
+                <a href="" class="soc-ico s7"></a>
+                <div class="clearN"></div>
+            </div>
+         </div>
+     </div>
+     <div class="row botCopy">
+         <div class="col-sm-6 col-md-6 col-lg-6">Copyright 2015 &copy; Mylocal3DPrinting Pty Ltd</div>
+         <div class="col-sm-2 col-md-2 col-lg-2"><a href="">Privacy Policy</a></div>
+         <div class="col-sm-4 col-md-4 col-lg-4"><a href="">Terms and Conditions</a></div>
+     </div>         
+ 
+ </div>
+</footer>
+</div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="loginBox" tabindex="-1" role="dialog" aria-labelledby="loginBoxLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h3 class="modal-title" id="myModalLabel">Sign up Or Login To Valoso</h3>
+      </div>
+      <div class="modal-body">
+        <ul id="userLoginTab" class="nav nav-tabs">
+            <li class="active"><a href="#conSign" id="tabSign" role="tab" data-toggle="tab" aria-controls="conSign" aria-expanded="true">Sign Up</a></li>
+            <li><a href="#conLogin" role="tab" id="tabLogin" data-toggle="tab" aria-controls="conLogin">Login</a></li>
+        </ul>
+        <div id="userLoginContent" class="tab-content">
+        <!-- tab1 -->
+          <div class="tab-pane fade in active" id="conSign" aria-labelledBy="conSign">
+              <form>
+              <div class="row">
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">First Name</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="firstName" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Last Name</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="lastName" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Email</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="email" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Password</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="password" name="password" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formCheck"><input type="checkbox" name="sendOffers" value="true" />
+                   Send me exclusive offers, tips, and tricks.</div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formText">By signing up, you agree to the <a href="">Terms and Conditions</a></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formSub"><input type="submit" value="Sign Up"></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 line">
+                      <fieldset >
+                        <legend  align="center">Or</legend>
+                      </fieldset>
+                   </div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 butLink"><a href=""><img src="images/ico-drop.png"> Login With Dropbox</a></div>
+              </div>
+              </form>
+          </div>
+        <!-- /tab1 -->
+        <!-- tab2 -->
+          <div class="tab-pane fade" id="conLogin" aria-labelledBy="conLogin">
+            <form>
+              <div class="row">
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Email</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="text" name="email" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">Password</div>
+                   <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput"><input type="password" name="password" /></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formCheck"><input type="checkbox" name="sendOffers" value="true" />
+                   Remember me <a href="" class="forgotPass">Forgot Password</a></div>
+                   
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 formSub"><input type="submit" value="Login" id="logs"></div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 line">
+                      <fieldset >
+                        <legend  align="center">Or</legend>
+                      </fieldset>
+                   </div>
+                   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 butLink"><a href=""><img src="images/ico-drop.png"> Login With Dropbox</a></div>
+              </div>
+              </form>
+          </div>
+        <!-- /tab2 -->
+        </div>
+      </div>     
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
+<!-- Modal -->
+<div class="modalCreateNow modaldirectorEdit modal fade" id="directorEdit" tabindex="-1" role="dialog" aria-labelledby="directorEdit" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <p class="modal-title"></p>
+        
+      </div>
+      <div class="modal-body">
+        <p>You have two accounts under the same email address.<br> Which account would you like to go to:
+        </p>
+      </div> 
+      <div class="modal-footer">
+        <a class="btn btn-create-n btn-lg">
+            <img class="btn-create-n-img1" src="./images/New-Landing-page/director_chair-512[1].png"> 
+            <img class="btn-create-n-img2" src="./images/New-Landing-page/director_chair-512[2].png">
+            Video Director Profile
+        </a>
+        <a class="btn btn-start-t btn-lg">
+            <img class="btn-start-t-img1" src="./images/New-Landing-page/film-strip-cut-edit-scissors-512[1].png">
+            <img class="btn-start-t-img2" src="./images/New-Landing-page/film-strip-cut-edit-scissors-512[2].png">
+            Video Editor Profile
+        </a>
+      </div>    
+    </div>
+  </div>
+</div>
+<!-- /Modal -->
+
+<a href="#header-top" class="anchor upArrow" style="display: none;"><img src="images/to-top-arrow.png"></a>
+
+<script src="./js/jquery-1.11.2.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+
+<!-- loginOpen -->
+<script>
+  $('#loginOpen').click(function() {
+    $('#userLoginTab a[href="#conLogin"]').tab('show');
+    $('#loginBox').modal('show');
+  });
+
+  $('#register-as-a-video-editor-toggle').click(function() {
+    $('#userLoginTab a[href="#conSign"]').tab('show');
+    $('#loginBox').modal('show');
+  });
+</script>
+<!-- / loginOpen -->
+
+<!-- scrollTop - for upArrow -->
+<script>
+  var group = ''; 
+  var lastMove = '';
+  $(function() {
+    $('a[href*=#].anchor:not([href=#])').click(function() {
+      if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+          $('html,body').animate({
+            scrollTop: target.offset().top-50
+          }, 1000);
+          return false;
+        }
+      }
+    });
+    $(window).scroll(function () {
+        if ($(this).scrollTop() >500) {
+          $('.upArrow').show()
+        }else{
+           $('.upArrow').hide()
+        }
+    });
+  });
+</script>
+<!-- / scrollTop - for upArrow -->
+
+<script>
+    $(document).on('click', '.how-to-work', function(e) {
+        $("html, body").animate({ scrollTop: $('#how-work').offset().top }, 1500);
+      });
+</script>
+
+<!-- magnific-popup -->
+<script src="./js/jquery.magnific-popup.js"></script>
+<script>
+$('.popup-youtube').magnificPopup({
+  type: 'iframe',
+  
+  iframe: {
+    markup: '<div class="mfp-iframe-scaler">'+
+            '<div class="mfp-close"></div>'+
+            '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>'+
+          '</div>', // HTML markup of popup, `mfp-close` will be replaced by the close button
+
+  
+    patterns: {
+      youtube: {
+      index: 'youtube.com/', // String that detects type of video (in this case YouTube). Simply via url.indexOf(index).
+
+      id: 'v=', // String that splits URL in a two parts, second part should be %id%
+      // Or null - full URL will be returned
+      // Or a function that should return %id%, for example:
+      // id: function(url) { return 'parsed id'; } 
+
+      src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe. 
+    }
+    }
+  }
+});
+</script>
+<!-- / magnific-popup -->
+
+<!-- headroom -->
+<script type="text/javascript" src="./js/headroom.min.js"></script>
+<script type="text/javascript" src="./js/jquery.headroom.js"></script>
+<script type="text/javascript">
+    // Init Headroom for .header
+    $(".header").headroom();  
+</script>
+<!-- / headroom -->
+
+<!-- offcanvas -->
+<script src="./js/offcanvas.js"></script>
+<script>
+    $(document).on('click', '.button-mobile', function(){
+        $('body').toggleClass('opened-offcanvas');
+        $('html').addClass('overflow-hidden'); 
+    });
+</script>
+<!-- / offcanvas -->
+
+<!-- modal focus -->
+<script type="text/javascript">
+  $('.modal').on('shown.bs.modal', function () {
+    var field = $(this).find('input[type="text"], input[type="email"], input[type="password"]');
+
+    if(field.length){
+         field.eq(0).focus();
+    }
+  });
+</script>
+<!-- / modal focus -->
+
+<!-- Swipe -->
+<script type="text/javascript" src="./js/jquery.touchSwipe.min.js"></script>
+<script>
+$(function() {			
+	//Enable swiping...
+	$(".close-nav").swipe( {
+		//Generic swipe handler for all directions
+		swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+		     $('html').removeClass('overflow-hidden'); 
+			$('body').removeClass('opened-offcanvas');	
+            $('.row-offcanvas').removeClass('active');
+			if(direction == 'right') {
+				//alert(1);
+			}
+		},
+		//Default is 75px, set to 0 for demo so any distance triggers swipe
+	   threshold:0
+	});
+});
+</script>
+<!-- / Swipe -->
+
+<script>
+    $('#directorEdit').on('hidden.bs.modal', function() {
+        if($('body').hasClass('open-login-modal')) {
+            $('#loginBox').modal('show');
+            $('body').removeClass('open-login-modal');
+        }
+    });
+
+    $(document).on('click', '.btn-start-t', function() {
+        $('body').addClass('open-login-modal');
+        $('#directorEdit').modal('hide');
+    });
+</script>
+<script>
+    $(document).on('click', '.billing-it', function(e) {
+        $("html, body").animate({ scrollTop: $('#billing-details').offset().top }, 1500);
+      });
+</script>
+</body>
+</html>
