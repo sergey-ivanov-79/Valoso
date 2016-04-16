@@ -5733,15 +5733,6 @@ ol, ul {
 .payment-right-block .form-row {
     padding-bottom: 10px;
 }
-.payment-wizard .bs-wizard-stepnum .fa {
-   color: #a5a3a3; 
-}
-.payment-wizard .bs-wizard-stepnum.blue .fa {
-    color: #337ab7;
-}
-.bs-wizard > .bs-wizard-step .bs-wizard-stepnum.blue{
-    color: #3a85bf;
-}
 .payment-right-block .form-row .form-control {
     margin: 5px 0;
 }
@@ -5809,9 +5800,9 @@ a.word-break-normal {
     word-break: normal;
     text-decoration: none;
 }
-a.word-break-normal:hover {
+.payment-page a:hover {
     color: #337ab7;
-}
+} 
 #payment-form {
     margin-left: -15px;
     margin-right: -15px;
