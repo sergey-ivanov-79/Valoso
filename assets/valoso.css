@@ -21,7 +21,6 @@ body.dash-page { padding-top: 0;}
     border: 1px solid #ddd;
     padding: 10px;
 }
-
 .wrapper-form-con .nav-icon-based {
     border-bottom: none;
 }
@@ -47,7 +46,6 @@ body.dash-page { padding-top: 0;}
 .nav-tabs.nav-icon-based > li > a:hover .tab-p span,
 .nav-tabs.nav-icon-based > li.active > a:focus .tab-p span {
     color: #fff;
-    /*font-weight: normal;*/
 }
 .nav-tabs.nav-icon-based > li > a i.fa {
     font-size: 48px;
@@ -99,8 +97,6 @@ body.dash-page { padding-top: 0;}
     -moz-border-radius: 10px 10px 0 0;
     margin-top: 30px;
 }
-
-
 .wrapper-tabs { min-height: 44px;}
 .headroom-icons {
     width: 100%;
@@ -121,7 +117,6 @@ body.dash-page { padding-top: 0;}
 .headroom-icons.headroom--not-top {
     display: block;
 }
-
 .headroom-icons.headroom--not-top {
    position: fixed;
     top: 0;
@@ -130,7 +125,6 @@ body.dash-page { padding-top: 0;}
     -o-transition: all .55s;
     transition: all .55s;
 }
-
 .tab-content .wrapp-myContent .h1 {
     font-size: 45px;
     margin-top: 0;
@@ -159,8 +153,8 @@ body.dash-page { padding-top: 0;}
     background: none #fefcfb;
 }
 .wrapper-sidebar-offcanvas { display: none;}
-/* Begin My Project */
 
+/* Begin My Project */
 /*Start styling selects project*/
 .styled-select {
     display: inline-block;
@@ -188,45 +182,37 @@ body.dash-page { padding-top: 0;}
     color: #777;
     font-size: 12px;
 }
-
 .colored_select .select2-results__option:nth-child(2){
     background-color:#4DCBFF;
     color:#ffffff;
 }
-
 .colored_select .select2-results__option:nth-child(3){
     background-color:#64FF65;
     color:#ffffff;
 }
-
 .colored_select .select2-results__option:hover:nth-child(2),
 .colored_select .select2-results__option:hover:nth-child(3)
 {
     color: #ff965e;
 }
-
 .styled-select .select2-container .select2-selection--single{
     height: 35px;
 }
-
 .styled-select .select2-container--default .select2-selection--single .select2-selection__rendered{
     color:#888888;
     line-height: 35px;
 }
-
 .styled-select .select2-container--default .select2-selection--single .select2-selection__arrow{
     height: 35px;
 }
-
 .wide_select .select2-container {
     width: 185px !important;
 }
-
 .set_width{
     width:88px;
 }
-
 /*end styling selects project*/
+
 .wrapp-myContent .wrapp-frm-post-project { padding-bottom: 20px;}
 .btn.btn_blue {
     background-color: #4b8dcb;
@@ -260,6 +246,7 @@ body.dash-page { padding-top: 0;}
 .visible-xs-dop-min { display: none;}
 .open-project { opacity: 1;}
 .close-project { opacity: 0.65;}
+
 /* Begin left cont*/
  .wrapp-table-port-details {
     padding: 10px;
@@ -303,7 +290,6 @@ body.dash-page { padding-top: 0;}
     margin-left: 0;
     padding: 6px 0;
     margin-bottom: 10px;
-    /*display: inline-block !important;*/
 }
 .wrapp-btn .btn-min-dop.btn-forum { margin-right: 2%;}
 .wrapp-btn {
@@ -313,9 +299,6 @@ body.dash-page { padding-top: 0;}
 /* Begin right cont*/
 .content-block .right-cont {
     padding: 15px 5px 10px 5px;
-    /*border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;*/
 }
 .my-editor .content-block .right-cont { background-color: #e8fde9;}
 .my-designer .content-block .right-cont { background-color: #def5ff;}
@@ -371,7 +354,6 @@ body.dash-page { padding-top: 0;}
 .bacgr-img-project { background-image: url("../images/p-a/top-project.png"); height: 44px;}
 .bacgr-img-tour { background-image: url("../images/p-a/top-tour.png"); height: 44px;}
 .group-stars { display: inline-block; margin-left: 25px;}
-
 .wrapp-content-block .collapse { display: block; height: 100% !important;}
 /* END right cont*/
 /* END My Project */
@@ -395,7 +377,6 @@ body.dash-page { padding-top: 0;}
     border-color: #098cc4;
 }
 .wrapper-favorites:hover .white { color: #098cc4 !important;}
-
 .wrapp-img {
     border: 6px solid #fff;
     border-radius: 100px;
@@ -652,7 +633,6 @@ div#link-profile-modal .modal-dialog.modal-dialog-proj { width: 600px;}
 .fon-share-clicked { background-color: #fff;}
 /* END added */
 /* END My Media Library */
-
 
 @media (max-width: 992px) {
     .nav-tabs.nav-icon-based > li > a {
@@ -5107,7 +5087,7 @@ img.video-edit {
 @media (max-width: 767px) {
     .text-center.bs-wizard-stepnum h2 { font-size: 11px !important;}
     .bs-wizard>.bs-wizard-step>.bs-wizard-dot,
-	#register-as-a-video-editor-modal .bs-wizard>.bs-wizard-step>.bs-wizard-dot	{ top: 88px !important;}
+    #register-as-a-video-editor-modal .bs-wizard>.bs-wizard-step>.bs-wizard-dot { top: 88px !important;}
     .bs-wizard>.bs-wizard-step .bs-wizard-stepnum { min-height: 66px;}
     #userLoginContent .formSub input { font-size: 22px;}
     .botCopy>div { margin-bottom: 10px;}
@@ -5120,14 +5100,14 @@ img.video-edit {
     #userLoginContent .formSub input {
         font-size: 20px;
         padding: 10px;
-		font-weight: 300;
+        font-weight: 300;
     }
-	#userLoginContent .formSub input[value="Login"] {
-		padding: 10px 20px;
-		font-weight: 700;
-		display: block;
-		margin: 0 auto;
-	}
+    #userLoginContent .formSub input[value="Login"] {
+        padding: 10px 20px;
+        font-weight: 700;
+        display: block;
+        margin: 0 auto;
+    }
 }
 .select2-dropdown.select2-dropdown--below { height: auto !important; overflow-y: inherit !important;}
 .video-project-form .container .vp-form-left .vp-form .form-group > label,
@@ -5858,6 +5838,12 @@ a.word-break-normal {
 @media (max-width: 1060px) and (min-width: 992px) {
     .code .form-control {
         min-width: 130px;
+    }
+}
+@media (max-width: 1060px) and (min-width: 768px) {
+    .inner-data-card .form-row:first-child .col-xs-dop-4 span {
+        line-height: 1.2;
+        margin-top: 0;
     }
 }
 @media (max-width: 991px) {
