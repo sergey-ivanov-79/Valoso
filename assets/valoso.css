@@ -5717,7 +5717,7 @@ ol, ul {
     margin: 5px 0;
 }
 .billing-details {
-    padding: 8px 0 8px 35px;
+    padding: 8px 0 8px 15px;
     font-size: 24px;
     color: #fff;
     background-color: #3a85bf;
@@ -6185,3 +6185,18 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
         margin-bottom: 1px;
     }
 }
+/* project page */
+.one-project .description-block {
+    padding: 0 20px 12px;
+}
+.one-project .info-block .description-block .block-content {
+    padding: 0px;
+}
+.one-project .description-block .title-director .applicants-info {
+    margin-bottom: 0px;
+}
+.one-project .info-block .description-block .applicants-info {
+    margin-bottom: 0px;
+    padding: 12px 20px;
+}
+/* / project page */

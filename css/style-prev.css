@@ -1028,35 +1028,35 @@ a:hover {
     .project-forum .left-content-table-head .media-body p { font-size: 14px; line-height: 1.1;}
     /* For header added changes */
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile .dropdown-menu-mobile.dropdown-menu-new {
-        border-radius: 0px !important;
+        /*border-radius: 0px !important;
         -webkit-border-radius: 0px !important;
         -moz-border-radius: 0px !important;
         background: none #000 !important; 
-        border-color: #000 !important;   
+        border-color: #000 !important;  */ 
     }
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile .dropdown-menu-mobile.dropdown-menu-new:before {
-      left: auto;
+      /*left: auto;
       right: 30px;
       border-bottom: 5px solid #000;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
-      top: -6px;
+      top: -6px;*/
     }
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile .dropdown-menu-mobile.dropdown-menu-new:after {
-      left: auto;
+      /*left: auto;
       right: 30px;
       border-bottom: 5px solid #000;
       border-left: 5px solid transparent;
       border-right: 5px solid transparent;
-      top: -6px;
+      top: -6px;*/
     }
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile .dropdown-menu-mobile.dropdown-menu-new a {
-        color: #ddd;
+        /*color: #ddd;*/
     }
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile .dropdown-menu-mobile.dropdown-menu-new a:hover, 
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile .dropdown-menu-mobile.dropdown-menu-new a:focus,
     .header-dop.header-mobile .col-navbar-wrap .profile-dropdown-mobile .dropdown-menu-mobile.dropdown-menu-new strong {
-        color: #fff;
+        /*color: #fff;*/
     }
     /* END For header added changes */
 }
