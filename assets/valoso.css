@@ -1162,7 +1162,9 @@ div#link-profile-modal .modal-dialog.modal-dialog-proj { width: 600px;}
 .color-green { color: #5cd75b;}
 .lighter { font-weight: 300;}
 .normal { font-weight: 400;}
+.semibold { font-weight: 600;}
 .italic { font-style: italic;}
+.p-18 { font-size: 18px;}
 .p-24 { font-size: 24px;}
 .p-30 { font-size: 30px;}
 .text-bold { font-weight: bold;}
@@ -4255,10 +4257,21 @@ a.anchor.upArrow {
   .video-project-director .container > h3 {
     background-position: 5px 50%;
   }
+  .video-project-director.apply-page .container > h3 {
+    background-position: 5px 25%;
+  }
   .video-project-director .container > h3 {
     background-size: 35px;
     padding: 20px 10px 20px 45px;
     font-size: 16px;
+  }
+  .video-project-director.apply-page .container > h3 {
+    background-size: 35px;
+    padding: 15px 10px 10px 45px;
+    font-size: 16px;
+  }
+  .video-project-director.apply-page .container > h3 span.p-18 {
+    font-size: 14px;
   }
   div.title {
     font-size: 12px;
@@ -6168,7 +6181,7 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
 .copyrights-holder #copyrights-radio {
     font-size: 16px !important;
 }
-.profile-dropdown .toogleDrpDwn:hover {
+.profile-dropdown .toogleDrpDwn {
     text-decoration: none;
 }
 @media (max-width: 991px) {
@@ -6203,3 +6216,312 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
     padding: 12px 20px;
 }
 /* / project page */
+
+/* apply page */
+/*-------------------------------------------------------------*/
+.apply-page div {
+    font-weight: 400;
+} 
+.apply-page h3 span.p-18 {
+    display: block;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.video-project-director.apply-page .container > h3 {
+  background-position: 15px 40%;
+  border-top: solid 1px #b6b6b6;
+  border-bottom: solid 1px #b6b6b6;
+  padding: 40px 15px 25px 85px;
+}
+.inner-info {
+    padding: 1px 0;
+    margin-left: 10px;
+}
+.inner-info .h4 {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #555555;
+    margin-bottom: 5px;
+}
+.inner-info p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #555555;
+    text-align: justify;
+}
+.apply-page .video-description-right, 
+.apply-page .video-description-left {
+    padding-left: 15px;
+}
+.left-content .nav-tabs {
+    border-bottom: 3px solid #00e183;
+}
+.left-content .nav-tabs li a {
+    text-transform: uppercase;
+}
+.left-content .nav-tabs > li.active > a,
+.left-content .nav-tabs > li.active > a:hover, 
+.left-content.nav-tabs > li.active > a:focus {
+    border: none;
+} 
+.left-content .nav > li > a {
+    color: #ffffff !important;
+    margin-right: 3px;
+    padding: 10px 12px;
+    background: none #cccccc;
+    border-radius: 0;
+    border: none;
+    margin-bottom: 2px;
+}
+.left-content .nav > li.active > a {
+    background: none #555555;
+}
+.project-files-buttons .save-project-button button.btn-apply {
+    text-transform: uppercase;
+    color: #fff;
+    height: 42px;
+    width: 188px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #00e183;
+    border-radius: 5px;
+    border: solid 1px transparent;
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+}
+.project-files-buttons .save-project-button button.btn-apply:hover,
+.project-files-buttons .save-project-button button.btn-apply:focus {
+    border-color: #00e183;
+    color: #00e183;
+    background-color: #ffffff;
+}
+.project-files-buttons .save-project-button {
+    border-top: 3px solid #00e183;
+    padding-right: 0 !important;
+    margin-left: -15px;
+}
+.apply-page {
+    padding-bottom: 70px;
+} 
+.apply-page .project-files-buttons {
+    padding-bottom: 0;
+}
+.job-overview {
+    margin-bottom: 10px;
+}
+.job-overview .h4, .posted-by .h4 {
+    padding: 10px 15px;
+    background: #555555;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0px;
+
+}
+.inner-job-overview, .inner-posted-by {
+    border: 1px solid #cecdcd;
+    border-top-width: 0px;
+    background-color: #f1fef9;
+    padding: 15px 15px 10px 15px;
+}
+.inner-job-overview .category {
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+.inner-job-overview .category li {
+    float: left;
+    padding: 2px 7px;
+    background: #555555;
+    font-size: 15px;
+    list-style: none;
+    color: #fff;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+img.a-user {
+    border-radius: 100px;
+}
+.view-milestone > span, .send-msg > span {
+    width: 16px;
+    height: 16px;
+    background-position: 0 0;
+    display: inline-block;
+    margin-top: 3px;
+}
+.send-msg > span {
+    background-image: url('../images/apply-new-design/send-msg.png');
+}
+.view-milestone > span {
+    background-image: url('../images/apply-new-design/view-milestone.png');
+}
+.inner-posted-by .btn {
+    position: relative;
+    display: block;
+    max-width: 210px;
+    height: 30px;
+    margin: 10px auto;
+    font-size: 14px;
+    border: 2px solid;
+    font-weight: 600;
+    padding: 3px;    
+    position: relative;
+    left: 5px;
+}
+.inner-posted-by .btn.btn-send-msg {
+    border-color: #3884cc;
+    color: #3884cc; 
+}
+.inner-posted-by .btn.btn-view-milestone {
+    border-color: #ff7f9d;
+    color: #ff7f9d; 
+}
+.inner-posted-by .btn.btn-send-msg:hover,
+.inner-posted-by .btn.btn-send-msg:focus {
+    border-color: #3884cc;
+    color: #fff;
+    background: #3884cc;  
+}
+.inner-posted-by .btn.btn-view-milestone {
+    border-color: #ff7f9d;
+    color: #ff7f9d; 
+}
+.inner-posted-by .btn.btn-view-milestone:hover,
+.inner-posted-by .btn.btn-view-milestone:focus {
+    border-color: #ff7f9d;
+    color: #fff; 
+    background: #ff7f9d;
+}
+.inner-posted-by .btn.btn-send-msg:hover .send-msg,
+.inner-posted-by .btn.btn-send-msg:focus .send-msg {
+    background-color: #3884cc;
+    border-color: #5797d4;
+}
+.inner-posted-by .btn.btn-view-milestone:hover .view-milestone,
+.inner-posted-by .btn.btn-view-milestone:focus .view-milestone {
+    background-color: #ff7f9d;
+    border-color: #f896ad;
+}
+.inner-posted-by .btn.btn-send-msg:hover .send-msg > span,
+.inner-posted-by .btn.btn-send-msg:focus .send-msg >span,
+.inner-posted-by .btn.btn-view-milestone:hover .view-milestone > span,
+.inner-posted-by .btn.btn-view-milestone:focus .view-milestone >span {
+    background-position: 0 16px;
+}
+.view-milestone, .send-msg {
+    padding: 3px 6px;
+    background: #fff;
+    border-radius: 50px;
+    position: absolute;
+    left: -10px;
+    top: -3px;
+    width: 32px;
+    height: 32px;
+}
+.send-msg {
+   border: 2px solid #3884cc; 
+}
+.view-milestone {
+    border: 2px solid #ff7f9d;
+}
+.video-description-right {
+    margin-bottom: 10px;
+}
+.top-applied p {
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+.top-applied {
+    padding: 5px 10px;
+    background-color: #f1fef9;
+    font-weight: 600 !important;
+}
+.top-applied span.pull-right {
+    padding: 5px 10px;
+    margin: -5px -10px;
+    background: #fd4a76;
+    cursor: pointer;
+}
+.top-applied span.pull-right img {
+    margin-top: -5px;
+    margin-right: 5px;
+}
+.top-applied span.pull-right span {
+    color: #fff;
+}
+#application .inner-info .h4:first-child {
+    color: #fd9f6d;
+}
+.h4-line-bottom {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 5px;
+}
+.inner-info .h4.black-text {
+    text-transform: capitalize;
+    color: #555555 !important;
+}
+.apply-page a:hover {
+    color: #23527c;
+}
+.inner-info-draft {
+    background-color: #eceeed;
+    padding: 10px 20px;
+}
+.pink {
+    color: #fd4a76;
+}
+.inner-info-draft {
+    text-align: center;
+}
+.inner-info-draft img {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.apply-page .video-description-right {
+    padding-right: 0px;
+}
+.inner-posted-by .h3 {
+    color: #555555;
+    margin-top: 10px;
+}
+.inner-posted-by p {
+    margin-bottom: 15px;
+}
+@media (max-width: 992px) and (min-width: 768px) {
+    .top-applied p, .top-applied span.pull-right span {
+        font-size: 14px;
+    }
+}
+@media (max-width: 767px) {
+    .apply-page .video-description-right, .apply-page .video-description-left {
+        padding-left: 0;
+    }
+    .project-files-buttons .save-project-button {
+        margin-left: 0px;
+    }
+    .apply-page .video-description-right {
+        padding-right: 15px;
+    }
+}
+@media (max-width: 767px) and (min-width: 580px)  {
+    .job-overview {
+        width: 48%;
+        float: right;
+    }
+    .posted-by {
+        width: 48%;
+        float: left;
+        margin-right: 4%;
+    }
+}
+@media (max-width: 579px) {
+    .top-applied p, .top-applied span.pull-right span {
+        font-size: 14px;
+    }
+    .top-applied p {
+        margin-bottom: 5px;
+    }
+}
+/*-------------------------------------------------------------*/
+/* / apply page */ 
