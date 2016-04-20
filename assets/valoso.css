@@ -6500,6 +6500,9 @@ img.a-user {
     .project-files-buttons .save-project-button {
         margin-left: 0px;
     }
+    .video-project-director.apply-page .container > h3 {
+        padding: 25px 15px 15px 85px;
+    }
 }
 @media (max-width: 767px) and (min-width: 580px)  {
     .job-overview {
