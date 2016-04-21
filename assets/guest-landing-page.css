@@ -386,12 +386,6 @@ a.blue-color:hover {
         font-size: 12px;
         padding: 5px;
     }
-    .header-guest .navbar-default .navbar-nav > li > p {
-        padding: 5px 0px;
-    }
-    .header-guest .navbar-default .navbar-brand {
-        padding: 10px 5px;
-    }
     .left-image .h3.h3-min {
         font-size: 14px;
         margin-top: 10px;
