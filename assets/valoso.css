@@ -6522,6 +6522,14 @@ img.a-user {
 .apply-page .single-video-description .popover {
     width: auto;
 }
+.video-dl-wrap .single-dl {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.video-dl-wrap .single-dl.single-dl-1 {
+    background-image: url('../images/video-project/dl1.jpg');
+}
 @media (max-width: 992px) and (min-width: 768px) {
     .top-applied p, .top-applied span.pull-right span {
         font-size: 14px;
@@ -6566,6 +6574,9 @@ img.a-user {
         padding: 4px 12px;
     }
     .apply-page .single-video-description > .single-video-title {
+        padding-top: 10px;
+    }
+    .apply-page {
         padding-top: 10px;
     }
 }
