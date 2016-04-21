@@ -6276,7 +6276,7 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
 .left-content .nav > li.active > a {
     background: none #555555;
 }
-.project-files-buttons .save-project-button button.btn-apply {
+.apply-page .project-files-buttons .save-project-button button.btn-apply {
     text-transform: uppercase;
     color: #fff;
     height: 42px;
@@ -6291,13 +6291,13 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
     -o-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
 }
-.project-files-buttons .save-project-button button.btn-apply:hover,
-.project-files-buttons .save-project-button button.btn-apply:focus {
+.apply-page .project-files-buttons .save-project-button button.btn-apply:hover,
+.apply-page .project-files-buttons .save-project-button button.btn-apply:focus {
     border-color: #00e183;
     color: #00e183;
     background-color: #ffffff;
 }
-.project-files-buttons .save-project-button {
+.apply-page .project-files-buttons .save-project-button {
     border-top: 3px solid #00e183;
     padding-right: 0 !important;
     margin-left: -15px;
@@ -6555,7 +6555,7 @@ img.a-user {
     .apply-page .video-description-right, .apply-page .video-description-left {
         padding-left: 0;
     }
-    .project-files-buttons .save-project-button {
+    .apply-page .project-files-buttons .save-project-button {
         margin-left: 0px;
     }
     .video-project-director.apply-page .container > h3 {
@@ -6639,10 +6639,10 @@ img.a-user {
     }
 }
 @media (max-width: 479px) {
-    .project-files-buttons .save-project-button button.btn-apply {
+    .apply-page .project-files-buttons .save-project-button button.btn-apply {
         width: 100%;
     }
-    .project-files-buttons .save-project-button {
+    .apply-page .project-files-buttons .save-project-button {
         padding-left: 0px !important;
     }
     .inner-job-overview .media {

@@ -2942,7 +2942,7 @@ button.btn.save-btn:hover  {
       padding: 7px 5px;*/
   }
   .btn-hire.hire-me, button.hire-me {
-    float: right;
+    /*float: right;*/
     width: 100%;
     padding: 5px 0;
   }
