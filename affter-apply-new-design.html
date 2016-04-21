@@ -115,10 +115,10 @@
 
     <h3>Project title goes here<span class="p-18 lighter clearfix">Posted 23 hours ago </span></h3>
 
-    <div class="col-sm-4 col-sm-push-8 video-description-right vidljiv clearfix"><!-- video-description-right -->
+    <div class=" video-description-right vidljiv clearfix"><!-- video-description-right -->
       <div class="job-overview"><!-- job-overview -->
         <h4 class="h4">PROJECT Overview</h4>
-        <div class="inner-job-overview"><!-- inner-job-overview -->
+        <div class="inner-job-overview clearfix"><!-- inner-job-overview -->
             <div class="media">
               <div class="pull-left"><img src="./images/apply-new-design/budget.png" alt=""></div>
               <div class="media-body"><span>Budget:</span><span>$50.00</span></div>
@@ -130,31 +130,23 @@
             <div class="media">
               <div class="pull-left"><img src="./images/apply-new-design/category.png" alt=""></div>
               <div class="media-body">
-                <span>Category:</span>
-                <ul class="category clearfix">
-                  <li>Arts</li>
-                  <li>Technology</li>
-                  <li>Design</li>
-                </ul>
+                <div class="media">
+                  <div class="pull-left"><span class="span-category">Category:</span></div>
+                  <div class="media-body">
+                    <div class="category">
+                      <span>Arts</span>
+                      <span>Technology</span>
+                      <span>Design</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
         </div><!-- / inner-job-overview -->
       </div><!-- / job-overview -->
-      <div class="posted-by"><!-- posted-by -->
-        <h4 class="h4">POSTED BY</h4>
-        <div class="inner-posted-by">
-          <div class="text-center">
-            <img class="a-user" src="./images/apply-new-design/a-user.png" alt="">
-            <h3 class="semibold h3">Shazey2014</h3>
-            <p>Editor</p>
-            <a href="#" class="btn btn-send-msg"><span class="send-msg"><span></span></span>Send Message</a>
-            <a href="#" class="btn btn-view-milestone"><span class="view-milestone"><span></span></span>View Milestones</a>
-          </div>
-        </div>
-      </div><!-- / posted-by -->
     </div><!-- / video-description-right -->
 
-    <div class="col-sm-8 col-sm-pull-4 video-description-left vidljiv"><!-- video-description-left  -->
+    <div class="video-description-left vidljiv"><!-- video-description-left  -->
       <div class="left-content"><!-- left-content  -->
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">
@@ -167,7 +159,7 @@
 
             <div role="tabpanel" class="tab-pane active" id="application"><!-- application  -->
               <div class="top-applied clearfix">
-                <p class="pull-left pink">You have already applied for this project</p>
+                <p class="pull-left pink">You have already <br class="apply-br"> applied for this project</p>
                 <span class="pull-right"><img src="./images/apply-new-design/pencil.png" alt=""><span class="">UPDATE</span></span>
               </div>
               <div class="inner-info">
@@ -207,6 +199,7 @@
                   <img src="./images/video-project/vn1.jpg">
                 </div>
               </div>
+              <div class="project-files-buttons hidden-sm visible-xs" "><div class="save-project-button"></div></div>
             </div><!-- / application  -->
 
             <div role="tabpanel" class="tab-pane" id="details"><!-- details  -->
@@ -281,8 +274,25 @@
 
     </div><!-- / video-description-left  -->
 
+    <div class=" video-description-right vidljiv"><!-- video-description-right -->
+      <div class="posted-by"><!-- posted-by -->
+        <h4 class="h4">POSTED BY</h4>
+        <div class="inner-posted-by">
+          <div class="text-center">
+            <img class="a-user" src="./images/apply-new-design/a-user.png" alt="">
+            <h3 class="semibold h3">Shazey2014</h3>
+            <p>Editor</p>
+            <div class="wrapper-apply-btn">
+              <a href="#" class="btn btn-send-msg"><span class="send-msg"><span></span></span>Send Message</a>
+              <a href="#" class="btn btn-view-milestone"><span class="view-milestone"><span></span></span>View Milestones</a>
+            </div>
+          </div>
+        </div>
+      </div><!-- / posted-by -->
+    </div><!-- / video-description-right -->
+
   </div> <!-- / container padd-0-10 -->
-  
+
 </div><!-- / apply-page -->
 <!-- ************************************************************************************************* -->
 

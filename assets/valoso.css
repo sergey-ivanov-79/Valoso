@@ -6307,9 +6307,10 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
 } 
 .apply-page .project-files-buttons {
     padding-bottom: 0;
+    padding-top: 20px;
 }
-.job-overview {
-    margin-bottom: 10px;
+.posted-by {
+    margin-top: 10px;
 }
 .job-overview .h4, .posted-by .h4 {
     padding: 10px 15px;
@@ -6330,7 +6331,7 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
     margin-top: 5px;
     margin-bottom: 3px;
 }
-.inner-job-overview .category li {
+.inner-job-overview .category span {
     float: left;
     padding: 2px 7px;
     background: #555555;
@@ -6366,7 +6367,6 @@ img.a-user {
     border: 2px solid;
     font-weight: 600;
     padding: 3px;    
-    position: relative;
     left: 5px;
 }
 .inner-posted-by .btn.btn-send-msg {
@@ -6488,6 +6488,40 @@ img.a-user {
 .inner-posted-by p {
     margin-bottom: 15px;
 }
+.video-description-right {
+    float: right;
+    width: 33.33333333%;
+}
+.video-description-left  {
+    width: 66.66666667%;
+    float: left;
+}
+.inner-job-overview .media-body span:first-child {
+    margin-right: 5px;
+}
+.inner-job-overview  .media .media-body .media .pull-left {
+    float: none !important;
+}
+.apply-br {
+    display: none;
+}
+.apply-page .video-list {
+    overflow-y: auto;
+} 
+.apply-page .single-video-description > .single-video-title {
+    padding-top: 60px;
+    display: inline-block;
+}
+.apply-page .video-project-director .container > h3 .popover-content input, 
+.apply-page .video-pop-input .popover-content input, 
+.apply-page .project-deadline .popover-content input, 
+.apply-page .single-video-description .popover-content input {
+    width: auto;
+}
+.apply-page .video-description-right .description-right-up > h4 .popover, 
+.apply-page .single-video-description .popover {
+    width: auto;
+}
 @media (max-width: 992px) and (min-width: 768px) {
     .top-applied p, .top-applied span.pull-right span {
         font-size: 14px;
@@ -6503,16 +6537,67 @@ img.a-user {
     .video-project-director.apply-page .container > h3 {
         padding: 25px 15px 15px 85px;
     }
-}
-@media (max-width: 767px) and (min-width: 580px)  {
-    .job-overview {
-        width: 48%;
-        float: right;
+    .wrapper-apply-btn {
+        text-align: center;
+    }
+    .span-category, .wrapp-category {
+        float: left;
+    }
+    .inner-job-overview .category {
+        margin-top: 0px;
+        margin-left: 5px;
+    }
+    .apply-page .video-description-left {
+        margin-top: 15px;
     }
     .posted-by {
-        width: 48%;
+        margin-top: 15px;
+    }
+    #application .project-files-buttons  {
+        padding-top: 15px;
+    }
+    #application .project-files-buttons .save-project-button {
+        padding-top: 0px;
+    }
+    .inner-info-draft {
+        margin-right: 10px;
+    }
+    .left-content .nav > li > a {
+        padding: 4px 12px;
+    }
+    .apply-page .single-video-description > .single-video-title {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 480px)  {
+    .inner-posted-by .btn {
+        width: 200px;
+        margin: 0;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+    .inner-posted-by .btn:first-child {
+        margin-right: 15px;
+    }
+    .inner-job-overview .media {
+        width: 50%;
         float: left;
-        margin-right: 4%;
+        margin-top: 0px;
+        margin-bottom: 5px;
+    }
+    .inner-job-overview .media:last-child {
+        width: 100%;
+        float: left;
+    }
+}
+@media (max-width: 767px) {
+    .apply-page .video-description-right,
+    .apply-page .video-description-left {
+        width: 100%;
+    }
+    .inner-job-overview {
+        padding-bottom: 0px;
     }
 }
 @media (max-width: 579px) {
@@ -6521,6 +6606,26 @@ img.a-user {
     }
     .top-applied p {
         margin-bottom: 5px;
+    }
+}
+@media (max-width: 479px) {
+    .project-files-buttons .save-project-button button.btn-apply {
+        width: 100%;
+    }
+    .project-files-buttons .save-project-button {
+        padding-left: 0px !important;
+    }
+    .inner-job-overview .media {
+        margin-top: 5px;
+    }
+    .span-category {
+        width: 82px;
+    }
+    .apply-br {
+        display: block;
+    }
+    .top-applied span.pull-right {
+        padding: 2px 10px;
     }
 }
 /*-------------------------------------------------------------*/
