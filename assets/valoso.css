@@ -6610,6 +6610,9 @@ img.a-user {
 .apply-page .single-video-description .popover {
     left: 0 !important;
 }
+.jumbotron .hidden-md-down {
+	display: none;
+}
 @media (max-width: 992px) {
     .video-des-wrap > p .popover-content div.clearfix, 
     .video-description-right .description-right-up > h4 .popover-content > div, 
