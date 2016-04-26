@@ -1559,6 +1559,8 @@ span.upload-path {
   width: 100%;
   background-color: #f6f3f2;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   margin-top: 15px !important;
 }
 .project-files > h3 {
@@ -1643,6 +1645,8 @@ span.upload-path {
   border: 0;
   background-color: #656565;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border: solid 2px transparent;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -1669,6 +1673,8 @@ span.upload-path {
   margin-bottom: 15px;
   border: solid 1px #ebe9e9;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
 }
 .single-video {
   *zoom: 1;
@@ -1780,6 +1786,8 @@ span.icon-reorder {
   padding: 5px 0px;
   border: 0;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   outline: none;
   font-weight: 700;
   text-align: center;
@@ -1844,6 +1852,8 @@ span.single-video-hover-buttons > button {
   background: none;
   padding: 5px 30px;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   font-weight: 700;
   outline: none;
 }
@@ -1903,6 +1913,8 @@ span.single-video-hover-buttons > button:nth-of-type(2):hover {
   background-color: white;
   border: solid 1px #d9d9d9;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
 }
 .featured-screen {
   height: 335px;
@@ -1922,6 +1934,8 @@ span.single-video-hover-buttons > button:nth-of-type(2):hover {
   width: 100%;
   padding: 10px 0px;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border: solid 2px transparent;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -1982,12 +1996,16 @@ span.single-video-hover-buttons > button:nth-of-type(2):hover {
   position: relative;
   border: 0;
   border-radius: 0;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
 }
 
 .gallery-history-director .gallery-history-left,.gallery-history-editor .gallery-history-left {
   border: solid 1px #c4c4c4;
   width: 230px;
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   overflow: hidden;
   padding-bottom: 15px;
 }
@@ -2083,6 +2101,8 @@ span.single-video-hover-buttons > button:nth-of-type(2):hover {
   width: 340px;
   border: 0;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   border: solid 2px transparent;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -2095,6 +2115,8 @@ span.single-video-hover-buttons > button:nth-of-type(2):hover {
     background-color: #4b8dcb;
     border: 0;
     border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
     border: solid 2px transparent;
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
@@ -2111,6 +2133,8 @@ span.single-video-hover-buttons > button:nth-of-type(2):hover {
     background-color: #ff818c;
     border: 0;
     border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
     border: solid 2px transparent;
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
@@ -2151,6 +2175,8 @@ span.single-video-hover-buttons > button:nth-of-type(2):hover {
   margin: auto;
   background-color: #f6f3f2;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   padding: 10px 15px;
 }
 div#download-project-files-modal .col-sm-4,div#delete-project-files-modal .col-sm-4,div#send-project-files-modal .col-sm-4 {
@@ -2162,6 +2188,8 @@ div#download-project-files-modal .col-sm-4 .video-dl-wrap > img,div#delete-proje
 .video-dl-wrap  {
   border: solid 3px #474747;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   overflow: hidden;
   height: 125px;
   position: relative;
@@ -2215,6 +2243,8 @@ div#download-project-files-modal .modal-footer button,div#delete-project-files-m
   font-weight: 700;
   border: 0;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   outline: none;
   background: none;
 }
@@ -2254,6 +2284,8 @@ div#download-project-files-modal .modal-body form,div#delete-project-files-modal
   background-color: white;
   border: solid 1px #c4c4c4;
   border-radius: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   padding-right: 10px;
   padding-top: 10px;
 }
@@ -2299,6 +2331,8 @@ img.video-edit {
 .video-des-wrap > p .popover-content textarea {
   height: 140px;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   width: 100%;
   padding: 5px 10px;
 }
@@ -2324,6 +2358,8 @@ img.video-edit {
   width: 100px;
   margin: 0 10px !important;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   padding-left: 10px;
   font-size: 18px;
   color: #474747;
@@ -2331,6 +2367,8 @@ img.video-edit {
 .edit-category .popover-content select {
     height: 35px;
     border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
     padding-left: 10px;
     font-size: 18px;
     color: #474747; 
@@ -2369,6 +2407,8 @@ img.video-edit {
   height: 35px;
   width: 300px;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   padding-left: 10px;
   border: solid 1px #bbbbbb;
 }
@@ -2639,6 +2679,8 @@ span.project-more-opt {
   text-align: center;
   padding-top: 7px;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   font-size: 17px;
   margin-top: -4px;
   cursor: pointer;
@@ -2870,6 +2912,8 @@ div#view-screensh .featured-screenshot-text .col-sm-3 button,div#view-screensh-d
   color: #474747;
   height: 45px;
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border: solid 1px #bcbcbc;
   padding-left: 10px;
   font-weight: 400;
@@ -2881,6 +2925,8 @@ div#view-screensh .featured-screenshot-text .col-sm-3 button,div#view-screensh-d
   padding: 35px 30px;
   border: solid 1px #bcbcbc;
   border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
   display: none;
 }
 .send-screen-popup form div button:nth-of-type(1) {
@@ -2901,6 +2947,8 @@ div#view-screensh .featured-screenshot-text .col-sm-3 button,div#view-screensh-d
   height: 45px;
   padding: 0px 50px;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   float: left;
   margin-left: 230px;
   -webkit-transition: all 200ms ease-in-out;
@@ -2939,6 +2987,8 @@ div#view-screensh .featured-screenshot-text .col-sm-3 button,div#view-screensh-d
   color: #474747;
   height: 45px;
   border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
   border: solid 1px #bcbcbc;
   padding-left: 10px;
   font-weight: 400;
@@ -2954,6 +3004,8 @@ div#view-screensh .featured-screenshot-text .col-sm-3 button,div#view-screensh-d
   border: solid 2px #4b8dcb;
   height: 45px;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   padding: 0 30px;
   -webkit-transition: all 200ms ease-in-out;
   -moz-transition: all 200ms ease-in-out;
@@ -3007,6 +3059,8 @@ button.slick-prev,button.slick-next {
 .vp-edit-screen .modal-content {
   box-shadow: none;
   border-radius: 0;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
   border: 0;
 }
 .opa-ch {
@@ -3054,6 +3108,8 @@ div#view-screensh .featured-screenshot-text .col-sm-9 p .popover input, div#view
   float: left;
   margin-left: 10px;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   color: white;
   font-size: 16px;
   font-weight: 700;
@@ -3253,6 +3309,8 @@ a.anchor.upArrow {
   height: 35px;
   width: 22%;
   border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
   padding-left: 10px;
   font-size: 18px;
   color: #474747;
@@ -4577,9 +4635,12 @@ a.anchor.upArrow {
 .bs-wizard > .bs-wizard-step + .bs-wizard-step {}
 .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #595959; font-size: 16px; margin-bottom: 5px;}
 .bs-wizard > .bs-wizard-step .bs-wizard-info {color: #999; font-size: 14px;}
-.bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #337ab7; top: 45px; left: 50%; margin-top: -15px; margin-left: -15px; border-radius: 50%;}
-.bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {content: ' '; width: 14px; height: 14px; background: #24a5db; border-radius: 50px; position: absolute; top: 8px; left: 8px; }
-.bs-wizard > .bs-wizard-step > .progress {position: relative; border-radius: 0px; height: 8px; box-shadow: none; margin: 20px 0;}
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #337ab7; top: 45px; left: 50%; margin-top: -15px; margin-left: -15px; 
+    border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;}
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {content: ' '; width: 14px; height: 14px; background: #24a5db; border-radius: 50px; -webkit-border-radius: 50px; -moz-border-radius: 50px; position: absolute; top: 8px; left: 8px; }
+.bs-wizard > .bs-wizard-step > .progress {position: relative; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; height: 8px; box-shadow: none; margin: 20px 0;}
 .bs-wizard > .bs-wizard-step > .progress > .progress-bar {width:0px; box-shadow: none; /*background: #fbe8aa;*/}
 .bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {width:100%;}
 .bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {width:50%;}
@@ -6270,6 +6331,8 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
     padding: 10px 12px;
     background: none #cccccc;
     border-radius: 0;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
     border: none;
     margin-bottom: 2px;
 }
@@ -6285,6 +6348,8 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
     font-weight: 600;
     background-color: #00e183;
     border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
     border: solid 1px transparent;
     -webkit-transition: all 300ms ease-in-out;
     -moz-transition: all 300ms ease-in-out;
@@ -6343,6 +6408,10 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
 }
 img.a-user {
     border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  width: 85px;
+  height: 85px;
 }
 .view-milestone > span, .send-msg > span {
     width: 16px;
@@ -6413,6 +6482,8 @@ img.a-user {
     padding: 3px 6px;
     background: #fff;
     border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
     position: absolute;
     left: -10px;
     top: -3px;
