@@ -6627,6 +6627,34 @@ img.a-user {
     height: 16px;
     width: 16px;
 }
+.messages-heading {
+    margin-top: 30px;
+}
+.messages-holder {
+    font-weight: 400;
+    font-size: 16px;
+    color: #555;
+}
+.pr a {
+    padding-right: 18px;
+    color: #2a2f43;
+    font: 700 14px/30px 'Open Sans';
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-transform: uppercase;
+}
+.apply-page a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+.pull-xs-right {
+    float: right !important;
+}
+.date-time {
+    color: #2a2f43;
+    font: 400 10px/30px 'Open Sans';
+    line-height: 10px;
+}
 @media (max-width: 992px) {
     .video-des-wrap > p .popover-content div.clearfix, 
     .video-description-right .description-right-up > h4 .popover-content > div, 
