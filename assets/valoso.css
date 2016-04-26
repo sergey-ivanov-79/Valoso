@@ -6724,6 +6724,10 @@ img.a-user {
     .inner-job-overview {
         padding-bottom: 0px;
     }
+    .senedr-messages-holder #send-msg {
+        margin-top: 10px;
+        float: right;
+    }
 }
 @media (max-width: 767px) and (min-width: 480px)  {
     .inner-posted-by .btn {
@@ -6750,6 +6754,10 @@ img.a-user {
     .video-project-director.apply-page .container > h3 {
         border-top: none;
         margin-top: 0px;
+    }
+    #chat {
+        margin: 15px 0;
+        padding: 15px 5px;
     }
 }
 @media (max-width: 579px) {
