@@ -6610,7 +6610,7 @@ img.a-user {
 .apply-page .single-video-description .popover {
     left: 0 !important;
 }
-.jumbotron .hidden-md-down {
+.jumbotron.hidden-md-down {
 	display: none;
 }
 @media (max-width: 992px) {
