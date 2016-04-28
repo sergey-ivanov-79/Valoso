@@ -5681,13 +5681,13 @@ body.modal-open {
 /*  END changes for header  project page and profile page  */
 /* Begin Changes for long links */
 .page-wrap a {
-    -ms-word-break: break-all;
+    /*-ms-word-break: break-all;
     word-break: break-word;
     word-break: break-all;
     -webkit-hyphens: auto;
     -moz-hyphens: auto;
     -ms-hyphens: auto;
-    hyphens: auto;
+    hyphens: auto;*/
 }
 /* END Changes for long links */
 .wrapp-proposal-total .btn-here {
@@ -6661,6 +6661,31 @@ img.a-user {
     font: 400 10px/30px 'Open Sans';
     line-height: 10px;
 }
+/* apply modal */
+.apply-modal .currency-holder {
+    width: 60%;
+    float: left;
+    margin-top: 17px;
+}
+.apply-modal .wrapper-modal-price {
+    float: none;
+}
+.apply-modal .wrapper-modal-price .modal-price {
+    float: left;
+}
+.apply-modal .wrapper-modal-price .modal-price:first-child {
+    margin-right: 15px;
+}
+.apply-modal .cartNZD.wid-xs .price {
+    line-height: 1.2;
+}
+#applyModal.apply-modal .row.cartNZD.wid-xs {
+    float: right !important; 
+}
+.apply-modal .upload-holder input {
+    margin-bottom: 5px;
+}
+/* / apply modal */ 
 @media (max-width: 992px) {
     .video-des-wrap > p .popover-content div.clearfix, 
     .video-description-right .description-right-up > h4 .popover-content > div, 
@@ -6793,6 +6818,56 @@ img.a-user {
         font-size: 20px !important;
         background-size: 45px;
     }
+    .apply-modal .currency-holder {
+        margin-top: 0;
+    }
+    #applyModal.apply-modal .row.cartNZD.wid-xs {
+        margin-bottom: 0;
+    }
 }
 /*-------------------------------------------------------------*/
 /* / apply page */ 
+/* web-design */ 
+.web-design .bg-top.bg-top-web {
+    padding-bottom: 66%;
+}
+.web-design .bg-top.bg-top-web .inner-bg-top {
+    background: none;
+}
+.wrapper-stock-img {
+    width: 100%;
+}
+.wrapper-stock-img li {
+    width: 20%;
+    float: left;
+    list-style-type: none;
+    padding: 0;
+}
+.wrapper-stock-img li img {
+    border: 4px solid #fff;
+}
+.inner-stock-img {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.stock-img {
+    border: 1px solid #ddd;
+}
+.dowl {
+    padding: 5px 15px;
+    background: #858585;
+    color: #fff;
+    border-radius: 0 0 5px 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 100%;
+    border: none;
+}
+.wrapper-stock-img {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.left-image ul {
+    list-style: none;
+}
+/* / web-design */ 
