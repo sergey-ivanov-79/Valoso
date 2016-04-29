@@ -6662,6 +6662,7 @@ img.a-user {
     line-height: 10px;
 }
 /* apply modal */
+
 .apply-modal .currency-holder {
     width: 60%;
     float: left;
@@ -6682,10 +6683,83 @@ img.a-user {
 #applyModal.apply-modal .row.cartNZD.wid-xs {
     float: right !important; 
 }
-.apply-modal .upload-holder input {
-    margin-bottom: 5px;
+.apply-modal .upload-holder {
+    padding: 15px 0px;
 }
+#applyModal.apply-modal textarea.form-control, 
+#applyModal.apply-moda .modal-body label {
+    font-size: 16px;
+}
+#applyModal.apply-modal .modal-body {
+    font-size: 16px;
+    padding-bottom: 0;
+} 
+.apply-modal .due-dates-holder {
+    margin-bottom: 15px;
+}
+#applyModal .form-control.datePicker {
+    width: 100%;
+}
+.apply-modal .inputFileContainer {
+    position: relative;
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 10px;
+}
+.apply-modal .inputFileContainer:last-child {
+    margin-right: opx;
+}
+.apply-modal .fileWrapper {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.apply-modal .fileWrapper input {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    border: 0;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+    margin: 0;
+}
+.attachmentAddItem {
+    margin-bottom: 10px;
+}
+.attachmentAddItem a {
+    background: #fff;
+    padding: 2px 5px;
+    color: #428bca;
+    border-radius: 5px;
+    border: 1px solid #428bca;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+}
+.attachmentAddItem a:hover,
+.attachmentAddItem a:active,
+.attachmentAddItem a:focus,
+.attachmentAddItem a:visited {
+    background: #428bca;
+    color: #fff;
+    border: 1px solid #428bca;
+}
+
 /* / apply modal */ 
+@media (min-width: 768px) {
+    .applyModal .modal-dialog {
+        width: 600px;
+    }
+    #applyModal.applyModal textarea {
+        max-width: 550px;
+    }
+}
 @media (max-width: 992px) {
     .video-des-wrap > p .popover-content div.clearfix, 
     .video-description-right .description-right-up > h4 .popover-content > div, 
