@@ -155,7 +155,7 @@
     color: #fff;
     padding-bottom: 30px;
 }
-.mobile-line {
+.web-design .mobile-line {
     display: none;
 }
 .web-design .to-apply .name-section {
@@ -167,7 +167,7 @@
     height: 30px;
     position: relative;
 }
-.wrapp-images .line-bottom-img {
+.web-design .wrapp-images .line-bottom-img {
     display: none;
 }
 .web-design .end-date span span:first-child {
@@ -338,7 +338,7 @@
     .web-design .dop-col-xs-5 {
         margin-left: 0px; 
     }
-    .wrapper-stock-bg-footer {
+    .web-design .wrapper-stock-bg-footer {
         background-color: #434142;
     }
     .web-design .date-start {
@@ -347,10 +347,10 @@
     .web-design .inner-date-start {
         padding: 0px;
     }
-    .line-bottom-img.line-bottom-img-first {
+    .web-design .line-bottom-img.line-bottom-img-first {
         margin: 0 -15px;
     }
-    .wrapp-images .line-bottom-img {
+    .web-design .wrapp-images .line-bottom-img {
         display: block;
     }
     .web-design .name-section {
@@ -423,7 +423,7 @@
     .web-design .inner-text-left {
         font-size: 14px;
     }
-    .mobile-line {
+    .web-design .mobile-line {
         display: block;
     }
     .web-design .name-section {
@@ -447,7 +447,7 @@
     .web-design .to-apply .hidden-sm.visible-xs {
         display: none !important;
     }
-    .wrapper-to-apply {
+    .web-design .wrapper-to-apply {
         width: 100%;
     }
     .web-design .to-apply {
@@ -500,6 +500,9 @@
     }
     .web-design .inner-date-start .media .media-body.first {
         font-weight: 600;
+    }
+    .web-design .wrapper-text-left .name-section {
+        margin-left: -15px;
     }
 }
 @media (max-width: 480px) {
@@ -606,4 +609,4 @@
         margin-top: -40px;
     }
 }
-/* / web-design */ 
+/* / web-design */
