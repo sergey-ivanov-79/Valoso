@@ -274,7 +274,8 @@
         margin-bottom: 0px;
     }
     .web-design .btn-prizes .img-responsive.hidden-sm.visible-xs {
-        float: right;
+        float: none;
+        margin: 0 auto;
         width: 55%;
     }
     .date-start {
