@@ -13,6 +13,12 @@
 }
 .web-design {
     font-family: 'Ebrima', sans-serif;
+    /*background-color: #D1D0D2;*/
+}
+.inner-date-start {
+    padding: 0 40px;
+}
+.wrapper-stock-bg-footer {
     background-color: #D1D0D2;
 }
 .web-design .bg-top.bg-top-web {
@@ -23,7 +29,7 @@
 }
 .web-design .p-22 {
     font-family: 'Ebrima', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 20px;
     line-height: 1.6;
 }
@@ -323,6 +329,9 @@
     }
     .dop-col-xs-6, .dop-col-xs-5 {
         margin-left: 0px !important;
+    }
+    .orange {
+        color: #edbd34;
     }
 }
 @media (max-width: 567px) {
