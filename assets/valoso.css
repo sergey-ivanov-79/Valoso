@@ -6904,23 +6904,23 @@ img.a-user {
 /* web-design */ 
 @font-face {
     font-family: 'jack_frostregular';
-    src: url('./fonts/jack_frost-webfont.eot');
-    src: url('./fonts/jack_frost-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/jack_frost-webfont.woff2') format('woff2'),
-         url('./fonts/jack_frost-webfont.woff') format('woff'),
-         url('./fonts/jack_frost-webfont.ttf') format('truetype'),
-         url('./fonts/jack_frost-webfont.svg#jack_frostregular') format('svg');
+    src: url('../fonts/jack_frost-webfont.eot');
+    src: url('../fonts/jack_frost-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jack_frost-webfont.woff2') format('woff2'),
+         url('../fonts/jack_frost-webfont.woff') format('woff'),
+         url('../fonts/jack_frost-webfont.ttf') format('truetype'),
+         url('../fonts/jack_frost-webfont.svg#jack_frostregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'call_of_ops_dutyregular';
-    src: url('./fonts/call_of_ops_duty-webfont.eot');
-    src: url('./fonts/call_of_ops_duty-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./fonts/call_of_ops_duty-webfont.woff2') format('woff2'),
-         url('./fonts/call_of_ops_duty-webfont.woff') format('woff'),
-         url('./fonts/call_of_ops_duty-webfont.ttf') format('truetype'),
-         url('./fonts/call_of_ops_duty-webfont.svg#call_of_ops_dutyregular') format('svg');
+    src: url('../fonts/call_of_ops_duty-webfont.eot');
+    src: url('../fonts/call_of_ops_duty-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/call_of_ops_duty-webfont.woff2') format('woff2'),
+         url('../fonts/call_of_ops_duty-webfont.woff') format('woff'),
+         url('../fonts/call_of_ops_duty-webfont.ttf') format('truetype'),
+         url('../fonts/call_of_ops_duty-webfont.svg#call_of_ops_dutyregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -7154,6 +7154,7 @@ img.a-user {
     .web-design .stock > .col-sm-5,
     .web-design .wrapper-text-left.pull-left {
         margin-left: -15px;
+        padding-left: 15px;
     }
     .web-design .dowl {
         font-size: 12px;
@@ -7493,7 +7494,7 @@ img.a-user {
         padding: 0 10px; 
     }
     .web-design .btn-prizes {
-        top: -145px;
+        top: -135px;
     }
     .web-design .date-start {
         margin-top: -130px;
