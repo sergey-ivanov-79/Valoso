@@ -9,16 +9,28 @@
          url('./fonts/jack_frost-webfont.svg#jack_frostregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
+}
+@font-face {
+    font-family: 'call_of_ops_dutyregular';
+    src: url('./fonts/call_of_ops_duty-webfont.eot');
+    src: url('./fonts/call_of_ops_duty-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/call_of_ops_duty-webfont.woff2') format('woff2'),
+         url('./fonts/call_of_ops_duty-webfont.woff') format('woff'),
+         url('./fonts/call_of_ops_duty-webfont.ttf') format('truetype'),
+         url('./fonts/call_of_ops_duty-webfont.svg#call_of_ops_dutyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
 .web-design {
     font-family: 'Ebrima', sans-serif;
-    /*background-color: #D1D0D2;*/
 }
-.inner-date-start {
+.web-design .inner-web-design  {
+    box-shadow: 1px 3px 5px #000;
+}
+.web-design .inner-date-start {
     padding: 0 40px;
 }
-.wrapper-stock-bg-footer {
+.web-design .wrapper-stock-bg-footer {
     background-color: #D1D0D2;
 }
 .web-design .bg-top.bg-top-web {
@@ -30,8 +42,11 @@
 .web-design .p-22 {
     font-family: 'Ebrima', sans-serif;
     font-size: 18px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     line-height: 1.6;
+}
+.web-design .inner-date-start .h3 {
+    font-family: 'call_of_ops_dutyregular', sans-serif;
 }
 .web-design.new-landing-page .carousel-capt {
     text-align: left;
@@ -87,7 +102,7 @@
 }
 .web-design .name-section {
     max-width: 480px;
-    margin-top: -30px;
+    margin-top: -23px;
 }
 .web-design .stock {
     padding-bottom: 20px;
@@ -111,13 +126,13 @@
 .web-design .inner-text-left .media {
     margin-top: 5px;
 }
-.to-apply {
+.web-design .to-apply {
     background-color: #7d2566;
 }
-.to-apply > .text-center {
+.web-design .to-apply > .text-center {
     margin: 40px;
 }
-.to-apply .h2 {
+.web-design .to-apply .h2 {
     font-family: 'jack_frostregular', sans-serif; 
     background-color: #9a2382;
     border-radius: 0 0 0 10px;
@@ -126,7 +141,7 @@
     padding-top: 10px;
     padding-bottom: 15px;
 }
-.to-apply .img-responsive  {
+.web-design .to-apply .text-center .img-responsive  {
     margin: 0 auto;
     border-radius: 100px;
 }
@@ -136,42 +151,55 @@
     left: 0;
     margin-bottom: -180px;
 }
-.date-start {
+.web-design .date-start {
     color: #fff;
     padding-bottom: 30px;
 }
-.web-design .btn-prizes a {
-
+.mobile-line {
+    display: none;
+}
+.web-design .to-apply .name-section {
+    display: none;
+}
+.web-design .line-bottom-img {
+    background: url(../images/WebDesign/JPG/line-bottom-img-mobile.jpg);
+    background-repeat: repeat-x;
+    height: 30px;
+    position: relative;
+}
+.wrapp-images .line-bottom-img {
+    display: none;
+}
+.web-design .end-date span span:first-child {
+    display: none;
 }
 @media (min-width: 1200px) {
-    .web-design .line-width-100 {
-        width: 100%;
-    }
     .web-design .dop-col-xs-5 {
-        margin-left: -50px;
+        margin-left: -30px;
     }
 }
 @media (max-width: 1300px) {
     .web-design .p-22 {
-        font-size: 22px;
+        font-size: 19px;
         margin-bottom: 15px;
         line-height: 1.4;
     }
 }
 @media (max-width: 1200px) {
-    .web-design .p-22 {font-size: 20px;
-        margin-bottom: 15px;
+    .web-design .p-22 {
+        font-size: 18px;
+        margin-bottom: 22px;
     }
     .web-design .carousel-capt {
         margin-top: -20px;
     }
-    .inner-date-start {
-        padding-left: 15px;
+    .web-design .dop-col-xs-5 {
+        margin-left: -30px;
     }
 }
 @media (max-width: 1060px) {
     .web-design .p-22 {
-        font-size: 18px;
+        margin-bottom: 15px;
     }
     .web-design .carousel-capt {
         margin-top: -35px;
@@ -179,19 +207,19 @@
     .web-design .inner-text-left .media {
         margin-top: 0px;
     }
+    .web-design .inner-date-start .media {
+        margin-top: 5px;
+    }
 }
 @media (max-width: 991px) {
     .web-design .p-22 {
-        font-size: 16px;
+        font-size: 14px;
+        margin-bottom: 3px;
     }
     .web-design .carousel-capt {
         margin-top: -10px;
     }
-
-    .inner-date-start {
-        padding-left: 0px;
-    }
-    .date-start {
+    .web-design .date-start {
         padding-bottom: 10px;
     }
 }
@@ -199,7 +227,6 @@
     .web-design .p-22 {
         font-size: 14px;
         line-height: 1.4;
-        margin-bottom: 10px;
     }
     .web-design .carousel-capt {
         margin-top: -10px;
@@ -217,14 +244,12 @@
     .web-design .p-22 {
         margin-bottom: 5px;
     }
-    .web-design .line-width-100 {
-        margin-left: -15px;
-    }
     .web-design .wrapper-stock-bg-footer {
         margin-right: -15px;
         margin-left: -15px;
     }
-    .stock > .col-sm-5 {
+    .web-design .stock > .col-sm-5,
+    .web-design .wrapper-text-left.pull-left {
         margin-left: -15px;
     }
     .web-design .dowl {
@@ -252,27 +277,23 @@
     .web-design .text-left {
         color: #fff;
     }
-    .left-right-images > .col-sm-5 {
+    .web-design .left-right-images > .col-sm-5 {
         margin-left: -15px;
-    }
-    .line-width-100 {
-        z-index: 2;
-        position: relative;
     }
     .web-design .name-section img {
         position: relative;
         z-index: 3;
     }
-    .inner-text-left {
+    .web-design .inner-text-left {
         font-size: 12px;
     }
     .web-design .bg-footer-prize {
         background-size: contain;
     }
-    .to-apply > .text-center {
+    .web-design .to-apply > .text-center {
         margin: 10px;
     }
-    .to-apply {
+    .web-design .to-apply {
         margin-left: -15px;
     }
     .web-design .btn-prizes {
@@ -284,54 +305,81 @@
         margin: 0 auto;
         width: 55%;
     }
-    .date-start {
+    .web-design .date-start {
         padding-bottom: 0px;
     }
-    .inner-date-start .media {
+    .web-design .inner-date-start .h3 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .web-design .inner-date-start .media {
         background: #070707;
         padding-left: 15px;
+        padding-right: 15px;
     }
-    .inner-date-start .media {
+    .web-design .inner-date-start .media {
         margin-top: 0px;
     }
-    .wrapp-images {
+    .web-design .wrapp-images {
         padding-bottom: 0px; 
     }
-    .inner-date-start {
-        font-size: 15px;
+    .web-design .inner-date-start {
+        font-size: 14px;
     }
-    .to-apply {
+    .web-design .to-apply {
         background-color: #922168;
     }
-    .to-apply .img-responsive.hidden-sm {
+    .web-design .to-apply .img-responsive.hidden-sm {
         margin-top: -14px;
         position: relative;
         right: -20px;
     } 
+    .web-design .dop-col-xs-5 {
+        margin-left: 0px; 
+    }
+    .wrapper-stock-bg-footer {
+        background-color: #434142;
+    }
+    .web-design .date-start {
+        margin-top: -30px;
+    }
+    .web-design .inner-date-start {
+        padding: 0px;
+    }
+    .line-bottom-img.line-bottom-img-first {
+        margin: 0 -15px;
+    }
+    .wrapp-images .line-bottom-img {
+        display: block;
+    }
+    .web-design .name-section {
+        margin-top: -36px;
+    }
+
 }
 @media (max-width: 660px) { 
-    .web-design .carousel-capt {
-        margin-top: -10px;
-    }
-    .inner-date-start .h3 {
+    .web-design .inner-date-start .h3 {
         margin: 0;
-    }
-}
-@media (max-width: 639px) { 
-    .web-design .bg-top.bg-top-web {
-        min-height: 440px;
     }
     .web-design .carousel-capt {
         margin-top: 0px;
     }
+}
+@media (max-width: 639px) { 
     .web-design .p-22 {
         font-size: 12px;
     }
-    .dop-col-xs-6, .dop-col-xs-5 {
+    .web-design .dop-col-xs-6, .web-design .dop-col-xs-5 {
         margin-left: 0px !important;
     }
-    .orange {
+    .web-design .orange {
         color: #edbd34;
+    }
+    .web-design .bg-top.bg-top-web {
+        min-height: 410px;
+    }
+    .web-design .carousel-capt {
+        margin-top: 10px;
     }
 }
 @media (max-width: 567px) {
@@ -351,9 +399,6 @@
         margin-left: 2px;
         margin-right: 2px;
     }
-    .name-section img {
-        margin-left: -40px;
-    }
     .web-design .bg-top.bg-top-web {
         min-height: 410px;
     }
@@ -363,6 +408,98 @@
     .web-design .stock-img > div {
         border: 2px solid #fff;
     }
+    .web-design .wrapper-stock-bg-footer {
+        background-color: #000;
+    }
+    .web-design .left-right-images > .col-sm-5 {
+        width: 100%;
+        margin-left: 0;
+        background: #6c0646;
+    }
+    .web-design .wrapper-text-left .col-xs-6 {
+        width: 100%;
+    }
+    .web-design .inner-text-left {
+        font-size: 14px;
+    }
+    .mobile-line {
+        display: block;
+    }
+    .web-design .name-section {
+        margin-top: -45px;
+    }
+    .web-design .to-apply img.hidden-xs {
+        display: block !important;
+        border-radius: 0px;
+    }
+    .web-design .to-apply .name-section {
+        margin-top: -32px;
+        margin-right: 15px;
+        display: block;
+    }
+    .web-design .to-apply > .text-center {
+        margin: 0 20px 5px;
+    }
+    .web-design .to-apply {
+        margin-right: -15px;
+    }
+    .web-design .to-apply .hidden-sm.visible-xs {
+        display: none !important;
+    }
+    .wrapper-to-apply {
+        width: 100%;
+    }
+    .web-design .to-apply {
+        background: #ec71be;
+        border-top: 6px solid #390224;
+        border-bottom: 4px solid #390224;
+    }
+    .web-design .prizes-bg {
+        background-image: url(../images/WebDesign/JPG/bg-footer-new-2.jpg);
+        background-repeat: no-repeat;
+        position: relative;
+        padding-bottom: 0%;
+        background-size: cover;
+        background-position: center center;
+        display: block;
+        padding-top: 100%;
+    }
+    .web-design .bg-footer-prize {
+        background: none;
+    }
+    .web-design .date-start {
+        float: left;
+    }
+    .web-design .btn-prizes .img-responsive.hidden-sm.visible-xs {
+        float: left;
+    }
+    .web-design .inner-date-start .media {
+        background: none;
+    }
+    .web-design .btn-prizes {
+        top: -220px;
+    }
+    .web-design .btn-prizes .img-responsive.hidden-sm.visible-xs {
+        width: 90%;
+    }
+    .web-design .date-start {
+        margin-top: -190px;
+    }
+    .web-design .stock {
+        padding-bottom: 0px;
+    }
+    .web-design .end-date > span {
+        display: block;
+    }
+    .web-design .end-date > span  span:first-child {
+        display: inline-block;
+    }
+    .web-design .inner-date-start .pull-left.orange {
+        float: none !important;
+    }
+    .web-design .inner-date-start .media .media-body.first {
+        font-weight: 600;
+    }
 }
 @media (max-width: 480px) {
     .web-design .bg-top.bg-top-web {
@@ -371,17 +508,37 @@
     .web-design .p-22 {
         font-size: 10px;
     }
+    .web-design .carousel-capt {
+        margin-top: -5px;
+    }
+    .web-design .btn-prizes {
+        top: -185px;
+    }
 }
 @media (max-width: 479px) { 
-    .web-design .carousel-capt {
-        margin-top: -30px;
-    }
     .web-design.new-landing-page .intro-1-home-2 h2 {
         font-size: 14px;
     }
-    .to-apply .img-responsive.hidden-sm {
+    .web-design .to-apply .img-responsive.hidden-sm {
         margin-top: -9px;
         right: -15px;
+    }
+    .web-design .inner-text-left {
+        font-size: 11px;
+    }
+    .web-design .wrapper-stock-img li img {
+        border-width: 2px;
+    }
+    .web-design .dowl {
+        padding: 1px 5px;
+    }
+    .web-design .to-apply .name-section {
+        margin-top: -25px;
+    }
+}
+@media (max-width: 450px) {
+    .web-design .carousel-capt {
+        margin-top: -20px;
     }
 }
 @media (max-width: 410px) { 
@@ -391,22 +548,39 @@
     .web-design .bg-top.bg-top-web {
         min-height: 320px;
     }
-    .web-design .btn-prizes .img-responsive.hidden-sm.visible-xs {
-        width: 60%;
+    .web-design .btn-prizes {
+        top: -145px;
     }
-    .to-apply .img-responsive.hidden-sm {
+    .web-design .to-apply .img-responsive.hidden-sm {
         right: -10px;
+    }
+    .web-design .date-start {
+        margin-top: -155px;
+    }
+    .web-design .inner-date-start .h3 {
+        font-size: 20px;
+    }
+    .web-design .inner-date-start {
+        font-size: 13px;
+    }
+    .web-design .carousel-capt {
+        margin-top: -20px;
+    }
+}
+@media (max-width: 375px) { 
+    .web-design .carousel-capt {
+        margin-top: -35px;
     }
 }
 @media (max-width: 359px) { 
-    .dop-col-xs-5 {
+    .web-design .dop-col-xs-5 {
         width: 100%;
     }
     .web-design .bg-top.bg-top-web {
         min-height: 280px;
     }
     .web-design .carousel-capt {
-        margin-top: -20px;
+        margin-top: -10px;
     }
     .web-design .p-22 {
         font-size: 8px;
@@ -414,6 +588,21 @@
     .web-design .carousel-capt .col-xs-6, 
     .web-design .carousel-capt .col-xs-12 {
         padding: 0 10px; 
+    }
+    .web-design .btn-prizes {
+        top: -120px;
+    }
+    .web-design .date-start {
+        margin-top: -130px;
+    }
+    .web-design .inner-date-start .h3 {
+        font-size: 16px;
+    }
+    .web-design .inner-date-start {
+        font-size: 11px;
+    }
+    .web-design .name-section {
+        margin-top: -40px;
     }
 }
 /* / web-design */ 
