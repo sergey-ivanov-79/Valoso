@@ -130,7 +130,7 @@
     background: #bfbebe;
 }
 .web-design .text-left {
-    padding: 0px 15px 10px 10px;
+    padding: 0px 15px 20px 10px;
     color: #4c4c4d;
 }
 .web-design .inner-text-left .media {
@@ -161,9 +161,8 @@
     left: 0;
     margin-bottom: -180px;
 }
-.web-design .date-start {
+.web-design .wrapper-date-start {
     color: #fff;
-    padding-bottom: 30px;
 }
 .web-design .mobile-line {
     display: none;
@@ -209,6 +208,18 @@
 .btn-to-apply:hover img.last {
     display: block;
 }
+.wrapper-terms-and-cond {
+    padding: 0px 50px
+}
+.terms-and-cond {
+    display: inline-block;
+    color: #EDB846;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+.terms-and-cond:hover {
+    color: #febf17;
+}
 @media (min-width: 1200px) {
     .web-design .dop-col-xs-5 {
         margin-left: -30px;
@@ -246,6 +257,9 @@
     .web-design .inner-date-start .media {
         margin-top: 5px;
     }
+    .web-design .btn-prizes {
+        top: -85px;
+    }
 }
 @media (max-width: 991px) {
     .web-design .p-22 {
@@ -255,15 +269,18 @@
     .web-design .carousel-capt {
         margin-top: -10px;
     }
-    .web-design .date-start {
-        padding-bottom: 10px;
-    }
     .web-design .name-section {
         margin-top: -36px;
     }
     .motion {
         width: 205px;
         margin-left: -15px;
+    }
+    .web-design .inner-date-start {
+        font-size: 16px;
+    }
+    .web-design .btn-prizes {
+        top: -102px;
     }
 }
 @media (max-width: 910px) {
@@ -385,7 +402,7 @@
         background-color: #434142;
     }
     .web-design .date-start {
-        margin-top: -30px;
+        margin-top: -25px;
     }
     .web-design .inner-date-start {
         padding: 0px;
@@ -418,6 +435,14 @@
         width: 160px;
         bottom: -4%;
         margin-left: -30px;
+    }
+    .wrapper-terms-and-cond {
+        padding: 0px 15px;
+    }
+}
+@media (max-width: 767px) and (min-width: 568px) {
+    .wrapper-terms-and-cond {
+        background: #070707;
     }
 }
 @media (max-width: 660px) { 
@@ -571,6 +596,9 @@
         bottom: -8%;
         left: 36%;
     }
+    .terms-and-cond {
+        margin-top: 0px;
+    }
 }
 @media (max-width: 480px) {
     .web-design .bg-top.bg-top-web {
@@ -611,6 +639,9 @@
         bottom: -8%;
         left: 40%;
     }
+    .web-design .inner-date-start .h3 {
+        font-size: 18px;
+    }
 }
 @media (max-width: 450px) {
     .web-design .carousel-capt {
@@ -633,9 +664,6 @@
     .web-design .date-start {
         margin-top: -155px;
     }
-    .web-design .inner-date-start .h3 {
-        font-size: 20px;
-    }
     .web-design .inner-date-start {
         font-size: 13px;
     }
@@ -647,6 +675,10 @@
         bottom: -10%;
         left: 42%;
     }
+    .wrapper-terms-and-cond {
+        background: #070707;
+    }
+
 }
 @media (max-width: 375px) { 
     .web-design .carousel-capt {
