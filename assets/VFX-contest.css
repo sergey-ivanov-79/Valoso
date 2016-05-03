@@ -71,7 +71,7 @@
     transition: all 0.3s linear; 
 }
 .web-design .wrapper-stock-img .stock-img:hover img {
-    border: 4px solid #858585;
+    border-color: #858585;
 }
 .web-design .inner-stock-img {
     margin-left: 5px;
@@ -96,6 +96,7 @@
 .web-design .dowl:hover {
     background: #fff;
     color: #858585;
+    text-decoration: none !important;
 }
 .web-design .dowl .fa-play {
     margin-top: 3px;
