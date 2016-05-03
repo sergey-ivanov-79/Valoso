@@ -7655,6 +7655,9 @@ img.a-user {
 .competition {
   color: #fff;
 }
+.inner-competition {
+  box-shadow: 1px 3px 5px #000;
+}
 .competition-bg-top {
   background-image: url(../images/Competition/competition-bg-top.jpg);
   background-repeat: no-repeat;
