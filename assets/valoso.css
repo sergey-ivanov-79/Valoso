@@ -6684,7 +6684,8 @@ img.a-user {
     float: right !important; 
 }
 .apply-modal .upload-holder {
-    padding: 15px 0px;
+    padding: 20px 0px; 
+    text-align: center;
 }
 #applyModal.apply-modal textarea.form-control, 
 #applyModal.apply-moda .modal-body label {
@@ -6705,9 +6706,11 @@ img.a-user {
     float: left;
     margin-right: 5px;
     margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: middle;
 }
 .apply-modal .inputFileContainer:last-child {
-    margin-right: opx;
+    margin-right: 0px;
 }
 .apply-modal .fileWrapper {
     position: absolute;
@@ -6897,6 +6900,12 @@ img.a-user {
     }
     #applyModal.apply-modal .row.cartNZD.wid-xs {
         margin-bottom: 0;
+    }
+    .apply-modal .wrapper-modal-price .modal-price {
+        float: none;
+    }
+    #applyModal.apply-modal .row.cartNZD.wid-xs {
+        float: none !important;
     }
 }
 /*-------------------------------------------------------------*/
