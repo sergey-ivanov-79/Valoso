@@ -6753,7 +6753,9 @@ img.a-user {
     color: #fff;
     border: 1px solid #428bca;
 }
-
+#applyModal.applyModal .form-control#price {
+    width: 72px;
+}
 /* / apply modal */ 
 @media (min-width: 768px) {
     .applyModal .modal-dialog {
@@ -6897,6 +6899,7 @@ img.a-user {
     }
     .apply-modal .currency-holder {
         margin-top: 0;
+        width: 100%;
     }
     #applyModal.apply-modal .row.cartNZD.wid-xs {
         margin-bottom: 0;
