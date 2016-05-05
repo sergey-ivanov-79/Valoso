@@ -6684,7 +6684,7 @@ img.a-user {
     float: right !important; 
 }
 .apply-modal .upload-holder {
-    padding: 20px 0px; 
+    padding: 20px 0px !important; 
     text-align: center;
 }
 #applyModal.apply-modal textarea.form-control, 
@@ -6703,7 +6703,7 @@ img.a-user {
 }
 .apply-modal .inputFileContainer {
     position: relative;
-    float: left;
+    /*float: left;*/
     margin-right: 5px;
     margin-bottom: 10px;
     display: inline-block;
@@ -6743,7 +6743,7 @@ img.a-user {
     border: 1px solid #428bca;
     text-decoration: none;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 12px;
 }
 .attachmentAddItem a:hover,
 .attachmentAddItem a:active,
