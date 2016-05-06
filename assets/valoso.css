@@ -6194,7 +6194,7 @@ body, body div {
     font-weight: 600;
 }
 .header-dop .navbar-default .navbar-nav>li>a {
-    font-size: 15px;
+    font-size: 14px;
     padding: 10px;
 }
 .navbar-mobile {
@@ -8140,5 +8140,12 @@ img.a-user {
   .conditions {
     padding: 0 45px 5px;
   }
+}
+.gif {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background-image: url('../assets/img/ajax-loader-fb-big.gif');
+    background-repeat: no-repeat;
 }
 /* /competition */
