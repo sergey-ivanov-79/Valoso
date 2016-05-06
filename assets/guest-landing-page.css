@@ -587,7 +587,7 @@ a.blue-color:hover {
 }
 
 .overlay-wrapper, .overlay-wrapper2 {
-    z-index: 1049;
+    z-index: 1050;
     display: none;
     position: absolute;
 }
