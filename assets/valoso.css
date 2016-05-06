@@ -8141,11 +8141,4 @@ img.a-user {
     padding: 0 45px 5px;
   }
 }
-.gif {
-    width: 32px;
-    height: 32px;
-    margin: 0 auto;
-    background-image: url('../images/ajax-loader-fb-big.gif') !important;
-    background-repeat: no-repeat;
-}
 /* /competition */
