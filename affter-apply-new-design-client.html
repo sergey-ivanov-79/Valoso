@@ -111,7 +111,7 @@
 <!-- ****************************************** apply-page ******************************************* -->
 <div class="video-project-director video-project-editor video-project-view apply-page"><!-- apply-page -->
 
-  <div class="container padd-0-10 apply-page-editor"><!-- container padd-0-10 -->
+  <div class="container padd-0-10 apply-page-client"><!-- container padd-0-10 -->
 
     <h3>Project title goes here<span class="p-18 lighter clearfix">Posted 23 hours ago </span></h3>
 
@@ -146,16 +146,63 @@
       </div><!-- / job-overview -->
     </div><!-- / video-description-right -->
 
-    <div class=" video-description-left vidljiv"><!-- video-description-left  -->
+    <div class="video-description-left vidljiv"><!-- video-description-left  -->
       <div class="left-content"><!-- left-content  -->
           <!-- Nav tabs -->
           <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="active"><a href="#details" aria-controls="details" role="tab" data-toggle="tab">Details</a></li>
+            <li role="presentation" class="active"><a href="#application" aria-controls="application" role="tab" data-toggle="tab">APPLICATION</a></li>
+            <li role="presentation"><a href="#details" aria-controls="details" role="tab" data-toggle="tab">Details</a></li>
           </ul>
 
           <!-- Tab panes -->
           <div class="tab-content"><!-- tab-content  -->
-            <div role="tabpanel" class="tab-pane active" id="details"><!-- details  -->
+
+            <div role="tabpanel" class="tab-pane active" id="application"><!-- application  -->
+              <div class="top-applied clearfix">
+                <p class="pull-left pink">You have already <br class="apply-br"> applied for this project</p>
+                <span class="pull-right"><img src="./images/apply-new-design/pencil.png" alt=""><span class="">UPDATE</span></span>
+              </div>
+              <div class="inner-info">
+                <h4 class="h4">My bid</h4>
+                <p>USD $50</p>
+              </div>
+              <div class="inner-info">
+                <h4 class="h4">What do you get</h4>
+                <p>USD $40</p>
+              </div>
+              <div class="inner-info">
+                <h4 class="h4 h4-line-bottom">DEADLINEs</h4>
+              </div>
+              <div class="inner-info">
+                <h4 class="h4 black-text">Final creative script:</h4>
+                <p>May 21, 2016</p>
+              </div>
+              <div class="inner-info">
+                <h4 class="h4 black-text">First video script:</h4>
+                <p>May 21, 2016</p>
+              </div>
+              <div class="inner-info">
+                <h4 class="h4 black-text">Video project completion:</h4>
+                <p>May 21, 2016</p>
+              </div>
+              <div class="inner-info">
+                <h4 class="h4">Script</h4>
+                <p><a href="#">Click to view script</a></p>
+              </div>
+              <div class="inner-info">
+                <h4 class="h4">DRAFT STORY BOARD</h4>
+                <div class="inner-info-draft">
+                  <img src="./images/video-project/vn1.jpg">
+                  <img src="./images/video-project/vn1.jpg">
+                  <img src="./images/video-project/vn1.jpg">
+                  <img src="./images/video-project/vn1.jpg">
+                  <img src="./images/video-project/vn1.jpg">
+                </div>
+              </div>
+              <div class="project-files-buttons hidden-sm visible-xs" "><div class="save-project-button"></div></div>
+            </div><!-- / application  -->
+
+            <div role="tabpanel" class="tab-pane" id="details"><!-- details  -->
                 <div class="inner-info">
                   <h4 class="h4">Post production requirements:</h4>
                   <p>Lorem ipsum dolor sit amet.</p>
@@ -244,7 +291,7 @@
       </div><!-- / posted-by -->
     </div><!-- / video-description-right -->
 
-    <div class="video-project-director"><!-- video-project-director -->
+        <div class="video-project-director"><!-- video-project-director -->
       <div class="project-files"><!-- project-files -->
         <h3>Project Files <img src="images/video-project/info-icon.png" alt="Hover for more info." data-toggle="tooltip" data-placement="top" title="" data-original-title="Video and picture files that make up the video project. These are the assets the Video Editor will work with."><span><button id="video-expandall">Expand All</button><button id="video-collapseall">Collapse All</button></span></h3>
         <div class="video-download">
@@ -381,7 +428,6 @@
         </ol><!-- / video-list -->
       </div><!-- / project-files -->
     </div><!-- / video-project-director -->
-     
 
   </div> <!-- / container padd-0-10 -->
 
@@ -583,7 +629,6 @@
 <!-- /Modal -->
 
 <a href="#header-top" class="anchor upArrow" style="display: none;"><img src="images/to-top-arrow.png"></a>
-
 <!-- Modal -->
 <div class="modal fade" id="loginBox" tabindex="-1" role="dialog" aria-labelledby="loginBoxLabel" aria-hidden="true">
   <div class="modal-dialog">

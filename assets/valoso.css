@@ -2452,6 +2452,12 @@ img.video-edit {
   .video-project-editor .container > h3 {
     background-image: url('../images/video-project/p-editor.png');
   }
+  .video-project-editor .container.apply-page-editor > h3 {
+    background-image: url('../images/video-project/p-editor.png');
+  }
+  .video-project-editor .container.apply-page-client > h3 {
+    background-image: url('../images/video-project/p.png');
+  }
   .video-project-editor .uploader-info-button > button {
     background-color: #5dff60;
     border-color: #5dff60;
@@ -6314,8 +6320,11 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
 .apply-page .video-description-left {
     padding-left: 15px;
 }
-.left-content .nav-tabs {
+.apply-page-editor .left-content .nav-tabs {
     border-bottom: 3px solid #00e183;
+}
+.apply-page-client .left-content .nav-tabs {
+    border-bottom: 3px solid #4CCBFF;
 }
 .left-content .nav-tabs li a {
     text-transform: uppercase;
@@ -6362,8 +6371,13 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
     color: #00e183;
     background-color: #ffffff;
 }
-.apply-page .project-files-buttons .save-project-button {
+.apply-page .apply-page-editor .project-files-buttons .save-project-button {
     border-top: 3px solid #00e183;
+    padding-right: 0 !important;
+    margin-left: -15px;
+}
+.apply-page .apply-page-client .project-files-buttons .save-project-button {
+    border-top: 3px solid #4CCBFF;
     padding-right: 0 !important;
     margin-left: -15px;
 }
@@ -6389,8 +6403,15 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
 .inner-job-overview, .inner-posted-by {
     border: 1px solid #cecdcd;
     border-top-width: 0px;
-    background-color: #f1fef9;
     padding: 15px 15px 10px 15px;
+}
+.apply-page-editor .inner-job-overview,
+.apply-page-editor .inner-posted-by {
+    background-color: #dafeef;
+}
+.apply-page-client .inner-job-overview,
+.apply-page-client .inner-posted-by {
+    background-color: #e0f2fb;
 }
 .inner-job-overview .category {
     margin-top: 5px;
