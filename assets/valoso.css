@@ -6678,7 +6678,7 @@ img.a-user {
     color: #555;
 }
 #chat {
-    margin: 15px;
+    margin: 15px 0;
     -webkit-box-shadow: 1px 2px 0 #e5eaee;
     box-shadow: 1px 2px 0 #e5eaee;
     padding: 15px;
@@ -8163,3 +8163,6 @@ img.a-user {
   }
 }
 /* /competition */
+.user-proposal-single .color-blue.bold {
+    text-transform: uppercase;
+}
