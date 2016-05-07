@@ -6348,6 +6348,16 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
 .left-content .nav > li.active > a {
     background: none #555555;
 }
+.inner-job-overview .category li {
+    float: left;
+    padding: 2px 7px;
+    background: #555555;
+    font-size: 14px;
+    list-style: none;
+    color: #fff;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
 .apply-page .project-files-buttons .save-project-button button.btn-apply {
     text-transform: uppercase;
     color: #fff;
@@ -6367,6 +6377,16 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
 }
 .apply-page .project-files-buttons .save-project-button button.btn-apply:hover,
 .apply-page .project-files-buttons .save-project-button button.btn-apply:focus {
+    border-color: #00e183;
+    color: #00e183;
+    background-color: #ffffff;
+}
+.project-files-buttons .save-project-button button {
+    background-color: #00e183;
+    border: solid 1px transparent;
+}
+.project-files-buttons .save-project-button button:hover,
+.project-files-buttons .save-project-button button:focus {
     border-color: #00e183;
     color: #00e183;
     background-color: #ffffff;
