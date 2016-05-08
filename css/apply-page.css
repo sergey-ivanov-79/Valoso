@@ -251,7 +251,7 @@ width: 85%;
 }
 #chat .media-list {
 margin-bottom:0;
-  height: 350px;
+  max-height: 350px;
   overflow-y: scroll;
 }
 #chat .media-list .media {

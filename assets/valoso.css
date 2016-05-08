@@ -6589,6 +6589,14 @@ img.a-user {
 .inner-info-draft img {
     margin-top: 5px;
     margin-bottom: 5px;
+    width: 20%;
+    margin-right: 1%;
+    vertical-align: middle;
+    display: inline-block;
+}
+.inner-info-draft .gallery a {
+    outline: none !important;
+    text-decoration: none !important; 
 }
 .apply-page .video-description-right {
     padding-right: 0px;
@@ -8165,4 +8173,12 @@ img.a-user {
 /* /competition */
 .user-proposal-single .color-blue.bold {
     text-transform: uppercase;
+}
+.messages-holder .media-list .img-circle {
+    border: 1px solid #ccc;
+}
+.messages-heading .messages-title {
+    color: #fd9f6d;
+    text-transform: uppercase;
+    font-weight: 600;
 }

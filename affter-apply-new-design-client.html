@@ -192,11 +192,20 @@
               <div class="inner-info">
                 <h4 class="h4">DRAFT STORY BOARD</h4>
                 <div class="inner-info-draft">
-                  <img src="./images/video-project/vn1.jpg">
-                  <img src="./images/video-project/vn1.jpg">
-                  <img src="./images/video-project/vn1.jpg">
-                  <img src="./images/video-project/vn1.jpg">
-                  <img src="./images/video-project/vn1.jpg">
+                  <div class="gallery text-center">
+                    <a href="./images/slide-V-2.jpg" style="max-width: 100%; max-height: 100%;" class="group1" title="Figure 1.1.2">
+                      <img src="./images/slide-V-2.jpg">
+                    </a>
+                    <a href="./images/p-2.jpg" style="max-width: 100%; max-height: 100%;" class="group1" title="Figure 1.1.1">
+                      <img src="./images/p-2.jpg">
+                    </a>
+                    <a href="./images/logo-b.png" style="max-width: 100%; max-height: 100%;" class="group1" title="Figure 1.1.3">
+                      <img src="./images/logo-b.png">
+                    </a>
+                    <a href="./images/s5.jpg" style="max-width: 100%; max-height: 100%;" class="group1" title="Figure 1.1.4">
+                      <img src="./images/s5.jpg">
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="project-files-buttons hidden-sm visible-xs" "><div class="save-project-button"></div></div>
@@ -1457,6 +1466,17 @@ $('.popup-youtube').magnificPopup({
     }
     }
   }
+});
+</script>
+<script>
+$('.gallery').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+    });
 });
 </script>
 <!-- / magnific-popup -->
