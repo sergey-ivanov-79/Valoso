@@ -5947,6 +5947,9 @@ a.word-break-normal {
     .contracts {
         font-size: 16px;
     }
+    .save-project-button #not-interested {
+        display: block;
+    }
 }
 @media (max-width: 767px) {
     .payment-content {
@@ -5962,6 +5965,7 @@ a.word-break-normal {
         font-size: 12px;
         line-height: 1.2 !important;
         padding: 0px 3px;
+        font-weight: 300;
     }
     .navbar-brand.navbar-brand-mobile .angle {
         display: none;
@@ -5998,6 +6002,9 @@ a.word-break-normal {
     }
     .payment-right-block, .inner-data-card .col-xs-dop-4 {
         font-size: 15px;
+    }
+    .save-project-button {
+        text-align: center;
     }
 }
 @media (max-width: 479px) {
