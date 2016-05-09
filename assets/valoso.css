@@ -8205,3 +8205,6 @@ img.a-user {
 .user-proposal-single p.gray.p-15 {
     margin-bottom: 5px;
 }
+.inner-job-overview .media img {
+    margin-right: 0px;
+}
