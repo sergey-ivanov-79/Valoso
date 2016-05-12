@@ -6845,6 +6845,9 @@ img.a-user {
     .top-applied p, .top-applied span.pull-right span {
         font-size: 14px;
     }
+    .header-dop .navbar-nav {
+        float: right;
+    }
 }
 @media (max-width: 767px) {
     .apply-page .video-description-right, .apply-page .video-description-left {
