@@ -6813,6 +6813,18 @@ img.a-user {
 #applyModal.applyModal .form-control#price {
     width: 72px;
 }
+.due-dates-holder .row.error-wrapper {
+    margin-bottom: 15px;
+}
+.due-dates-holder .row.error-wrapper .col-sm-4 {
+    line-height: 1.2;
+}
+#applyModal .error-wrapper  textarea.error-field {
+    margin-bottom: 5px;
+}
+.error-field {
+    margin-bottom: 20px;
+}
 /* / apply modal */ 
 @media (min-width: 768px) {
     .applyModal .modal-dialog {
@@ -8207,4 +8219,13 @@ img.a-user {
 }
 .inner-job-overview .media img {
     margin-right: 0px;
+}
+@media (max-width: 480px) {
+    .preview-profile-wrapper .inner-info {
+         margin-left: 0px;
+    }
+    .preview-profile-wrapper .inner-info-draft {
+        margin-right: 0px;
+        padding: 5px;
+    }
 }
