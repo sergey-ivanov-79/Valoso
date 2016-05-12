@@ -6847,6 +6847,10 @@ img.a-user {
     }
     .header-dop .navbar-nav {
         float: right;
+        margin-right: 0;
+    }
+    .header-dop .navbar-right {
+        margin-right: 0;
     }
 }
 @media (max-width: 767px) {
