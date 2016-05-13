@@ -434,7 +434,13 @@ div#syncSocial .social-icons img {
 .added-sim-640.sim-640  .addition .user-exp-lang {
     margin-left: 15px;
 }
- 
+.added-sim-320.sim-320 .user-profile-left ul li:nth-of-type(5), 
+.added-sim-320.sim-320 .user-profile-left ul li:nth-of-type(6), 
+.added-sim-320.sim-320 .user-profile-left ul li:nth-of-type(7), 
+.added-sim-320.sim-320 .user-profile-left ul li:nth-of-type(8) {
+    width: 100%;
+    text-align: left;
+}
 .added-sim-320.sim-320 .wrapperMaterialTabs {
     padding: 0px;
 }
