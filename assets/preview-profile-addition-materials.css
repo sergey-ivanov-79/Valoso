@@ -427,16 +427,14 @@ div#syncSocial .social-icons img {
     margin-left: 15px;
     margin-bottom: 10px;
 } 
-.added-sim-320.sim-320 .addition .user-exp-lang {
-    margin-left: 15px;
-}
 .added-sim-320.sim-320 .hourly_rate {
     float: left;
 }
-.added-sim-640.sim-640 .user-exp-lang.user-exp-lang-marg {
+.added-sim-640.sim-640 .user-exp-lang.user-exp-lang-marg,
+.added-sim-640.sim-640  .addition .user-exp-lang {
     margin-left: 15px;
 }
-
+ 
 .added-sim-320.sim-320 .wrapperMaterialTabs {
     padding: 0px;
 }
