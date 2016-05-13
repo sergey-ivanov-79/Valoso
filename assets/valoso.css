@@ -6596,7 +6596,7 @@ img.a-user {
 .inner-info-draft img {
     margin-top: 5px;
     margin-bottom: 5px;
-    width: 20%;
+    width: 20% !important;
     margin-right: 1%;
     vertical-align: middle;
     display: inline-block;
