@@ -441,6 +441,14 @@ div#syncSocial .social-icons img {
     width: 100%;
     text-align: left;
 }
+.added-sim-640.sim-640 .col-xs-6.col-sm-4.portfolio-item {
+    width: 50%;
+}
+.added-sim-320.sim-320 .col-xs-6.col-sm-4.portfolio-item {
+    width: 100%;
+}
+
+
 .added-sim-320.sim-320 .wrapperMaterialTabs {
     padding: 0px;
 }
