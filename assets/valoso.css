@@ -6760,11 +6760,11 @@ img.a-user {
 }
 .apply-modal .inputFileContainer {
     position: relative;
-    /*float: left;*/
     margin-right: 5px;
     margin-bottom: 10px;
     display: inline-block;
     vertical-align: middle;
+    width: 20%;
 }
 .apply-modal .inputFileContainer:last-child {
     margin-right: 0px;
