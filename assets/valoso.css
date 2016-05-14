@@ -6718,6 +6718,10 @@ img.a-user {
     font: 400 10px/30px 'Open Sans';
     line-height: 10px;
 }
+
+.inner-job-overview > .media > .pull-left {
+    padding-right: 5px;
+}
 /* apply modal */
 
 .apply-modal .currency-holder {
@@ -6834,12 +6838,21 @@ img.a-user {
         max-width: 550px;
     }
 }
+@media (max-width: 1060px) {
+    .inner-job-overview {
+        font-size: 16px;
+    }
+}
 @media (max-width: 992px) {
     .video-des-wrap > p .popover-content div.clearfix, 
     .video-description-right .description-right-up > h4 .popover-content > div, 
     .single-video-description .popover-content > div {
         padding: 20px 10px 15px;
     }
+    .inner-job-overview {
+        font-size: 16px;
+    }
+
 }
 @media (max-width: 992px) and (min-width: 768px) {
     .top-applied p, .top-applied span.pull-right span {
