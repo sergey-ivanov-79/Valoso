@@ -422,6 +422,33 @@ div#syncSocial .social-icons img {
 .added-sim-320.sim-320 .MaterialElement > .rowThumbnail .ThumbnailContainer.no-border-right-min {
     border-right-width: 0px;
 }
+.sim-640 .user-profile-left ul li:nth-of-type(3) {
+    width: 70% !important;
+    margin-left: 15px;
+    margin-bottom: 10px;
+} 
+.added-sim-320.sim-320 .hourly_rate {
+    float: left;
+}
+.added-sim-640.sim-640 .user-exp-lang.user-exp-lang-marg,
+.added-sim-640.sim-640  .addition .user-exp-lang {
+    margin-left: 15px;
+}
+.added-sim-320.sim-320 .user-profile-left ul li:nth-of-type(5), 
+.added-sim-320.sim-320 .user-profile-left ul li:nth-of-type(6), 
+.added-sim-320.sim-320 .user-profile-left ul li:nth-of-type(7), 
+.added-sim-320.sim-320 .user-profile-left ul li:nth-of-type(8) {
+    width: 100%;
+    text-align: left;
+}
+.added-sim-640.sim-640 .col-xs-6.col-sm-4.portfolio-item {
+    width: 50%;
+}
+.added-sim-320.sim-320 .col-xs-6.col-sm-4.portfolio-item {
+    width: 100%;
+}
+
+
 .added-sim-320.sim-320 .wrapperMaterialTabs {
     padding: 0px;
 }

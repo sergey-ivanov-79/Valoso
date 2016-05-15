@@ -164,7 +164,7 @@
 .user-portfolio .add-new-portfolio {
     position: absolute;
     top: 50%;
-    margin-top: -152px;
+    margin-top: -295px;
     left: 50%;
     background-color: #fff;
     width: 564px;
@@ -393,7 +393,7 @@
 }
 @media(max-width: 639px) {
     .user-portfolio .add-new-portfolio {
-        margin-top: -152px;
+        margin-top: -295px;
         width: 284px;
         margin-left: -142px;
     }
