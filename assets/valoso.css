@@ -8299,7 +8299,7 @@ img.a-user {
     right: 0;
     bottom: 0;
     opacity: 1;  
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 .portfolio-item:hover .text-details {
     background: none repeat scroll 0% 0% rgba(0,0,0,.7);
@@ -8318,7 +8318,7 @@ img.a-user {
 }
 .portfolio-item:hover .text-details p {
     font-weight: 600;
-    transition: all 0.5s;
+    transition: all 0.3s;
 }
 
 
@@ -8327,7 +8327,7 @@ img.a-user {
 }
 .hover-eff  .portfolio-item .text-details {
 }
-.portfolio-item .text-details {
+.hover-eff .portfolio-item .text-details {
     bottom: 0;
     left: 0;
     right: 0;
@@ -8350,7 +8350,7 @@ img.a-user {
     margin-left: 10px;
     color: #ffffff;
 }
-.portfolio-item:hover .text-details {
+.hover-eff .portfolio-item:hover .text-details {
     background: none repeat scroll 0% 0% rgba(0,0,0,.7);
     bottom: 0;
     opacity: 1;
@@ -8363,6 +8363,6 @@ img.a-user {
     transform: translate3d(0px, 0px, 0px);
     cursor: pointer;
 }
-.portfolio-item:hover .text-details p {
+.hover-eff .portfolio-item:hover .text-details p {
     font-weight: 600;
 }
