@@ -6830,6 +6830,9 @@ img.a-user {
     margin-bottom: 20px;
 }
 /* / apply modal */ 
+body.group-blog header.header-guest .navbar-default .container .navbar-collapse .navbar-nav>li>a {
+    font-weight: 300;
+}
 @media (min-width: 768px) {
     .applyModal .modal-dialog {
         width: 600px;
@@ -6859,13 +6862,16 @@ img.a-user {
         font-size: 14px;
     }
     .faq-page .header-dop .navbar-nav,
-    .blog-page .header-dop .navbar-nav {
+    .group-blog .header-dop .navbar-nav {
         float: right;
         margin-right: 0;
     }
     .faq-page .header-dop .navbar-right,
-    .blog-page .header-dop .navbar-right {
+    .group-blog .header-dop .navbar-right {
         margin-right: 0;
+    }
+    body.group-blog header.header-guest .navbar-default .container .navbar-collapse .navbar-nav>li>a {
+        font-size: 14px;
     }
 }
 @media (max-width: 767px) {
