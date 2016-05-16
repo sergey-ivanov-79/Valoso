@@ -6615,11 +6615,11 @@ img.a-user {
 .inner-posted-by p {
     margin-bottom: 15px;
 }
-.video-description-right {
+.apply-page .video-description-right {
     float: right;
     width: 33.33333333%;
 }
-.video-description-left  {
+.apply-page .video-description-left  {
     width: 66.66666667%;
     float: left;
 }
