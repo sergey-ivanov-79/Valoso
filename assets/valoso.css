@@ -6857,7 +6857,7 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     }
 
 }
-@media (max-width: 992px) and (min-width: 768px) {
+@media (max-width: 991px) and (min-width: 768px) {
     .top-applied p, .top-applied span.pull-right span {
         font-size: 14px;
     }
