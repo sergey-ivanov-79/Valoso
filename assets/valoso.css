@@ -8327,7 +8327,7 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 .my-work-wrapper .dropdown-menu>li>a {
     color: #478bc9;
     font-size: 12px;
-    background: none;
+    background: none !important;
     white-space: normal;
 }
 .my-work-wrapper .dropdown-menu>li>a:hover {
