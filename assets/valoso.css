@@ -8312,7 +8312,7 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 
 .preview-profile-wrapper .badge {
     background-color: red;
-    padding: 3px 7px 3px 5px;
+    padding: 3px 7px 3px 5px !important;
 }
 .preview-profile-wrapper .my-work-wrapper button {
     color: #fff;
@@ -8320,6 +8320,17 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 .my-work-wrapper {
     line-height: 1 !important;
     margin-top: 20px;
+}
+.my-work-wrapper .dropdown-menu {
+    width: 176px;
+}
+.my-work-wrapper .dropdown-menu>li>a {
+    color: #478bc9;
+    font-size: 12px;
+    background: none;
+}
+.my-work-wrapper .dropdown-menu>li>a:hover {
+    color: #ff6385;
 }
 @media (max-width: 767px) {
     .header-dop.header-mobile .col-navbar {
