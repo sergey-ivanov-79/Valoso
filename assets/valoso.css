@@ -8309,3 +8309,20 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     font-weight: 600;
     transition: all 0.1s;
 }
+
+.preview-profile-wrapper .badge {
+    background-color: red;
+    padding: 3px 7px 3px 5px;
+}
+.preview-profile-wrapper .my-work-wrapper button {
+    color: #fff;
+}
+.my-work-wrapper {
+    line-height: 1 !important;
+    margin-top: 20px;
+}
+@media (max-width: 767px) {
+    .header-dop.header-mobile .col-navbar {
+        display: none;
+    }
+}
