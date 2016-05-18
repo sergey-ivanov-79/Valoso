@@ -8328,6 +8328,7 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     color: #478bc9;
     font-size: 12px;
     background: none;
+    white-space: normal;
 }
 .my-work-wrapper .dropdown-menu>li>a:hover {
     color: #ff6385;
