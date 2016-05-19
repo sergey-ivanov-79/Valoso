@@ -8346,4 +8346,7 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 .static-page-wrapper p span:hover {
     color: #23527c;
 }
+.static-page-wrapper p {
+    margin: 0;
+}
 /* END for FAQ page */
