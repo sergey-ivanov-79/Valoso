@@ -2090,7 +2090,7 @@ span.single-video-hover-buttons > button:nth-of-type(2):hover {
   padding-right: 15px !important;
   padding-left: 15px !important;
 }
-.bs-wizard .bs-wizard-step .bs-wizard-stepnum .fa {
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum .fa {
     font-size: 30px !important;
 }
 .project-files-buttons .save-project-button button {
@@ -4637,29 +4637,29 @@ a.anchor.upArrow {
 /* Begin for modal  Login */
 
 .bs-wizard {border-bottom: solid 1px #e0e0e0; padding: 0 0 10px 0;}
-.bs-wizard .bs-wizard-step {padding: 0; position: relative;}
-.bs-wizard .bs-wizard-step + .bs-wizard-step {}
-.bs-wizard .bs-wizard-step .bs-wizard-stepnum {color: #595959; font-size: 16px; margin-bottom: 5px;}
-.bs-wizard .bs-wizard-step .bs-wizard-info {color: #999; font-size: 14px;}
-.bs-wizard .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #337ab7; top: 45px; left: 50%; margin-top: -15px; margin-left: -15px; 
+.bs-wizard > .bs-wizard-step {padding: 0; position: relative;}
+.bs-wizard > .bs-wizard-step + .bs-wizard-step {}
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #595959; font-size: 16px; margin-bottom: 5px;}
+.bs-wizard > .bs-wizard-step .bs-wizard-info {color: #999; font-size: 14px;}
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #337ab7; top: 45px; left: 50%; margin-top: -15px; margin-left: -15px; 
     border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;}
-.bs-wizard .bs-wizard-step > .bs-wizard-dot:after {content: ' '; width: 14px; height: 14px; background: #24a5db; border-radius: 50px; -webkit-border-radius: 50px; -moz-border-radius: 50px; position: absolute; top: 8px; left: 8px; }
-.bs-wizard .bs-wizard-step > .progress {position: relative; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; height: 8px; box-shadow: none; margin: 20px 0;}
-.bs-wizard .bs-wizard-step > .progress > .progress-bar {width:0px; box-shadow: none; /*background: #fbe8aa;*/}
-.bs-wizard .bs-wizard-step.complete > .progress > .progress-bar {width:100%;}
-.bs-wizard .bs-wizard-step.active > .progress > .progress-bar {width:50%;}
-.bs-wizard .bs-wizard-step:first-child.active > .progress > .progress-bar {width:0%;}
-.bs-wizard .bs-wizard-step:last-child.active > .progress > .progress-bar {width: 100%;}
-.bs-wizard .bs-wizard-step.disabled > .bs-wizard-dot {background-color: #e5e5e5;}
-.bs-wizard .bs-wizard-step.disabled > .bs-wizard-dot:after {opacity: 0;}
-.bs-wizard .bs-wizard-step:first-child  > .progress {left: 50%; width: 50%; background: none #337ab7; }
-.bs-wizard .bs-wizard-step:last-child  > .progress {width: 50%;}
-.bs-wizard .bs-wizard-step.disabled a.bs-wizard-dot{ pointer-events: none; }
-.bs-wizard .bs-wizard-step .progress {background-color: #e5e5e5;}
-.bs-wizard .bs-wizard-step.has-icon .bs-wizard-stepnum i {font-size: 28px;}
-.bs-wizard .bs-wizard-step.has-icon .bs-wizard-dot {top: 75px;}
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {content: ' '; width: 14px; height: 14px; background: #24a5db; border-radius: 50px; -webkit-border-radius: 50px; -moz-border-radius: 50px; position: absolute; top: 8px; left: 8px; }
+.bs-wizard > .bs-wizard-step > .progress {position: relative; border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px; height: 8px; box-shadow: none; margin: 20px 0;}
+.bs-wizard > .bs-wizard-step > .progress > .progress-bar {width:0px; box-shadow: none; /*background: #fbe8aa;*/}
+.bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {width:100%;}
+.bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {width:50%;}
+.bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {width:0%;}
+.bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar {width: 100%;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {background-color: #e5e5e5;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {opacity: 0;}
+.bs-wizard > .bs-wizard-step:first-child  > .progress {left: 50%; width: 50%; background: none #337ab7; }
+.bs-wizard > .bs-wizard-step:last-child  > .progress {width: 50%;}
+.bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot{ pointer-events: none; }
+.bs-wizard > .bs-wizard-step .progress {background-color: #e5e5e5;}
+.bs-wizard > .bs-wizard-step.has-icon .bs-wizard-stepnum i {font-size: 28px;}
+.bs-wizard > .bs-wizard-step.has-icon .bs-wizard-dot {top: 75px;}
 .video-project-director .bs-wizard {margin-bottom: 50px;}
 
 /* Begin for modal  Login */
@@ -4769,7 +4769,7 @@ a.anchor.upArrow {
 }
 
 @media (max-width: 640px) {
-    .video-project-director .bs-wizard .bs-wizard-step:last-child .bs-wizard-stepnum {
+    .video-project-director .bs-wizard > .bs-wizard-step:last-child .bs-wizard-stepnum {
         margin-bottom: 0;
     }
 }
@@ -4896,10 +4896,10 @@ a.anchor.upArrow {
         padding-right: 15px;
     }
 }
-.video-project-director .bs-wizard .bs-wizard-step.has-icon .bs-wizard-dot {
+.video-project-director .bs-wizard > .bs-wizard-step.has-icon .bs-wizard-dot {
     top: 70px;
 }
-.video-project-director.video-project-form .bs-wizard .bs-wizard-step.has-icon .bs-wizard-dot {
+.video-project-director.video-project-form .bs-wizard > .bs-wizard-step.has-icon .bs-wizard-dot {
     top: 75px;
 }
 
@@ -5149,14 +5149,14 @@ img.video-edit {
 }
 /* END for how-work block */
 /* Begin changes for top bs-wizard */
-.bs-wizard .bs-wizard-step>.bs-wizard-dot { top: 72px !important;}
+.bs-wizard>.bs-wizard-step>.bs-wizard-dot { top: 72px !important;}
 .text-center.bs-wizard-stepnum h2 {
     font-size: 16px !important;
     display: inline-block !important;
     margin: 0 !important;
     line-height: 1 !important;
 }
-.bs-wizard .bs-wizard-step .bs-wizard-stepnum {
+.bs-wizard>.bs-wizard-step .bs-wizard-stepnum {
     line-height: 19.2px !important;
     min-height: 38px;
 }
@@ -5166,9 +5166,9 @@ img.video-edit {
 #userLoginContent .formSub input {     font-family: "Open Sans", sans-serif; }
 @media (max-width: 767px) {
     .text-center.bs-wizard-stepnum h2 { font-size: 11px !important;}
-    .bs-wizard .bs-wizard-step>.bs-wizard-dot,
-    #register-as-a-video-editor-modal .bs-wizard .bs-wizard-step>.bs-wizard-dot { top: 88px !important;}
-    .bs-wizard .bs-wizard-step .bs-wizard-stepnum { min-height: 66px;}
+    .bs-wizard>.bs-wizard-step>.bs-wizard-dot,
+    #register-as-a-video-editor-modal .bs-wizard>.bs-wizard-step>.bs-wizard-dot { top: 88px !important;}
+    .bs-wizard>.bs-wizard-step .bs-wizard-stepnum { min-height: 66px;}
     #userLoginContent .formSub input { font-size: 22px;}
     .botCopy>div { margin-bottom: 10px;}
     #footer .botCopy, #footer .botLink ul li a { font-size: 15px;}
@@ -5777,11 +5777,11 @@ ol, ul {
     font-size: 30px;
     font-weight: 600;
 }
-.payment-page .bs-wizard .bs-wizard-step .bs-wizard-stepnum {
+.payment-page .bs-wizard>.bs-wizard-step .bs-wizard-stepnum {
     min-height: 80px;
     font-size: 15px;
 }
-.payment-page .bs-wizard .bs-wizard-step>.bs-wizard-dot {
+.payment-page .bs-wizard>.bs-wizard-step>.bs-wizard-dot {
     top: 103px!important;
 }
 .payment-left-block {
@@ -5955,13 +5955,13 @@ a.word-break-normal {
     .payment-content {
         margin-top: 0px;
     }
-    .payment-page .bs-wizard .bs-wizard-step .bs-wizard-stepnum {
+    .payment-page .bs-wizard>.bs-wizard-step .bs-wizard-stepnum {
         min-height: 90px;
     }
-    .payment-page .bs-wizard .bs-wizard-step>.bs-wizard-dot {
+    .payment-page .bs-wizard>.bs-wizard-step>.bs-wizard-dot {
         top: 113px!important;
     }
-    .payment-page .bs-wizard .bs-wizard-step .bs-wizard-stepnum {
+    .payment-page .bs-wizard>.bs-wizard-step .bs-wizard-stepnum {
         font-size: 12px;
         line-height: 1.2 !important;
         padding: 0px 3px;

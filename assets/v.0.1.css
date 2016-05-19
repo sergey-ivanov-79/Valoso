@@ -131,10 +131,10 @@
 button#project-delete-file {
     float: right;
 }
-#register-as-a-video-editor-modal .bs-wizard .bs-wizard-step>.progress {
+#register-as-a-video-editor-modal .bs-wizard>.bs-wizard-step>.progress {
     margin: 20px 0 !important;
 }
-#register-as-a-video-editor-modal .bs-wizard .bs-wizard-step>.bs-wizard-dot {
+#register-as-a-video-editor-modal .bs-wizard>.bs-wizard-step>.bs-wizard-dot {
     top: 61px!important;
 }  
 @media (max-width: 1059px) {
@@ -147,12 +147,12 @@ button#project-delete-file {
     .bs-wizard .col-sm-4.col-xs-12.bs-wizard-step {
         width: 33.33333333%;
     } 
-    .video-project-director .bs-wizard .bs-wizard-step .bs-wizard-stepnum {
+    .video-project-director .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {
         min-height: 66px;
         font-size: 11px;
         line-height: 1 !important;
     }
-    .video-project-director .bs-wizard .bs-wizard-step>.bs-wizard-dot {
+    .video-project-director .bs-wizard>.bs-wizard-step>.bs-wizard-dot {
         top: 88px !important;
     }
     #register-as-a-video-editor-modal .bs-wizard .col-sm-6.col-xs-12.bs-wizard-step {
