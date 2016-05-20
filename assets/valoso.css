@@ -1193,9 +1193,9 @@ div#link-profile-modal .modal-dialog.modal-dialog-proj { width: 600px;}
 
 /* Begin left menu */
 @media (max-width: 767px) {
-    .sidebar-offcanvas .nav-list li > ul { display: none;}
-    .sidebar-offcanvas .nav-list li:hover > ul { display: block;}
-    .wrapper-sidebar-offcanvas .sidebar-offcanvas .nav-list>li>ul li+li { border: none;}
+    .sidebar-offcanvas .nav-list li > ul { display: none !important;}
+    .sidebar-offcanvas .nav-list li:hover > ul { display: block !important;}
+    .wrapper-sidebar-offcanvas .sidebar-offcanvas .nav-list>li>ul li+li { border: none !important;}
     .wrapper-sidebar-offcanvas #navbar-collapse-1 li a { font-size: 12px; }
     .opened-offcanvas .header-dop.header-mobile-fix { z-index: 51;}
     .row-offcanvas-left .sidebar-offcanvas {   left: -50% !important;}
