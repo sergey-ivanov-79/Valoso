@@ -731,7 +731,7 @@ a:hover {
 
 
 .nav-list > li > ul {
-    display: none;
+    /*display: none;*/
     position: absolute;
     top: 100%;
     left: 50%;
@@ -870,9 +870,9 @@ a:hover {
     .nav-list li a { color: white;}
     .opened-navigation .nav-list { display: block;}
     .nav-list > li > ul a {text-align:left;}
-    .nav-list > li:hover > ul { display: none;}
-    .nav-list > li > ul > li:hover ul{display: none;}
-    .nav-list > li > ul { display:none;position: static; margin-left: 0; width: 100%; background-color: transparent; background: #fff 0 0 repeat #fff;}
+    /*.nav-list > li:hover > ul { display: none;}
+    .nav-list > li > ul > li:hover ul{display: none;}*/
+    .nav-list > li > ul { /*display:none;*/position: static; margin-left: 0; width: 100%; background-color: transparent; background: #fff 0 0 repeat #fff;}
     .nav-list > li > ul > li a .fa{margin:0;}
     .nav-list > li {float: none; display: block;}
     .nav-list > li a .fa.fa-plus-circle{display: block;}
