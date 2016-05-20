@@ -1195,6 +1195,7 @@ div#link-profile-modal .modal-dialog.modal-dialog-proj { width: 600px;}
 @media (max-width: 767px) {
     .sidebar-offcanvas .nav-list li > ul { display: none;}
     .sidebar-offcanvas .nav-list li:hover > ul { display: block;}
+    .wrapper-sidebar-offcanvas .sidebar-offcanvas .nav-list>li>ul li+li { border: none;}
     .opened-offcanvas .header-dop.header-mobile-fix { z-index: 51;}
     .row-offcanvas-left .sidebar-offcanvas {   left: -50% !important;}
     .row-offcanvas-left.active { left: 50% !important;}
