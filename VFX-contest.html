@@ -387,6 +387,123 @@
 </footer>
 </div>
 </div>
+
+
+<div class="modal fade" id="conditionsModal" tabindex="-1" role="dialog" aria-labelledby="conditionsLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="conditionsModalLabel">Conditions</h3>
+            </div>
+            <div class="modal-body">
+                <p>
+                    By clicking CONTINUE you agree with the <a href="#" id="termsAndConditions">terms and conditions</a> to this VFX contest.
+                </p>
+
+                <button id="acceptTermsAndConditions" class="btn btn-primary">CONTINUE</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="termsAndConditionsModal" tabindex="-1" role="dialog" aria-labelledby="conditionsLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">Terms and Conditions</h3>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Entries into the online video animation contest received after the deadline (see End Date above) will not be included in the judging of the contest. Valoso and MotionElements reserves the right to request proof of ownership from entrants for work submitted. Any submissions suspected of plagiarism or misrepresentation will be disqualified. The decision of the judges is full and final.
+                </p>
+                <p>
+                    Subscription prizes are valid for one year from 14 April 2016. No substitute prizes or cash alternatives are available.
+                </p>
+                <p>
+                    By submitting your entry to Valoso, you agree for us to share this content via our Social Media channels and on our website. Motion Elements and Valoso reserve the right to publish all submitted entries for promotion and marketing purposes.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="registerContestantModal" tabindex="-1" role="dialog" aria-labelledby="conditionsLabel" aria-hidden="true" style="z-index: 1049 !important;">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title">Register</h3>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal">
+                    <fieldset>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="first_name">First Name</label>
+                            <div class="col-md-6">
+                                <input id="first_name" name="first_name" type="text" placeholder="First Name" class="form-control input-md" required="">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="second_name">Second Name</label>
+                            <div class="col-md-6">
+                                <input id="second_name" name="second_name" type="text" placeholder="Second Name" class="form-control input-md">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="email">Email</label>
+                            <div class="col-md-6">
+                                <input id="email" name="email" type="text" placeholder="Email" class="form-control input-md">
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="upload">File</label>
+                            <div class="col-md-4">
+                                <input id="upload" name="upload" class="input-file" type="file">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="position">Position</label>
+                            <div class="col-md-6">
+                                <select id="position" name="position" class="form-control">
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="termsAndConditions"></label>
+                            <div class="col-md-6">
+                                <label class="checkbox" for="termsAndConditions">
+                                    <input type="checkbox" name="termsAndConditions" id="termsAndConditions" value="1">
+                                    I agree to the <a href="#" id="termsAndConditions">terms and conditions</a> of this contest
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="submit"></label>
+                            <div class="col-md-4">
+                                <button id="submit" name="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Modal -->
 <div class="modal fade" id="loginBox" tabindex="-1" role="dialog" aria-labelledby="loginBoxLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -634,6 +751,19 @@ $(function() {
         $(document).on('click', '.btn-start-t', function() {
             $('body').addClass('open-login-modal');
             $('#directorEdit').modal('hide');
+        });
+
+        $(document).on('click', '#termsAndConditions', function(event) {
+            event.preventDefault();
+            $('#termsAndConditionsModal').modal('show');
+        });
+        $(document).on('click', '#acceptTermsAndConditions', function() {
+            $('#conditionsModal').modal('hide');
+            $('#registerContestantModal').modal('show');
+        });
+
+        $(document).ready(function () {
+            $('#conditionsModal').modal('show');
         });
 
 
