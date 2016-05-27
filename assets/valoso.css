@@ -8385,3 +8385,7 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
         font-size: 11px;
     }
 }
+.user-proposal-single .preview-profile-wrapper #chat {
+    margin: 0;
+    background: #fff;
+}
