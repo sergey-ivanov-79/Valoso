@@ -6868,13 +6868,25 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     }
     .faq-fb0c3088  .header-dop > .navbar-default > .container .navbar-collapse .navbar-nav,
     .group-blog  .header-dop > .navbar-default > .container .navbar-collapse .navbar-nav,
-    .projects-apply-04aaac26   .header-dop > .navbar-default > .container .navbar-collapse .navbar-nav {
+    .projects-apply-04aaac26 .header-dop > .navbar-default > .container .navbar-collapse .navbar-nav,
+    .contact-us-fb0c3088 .header-dop > .navbar-default > .container .navbar-collapse .navbar-nav,
+    .fee-schedule-fb0c3088 .header-dop > .navbar-default > .container .navbar-collapse .navbar-nav,
+    .about-fb0c3088 .header-dop > .navbar-default > .container .navbar-collapse .navbar-nav,
+    .press-07eed7ac .header-dop > .navbar-default > .container .navbar-collapse .navbar-nav,
+    .privacy-policy-fb0c3088 .header-dop > .navbar-default > .container .navbar-collapse .navbar-nav,
+    .terms-and-conditions-fb0c3088 .header-dop > .navbar-default > .container .navbar-collapse .navbar-nav {
         float: right;
         margin-right: 0;
     }
     .faq-fb0c3088  .header-dop > .navbar-default > .container .navbar-collapse .navbar-right,
     .group-blog .header-dop > .navbar-default > .container .navbar-collapse .navbar-right,
-    .projects-apply-04aaac26  .header-dop > .navbar-default > .container .navbar-collapse .navbar-right {
+    .projects-apply-04aaac26  .header-dop > .navbar-default > .container .navbar-collapse .navbar-right,
+    .contact-us-fb0c3088 .header-dop > .navbar-default > .container .navbar-collapse .navbar-right,
+    .fee-schedule-fb0c3088 .header-dop > .navbar-default > .container .navbar-collapse .navbar-right,
+    .about-fb0c3088 .header-dop > .navbar-default > .container .navbar-collapse .navbar-right,
+    .press-07eed7ac .header-dop > .navbar-default > .container .navbar-collapse .navbar-right,
+    .privacy-policy-fb0c3088 .header-dop > .navbar-default > .container .navbar-collapse .navbar-right,
+    .terms-and-conditions-fb0c3088 .header-dop > .navbar-default > .container .navbar-collapse .navbar-right {
         margin-right: 0;
     }
     body.group-blog header.header-guest .navbar-default .container .navbar-collapse .navbar-nav>li>a {
