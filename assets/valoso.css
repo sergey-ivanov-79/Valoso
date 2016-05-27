@@ -8420,3 +8420,6 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 .user-proposal-single .inner-info {
     margin-left: 0; 
 }
+.mini-icons-img > p {
+    text-align: center;
+}
