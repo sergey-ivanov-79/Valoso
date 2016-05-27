@@ -8395,9 +8395,11 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 }
 .user-proposal-single  .wrapp-proposal-total p.p-total {
     float: none;
+    text-align: center;
 }
 .user-proposal-single .wrapp-proposal-total {
     margin-top: 0;
+
 }
 .user-proposal-single  .clearfix .col-sm-6 p.col-sm-6 {
     color: #474747;
@@ -8408,4 +8410,13 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     padding-left: 0;
     padding-right:  0;
     text-align: center;
+}
+.user-proposal-single .autoload-currency .cartNZD.wid-xs {
+    margin: 0 auto !important;
+}
+.user-proposal-single .autoload-currency {
+    float: none !important;
+}
+.user-proposal-single .inner-info {
+    margin-left: 0; 
 }
