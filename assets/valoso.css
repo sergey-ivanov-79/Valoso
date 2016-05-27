@@ -6606,7 +6606,7 @@ img.a-user {
     vertical-align: middle;
     display: inline-block;
 }
-.inner-info-draft img:last-child {
+.inner-info-draft a:last-child img {
     margin-right: 0;
 }
 .inner-info-draft .gallery a {

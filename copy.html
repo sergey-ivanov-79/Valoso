@@ -1,0 +1,152 @@
+<div class="col-sm-12 user-proposal">
+
+  <h3>
+    Proposal FOR {{ $proposal->project->title }}
+  </h3>
+
+  <div class="user-proposal-single">
+
+      @if($proposal->story)
+        <p class="color-blue bold">Story</p>
+        <p class="gray p-15">
+          {{ $proposal->story }}
+        </p>
+      @endif
+
+      <p class="color-blue bold">DEADLINEs</p>
+
+      @if($proposal->final_creative_script)
+
+        <p>Final creative script:</p>
+        <p class="gray p-15">{{ $proposal->getFinalCreativeScript('M d, Y') }}</p>
+
+      @endif
+
+      @if($proposal->final_video_proof)
+
+        <p>Final video proof:</p>
+        <p class="gray p-15">{{$proposal->getFinalVideoProof('M d, Y') }}</p>
+
+      @endif
+
+      @if($proposal->final_project_completion)
+
+        <p>Final project completion:</p>
+        <p class="gray p-15">{{$proposal->getFinalProjectCompletion('M d, Y') }}</p>
+
+      @endif
+
+      @if(!empty($proposal->files()))
+
+        <div class="inner-info">
+
+          <h4 class="h4">Files</h4>
+          <div class="inner-info-draft gallery" >
+
+            @foreach($proposal->files() as $file)
+
+              <a class="group1" href="{{ $file}}">
+
+                <img src="{{ $file}}"/>
+
+              </a>
+
+            @endforeach
+
+          </div>
+        </div>
+
+      @endif
+
+  </div>
+
+
+    <p class="color-blue bold">PROPOSAL DETAILS</p>
+
+    <div class="proposed-table">
+
+        <div class="table-responsive">
+          <!-- Begin .table-responsive -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th class="th-1"></th>
+                <th class="th-2">Name</th>
+                <th class="th-3">Amount</th>
+                <th class="th-4">Due Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="td-1">1</td>
+
+                <td class="td-2">
+                  {{ $proposal->project->title }}
+                </td>
+
+                <td class="td-3">
+                  {{ $proposal->getBidAmount(true) }}
+                </td>
+
+                <td class="td-4">
+                  {{ $proposal->getEndDate(true) }}
+                </td>
+
+              </tr>
+
+            </tbody>
+          </table>
+        </div><!-- END .table-responsive -->
+    </div>
+
+    <div class="wrapp-proposal-total clearfix">
+
+        <p class="p-total">TOTAL BID AMOUNT: {{ $proposal->getBidAmount(true) }}</p>
+
+        <div class="autoload-currency"
+            data-autoload-currency
+            data-value ="{{ $proposal->getBidAmount() }}"
+        ></div>
+
+        @if((!isset($contract) || !$contract))
+
+        <a href="{{ URL::route('contract.process', $proposal->id) }}" class="btn pull-right btn-here clearfix {{ !isset($visitor->id) ? 'guest' : '' }} ">Hire</a>
+
+        @endif
+
+    </div>
+
+  </div>
+
+
+@section('additionalJS')
+  @parent
+  <script type="text/javascript">
+  $(document).ready(function(){
+
+    $('body').on('click', '.btn-hire, .btn-here', function(e){
+
+      if('{{ !isset($visitor->id)}}'){
+
+        $('#loginOpen').trigger('click');
+        return false;
+
+      }
+
+    });
+
+    $('.gallery').each(function() { // the containers for all your galleries
+
+      $(this).magnificPopup({
+        delegate: 'a', // the selector for gallery item
+        type: 'image',
+        gallery: {
+          enabled:true
+        }
+      });
+
+    });
+
+  })
+  </script>
+@endsection
