@@ -6590,7 +6590,7 @@ img.a-user {
 }
 .inner-info-draft {
     background-color: #eceeed;
-    padding: 10px 20px;
+    padding: 10px 10px;
 }
 .pink {
     color: #fd4a76;
@@ -6601,10 +6601,13 @@ img.a-user {
 .inner-info-draft img {
     margin-top: 5px;
     margin-bottom: 5px;
-    width: 20% !important;
+    width: 23% !important;
     margin-right: 1%;
     vertical-align: middle;
     display: inline-block;
+}
+.inner-info-draft img:last-child {
+    margin-right: 0;
 }
 .inner-info-draft .gallery a {
     outline: none !important;
