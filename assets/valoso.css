@@ -8383,6 +8383,9 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     position: relative;
     text-decoration: underline;
 }
+.preview-profile-wrapper .messages-wrapper .dropdown a {
+    color: #fff;
+}
 @media (max-width: 767px) {
     .header-dop.header-mobile .col-navbar {
         display: none;
