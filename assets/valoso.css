@@ -8371,6 +8371,15 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     font-weight: 300;
     position: relative;
 }
+.messages-wrapper .dropdown a:hover {
+    top: 1px;
+    border: none;
+    color: #478cca;
+    background: none;
+    font-weight: 300;
+    position: relative;
+    text-decoration: underline;
+}
 @media (max-width: 767px) {
     .header-dop.header-mobile .col-navbar {
         display: none;
