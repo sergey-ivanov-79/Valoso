@@ -8363,6 +8363,9 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     margin-top: 20px;
     line-height: 1 !important;
 }
+.messages-wrapper .dropdown {
+    padding: 0 6px;
+}
 .messages-wrapper .dropdown a {
     top: 1px;
     border: none;
