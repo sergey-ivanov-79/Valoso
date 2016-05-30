@@ -8358,6 +8358,11 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 .my-work-wrapper .dropdown-menu>li>a:hover {
     color: #ff6385;
 }
+.messages-wrapper {
+    float: left;
+    margin-top: 20px;
+    line-height: 1 !important;
+}
 .messages-wrapper .dropdown a {
     top: 1px;
     border: none;
