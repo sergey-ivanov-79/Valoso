@@ -6837,11 +6837,11 @@ img.a-user {
 .error-field {
     margin-bottom: 20px;
 }
-.apply-modal .bid-info {
+.apply-modal .bid-info:first-child {
     margin-bottom: 10px;
 }
 .apply-modal .wrapper-bid.error-wrapper {
-    margin-top: 30px;
+    margin-top: 28px;
 }
 /* / apply modal */ 
 body.group-blog header.header-guest .navbar-default .container .navbar-collapse .navbar-nav>li>a {
