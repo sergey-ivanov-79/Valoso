@@ -6837,9 +6837,15 @@ img.a-user {
 .error-field {
     margin-bottom: 20px;
 }
+.apply-modal .bid-info {
+    margin-bottom: 10px;
+}
 /* / apply modal */ 
 body.group-blog header.header-guest .navbar-default .container .navbar-collapse .navbar-nav>li>a {
     font-weight: 300;
+}
+.user-profile-left-details.designer-position .position-holder h4 .popover.top {
+    min-width: 376px!important;
 }
 @media (min-width: 768px) {
     .applyModal .modal-dialog {
