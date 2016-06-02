@@ -6991,6 +6991,12 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
         margin: 15px 0;
         padding: 15px 5px;
     }
+    .user-profile-left-details.designer-position .position-holder h4 .popover.top {
+        min-width: 306px!important;
+    }
+    .user-profile-left-details.designer-position .position-holder h4 .popover.top .wrapper-checkbox {
+        width: 33.33%;
+    }
 }
 @media (max-width: 579px) {
     .top-applied p, .top-applied span.pull-right span {
