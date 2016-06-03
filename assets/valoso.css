@@ -5672,7 +5672,7 @@ body.modal-open {
     .autoload-currency .cartNZD.wid-xs {
         margin: 10px auto;
     }
-    .wrapp-proposal-total .btn-here {
+    .wrapp-proposal-total .btn-here, .user-proposal-single .btn-here {
         float: none !important;
         display: block;
     }
@@ -5701,15 +5701,17 @@ body.modal-open {
     hyphens: auto;*/
 }
 /* END Changes for long links */
-.wrapp-proposal-total .btn-here {
+.wrapp-proposal-total .btn-here, .user-proposal-single .btn-here {
     background: #0285c2;
     border: 1px solid #0285c2;
     color: #FFF;
     font-weight: 600;
     width: 220px;
     margin: 0 auto;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
-.wrapp-proposal-total .btn-here:hover {
+.wrapp-proposal-total .btn-here:hover, .user-proposal-single .btn-here:hover {
     background: #fff;
     color: #0285c2;
 }
