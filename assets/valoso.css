@@ -8435,6 +8435,12 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     .one-project .bs-wizard-stepnum {
         font-size: 14px;
     }
+    .user-proposal-single .clearfix .col-sm-6 p.col-sm-6 {
+        padding-top: 0px; 
+    }
+    .user-proposal-single .btn-here {
+        width: 180px;
+    }
 }
 @media (max-width: 480px) { 
     .one-project .bs-wizard-stepnum {
