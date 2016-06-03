@@ -598,7 +598,7 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 }
 
 .overlay-wrapper, .overlay-wrapper2 {
-    z-index: 1050;
+    z-index: 10500;
     display: none;
     position: absolute;
 }
