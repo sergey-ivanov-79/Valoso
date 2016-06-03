@@ -8403,6 +8403,9 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 .preview-profile-wrapper .messages-wrapper .dropdown a {
     color: #fff;
 }
+@media (max-width: 991px) {
+    font-size: 12px;
+}
 @media (max-width: 767px) {
     .header-dop.header-mobile .col-navbar {
         display: none;
