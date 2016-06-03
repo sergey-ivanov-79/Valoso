@@ -8407,6 +8407,12 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     .header-dop.header-mobile .col-navbar {
         display: none;
     }
+    .user-proposal-single .clearfix .col-sm-6 p.col-sm-6 {
+        text-align: center;
+    } 
+    .user-proposal-single .btn-here {
+        margin-bottom: 20px;
+    }
 }
 /* begin for FAQ page */
 .static-page-wrapper p span {
@@ -8446,7 +8452,7 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     margin-top: 0;
 
 }
-.user-proposal-single  .clearfix .col-sm-6 p.col-sm-6 {
+.user-proposal-single .clearfix .col-sm-6 p.col-sm-6 {
     color: #474747;
     font-weight: 600;
     padding-top: 10px;
@@ -8454,7 +8460,6 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     text-transform: uppercase;
     padding-left: 0;
     padding-right:  0;
-    text-align: center;
 }
 .user-proposal-single .autoload-currency .cartNZD.wid-xs {
     margin: 0 auto !important;
