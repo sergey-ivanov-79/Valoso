@@ -8404,7 +8404,9 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     color: #fff;
 }
 @media (max-width: 991px) {
-    font-size: 12px;
+    .user-proposal-single .clearfix .col-sm-6 p.col-sm-6 {
+        font-size: 12px;
+    }
 }
 @media (max-width: 767px) {
     .header-dop.header-mobile .col-navbar {
