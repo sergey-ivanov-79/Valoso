@@ -8484,3 +8484,6 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 .mini-icons-img > p {
     text-align: center;
 }
+#loginBox .formCheck label {
+    font-weight: 300 !important;
+}
