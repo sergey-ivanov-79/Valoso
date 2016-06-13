@@ -5087,10 +5087,10 @@ img.video-edit {
     .video-description-right .description-right-up > h4 .popover {
         left: 0 !important;
     }
-    .inner-addition .popover {
+    /*.inner-addition .popover {
         left: 0 !important;
         margin-left: 2px !important;
-    }
+    }*/
     .user-profile-left ul li:nth-of-type(6) {
         min-height: 0 !important;
         margin-bottom: 10px;
