@@ -8489,3 +8489,17 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     font-weight: 300 !important;
     cursor: pointer;
 }
+.category .form-group label,
+.designer-position .position-holder .new-gray .form-group label,
+.checkbox-inline {
+    font-family: "Open sans",sans-serif;
+    color: #474747;
+}
+.add-new-portfolio > .h4,
+.add-new-portfolio > p  {
+    color: #474747;
+}
+.add-new-portfolio textarea,
+.add-new-portfolio input[type=text] {
+    background-color: #F9F9F9;
+}
