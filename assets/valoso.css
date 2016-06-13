@@ -8487,4 +8487,5 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 
 #loginBox .formCheck label {
     font-weight: 300 !important;
+    cursor: pointer;
 }
