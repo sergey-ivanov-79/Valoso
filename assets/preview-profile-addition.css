@@ -1064,9 +1064,12 @@ ol.simple_with_drop li.backgr-fon-hover:hover, ol.simple_with_drop li.backgr-fon
         left: 19px !important;
     }
     .wrapper-checkbox > label {
-        margin-left: 5px !important;
+        margin-left: 0px !important;
         padding-left: 0 !important;
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .designer-position .position-holder .new-gray .form-group .wrapper-checkbox>label {
+        font-size: 10px;
     }
     .icheckbox_square-blue {
         margin-right: 5px !important;
