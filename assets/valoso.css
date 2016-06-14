@@ -6642,7 +6642,7 @@ img.a-user {
     float: left;
 }
 .inner-job-overview .media-body span:first-child {
-    /*margin-right: 5px;*/
+    margin-right: 5px;
 }
 
 .inner-job-overview  .media:first-child .media-body > .media .pull-left {
@@ -7025,7 +7025,7 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
         padding-left: 0px !important;
     }
     .inner-job-overview .media {
-        margin-top: 5px;
+        /*margin-top: 5px;*/
     }
     .span-category {
         width: 82px;
