@@ -6373,6 +6373,13 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
     margin-right: 5px;
     margin-bottom: 5px;
 }
+.inner-job-overview .media .media-body > span {
+    float: left;
+}
+.inner-job-overview .media .media-body > span:second-child {
+    float: left;
+    max-width: 158px;
+}
 .apply-page .project-files-buttons .save-project-button button.btn-apply {
     text-transform: uppercase;
     color: #fff;
@@ -6449,7 +6456,7 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
     background-color: #e0f2fb;
 }
 .inner-job-overview .category {
-    margin-top: 5px;
+    /*margin-top: 5px;*/
     margin-bottom: 3px;
 }
 .inner-job-overview .category span {
