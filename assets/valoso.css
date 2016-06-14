@@ -8504,3 +8504,6 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 .add-new-portfolio input[type=text] {
     background-color: #F9F9F9 !important;
 }
+.left-content .inner-info a {
+    word-break: break-all; 
+}
