@@ -6644,8 +6644,9 @@ img.a-user {
 .inner-job-overview .media-body span:first-child {
     margin-right: 5px;
 }
-.inner-job-overview  .media .media-body .media .pull-left {
-    /*float: none !important;*/
+
+.inner-job-overview  .media:first-child .media-body > .media .pull-left {
+    float: left !important;
 }
 .apply-br {
     display: none;
@@ -7052,6 +7053,9 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
         float: none;
     }
     #applyModal.apply-modal .row.cartNZD.wid-xs {
+        float: none !important;
+    }
+    .inner-job-overview  .media .media-body .media .pull-left {
         float: none !important;
     }
 }
