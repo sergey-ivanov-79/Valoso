@@ -6329,6 +6329,7 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
     font-size: 16px;
     color: #555555;
     /*text-align: justify;*/
+    margin: 0;
 }
 .apply-page .video-description-right, 
 .apply-page .video-description-left {
