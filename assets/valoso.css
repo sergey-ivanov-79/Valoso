@@ -6376,7 +6376,7 @@ header#header-top .header-dop.header-mobile .navbar-default .navbar-toggle .icon
 .inner-job-overview .media .media-body > span {
     float: left;
 }
-.inner-job-overview .media:second-child .media-body > span {
+.inner-job-overview .media:nth-child(2) .media-body > span {
     float: left;
     max-width: 158px;
 }
