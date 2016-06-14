@@ -6645,7 +6645,8 @@ img.a-user {
     margin-right: 5px;
 }
 
-.inner-job-overview  .media:first-child .media-body > .media .pull-left {
+.inner-job-overview  .media:first-child .media-body > .media .pull-left,
+.inner-job-overview  .media:nth-child(2) .media-body > .media .pull-left {
     float: left !important;
 }
 .apply-br {
