@@ -1926,6 +1926,13 @@ $('.popup-youtube').magnificPopup({
           $('.profile-dropdown').addClass('open');
   	});
   });*/
+
+        $('body').on('click', '.edit-together', function() {
+$(this).popover('show');
+            $('.edit-together').not(this).popover('destroy');
+
+            
+        });
 </script>
 	</body>
 </html>
