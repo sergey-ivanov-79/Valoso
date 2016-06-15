@@ -247,7 +247,7 @@
                             <img class="img-responsive hidden-sm visible-xs" src="./images/WebDesign/PNG/how-to-sub.png">
                             <div class="name-section"><img class="img-responsive hidden-xs" src="./images/WebDesign/PNG/how-to-sub-mobile-2.png"></div>
                             <div class="text-center">
-                              <a href="#" class="btn-to-apply">
+                              <a href="#" class="btn-to-apply" id="btn-to-apply">
                                 <img class="img-responsive first" src="./images/WebDesign/PNG/btn-to-apply.png">
                                 <img class="img-responsive last" src="./images/WebDesign/PNG/btn-to-apply-hover-new.png">
                               </a>
@@ -759,6 +759,10 @@ $(function() {
         });
         $(document).on('click', '#acceptTermsAndConditions', function() {
             $('#conditionsModal').modal('hide');
+        });
+
+        $(document).on('click', '#btn-to-apply', function (event) {
+            event.preventDefault();
             $('#registerContestantModal').modal('show');
         });
 
