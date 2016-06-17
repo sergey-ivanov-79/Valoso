@@ -8521,3 +8521,266 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 .left-content .inner-info a {
     word-break: break-all; 
 }
+/* Begin - Widget billing plan */
+.membership-holder-plans {
+    margin: 15px 0px;
+}
+.membership-holder-plan-item { 
+    float: left;
+    padding: 12px 10px 10px 10px;  
+    text-align: center;
+    color: #7c7c7c;
+}
+.membership-holder-plan-item div {
+    font-weight: 400;
+}
+.membership-holder-plan-pro {
+    background: #7abcff; /* Old browsers */
+    background: -moz-linear-gradient(top,  #189DD4 0%, #60abf8 44%, #61CFFC 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #189DD4 0%, #60abf8 44%, #61CFFC 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #189DD4 0%, #60abf8 44%, #61CFFC 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#189DD4', endColorstr='#61CFFC',GradientType=0 ); /* IE6-9 */
+    padding-right: 0px;
+    border-radius: 10px 0px 0px 10px;    
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    margin-top: 32px;
+}
+.membership-holder-plan-starter {
+    background: #53e67c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #3bda68 0%, #53e67c 44%, #75f79a 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #3bda68 0%, #53e67c 44%, #75f79a 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #3bda68 0%, #53e67c 44%, #75f79a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3bda68', endColorstr='#75f79a',GradientType=0 ); /* IE6-9 */
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+}
+.membership-holder-plan-free {
+    background: #c8c9c8; /* Old browsers */
+    background: -moz-linear-gradient(top,  #b5b5b5 0%, #c8c9c8 44%, #e0e0e0 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #b5b5b5 0%, #c8c9c8 44%, #e0e0e0 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #b5b5b5 0%, #c8c9c8 44%, #e0e0e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5b5b5', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
+    border-radius:  0px 10px 10px 0px;
+    -webkit-border-radius:  0px 10px 10px 0px;
+    -moz-border-radius:  0px 10px 10px 0px;
+    margin-top: 32px;
+    padding-left: 0px;
+}
+.membership-holder-plan-inner {
+     padding: 25px; 
+     background: white;
+}
+.membership-holder-plan-pro-inner {
+     border-radius: 10px 0px 0px 10px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+    padding-bottom: 4px;
+}
+.membership-holder-plan-starter-inner {
+     border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    padding-right: 45px;
+    padding-left: 45px;
+    padding-bottom: 20px;
+}
+.membership-holder-plan-free-inner {
+     border-radius:  0px 10px 10px 0px;
+    -webkit-border-radius:  0px 10px 10px 0px;
+    -moz-border-radius:  0px 10px 10px 0px;
+    padding-bottom: 4px;
+}
+.membership-holder-plan-inner .membership-holder-plan-name,
+.membership-holder-plan-inner .membership-holder-amount-memory,
+.membership-holder-plan-inner .membership-holder-price {
+    font-size: 32px;
+}
+.membership-holder-plan-pro .membership-holder-price {
+    margin-top: 3px;
+}
+.membership-holder-plan-starter .membership-holder-price {
+    margin-top: 20px;    
+    margin-bottom: 20px;
+}
+.membership-holder-plan-free .membership-holder-price {
+    margin-top: 13px; 
+    margin-bottom: 10px;
+}
+.membership-holder-plan-inner .membership-holder-price {
+    font-weight: 600;
+}
+.membership-holder-plan-inner .membership-holder-amount-memory {
+    margin-top: 20px;
+}
+.membership-holder-plan-pro .membership-holder-amount-memory {
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.membership-holder-plan-starter .membership-holder-amount-memory {
+    margin-bottom: 30px;
+}
+.membership-holder-plan-free .membership-holder-amount-memory {
+    margin-bottom: 52px;
+}
+.membership-holder-plan-item p {
+    font-size: 21px;
+    margin: 0;
+    line-height: 1;
+}
+.membership-holder-plan-starter-inner p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.membership-holder-plan-item .btn {
+    padding: 15px;
+    width: 190px;
+    vertical-align: middle;
+    font-size: 21px;
+    font-weight: 600;
+    border: none;
+}
+.membership-holder-plan-item .btn:hover  {
+    text-decoration: underline;
+    background: none;
+}
+.membership-holder-plan-item .btn.btn-green {
+    background: #3bda68;
+    color: #fff;
+    margin-top: 27px;
+}
+.membership-holder-plan-item .btn.btn-blue {
+    color: #37aada;
+}
+.membership-holder-plan-item .btn.btn-gray {
+    color: #b5b5b5;
+}
+.membership-holder-plan-pro-inner .membership-holder-price {
+    color: #189dd4;
+}
+.membership-holder-plan-starter-inner .membership-holder-price {
+    color: #3bda68;
+}
+.membership-holder-plan-free-inner .membership-holder-price {
+    color: #b5b5b5;
+}
+.membership-holder-plan-pro .btn-blue {
+    margin-top: 15px;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+    .membership-holder-plan-inner {
+        padding: 25px 15px;
+    }
+    .membership-holder-plan-starter-inner {
+        padding: 25px;
+    }
+}
+@media (max-width: 767px) {
+    .membership-holder-plan-name {
+        float: left;
+    }
+    .membership-holder-plan-starter-inner {
+        line-height: 1;
+    }
+    .membership-holder-plan-name > span { 
+        display: block; 
+    } 
+    .membership-holder-plan-item {
+        float: none;
+        padding: 10px 12px 10px 10px;
+    }
+    .membership-holder-plan-pro {
+        background: #7abcff; /* Old browsers */
+        background: -moz-linear-gradient(right,  #189DD4 0%, #60abf8 44%, #61CFFC 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(right,  #189DD4 0%, #60abf8 44%, #61CFFC 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to left,  #189DD4 0%, #60abf8 44%, #61CFFC 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#189DD4', endColorstr='#61CFFC',GradientType=0 ); /* IE6-9 */
+        padding: 10px 12px 0px 10px;
+        border-radius: 10px 10px 0px 0px;    
+        -webkit-border-radius: 10px 10px 0px 0px;
+        -moz-border-radius: 10px 10px 0px 0px;
+        margin-top: 32px;
+        width: 330px;
+        margin: 0 auto;
+    }
+    .membership-holder-plan-starter {
+        background: #53e67c; /* Old browsers */
+        background: -moz-linear-gradient(right,  #3bda68 0%, #53e67c 44%, #75f79a 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(right,  #3bda68 0%, #53e67c 44%, #75f79a 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to left,  #3bda68 0%, #53e67c 44%, #75f79a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3bda68', endColorstr='#75f79a',GradientType=0 ); /* IE6-9 */
+        width: 394px;
+        margin: 0 auto;
+    }
+    .membership-holder-plan-free {
+        background: #c8c9c8; /* Old browsers */
+        background: -moz-linear-gradient(right,  #b5b5b5 0%, #c8c9c8 44%, #e0e0e0 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(right, #b5b5b5 0%, #c8c9c8 44%, #e0e0e0 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to left,  #b5b5b5 0%, #c8c9c8 44%, #e0e0e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b5b5b5', endColorstr='#e0e0e0',GradientType=0 ); /* IE6-9 */
+        border-radius:  0px 0px 10px 10px;
+        -webkit-border-radius:  0px 0px 10px 10px;
+        -moz-border-radius:  0px 0px 10px 10px;
+        padding: 0px 12px 10px 10px;
+        width: 330px;
+        margin: 0 auto;
+    }
+    .membership-holder-plan-pro-inner {
+         border-radius: 10px 10px 0px 0px;
+        -webkit-border-radius: 10px 10px 0px 0px;
+        -moz-border-radius: 10px 10px 0px 0px;
+        padding-bottom: 10px;
+    }
+    .membership-holder-plan-free-inner {
+         border-radius:  0px 0px 10px 10px;
+        -webkit-border-radius:  0px 0px 10px 10px;
+        -moz-border-radius:  0px 0px 10px 10px;
+    }
+    .membership-holder-plan-pro .membership-holder-price {
+        margin-top: -12px;
+    }
+    .membership-holder-plan-pro .btn-blue {
+        margin-top: 5px;
+    }
+    .membership-holder-plan-starter .membership-holder-price {
+        margin-top: 5px;
+        margin-bottom: 0px;
+    }
+    .membership-holder-plan-starter .membership-holder-amount-memory {
+        margin-bottom: 24px;
+    }
+    .membership-holder-plan-starter-inner p {
+        margin-bottom: 10px;
+    }
+    .membership-holder-plan-free .membership-holder-price {
+        margin-top: 5px;
+    }
+    .membership-holder-plan-free .membership-holder-amount-memory {
+        margin-bottom: 27px;
+    }
+    .membership-holder-plan-free-inner {
+        padding-bottom: 18px;
+    }
+    .membership-holder-plan-pro-inner .membership-holder-plan-name {
+        margin-top: 30px;
+    }
+}
+@media (max-width: 479px) {
+    .membership-holder-plan-pro, 
+    .membership-holder-plan-free {
+        width: 250px;
+    }
+    .membership-holder-plan-starter {
+        width: 290px;
+    }
+    .membership-holder-plan-starter-inner {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .membership-holder-plan-item .btn {
+        padding: 15px 5px;
+        width: 150px;
+    }
+}
+/* END - Widget billing plan */
