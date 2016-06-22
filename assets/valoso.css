@@ -8668,6 +8668,10 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 .membership-holder-plan-pro .btn-blue {
     margin-top: 15px;
 }
+.membership-holder-plans {
+    max-width: 800px;
+    margin: 0 auto;
+}
 @media (max-width: 991px) and (min-width: 768px) {
     .membership-holder-plan-inner {
         padding: 25px 15px;
