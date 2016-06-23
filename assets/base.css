@@ -1,4 +1,5 @@
-@import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Open+Sans+Condensed:300,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Open+Sans+Condensed:300,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Open+Sans+Condensed:300,700);
 
 @import 'bootstrap/css/bootstrap.css';
 @import 'font-awesome.css';
@@ -6,3 +7,6 @@
 /*@import 'new_style.css';*/
 @import 'guest-landing-page.css';
 @import 'valoso.css';
+
+
+
