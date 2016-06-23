@@ -1,5 +1,75 @@
 @import url("v.0.1.css");
 
+/* font-face */
+@font-face {
+    font-family: 'archiveregular';
+    src: url('../fonts/archive-webfont.eot');
+    src: url('../fonts/archive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/archive-webfont.woff2') format('woff2'),
+         url('../fonts/archive-webfont.woff') format('woff'),
+         url('../fonts/archive-webfont.ttf') format('truetype'),
+         url('../fonts/archive-webfont.svg#archiveregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'zwodrei_-_freebold';
+    src: url('../fonts/zwodrei_bold_demo-webfont.eot');
+    src: url('../fonts/zwodrei_bold_demo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/zwodrei_bold_demo-webfont.woff2') format('woff2'),
+         url('../fonts/zwodrei_bold_demo-webfont.woff') format('woff'),
+         url('../fonts/zwodrei_bold_demo-webfont.ttf') format('truetype'),
+         url('../fonts/zwodrei_bold_demo-webfont.svg#zwodrei_-_freebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'jk_aboderegular_demo';
+    src: url('jkabode-demo-webfont.eot');
+    src: url('jkabode-demo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('jkabode-demo-webfont.woff2') format('woff2'),
+         url('jkabode-demo-webfont.woff') format('woff'),
+         url('jkabode-demo-webfont.ttf') format('truetype'),
+         url('jkabode-demo-webfont.svg#jk_aboderegular_demo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'jk_abodelight_demo';
+    src: url('jkabode-lightdemo-webfont.eot');
+    src: url('jkabode-lightdemo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('jkabode-lightdemo-webfont.woff2') format('woff2'),
+         url('jkabode-lightdemo-webfont.woff') format('woff'),
+         url('jkabode-lightdemo-webfont.ttf') format('truetype'),
+         url('jkabode-lightdemo-webfont.svg#jk_abodelight_demo') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'jack_frostregular';
+    src: url('../fonts/jack_frost-webfont.eot');
+    src: url('../fonts/jack_frost-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jack_frost-webfont.woff2') format('woff2'),
+         url('../fonts/jack_frost-webfont.woff') format('woff'),
+         url('../fonts/jack_frost-webfont.ttf') format('truetype'),
+         url('../fonts/jack_frost-webfont.svg#jack_frostregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'call_of_ops_dutyregular';
+    src: url('../fonts/call_of_ops_duty-webfont.eot');
+    src: url('../fonts/call_of_ops_duty-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/call_of_ops_duty-webfont.woff2') format('woff2'),
+         url('../fonts/call_of_ops_duty-webfont.woff') format('woff'),
+         url('../fonts/call_of_ops_duty-webfont.ttf') format('truetype'),
+         url('../fonts/call_of_ops_duty-webfont.svg#call_of_ops_dutyregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* /font-face */
 body {
     color: #8d8d8d;
     height: 100% !important;
@@ -7064,29 +7134,8 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 }
 /*-------------------------------------------------------------*/
 /* / apply page */ 
+
 /* web-design */ 
-@font-face {
-    font-family: 'jack_frostregular';
-    src: url('../fonts/jack_frost-webfont.eot');
-    src: url('../fonts/jack_frost-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/jack_frost-webfont.woff2') format('woff2'),
-         url('../fonts/jack_frost-webfont.woff') format('woff'),
-         url('../fonts/jack_frost-webfont.ttf') format('truetype'),
-         url('../fonts/jack_frost-webfont.svg#jack_frostregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'call_of_ops_dutyregular';
-    src: url('../fonts/call_of_ops_duty-webfont.eot');
-    src: url('../fonts/call_of_ops_duty-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/call_of_ops_duty-webfont.woff2') format('woff2'),
-         url('../fonts/call_of_ops_duty-webfont.woff') format('woff'),
-         url('../fonts/call_of_ops_duty-webfont.ttf') format('truetype'),
-         url('../fonts/call_of_ops_duty-webfont.svg#call_of_ops_dutyregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 .web-design {
     font-family: 'Ebrima', sans-serif;
 }
