@@ -8837,3 +8837,6 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     }
 }
 /* END - Widget billing plan */
+body.group-blog {
+    font-size: 14px;
+}
