@@ -3442,6 +3442,7 @@ blockquote p {
 .footer .footer-social-block li a {
     border: none;
     padding: 5px;
+    font-size: 1.3em;
 }
 
 .footer .footer-social-block li:last-child a {
@@ -3619,13 +3620,21 @@ blockquote p {
 
 .da-thumbs li a .portfolio-detail-overlay{
     height: auto;
-    bottom:0;
+    top: 100%;
     background: rgba(0, 0, 0, 0.55);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: top ease 0.2s;
 }
+
 .da-thumbs li a .portfolio-detail-overlay h5{
     color: #fff;
     margin: 0;
     margin-bottom: 5px;
+}
+
+.da-thumbs li a .portfolio-detail-overlay p{
+    color: #fff;
 }
 
 .da-thumbs .details p{

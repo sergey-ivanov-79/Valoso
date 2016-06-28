@@ -1959,30 +1959,77 @@ $('#subscription-form').submit(function(e) {
  * @param String frame_id The id of (the div containing) the frame
  * @param String func     Desired function to call, eg. "playVideo"
  * @param Array  args     (optional) List of arguments to pass to function func*/
-function callPlayer(frame_id, func, args) {
-    if (window.jQuery && frame_id instanceof jQuery) frame_id = frame_id.get(0).id;
-    var iframe = document.getElementById(frame_id);
-    if (iframe && iframe.tagName.toUpperCase() != 'IFRAME') {
-        iframe = iframe.getElementsByTagName('iframe')[0];
-    }
-    if (iframe) {
-        // Frame exists,
-        iframe.contentWindow.postMessage(JSON.stringify({
-            "event": "command",
-            "func": func,
-            "args": args || [],
-            "id": frame_id
-        }), "*");
-    }
-}
+//function callPlayer(frame_id, func, args) {
+//    if (window.jQuery && frame_id instanceof jQuery) frame_id = frame_id.get(0).id;
+//    var iframe = document.getElementById(frame_id);
+//    if (iframe && iframe.tagName.toUpperCase() != 'IFRAME') {
+//        iframe = iframe.getElementsByTagName('iframe')[0];
+//    }
+//    if (iframe) {
+//        // Frame exists,
+//        iframe.contentWindow.postMessage(JSON.stringify({
+//            "event": "command",
+//            "func": func,
+//            "args": args || [],
+//            "id": frame_id
+//        }), "*");
+//    }
+//}
 
 
-$("#playVideo").click(function(e){
-    e.preventDefault();
-    callPlayer("ytPlayer","playVideo");
-    $("#video").hide();
-    $("#video-container").fadeIn();
+//$("#playVideo").click(function(e){
+//    e.preventDefault();
+//    callPlayer("ytPlayer","playVideo");
+//    $("#video").hide();
+//    $("#video-container").fadeIn();
+//});
+
+
+$(document).ready(function () {
+	var $da = $('#da-thumbs').find('li a');
+
+	$da.on('click', function (event) {
+		event.preventDefault();
+
+	})
+
+    $da.on('mouseenter', function (event) {
+		var $a = $(this);
+		var aHeight = $a.height();
+		var $overlay = $a.find('.portfolio-detail-overlay');
+		var overlayHeight = $overlay.height();
+		$overlay.css({top: aHeight - overlayHeight + "px"});
+	});
+
+	$da.on('mouseleave', function () {
+		setVisibleTitle.call(this);
+	});
+
+	$da.each(function () {
+		setVisibleTitle.call(this);
+	});
+
+	function setVisibleTitle(){
+		var $a = $(this);
+		var aHeight = $a.height();
+		var $overlay = $a.find('.portfolio-detail-overlay');
+		var offset = $a.find('h5').height();
+		var padding = 20;
+		$overlay.css({top: aHeight - offset - padding + "px"});
+	}
+
+	$('#da-thumbs').magnificPopup({
+		delegate: 'a', // child items selector, by clicking on it popup will open
+		type: 'iframe'
+		// other options
+	});
+
+	$("#playVideo").magnificPopup({
+		type: 'iframe'
+		// other options
+	});
 });
+
 
 
 // Right Slidebar controls
