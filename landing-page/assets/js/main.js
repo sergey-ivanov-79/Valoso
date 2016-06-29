@@ -1410,11 +1410,11 @@ $("a[href='#totop']").click(function() {
 
 /* FlexSlider */
 $(window).load(function() {
-	$('.flexslider').flexslider({
-		animation: "fade",
-        easing: "swing",
-		selector: ".slides > div"
-    });
+    //$('.flexslider').flexslider({
+		//animation: "fade",
+    //    easing: "swing",
+		//selector: ".slides > div"
+    //});
 });
 
 /* text rotator */
@@ -1990,8 +1990,7 @@ $(document).ready(function () {
 
 	$da.on('click', function (event) {
 		event.preventDefault();
-
-	})
+	});
 
     $da.on('mouseenter', function (event) {
 		var $a = $(this);
@@ -2028,6 +2027,93 @@ $(document).ready(function () {
 		type: 'iframe'
 		// other options
 	});
+
+
+	var month = [];
+	month[0] = "Jan";
+	month[1] = "Feb";
+	month[2] = "Mar";
+	month[3] = "Apr";
+	month[4] = "May";
+	month[5] = "Jun";
+	month[6] = "Jul";
+	month[7] = "Aug";
+	month[8] = "Sep";
+	month[9] = "Oct";
+	month[10] = "Nov";
+	month[11] = "Dec";
+
+
+	$.ajax({
+		type: "GET",
+		url: "https://valoso.com/blog/wp-json/wp/v2/posts?_embed", // check the exact URL for your situation
+		dataType: 'json',
+		success: function(posts){
+			console.log(posts);
+			var template = [
+							"<div class='col-sm-6 col-md-4'>",
+								"<div class='blog-post'>",
+									"<header>",
+										"<h4 class='date'>___date_day___<br>___date_month___</h4>",
+										"<div class='blog-element'>",
+											"<a href='___post_link___'>",
+												"<img class='img-responsive' src='___thumb___'>",
+											"</a>",
+										"</div>",
+									"</header>",
+									"<div class='blog-content'>",
+										"<h4><a href='___post_link___'>___title___</a>",
+										"</h4>",
+										"<div class='post-meta'>",
+											"<span>By <a href='___author_link___'>___author___</a></span>",
+										"</div>",
+										"<p>___excerpt___</p>",
+									"</div>",
+								"</div>",
+							"</div>"
+							].join("");
+
+			var html = "";
+			for (var i = 0; i < posts.length; i++) {
+				var post = posts[i];
+				if(i%3 == 0){
+					html += "<div class='row'>";
+				}
+
+				var date = new Date(post.date);
+
+				html += template
+							.replace("___thumb___", post._embedded['wp:featuredmedia'][0].source_url)
+							.replace("___title___", post.title.rendered)
+							.replace(/___post_link___/g, post.link)
+							.replace("___date_day___", date.getDate())
+							.replace("___date_month___", month[date.getMonth()])
+							.replace("___author___", post._embedded.author[0].name)
+							.replace("___author_link___", post._embedded.author[0].link)
+							.replace("___excerpt___", post.excerpt.rendered);
+
+				if( (i - 2)%3 == 0){
+					html += "</div>";
+				}
+			}
+
+			$('#blogContent').find('.slides').html(html);
+			$('.flexslider').flexslider({
+				animation: "fade",
+				easing: "swing",
+				selector: ".slides > div"
+			});
+
+		},
+		error: function(data)
+		{
+			alert('Your browser broke!');
+			return false;
+		}
+
+	});
+
+
 });
 
 
