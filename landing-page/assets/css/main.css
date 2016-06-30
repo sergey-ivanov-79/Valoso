@@ -3652,6 +3652,7 @@ blockquote p {
     }
 }
 
+
 @media only screen and (max-width: 767px){
     #search-section .open-popup-link{
         line-height: 16px;
@@ -3679,7 +3680,38 @@ blockquote p {
     }
 }
 
+#pricing{
+    padding-bottom: 0px;
+}
 
+ul.user-menu-actions {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    margin: 0;
+    width: auto;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+ul.user-menu-actions li {
+    float: left;
+    width: auto;
+    display: inline-block;
+}
+
+ul.user-menu-actions li a {
+    padding: 8px 10px;
+    background-color: #dee0e3;
+    color: black;
+    border-radius: 0;
+    margin-right: 4px;
+}
+
+ul.user-menu-actions li a:hover {
+    color: #000;
+}
 
 .flex-direction-nav a:before {
     color: #000;
