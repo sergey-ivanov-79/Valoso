@@ -3466,6 +3466,12 @@ blockquote p {
     padding-bottom: 10px;
 }
 
+@media screen and (max-width: 768px){
+    .navbar.main-navigation .navbar-brand {
+        padding-left: 15px;
+    }
+}
+
 .navbar.main-navigation.navbar-solid .navbar-brand{
     max-width: 120px;
 }
@@ -3610,6 +3616,71 @@ blockquote p {
     width: auto;
 }
 
+.block-thumb figure img {
+    min-height: 135px;
+}
+@media screen and (max-width: 410px){
+    .block-thumb{
+        min-height: initial;
+    }
+
+    .block-thumb figure img{
+        max-width: 120px;
+        min-height: initial;
+    }
+
+    .block-thumb p{
+        font-size: 0.9em;
+        text-align: center;
+    }
+    .block-thumb p img{
+        display: inline-block;
+        max-height: 20px;
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 767px){
+    #our-process .btn-lg{
+        padding: 15px 20px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .da-thumbs li {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #search-section .open-popup-link{
+        line-height: 16px;
+    }
+    #search-section input[name='miles'] {
+        display: inline-block;
+    }
+
+    label[for="location"]{
+        display: block;
+    }
+
+    #search-section input[name='location'] {
+        min-width: 175px;
+        width: auto;
+        display: inline-block;
+    }
+
+    .our-process .our-process-image{
+        width: 100%;
+    }
+
+    .our-process .process .our-process-text.right{
+        text-align: left;
+    }
+}
+
+
+
 .flex-direction-nav a:before {
     color: #000;
 }
@@ -3619,6 +3690,15 @@ blockquote p {
     border: 1px solid #ccc;
     border-top: none;
     height: 80px;
+    color: inherit;
+}
+
+.da-thumbs .details:hover {
+    background: rgba(0, 0, 0, 0.78);
+    border-color: rgba(0, 0, 0, 0.78);
+    transition: all ease 0.4s;
+    color: white;
+    cursor: pointer;
 }
 
 .da-thumbs li a .portfolio-detail-overlay{
@@ -3666,9 +3746,6 @@ blockquote p {
      right: -50px;
 }
 
-.block-thumb figure img {
-    min-height: 135px;
-}
 
 .white-popup {
     position: relative;
@@ -3677,6 +3754,10 @@ blockquote p {
     width: auto;
     max-width: 500px;
     margin: 20px auto;
+}
+
+#pricing .section-heading{
+    margin-bottom: 20px;
 }
 
 .m-b-5{

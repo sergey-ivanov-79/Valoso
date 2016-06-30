@@ -2008,6 +2008,10 @@ $(document).ready(function () {
 		setVisibleTitle.call(this);
 	});
 
+	$(window).on('resize', function () {
+		setVisibleTitle();
+	});
+
 	function setVisibleTitle(){
 		var $a = $(this);
 		var aHeight = $a.height();
@@ -2046,7 +2050,7 @@ $(document).ready(function () {
 
 	$.ajax({
 		type: "GET",
-		url: "https://valoso.com/blog/wp-json/wp/v2/posts?_embed", // check the exact URL for your situation
+		url: "https://valoso.com/blog/wp-json/wp/v2/posts?_embed&per_page=15", // check the exact URL for your situation
 		dataType: 'json',
 		success: function(posts){
 			console.log(posts);
@@ -2083,7 +2087,7 @@ $(document).ready(function () {
 				var date = new Date(post.date);
 
 				html += template
-							.replace("___thumb___", post._embedded['wp:featuredmedia'][0].source_url)
+							.replace("___thumb___", post._embedded['wp:featuredmedia'] ? post._embedded['wp:featuredmedia'][0].source_url : "")
 							.replace("___title___", post.title.rendered)
 							.replace(/___post_link___/g, post.link)
 							.replace("___date_day___", date.getDate())
@@ -2113,7 +2117,7 @@ $(document).ready(function () {
 
 	});
 
-	$('#recommend-popup-trigger').magnificPopup({
+	$('.recommend-popup-trigger').magnificPopup({
 		items: {
 			src: '#popup-form',
 			type: 'inline'
