@@ -2113,6 +2113,12 @@ $(document).ready(function () {
 
 	});
 
+	$('#recommend-popup-trigger').magnificPopup({
+		items: {
+			src: '#popup-form',
+			type: 'inline'
+		}
+	});
 
 });
 

@@ -278,18 +278,21 @@ html, body {
 /* back to top button */
 #totop {
     position: fixed;
-    bottom: 7px;
-    right: 7px;
+    bottom: 25px;
+    right: 25px;
     z-index: 999;
     background: #fff;
     display: none;
-    height: 28px;
-    width: 28px;
+    height: 36px;
+    width: 36px;
+    padding: 4px;
     text-align: center;
     line-height: 28px;
-    font-size: 14px;
+    font-size: 2em;
     color: #000;
     opacity: 0.6;
+    border-radius: 2px;
+    border: 1px solid;
     border-radius: 2px;
 }
 
@@ -3661,6 +3664,19 @@ blockquote p {
 .flexslider:hover .flex-direction-nav .flex-next {
     opacity: 0.7;
      right: -50px;
+}
+
+.block-thumb figure img {
+    min-height: 135px;
+}
+
+.white-popup {
+    position: relative;
+    background: #FFF;
+    padding: 20px;
+    width: auto;
+    max-width: 500px;
+    margin: 20px auto;
 }
 
 .m-b-5{
