@@ -3808,14 +3808,71 @@ ul.user-menu-actions li a:hover {
     float: right;
     position: relative;
     top: -3em;
+     left: 8em;
     display: inline-block;
 }
 
-@media only screen and (max-width: 767px){
+.our-process .our-process-image.left img{
+     left: -8em;
+}
+
+@media only screen and (max-width: 767px) {
 
     .our-process .our-process-image img {
         float: none;
+        position: static;
+        max-width: 100%;
+        margin-bottom: 10px;
     }
+
+    .our-process .process {
+        margin: 40px 0;
+    }
+}
+
+.navbar-solid ul.user-menu-actions {
+    position: fixed;
+    right: 0;
+    top: 5em;
+    float: none;
+}
+
+.navbar-solid ul.user-menu-actions li {
+    display: block;
+    float: none;
+    margin-bottom: 5px;
+}
+
+.navbar-solid ul.user-menu-actions li a{
+    width: 100%;
+}
+
+#blogContent .item{
+    padding: 30px 0px;
+    margin: 10px;
+    color: #FFF;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) and ( max-width: 900px){
+    .testimonial .carosel-wrapper .client-face-holder{
+        left: -20px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .cta-2 .btn {
+        margin-top: 0px;
+    }
+
+
+}
+.da-thumbs .details {
+    height: auto;
+}
 
 .m-b-5{
     margin-bottom: 5px !important;

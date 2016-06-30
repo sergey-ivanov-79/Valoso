@@ -2059,7 +2059,7 @@ $(document).ready(function () {
 		success: function(posts){
 			console.log(posts);
 			var template = [
-							"<div class='col-sm-6 col-md-4'>",
+							"<div class='item'>",
 								"<div class='blog-post'>",
 									"<header>",
 										"<h4 class='date'>___date_day___<br>___date_month___</h4>",
@@ -2082,11 +2082,12 @@ $(document).ready(function () {
 							].join("");
 
 			var html = "";
+			//html += "<div class='row'>";
 			for (var i = 0; i < posts.length; i++) {
 				var post = posts[i];
-				if(i%3 == 0){
-					html += "<div class='row'>";
-				}
+				//if(i%3 == 0){
+				//	html += "<div class='row'>";
+				//}
 
 				var date = new Date(post.date);
 
@@ -2100,16 +2101,27 @@ $(document).ready(function () {
 							.replace("___author_link___", post._embedded.author[0].link)
 							.replace("___excerpt___", post.excerpt.rendered);
 
-				if( (i - 2)%3 == 0){
-					html += "</div>";
-				}
+				//if( (i - 2)%3 == 0){
+				//	html += "</div>";
+				//}
 			}
+			//html += "</div>";
 
 			$('#blogContent').find('.slides').html(html);
-			$('.flexslider').flexslider({
-				animation: "fade",
-				easing: "swing",
-				selector: ".slides > div"
+			//$('.flexslider').flexslider({
+			//	animation: "fade",
+			//	easing: "swing",
+			//	selector: ".slides > div"
+			//});
+
+
+			$("#blogContent").find('.slides').owlCarousel({
+				items: 3,
+				itemsDesktop : [1000,3], //5 items between 1000px and 901px
+				itemsDesktopSmall : [900,3], // betweem 900px and 601px
+				itemsTablet: [768,2],
+				itemsMobile : [480,1],
+				autoPlay: true
 			});
 
 		},
