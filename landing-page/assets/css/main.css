@@ -3654,6 +3654,11 @@ blockquote p {
 
 
 @media only screen and (max-width: 767px){
+
+
+    .our-process .our-process-image img {
+        float: none;
+    }
     #search-section .open-popup-link{
         line-height: 16px;
     }
@@ -3678,6 +3683,7 @@ blockquote p {
     .our-process .process .our-process-text.right{
         text-align: left;
     }
+
 }
 
 #pricing{
@@ -3791,6 +3797,25 @@ ul.user-menu-actions li a:hover {
 #pricing .section-heading{
     margin-bottom: 20px;
 }
+
+.our-process .our-process-image{
+    border:none;
+    border-radius: 0;
+}
+
+.our-process .our-process-image img{
+    max-width: 28em;
+    float: right;
+    position: relative;
+    top: -3em;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 767px){
+
+    .our-process .our-process-image img {
+        float: none;
+    }
 
 .m-b-5{
     margin-bottom: 5px !important;
