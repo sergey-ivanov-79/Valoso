@@ -2004,12 +2004,16 @@ $(document).ready(function () {
 		setVisibleTitle.call(this);
 	});
 
-	$da.each(function () {
-		setVisibleTitle.call(this);
-	});
+	window.setTimeout(function () {
+		$da.each(function () {
+			setVisibleTitle.call(this);
+		});
+	}, 100);
 
 	$(window).on('resize', function () {
-		setVisibleTitle();
+		$da.each(function () {
+			setVisibleTitle.call(this);
+		});
 	});
 
 	function setVisibleTitle(){
@@ -2111,7 +2115,7 @@ $(document).ready(function () {
 		},
 		error: function(data)
 		{
-			alert('Your browser broke!');
+			console.log('There was a problem while fetching blog posts');
 			return false;
 		}
 
