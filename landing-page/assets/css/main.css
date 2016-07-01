@@ -3697,8 +3697,10 @@ ul.user-menu-actions {
     margin: 0;
     width: auto;
     display: inline-block;
-    position: absolute;
-    right: 0;
+    position: fixed;
+    right: 50px;
+    top: 0;
+    transition: all ease 200ms;
 }
 
 ul.user-menu-actions li {
@@ -3808,15 +3810,26 @@ ul.user-menu-actions li a:hover {
     float: right;
     position: relative;
     top: -3em;
-     left: 8em;
+     left: 0;
     display: inline-block;
 }
 
 .our-process .our-process-image.left img{
-     left: -8em;
+     left: 0;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 769px) {
+
+    .our-process .our-process-image.left img{
+        left: -8em;
+    }
+
+    .our-process .our-process-image img{
+        left: 8em;
+    }
+}
+
+@media only screen and (max-width: 768px) {
 
     .our-process .our-process-image img {
         float: none;
@@ -3827,6 +3840,14 @@ ul.user-menu-actions li a:hover {
 
     .our-process .process {
         margin: 40px 0;
+    }
+
+    ul.user-menu-actions{
+        top: -2px;
+    }
+
+    ul.user-menu-actions li a {
+        padding: 5px 10px;
     }
 }
 
