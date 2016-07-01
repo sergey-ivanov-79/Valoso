@@ -3617,8 +3617,8 @@ blockquote p {
 }
 
 .block-thumb figure img {
-    min-height: 135px;
 }
+
 @media screen and (max-width: 410px){
     .block-thumb{
         min-height: initial;
