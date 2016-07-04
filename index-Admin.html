@@ -1,0 +1,2075 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script>
+        window.valosoApp = window.valosoApp || {};
+        valosoApp.events = null;
+    </script><!-- /javascript from "laracasts/utilities" -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content=
+    "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    name="viewport">
+    <meta content="f4YUqPz0wsnERxhIgF8nA8EsZfSIJinVQu0ZpXmb" name="_token">
+    <title>Valoso</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords"><!-- Application-specific meta tags -->
+    <!-- Windows 8: see http://msdn.microsoft.com/en-us/library/ie/dn255024%28v=vs.85%29.aspx for details -->
+    <meta content="" name="application-name">
+    <meta content="" name="msapplication-TileColor">
+    <meta content="" name="msapplication-TileImage">
+    <meta content="" name="msapplication-square150x150logo">
+    <meta content="" name="msapplication-square310x310logo">
+    <meta content="" name="msapplication-square70x70logo">
+    <meta content="" name="msapplication-wide310x150logo">
+    <!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
+    <meta content="" name="twitter:card">
+    <meta content="" name="twitter:site">
+    <meta content="" name="twitter:title">
+    <meta content="" name="twitter:description">
+    <meta content="" name="twitter:url">
+    <!-- Facebook (and some others) use the Open Graph protocol: see http://ogp.me/ for details -->
+    <meta content="" property="og:title">
+    <meta content="" property="og:description">
+    <meta content="" property="og:url">
+    <meta content="" property="og:image">
+    <meta content="1426691470988167" property="fb:app_id">
+    <meta content="LDCaAn7dK7OlZt5etvNBfsW1VwPuRnFcKgqIriq3B1g" name=
+    "google-site-verification">
+    <meta content="x9zoDIxwNm_dKGkOZpGAif0LcHDsf_vbj-inPAqO39k" name=
+    "google-site-verification">
+    <link href="https://valoso.com/users/designers/profile/171/edit/" rel=
+    "canonical"><!-- HTML5 shim for IE backwards compatibility -->
+    <!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <link href="https://assets.valoso.com/dist/base.min.css" media="all" rel=
+    "stylesheet" type="text/css">
+    <link href="/assets/css/fbb2aa653fade22ec921800b75622eb11465568018.css"
+    rel="stylesheet">
+    <link href="https://staging.valoso.com/assets/css-ns/font-awesome.css"
+    media="all" rel="stylesheet" type="text/css">
+    <link href="https://staging.valoso.com/assets/css/offcanvas.css" media=
+    "all" rel="stylesheet" type="text/css">
+    <link href="https://staging.valoso.com/assets/css/header-offcanvas.css"
+    media="all" rel="stylesheet" type="text/css">
+    <link href="https://assets.valoso.com/dist/edit-page.min.css" media="all"
+    rel="stylesheet" type="text/css">
+    <link href="assets/css/edit-page.min.css" media="all" rel="stylesheet"
+    type="text/css">
+    <link href="https://staging.valoso.com/assets/css/jquery.Jcrop.min.css"
+    rel="stylesheet">
+    <link href="https://staging.valoso.com/assets/admin/css/select2.min.css"
+    rel="stylesheet">
+    <style type="text/css">
+        .user-experience-company,
+        .user-experience-duration {
+            color: #8d8d8d;
+        }
+        
+        ol> li {
+            margin-left: 0px;
+        }
+        
+        .popover-content .select2-container--default .select2-results> .select2-results__options {
+            max-height: auto;
+        }
+        
+        .fileUpload,
+        .fileUpload img {
+            width: 32px !important;
+            min-width: 0px;
+        }
+        
+        .ajax-file-upload {
+            right: 4px;
+            top: -40px;
+            width: 32px;
+            float: right;
+        }
+        
+        .delete-experience {
+            cursor: pointer;
+        }
+        
+        .edit-together {
+            cursor: pointer;
+        }
+        
+        .popup-youtube img {
+            width: 100%;
+        }
+        
+        .wrapper-popup-youtube .together-trash {
+            position: absolute;
+            bottom: 5px;
+            right: 15px;
+        }
+    </style>
+    <style type="text/css">
+        .uploadCertificate span {
+            color: black;
+        }
+    </style>
+    <style type="text/css">
+        .upload-sign,
+        .upload-sign-holder .ajax-file-upload {
+            background-image: url("/assets/css/shared/images/pencil.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 32px;
+            width: 32px;
+        }
+        
+        .upload-sign.redborder,
+        .upload-sign-holder.red-border .ajax-file-upload {
+            background-image: url("/assets/css/shared/images/red-pencil.png");
+        }
+        
+        .hire-me {
+            background: #0285c2 none repeat scroll 0 0;
+            border: 1px solid #0285c2;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 600;
+            margin: 0 auto;
+            padding: 3px 50px;
+        }
+    </style>
+    <style type="text/css">
+        .ajax-file-upload-filename {
+            display: none;
+        }
+        
+        .loading-image {
+            height: 99%;
+            position: absolute;
+            width: 100%;
+            cursor: wait;
+            display: none;
+        }
+    </style>
+    <script src=
+    "https://staging.valoso.com/assets/js/libs/jquery-1.11.0.min.js">
+    </script>
+    <script src=
+    "https://staging.valoso.com/assets/bootstrap/js/bootstrap.min.js">
+    </script>
+    <script src="https://staging.valoso.com/assets/js/app.js">
+    </script>
+    <script src="https://staging.valoso.com/assets/js/libs/headroom.min.js">
+    </script>
+    <script src="https://staging.valoso.com/assets/js/jquery.headroom.js">
+    </script>
+    <script src="assets/js/7a1f11af30c2bb61322d9536c4a93a6214616080920.js">
+    </script>
+    <script data-app-key="74obck2489oevm1" id="dropboxjs" src=
+    "https://staging.valoso.com/assets/js/dropbox.js">
+    </script>
+    <script src="https://staging.valoso.com/assets/js-ns/custom/app.js">
+    </script>
+</head>
+<body class="dash-page dash-page-cont">
+    <div class="wrapp-row-offcanvas">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="page-wrap">
+                <div class="close-nav"></div>
+                <div class="preview-profile-wrapper" id="header-top">
+                    <div class="phone-simulator phone-simulator-dop"><img alt=
+                    "Profile mobile view" src=
+                    "https://staging.valoso.com/assets/css/shared/images/iphone.png"></div>
+                    <div class="ipad-simulator ipad-simulator-dop"><img alt=
+                    "Profile tablet view" src=
+                    "https://staging.valoso.com/assets/css/shared/images/ipad.png"></div>
+                    <div class="top-menu">
+                        <div class="desktop-devices">
+                            <button class="active" id="desktop-sim"><img alt=
+                            "Profile desktop view" src=
+                            "https://staging.valoso.com/assets/css/shared/images/desktop.png"></button>
+                            <button id="tablet-sim"><img alt=
+                            "Profile mobile view" src=
+                            "https://staging.valoso.com/assets/css/shared/images/tablet.png">
+                            </button> <button id="phone-sim"><img alt=
+                            "Profile tablet view" src=
+                            "https://staging.valoso.com/assets/css/shared/images/mobile.png">
+                            </button>
+                        </div><!-- /.desktop-devices -->
+                        <div class="container no-padding">
+                            <div class="desktop-buttons" style="display:none">
+                                <button class="edit-trigger href" data-target=
+                                "https://staging.valoso.com/users/designers/profile/171/edit">
+                                Preview</button>
+                            </div><!-- /.desktop-buttons -->
+                        </div><!-- /.container -->
+                    </div><!-- /.top-menu -->
+                    <header class="header-min-height" style=
+                    "margin: -41px 0px 41px 0px">
+                        <div class=
+                        "header header-dop header-mobile header-mobile-fix proj-forum headroom-dop">
+                        <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 line-bottom-mobile">
+                                        <nav class=
+                                        "navbar navbar-default navbar-mobile"
+                                        id="top-nav" role="navigation">
+                                            <div class="col-navbar">
+                                                <div class="col-navbar-wrap">
+                                                    <div class=
+                                                    "messages-wrapper">
+                                                        <div class="dropdown">
+                                                            <a href=
+                                                            "https://staging.valoso.com/messages/inbox">
+                                                            <i class=
+                                                            "fa fa-envelope"></i>
+                                                            Messages</a>
+                                                        </div>
+                                                    </div>
+                                                    <div class=
+                                                    "dropdown profile-dropdown profile-dropdown-mobile">
+                                                    <img class=
+                                                    "userProp img-mobile"
+                                                    data-toggle="dropdown"
+                                                    height="56" src=
+                                                    "https://staging.valoso.com/images/profile-pic.jpg"
+                                                        width="56"> <a class=
+                                                        "toogleDrpDwn"
+                                                        data-toggle="dropdown"
+                                                        href="#"><i class=
+                                                        "ico b-caret b-caret-mobile fa fa-caret-down">
+                                                        </i></a>
+                                                        <div aria-labelledby=
+                                                        "dLabel" class=
+                                                        "dropdown dropdown-tip dropdown-menu dropdown-menu-mobile dropdown-menu-new"
+                                                        role="menu">
+                                                            <ul class=
+                                                            "dropdown-menu-inner">
+                                                            <li>
+                                                                    <a class=
+                                                                    "dropdown-email"
+                                                                    href=
+                                                                    "javascript:void(0)">
+                                                                    mrjshannon@yahoo.com</a>
+                                                                </li>
+                                                                <li style=
+                                                                "list-style: none; display: inline">
+                                                                <div class=
+                                                                "dropdown-line">
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <a href=
+                                                                    "https://staging.valoso.com/users/settings">
+                                                                    <i class=
+                                                                    "fa fa-cog">
+                                                                    </i>Settings</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href=
+                                                                    "https://staging.valoso.com/contact-us">
+                                                                    <i class=
+                                                                    "fa fa-question">
+                                                                    </i>Help</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class=
+                                                                    "sign_out"
+                                                                    href=
+                                                                    "https://staging.valoso.com/users/sign-out">
+                                                                    <i class=
+                                                                    "fa fa-sign-out">
+                                                                    </i> Sign
+                                                                    Out</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="cols header-temp">
+                                                <div class=
+                                                "navbar-header navbar-header-mobile"
+                                                style="background: none #fff;">
+                                                    <button class=
+                                                    "navbar-toggle collapsed button-mobile"
+                                                    data-target=
+                                                    "#navbar-collapse-1"
+                                                    data-toggle="offcanvas"
+                                                    type="button"><span class=
+                                                    "sr-only">Toggle
+                                                    navigation</span>
+                                                    <span class=
+                                                    "icon-bar"></span>
+                                                    <span class=
+                                                    "icon-bar"></span>
+                                                    <span class=
+                                                    "icon-bar"></span></button>
+                                                    <a class=
+                                                    "navbar-brand navbar-brand-mobile"
+                                                    href="#"><span class=
+                                                    "angle"></span>
+                                                    <h1 class="profile">j
+                                                    shannon</h1></a>
+                                                </div>
+                                                <div class=
+                                                "collapse navbar-collapse" id=
+                                                "bs-example-navbar-collapse-1">
+                                                    <ul class="nav navbar-nav"
+                                                    style=
+                                                    "position: relative; top: 7px;">
+                                                    <li>
+                                                            <a href=
+                                                            "https://staging.valoso.com/users/designers/profile/171/edit">
+                                                            My Editor
+                                                            Profile</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                    <div class=
+                                    "col-sm-12-max col-sm-12-max-dop">
+                                        <div class=
+                                        "wrapp-shop-msg-noti-icos clearfix line-bott">
+                                        <div class="top-menu top-menu-min"
+                                        style="display: none;">
+                                                <div class=
+                                                "container no-padding">
+                                                    <div class=
+                                                    "desktop-buttons" style=
+                                                    "display:none">
+                                                        <button class=
+                                                        "edit-trigger href"
+                                                        data-target=
+                                                        "https://staging.valoso.com/users/designers/profile/171/edit">
+                                                        Preview</button>
+                                                    </div>
+                                                    <!-- /.desktop-buttons -->
+                                                </div><!-- /.container -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="container wrapp-emptyprofile-info">
+                        <div class="row">
+                            <div class="emptyprofile-info">
+                                <p class="gray">The fields with &nbsp;<img src=
+                                "https://staging.valoso.com/assets/images/red-pencil.png">
+                                must be filled before you are eligible to work
+                                on any video projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="addition container no-padding dop-top-info">
+                        <div class="scrollbar-big inner-addition clearfix">
+                            <div class="full-container">
+                                <div class="profile-top-img">
+                                    <div class='loading-image'></div>
+                                    <div class="buy-a-domain">
+                                        <h5>Your URL is
+                                        jshannon.staging.valoso.com</h5>
+                                        <div class="valoso-domain">
+                                            <input id="alias-subdomain" type=
+                                            "text" value="jshannon">
+                                            <span>.staging.valoso.com</span>
+                                            <button id=
+                                            "use-subdomain">Use</button>
+                                        </div>
+                                        <div class="not-valoso-domain" style=
+                                        "display:none">
+                                            <input id="alias-domain" type=
+                                            "text" value="jshannon.com">
+                                            <button id=
+                                            "buy-domain-btn">Buy</button>
+                                        </div><!-- /.not-valoso-domain -->
+                                        <h5 style="display:none">
+                                        <a data-target="#already-have-domain"
+                                        data-toggle="modal">Already have a
+                                        domain name?</a></h5>
+                                    </div>
+                                    <div class="upload-sign-holder red-border">
+                                        <div class="upload-foto">
+                                            <h2 class="h2 gray">UPLOAD A COVER
+                                            PHOTO</h2>
+                                        </div><img alt="j shannon cover image"
+                                        data-default=
+                                        "https://staging.valoso.com/images/triangle.jpg"
+                                        id="cover_img" src="" style=
+                                        "display:none">
+                                        <div class="fileUpload btn btn-primary"
+                                        id="designer_cover_pic"></div>
+                                    </div>
+                                </div><!-- /.profile-top-img -->
+                                <div class="container">
+                                    <div class="row rowWithPadding">
+                                        <div class="col-lg-3 ProfilePic mb20">
+                                            <img alt="Test tester" class=
+                                            'profile_picture_src' id=
+                                            "profilepic" src=
+                                            "https://staging.valoso.com/images/profile-pic.jpg">
+                                            <button id="designer_profile_pic">
+                                            <div class=
+                                            "fileUpload btn btn-primary upload-sign redborder">
+                                            </div></button>
+                                        </div>
+                                        <div class="col-lg-7">
+                                            <h3 class=
+                                            "mb15 NameSection full_name">Jordan
+                                            Shannon <img class=
+                                            "edit-name-pop edit-together"
+                                            data-content=
+                                            " &lt;input type='text' name='first_name' class='first_name' value='j' &gt; &lt;input type='text' name='last_name' class='last_name' value='shannon'&gt; &lt;div class='placeholder-buttons'&gt; &lt;button class='popover-submit'&gt;Save&lt;/button&gt; &lt;button class='popover-dismiss close'&gt;Cancel&lt;/button&gt; &lt;/div&gt;"
+                                            data-html="true" data-placement=
+                                            "top" data-toggle="popover"
+                                            data-trigger="click" src=
+                                            "https://staging.valoso.com/assets/css/shared/images/pencil.png">
+                                             - <span class=
+                                            "userLocation">Chicago, Il</span>
+                                            <img class=
+                                            "edit-name-pop edit-together"
+                                            data-content=
+                                            " &lt;input type='text' name='city' class='city' value='city' &gt; &lt;input type='text' name='state' class='state' value='state'&gt; &lt;input type='text' name='zip' class='zip' value='zip' &gt; &lt;div class='placeholder-buttons'&gt; &lt;button class='popover-submit'&gt;Save&lt;/button&gt; &lt;button class='popover-dismiss close'&gt;Cancel&lt;/button&gt; &lt;/div&gt;"
+                                            data-html="true" data-placement=
+                                            "top" data-toggle="popover"
+                                            data-trigger="click" src=
+                                            "https://staging.valoso.com/assets/css/shared/images/pencil.png">
+                                            </h3>
+                                            <div class=
+                                            "user-profile-left-details designer-position">
+                                            <div class="position-holder">
+                                                    <h4 class="new-gray">
+                                                    Profession <span></span>
+                                                    <img class=
+                                                    "edit-position-pop edit-together"
+                                                    data-content=
+                                                    "&lt;div class='form-group'&gt; &lt;label for='exampleInputEmail1' class='p-18 bold'&gt; POSITIONS &lt;/label&gt; &lt;div class='row check-inn'&gt; &lt;div class='wrapper-checkbox'&gt; &lt;/div&gt; &lt;div class='wrapper-checkbox'&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='1' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; Producer&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='2' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; Video cutter&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='3' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; Matchmove artist&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='4' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; Colorist&lt;/div&gt; &lt;/label&gt; &lt;/div&gt; &lt;div class='wrapper-checkbox'&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='5' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; VFX artist&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='6' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; Rotoscope/paint artist&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='7' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; Matte painter&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='8' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; Composer&lt;/div&gt; &lt;/label&gt; &lt;/div&gt; &lt;div class='wrapper-checkbox'&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='9' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; CG genarilist&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='10' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; 3D modeler&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='11' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; Compositor&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='12' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; Sound editor&lt;/div&gt; &lt;/label&gt; &lt;/div&gt; &lt;div class='wrapper-checkbox'&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='14' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; Voice-over artist&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='15' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; Videographer&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='16' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; Photographer&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='position_id[]' value='17' &gt; &lt;/div&gt; &lt;div class='media-body'&gt; Animator&lt;/div&gt; &lt;/label&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='placeholder-buttons'&gt; &lt;button class='popover-submit'&gt;Save&lt;/button&gt; &lt;button class='closed popover-dismiss'&gt;Cancel&lt;/button&gt; &lt;/div&gt; &lt;script&gt; $(document).ready(function(){ $('.check-inn input').iCheck({ checkboxClass: 'icheckbox_square-blue', increaseArea: '25%' }); }); &lt;/script&gt;"
+                                                    data-html="true"
+                                                    data-placement="top"
+                                                    data-toggle="popover"
+                                                    data-trigger="click" src=
+                                                    "https://staging.valoso.com/assets/css/shared/images/red-pencil.png">
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 nopadding">
+                                                <div class=" nopadding mb20">
+                                                    <div>
+                                                        <h5 class=
+                                                        "user-star-rating">
+                                                        5.0/5 <img alt=
+                                                        "User feedback" src=
+                                                        "https://staging.valoso.com/assets/css/shared/images/5-star.png">
+                                                        </h5>
+                                                    </div>
+                                                    <div class=
+                                                    "hire-me-section">
+                                                        <h5 class=
+                                                        "user-star-reviews">0.0
+                                                        reviews</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 nopadding">
+                                                <div class=" mb20">
+                                                    <ul class=
+                                                    "list-inline new-gray">
+                                                        <li>
+                                                            <h3><label class=
+                                                            "hourly_rate">$0.00</label>
+                                                            <span class=
+                                                            "user-currency">/hr</span></h3>
+                                                        </li>
+                                                        <li>
+                                                            <h3><label class=
+                                                            "hourly_rate">$0.00</label>
+                                                            <span class=
+                                                            "user-currency">/half
+                                                            day</span></h3>
+                                                        </li>
+                                                        <li>
+                                                            <h3><label class=
+                                                            "hourly_rate">$0.00</label>
+                                                            <span class=
+                                                            "user-currency">/full
+                                                            day</span></h3>
+                                                        </li>
+                                                        <li style=
+                                                        "list-style: none">
+                                                        <img class=
+                                                        "edit-together"
+                                                        data-content=
+                                                        " &lt;input type='text' class='hourly_rate' name='hourly_rate' id='hourly_rate_input_box' autocomplete='off' autocorrect='off' autocapitalize='off' spellcheck='false' value='' placeholder='Hourly Rate'&gt; &lt;input type='text' class='hourly_rate' name='hourly_rate' id='hourly_rate_input_box' autocomplete='off' autocorrect='off' autocapitalize='off' spellcheck='false' value='' placeholder='Half Day Rate'&gt; &lt;input type='text' class='hourly_rate' name='hourly_rate' id='hourly_rate_input_box' autocomplete='off' autocorrect='off' autocapitalize='off' spellcheck='false' value='' placeholder='Full Day Rate'&gt; &lt;div class='placeholder-buttons'&gt; &lt;button class='popover-submit'&gt;Save&lt;/button&gt; &lt;button class='popover-dismiss'&gt;Cancel&lt;/button&gt; &lt;/div&gt;"
+                                                        data-extra-attr=
+                                                        'hourly_rate'
+                                                        data-html="true"
+                                                        data-placement="left"
+                                                        data-toggle="popover"
+                                                        data-trigger="click"
+                                                        src=
+                                                        "https://staging.valoso.com/assets/css/shared/images/red-pencil.png"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class=
+                                            "col-md-12 nopadding mb20">
+                                                <div class=
+                                                "user-profile-left-details">
+                                                <p class=
+                                                "description new-gray">Summary
+                                                about myself</p><img class=
+                                                "edit-text-pop edit-together"
+                                                data-content=
+                                                "&lt;textarea name='description' class='description'&gt;&lt;/textarea&gt; &lt;div class='placeholder-buttons'&gt; &lt;button class='popover-submit'&gt;Save&lt;/button&gt; &lt;button class='popover-dismiss'&gt;Cancel&lt;/button&gt; &lt;/div&gt;"
+                                                data-html="true"
+                                                data-placement="top"
+                                                data-toggle="popover"
+                                                data-trigger="click" src=
+                                                "https://staging.valoso.com/assets/css/shared/images/red-pencil.png"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div class=
+                                            "col-md-12 nopadding mb20">
+                                            <strong class="new-gray">Phone
+                                            Number:</strong><br>
+                                            888-888-8888 <img class=
+                                            "edit-text-pop edit-together"
+                                            data-content=
+                                            "&lt;input type='tel' name='usrtel' placeholder='Phone Number' &gt; &lt;div class='placeholder-buttons'&gt; &lt;button class='popover-submit'&gt;Save&lt;/button&gt; &lt;button class='popover-dismiss'&gt;Cancel&lt;/button&gt; &lt;/div&gt;"
+                                            data-html="true" data-placement=
+                                            "top" data-toggle="popover"
+                                            data-trigger="click" src=
+                                            "https://staging.valoso.com/assets/css/shared/images/red-pencil.png">
+                                            </div>
+                                            <div>
+                                                <div class=
+                                                "col-md-12 nopadding LanguageSection">
+                                                <strong class=
+                                                "new-gray">Languages:
+                                                <span class='languages'></span>
+                                                <img class=
+                                                "edit-language-pop edit-together"
+                                                    data-content=
+                                                    " &lt;select name='language_id[]' multiple class='language_selector'&gt; &lt;option value='1' &gt;Afrikanns&lt;/option&gt; &lt;option value='2' &gt;Albanian&lt;/option&gt; &lt;option value='3' &gt;Arabic&lt;/option&gt; &lt;option value='4' &gt;Armenian&lt;/option&gt; &lt;option value='5' &gt;Basque&lt;/option&gt; &lt;option value='6' &gt;Bengali&lt;/option&gt; &lt;option value='7' &gt;Bulgarian&lt;/option&gt; &lt;option value='8' &gt;Catalan&lt;/option&gt; &lt;option value='9' &gt;Cambodian&lt;/option&gt; &lt;option value='10' &gt;Chinese (Mandarin)&lt;/option&gt; &lt;option value='11' &gt;Croation&lt;/option&gt; &lt;option value='12' &gt;Czech&lt;/option&gt; &lt;option value='13' &gt;Danish&lt;/option&gt; &lt;option value='14' &gt;Dutch&lt;/option&gt; &lt;option value='15' &gt;English&lt;/option&gt; &lt;option value='16' &gt;Estonian&lt;/option&gt; &lt;option value='17' &gt;Fiji&lt;/option&gt; &lt;option value='18' &gt;Finnish&lt;/option&gt; &lt;option value='19' &gt;French&lt;/option&gt; &lt;option value='20' &gt;Georgian&lt;/option&gt; &lt;option value='21' &gt;German&lt;/option&gt; &lt;option value='22' &gt;Greek&lt;/option&gt; &lt;option value='23' &gt;Gujarati&lt;/option&gt; &lt;option value='24' &gt;Hebrew&lt;/option&gt; &lt;option value='25' &gt;Hindi&lt;/option&gt; &lt;option value='26' &gt;Hungarian&lt;/option&gt; &lt;option value='27' &gt;Icelandic&lt;/option&gt; &lt;option value='28' &gt;Indonesian&lt;/option&gt; &lt;option value='29' &gt;Irish&lt;/option&gt; &lt;option value='30' &gt;Italian&lt;/option&gt; &lt;option value='31' &gt;Japanese&lt;/option&gt; &lt;option value='32' &gt;Javanese&lt;/option&gt; &lt;option value='33' &gt;Korean&lt;/option&gt; &lt;option value='34' &gt;Latin&lt;/option&gt; &lt;option value='35' &gt;Latvian&lt;/option&gt; &lt;option value='36' &gt;Lithuanian&lt;/option&gt; &lt;option value='37' &gt;Macedonian&lt;/option&gt; &lt;option value='38' &gt;Malay&lt;/option&gt; &lt;option value='39' &gt;Malayalam&lt;/option&gt; &lt;option value='40' &gt;Maltese&lt;/option&gt; &lt;option value='41' &gt;Maori&lt;/option&gt; &lt;option value='42' &gt;Marathi&lt;/option&gt; &lt;option value='43' &gt;Mongolian&lt;/option&gt; &lt;option value='44' &gt;Nepali&lt;/option&gt; &lt;option value='45' &gt;Norwegian&lt;/option&gt; &lt;option value='46' &gt;Persian&lt;/option&gt; &lt;option value='47' &gt;Polish&lt;/option&gt; &lt;option value='48' &gt;Portuguese&lt;/option&gt; &lt;option value='49' &gt;Punjabi&lt;/option&gt; &lt;option value='50' &gt;Quechua&lt;/option&gt; &lt;option value='51' &gt;Romanian&lt;/option&gt; &lt;option value='52' &gt;Russian&lt;/option&gt; &lt;option value='53' &gt;Samoan&lt;/option&gt; &lt;option value='54' &gt;Serbian&lt;/option&gt; &lt;option value='55' &gt;Slovak&lt;/option&gt; &lt;option value='56' &gt;Slovenian&lt;/option&gt; &lt;option value='57' &gt;Spanish&lt;/option&gt; &lt;option value='58' &gt;Swahili&lt;/option&gt; &lt;option value='59' &gt;Swedish &lt;/option&gt; &lt;option value='60' &gt;Tamil&lt;/option&gt; &lt;option value='61' &gt;Tatar&lt;/option&gt; &lt;option value='62' &gt;Telugu&lt;/option&gt; &lt;option value='63' &gt;Thai&lt;/option&gt; &lt;option value='64' &gt;Tibetan&lt;/option&gt; &lt;option value='65' &gt;Tonga&lt;/option&gt; &lt;option value='66' &gt;Turkish&lt;/option&gt; &lt;option value='67' &gt;Ukranian&lt;/option&gt; &lt;option value='68' &gt;Urdu&lt;/option&gt; &lt;option value='69' &gt;Uzbek&lt;/option&gt; &lt;option value='70' &gt;Vietnamese&lt;/option&gt; &lt;option value='71' &gt;Welsh&lt;/option&gt; &lt;option value='72' &gt;Xhosa&lt;/option&gt; &lt;/select&gt; &lt;div class='placeholder-buttons'&gt; &lt;button class='popover-submit'&gt;Save&lt;/button&gt; &lt;button class='popover-dismiss'&gt;Cancel&lt;/button&gt; &lt;/div&gt;"
+                                                    data-html="true"
+                                                    data-placement="left"
+                                                    data-toggle="popover"
+                                                    data-trigger="click" src=
+                                                    "https://staging.valoso.com/assets/css/shared/images/red-pencil.png">
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <ol class="simple_with_drop">
+                                    <li class=
+                                    "backgr-fon-hover col-sm-12 clearfix user-experience"
+                                    data-section="ratings" id=
+                                    "ratings-container">
+                                        <h3>Location</h3>
+                                        <div class='edit-box'>
+                                            <span class=
+                                            "fa fa-arrows-v"></span>
+                                            <span class=
+                                            "fa fa-plus-circle edit-together"
+                                            data-content=
+                                            " &lt;input type='text' name='City' placeholder='City'&gt; &lt;input type='text' name='State' placeholder='State'&gt; &lt;input type='text' name='Zip' placeholder='From (mm)'&gt; &lt;input type='text' name='Country' placeholder='Country'&gt; &lt;div class='validation-errors-container'&gt;&lt;/div&gt; &lt;div class='placeholder-buttons'&gt; &lt;button class='popover-submit-experience'&gt;Save&lt;/button&gt; &lt;button class='popover-dismiss'&gt;Cancel&lt;/button&gt; &lt;/div&gt;"
+                                            data-html="true" data-placement=
+                                            "left" data-toggle="popover"
+                                            data-trigger="click"></span>
+                                        </div>
+                                    </li>
+                                    <li class=
+                                    "backgr-fon-hover col-sm-12 clearfix user-experience"
+                                    data-section="ratings" id=
+                                    "ratings-container">
+                                        <h3>Gear</h3>
+                                        <div class='edit-box'>
+                                            <span class=
+                                            "fa fa-arrows-v"></span>
+                                            <span class=
+                                            "fa fa-plus-circle edit-together"
+                                            data-content=
+                                            " &lt;input type='text' name='Item Name' placeholder='Item Name'&gt; &lt;input type='text' name='Item Description' placeholder='Description'&gt; &lt;label class='btn btn-default btn-file'&gt; Item Image &lt;input type='file' style='display: none;'&gt; &lt;/label&gt; &lt;div class='validation-errors-container'&gt;&lt;/div&gt; &lt;div class='placeholder-buttons'&gt; &lt;button class='popover-submit-experience'&gt;Save&lt;/button&gt; &lt;button class='popover-dismiss'&gt;Cancel&lt;/button&gt; &lt;/div&gt;"
+                                            data-html="true" data-placement=
+                                            "left" data-toggle="popover"
+                                            data-trigger="click"></span>
+                                        </div>
+                                    </li>
+                                    <li class=
+                                    "backgr-fon-hover col-sm-12 clearfix user-certifications">
+                                    <div class="">
+                                            <h3>Payment</h3>
+                                            <p><a href=
+                                            "https://staging.valoso.com/withdrawal/payment-method-setup/prepaidcard">
+                                            <img src="/assets/icons/150909.svg"
+                                            width="100px"></a> <a href=
+                                            "https://staging.valoso.com/withdrawal/payment-method-setup/iach">
+                                            <img src="/assets/icons/501998.svg"
+                                            width="100px"></a></p>
+                                        </div>
+                                    </li>
+                                    <li class=
+                                    "backgr-fon-hover col-sm-12 clearfix user-experience"
+                                    data-section="experience" id=
+                                    "experience-container">
+                                        <h3>Experiences</h3>
+                                        <div class='edit-box'>
+                                            <span class=
+                                            "fa fa-arrows-v"></span>
+                                            <span class=
+                                            "fa fa-plus-circle edit-together"
+                                            data-content=
+                                            " &lt;input type='text' name='title' placeholder='3D Modeller'&gt; &lt;input type='text' name='company' placeholder='XYZ Ltd. Co.'&gt; &lt;input type='text' name='date_from_m' placeholder='From (mm)'&gt; &lt;input type='text' name='date_from_y' placeholder='From (yyyy)'&gt; &lt;input type='text' name='date_to_m' placeholder='To (mm)'&gt; &lt;input type='text' name='date_to_y' placeholder='To (yyyy)'&gt; &lt;textarea name='description' placeholder='Description'&gt;&lt;/textarea&gt; &lt;div class='validation-errors-container'&gt;&lt;/div&gt; &lt;div class='placeholder-buttons'&gt; &lt;button class='popover-submit-experience'&gt;Save&lt;/button&gt; &lt;button class='popover-dismiss'&gt;Cancel&lt;/button&gt; &lt;/div&gt;"
+                                            data-html="true" data-placement=
+                                            "left" data-toggle="popover"
+                                            data-trigger="click"></span>
+                                        </div>
+                                    </li>
+                                    <li class=
+                                    "backgr-fon-hover col-sm-12 clearfix user-education"
+                                    data-section="education" id=
+                                    "education-container">
+                                        <h3>Education</h3>
+                                        <div class='edit-box'>
+                                            <span class=
+                                            "fa fa-arrows-v"></span>
+                                            <span class=
+                                            "edit-together fa fa-plus-circle"
+                                            data-content=
+                                            " &lt;input type='text' name='title' placeholder='Course/Degree'&gt; &lt;input type='text' name='university' placeholder= 'Name of School/University'&gt; &lt;input type='text' name='date_from_m' placeholder='From (mm)'&gt; &lt;input type='text' name='date_from_y' placeholder='From (yyyy)'&gt; &lt;input type='text' name='date_to_m' placeholder='To (mm)'&gt; &lt;input type='text' name='date_to_y' placeholder='To (yyyy)'&gt; &lt;div class='validation-errors-container'&gt;&lt;/div&gt; &lt;div class='placeholder-buttons'&gt; &lt;button class='popover-submit-education'&gt;Save&lt;/button&gt; &lt;button class='popover-dismiss'&gt;Cancel&lt;/button&gt; &lt;/div&gt;"
+                                            data-html="true" data-placement=
+                                            "left" data-toggle="popover"
+                                            data-trigger="click"></span>
+                                        </div>
+                                    </li>
+                                    <li class=
+                                    "backgr-fon-hover col-sm-12 clearfix user-certifications"
+                                    data-section="certificates" id=
+                                    "certificates-container">
+                                        <h3>Certifications</h3>
+                                        <div class="edit-box">
+                                            <span class=
+                                            "fa fa-arrows-v"></span>
+                                            <span class=
+                                            "fa fa-plus-circle edit-together"
+                                            data-container=".simple_with_drop"
+                                            data-content=
+                                            " &lt;input type='text' name='title' placeholder='Title'/&gt; &lt;input type='text' name='valid_from_month' placeholder='Valid from (month)'/&gt; &lt;input type='text' name='valid_from_year' placeholder='Valid from (year)'/&gt; &lt;input type='hidden' name='image' value='' class='certificateImage'&gt; &lt;div class='cer-pop-img clearfix'&gt; &lt;div class='fileUpload btn btn-primary uploadCertificate'&gt; &lt;span&gt;Upload Image&lt;/span&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='validation-errors-container'&gt;&lt;/div&gt; &lt;div class='placeholder-buttons'&gt; &lt;button class='popover-submit-certification'&gt;Save&lt;/button&gt; &lt;button class='popover-dismiss'&gt;Cancel&lt;/button&gt; &lt;/div&gt;"
+                                            data-html="true" data-placement=
+                                            "left" data-toggle="popover"
+                                            data-trigger="click"></span>
+                                        </div>
+                                    </li>
+                                    <li class=
+                                    "backgr-fon-hover col-sm-12 clearfix user-publication"
+                                    data-section="publications" id=
+                                    "publications-container">
+                                        <h3>Publication</h3>
+                                        <div class='edit-box'>
+                                            <span class=
+                                            "fa fa-arrows-v"></span>
+                                            <span class=
+                                            "fa fa-plus-circle edit-together"
+                                            data-content=
+                                            " &lt;input name='title' type='text' placeholder='Title'&gt; &lt;input name='description' type='text' placeholder='Description'&gt; &lt;div class='validation-errors-container'&gt;&lt;/div&gt; &lt;div class='placeholder-buttons'&gt; &lt;button class='popover-submit-publication'&gt;Save&lt;/button&gt; &lt;button class='popover-dismiss'&gt;Cancel&lt;/button&gt; &lt;/div&gt;"
+                                            data-html="true" data-placement=
+                                            "left" data-toggle="popover"
+                                            data-trigger="click"></span>
+                                        </div>
+                                    </li>
+                                    <li class=
+                                    "backgr-fon-hover col-sm-12 clearfix user-portfolio"
+                                    data-section="portfolio" id=
+                                    "portfolio-container">
+                                        <h3>Portfolio</h3>
+                                        <div class="filter-btn clearfix">
+                                            <p class="filter">
+                                            Filter:</p><a class="btn active"
+                                            data-target="show-all">All</a>
+                                            <a class="btn" data-target="show-1"
+                                            style=
+                                            "display: none;">Commercials</a>
+                                            <a class="btn" data-target="show-2"
+                                            style=
+                                            "display: none;">Documentary</a>
+                                            <a class="btn" data-target="show-3"
+                                            style="display: none;">Film</a>
+                                            <a class="btn" data-target="show-4"
+                                            style="display: none;">3D</a>
+                                            <a class="btn" data-target="show-5"
+                                            style="display: none;">Weddings</a>
+                                            <a class="btn" data-target="show-6"
+                                            style=
+                                            "display: none;">Realestate</a>
+                                            <a class="btn" data-target="show-7"
+                                            style="display: none;">Explainer
+                                            videos</a> <a class="btn"
+                                            data-target="show-8" style=
+                                            "display: none;">Food</a> <a class=
+                                            "btn" data-target="show-9" style=
+                                            "display: none;">Other</a>
+                                        </div>
+                                        <div class="edit-box">
+                                            <span class="fa fa-arrows-v">
+                                            <!-- --></span> 
+                                            <!-- <span class="fa fa-plus-circle"></span> -->
+                                        </div>
+                                        <style>
+                                            .wrapper-popup-youtube .together-trash {
+                                                top: 5px;
+                                                bottom: auto;
+                                            }
+                                            
+                                            .portfolio-detail {
+                                                color: #fff;
+                                                font-size: 16px;
+                                                position: absolute;
+                                            }
+                                            
+                                            .portfolio-detail.top {
+                                                bottom: 35px;
+                                            }
+                                            
+                                            .portfolio-detail.bottom {
+                                                bottom: 15px;
+                                            }
+                                            
+                                            .portfolio-detail.left {
+                                                left: 15px;
+                                            }
+                                            
+                                            .portfolio-detail.right {
+                                                right: 15px;
+                                            }
+                                        </style>
+                                        <div class=
+                                        "col-sm-12 wrapper-popup-youtube clearfix">
+                                        <div class=
+                                        "col-xs-6 col-sm-4 edit-box">
+                                                <div class="add-new-block">
+                                                    <i class="fa fa-plus"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class=
+                                        "add-new-portfolio clearfix">
+                                            <h4 class="h4 bold">ADD NEW
+                                            PORTFOLIO ITEM</h4>
+                                            <p>Get your video embed code from
+                                            where you have uploaded your video
+                                            and paste it below.</p>
+                                            <style>
+                                                #add-new-portfolio-form .errors-list-container {
+                                                    display: none;
+                                                    margin-top: 20px;
+                                                }
+                                                
+                                                #add-new-portfolio-form .form-group input {
+                                                    outline: 0;
+                                                    width: 100%;
+                                                    height: 35px;
+                                                    color: #a1a1a1;
+                                                    padding: 0 10px;
+                                                    margin-bottom: 10px;
+                                                    border: 1px solid #ddd;
+                                                    background-color: #f5f3f5;
+                                                }
+                                                
+                                                #add-new-portfolio-form .form-group input,
+                                                #add-new-portfolio-form .form-group textarea,
+                                                #add-new-portfolio-form .form-group select {
+                                                    border-radius: 0;
+                                                }
+                                                
+                                                #add-new-portfolio-form .form-group select {
+                                                    margin-bottom: 10px;
+                                                }
+                                                
+                                                #add-new-portfolio-form .form-group.has-error input,
+                                                #add-new-portfolio-form .form-group.has-error select {
+                                                    border-color: #a94442;
+                                                }
+                                            </style>
+                                            <form accept-charset="UTF-8"
+                                            action="https://staging.valoso.com/users/designers/profile/171/edit"
+                                            id="add-new-portfolio-form" method=
+                                            "post" name=
+                                            "add-new-portfolio-form">
+                                                <input name="_token" type=
+                                                "hidden" value=
+                                                "f4YUqPz0wsnERxhIgF8nA8EsZfSIJinVQu0ZpXmb">
+                                                <div class=
+                                                "alert alert-danger errors-list-container">
+                                                <strong>There were errors in
+                                                the form!</strong>
+                                                    <ul>
+                                                        <!-- -->
+                                                    </ul>
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea class=
+                                                    "form-control" cols="50"
+                                                    name="embed_code"
+                                                    placeholder=
+                                                    "https://www.youtube.com/watch?v=fvoXkpjnzbk"
+                                                    rows="10"></textarea>
+                                                </div>
+                                                <div class="form-group">
+                                                    <select class=
+                                                    "form-control" name=
+                                                    "topic_id">
+                                                        <option selected=
+                                                        "selected" value="">
+                                                            Select a Topic
+                                                        </option>
+                                                        <option value="1">
+                                                            Commercials
+                                                        </option>
+                                                        <option value="2">
+                                                            Documentary
+                                                        </option>
+                                                        <option value="3">
+                                                            Film
+                                                        </option>
+                                                        <option value="4">
+                                                            3D
+                                                        </option>
+                                                        <option value="5">
+                                                            Weddings
+                                                        </option>
+                                                        <option value="6">
+                                                            Realestate
+                                                        </option>
+                                                        <option value="7">
+                                                            Explainer videos
+                                                        </option>
+                                                        <option value="8">
+                                                            Food
+                                                        </option>
+                                                        <option value="9">
+                                                            Other
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control"
+                                                    name="project_title"
+                                                    placeholder=
+                                                    "Tile of the project" type=
+                                                    "text">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control"
+                                                    name="target" placeholder=
+                                                    "Who it was for?" type=
+                                                    "text">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input class="form-control"
+                                                    name="role" placeholder=
+                                                    "What was your role?" type=
+                                                    "text">
+                                                </div>
+                                                <div class="form-group">
+                                                    <textarea class=
+                                                    "form-control" cols="50"
+                                                    name="task_description"
+                                                    placeholder=
+                                                    "What did you create for / in the video?"
+                                                    rows="10"></textarea>
+                                                </div>
+                                                <p style="margin: 15px 0;">It's
+                                                important to only show work
+                                                that is done by you and not use
+                                                other people's showreels</p>
+                                                <div class="error-holder">
+                                                    <!-- -->
+                                                </div>
+                                                <div class=
+                                                "placeholder-buttons">
+                                                    <button class=
+                                                    "popover-submit-portfolio"
+                                                    type="submit">Save</button>
+                                                    <button class=
+                                                    "closed">Cancel</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-backdrop-1 fade">
+                                            <!-- -->
+                                        </div>
+                                    </li>
+                                    <li class=
+                                    "backgr-fon-hover col-sm-12 clearfix user-ratings no-padding hide"
+                                    data-section="ratings" id=
+                                    "ratings-container">
+                                        <div>
+                                            <span class=
+                                            "fa fa-arrows-v"></span>
+                                        </div>
+                                        <ol></ol><!-- End  -->
+                                    </li>
+                                    <li class=
+                                    "backgr-fon-hover col-sm-12 clearfix skills-block no-line"
+                                    data-section="skills" id=
+                                    "skills-container">
+                                        <h3>Skills</h3>
+                                        <div class="inner-skills clearfix">
+                                            <div class=
+                                            "col-sm-6-dop marg-right-2">
+                                                <h4 class=
+                                                "h4 text-black bold text-uppercase category">
+                                                Category of Expertise
+                                                <img class="edit-together"
+                                                data-content=
+                                                "&lt;div class='form-group'&gt; &lt;label for='exampleInputEmail1' class='p-18 bold'&gt; CATEGORY OF EXPERTISE &lt;/label&gt; &lt;div class='row check-inn'&gt; &lt;div class='wrapper-checkbox'&gt; &lt;/div&gt; &lt;div class='wrapper-checkbox'&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='category_id[]' value='1'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Autos and Vehicles&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='category_id[]' value='2'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Comedy&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='category_id[]' value='3'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Education&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='category_id[]' value='4'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Film & Animation&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='category_id[]' value='5'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Gaming&lt;/div&gt; &lt;/label&gt; &lt;/div&gt; &lt;div class='wrapper-checkbox'&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='category_id[]' value='6'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Howto & Style&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='category_id[]' value='7'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Music&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='category_id[]' value='8'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; News & Politics&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='category_id[]' value='9'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Nonprofits & Activism&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='category_id[]' value='10'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; People & Blogs&lt;/div&gt; &lt;/label&gt; &lt;/div&gt; &lt;div class='wrapper-checkbox'&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='category_id[]' value='11'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Pets & Animals&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='category_id[]' value='12'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Science & Technology&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='category_id[]' value='13'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Sports&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' name='category_id[]' value='14'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Travel & Events&lt;/div&gt; &lt;/label&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class='placeholder-buttons'&gt; &lt;button class='popover-submit-categories'&gt;Save&lt;/button&gt; &lt;button class='closed popover-dismiss'&gt;Cancel&lt;/button&gt; &lt;/div&gt; &lt;script&gt; $(document).ready(function(){ $('.check-inn input').iCheck({ checkboxClass: 'icheckbox_square-blue', increaseArea: '20%' }); }); &lt;/script&gt;"
+                                                data-html="true"
+                                                data-placement="top"
+                                                data-toggle="popover"
+                                                data-trigger="click" src=
+                                                "https://staging.valoso.com/assets/css/shared/images/pencil.png">
+                                                </h4>
+                                            </div><!-- END col-sm-6-dop -->
+                                            <div class="col-sm-6-dop">
+                                                <!-- Begin col-sm-6-dop -->
+                                                <div class="clearfix">
+                                                    <h4 class=
+                                                    "h4 text-black bold text-uppercase software video-software">
+                                                    video editing software
+                                                    <img class="edit-together"
+                                                    data-content=
+                                                    "&lt;div class='form-group'&gt; &lt;ul class='nav nav-tabs' role='tablist'&gt; &lt;li role='presentation' class='active'&gt; &lt;a href='#Video' aria-controls='Video' role='tab' data-toggle='tab'&gt;Video Editing Software&lt;/a&gt; &lt;/li&gt; &lt;li role='presentation'&gt; &lt;a href='#Software' aria-controls='Software' role='tab' data-toggle='tab'&gt;3D Software&lt;/a&gt; &lt;/li&gt; &lt;/ul&gt; &lt;div class='tab-content'&gt; &lt;div role='tabpanel' class='tab-pane active' id='Video'&gt; &lt;div class='row check-inn'&gt; &lt;div class='wrapper-checkbox'&gt; &lt;/div&gt; &lt;div class='wrapper-checkbox'&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='1'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Avidemux&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='2'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Adobe After Effects&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='3'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Adobe Premiere Elements&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='4'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Adobe Premiere Express&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='5'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Adobe Premiere Pro&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='6'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; ArcSoft ShowBiz&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='7'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Autodesk Flame&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='8'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Autodesk Smoke&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='9'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Avid DS&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='10'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Avid Symphony&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='11'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; AviSynth&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='12'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Blender VSE&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='13'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Camtasia Studio&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='14'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Cinelerra&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='15'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Clesh&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='16'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Corel VideoStudio&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='17'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Debugmode Wax&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='18'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Edius&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='19'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Final Cut Express&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='20'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Final Cut Pro&lt;/div&gt; &lt;/label&gt; &lt;/div&gt; &lt;div class='wrapper-checkbox'&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='21'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; FORscene&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='22'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Freemake Video Converter&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='23'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; FXhome Limited&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='24'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Harris Broadcast Velocity&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='25'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; iMovie&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='26'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; ivsEdits&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='27'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Kaltura&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='28'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Kdenlive&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='29'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Kino&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='30'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Lightworks&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='31'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; LiVES&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='32'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Lumiera&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='33'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Magix Movie Edit Pro&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='34'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Media 100 Suite&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='35'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Media Composer&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='36'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; MoviePlus&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='37'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; MPEG Video Wizard DVD&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='38'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; muvee Reveal&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='39'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; OpenShot Video Editor&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='40'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Pinnacle Studio&lt;/div&gt; &lt;/label&gt; &lt;/div&gt; &lt;div class='wrapper-checkbox'&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='41'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Pinnacle Videospin&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='42'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Pitivi&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='43'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Pixorial&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='44'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Roxio Creator&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='45'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; SGO Mistika&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='46'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Shotcut&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='47'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Sony Vegas Movie Studio&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='48'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Sony Vegas Pro&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='49'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Video Toaster&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='50'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; VideoLan Movie Creator&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='51'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; VideoPad&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='52'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; VideoThang&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='53'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; VirtualDub&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='54'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; VirtualDubMod&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='55'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; WeVideo&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='56'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Windows Movie Maker&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='57'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Xedio&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='58'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Xpress Pro&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='73'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Maya&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='84'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Photoshop&lt;/div&gt; &lt;/label&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- / tab-pane --&gt; &lt;div role='tabpanel' class='tab-pane' id='Software'&gt; &lt;div class='row check-inn'&gt; &lt;div class='wrapper-checkbox'&gt; &lt;/div&gt; &lt;div class='wrapper-checkbox'&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='59'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; 3D Studio Max&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='60'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Autodesk Inventor&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='61'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Cinema 4D&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='62'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Electric Image&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='63'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Google Sketchup&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='64'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Materialise&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='65'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; POV-Ray document&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='66'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Solid Edge&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='67'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Z Brush&lt;/div&gt; &lt;/label&gt; &lt;/div&gt; &lt;div class='wrapper-checkbox'&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='68'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; 3D Coat&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='69'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Blender&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='70'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Corona 3D&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='71'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Gemvision&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='72'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Lightwave 3D&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='74'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Rhinoceros&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='75'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Solidworks&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='76'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Autocad&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='77'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Blitz3D&lt;/div&gt; &lt;/label&gt; &lt;/div&gt; &lt;div class='wrapper-checkbox'&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='78'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Geomagic&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='79'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Messiah&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='80'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Sculptress&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='81'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Pro-E&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='82'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; CATIA&lt;/div&gt; &lt;/label&gt; &lt;label class='checkbox-inline'&gt; &lt;div class='pull-left'&gt; &lt;input type='checkbox' false name='skill_id[]' value='83'&gt; &lt;/div&gt; &lt;div class='media-body'&gt; Wavefront&lt;/div&gt; &lt;/label&gt; &lt;/div&gt; &lt;/div&gt; &lt;!-- / row --&gt; &lt;/div&gt; &lt;!-- / tab-pane --&gt; &lt;/div&gt; &lt;!-- / tab-content --&gt; &lt;/div&gt; &lt;div class='placeholder-buttons'&gt; &lt;button class='popover-submit-software'&gt;Save&lt;/button&gt; &lt;button class='closed popover-dismiss'&gt;Cancel&lt;/button&gt;&lt;/div&gt; &lt;script&gt; $(document).ready(function(){ $('.check-inn input').iCheck({ checkboxClass: 'icheckbox_square-blue', increaseArea: '20%' }); }); &lt;/script&gt;"
+                                                    data-html="true"
+                                                    data-placement="top"
+                                                    data-toggle="popover"
+                                                    data-trigger="click" src=
+                                                    "https://staging.valoso.com/assets/css/shared/images/pencil.png">
+                                                    </h4>
+                                                </div>
+                                            </div><!-- END col-sm-6-dop -->
+                                        </div><!-- END inner-skills -->
+                                        <div class='edit-box'>
+                                            <span class=
+                                            "fa fa-arrows-v"></span>
+                                        </div>
+                                    </li>
+                                    <li class=
+                                    "backgr-fon-hover col-sm-12 clearfix user-materials"
+                                    data-section="materials" id=
+                                    "materials-container"></li>
+                                </ol>
+                                <div class=
+                                "col-sm-12 clearfix bottom-total-number">
+                                    <div class="bottom-total clearfix"></div>
+                                </div>
+                                <div class="col-sm-12 clearfix block-min">
+                                    <p class=
+                                    "text-uppercase p-14 pull-right margin-bottom-20">
+                                    Member since June 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" data-backdrop="static" id=
+                "cropImageModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img id="target" src="#"> <input id="crop_x"
+                                name="crop_x" type="hidden" value="0">
+                                <input id="crop_y" name="crop_y" type="hidden"
+                                value="0"> <input id="width" name="crop_width"
+                                type="hidden" value="0"> <input id="height"
+                                name="crop_height" type="hidden" value="0">
+                                <input id="filePath" name="file_path" type=
+                                "hidden" value="">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn cropImage" type=
+                                "button">Crop</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                <div aria-labelledby="myLargeModalLabel" class=
+                "modal fade bs-example-modal-lg buy-domain" id=
+                "buy-domain-modal" role="dialog" tabindex="-1">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button aria-label="Close" class="close"
+                                data-dismiss="modal" type=
+                                "button"><span aria-hidden=
+                                "true">&times;</span></button>
+                                <h4 class="modal-title" id=
+                                "gridSystemModalLabel">BUY A DOMAIN</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <p>Turn your profile page into your own
+                                    website with the support of a 3D Printing
+                                    factory behind you.</p>
+                                    <div class="clearfix availability-form">
+                                        <input id="modal-domain-field" type=
+                                        "text"> <button class="btn" id=
+                                        "check-domain-availability">Check
+                                        Availability</button>
+                                    </div>
+                                    <ul id='domainsListHolder'></ul>
+                                </div>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div>
+                <div aria-hidden="true" class="modal fade" id="hire-me-modal"
+                role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content modal-content-min">
+                            <!-- Begin modal-content -->
+                            <div class="modal-header line-bottom">
+                                <!-- Begin modal-header -->
+                                 <button class="close" data-dismiss="modal"
+                                type="button"><span aria-hidden=
+                                "true">&times;</span> <span class=
+                                "sr-only">Close</span></button>
+                                <h3 class="h3 modal-title">Award your
+                                project</h3>
+                            </div><!-- END modal-header -->
+                            <div class="modal-body">
+                                <!-- Begin modal-body -->
+                                <h5 class="h5">For all projects, a 3% fee is
+                                charged on the payment made to the
+                                designer.</h5>
+                            </div><!-- END modal-body -->
+                            <div class="modal-footer bott">
+                                <!-- Begin modal-footer bott -->
+                                <a class="btn btn-gradient btn-red"
+                                data-proposal-id="" data-user-status=
+                                "logged-in" id="hire-designer-handler">Hire</a>
+                                <button class="btn btn-gradient btn-gray"
+                                data-dismiss="modal" type=
+                                "button">Cancel</button>
+                            </div><!-- END modal-footer bott -->
+                        </div><!-- END modal-content -->
+                    </div><!-- END modal-dialog -->
+                </div><!-- END modal -->
+                <!-- Overlay wrappers -->
+                <div class="overlay-wrapper">
+                    <div class="loading-overlay">
+                        <!-- -->
+                    </div>
+                    <div class="overlay-ajax-loader">
+                        <div class="ajax-loader-big">
+                            <!-- -->
+                        </div>
+                    </div>
+                </div>
+                <div class="container video-project">
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+                <script src=
+                "https://staging.valoso.com/assets/js/libs/autobahn.min.js">
+                </script> 
+                <script src="https://staging.valoso.com/assets/js/socket.js">
+                </script> 
+                <script>
+                    $(document).ready(function() {
+                        socket.init({
+                            listenerUrl: 'wss://staging.valoso.com:7080',
+                            userId: 'axKWfRh2uqOkgLcm9xJWEI3CndNaXSnB0I4J56n9A1c='
+                        });
+                    });
+                </script> 
+                <script type="text/javascript">
+                    // initialize client side application
+                    $(document).ready(function() {
+                        valosoApp.init();
+                    });
+                </script> 
+                <script src=
+                "assets/js/3606f7968ebf1bddec8d4b366b942c154376808082.js">
+                </script> 
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        $('.header').headroom();
+                    })
+
+                    $(document).on('click', '.button-mobile', function() {
+
+                        $('body').toggleClass('opened-offcanvas');
+                        $('html').addClass('overflow-hidden');
+
+                    });
+
+                    $('.modal').on('shown.bs.modal', function() {
+
+                        var field = $(this).find('input[type="text"], input[type="email"], input[type="password"]');
+
+                        if (field.length) {
+                            field.eq(0).focus();
+                        }
+
+                    });
+                    // Toggle Navigation (close)
+                    var closeNavMobile = function() {
+                        $('.opened-offcanvas').removeClass('opened-offcanvas');
+                        $('.row-offcanvas-left.active').removeClass('active');
+                    }
+
+                    $(document).on('swipeleft', '.opened-offcanvas .page-wrap .close-nav', closeNavMobile);
+
+                    $(document).on('click', '.opened-offcanvas .page-wrap .close-nav', closeNavMobile);
+
+                    $(function() {
+                        //Enable swiping...
+                        $(".close-nav").swipe({
+                            //Generic swipe handler for all directions
+                            swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+                                $('html').removeClass('overflow-hidden');
+                                $('body').removeClass('opened-offcanvas');
+                                $('.row-offcanvas').removeClass('active');
+
+                                console.log(1);
+
+                                if (direction == 'right') {
+                                    //alert(1);
+                                }
+
+                            },
+                            threshold: 0
+                        });
+
+                    });
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/libs/slick.min.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/custom/crop-image.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/custom/profile.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/preview-profile.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/jquery.Jcrop.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/admin/js/jquery.noty.packaged.min.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/admin/js/common.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/admin/js/bootbox.min.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/bootstrap/js/bootstrap-select.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/bootstrap/js/bootstrap-datepicker.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/custom/crop.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/libs/icheck.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/jquery-ui.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/jqueryFileUpload/jquery.uploadfile.min.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/libs/jquery.jscrollpane.min.js">
+                </script> 
+                <script src="https://staging.valoso.com/assets/js/core.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/scrollbar.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/libs/headroom.min.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/libs/jquery.headroom.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/libs/jquery-sortable.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/edit-profile.js">
+                </script> 
+                <script src=
+                "https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.min.js">
+                </script> 
+                <script type="text/javascript">
+                    // @todo    Fix this
+                    $(function() {
+
+                        $(document).on('click', '#more-block', function(e) {
+                            e.preventDefault();
+                            var parent = $(this).parents('.cont-1');
+                            parent.find('#added').addClass('block-open');
+                            parent.find('#added-dop').addClass('block-open');
+                            parent.find('#less-block').addClass('block-open');
+                            parent.find('#more-block').hide();
+                            parent.find('#h4-hidden').hide();
+                        });
+
+                        $(document).on('click', '#less-block', function(e) {
+                            e.preventDefault();
+                            var parent = $(this).parents('.cont-1');
+                            parent.find('#added').removeClass('block-open');
+                            parent.find('#added-dop').removeClass('block-open');
+                            parent.find('#less-block').removeClass('block-open');
+                            parent.find('#more-block').show();
+                            parent.find('#h4-hidden').show();
+                        });
+
+                    });
+
+                    $(document).on('click', '.popover-remove', function() {
+                        var self = $(this);
+
+                        bootbox.confirm("Are you sure?", function(result) {
+                            if (result) {
+                                self.parents('.popover-content').find('input').val('');
+
+                                self.parent().find('.popover-submit').trigger('click');
+                            }
+                        });
+                    });
+
+                    $(document).ready(function() {
+
+                        $('body').on('click', '#hire-me-trigger', function() {
+                            $('#hire-me-modal').modal('show');
+                        });
+
+                        $('.check-inn input').iCheck({
+                            checkboxClass: 'icheckbox_square-blue',
+                            increaseArea: '20%'
+                        });
+
+                        $(document).on('click', '.edit-container-left button.active', function() {
+                            $('body').addClass('visible');
+                        });
+
+                        $(document).on('click', '.some-arrow img, .design-btn span', function() {
+                            $('body').removeClass('visible');
+                        });
+
+                        $(function() {
+                            $(".scrollbar").scrollbar();
+                        });
+
+                        $(document).on('shown.bs.tab', function() {
+                            $(".scrollbar").scrollbar("resize");
+                        });
+
+                        $('body').on('click', '.edit-trigger.href', function() {
+                            window.location = $(this).data('target');
+                        });
+
+
+                        $('body').on('click', '.edit-together', function() {
+
+                            if (!$(this).next().hasClass('popover')) {
+                                $(this).popover('show');
+                            }
+
+
+                            $('.edit-together').not(this).popover('destroy');
+
+                            $('.language_selector').select2({
+                                width: '100%',
+                                placeholder: 'Select languages',
+                                allowClear: true
+                            });
+
+                            $('.state_selector').select2({
+                                width: '100%',
+                                placeholder: 'State',
+                                allowClear: true
+                            });
+
+                        });
+
+
+                        $('body').on('click', function(e) {
+                            if (
+                                $(e.target).data('toggle') !== 'popover' &&
+                                $(e.target).parents('[data-toggle="popover"]').length === 0 &&
+                                $(e.target).parents('.popover.in').length === 0 &&
+                                $(e.target).attr('role') != 'presentation'
+                            ) {
+                                $('[data-toggle="popover"]').popover('destroy');
+                            }
+                        });
+
+                        $('body').on('click', '.popover-dismiss', function() {
+
+                            $(this).closest('.popover').popover('destroy');
+
+                        });
+
+                    });
+
+                    $('.header').headroom();
+
+                    var tmp = $.fn.popover.Constructor.prototype.show;
+                    $.fn.popover.Constructor.prototype.show = function() {
+                        tmp.call(this);
+                        if (this.options.callback) {
+                            this.options.callback();
+                        }
+                    }
+
+                    /**
+                     * Handle enter perss event
+                     */
+                    $('body').on('keypress', 'input, textarea', function(e) {
+                        if (e.keyCode == 13) {
+                            var clickElement = $(this).parent(2).find('.popover-submit');
+                            clickElement.trigger('click');
+                        }
+                    });
+                </script> 
+                <script type="text/javascript">
+                    $(document).ready(function() {
+
+                        $('body').on('click', '#hire-designer-handler', function() {
+
+                            var userType = $(this).data('user-status');
+
+                            if (userType == 'guest') {
+
+                                $('#hire-me-modal').modal('hide');
+                                $('#loginOpen').trigger('click');
+
+                            } else if (userType == 'owner') {
+
+                                var proposalId = $(this).data('proposal-id');
+                                window.location = '/contract/process/' + proposalId;
+
+                            } else {
+
+                                window.location = 'https://staging.valoso.com/projects/manage';
+
+                            }
+
+
+                        })
+
+                    });
+                </script> 
+                <script>
+                    var ProfileSkills = new Profile('#skills-container', 'skills');
+                    var ProfileSoftware = new Profile('#skills-container', 'skills');
+
+
+                    ProfileSkills.handlePopoverSubmit('.popover-submit-categories', 'https://staging.valoso.com/profile/update-categories');
+
+                    ProfileSoftware.handlePopoverSubmit('.popover-submit-software', 'https://staging.valoso.com/profile/update-software');
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/jquery.magnific-popup.js">
+                </script> 
+                <script>
+                    /**
+                     * Portfolio.
+                     */
+                    var portfolio = {
+
+                        /**
+                         * Init.
+                         *
+                         * @param  params
+                         */
+                        init: function(params) {
+                            this.options = params;
+
+                            this.handleSave(this.options.updatePortfolioUrl);
+                        },
+
+                        /**
+                         * Handle save.
+                         *
+                         * @param  updatePortfolioUrl
+                         */
+                        handleSave: function(updatePortfolioUrl) {
+                            var self = this;
+
+                            $(document).on('submit', '#add-new-portfolio-form', function(e) {
+                                e.preventDefault();
+
+                                var form = $(this);
+
+                                if (typeof(xhr) != 'undefined' && xhr) {
+                                    xhr.abort();
+                                }
+
+                                var elementToOverlay = $('.add-new-portfolio');
+
+                                Common.loadingOverlay(true, elementToOverlay);
+
+                                xhr = $.ajax({
+                                    url: updatePortfolioUrl,
+                                    type: 'POST',
+                                    data: form.serializeArray(),
+                                    success: function(response) {
+                                        xhr = undefined;
+
+                                        $('.add-new-block').parents('.backgr-fon-hover').removeClass('opened').addClass('disp-none');
+
+                                        $('#portfolio-container').html(response.portfolio);
+
+                                        Common.flashMessage('Entry has been successfully updated!', 'success');
+                                    },
+                                    error: function(response) {
+                                        self.clearRequestErrors(form);
+
+                                        self.handleRequestErrors(form, response);
+
+                                        Common.flashMessage('There were errors in the form!', 'error');
+                                    },
+                                    complete: function() {
+                                        Common.loadingOverlay(false, elementToOverlay);
+                                    }
+                                });
+                            });
+                        },
+
+                        /**
+                         * Clear request errors.
+                         *
+                         * @param  form
+                         */
+                        clearRequestErrors: function(form) {
+                            form.find('.errors-list-container').hide();
+
+                            form.find('.form-group').removeClass('has-error');
+                        },
+
+                        /**
+                         * Handle request errors.
+                         *
+                         * @param  form
+                         * @param  response
+                         */
+                        handleRequestErrors: function(form, response) {
+                            var errors = $.parseJSON(response.responseText);
+
+                            var errorsListContainer = form.find('.errors-list-container');
+
+                            errorsListContainer.find('ul').html('');
+
+                            errorsListContainer.show();
+
+                            if (errors.errors != undefined) {
+                                $.each(errors.errors, function(i, k) {
+                                    form.find('*[name="' + i + '"]').parents('.form-group').addClass('has-error');
+
+                                    errorsListContainer.find('ul').append('<li>' + k + '<\/li>');
+                                });
+                            } else {
+                                errorsListContainer.find('ul').append('<li>' + errors.message + '<\/li>');
+                            }
+                        }
+
+                    };
+                </script> 
+                <script>
+                    $(document).ready(function() {
+                        portfolio.init({
+                            updatePortfolioUrl: 'https://staging.valoso.com/profile/update-portfolio'
+                        });
+
+                        $('.popup-youtube').magnificPopup({
+                            type: 'iframe',
+                            iframe: {
+                                markup: '<div class="mfp-iframe-scaler">' +
+                                    '<div class="mfp-close"><\/div>' +
+                                    '<iframe class="mfp-iframe" frameborder="0" allowfullscreen><\/iframe>' +
+                                    '<\/div>',
+                                patterns: {
+                                    youtube: {
+                                        index: 'youtube.com/',
+                                        id: 'v=',
+                                        src: '//www.youtube.com/embed/%id%?autoplay=1'
+                                    }
+                                }
+                            }
+                        });
+
+                        $('body').on('click', '.add-new-block', function() {
+
+                            $(this).closest('.backgr-fon-hover').addClass('opened');
+                            $(this).closest('.backgr-fon-hover').removeClass('disp-none');
+
+                            $('html,body').animate({
+                                scrollTop: $('.add-new-portfolio').offset().top - 50
+                            }, 1000);
+
+                        });
+
+                        $('body').on('click', '.closed, .addition', function() {
+
+                            $(this).parents('.backgr-fon-hover').removeClass('opened');
+                            $(this).parents('.backgr-fon-hover').addClass('disp-none');
+
+                        });
+
+                        $('body').on('click', '.add-new-portfolio textarea', function() {
+                            $(this).focus();
+                        });
+
+                        var PortfolioPublication = new Profile('#portfolio-container', 'portfolio');
+
+                        PortfolioPublication.handlePopoverDelete('.together-trash.portfolio', 'https://staging.valoso.com/profile/remove-portfolio');
+
+                        $('body').on('click', '.filter-btn a', function() {
+                            $('.filter-btn a').removeClass('active');
+
+                            $(this).addClass('active');
+
+                            var showId = $(this).data('target').split('-');
+
+                            if (showId[1] == 'all') {
+                                $('.portfolio-item').show();
+                            } else {
+                                $('.portfolio-item').hide();
+
+                                $('*[data-section="' + showId[1] + '"]').show();
+                            }
+                        });
+
+                        $('.portfolio-item').each(function() {
+                            $('*[data-target="show-' + $(this).data('section') + ']"').show();
+                        });
+                    });
+                </script> 
+                <script>
+                    var ProfilePublication = new Profile('#publications-container', 'publications');
+
+                    ProfilePublication.handlePopoverSubmit('.popover-submit-publication', 'https://staging.valoso.com/profile/update-publication');
+
+                    ProfilePublication.handlePopoverDelete('.delete-publication', 'https://staging.valoso.com/profile/remove-publication');
+                </script> 
+                <script>
+                    var ProfileCertificates = new Profile('#certificates-container', 'certificates');
+
+                    ProfileCertificates.handlePopoverSubmit('.popover-submit-certification', 'https://staging.valoso.com/profile/update-certificate');
+
+                    ProfileCertificates.handlePopoverDelete('.together-trash.certificate', 'https://staging.valoso.com/profile/remove-certificate');
+
+                    $(document).ready(function() {
+                        $('body').on('click', '#certificates-container .edit-together', function() {
+                            var token = $('input[name="_token"]').val();
+
+                            var certificateImage = {
+                                url: '/users/AJAX/fileUpload',
+                                dragDrop: false,
+                                fileName: 'myfile',
+                                formData: {
+                                    "_token": token
+                                },
+                                allowedTypes: "jpg,png,gif,jpeg",
+                                returnType: 'json',
+                                multiple: false,
+                                onSuccess: function(files, data, xhr) {
+                                    if (typeof(xhr) != "undefined" && xhr) {
+                                        xhr.abort();
+                                    }
+
+                                    $('.popover-content').find('.certificateImage').val(data);
+                                },
+                                showDelete: false,
+                                showAbort: false
+                            };
+
+                            var certificateImageUpload = $('.uploadCertificate').uploadFile(certificateImage);
+                        });
+                    });
+                </script> 
+                <script>
+                    var ProfileEducation = new Profile('#education-container', 'educations');
+
+                    ProfileEducation.handlePopoverSubmit('.popover-submit-education', 'https://staging.valoso.com/profile/update-education');
+
+                    ProfileEducation.handlePopoverDelete('.delete-education', 'https://staging.valoso.com/profile/remove-education');
+                </script> 
+                <script>
+                    var ProfileExperience = new Profile('#experience-container', 'experiences');
+
+                    ProfileExperience.handlePopoverSubmit('.popover-submit-experience', 'https://staging.valoso.com/profile/update-experience');
+
+                    ProfileExperience.handlePopoverDelete('.delete-experience', 'https://staging.valoso.com/profile/remove-experience');
+                </script> 
+                <script>
+                    var addToFavoriteIcon = '<img src="https://staging.valoso.com/images/favorite.png">';
+
+                    $(document).on('click', '.add-to-favorite', function() {
+                        var self = $(this);
+
+                        Common.loadingOverlay(true, self);
+
+                        $.ajax({
+                            url: 'https://staging.valoso.com/users/designers/add-to-favorite',
+                            type: 'POST',
+                            data: {
+                                user_id: '171'
+                            },
+                            success: function() {
+                                self.removeClass('add-to-favorite').addClass('remove-from-favorite').html(addToFavoriteIcon + ' Remove');
+
+                                Common.loadingOverlay(false, self);
+
+                                Common.flashMessage('Designer has been successfully added to favorite!', 'success');
+                            }
+                        });
+                    });
+
+                    $(document).on('click', '.remove-from-favorite', function() {
+                        var self = $(this);
+
+                        Common.loadingOverlay(true, self);
+
+                        $.ajax({
+                            url: 'https://staging.valoso.com/users/designers/remove-from-favorite',
+                            type: 'POST',
+                            data: {
+                                user_id: '171'
+                            },
+                            success: function() {
+                                self.removeClass('remove-from-favorite').addClass('add-to-favorite').html(addToFavoriteIcon + ' Favorite');
+
+                                Common.loadingOverlay(false, self);
+
+                                Common.flashMessage('Designer has been successfully removed from favorite!', 'success');
+                            }
+                        });
+                    });
+
+
+                    var pencil = '/assets/css/shared/images/pencil.png';
+                    var redpencil = '/assets/css/shared/images/red-pencil.png';
+
+                    var firstName = $('.first_name');
+                    var lastName = $('.last_name');
+                    var fullName = $('.full_name');
+
+                    var positionFiled = $('.position');
+                    var descriptionField = $('.description');
+                    var hourlyRateField = $('.hourly_rate');
+                    var experienceField = $('.experience');
+                    var languageField = $('.languages');
+
+                    var updateFields = function(field, data, callback) {
+
+                        if (data) {
+
+                            field.html(data);
+                            field.val(data);
+                            field.closest('.new-gray').removeClass('new-gray');
+                            field.next('img').attr('src', pencil);
+
+                        } else {
+
+                            field.parent().addClass('new-gray');
+                            field.next('img').attr('src', redpencil)
+
+                        }
+
+                        if (typeof(callback) != 'undefined') {
+                            callback(data);
+                        }
+
+                    }
+
+                    $('body').on('click', '.popover-submit', function() {
+                        var popover = $(this).parents('.popover');
+
+                        var pairs = $('.popover-content input, .popover-content textarea, .popover-content select').serializeArray();
+
+                        if (typeof(xhr) != "undefined" && xhr) {
+                            xhr.abort();
+                        }
+
+                        Common.loadingOverlay(true, popover);
+
+                        xhr = $.ajax({
+                            url: 'https://staging.valoso.com/profile/update-profile',
+                            type: 'POST',
+                            data: pairs
+                        }).done(function(data) {
+                            xhr = undefined;
+
+                            if (data.status == 'error') {
+                                var err = '';
+
+                                $.each(data.details, function(index, value) {
+                                    err += value + '<br/>'
+
+                                    popover.find('input[name="' + index + '"]').addClass('has-error');
+                                });
+
+                                Common.flashMessage(err, 'error');
+
+                            } else {
+
+                                updateFields(firstName, data.user.first_name);
+                                updateFields(lastName, data.user.last_name);
+                                updateFields(fullName, data.user.first_name + ' ' + data.user.last_name);
+                                updateFields(positionFiled, data.various.position, function() {
+                                    $('.position-holder').html(data.partials.position);
+                                    $('[data-toggle="popover"]').popover('hide');
+                                });
+
+                                updateFields(descriptionField, data.various.description);
+                                updateFields(experienceField, data.designer.experience);
+                                updateFields(languageField, data.designer.languages);
+                                updateFields(hourlyRateField, data.designer.hourly_rate, function() {
+
+                                    if (data.designer.hourly_rate_raw != null) {
+                                        $('.edit-hour-pop').find('img').attr('src', pencil);
+                                    }
+
+                                    Currency.currencyConvert($('.autoload-currency'), data.designer.hourly_rate);
+                                    $('input.hourly_rate').val(data.designer.hourly_rate_raw);
+                                    $('#hourly_rate_input_box_helper').val(data.designer.hourly_rate_raw);
+                                });
+
+                                if (!$('.new-gray').length) {
+                                    $('.wrapp-emptyprofile-info').hide();
+                                }
+
+                                $('[data-toggle="popover"]').popover('hide');
+
+                                Common.flashMessage('Entry has been successfully updated!', 'success');
+                            }
+
+                            Common.loadingOverlay(false, popover);
+                        });
+                    });
+
+                    $('.edit-together').on('shown.bs.popover', function() {
+                        if ($(this).data('extra-attr') == 'hourly_rate') {
+                            $('#hourly_rate_input_box').val($('#hourly_rate_input_box_helper').val());
+                        }
+                    });
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/custom/cover-image-upload.js">
+                </script> 
+                <script>
+                    $(document).ready(function() {
+
+                        $('body').on('click', '#use-subdomain', function() {
+
+                            if (typeof(xhr) != "undefined" && xhr) {
+                                xhr.abort();
+                            }
+
+                            xhr = $.ajax({
+                                url: 'https://staging.valoso.com/profile/set-alias',
+                                type: 'POST',
+                                data: {
+                                    alias: $('#alias-subdomain').val()
+                                }
+                            }).done(function(data) {
+                                xhr = undefined;
+
+                                if (data.status == 'error') {
+                                    Common.flashMessage(data.details.alias, 'error');
+                                } else {
+                                    Common.flashMessage('Entry has been added successfully!', 'success');
+                                }
+
+                            });
+                        });
+
+                    })
+                </script>
+            </div>
+            <div class="wrapper-sidebar-offcanvas">
+                <div class="sidebar-offcanvas" id="sidebar">
+                    <div class="clearfix" id="navbar-collapse-1">
+                        <div class="left-menu clearfix">
+                            <div class="media">
+                                <div class="pull-left"><img alt="j shannon"
+                                class="user-img-min" data-toggle="dropdown"
+                                height="42" src=
+                                "https://staging.valoso.com/images/profile-pic.jpg"
+                                width="42"></div>
+                                <div class="media-body">
+                                    <h3 class="gray bold">j
+                                    shannon</h3><span class=
+                                    "gray p-12">mrjshannon@yahoo.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="nav navbar-nav navbar-nav-dop nav-list">
+                            <li>
+                                <a class="min-text-menu" href=
+                                "https://staging.valoso.com/users/designers/profile/171/edit">
+                                <i class="fa fa-user pull-left"></i> My Editor
+                                Profile</a>
+                            </li>
+                            <li>
+                                <a class="min-text-menu" href=
+                                "https://staging.valoso.com/users/settings"><i class="fa fa-cog pull-left">
+                                </i>Settingss</a>
+                            </li>
+                            <li>
+                                <a class="min-text-menu" href=
+                                "https://staging.valoso.com/contact-us"><i class="fa fa-question pull-left">
+                                </i>Help</a>
+                            </li>
+                            <li>
+                                <a class="min-text-menu" href=
+                                "https://staging.valoso.com/users/sign-out"><i class="fa fa-sign-out pull-left">
+                                </i> Sign Out</a>
+                            </li>
+                            <li>
+                                <a class="text-lowercase text-center lighter"
+                                href=
+                                "https://staging.valoso.com">https://staging.valoso.com</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!--/.sidebar-offcanvas-->
+            </div>
+            <footer class="site-footer" id="footer">
+                <div class="modal fade" id="post-a-project-first-step-modal"
+                role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body" style=
+                            "padding: 40px 20px;">
+                                <div class="text-center">
+                                    <p style="margin-bottom: 40px;">Is this
+                                    video for a business?</p><a class=
+                                    "btn btn-success post-a-project-step-toggle"
+                                    data-step="2" href="#" style=
+                                    "margin-right: 10px;">Yes</a> <a class=
+                                    "btn btn-danger" href=
+                                    "https://staging.valoso.com/projects/projects/flow/make-custom-video">
+                                    No</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="post-a-project-second-step-modal"
+                role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body" style=
+                            "padding: 40px 20px;">
+                                <div class="text-center">
+                                    <p style="margin-bottom: 40px;">Do you have
+                                    a brief prepared?</p><a class=
+                                    "btn btn-success post-a-project-step-toggle"
+                                    data-step="3" href="#" style=
+                                    "margin-right: 10px;">Yes</a> <a class=
+                                    "btn btn-danger" href=
+                                    "https://staging.valoso.com/projects/projects/flow/manage-business-video">
+                                    No</a>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a class=
+                                "btn btn-primary pull-left post-a-project-step-toggle"
+                                data-step="1" href="#"><i class=
+                                "fa fa-long-arrow-left"></i> Prev</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="post-a-project-third-step-modal"
+                role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form action=
+                            "https://staging.valoso.com/api/files/upload-brief"
+                            data-redirect-url=
+                            "https://staging.valoso.com/projects/projects/flow/business-video-brief"
+                            enctype="multipart/form-data" id=
+                            "upload-brief-form" name="upload-brief-form">
+                                <div class="modal-body" style=
+                                "padding: 40px 20px;">
+                                    <div class="text-center">
+                                        <p style="margin-bottom: 40px;">Upload
+                                        brief</p>
+                                        <div class="alert alert-danger" id=
+                                        "errors" style="display: none;">
+                                            <strong>There were errors in the
+                                            form!</strong> Invalid file format,
+                                            only: .docx, .doc, .pdf and .ppt
+                                            file formats are supported.
+                                        </div><input id="upload-brief" name=
+                                        "file" type="file">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class=
+                                    "btn btn-primary pull-left post-a-project-step-toggle"
+                                    data-step="2" href="#"><i class=
+                                    "fa fa-long-arrow-left"></i> Prev</a>
+                                    <button class=
+                                    "btn btn-primary pull-right disabled" id=
+                                    "go-to-2nd-client-flow" type="submit">Next
+                                    <i class=
+                                    "fa fa-long-arrow-right"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <script id="currency-snippet" type="text/template">
+
+                    <div class="row cartNZD wid-xs clearfix">
+                        <div class="col-xs-4 col-sm-4 col-md-4 title">%currency%</div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 price">%price%</div>
+                        <input type="hidden" value="%value%" id="currency_rate">
+                        <div class="col-xs-12 col-sm-12 col-md-12 text">Source: Google Finance | %date%
+                        </div>
+                    </div>
+
+                </script> 
+                <script type="application/ld+json">
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "Organization",
+                        "name": "Valoso",
+                        "url": "https://valoso.com",
+                        "sameAs": [
+                            "https://www.facebook.com/valosovideos",
+                            "https://twitter.com/ValosoVideos",
+                            "https://www.pinterest.com/valoso0438/",
+                            "https://plus.google.com/u/0/b/106201462072083640025",
+                            "https://www.instagram.com/va.loso/",
+                            "http://valoso.tumblr.com/"
+                        ]
+                    }
+                </script> 
+                <script type="application/ld+json">
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "Organization",
+                        "url": "https://valoso.com",
+                        "logo": "https://valoso.com/assets/images/logo-valoso.png",
+                        "contactPoint": [{
+                            "@type": "ContactPoint",
+                            "telephone": "+1 (415) 692-5411",
+                            "contactType": "customer service",
+                            "availableLanguage": [
+                                "English"
+                            ]
+                        }]
+                    }
+                </script> <a class="anchor upArrow" href="#header-top" style=
+                "cursor: pointer; z-index: 1039 !important;"><img alt=
+                "Top Arrow" src="/images/ns/to-top-arrow.png"> diego</a>
+                <div class="container">
+                    <div class="row botInfo">
+                        <div class=
+                        "col-xs-6 col-sm-6 col-md-3 col-lg-3 botLink">
+                            <h4>About</h4>
+                            <ul>
+                                <li>
+                                    <a href=
+                                    "https://staging.valoso.com/pages/about">About
+                                    us</a>
+                                </li><!--li><a href="">How it works</a></li-->
+                                <li>
+                                    <a href=
+                                    "https://staging.valoso.com/blog">Blog</a>
+                                </li><!--li><a href="">Careers</a></li-->
+                                <li>
+                                    <a href=
+                                    "https://staging.valoso.com/press">Press</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=
+                        "col-xs-6 col-sm-6 col-md-3 col-lg-3 botLink">
+                            <h4>Help</h4>
+                            <ul>
+                                <!--li><a href="">Help Center</a></li-->
+                                <li>
+                                    <a href=
+                                    "https://staging.valoso.com/pages/contact-us">
+                                    Contact Support</a>
+                                </li>
+                                <li>
+                                    <a href=
+                                    "https://staging.valoso.com/pages/faq">FAQ’s</a>
+                                </li><!--li><a href="">Shipping info</a></li-->
+                                <li>
+                                    <a href=
+                                    "https://staging.valoso.com/pages/fee-schedule">
+                                    Fee Schedule</a>
+                                </li><!--li><a href="">Tutorials</a></li-->
+                            </ul>
+                        </div>
+                        <div class=
+                        "col-xs-12 col-sm-12 col-md-6 col-lg-6 botLogo">
+                            <a href="https://staging.valoso.com"><img alt=
+                            "Valoso Video Editing Marketplace" src=
+                            "/assets/images/logo-footer.png"></a>
+                            <div class="socBox">
+                                <a class="soc-ico s1" href=
+                                "https://www.facebook.com/valosovideos" target=
+                                "_blank"></a> <a class="soc-ico s5" href=
+                                "https://plus.google.com/u/0/b/106201462072083640025"
+                                target="_blank"></a> <a class="soc-ico s6"
+                                href="https://www.pinterest.com/valoso0438/"
+                                target="_blank"></a> <a class="soc-ico s4"
+                                href="http://valoso.tumblr.com/" target=
+                                "_blank"></a> <a class="soc-ico s2" href=
+                                "https://twitter.com/ValosoVideos" target=
+                                "_blank"></a> <a class="soc-ico s8" href=
+                                "https://instagram.com/va.loso/" target=
+                                "_blank"></a>
+                                <div class="clearN"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row botCopy">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            Copyright 2016 © Valoso
+                        </div>
+                        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                            <a href="/pages/privacy-policy">Privacy Policy</a>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <a href="/pages/terms-and-conditions">Terms and
+                            Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer><!-- Overlay wrappers -->
+            <div class="overlay-wrapper">
+                <div class="loading-overlay"></div>
+                <div class="overlay-ajax-loader">
+                    <div class="ajax-loader-big"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

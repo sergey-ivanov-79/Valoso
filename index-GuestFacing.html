@@ -1,0 +1,1790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script>
+        window.valosoApp = window.valosoApp || {};
+        valosoApp.events = null;
+    </script><!-- /javascript from "laracasts/utilities" -->
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <meta content=
+    "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    name="viewport">
+    <meta content="gKRHW6OoK1XccVHFakQKFIJZnWrD6L8HmbplEP4g" name="_token">
+    <title>Valoso</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords"><!-- Application-specific meta tags -->
+    <!-- Windows 8: see http://msdn.microsoft.com/en-us/library/ie/dn255024%28v=vs.85%29.aspx for details -->
+    <meta content="" name="application-name">
+    <meta content="" name="msapplication-TileColor">
+    <meta content="" name="msapplication-TileImage">
+    <meta content="" name="msapplication-square150x150logo">
+    <meta content="" name="msapplication-square310x310logo">
+    <meta content="" name="msapplication-square70x70logo">
+    <meta content="" name="msapplication-wide310x150logo">
+    <!-- Twitter: see https://dev.twitter.com/docs/cards/types/summary-card for details -->
+    <meta content="" name="twitter:card">
+    <meta content="" name="twitter:site">
+    <meta content="" name="twitter:title">
+    <meta content="" name="twitter:description">
+    <meta content="" name="twitter:url">
+    <!-- Facebook (and some others) use the Open Graph protocol: see http://ogp.me/ for details -->
+    <meta content="" property="og:title">
+    <meta content="" property="og:description">
+    <meta content="" property="og:url">
+    <meta content="" property="og:image">
+    <meta content="1426691470988167" property="fb:app_id">
+    <meta content="LDCaAn7dK7OlZt5etvNBfsW1VwPuRnFcKgqIriq3B1g" name=
+    "google-site-verification">
+    <meta content="x9zoDIxwNm_dKGkOZpGAif0LcHDsf_vbj-inPAqO39k" name=
+    "google-site-verification">
+    <link href="https://valoso.com/users/designers/profile/357/" rel=
+    "canonical"><!-- HTML5 shim for IE backwards compatibility -->
+    <!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+    <link href="https://assets.valoso.com/dist/base.min.css" media="all" rel=
+    "stylesheet" type="text/css">
+    <link href=
+    "/assets/css/builds/fbb2aa653fade22ec921800b75622eb11465568018.css" rel=
+    "stylesheet">
+    <link href="https://staging.valoso.com/assets/css-ns/font-awesome.css"
+    media="all" rel="stylesheet" type="text/css">
+    <link href="https://staging.valoso.com/assets/css/offcanvas.css" media=
+    "all" rel="stylesheet" type="text/css">
+    <link href="https://staging.valoso.com/assets/css/header-offcanvas.css"
+    media="all" rel="stylesheet" type="text/css">
+    <link href="assets/css/edit-page.min.css" media="all" rel="stylesheet"
+    type="text/css">
+    <link href="https://staging.valoso.com/assets/css/jquery.Jcrop.min.css"
+    rel="stylesheet">
+    <link href="https://staging.valoso.com/assets/admin/css/select2.min.css"
+    rel="stylesheet">
+    <style type="text/css">
+        .user-experience-company,
+        .user-experience-duration {
+            color: #8d8d8d;
+        }
+        
+        ol> li {
+            margin-left: 0px;
+        }
+        
+        .popover-content .select2-container--default .select2-results> .select2-results__options {
+            max-height: auto;
+        }
+        
+        .fileUpload,
+        .fileUpload img {
+            width: 32px !important;
+            min-width: 0px;
+        }
+        
+        .ajax-file-upload {
+            right: 4px;
+            top: -40px;
+            width: 32px;
+            float: right;
+        }
+        
+        .delete-experience {
+            cursor: pointer;
+        }
+        
+        .edit-together {
+            cursor: pointer;
+        }
+        
+        .popup-youtube img {
+            width: 100%;
+        }
+        
+        .wrapper-popup-youtube .together-trash {
+            position: absolute;
+            bottom: 5px;
+            right: 15px;
+        }
+    </style>
+    <link href="https://assets.valoso.com/dist/edit-page.min.css" media="all"
+    rel="stylesheet" type="text/css">
+    <style type="text/css">
+        .upload-sign,
+        .upload-sign-holder .ajax-file-upload {
+            background-image: url("/assets/css/shared/images/pencil.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 32px;
+            width: 32px;
+        }
+        
+        .upload-sign.redborder,
+        .upload-sign-holder.red-border .ajax-file-upload {
+            background-image: url("/assets/css/shared/images/red-pencil.png");
+        }
+        
+        .hire-me {
+            background: #0285c2 none repeat scroll 0 0;
+            border: 1px solid #0285c2;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: 600;
+            margin: 0 auto;
+            padding: 3px 50px;
+        }
+    </style>
+    <style type="text/css">
+        .ajax-file-upload-filename {
+            display: none;
+        }
+        
+        .loading-image {
+            height: 99%;
+            position: absolute;
+            width: 100%;
+            cursor: wait;
+            display: none;
+        }
+    </style>
+    <script src=
+    "https://staging.valoso.com/assets/js/libs/jquery-1.11.0.min.js">
+    </script>
+    <script src=
+    "https://staging.valoso.com/assets/bootstrap/js/bootstrap.min.js">
+    </script>
+    <script src="https://staging.valoso.com/assets/js/app.js">
+    </script>
+    <script src="https://staging.valoso.com/assets/js/libs/headroom.min.js">
+    </script>
+    <script src="https://staging.valoso.com/assets/js/jquery.headroom.js">
+    </script>
+    <script src=
+    "/assets/js/builds/7a1f11af30c2bb61322d9536c4a93a6214616080920.js">
+    </script>
+    <script data-app-key="74obck2489oevm1" id="dropboxjs" src=
+    "https://staging.valoso.com/assets/js/dropbox.js">
+    </script>
+    <script src="https://staging.valoso.com/assets/js-ns/custom/app.js">
+    </script>
+</head>
+<body class="dash-page dash-page-cont">
+    <div class="wrapp-row-offcanvas">
+        <div class="row row-offcanvas row-offcanvas-left">
+            <div class="page-wrap">
+                <div class="close-nav"></div>
+                <div class="preview-profile-wrapper" id="header-top">
+                    <header class="header-min-height" style="">
+                        <div class=
+                        "header header-dop header-mobile header-mobile-fix proj-forum headroom-dop">
+                        <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-12 line-bottom-mobile">
+                                        <nav class=
+                                        "navbar navbar-default navbar-mobile"
+                                        id="top-nav" role="navigation">
+                                            <div class="col-navbar">
+                                                <div class="col-navbar-wrap">
+                                                    <ul class=
+                                                    "nav navbar-nav navbar-right"
+                                                    style=
+                                                    "position: relative; top: 7px;">
+                                                    <li>
+                                                            <a href=
+                                                            "https://docs.google.com/forms/d/1M7QZtZAwVC0aSGMETpYfpIefA_IiTIQfau-bSFiT6is/viewform"
+                                                            style=
+                                                            "cursor: pointer"
+                                                            target="_blank">I
+                                                            have video
+                                                            equipment</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class=
+                                                            "post-a-video-project-toggle post-a-project-step-toggle"
+                                                            data-step="1" href=
+                                                            "https://staging.valoso.com/projects/manage"
+                                                            style=
+                                                            "cursor: pointer;">Post
+                                                            a Video Project</a>
+                                                        </li>
+                                                        <li>
+                                                            <a class=
+                                                            "register-as-a-video-editor-toggle"
+                                                            style=
+                                                            "cursor: pointer;">Register
+                                                            as a Video
+                                                            Editor</a>
+                                                        </li>
+                                                        <li class="hidden-xs">
+                                                            <p class=
+                                                            "blue-color">/</p>
+                                                        </li>
+                                                        <li>
+                                                            <a id="loginOpen"
+                                                            style=
+                                                            "cursor: pointer;">Log
+                                                            in</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="cols header-temp">
+                                                <div class=
+                                                "navbar-header navbar-header-mobile"
+                                                style="background: none #fff;">
+                                                    <button class=
+                                                    "navbar-toggle collapsed button-mobile"
+                                                    data-target=
+                                                    "#navbar-collapse-1"
+                                                    data-toggle="offcanvas"
+                                                    type="button"><span class=
+                                                    "sr-only">Toggle
+                                                    navigation</span>
+                                                    <span class=
+                                                    "icon-bar"></span>
+                                                    <span class=
+                                                    "icon-bar"></span>
+                                                    <span class=
+                                                    "icon-bar"></span></button>
+                                                    <a class=
+                                                    "navbar-brand navbar-brand-mobile"
+                                                    href="#"><span class=
+                                                    "angle"></span>
+                                                    <h1 class="profile">Test
+                                                    tester</h1></a>
+                                                </div>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                    <div class=
+                                    "col-sm-12-max col-sm-12-max-dop">
+                                        <div class=
+                                        "wrapp-shop-msg-noti-icos clearfix line-bott">
+                                        <div class="top-menu top-menu-min"
+                                        style="display: none;">
+                                                <div class=
+                                                "container no-padding">
+                                                    <div class=
+                                                    "desktop-buttons" style=
+                                                    "display:none">
+                                                        <button class=
+                                                        "edit-trigger href"
+                                                        data-target=
+                                                        "https://staging.valoso.com/users/designers/profile/357/edit">
+                                                        Edit</button>
+                                                    </div>
+                                                    <!-- /.desktop-buttons -->
+                                                </div><!-- /.container -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="addition container no-padding dop-top-info">
+                        <div class="scrollbar-big inner-addition clearfix">
+                            <div class="full-container">
+                                <div class="profile-top-img">
+                                    <div class='loading-image'></div>
+                                    <div class="upload-sign-holder red-border">
+                                    <img alt="Test tester cover image" id=
+                                    "cover_img" src=
+                                    "https://staging.valoso.com/images/triangle.jpg"></div>
+                                </div><!-- /.profile-top-img -->
+                                <div class="container">
+                                    <div class="row rowWithPadding">
+                                        <div class="col-lg-3 ProfilePic mb20">
+                                        <img alt="Test tester" class=
+                                        'profile_picture_src' id="profilepic"
+                                        src=
+                                        "https://staging.valoso.com/images/profile-pic.jpg"></div>
+                                        <div class="col-lg-7">
+                                            <h3 class=
+                                            "mb15 NameSection full_name">Jordan
+                                            Shannon - <span class=
+                                            "userLocation">Chicago,
+                                            Il</span></h3>
+                                            <div class=
+                                            "col-md-12 nopadding mb30">
+                                                <p class=
+                                                "nopadding mb20 position">
+                                                Videographer, Video Editor,
+                                                Photographer, Director,
+                                                Cameraman</p>
+                                            </div>
+                                            <div class="col-md-7 nopadding">
+                                                <div class=" nopadding mb20">
+                                                    <div class=
+                                                    "hire-me-section">
+                                                        <h5 class=
+                                                        "user-star-rating">
+                                                        5.0/5 <img alt=
+                                                        "User feedback" src=
+                                                        "https://staging.valoso.com/assets/css/shared/images/5-star.png">
+                                                        </h5>
+                                                    </div>
+                                                    <div class=
+                                                    "hire-me-section">
+                                                        <h5 class=
+                                                        "user-star-reviews">0.0
+                                                        reviews</h5>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12 nopadding">
+                                                <div class="mb20">
+                                                    <ul class="list-inline">
+                                                        <li>
+                                                            <h3><label class=
+                                                            "hourly_rate">$0.00</label>
+                                                            <span class=
+                                                            "user-currency">/hr</span></h3>
+                                                        </li>
+                                                        <li>
+                                                            <h3><label class=
+                                                            "hourly_rate">$0.00</label>
+                                                            <span class=
+                                                            "user-currency">/half
+                                                            day</span></h3>
+                                                        </li>
+                                                        <li>
+                                                            <h3><label class=
+                                                            "hourly_rate">$0.00</label>
+                                                            <span class=
+                                                            "user-currency">/full
+                                                            day</span></h3>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class=
+                                            "col-md-12 mb20 nopadding">
+                                                <div class=
+                                                "user-profile-left-details">
+                                                    <p class="description">
+                                                    Lorem ipsum dolor sit amet,
+                                                    quo habeo reprimique ex.
+                                                    Autem populo et has, liber
+                                                    mundi liberavisse his ex.
+                                                    Falli nostrud te cum. Eos
+                                                    melius persequeris
+                                                    theophrastus ea. Qui ea
+                                                    laudem fastidii officiis,
+                                                    fierent ponderum vix an.
+                                                    Utinam evertitur cu ius.
+                                                    Dicam probatus in nec, duo
+                                                    diceret percipit insolens
+                                                    at. Eu eam case singulis
+                                                    persequeris, an semper
+                                                    latine mei. Nec eu quidam
+                                                    persius oportere. Dico esse
+                                                    tantas an usu, eu sed mutat
+                                                    democritum. Ancillae
+                                                    maluisset temporibus pro
+                                                    at. Nec quem expetenda ne,
+                                                    duo an natum suscipit. Te
+                                                    duis velit aliquam usu. An
+                                                    veri utinam vel, ad mel
+                                                    brute nostrum constituam,
+                                                    per meis nostro id. Pro ei
+                                                    nibh cetero omnesque. Ex
+                                                    mea odio petentium
+                                                    theophrastus, te tamquam
+                                                    invenire inimicus mea.
+                                                    Dicant partem placerat et
+                                                    vix, in mei modo reque. At
+                                                    sit utroque definitiones.
+                                                    Gubergren referrentur et
+                                                    has. Eos dolorum delicata
+                                                    consetetur et, civibus
+                                                    honestatis philosophia ius
+                                                    ex, nam congue dictas
+                                                    denique et. Pri no inimicus
+                                                    tractatos appellantur.
+                                                    Oportere periculis vix ut.
+                                                    In nullam concludaturque
+                                                    quo, id oratio reprimique
+                                                    vis. Te wisi
+                                                    conclusionemque mea.
+                                                    Meliore scribentur est id,
+                                                    case abhorreant at pri.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2">
+                                            <div>
+                                                <div class="LanguageSection">
+                                                    <strong>Languages:</strong>
+                                                    <ul>
+                                                        <li>English, Spanish,
+                                                        Lithuanian, Abrabic,
+                                                        Portuguese</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb10"></div><a href="#" id="MI2-2"
+                                rel="popover2" style="display:none;">More
+                                Info</a>
+                                <div class="mb10"></div>
+                                <ol class="simple_with_drop">
+                                    <li id="ratings-container" class="backgr-fon-hover col-sm-12 clearfix user-ratings no-padding" data-section="ratings">
+                                
+                                <div class="col-md-5 mb20">
+                                    <h3>Location</h3>
+                                    <p class="lead">Chicago, IL 60803</p>
+                                    <p>
+                                       <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div class="img-responsive" style="overflow:hidden;height:400px;width:100%;"><div id="gmap_canvas" style="height:400px;width:100%;"><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.themecircle.net" id="get-map-data">wordpress themes</a></div></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(40.805478,-73.96522499999998),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(40.805478, -73.96522499999998)});infowindow = new google.maps.InfoWindow({content:"<b>The Circle</b><br/>2880 Broadway<br/> New York" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                                    </p>
+                                </div>
+                             <hr class="style-three visible-sm visible-xs">
+                                <div class="col-md-7">
+                                    <h3>Gear</h3>
+                                    
+                                    <div  style="max-height:400px;overflow-y: scroll; overflow-x: hidden;" class="col-md-12">
+                                    
+                                    <div class="col-md-12 nopadding mb20">
+                                       <div class="col-md-2">
+                                        <img width="75" src="http://cdnl.ritzcamera.com/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/N/K/NK1532NIKIT1_00.jpg">
+                                        </div>
+                                        <div class="col-md-10">
+                                        <p>Canon EOS Rebel T6i DSLR Camera</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 nopadding mb20">
+                                       <div class="col-md-2">
+                                        <img width="75" src="http://cdnl.ritzcamera.com/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/n/k/nk1559ikit2_fin.jpg">
+                                        </div>
+                                        <div class="col-md-10">
+                                        <p>Nikon D500 Body With Photographers Essential Kit</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 nopadding mb20">
+                                       <div class="col-md-2">
+                                        <img width="75" src="http://cdnl.ritzcamera.com/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/p/n/pnhcx1000k.png">
+                                        </div>
+                                        <div class="col-md-10">
+                                        <p>Panasonic HC-X1000 4K Ultra High Definition Camcorder</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 nopadding mb20">
+                                       <div class="col-md-2">
+                                        <img width="75" src="http://cdnl.ritzcamera.com/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/C/N/CN4457B001_13146_4.jpg">
+                                        </div>
+                                        <div class="col-md-10">
+                                        <p>Canon XF300 Professional Camcorder</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 nopadding mb20">
+                                       <div class="col-md-2">
+                                        <img width="75" src="http://cdnl.ritzcamera.com/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/B/M/BMDCINECAMURSA4KEF_13915_7.jpg">
+                                        </div>
+                                        <div class="col-md-10">
+                                        <p>DJI Osmo Handheld Triple Axis 4K Action Cam</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 nopadding mb20">
+                                       <div class="col-md-2">
+                                        <img width="75" src="http://cdnl.ritzcamera.com/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/C/N/CN1005C002_14685_10.jpg">
+                                        </div>
+                                        <div class="col-md-10">
+                                        <p>Canon VIXIA HF G40 Kit</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 nopadding mb20">
+                                       <div class="col-md-2">
+                                        <img width="75" src="http://cdnl.ritzcamera.com/media/catalog/product/cache/1/small_image/135x/9df78eab33525d08d6e5fb8d27136e95/P/N/PNHCW850K_11874_10.jpg">
+                                        </div>
+                                        <div class="col-md-10">
+                                        <p>Panasonic HC-W850 Twin Camera Hd Camcorder (Black)</p>
+                                        </div>
+                                    </div>
+               
+                </div>
+                                </div>
+                        
+                                </li>
+                                    <li class=
+                                    "backgr-fon-hover col-sm-12 clearfix skills-block no-line"
+                                    data-section="skills" id=
+                                    "skills-container">
+                                        <h3>Skills</h3>
+                                        <div class="inner-skills clearfix">
+                                            <div class=
+                                            "col-sm-6-dop marg-right-2">
+                                                <h4 class=
+                                                "h4 text-black bold text-uppercase category">
+                                                Category of Expertise</h4>
+                                            </div><!-- END col-sm-6-dop -->
+                                            <div class="col-sm-6-dop">
+                                                <!-- Begin col-sm-6-dop -->
+                                                <div class="clearfix">
+                                                    <h4 class=
+                                                    "h4 text-black bold text-uppercase software video-software">
+                                                    video editing software</h4>
+                                                </div>
+                                            </div><!-- END col-sm-6-dop -->
+                                        </div><!-- END inner-skills -->
+                                    </li>
+                                    <li class=
+                                    "backgr-fon-hover col-sm-12 clearfix user-materials"
+                                    data-section="materials" id=
+                                    "materials-container"></li>
+                                </ol>
+                                <div class=
+                                "col-sm-12 clearfix bottom-total-number">
+                                    <div class="bottom-total clearfix"></div>
+                                </div>
+                                <div class="col-sm-12 clearfix block-min">
+                                    <p class=
+                                    "text-uppercase p-14 pull-right margin-bottom-20">
+                                    Member since June 2016</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" data-backdrop="static" id=
+                "cropImageModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <img id="target" src="#"> <input id="crop_x"
+                                name="crop_x" type="hidden" value="0">
+                                <input id="crop_y" name="crop_y" type="hidden"
+                                value="0"> <input id="width" name="crop_width"
+                                type="hidden" value="0"> <input id="height"
+                                name="crop_height" type="hidden" value="0">
+                                <input id="filePath" name="file_path" type=
+                                "hidden" value="">
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn cropImage" type=
+                                "button">Crop</button>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+                <div aria-labelledby="myLargeModalLabel" class=
+                "modal fade bs-example-modal-lg buy-domain" id=
+                "buy-domain-modal" role="dialog" tabindex="-1">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button aria-label="Close" class="close"
+                                data-dismiss="modal" type=
+                                "button"><span aria-hidden=
+                                "true">&times;</span></button>
+                                <h4 class="modal-title" id=
+                                "gridSystemModalLabel">BUY A DOMAIN</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <p>Turn your profile page into your own
+                                    website with the support of a 3D Printing
+                                    factory behind you.</p>
+                                    <div class="clearfix availability-form">
+                                        <input id="modal-domain-field" type=
+                                        "text"> <button class="btn" id=
+                                        "check-domain-availability">Check
+                                        Availability</button>
+                                    </div>
+                                    <ul id='domainsListHolder'></ul>
+                                </div>
+                            </div>
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div>
+                <div aria-hidden="true" class="modal fade" id="hire-me-modal"
+                role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content modal-content-min">
+                            <!-- Begin modal-content -->
+                            <div class="modal-header line-bottom">
+                                <!-- Begin modal-header -->
+                                 <button class="close" data-dismiss="modal"
+                                type="button"><span aria-hidden=
+                                "true">&times;</span> <span class=
+                                "sr-only">Close</span></button>
+                                <h3 class="h3 modal-title">Award your
+                                project</h3>
+                            </div><!-- END modal-header -->
+                            <div class="modal-body">
+                                <!-- Begin modal-body -->
+                                <h5 class="h5">For all projects, a 3% fee is
+                                charged on the payment made to the
+                                designer.</h5>
+                            </div><!-- END modal-body -->
+                            <div class="modal-footer bott">
+                                <!-- Begin modal-footer bott -->
+                                <a class="btn btn-gradient btn-red"
+                                data-proposal-id="" data-user-status="guest"
+                                id="hire-designer-handler">Hire</a>
+                                <button class="btn btn-gradient btn-gray"
+                                data-dismiss="modal" type=
+                                "button">Cancel</button>
+                            </div><!-- END modal-footer bott -->
+                        </div><!-- END modal-content -->
+                    </div><!-- END modal-dialog -->
+                </div><!-- END modal -->
+                <!-- Overlay wrappers -->
+                <div class="overlay-wrapper">
+                    <div class="loading-overlay">
+                        <!-- -->
+                    </div>
+                    <div class="overlay-ajax-loader">
+                        <div class="ajax-loader-big">
+                            <!-- -->
+                        </div>
+                    </div>
+                </div>
+                <div class="container video-project">
+                    <div>
+                        <div></div>
+                    </div>
+                </div>
+                <div aria-hidden="true" aria-labelledby="loginBoxLabel" class=
+                "modal fade" id="loginBox" role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button aria-label="Close" class="close"
+                                data-dismiss="modal" type=
+                                "button"><span aria-hidden=
+                                "true">&times;</span></button>
+                                <h3 class="modal-title" id="myModalLabel">Login
+                                to valoso</h3>
+                            </div>
+                            <div class="modal-body">
+                                <div class="tab-content" id="userLoginContent">
+                                    <div aria-labelledby="conLogin" class=
+                                    "tab-pane fade in active" id="conLogin">
+                                        <form action=
+                                        "https://staging.valoso.com/users/sign-in"
+                                        class="clearfix" data-parsley-validate=
+                                        "" id="formLogIn" method="post" name=
+                                        "formLogIn" role="form">
+                                            <input name="_token" type="hidden"
+                                            value=
+                                            "gKRHW6OoK1XccVHFakQKFIJZnWrD6L8HmbplEP4g">
+                                            <div class=
+                                            "alert alert-danger errors-list-container"
+                                            style="display: none;">
+                                                <strong><i class=
+                                                "fa fa-exclamation-circle"></i>
+                                                There were errors in the
+                                                form!</strong>
+                                                <ul>
+                                                    <!-- -->
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">
+                                                Email
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput">
+                                                <input autofocus="" class=
+                                                "form-control inputText-default"
+                                                    data-parsley-maxlength=
+                                                    "100"
+                                                    data-parsley-required=""
+                                                    id="username" name=
+                                                    "username" required=""
+                                                    type="text"> 
+                                                    <!-- ="true" -->
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">
+                                                Password
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput">
+                                                <input class=
+                                                "form-control inputText-default"
+                                                    data-parsley-maxlength=
+                                                    "100"
+                                                    data-parsley-required=""
+                                                    id="password" name=
+                                                    "password" required=""
+                                                    type="password">
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-12 col-lg-12 formCheck">
+                                                <label><input name="sendOffers"
+                                                    type="checkbox" value=
+                                                    "true"> Remember me</label>
+                                                    <a class="forgotPass" href=
+                                                    "https://staging.valoso.com/users/password-request-reset">
+                                                    Forgot Password</a>
+                                                </div>
+                                                <div id=
+                                                "signIn_validate_message">
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-12 col-lg-12 formSub">
+                                                <input type="submit" value=
+                                                "Login">
+                                                </div><span id=
+                                                "dropbox-section"></span>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-12 col-lg-12 line">
+                                                <span id=
+                                                "dropbox-section"></span>
+                                                    <fieldset>
+                                                        <span id=
+                                                        "dropbox-section"><legend align="center">
+                                                        Or</legend></span>
+                                                    </fieldset><span id=
+                                                    "dropbox-section"></span>
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-12 col-lg-12 butLink">
+                                                <span id=
+                                                "dropbox-section"><a class=
+                                                "signin-button"><img alt=
+                                                "Drop Icon" src=
+                                                "/images/ns/ico-drop.png">
+                                                Login With Dropbox</a></span>
+                                                </div><span id=
+                                                "dropbox-section"></span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div aria-hidden="true" aria-labelledby="loginBoxLabel" class=
+                "modal fade" id="register-as-a-video-editor-modal" role=
+                "dialog" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button aria-label="Close" class="close"
+                                data-dismiss="modal" type=
+                                "button"><span aria-hidden=
+                                "true">&times;</span></button>
+                                <h3 class="modal-title" id="myModalLabel">
+                                Register as a video editor</h3>
+                                <div class="row bs-wizard" style=
+                                "border-bottom: 0; padding: 20px 0 0 0;">
+                                    <div class=
+                                    "col-sm-6 col-xs-12 bs-wizard-step">
+                                        <div class=
+                                        "text-center bs-wizard-stepnum">
+                                            Register
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar"></div>
+                                        </div><a class="bs-wizard-dot" style=
+                                        "cursor: default;"></a>
+                                    </div>
+                                    <div class=
+                                    "col-sm-6 col-xs-12 bs-wizard-step disabled">
+                                    <div class="text-center bs-wizard-stepnum">
+                                        Fill your profile
+                                        </div>
+                                        <div class="progress">
+                                            <div class="progress-bar"></div>
+                                        </div><a class="bs-wizard-dot" style=
+                                        "cursor: default;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <div class="tab-content" id="userLoginContent">
+                                    <div aria-labelledby="conSign" class="" id=
+                                    "1">
+                                        <form data-parsley-validate="" id=
+                                        "formSingUpEditor" method="post" name=
+                                        "formSingUpEditor">
+                                            <input name="_token" type="hidden"
+                                            value=
+                                            "gKRHW6OoK1XccVHFakQKFIJZnWrD6L8HmbplEP4g">
+                                            <div class=
+                                            "alert alert-danger errors-list-container"
+                                            style="display: none;">
+                                                <strong><i class=
+                                                "fa fa-exclamation-circle"></i>
+                                                There were errors in the
+                                                form!</strong>
+                                                <ul>
+                                                    <!-- -->
+                                                </ul>
+                                            </div>
+                                            <div class="row">
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">
+                                                First Name
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput">
+                                                <input autofocus="" class=
+                                                "form-control inputText-default"
+                                                    data-parsley-maxlength=
+                                                    "100"
+                                                    data-parsley-required=""
+                                                    data-parsley-type=
+                                                    "alphanum" id="first_name"
+                                                    name="first_name" required=
+                                                    "" type="text">
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">
+                                                Last Name
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput">
+                                                <input class=
+                                                "form-control inputText-default"
+                                                    data-parsley-maxlength=
+                                                    "100"
+                                                    data-parsley-required=""
+                                                    data-parsley-type=
+                                                    "alphanum" id="last_name"
+                                                    name="last_name" required=
+                                                    "" type="text">
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">
+                                                Email
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput">
+                                                <input class=
+                                                "form-control inputText-default"
+                                                    data-parsley-maxlength=
+                                                    "100"
+                                                    data-parsley-required=""
+                                                    data-parsley-type="email"
+                                                    id="email" name="email"
+                                                    required="" type="text">
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">
+                                                Password
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput">
+                                                <input class=
+                                                "form-control inputText-default"
+                                                    data-parsley-maxlength=
+                                                    "100"
+                                                    data-parsley-required=""
+                                                    id="password" name=
+                                                    "password" required=""
+                                                    type="password">
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-4 col-lg-4 formField">
+                                                Repeat Password
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-8 col-lg-8 formInput">
+                                                <input class=
+                                                "form-control inputText-default"
+                                                    data-parsley-maxlength=
+                                                    "100"
+                                                    data-parsley-required=""
+                                                    id="password_confirmation"
+                                                    name=
+                                                    "password_confirmation"
+                                                    required="" type=
+                                                    "password">
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-12 col-lg-12 formCheck">
+                                                <label><input checked name=
+                                                "sendOffers" type="checkbox"
+                                                    value="true"> Send me
+                                                    exclusive offers, tips, and
+                                                    tricks.</label>
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-12 col-lg-12 formText">
+                                                By signing up, you agree to the
+                                                <a href=
+                                                "/pages/terms-and-conditions"
+                                                    target="_blank">Terms and
+                                                    Conditions</a>
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-12 col-lg-12 formSub">
+                                                <div id=
+                                                "signUpEditor_validate_message">
+                                                    </div><input name=
+                                                    "create_designer_profile"
+                                                    type="hidden" value="1">
+                                                    <input name="project_id"
+                                                    type="hidden" value="">
+                                                    <input type="submit" value=
+                                                    "Register As a Video Editor">
+                                                    </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-12 col-lg-12 line">
+                                                <fieldset>
+                                                        <legend align=
+                                                        "center">Or</legend>
+                                                    </fieldset>
+                                                </div>
+                                                <div class=
+                                                "col-xs-12 col-sm-12 col-md-12 col-lg-12 butLink">
+                                                <a class="signin-button"
+                                                    id="register-as-editor-dropbox-btn">
+                                                    <img alt="Drop Icon" src=
+                                                    "/images/ns/ico-drop.png">
+                                                    Register with dropbox</a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    // initialize client side application
+                    $(document).ready(function() {
+                        valosoApp.init();
+                    });
+                </script> 
+                <script>
+                    $('#loginOpen').click(function() {
+                        $('#userLoginTab a[href="#conLogin"]').tab('show');
+                        $('#loginBox').modal('show');
+                    });
+
+                    $('#SignOpen').click(function() {
+                        $('#userLoginTab a[href="#conSign"]').tab('show');
+                        $('#loginBox').modal('show');
+                    });
+                </script> 
+                <script>
+                    $(document).ready(function() {
+                        $("#username").focus();
+                        $(this).find('[autofocus]').focus();
+                    });
+                </script> 
+                <script>
+                    $('#formSingUpEditor input').removeAttr('required');
+
+                    $('#formSingUpEditor').submit(function(e) {
+
+                        $(this).attr('action', '/users/register');
+
+                        e.preventDefault();
+
+                        var self = $(this);
+
+                        var parent = $('#register-as-a-video-editor-modal .modal-dialog');
+
+                        Common.loadingOverlay(true, parent);
+
+                        $.ajax({
+                            url: 'https://staging.valoso.com/users/AJAX/validate/register',
+                            data: $(this).serialize(),
+                            type: 'POST',
+                            success: function(json) {
+                                if (!$.isEmptyObject(json) &&
+                                    !$.isEmptyObject(json.error) &&
+                                    !$.isEmptyObject(json.error.message)
+                                ) {
+                                    $('#formSingUpEditor .formField, #formSingUpEditor .formInput').removeClass('has-error');
+
+                                    $.each(json.error.message, function(i, k) {
+                                        addErrorHelper(i);
+
+                                        if (i == 'password') {
+                                            addErrorHelper('password_confirmation');
+                                        }
+                                    });
+
+                                    handleErrorsList(self, json.error.message);
+
+                                    Common.flashMessage('There were errors in the form!', 'error');
+
+                                    Common.loadingOverlay(false, parent);
+
+                                } else {
+
+                                    if (typeof(xhr) != "undefined" && xhr) {
+                                        xhr.abort();
+                                    }
+
+                                    xhr = $.post('/api/users/register', self.serialize(), function(json) {
+
+                                        xhr = undefined;
+
+                                        if (json.status == 'error') {
+
+                                            handleErrorsList(self, json.meta.errors[0].message.error.message);
+
+                                        } else {
+
+                                            Common.flashMessage('You have been successfully registered! Please check your email and activate your profile.', 'success');
+
+                                            window.location.href = '/';
+
+                                        }
+
+
+                                    });
+                                }
+                            }
+                        });
+                    });
+
+                    /**
+                     * Add error helper.
+                     *
+                     * @param  name
+                     */
+                    function addErrorHelper(name) {
+                        $('#formSingUpEditor *[name="' + name + '"]').parent().addClass('has-error');
+                        $('#formSingUpEditor *[name="' + name + '"]').parent().prev().addClass('has-error');
+                    }
+                </script> 
+                <script>
+                    $(document).ready(function() {
+                        $("#username").focus();
+                        $(this).find('[autofocus]').focus();
+                    });
+                </script> 
+                <script src=
+                "/assets/js/builds/3606f7968ebf1bddec8d4b366b942c154376808082.js">
+                </script> 
+                <script type="text/javascript">
+                    $(document).ready(function() {
+                        $('.header').headroom();
+                    })
+
+                    $(document).on('click', '.button-mobile', function() {
+
+                        $('body').toggleClass('opened-offcanvas');
+                        $('html').addClass('overflow-hidden');
+
+                    });
+
+                    $('.modal').on('shown.bs.modal', function() {
+
+                        var field = $(this).find('input[type="text"], input[type="email"], input[type="password"]');
+
+                        if (field.length) {
+                            field.eq(0).focus();
+                        }
+
+                    });
+                    // Toggle Navigation (close)
+                    var closeNavMobile = function() {
+                        $('.opened-offcanvas').removeClass('opened-offcanvas');
+                        $('.row-offcanvas-left.active').removeClass('active');
+                    }
+
+                    $(document).on('swipeleft', '.opened-offcanvas .page-wrap .close-nav', closeNavMobile);
+
+                    $(document).on('click', '.opened-offcanvas .page-wrap .close-nav', closeNavMobile);
+
+                    $(function() {
+                        //Enable swiping...
+                        $(".close-nav").swipe({
+                            //Generic swipe handler for all directions
+                            swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+                                $('html').removeClass('overflow-hidden');
+                                $('body').removeClass('opened-offcanvas');
+                                $('.row-offcanvas').removeClass('active');
+
+                                console.log(1);
+
+                                if (direction == 'right') {
+                                    //alert(1);
+                                }
+
+                            },
+                            threshold: 0
+                        });
+
+                    });
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/libs/slick.min.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/custom/crop-image.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/custom/profile.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/preview-profile.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/jquery.Jcrop.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/admin/js/jquery.noty.packaged.min.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/admin/js/common.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/admin/js/bootbox.min.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/bootstrap/js/bootstrap-select.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/bootstrap/js/bootstrap-datepicker.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/custom/crop.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/libs/icheck.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/jquery-ui.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/jqueryFileUpload/jquery.uploadfile.min.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/libs/jquery.jscrollpane.min.js">
+                </script> 
+                <script src="https://staging.valoso.com/assets/js/core.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/scrollbar.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/libs/headroom.min.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/libs/jquery.headroom.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/libs/jquery-sortable.js">
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/edit-profile.js">
+                </script> 
+                <script src=
+                "https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.2/js/select2.min.js">
+                </script> 
+                <script type="text/javascript">
+                    // @todo    Fix this
+                    $(function() {
+
+                        $(document).on('click', '#more-block', function(e) {
+                            e.preventDefault();
+                            var parent = $(this).parents('.cont-1');
+                            parent.find('#added').addClass('block-open');
+                            parent.find('#added-dop').addClass('block-open');
+                            parent.find('#less-block').addClass('block-open');
+                            parent.find('#more-block').hide();
+                            parent.find('#h4-hidden').hide();
+                        });
+
+                        $(document).on('click', '#less-block', function(e) {
+                            e.preventDefault();
+                            var parent = $(this).parents('.cont-1');
+                            parent.find('#added').removeClass('block-open');
+                            parent.find('#added-dop').removeClass('block-open');
+                            parent.find('#less-block').removeClass('block-open');
+                            parent.find('#more-block').show();
+                            parent.find('#h4-hidden').show();
+                        });
+
+                    });
+
+                    $(document).on('click', '.popover-remove', function() {
+                        var self = $(this);
+
+                        bootbox.confirm("Are you sure?", function(result) {
+                            if (result) {
+                                self.parents('.popover-content').find('input').val('');
+
+                                self.parent().find('.popover-submit').trigger('click');
+                            }
+                        });
+                    });
+
+                    $(document).ready(function() {
+
+                        $('body').on('click', '#hire-me-trigger', function() {
+                            $('#hire-me-modal').modal('show');
+                        });
+
+                        $('.check-inn input').iCheck({
+                            checkboxClass: 'icheckbox_square-blue',
+                            increaseArea: '20%'
+                        });
+
+                        $(document).on('click', '.edit-container-left button.active', function() {
+                            $('body').addClass('visible');
+                        });
+
+                        $(document).on('click', '.some-arrow img, .design-btn span', function() {
+                            $('body').removeClass('visible');
+                        });
+
+                        $(function() {
+                            $(".scrollbar").scrollbar();
+                        });
+
+                        $(document).on('shown.bs.tab', function() {
+                            $(".scrollbar").scrollbar("resize");
+                        });
+
+                        $('body').on('click', '.edit-trigger.href', function() {
+                            window.location = $(this).data('target');
+                        });
+
+
+                        $('body').on('click', '.edit-together', function() {
+
+                            if (!$(this).next().hasClass('popover')) {
+                                $(this).popover('show');
+                            }
+
+
+                            $('.edit-together').not(this).popover('destroy');
+
+                            $('.language_selector').select2({
+                                width: '100%',
+                                placeholder: 'Select languages',
+                                allowClear: true
+                            });
+
+                        });
+
+
+                        $('body').on('click', function(e) {
+                            if (
+                                $(e.target).data('toggle') !== 'popover' &&
+                                $(e.target).parents('[data-toggle="popover"]').length === 0 &&
+                                $(e.target).parents('.popover.in').length === 0 &&
+                                $(e.target).attr('role') != 'presentation'
+                            ) {
+                                $('[data-toggle="popover"]').popover('destroy');
+                            }
+                        });
+
+                        $('body').on('click', '.popover-dismiss', function() {
+
+                            $(this).closest('.popover').popover('destroy');
+
+                        });
+
+                    });
+
+                    $('.header').headroom();
+
+                    var tmp = $.fn.popover.Constructor.prototype.show;
+                    $.fn.popover.Constructor.prototype.show = function() {
+                        tmp.call(this);
+                        if (this.options.callback) {
+                            this.options.callback();
+                        }
+                    }
+
+                    /**
+                     * Handle enter perss event
+                     */
+                    $('body').on('keypress', 'input, textarea', function(e) {
+                        if (e.keyCode == 13) {
+                            var clickElement = $(this).parent(2).find('.popover-submit');
+                            clickElement.trigger('click');
+                        }
+                    });
+                </script> 
+                <script type="text/javascript">
+                    $(document).ready(function() {
+
+                        $('body').on('click', '#hire-designer-handler', function() {
+
+                            var userType = $(this).data('user-status');
+
+                            if (userType == 'guest') {
+
+                                $('#hire-me-modal').modal('hide');
+                                $('#loginOpen').trigger('click');
+
+                            } else if (userType == 'owner') {
+
+                                var proposalId = $(this).data('proposal-id');
+                                window.location = '/contract/process/' + proposalId;
+
+                            } else {
+
+                                window.location = 'https://staging.valoso.com/projects/manage';
+
+                            }
+
+
+                        })
+
+                    });
+                </script> 
+                <script>
+                    var ProfileSkills = new Profile('#skills-container', 'skills');
+                    var ProfileSoftware = new Profile('#skills-container', 'skills');
+
+
+                    ProfileSkills.handlePopoverSubmit('.popover-submit-categories', 'https://staging.valoso.com/profile/update-categories');
+
+                    ProfileSoftware.handlePopoverSubmit('.popover-submit-software', 'https://staging.valoso.com/profile/update-software');
+                </script> 
+                <script>
+                    var addToFavoriteIcon = '<img src="https://staging.valoso.com/images/favorite.png">';
+
+                    $(document).on('click', '.add-to-favorite', function() {
+                        var self = $(this);
+
+                        Common.loadingOverlay(true, self);
+
+                        $.ajax({
+                            url: 'https://staging.valoso.com/users/designers/add-to-favorite',
+                            type: 'POST',
+                            data: {
+                                user_id: '357'
+                            },
+                            success: function() {
+                                self.removeClass('add-to-favorite').addClass('remove-from-favorite').html(addToFavoriteIcon + ' Remove');
+
+                                Common.loadingOverlay(false, self);
+
+                                Common.flashMessage('Designer has been successfully added to favorite!', 'success');
+                            }
+                        });
+                    });
+
+                    $(document).on('click', '.remove-from-favorite', function() {
+                        var self = $(this);
+
+                        Common.loadingOverlay(true, self);
+
+                        $.ajax({
+                            url: 'https://staging.valoso.com/users/designers/remove-from-favorite',
+                            type: 'POST',
+                            data: {
+                                user_id: '357'
+                            },
+                            success: function() {
+                                self.removeClass('remove-from-favorite').addClass('add-to-favorite').html(addToFavoriteIcon + ' Favorite');
+
+                                Common.loadingOverlay(false, self);
+
+                                Common.flashMessage('Designer has been successfully removed from favorite!', 'success');
+                            }
+                        });
+                    });
+
+
+                    var pencil = '/assets/css/shared/images/pencil.png';
+                    var redpencil = '/assets/css/shared/images/red-pencil.png';
+
+                    var firstName = $('.first_name');
+                    var lastName = $('.last_name');
+                    var fullName = $('.full_name');
+
+                    var positionFiled = $('.position');
+                    var descriptionField = $('.description');
+                    var hourlyRateField = $('.hourly_rate');
+                    var experienceField = $('.experience');
+                    var languageField = $('.languages');
+
+                    var updateFields = function(field, data, callback) {
+
+                        if (data) {
+
+                            field.html(data);
+                            field.val(data);
+                            field.closest('.new-gray').removeClass('new-gray');
+                            field.next('img').attr('src', pencil);
+
+                        } else {
+
+                            field.parent().addClass('new-gray');
+                            field.next('img').attr('src', redpencil)
+
+                        }
+
+                        if (typeof(callback) != 'undefined') {
+                            callback(data);
+                        }
+
+                    }
+
+                    $('body').on('click', '.popover-submit', function() {
+                        var popover = $(this).parents('.popover');
+
+                        var pairs = $('.popover-content input, .popover-content textarea, .popover-content select').serializeArray();
+
+                        if (typeof(xhr) != "undefined" && xhr) {
+                            xhr.abort();
+                        }
+
+                        Common.loadingOverlay(true, popover);
+
+                        xhr = $.ajax({
+                            url: 'https://staging.valoso.com/profile/update-profile',
+                            type: 'POST',
+                            data: pairs
+                        }).done(function(data) {
+                            xhr = undefined;
+
+                            if (data.status == 'error') {
+                                var err = '';
+
+                                $.each(data.details, function(index, value) {
+                                    err += value + '<br/>'
+
+                                    popover.find('input[name="' + index + '"]').addClass('has-error');
+                                });
+
+                                Common.flashMessage(err, 'error');
+
+                            } else {
+
+                                updateFields(firstName, data.user.first_name);
+                                updateFields(lastName, data.user.last_name);
+                                updateFields(fullName, data.user.first_name + ' ' + data.user.last_name);
+                                updateFields(positionFiled, data.various.position, function() {
+                                    $('.position-holder').html(data.partials.position);
+                                    $('[data-toggle="popover"]').popover('hide');
+                                });
+
+                                updateFields(descriptionField, data.various.description);
+                                updateFields(experienceField, data.designer.experience);
+                                updateFields(languageField, data.designer.languages);
+                                updateFields(hourlyRateField, data.designer.hourly_rate, function() {
+
+                                    if (data.designer.hourly_rate_raw != null) {
+                                        $('.edit-hour-pop').find('img').attr('src', pencil);
+                                    }
+
+                                    Currency.currencyConvert($('.autoload-currency'), data.designer.hourly_rate);
+                                    $('input.hourly_rate').val(data.designer.hourly_rate_raw);
+                                    $('#hourly_rate_input_box_helper').val(data.designer.hourly_rate_raw);
+                                });
+
+                                if (!$('.new-gray').length) {
+                                    $('.wrapp-emptyprofile-info').hide();
+                                }
+
+                                $('[data-toggle="popover"]').popover('hide');
+
+                                Common.flashMessage('Entry has been successfully updated!', 'success');
+                            }
+
+                            Common.loadingOverlay(false, popover);
+                        });
+                    });
+
+                    $('.edit-together').on('shown.bs.popover', function() {
+                        if ($(this).data('extra-attr') == 'hourly_rate') {
+                            $('#hourly_rate_input_box').val($('#hourly_rate_input_box_helper').val());
+                        }
+                    });
+                </script> 
+                <script src=
+                "https://staging.valoso.com/assets/js/custom/cover-image-upload.js">
+                </script> 
+                <script>
+                    $(document).ready(function() {
+
+                        $('body').on('click', '#use-subdomain', function() {
+
+                            if (typeof(xhr) != "undefined" && xhr) {
+                                xhr.abort();
+                            }
+
+                            xhr = $.ajax({
+                                url: 'https://staging.valoso.com/profile/set-alias',
+                                type: 'POST',
+                                data: {
+                                    alias: $('#alias-subdomain').val()
+                                }
+                            }).done(function(data) {
+                                xhr = undefined;
+
+                                if (data.status == 'error') {
+                                    Common.flashMessage(data.details.alias, 'error');
+                                } else {
+                                    Common.flashMessage('Entry has been added successfully!', 'success');
+                                }
+
+                            });
+                        });
+
+                    })
+                </script>
+            </div>
+            <div class="wrapper-sidebar-offcanvas">
+                <div class="sidebar-offcanvas" id="sidebar">
+                    <div class="clearfix" id="navbar-collapse-1">
+                        <div class="left-menu clearfix">
+                            <div class="media"></div>
+                        </div>
+                        <ul class="nav navbar-nav navbar-nav-dop nav-list">
+                            <li class="active">
+                                <a class="how-to-work" href=
+                                "https://staging.valoso.com/#how-does-it-work">How
+                                it works<span class=
+                                "sr-only">(current)</span></a>
+                            </li>
+                            <li>
+                                <a href=
+                                "https://staging.valoso.com/pages/faq">FAQ</a>
+                            </li>
+                            <li>
+                                <a href=
+                                "https://docs.google.com/forms/d/1M7QZtZAwVC0aSGMETpYfpIefA_IiTIQfau-bSFiT6is/viewform"
+                                style="cursor: pointer" target="_blank">I have
+                                video equipment</a>
+                            </li>
+                            <li>
+                                <a class="post-a-video-project-toggle" href=
+                                "https://staging.valoso.com/projects/manage"
+                                style="cursor: pointer;">Post a Video
+                                Project</a>
+                            </li>
+                            <li>
+                                <a class="register-as-a-video-editor-toggle"
+                                style="cursor: pointer;">Register as a Video
+                                Editor</a>
+                            </li>
+                            <li>
+                                <a class="login-box-toggle" style=
+                                "cursor: pointer;">Log in</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!--/.sidebar-offcanvas-->
+            </div>
+            <footer class="site-footer" id="footer">
+                <div class="modal fade" id="post-a-project-first-step-modal"
+                role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body" style=
+                            "padding: 40px 20px;">
+                                <div class="text-center">
+                                    <p style="margin-bottom: 40px;">Is this
+                                    video for a business?</p><a class=
+                                    "btn btn-success post-a-project-step-toggle"
+                                    data-step="2" href="#" style=
+                                    "margin-right: 10px;">Yes</a> <a class=
+                                    "btn btn-danger" href=
+                                    "https://staging.valoso.com/projects/projects/flow/make-custom-video">
+                                    No</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="post-a-project-second-step-modal"
+                role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body" style=
+                            "padding: 40px 20px;">
+                                <div class="text-center">
+                                    <p style="margin-bottom: 40px;">Do you have
+                                    a brief prepared?</p><a class=
+                                    "btn btn-success post-a-project-step-toggle"
+                                    data-step="3" href="#" style=
+                                    "margin-right: 10px;">Yes</a> <a class=
+                                    "btn btn-danger" href=
+                                    "https://staging.valoso.com/projects/projects/flow/manage-business-video">
+                                    No</a>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a class=
+                                "btn btn-primary pull-left post-a-project-step-toggle"
+                                data-step="1" href="#"><i class=
+                                "fa fa-long-arrow-left"></i> Prev</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade" id="post-a-project-third-step-modal"
+                role="dialog" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form action=
+                            "https://staging.valoso.com/api/files/upload-brief"
+                            data-redirect-url=
+                            "https://staging.valoso.com/projects/projects/flow/business-video-brief"
+                            enctype="multipart/form-data" id=
+                            "upload-brief-form" name="upload-brief-form">
+                                <div class="modal-body" style=
+                                "padding: 40px 20px;">
+                                    <div class="text-center">
+                                        <p style="margin-bottom: 40px;">Upload
+                                        brief</p>
+                                        <div class="alert alert-danger" id=
+                                        "errors" style="display: none;">
+                                            <strong>There were errors in the
+                                            form!</strong> Invalid file format,
+                                            only: .docx, .doc, .pdf and .ppt
+                                            file formats are supported.
+                                        </div><input id="upload-brief" name=
+                                        "file" type="file">
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <a class=
+                                    "btn btn-primary pull-left post-a-project-step-toggle"
+                                    data-step="2" href="#"><i class=
+                                    "fa fa-long-arrow-left"></i> Prev</a>
+                                    <button class=
+                                    "btn btn-primary pull-right disabled" id=
+                                    "go-to-2nd-client-flow" type="submit">Next
+                                    <i class=
+                                    "fa fa-long-arrow-right"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <script id="currency-snippet" type="text/template">
+
+                    <div class="row cartNZD wid-xs clearfix">
+                        <div class="col-xs-4 col-sm-4 col-md-4 title">%currency%</div>
+                        <div class="col-xs-8 col-sm-8 col-md-8 price">%price%</div>
+                        <input type="hidden" value="%value%" id="currency_rate">
+                        <div class="col-xs-12 col-sm-12 col-md-12 text">Source: Google Finance | %date%
+                        </div>
+                    </div>
+
+                </script> 
+                <script type="application/ld+json">
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "Organization",
+                        "name": "Valoso",
+                        "url": "https://valoso.com",
+                        "sameAs": [
+                            "https://www.facebook.com/valosovideos",
+                            "https://twitter.com/ValosoVideos",
+                            "https://www.pinterest.com/valoso0438/",
+                            "https://plus.google.com/u/0/b/106201462072083640025",
+                            "https://www.instagram.com/va.loso/",
+                            "http://valoso.tumblr.com/"
+                        ]
+                    }
+                </script> 
+                <script type="application/ld+json">
+                    {
+                        "@context": "http://schema.org",
+                        "@type": "Organization",
+                        "url": "https://valoso.com",
+                        "logo": "https://valoso.com/assets/images/logo-valoso.png",
+                        "contactPoint": [{
+                            "@type": "ContactPoint",
+                            "telephone": "+1 (415) 692-5411",
+                            "contactType": "customer service",
+                            "availableLanguage": [
+                                "English"
+                            ]
+                        }]
+                    }
+                </script> <a class="anchor upArrow" href="#header-top" style=
+                "cursor: pointer; z-index: 1039 !important;"><img alt=
+                "Top Arrow" src="/images/ns/to-top-arrow.png"> diego</a>
+                <div class="container">
+                    <div class="row botInfo">
+                        <div class=
+                        "col-xs-6 col-sm-6 col-md-3 col-lg-3 botLink">
+                            <h4>About</h4>
+                            <ul>
+                                <li>
+                                    <a href=
+                                    "https://staging.valoso.com/pages/about">About
+                                    us</a>
+                                </li><!--li><a href="">How it works</a></li-->
+                                <li>
+                                    <a href=
+                                    "https://staging.valoso.com/blog">Blog</a>
+                                </li><!--li><a href="">Careers</a></li-->
+                                <li>
+                                    <a href=
+                                    "https://staging.valoso.com/press">Press</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=
+                        "col-xs-6 col-sm-6 col-md-3 col-lg-3 botLink">
+                            <h4>Help</h4>
+                            <ul>
+                                <!--li><a href="">Help Center</a></li-->
+                                <li>
+                                    <a href=
+                                    "https://staging.valoso.com/pages/contact-us">
+                                    Contact Support</a>
+                                </li>
+                                <li>
+                                    <a href=
+                                    "https://staging.valoso.com/pages/faq">FAQ’s</a>
+                                </li><!--li><a href="">Shipping info</a></li-->
+                                <li>
+                                    <a href=
+                                    "https://staging.valoso.com/pages/fee-schedule">
+                                    Fee Schedule</a>
+                                </li><!--li><a href="">Tutorials</a></li-->
+                            </ul>
+                        </div>
+                        <div class=
+                        "col-xs-12 col-sm-12 col-md-6 col-lg-6 botLogo">
+                            <a href="https://staging.valoso.com"><img alt=
+                            "Valoso Video Editing Marketplace" src=
+                            "/assets/images/logo-footer.png"></a>
+                            <div class="socBox">
+                                <a class="soc-ico s1" href=
+                                "https://www.facebook.com/valosovideos" target=
+                                "_blank"></a> <a class="soc-ico s5" href=
+                                "https://plus.google.com/u/0/b/106201462072083640025"
+                                target="_blank"></a> <a class="soc-ico s6"
+                                href="https://www.pinterest.com/valoso0438/"
+                                target="_blank"></a> <a class="soc-ico s4"
+                                href="http://valoso.tumblr.com/" target=
+                                "_blank"></a> <a class="soc-ico s2" href=
+                                "https://twitter.com/ValosoVideos" target=
+                                "_blank"></a> <a class="soc-ico s8" href=
+                                "https://instagram.com/va.loso/" target=
+                                "_blank"></a>
+                                <div class="clearN"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row botCopy">
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                            Copyright 2016 © Valoso
+                        </div>
+                        <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+                            <a href="/pages/privacy-policy">Privacy Policy</a>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <a href="/pages/terms-and-conditions">Terms and
+                            Conditions</a>
+                        </div>
+                    </div>
+                </div>
+            </footer><!-- Overlay wrappers -->
+            <div class="overlay-wrapper">
+                <div class="loading-overlay"></div>
+                <div class="overlay-ajax-loader">
+                    <div class="ajax-loader-big"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
