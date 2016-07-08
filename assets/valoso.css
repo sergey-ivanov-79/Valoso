@@ -8842,7 +8842,7 @@ body.group-blog {
 }
 @media (max-width: 767px) {
     .row.active {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
+        /*margin-left: 0 !important;
+        margin-right: 0 !important;*/
     }
 }
