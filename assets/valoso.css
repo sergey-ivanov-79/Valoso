@@ -8841,7 +8841,7 @@ body.group-blog {
     font-size: 14px;
 }
 #sidebar {
-    padding-left: 30px;
+    padding-left: 0px;
 }
 .dash-page #sidebar {
     padding-left: 0px;
