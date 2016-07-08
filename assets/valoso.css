@@ -8840,3 +8840,9 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 body.group-blog {
     font-size: 14px;
 }
+@media (max-width: 767px) {
+    .row.active {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+}
