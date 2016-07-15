@@ -8692,7 +8692,7 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
 }
 .membership-holder-plan-item .btn:hover  {
     text-decoration: underline;
-    background: none;
+    /*background: none;*/
 }
 .membership-holder-plan-item .btn.btn-green {
     background: #3bda68;
@@ -8846,3 +8846,27 @@ body.group-blog {
 .dash-page #sidebar {
     padding-left: 0px;
 }
+.btn-dark {
+    background-color: #000;
+    color: #fdfdfd;
+}
+.btn {
+    border-radius: 2px;
+    font-size: 12px;
+    padding: 10px 35px;
+    letter-spacing: 2px;
+    line-height: 6px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    }
