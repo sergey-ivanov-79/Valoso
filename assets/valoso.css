@@ -8695,8 +8695,7 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     background: none;
 }
 .membership-holder-plan-item .btn.btn-green {
-    background: #3bda68;
-    color: #fff;
+    color: #3bda68;
     margin-top: 27px;
 }
 .membership-holder-plan-item .btn.btn-blue {
@@ -8760,19 +8759,20 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     -webkit-transition-timing-function: ease-out;
     transition-timing-function: ease-out;
 }
-.btn-hover-wid.btn-blue:before {
+.btn-hover-wid.btn-blue:before,
+.btn-hover-wid.btn-blue.active {
     background: #37aada;
 }
-.btn-hover-wid.btn-green:before {
-    background: #fff;
+.btn-hover-wid.btn-green:before,
+.btn-hover-wid.btn-green.active {
+    background: #3bda68;
 }
-.btn-hover-wid.btn-green:hover {
-    color: #3bda68 !important;
-}
-.btn-hover-wid.btn-gray:before {
+.btn-hover-wid.btn-gray:before,
+.btn-hover-wid.btn-gray.active {
     background: #b5b5b5;
 }
-.btn-hover-wid:hover {
+.btn-hover-wid:hover,
+.btn-hover-wid.active {
     color: #fff !important;
 }
 .btn-hover-wid:hover:before {
