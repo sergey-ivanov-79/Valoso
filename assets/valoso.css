@@ -8721,7 +8721,65 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     max-width: 800px;
     margin: 20px auto;
 }
-
+.btn-hover-wid {
+    border-radius: 2px;
+    font-size: 12px;
+    padding: 10px 35px;
+    letter-spacing: 2px;
+    line-height: 6px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.btn-hover-wid:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.btn-hover-wid.btn-blue:before {
+    background: #37aada;
+}
+.btn-hover-wid.btn-green:before {
+    background: #fff;
+}
+.btn-hover-wid.btn-green:hover {
+    color: #3bda68 !important;
+}
+.btn-hover-wid.btn-gray:before {
+    background: #b5b5b5;
+}
+.btn-hover-wid:hover {
+    color: #fff !important;
+}
+.btn-hover-wid:hover:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+    color: #fff;
+}
 @media (max-width: 991px) and (min-width: 768px) {
     .membership-holder-plan-inner {
         padding: 25px 15px;
