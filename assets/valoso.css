@@ -8787,6 +8787,10 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     .membership-holder-plan-starter-inner {
         padding: 25px;
     }
+    .membership-holder-plan-free, 
+    .membership-holder-plan-pro {
+        margin-top: 23px;
+    }
 }
 @media (max-width: 767px) {
     .membership-holder-plan-name {
@@ -8877,22 +8881,75 @@ body.group-blog header.header-guest .navbar-default .container .navbar-collapse 
     .membership-holder-plan-pro-inner .membership-holder-plan-name {
         margin-top: 30px;
     }
+    .membership-holder-plan-free,
+    .membership-holder-plan-pro {
+        margin-top: 24px;
+    }
+    .membership-holder-plan-free, .membership-holder-plan-pro {
+        margin-top: 0px;
+    }
 }
-@media (max-width: 479px) {
-    .membership-holder-plan-pro, 
-    .membership-holder-plan-free {
+@media (max-width: 640px) {
+    .membership-holder-plan-inner .membership-holder-plan-name, 
+    .membership-holder-plan-inner .membership-holder-amount-memory, 
+    .membership-holder-plan-inner .membership-holder-price {
+        font-size: 20px;
+    }
+    .membership-holder-plan-item .btn {
+        font-size: 15px;
+        padding: 10px;
+        width: 158px;
+    }
+    .membership-holder-plan-item p {
+        font-size: 14px;
+    }
+    .membership-holder-plan-pro .membership-holder-amount-memory,
+    .membership-holder-plan-free .membership-holder-amount-memory,
+    .membership-holder-plan-starter .membership-holder-amount-memory {
+        margin: 0px;
+    }
+    .membership-holder-plan-pro-inner .membership-holder-plan-name {
+        margin-top: 5px;
+    }
+    .membership-holder-plan-pro, .membership-holder-plan-free {
         width: 250px;
+    }
+    .membership-holder-plan-starter .membership-holder-price {
+        margin-top: -5px;
+        margin-bottom: 5px;
     }
     .membership-holder-plan-starter {
         width: 290px;
     }
     .membership-holder-plan-starter-inner {
+        padding-bottom: 10px;
+    }
+    .membership-holder-plan-item .btn.btn-green {
+        margin-top: 10px
+    }
+    .membership-holder-plan-name {
+        margin-top: -15px;
+    }
+    .membership-holder-plan-free .membership-holder-price {
+        margin-top: 0px;
+    }
+    .membership-holder-plans {
+        margin: 5px auto;
+    }
+    .membership-holder-plan-inner {
+        padding: 15px 25px 10px;
+    }
+    .membership-holder-plan-free .membership-holder-price {
+        margin-bottom: 0;
+    }
+    .membership-holder-plan-free .membership-holder-amount-memory {
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 479px) {
+    .membership-holder-plan-starter-inner {
         padding-right: 25px;
         padding-left: 25px;
-    }
-    .membership-holder-plan-item .btn {
-        padding: 15px 5px;
-        width: 150px;
     }
 }
 /* END - Widget billing plan */
