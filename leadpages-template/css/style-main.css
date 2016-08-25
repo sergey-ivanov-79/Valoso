@@ -1,0 +1,56 @@
+.vcenter .logo {
+  margin: 0 auto;
+  text-align: center;
+  width: 150px;
+}
+.socBox {
+  background: #000100;
+}
+.socBox .soc-ico {
+    margin-right: 0;
+    width: 30px;
+    height: 30px;
+    background: url(../img/soc-ico.png) no-repeat;
+}
+.socBox .s1 {
+    background-position: 0 0;
+}
+.socBox .s5 {
+    background-position: -120px 0;
+}
+.socBox .s6 {
+    background-position: -150px 0;
+}
+.socBox .s4 {
+    background-position: -90px 0;
+}
+.socBox .s2 {
+    background-position: -30px 0;
+}
+.socBox .s8 {
+    background-position: -210px 0;
+}
+.socBox .s1:HOVER {
+    background-position: 0 -30px;
+}
+.socBox .s5:HOVER {
+    background-position: -120px -30px;
+}
+.socBox .s6:HOVER {
+    background-position: -150px -30px;
+}
+.socBox .s4:HOVER {
+    background-position: -90px -30px;
+}
+.socBox .s2:HOVER {
+    background-position: -30px -30px;
+}
+.socBox .s8:HOVER {
+    background-position: -210px -30px;
+}
+.font-italic {
+  font-style: italic;
+}
+.bold {
+  font-weight: 500;
+}

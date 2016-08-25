@@ -1,0 +1,156 @@
+{
+    "id": "4341",
+    "name": "Ultimate Guide - Chapter Page Template",
+    "mobile": true,
+    "notes": "1.04, updates for footer elements and responsiveness issues and added photos for background banner images",
+    "syntax": 4,
+    "version": 1.04,
+    "style": {
+        "replacements": [
+            {"type": "font", "name": "Global Font", "find": "'Lato'"},
+
+            {"type": "color", "find": "#fea906", "name": "Accent Color"},
+            {"type": "color", "find": "#505051", "name": "General Text"},
+            {"type": "color", "find": "#feffff", "name": "Button Text"},
+            {"type": "color", "find": "#000001", "name": "Header Background"},
+            {"type": "color", "find": "#cdcccc", "name": "Banner Background (No Image)"},
+            {"type": "color", "find": "#fffeff", "name": "Banner Text"},
+            {"type": "color", "find": "#fffffe", "name": "Intro Background"},
+            {"type": "color", "find": "#333433", "name": "Table of Contents Background"},
+            {"type": "color", "find": "#000100", "name": "Footer Background"},
+            {"type": "color", "find": "#fefefd", "name": "Footer Text"},
+            {"type": "color", "find": "#3d57a8", "name": "Facebook (Mobile Background)"},
+            {"type": "color", "find": "#2daae2", "name": "Twitter (Mobile Background)"},
+            {"type": "color", "find": "#df4a32", "name": "Google (Mobile Background)"},
+            {"type": "color", "find": "#fea905", "name": "Download (Mobile Background)"}
+        ]
+    },
+    "elements": [
+        {"id": "header", "name": "Header", "type": "container"},
+        {"id": "logo", "type": "image-link", "name": "Logo", "data": { "max-width": 250 } },
+        {"id": "header-btn", "name": "Button", "type": "link", "data": {"href": "#/optin"} },
+
+        {"id": "banner", "name": "Banner", "type": "container"},
+        {
+            "id": "banner-bg",
+            "name": "Banner Image",
+            "type": "background-image",
+            "comment": "Choose a background photo for your banner.",
+            "data": {
+                "max-width": 1600,
+                "alternate-sources": [
+                    "img/1.jpg",
+                    "img/2.jpg",
+                    "img/3.jpg",
+                    "img/4.jpg",
+                    "img/5.jpg",
+                    "img/6.jpg",
+                    "img/7.jpg",
+                    "img/8.jpg",
+                    "img/9.jpg",
+                    "img/10.jpg"
+                ]
+            }
+        },
+        {"id": "banner-title", "name": "Title", "type": "text"},
+        {"id": "banner-text", "name": "Text", "type": "text"},
+
+        {"id": "chapter-marker", "name": "Chapter Marker", "type": "text"},
+        {"id": "social", "name": "Social Media", "type": "container"},
+        {"id": "facebook", "type": "image-link", "name": "Social #1 (Facebook)", "data": { "max-width": 40, "max-height": 40 } },
+        {"id": "twitter", "type": "image-link", "name": "Social #2 (Twitter)", "data": { "max-width": 40, "max-height": 40 } },
+        {"id": "google", "type": "image-link", "name": "Social #3 (Google)", "data": { "max-width": 40, "max-height": 40 } },
+        {"id": "download", "type": "image-link", "name": "Social #4 (Download)", "data": { "max-width": 40, "max-height": 40 } },
+
+        {"id": "content", "name": "Content", "type": "container"},
+
+        {"id": "content-1", "name": "Block #1 (Small Intro)", "type": "container"},
+        {"id": "content-1-title", "name": "Title", "type": "text"},
+        {"id": "content-1-text-1", "name": "Text", "type": "text"},
+        {"id": "content-1-img-1", "type": "image", "name": "Image", "data": { "max-width": 1042 } },
+
+        {"id": "content-2", "name": "Block #2 (Small Intro)", "type": "container"},
+        {"id": "content-2-title", "name": "Title", "type": "text"},
+        {"id": "content-2-text-1", "name": "Text", "type": "text"},
+        {"id": "content-2-img-1", "type": "image", "name": "Image", "data": { "max-width": 1042 } },
+
+        {"id": "content-3", "name": "Block #3", "type": "container"},
+        {"id": "content-3-title", "name": "Title", "type": "text"},
+        {"id": "content-3-text-1", "name": "Text #1", "type": "text"},
+        {"id": "content-3-img-1", "type": "image", "name": "Image #1", "data": { "max-width": 1042 } },
+        {"id": "content-3-text-2", "name": "Text #2", "type": "text"},
+        {"id": "content-3-img-2", "type": "image", "name": "Image #2", "data": { "max-width": 1042 } },
+
+        {"id": "content-4", "name": "Block #4", "type": "container"},
+        {"id": "content-4-title", "name": "Title", "type": "text"},
+        {"id": "content-4-text-1", "name": "Text #1", "type": "text"},
+        {"id": "content-4-img-1", "type": "image", "name": "Image #1", "data": { "max-width": 1042 } },
+        {"id": "content-4-text-2", "name": "Text #2", "type": "text"},
+        {"id": "content-4-img-2", "type": "image", "name": "Image #2", "data": { "max-width": 1042 } },
+
+        {"id": "content-5", "name": "Block #5", "type": "container"},
+        {"id": "content-5-title", "name": "Title", "type": "text"},
+        {"id": "content-5-text-1", "name": "Text #1", "type": "text"},
+        {"id": "content-5-img-1", "type": "image", "name": "Image #1", "data": { "max-width": 1042 } },
+        {"id": "content-5-text-2", "name": "Text #2", "type": "text"},
+        {"id": "content-5-img-2", "type": "image", "name": "Image #2", "data": { "max-width": 1042 } },
+
+        {"id": "content-6", "name": "Block #6", "type": "container"},
+        {"id": "content-6-title", "name": "Title", "type": "text"},
+        {"id": "content-6-text-1", "name": "Text #1", "type": "text"},
+        {"id": "content-6-img-1", "type": "image", "name": "Image #1", "data": { "max-width": 1042 } },
+        {"id": "content-6-text-2", "name": "Text #2", "type": "text"},
+        {"id": "content-6-img-2", "type": "image", "name": "Image #2", "data": { "max-width": 1042 } },
+
+        {"id": "content-7-text-1", "name": "Summary", "type": "text"},
+
+        {"id": "content-btns", "name": "Call to Action", "type": "container"},
+        {"id": "content-btn-1-wrapper", "name": "Button #1 Wrapper", "type": "container"},
+        {"id": "content-btn-1", "name": "Button #1", "type": "link"},
+        {"id": "content-btn-2-wrapper", "name": "Button #2 Wrapper", "type": "container"},
+        {"id": "content-btn-2", "name": "Button #2", "type": "link"},
+        {"id": "content-btn-3-wrapper", "name": "Button #3 Wrapper", "type": "container"},
+        {"id": "content-btn-3", "name": "Button #3", "type": "link", "data": {"href": "#/optin"} },
+
+        {"id": "toc", "name": "Table of Contents", "type": "container"},
+        {"id": "toc-list-1", "name": "List #1", "type": "container"},
+        {"id": "toc-1", "name": "Item #1", "type": "container"},
+        {"id": "toc-1-link", "name": "Link", "type": "link"},
+        {"id": "toc-1-chapter", "name": "Number", "type": "text"},
+        {"id": "toc-2", "name": "Item #2", "type": "container"},
+        {"id": "toc-2-link", "name": "Link", "type": "link"},
+        {"id": "toc-2-chapter", "name": "Number", "type": "text"},
+        {"id": "toc-3", "name": "Item #3", "type": "container"},
+        {"id": "toc-3-link", "name": "Link", "type": "link"},
+        {"id": "toc-3-chapter", "name": "Number", "type": "text"},
+        {"id": "toc-4", "name": "Item #4", "type": "container"},
+        {"id": "toc-4-link", "name": "Link", "type": "link"},
+        {"id": "toc-4-chapter", "name": "Number", "type": "text"},
+        {"id": "toc-5", "name": "Item #5", "type": "container"},
+        {"id": "toc-5-link", "name": "Link", "type": "link"},
+        {"id": "toc-5-chapter", "name": "Number", "type": "text"},
+        {"id": "toc-list-2", "name": "List #2", "type": "container"},
+        {"id": "toc-6", "name": "Item #6", "type": "container"},
+        {"id": "toc-6-link", "name": "Link", "type": "link"},
+        {"id": "toc-6-chapter", "name": "Number", "type": "text"},
+        {"id": "toc-7", "name": "Item #7", "type": "container"},
+        {"id": "toc-7-link", "name": "Link", "type": "link"},
+        {"id": "toc-7-chapter", "name": "Number", "type": "text"},
+        {"id": "toc-8", "name": "Item #8", "type": "container"},
+        {"id": "toc-8-link", "name": "Link", "type": "link"},
+        {"id": "toc-8-chapter", "name": "Number", "type": "text"},
+        {"id": "toc-9", "name": "Item #9", "type": "container"},
+        {"id": "toc-9-link", "name": "Link", "type": "link"},
+        {"id": "toc-9-chapter", "name": "Number", "type": "text"},
+        {"id": "toc-10", "name": "Item #10", "type": "container"},
+        {"id": "toc-10-link", "name": "Link", "type": "link"},
+        {"id": "toc-10-chapter", "name": "Number", "type": "text"},
+
+
+        {"id": "footer", "name": "Footer", "type": "container"},
+        {"id": "footer-logo", "type": "image-link", "name": "Logo", "data": { "max-width": 120 } },
+        {"id": "footer-text", "name": "Copyright Text", "type": "text"},
+        {"id": "footer-link", "name": "Legal Link", "type": "link"}
+    ],
+    "form": {}
+}
