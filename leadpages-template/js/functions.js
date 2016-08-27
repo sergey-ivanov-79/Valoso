@@ -14,3 +14,17 @@ $(function () {
 
     $('#banner-arrow').smoothScroll();
 });
+/* Scroll to top */
+    $(window).scroll(function() {
+      var $toTop = $('#totop');
+      if ($(this).scrollTop() > 100) {
+        $toTop.fadeIn();
+      } else {
+        $toTop.fadeOut();
+      }
+    });
+
+    $("a[href='#totop']").click(function() {
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
+    });
